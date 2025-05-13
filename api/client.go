@@ -50,518 +50,523 @@ type APIClient struct {
 	mws    Middleware
 
 	// API Services
-
-	AccountFundGetV30Api *AccountFundGetV30ApiService
-
-	AdConvertOptimizedTargetGetV30Api *AdConvertOptimizedTargetGetV30ApiService
-
-	AdCostProtectStatusGetV2Api *AdCostProtectStatusGetV2ApiService
-
-	AdGetV2Api *AdGetV2ApiService
-
-	AdRejectReasonV2Api *AdRejectReasonV2ApiService
-
-	AdShopInfoUpdateV30Api *AdShopInfoUpdateV30ApiService
-
-	AdUdUpdateV2Api *AdUdUpdateV2ApiService
-
-	AdUpdateBidV2Api *AdUpdateBidV2ApiService
-
-	AdUpdateBudgetV2Api *AdUpdateBudgetV2ApiService
-
-	AdUpdateStatusV2Api *AdUpdateStatusV2ApiService
-
-	AdlabGroupCreateV30Api *AdlabGroupCreateV30ApiService
-
-	AdlabGroupDetailV30Api *AdlabGroupDetailV30ApiService
-
-	AdlabGroupListV30Api *AdlabGroupListV30ApiService
-
-	AdlabGroupUpdateBudgetV30Api *AdlabGroupUpdateBudgetV30ApiService
-
-	AdlabGroupUpdateStatusV30Api *AdlabGroupUpdateStatusV30ApiService
-
-	AdlabGroupUpdateV30Api *AdlabGroupUpdateV30ApiService
-
-	AdlabGroupsDeleteV30Api *AdlabGroupsDeleteV30ApiService
-
-	AdvConvertOleConvertV2Api *AdvConvertOleConvertV2ApiService
-
-	AdvertiserAttachmentUploadV30Api *AdvertiserAttachmentUploadV30ApiService
-
-	AdvertiserAvatarGetV2Api *AdvertiserAvatarGetV2ApiService
-
-	AdvertiserAvatarSubmitV2Api *AdvertiserAvatarSubmitV2ApiService
-
-	AdvertiserAvatarUploadV2Api *AdvertiserAvatarUploadV2ApiService
-
-	AdvertiserBudgetGetV2Api *AdvertiserBudgetGetV2ApiService
-
-	AdvertiserDeliveryPkgConfigV30Api *AdvertiserDeliveryPkgConfigV30ApiService
-
-	AdvertiserDeliveryPkgDeleteV30Api *AdvertiserDeliveryPkgDeleteV30ApiService
-
-	AdvertiserDeliveryPkgGetV30Api *AdvertiserDeliveryPkgGetV30ApiService
-
-	AdvertiserDeliveryPkgSubmitV30Api *AdvertiserDeliveryPkgSubmitV30ApiService
-
-	AdvertiserDeliveryQualificationDeleteV30Api *AdvertiserDeliveryQualificationDeleteV30ApiService
-
-	AdvertiserDeliveryQualificationListV30Api *AdvertiserDeliveryQualificationListV30ApiService
-
-	AdvertiserDeliveryQualificationSubmitV30Api *AdvertiserDeliveryQualificationSubmitV30ApiService
-
-	AdvertiserFundDailyStatV2Api *AdvertiserFundDailyStatV2ApiService
-
-	AdvertiserFundGetV2Api *AdvertiserFundGetV2ApiService
-
-	AdvertiserFundGrantTransactionGetV2Api *AdvertiserFundGrantTransactionGetV2ApiService
-
-	AdvertiserFundTransactionGetV2Api *AdvertiserFundTransactionGetV2ApiService
-
-	AdvertiserInfoV2Api *AdvertiserInfoV2ApiService
-
-	AdvertiserPublicInfoV2Api *AdvertiserPublicInfoV2ApiService
-
-	AdvertiserQualificationCreateV2V2Api *AdvertiserQualificationCreateV2V2ApiService
-
-	AdvertiserQualificationGetV30Api *AdvertiserQualificationGetV30ApiService
-
-	AdvertiserQualificationSelectV2V2Api *AdvertiserQualificationSelectV2V2ApiService
-
-	AdvertiserQualificationSubmitV30Api *AdvertiserQualificationSubmitV30ApiService
-
-	AdvertiserTransferableFundGetV2Api *AdvertiserTransferableFundGetV2ApiService
-
-	AdvertiserUpdateBudgetV2Api *AdvertiserUpdateBudgetV2ApiService
-
-	AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
-
-	AgentAdvertiserCopyV2Api *AgentAdvertiserCopyV2ApiService
-
-	AgentAdvertiserSelectV2Api *AgentAdvertiserSelectV2ApiService
-
-	AgentAdvertiserUpdateV2Api *AgentAdvertiserUpdateV2ApiService
-
-	AgentChildAgentSelectV2Api *AgentChildAgentSelectV2ApiService
-
-	AgentFundTransferSeqCommitV2Api *AgentFundTransferSeqCommitV2ApiService
-
-	AgentFundTransferSeqCreateV2Api *AgentFundTransferSeqCreateV2ApiService
-
-	AgentInfoV2Api *AgentInfoV2ApiService
-
-	AgentQueryRiskPromotionListV2Api *AgentQueryRiskPromotionListV2ApiService
-
-	AgentRefundTransferSeqCommitV2Api *AgentRefundTransferSeqCommitV2ApiService
-
-	AgentRefundTransferSeqCreateV2Api *AgentRefundTransferSeqCreateV2ApiService
-
-	AgentTransferTransactionRecordV2Api *AgentTransferTransactionRecordV2ApiService
-
-	AnalyticsAttributionV30Api *AnalyticsAttributionV30ApiService
-
-	AssetsCreativeComponentCreateV2Api *AssetsCreativeComponentCreateV2ApiService
-
-	AssetsCreativeComponentGetV2Api *AssetsCreativeComponentGetV2ApiService
-
-	AssetsCreativeComponentUpdateV2Api *AssetsCreativeComponentUpdateV2ApiService
-
-	AsyncTaskCreateV2Api *AsyncTaskCreateV2ApiService
-
-	AsyncTaskDownloadV2Api *AsyncTaskDownloadV2ApiService
-
-	AsyncTaskGetV2Api *AsyncTaskGetV2ApiService
-
-	AudiencePackageCreateV2Api *AudiencePackageCreateV2ApiService
-
-	AudiencePackageDeleteV2Api *AudiencePackageDeleteV2ApiService
-
-	AudiencePackageGetV2Api *AudiencePackageGetV2ApiService
-
-	AudiencePackageUpdateV2Api *AudiencePackageUpdateV2ApiService
-
-	BrandActionCategoryV30Api *BrandActionCategoryV30ApiService
-
-	BrandAdCreateV30Api *BrandAdCreateV30ApiService
-
-	BrandAdGetV30Api *BrandAdGetV30ApiService
-
-	BrandAwemeListV30Api *BrandAwemeListV30ApiService
-
-	BrandCampaignCreateV30Api *BrandCampaignCreateV30ApiService
-
-	BrandCampaignGetV30Api *BrandCampaignGetV30ApiService
-
-	BrandCreativeCreateV30Api *BrandCreativeCreateV30ApiService
-
-	BrandCreativeGetV30Api *BrandCreativeGetV30ApiService
-
-	BrandFileVideoUploadV30Api *BrandFileVideoUploadV30ApiService
-
-	BrandQueryStockV30Api *BrandQueryStockV30ApiService
-
-	BrandQueryYuntu5aBrandCategoryV30Api *BrandQueryYuntu5aBrandCategoryV30ApiService
-
-	BrandRegionGetV30Api *BrandRegionGetV30ApiService
-
-	BrandUploadImageV30Api *BrandUploadImageV30ApiService
-
-	BudgetGroupCreateV30Api *BudgetGroupCreateV30ApiService
-
-	BudgetGroupDeleteV30Api *BudgetGroupDeleteV30ApiService
-
-	BudgetGroupListV30Api *BudgetGroupListV30ApiService
-
-	BudgetGroupUpdateV30Api *BudgetGroupUpdateV30ApiService
-
-	BusinessPlatformCompanyAccountGetV30Api *BusinessPlatformCompanyAccountGetV30ApiService
-
-	BusinessPlatformCompanyInfoGetV30Api *BusinessPlatformCompanyInfoGetV30ApiService
-
-	BusinessPlatformPartnerOrganizationListV2Api *BusinessPlatformPartnerOrganizationListV2ApiService
-
-	CampaignCreateV2Api *CampaignCreateV2ApiService
-
-	CampaignGetV2Api *CampaignGetV2ApiService
-
-	CampaignUpdateStatusV2Api *CampaignUpdateStatusV2ApiService
-
-	CampaignUpdateV2Api *CampaignUpdateV2ApiService
-
-	CarouselAdGetV2Api *CarouselAdGetV2ApiService
-
-	CarouselCreateV2Api *CarouselCreateV2ApiService
-
-	CarouselDeleteV2Api *CarouselDeleteV2ApiService
-
-	CarouselListV2Api *CarouselListV2ApiService
-
-	CarouselUpdateV2Api *CarouselUpdateV2ApiService
-
-	CdpBrandGetV30Api *CdpBrandGetV30ApiService
-
-	CgTransferCreateTransferV30Api *CgTransferCreateTransferV30ApiService
-
-	CgTransferQueryCanTransferBalanceV30Api *CgTransferQueryCanTransferBalanceV30ApiService
-
-	CgTransferQueryTransferBalanceV30Api *CgTransferQueryTransferBalanceV30ApiService
-
-	CgTransferQueryTransferDetailV30Api *CgTransferQueryTransferDetailV30ApiService
-
-	ClueCouponCodeConsumeV2Api *ClueCouponCodeConsumeV2ApiService
-
-	ClueCouponCodeGetV2Api *ClueCouponCodeGetV2ApiService
-
-	ClueCouponCreateV2Api *ClueCouponCreateV2ApiService
-
-	ClueCouponDetailV2Api *ClueCouponDetailV2ApiService
-
-	ClueCouponEmployeeCreateV2Api *ClueCouponEmployeeCreateV2ApiService
-
-	ClueCouponEmployeeDeleteV2Api *ClueCouponEmployeeDeleteV2ApiService
-
-	ClueCouponEmployeeGetV2Api *ClueCouponEmployeeGetV2ApiService
-
-	ClueCouponGetV2Api *ClueCouponGetV2ApiService
-
-	ClueCouponUpdateV2Api *ClueCouponUpdateV2ApiService
-
-	ClueFormCreateV2Api *ClueFormCreateV2ApiService
-
-	ClueFormDeleteV2Api *ClueFormDeleteV2ApiService
-
-	ClueFormDetailV2Api *ClueFormDetailV2ApiService
-
-	ClueFormListV2Api *ClueFormListV2ApiService
-
-	ClueFormUpdateV2Api *ClueFormUpdateV2ApiService
-
-	CluePackageUploadV2Api *CluePackageUploadV2ApiService
-
-	ClueSmartphoneCreateV2Api *ClueSmartphoneCreateV2ApiService
-
-	ClueSmartphoneDeleteV2Api *ClueSmartphoneDeleteV2ApiService
-
-	ClueSmartphoneGetV2Api *ClueSmartphoneGetV2ApiService
-
-	ClueSmartphoneRecordV2Api *ClueSmartphoneRecordV2ApiService
-
-	ClueWechatDataGetV2Api *ClueWechatDataGetV2ApiService
-
-	ClueWechatInstanceDetailV2Api *ClueWechatInstanceDetailV2ApiService
-
-	ClueWechatInstanceListV2Api *ClueWechatInstanceListV2ApiService
-
-	ClueWechatInstanceUpdateV2Api *ClueWechatInstanceUpdateV2ApiService
-
-	ClueWechatPoolListV2Api *ClueWechatPoolListV2ApiService
-
-	CreativeAdMetricsV2Api *CreativeAdMetricsV2ApiService
-
-	CreativeAutoGenerateConfigGetV2Api *CreativeAutoGenerateConfigGetV2ApiService
-
-	CreativeCustomCreativeCreateV2Api *CreativeCustomCreativeCreateV2ApiService
-
-	CreativeCustomCreativeDeleteV2Api *CreativeCustomCreativeDeleteV2ApiService
-
-	CreativeCustomCreativeUpdateV2Api *CreativeCustomCreativeUpdateV2ApiService
-
-	CreativeDetailGetV30Api *CreativeDetailGetV30ApiService
-
-	CreativeGetV2Api *CreativeGetV2ApiService
-
-	CreativeMaterialMetricsV2Api *CreativeMaterialMetricsV2ApiService
-
-	CreativeProceduralCreativeCreateV2Api *CreativeProceduralCreativeCreateV2ApiService
-
-	CreativeProceduralCreativeUpdateV2Api *CreativeProceduralCreativeUpdateV2ApiService
-
-	CreativeRejectReasonV2Api *CreativeRejectReasonV2ApiService
-
-	CreativeStatusUpdateV2V2Api *CreativeStatusUpdateV2V2ApiService
-
-	CreativeStrategyListV2Api *CreativeStrategyListV2ApiService
-
-	CustomerCenterAdvertiserCopyV2Api *CustomerCenterAdvertiserCopyV2ApiService
-
-	CustomerCenterAdvertiserListV2Api *CustomerCenterAdvertiserListV2ApiService
-
-	CustomerCenterAdvertiserTransferableListV2Api *CustomerCenterAdvertiserTransferableListV2ApiService
-
-	CustomerCenterFundTransferSeqCommitV2Api *CustomerCenterFundTransferSeqCommitV2ApiService
-
-	CustomerCenterFundTransferSeqCreateV2Api *CustomerCenterFundTransferSeqCreateV2ApiService
-
-	DecorationCouponGetV30Api *DecorationCouponGetV30ApiService
-
-	DmpBrandGetV2Api *DmpBrandGetV2ApiService
-
-	DmpCustomAudienceCopyV2Api *DmpCustomAudienceCopyV2ApiService
-
-	DmpCustomAudienceDeleteV2Api *DmpCustomAudienceDeleteV2ApiService
-
-	DmpCustomAudiencePublishV2Api *DmpCustomAudiencePublishV2ApiService
-
-	DmpCustomAudiencePushV2V2Api *DmpCustomAudiencePushV2V2ApiService
-
-	DmpCustomAudienceReadV2Api *DmpCustomAudienceReadV2ApiService
-
-	DmpCustomAudienceSelectV2Api *DmpCustomAudienceSelectV2ApiService
-
-	DmpDataSourceCreateV2Api *DmpDataSourceCreateV2ApiService
-
-	DmpDataSourceFileUploadV2Api *DmpDataSourceFileUploadV2ApiService
-
-	DmpDataSourceReadV2Api *DmpDataSourceReadV2ApiService
-
-	DmpDataSourceUpdateV2Api *DmpDataSourceUpdateV2ApiService
-
-	DouplusOrderCloseV30Api *DouplusOrderCloseV30ApiService
-
-	DouplusOrderCreateV30Api *DouplusOrderCreateV30ApiService
-
-	DouplusOrderListV30Api *DouplusOrderListV30ApiService
-
-	DouplusOrderReportV30Api *DouplusOrderReportV30ApiService
-
-	DpaAssetV2DetailReadV2Api *DpaAssetV2DetailReadV2ApiService
-
-	DpaAssetV2ListV2Api *DpaAssetV2ListV2ApiService
-
-	DpaAssetsDetailReadV2Api *DpaAssetsDetailReadV2ApiService
-
-	DpaAssetsListV2Api *DpaAssetsListV2ApiService
-
-	DpaCategoryGetV2Api *DpaCategoryGetV2ApiService
-
-	DpaCheckIndexEntryProgressV2Api *DpaCheckIndexEntryProgressV2ApiService
-
-	DpaClueProductDetailV2Api *DpaClueProductDetailV2ApiService
-
-	DpaClueProductListV2Api *DpaClueProductListV2ApiService
-
-	DpaDetailGetV2Api *DpaDetailGetV2ApiService
-
-	DpaDictGetV2Api *DpaDictGetV2ApiService
-
-	DpaMetaGetV2Api *DpaMetaGetV2ApiService
-
-	DpaProductAvailablesV2Api *DpaProductAvailablesV2ApiService
-
-	DpaProductCreateV2Api *DpaProductCreateV2ApiService
-
-	DpaProductDeleteV2Api *DpaProductDeleteV2ApiService
-
-	DpaProductDetailGetV2Api *DpaProductDetailGetV2ApiService
-
-	DpaProductStatusBatchUpdateV2Api *DpaProductStatusBatchUpdateV2ApiService
-
-	DpaProductUpdateV2Api *DpaProductUpdateV2ApiService
-
-	DpaTemplateGetV2Api *DpaTemplateGetV2ApiService
-
-	DpaVideoGetV2Api *DpaVideoGetV2ApiService
-
-	EnterpriseBindListGetV10Api *EnterpriseBindListGetV10ApiService
-
-	EnterpriseCommentDetailV10Api *EnterpriseCommentDetailV10ApiService
-
-	EnterpriseCommentListGetV10Api *EnterpriseCommentListGetV10ApiService
-
-	EnterpriseCommentReplyListV10Api *EnterpriseCommentReplyListV10ApiService
-
-	EnterpriseCommentReplyV10Api *EnterpriseCommentReplyV10ApiService
-
-	EnterpriseFlowCategoryGetV10Api *EnterpriseFlowCategoryGetV10ApiService
-
-	EnterpriseInfoV10Api *EnterpriseInfoV10ApiService
-
-	EnterpriseItemListV10Api *EnterpriseItemListV10ApiService
-
-	EnterpriseOperationLogGetV10Api *EnterpriseOperationLogGetV10ApiService
-
-	EnterpriseOverviewDataGetV10Api *EnterpriseOverviewDataGetV10ApiService
-
-	EnterpriseVideoInfoGetV10Api *EnterpriseVideoInfoGetV10ApiService
-
-	EventManagerAssetsCreateV2Api *EventManagerAssetsCreateV2ApiService
-
-	EventManagerAvailableEventsGetV2Api *EventManagerAvailableEventsGetV2ApiService
-
-	EventManagerDeepBidTypeGetV30Api *EventManagerDeepBidTypeGetV30ApiService
-
-	EventManagerEventConfigsGetV2Api *EventManagerEventConfigsGetV2ApiService
-
-	EventManagerEventsCreateV2Api *EventManagerEventsCreateV2ApiService
-
-	EventManagerOfflineDataCreateV2Api *EventManagerOfflineDataCreateV2ApiService
-
-	EventManagerOptimizedGoalGetV2V30Api *EventManagerOptimizedGoalGetV2V30ApiService
-
-	EventManagerShareCancelV30Api *EventManagerShareCancelV30ApiService
-
-	EventManagerShareGetV30Api *EventManagerShareGetV30ApiService
-
-	EventManagerShareV30Api *EventManagerShareV30ApiService
-
-	EventManagerTrackUrlCreateV2Api *EventManagerTrackUrlCreateV2ApiService
-
-	EventManagerTrackUrlGetV2Api *EventManagerTrackUrlGetV2ApiService
-
-	EventManagerTrackUrlUpdateV2Api *EventManagerTrackUrlUpdateV2ApiService
-
-	FileAudioAdV2Api *FileAudioAdV2ApiService
-
-	FileAudioGetV2Api *FileAudioGetV2ApiService
-
-	FileAutoGenerateSourceGetV2Api *FileAutoGenerateSourceGetV2ApiService
-
-	FileImageAdGetV2Api *FileImageAdGetV2ApiService
-
-	FileImageAdV2Api *FileImageAdV2ApiService
-
-	FileImageDeleteV30Api *FileImageDeleteV30ApiService
-
-	FileImageGetV2Api *FileImageGetV2ApiService
-
-	FileMaterialAttributesListV2Api *FileMaterialAttributesListV2ApiService
-
-	FileMaterialAuditResultGetV2Api *FileMaterialAuditResultGetV2ApiService
-
-	FileMaterialBindV2Api *FileMaterialBindV2ApiService
-
-	FileMaterialDetailV2Api *FileMaterialDetailV2ApiService
-
-	FileMaterialListV2Api *FileMaterialListV2ApiService
-
-	FileMediaGetV2Api *FileMediaGetV2ApiService
-
-	FilePreauditGetV30Api *FilePreauditGetV30ApiService
-
-	FilePreauditSubmitV30Api *FilePreauditSubmitV30ApiService
-
-	FileQualityGetV30Api *FileQualityGetV30ApiService
-
-	FileQualitySubmitV30Api *FileQualitySubmitV30ApiService
-
-	FileVideoAdGetV2Api *FileVideoAdGetV2ApiService
-
-	FileVideoAdV2Api *FileVideoAdV2ApiService
-
-	FileVideoAgentV2Api *FileVideoAgentV2ApiService
-
-	FileVideoAwemeGetV2Api *FileVideoAwemeGetV2ApiService
-
-	FileVideoDeleteV2Api *FileVideoDeleteV2ApiService
-
-	FileVideoEfficiencyGetV2Api *FileVideoEfficiencyGetV2ApiService
-
-	FileVideoGetV2Api *FileVideoGetV2ApiService
-
-	FileVideoMaterialClearTaskCreateV2Api *FileVideoMaterialClearTaskCreateV2ApiService
-
-	FileVideoMaterialClearTaskGetV2Api *FileVideoMaterialClearTaskGetV2ApiService
-
-	FileVideoMaterialClearTaskResultGetV2Api *FileVideoMaterialClearTaskResultGetV2ApiService
-
-	FileVideoPauseV2Api *FileVideoPauseV2ApiService
-
-	FileVideoUpdateV2Api *FileVideoUpdateV2ApiService
-
-	FundSharedWalletBalanceGetV2Api *FundSharedWalletBalanceGetV2ApiService
-
-	KeywordCreateV2V2Api *KeywordCreateV2V2ApiService
-
-	KeywordCreateV30Api *KeywordCreateV30ApiService
-
-	KeywordDeleteV2V2Api *KeywordDeleteV2V2ApiService
-
-	KeywordDeleteV30Api *KeywordDeleteV30ApiService
-
-	KeywordFeedadsSuggestV2Api *KeywordFeedadsSuggestV2ApiService
-
-	KeywordGetV2Api *KeywordGetV2ApiService
-
-	KeywordListV30Api *KeywordListV30ApiService
-
-	KeywordUpdateV2V2Api *KeywordUpdateV2V2ApiService
-
-	KeywordUpdateV30Api *KeywordUpdateV30ApiService
-
-	MajordomoAdvertiserSelectV2Api *MajordomoAdvertiserSelectV2ApiService
-
-	MaterialStatusUpdateV30Api *MaterialStatusUpdateV30ApiService
-
-	NativeAnchorCreateV30Api *NativeAnchorCreateV30ApiService
-
-	NativeAnchorDeleteV30Api *NativeAnchorDeleteV30ApiService
-
-	NativeAnchorGetDetailV30Api *NativeAnchorGetDetailV30ApiService
-
-	NativeAnchorGetV30Api *NativeAnchorGetV30ApiService
-
-	NativeAnchorQrcodePreviewGetV30Api *NativeAnchorQrcodePreviewGetV30ApiService
-
-	NativeAnchorUpdateV30Api *NativeAnchorUpdateV30ApiService
-
-	Oauth2AccessTokenApi *Oauth2AccessTokenApiService
-
-	Oauth2AdvertiserGetApi *Oauth2AdvertiserGetApiService
-
-	Oauth2AppAccessTokenApi *Oauth2AppAccessTokenApiService
-
-	Oauth2RefreshTokenApi *Oauth2RefreshTokenApiService
-
-	Oauth2RenewTokenApi *Oauth2RenewTokenApiService
-
+	ProjectListV30Api *ProjectListV30ApiService
+	PromotionListV30Api *PromotionListV30ApiService
+	ToolQuickAppManagementQuickAppGetV2Api *ToolQuickAppManagementQuickAppGetV2ApiService
+	ToolsIesAccountSearchV2Api *ToolsIesAccountSearchV2ApiService
+	ToolsSiteGetV2Api *ToolsSiteGetV2ApiService
+
+
+	//AccountFundGetV30Api *AccountFundGetV30ApiService
+	//
+	//AdConvertOptimizedTargetGetV30Api *AdConvertOptimizedTargetGetV30ApiService
+	//
+	//AdCostProtectStatusGetV2Api *AdCostProtectStatusGetV2ApiService
+	//
+	//AdGetV2Api *AdGetV2ApiService
+	//
+	//AdRejectReasonV2Api *AdRejectReasonV2ApiService
+	//
+	//AdShopInfoUpdateV30Api *AdShopInfoUpdateV30ApiService
+	//
+	//AdUdUpdateV2Api *AdUdUpdateV2ApiService
+	//
+	//AdUpdateBidV2Api *AdUpdateBidV2ApiService
+	//
+	//AdUpdateBudgetV2Api *AdUpdateBudgetV2ApiService
+	//
+	//AdUpdateStatusV2Api *AdUpdateStatusV2ApiService
+	//
+	//AdlabGroupCreateV30Api *AdlabGroupCreateV30ApiService
+	//
+	//AdlabGroupDetailV30Api *AdlabGroupDetailV30ApiService
+	//
+	//AdlabGroupListV30Api *AdlabGroupListV30ApiService
+	//
+	//AdlabGroupUpdateBudgetV30Api *AdlabGroupUpdateBudgetV30ApiService
+	//
+	//AdlabGroupUpdateStatusV30Api *AdlabGroupUpdateStatusV30ApiService
+	//
+	//AdlabGroupUpdateV30Api *AdlabGroupUpdateV30ApiService
+	//
+	//AdlabGroupsDeleteV30Api *AdlabGroupsDeleteV30ApiService
+	//
+	//AdvConvertOleConvertV2Api *AdvConvertOleConvertV2ApiService
+	//
+	//AdvertiserAttachmentUploadV30Api *AdvertiserAttachmentUploadV30ApiService
+	//
+	//AdvertiserAvatarGetV2Api *AdvertiserAvatarGetV2ApiService
+	//
+	//AdvertiserAvatarSubmitV2Api *AdvertiserAvatarSubmitV2ApiService
+	//
+	//AdvertiserAvatarUploadV2Api *AdvertiserAvatarUploadV2ApiService
+	//
+	//AdvertiserBudgetGetV2Api *AdvertiserBudgetGetV2ApiService
+	//
+	//AdvertiserDeliveryPkgConfigV30Api *AdvertiserDeliveryPkgConfigV30ApiService
+	//
+	//AdvertiserDeliveryPkgDeleteV30Api *AdvertiserDeliveryPkgDeleteV30ApiService
+	//
+	//AdvertiserDeliveryPkgGetV30Api *AdvertiserDeliveryPkgGetV30ApiService
+	//
+	//AdvertiserDeliveryPkgSubmitV30Api *AdvertiserDeliveryPkgSubmitV30ApiService
+	//
+	//AdvertiserDeliveryQualificationDeleteV30Api *AdvertiserDeliveryQualificationDeleteV30ApiService
+	//
+	//AdvertiserDeliveryQualificationListV30Api *AdvertiserDeliveryQualificationListV30ApiService
+	//
+	//AdvertiserDeliveryQualificationSubmitV30Api *AdvertiserDeliveryQualificationSubmitV30ApiService
+	//
+	//AdvertiserFundDailyStatV2Api *AdvertiserFundDailyStatV2ApiService
+	//
+	//AdvertiserFundGetV2Api *AdvertiserFundGetV2ApiService
+	//
+	//AdvertiserFundGrantTransactionGetV2Api *AdvertiserFundGrantTransactionGetV2ApiService
+	//
+	//AdvertiserFundTransactionGetV2Api *AdvertiserFundTransactionGetV2ApiService
+	//
+	//AdvertiserInfoV2Api *AdvertiserInfoV2ApiService
+	//
+	//AdvertiserPublicInfoV2Api *AdvertiserPublicInfoV2ApiService
+	//
+	//AdvertiserQualificationCreateV2V2Api *AdvertiserQualificationCreateV2V2ApiService
+	//
+	//AdvertiserQualificationGetV30Api *AdvertiserQualificationGetV30ApiService
+	//
+	//AdvertiserQualificationSelectV2V2Api *AdvertiserQualificationSelectV2V2ApiService
+	//
+	//AdvertiserQualificationSubmitV30Api *AdvertiserQualificationSubmitV30ApiService
+	//
+	//AdvertiserTransferableFundGetV2Api *AdvertiserTransferableFundGetV2ApiService
+	//
+	//AdvertiserUpdateBudgetV2Api *AdvertiserUpdateBudgetV2ApiService
+	//
+	//AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
+	//
+	//AgentAdvertiserCopyV2Api *AgentAdvertiserCopyV2ApiService
+	//
+	//AgentAdvertiserSelectV2Api *AgentAdvertiserSelectV2ApiService
+	//
+	//AgentAdvertiserUpdateV2Api *AgentAdvertiserUpdateV2ApiService
+	//
+	//AgentChildAgentSelectV2Api *AgentChildAgentSelectV2ApiService
+	//
+	//AgentFundTransferSeqCommitV2Api *AgentFundTransferSeqCommitV2ApiService
+	//
+	//AgentFundTransferSeqCreateV2Api *AgentFundTransferSeqCreateV2ApiService
+	//
+	//AgentInfoV2Api *AgentInfoV2ApiService
+	//
+	//AgentQueryRiskPromotionListV2Api *AgentQueryRiskPromotionListV2ApiService
+	//
+	//AgentRefundTransferSeqCommitV2Api *AgentRefundTransferSeqCommitV2ApiService
+	//
+	//AgentRefundTransferSeqCreateV2Api *AgentRefundTransferSeqCreateV2ApiService
+	//
+	//AgentTransferTransactionRecordV2Api *AgentTransferTransactionRecordV2ApiService
+	//
+	//AnalyticsAttributionV30Api *AnalyticsAttributionV30ApiService
+	//
+	//AssetsCreativeComponentCreateV2Api *AssetsCreativeComponentCreateV2ApiService
+	//
+	//AssetsCreativeComponentGetV2Api *AssetsCreativeComponentGetV2ApiService
+	//
+	//AssetsCreativeComponentUpdateV2Api *AssetsCreativeComponentUpdateV2ApiService
+	//
+	//AsyncTaskCreateV2Api *AsyncTaskCreateV2ApiService
+	//
+	//AsyncTaskDownloadV2Api *AsyncTaskDownloadV2ApiService
+	//
+	//AsyncTaskGetV2Api *AsyncTaskGetV2ApiService
+	//
+	//AudiencePackageCreateV2Api *AudiencePackageCreateV2ApiService
+	//
+	//AudiencePackageDeleteV2Api *AudiencePackageDeleteV2ApiService
+	//
+	//AudiencePackageGetV2Api *AudiencePackageGetV2ApiService
+	//
+	//AudiencePackageUpdateV2Api *AudiencePackageUpdateV2ApiService
+	//
+	//BrandActionCategoryV30Api *BrandActionCategoryV30ApiService
+	//
+	//BrandAdCreateV30Api *BrandAdCreateV30ApiService
+	//
+	//BrandAdGetV30Api *BrandAdGetV30ApiService
+	//
+	//BrandAwemeListV30Api *BrandAwemeListV30ApiService
+	//
+	//BrandCampaignCreateV30Api *BrandCampaignCreateV30ApiService
+	//
+	//BrandCampaignGetV30Api *BrandCampaignGetV30ApiService
+	//
+	//BrandCreativeCreateV30Api *BrandCreativeCreateV30ApiService
+	//
+	//BrandCreativeGetV30Api *BrandCreativeGetV30ApiService
+	//
+	//BrandFileVideoUploadV30Api *BrandFileVideoUploadV30ApiService
+	//
+	//BrandQueryStockV30Api *BrandQueryStockV30ApiService
+	//
+	//BrandQueryYuntu5aBrandCategoryV30Api *BrandQueryYuntu5aBrandCategoryV30ApiService
+	//
+	//BrandRegionGetV30Api *BrandRegionGetV30ApiService
+	//
+	//BrandUploadImageV30Api *BrandUploadImageV30ApiService
+	//
+	//BudgetGroupCreateV30Api *BudgetGroupCreateV30ApiService
+	//
+	//BudgetGroupDeleteV30Api *BudgetGroupDeleteV30ApiService
+	//
+	//BudgetGroupListV30Api *BudgetGroupListV30ApiService
+	//
+	//BudgetGroupUpdateV30Api *BudgetGroupUpdateV30ApiService
+	//
+	//BusinessPlatformCompanyAccountGetV30Api *BusinessPlatformCompanyAccountGetV30ApiService
+	//
+	//BusinessPlatformCompanyInfoGetV30Api *BusinessPlatformCompanyInfoGetV30ApiService
+	//
+	//BusinessPlatformPartnerOrganizationListV2Api *BusinessPlatformPartnerOrganizationListV2ApiService
+	//
+	//CampaignCreateV2Api *CampaignCreateV2ApiService
+	//
+	//CampaignGetV2Api *CampaignGetV2ApiService
+	//
+	//CampaignUpdateStatusV2Api *CampaignUpdateStatusV2ApiService
+	//
+	//CampaignUpdateV2Api *CampaignUpdateV2ApiService
+	//
+	//CarouselAdGetV2Api *CarouselAdGetV2ApiService
+	//
+	//CarouselCreateV2Api *CarouselCreateV2ApiService
+	//
+	//CarouselDeleteV2Api *CarouselDeleteV2ApiService
+	//
+	//CarouselListV2Api *CarouselListV2ApiService
+	//
+	//CarouselUpdateV2Api *CarouselUpdateV2ApiService
+	//
+	//CdpBrandGetV30Api *CdpBrandGetV30ApiService
+	//
+	//CgTransferCreateTransferV30Api *CgTransferCreateTransferV30ApiService
+	//
+	//CgTransferQueryCanTransferBalanceV30Api *CgTransferQueryCanTransferBalanceV30ApiService
+	//
+	//CgTransferQueryTransferBalanceV30Api *CgTransferQueryTransferBalanceV30ApiService
+	//
+	//CgTransferQueryTransferDetailV30Api *CgTransferQueryTransferDetailV30ApiService
+	//
+	//ClueCouponCodeConsumeV2Api *ClueCouponCodeConsumeV2ApiService
+	//
+	//ClueCouponCodeGetV2Api *ClueCouponCodeGetV2ApiService
+	//
+	//ClueCouponCreateV2Api *ClueCouponCreateV2ApiService
+	//
+	//ClueCouponDetailV2Api *ClueCouponDetailV2ApiService
+	//
+	//ClueCouponEmployeeCreateV2Api *ClueCouponEmployeeCreateV2ApiService
+	//
+	//ClueCouponEmployeeDeleteV2Api *ClueCouponEmployeeDeleteV2ApiService
+	//
+	//ClueCouponEmployeeGetV2Api *ClueCouponEmployeeGetV2ApiService
+	//
+	//ClueCouponGetV2Api *ClueCouponGetV2ApiService
+	//
+	//ClueCouponUpdateV2Api *ClueCouponUpdateV2ApiService
+	//
+	//ClueFormCreateV2Api *ClueFormCreateV2ApiService
+	//
+	//ClueFormDeleteV2Api *ClueFormDeleteV2ApiService
+	//
+	//ClueFormDetailV2Api *ClueFormDetailV2ApiService
+	//
+	//ClueFormListV2Api *ClueFormListV2ApiService
+	//
+	//ClueFormUpdateV2Api *ClueFormUpdateV2ApiService
+	//
+	//CluePackageUploadV2Api *CluePackageUploadV2ApiService
+	//
+	//ClueSmartphoneCreateV2Api *ClueSmartphoneCreateV2ApiService
+	//
+	//ClueSmartphoneDeleteV2Api *ClueSmartphoneDeleteV2ApiService
+	//
+	//ClueSmartphoneGetV2Api *ClueSmartphoneGetV2ApiService
+	//
+	//ClueSmartphoneRecordV2Api *ClueSmartphoneRecordV2ApiService
+	//
+	//ClueWechatDataGetV2Api *ClueWechatDataGetV2ApiService
+	//
+	//ClueWechatInstanceDetailV2Api *ClueWechatInstanceDetailV2ApiService
+	//
+	//ClueWechatInstanceListV2Api *ClueWechatInstanceListV2ApiService
+	//
+	//ClueWechatInstanceUpdateV2Api *ClueWechatInstanceUpdateV2ApiService
+	//
+	//ClueWechatPoolListV2Api *ClueWechatPoolListV2ApiService
+	//
+	//CreativeAdMetricsV2Api *CreativeAdMetricsV2ApiService
+	//
+	//CreativeAutoGenerateConfigGetV2Api *CreativeAutoGenerateConfigGetV2ApiService
+	//
+	//CreativeCustomCreativeCreateV2Api *CreativeCustomCreativeCreateV2ApiService
+	//
+	//CreativeCustomCreativeDeleteV2Api *CreativeCustomCreativeDeleteV2ApiService
+	//
+	//CreativeCustomCreativeUpdateV2Api *CreativeCustomCreativeUpdateV2ApiService
+	//
+	//CreativeDetailGetV30Api *CreativeDetailGetV30ApiService
+	//
+	//CreativeGetV2Api *CreativeGetV2ApiService
+	//
+	//CreativeMaterialMetricsV2Api *CreativeMaterialMetricsV2ApiService
+	//
+	//CreativeProceduralCreativeCreateV2Api *CreativeProceduralCreativeCreateV2ApiService
+	//
+	//CreativeProceduralCreativeUpdateV2Api *CreativeProceduralCreativeUpdateV2ApiService
+	//
+	//CreativeRejectReasonV2Api *CreativeRejectReasonV2ApiService
+	//
+	//CreativeStatusUpdateV2V2Api *CreativeStatusUpdateV2V2ApiService
+	//
+	//CreativeStrategyListV2Api *CreativeStrategyListV2ApiService
+	//
+	//CustomerCenterAdvertiserCopyV2Api *CustomerCenterAdvertiserCopyV2ApiService
+	//
+	//CustomerCenterAdvertiserListV2Api *CustomerCenterAdvertiserListV2ApiService
+	//
+	//CustomerCenterAdvertiserTransferableListV2Api *CustomerCenterAdvertiserTransferableListV2ApiService
+	//
+	//CustomerCenterFundTransferSeqCommitV2Api *CustomerCenterFundTransferSeqCommitV2ApiService
+	//
+	//CustomerCenterFundTransferSeqCreateV2Api *CustomerCenterFundTransferSeqCreateV2ApiService
+	//
+	//DecorationCouponGetV30Api *DecorationCouponGetV30ApiService
+	//
+	//DmpBrandGetV2Api *DmpBrandGetV2ApiService
+	//
+	//DmpCustomAudienceCopyV2Api *DmpCustomAudienceCopyV2ApiService
+	//
+	//DmpCustomAudienceDeleteV2Api *DmpCustomAudienceDeleteV2ApiService
+	//
+	//DmpCustomAudiencePublishV2Api *DmpCustomAudiencePublishV2ApiService
+	//
+	//DmpCustomAudiencePushV2V2Api *DmpCustomAudiencePushV2V2ApiService
+	//
+	//DmpCustomAudienceReadV2Api *DmpCustomAudienceReadV2ApiService
+	//
+	//DmpCustomAudienceSelectV2Api *DmpCustomAudienceSelectV2ApiService
+	//
+	//DmpDataSourceCreateV2Api *DmpDataSourceCreateV2ApiService
+	//
+	//DmpDataSourceFileUploadV2Api *DmpDataSourceFileUploadV2ApiService
+	//
+	//DmpDataSourceReadV2Api *DmpDataSourceReadV2ApiService
+	//
+	//DmpDataSourceUpdateV2Api *DmpDataSourceUpdateV2ApiService
+	//
+	//DouplusOrderCloseV30Api *DouplusOrderCloseV30ApiService
+	//
+	//DouplusOrderCreateV30Api *DouplusOrderCreateV30ApiService
+	//
+	//DouplusOrderListV30Api *DouplusOrderListV30ApiService
+	//
+	//DouplusOrderReportV30Api *DouplusOrderReportV30ApiService
+	//
+	//DpaAssetV2DetailReadV2Api *DpaAssetV2DetailReadV2ApiService
+	//
+	//DpaAssetV2ListV2Api *DpaAssetV2ListV2ApiService
+	//
+	//DpaAssetsDetailReadV2Api *DpaAssetsDetailReadV2ApiService
+	//
+	//DpaAssetsListV2Api *DpaAssetsListV2ApiService
+	//
+	//DpaCategoryGetV2Api *DpaCategoryGetV2ApiService
+	//
+	//DpaCheckIndexEntryProgressV2Api *DpaCheckIndexEntryProgressV2ApiService
+	//
+	//DpaClueProductDetailV2Api *DpaClueProductDetailV2ApiService
+	//
+	//DpaClueProductListV2Api *DpaClueProductListV2ApiService
+	//
+	//DpaDetailGetV2Api *DpaDetailGetV2ApiService
+	//
+	//DpaDictGetV2Api *DpaDictGetV2ApiService
+	//
+	//DpaMetaGetV2Api *DpaMetaGetV2ApiService
+	//
+	//DpaProductAvailablesV2Api *DpaProductAvailablesV2ApiService
+	//
+	//DpaProductCreateV2Api *DpaProductCreateV2ApiService
+	//
+	//DpaProductDeleteV2Api *DpaProductDeleteV2ApiService
+	//
+	//DpaProductDetailGetV2Api *DpaProductDetailGetV2ApiService
+	//
+	//DpaProductStatusBatchUpdateV2Api *DpaProductStatusBatchUpdateV2ApiService
+	//
+	//DpaProductUpdateV2Api *DpaProductUpdateV2ApiService
+	//
+	//DpaTemplateGetV2Api *DpaTemplateGetV2ApiService
+	//
+	//DpaVideoGetV2Api *DpaVideoGetV2ApiService
+	//
+	//EnterpriseBindListGetV10Api *EnterpriseBindListGetV10ApiService
+	//
+	//EnterpriseCommentDetailV10Api *EnterpriseCommentDetailV10ApiService
+	//
+	//EnterpriseCommentListGetV10Api *EnterpriseCommentListGetV10ApiService
+	//
+	//EnterpriseCommentReplyListV10Api *EnterpriseCommentReplyListV10ApiService
+	//
+	//EnterpriseCommentReplyV10Api *EnterpriseCommentReplyV10ApiService
+	//
+	//EnterpriseFlowCategoryGetV10Api *EnterpriseFlowCategoryGetV10ApiService
+	//
+	//EnterpriseInfoV10Api *EnterpriseInfoV10ApiService
+	//
+	//EnterpriseItemListV10Api *EnterpriseItemListV10ApiService
+	//
+	//EnterpriseOperationLogGetV10Api *EnterpriseOperationLogGetV10ApiService
+	//
+	//EnterpriseOverviewDataGetV10Api *EnterpriseOverviewDataGetV10ApiService
+	//
+	//EnterpriseVideoInfoGetV10Api *EnterpriseVideoInfoGetV10ApiService
+	//
+	//EventManagerAssetsCreateV2Api *EventManagerAssetsCreateV2ApiService
+	//
+	//EventManagerAvailableEventsGetV2Api *EventManagerAvailableEventsGetV2ApiService
+	//
+	//EventManagerDeepBidTypeGetV30Api *EventManagerDeepBidTypeGetV30ApiService
+	//
+	//EventManagerEventConfigsGetV2Api *EventManagerEventConfigsGetV2ApiService
+	//
+	//EventManagerEventsCreateV2Api *EventManagerEventsCreateV2ApiService
+	//
+	//EventManagerOfflineDataCreateV2Api *EventManagerOfflineDataCreateV2ApiService
+	//
+	//EventManagerOptimizedGoalGetV2V30Api *EventManagerOptimizedGoalGetV2V30ApiService
+	//
+	//EventManagerShareCancelV30Api *EventManagerShareCancelV30ApiService
+	//
+	//EventManagerShareGetV30Api *EventManagerShareGetV30ApiService
+	//
+	//EventManagerShareV30Api *EventManagerShareV30ApiService
+	//
+	//EventManagerTrackUrlCreateV2Api *EventManagerTrackUrlCreateV2ApiService
+	//
+	//EventManagerTrackUrlGetV2Api *EventManagerTrackUrlGetV2ApiService
+	//
+	//EventManagerTrackUrlUpdateV2Api *EventManagerTrackUrlUpdateV2ApiService
+	//
+	//FileAudioAdV2Api *FileAudioAdV2ApiService
+	//
+	//FileAudioGetV2Api *FileAudioGetV2ApiService
+	//
+	//FileAutoGenerateSourceGetV2Api *FileAutoGenerateSourceGetV2ApiService
+	//
+	//FileImageAdGetV2Api *FileImageAdGetV2ApiService
+	//
+	//FileImageAdV2Api *FileImageAdV2ApiService
+	//
+	//FileImageDeleteV30Api *FileImageDeleteV30ApiService
+	//
+	//FileImageGetV2Api *FileImageGetV2ApiService
+	//
+	//FileMaterialAttributesListV2Api *FileMaterialAttributesListV2ApiService
+	//
+	//FileMaterialAuditResultGetV2Api *FileMaterialAuditResultGetV2ApiService
+	//
+	//FileMaterialBindV2Api *FileMaterialBindV2ApiService
+	//
+	//FileMaterialDetailV2Api *FileMaterialDetailV2ApiService
+	//
+	//FileMaterialListV2Api *FileMaterialListV2ApiService
+	//
+	//FileMediaGetV2Api *FileMediaGetV2ApiService
+	//
+	//FilePreauditGetV30Api *FilePreauditGetV30ApiService
+	//
+	//FilePreauditSubmitV30Api *FilePreauditSubmitV30ApiService
+	//
+	//FileQualityGetV30Api *FileQualityGetV30ApiService
+	//
+	//FileQualitySubmitV30Api *FileQualitySubmitV30ApiService
+	//
+	//FileVideoAdGetV2Api *FileVideoAdGetV2ApiService
+	//
+	//FileVideoAdV2Api *FileVideoAdV2ApiService
+	//
+	//FileVideoAgentV2Api *FileVideoAgentV2ApiService
+	//
+	//FileVideoAwemeGetV2Api *FileVideoAwemeGetV2ApiService
+	//
+	//FileVideoDeleteV2Api *FileVideoDeleteV2ApiService
+	//
+	//FileVideoEfficiencyGetV2Api *FileVideoEfficiencyGetV2ApiService
+	//
+	//FileVideoGetV2Api *FileVideoGetV2ApiService
+	//
+	//FileVideoMaterialClearTaskCreateV2Api *FileVideoMaterialClearTaskCreateV2ApiService
+	//
+	//FileVideoMaterialClearTaskGetV2Api *FileVideoMaterialClearTaskGetV2ApiService
+	//
+	//FileVideoMaterialClearTaskResultGetV2Api *FileVideoMaterialClearTaskResultGetV2ApiService
+	//
+	//FileVideoPauseV2Api *FileVideoPauseV2ApiService
+	//
+	//FileVideoUpdateV2Api *FileVideoUpdateV2ApiService
+	//
+	//FundSharedWalletBalanceGetV2Api *FundSharedWalletBalanceGetV2ApiService
+	//
+	//KeywordCreateV2V2Api *KeywordCreateV2V2ApiService
+	//
+	//KeywordCreateV30Api *KeywordCreateV30ApiService
+	//
+	//KeywordDeleteV2V2Api *KeywordDeleteV2V2ApiService
+	//
+	//KeywordDeleteV30Api *KeywordDeleteV30ApiService
+	//
+	//KeywordFeedadsSuggestV2Api *KeywordFeedadsSuggestV2ApiService
+	//
+	//KeywordGetV2Api *KeywordGetV2ApiService
+	//
+	//KeywordListV30Api *KeywordListV30ApiService
+	//
+	//KeywordUpdateV2V2Api *KeywordUpdateV2V2ApiService
+	//
+	//KeywordUpdateV30Api *KeywordUpdateV30ApiService
+	//
+	//MajordomoAdvertiserSelectV2Api *MajordomoAdvertiserSelectV2ApiService
+	//
+	//MaterialStatusUpdateV30Api *MaterialStatusUpdateV30ApiService
+	//
+	//NativeAnchorCreateV30Api *NativeAnchorCreateV30ApiService
+	//
+	//NativeAnchorDeleteV30Api *NativeAnchorDeleteV30ApiService
+	//
+	//NativeAnchorGetDetailV30Api *NativeAnchorGetDetailV30ApiService
+	//
+	//NativeAnchorGetV30Api *NativeAnchorGetV30ApiService
+	//
+	//NativeAnchorQrcodePreviewGetV30Api *NativeAnchorQrcodePreviewGetV30ApiService
+	//
+	//NativeAnchorUpdateV30Api *NativeAnchorUpdateV30ApiService
+	//
+	//Oauth2AccessTokenApi *Oauth2AccessTokenApiService
+	//
+	//Oauth2AdvertiserGetApi *Oauth2AdvertiserGetApiService
+	//
+	//Oauth2AppAccessTokenApi *Oauth2AppAccessTokenApiService
+	//
+	//Oauth2RefreshTokenApi *Oauth2RefreshTokenApiService
+	//
+	//Oauth2RenewTokenApi *Oauth2RenewTokenApiService
+	//
 	ProjectBudgetUpdateV30Api *ProjectBudgetUpdateV30ApiService
 
 	ProjectCreateV30Api *ProjectCreateV30ApiService
 
 	ProjectDeleteV30Api *ProjectDeleteV30ApiService
 
-	ProjectListV30Api *ProjectListV30ApiService
 
 	ProjectRoigoalUpdateV30Api *ProjectRoigoalUpdateV30ApiService
 
@@ -591,7 +596,6 @@ type APIClient struct {
 
 	PromotionDeleteV30Api *PromotionDeleteV30ApiService
 
-	PromotionListV30Api *PromotionListV30ApiService
 
 	PromotionMaterialDeleteV30Api *PromotionMaterialDeleteV30ApiService
 
@@ -604,950 +608,946 @@ type APIClient struct {
 	PromotionStatusUpdateV30Api *PromotionStatusUpdateV30ApiService
 
 	PromotionUpdateV30Api *PromotionUpdateV30ApiService
-
-	QianchuanAccountBalanceGetV10Api *QianchuanAccountBalanceGetV10ApiService
-
-	QianchuanAccountBudgetGetV10Api *QianchuanAccountBudgetGetV10ApiService
-
-	QianchuanAccountBudgetUpdateV10Api *QianchuanAccountBudgetUpdateV10ApiService
-
-	QianchuanAdBidUpdateV10Api *QianchuanAdBidUpdateV10ApiService
-
-	QianchuanAdBudgetUpdateV10Api *QianchuanAdBudgetUpdateV10ApiService
-
-	QianchuanAdCompensateStatusGetV10Api *QianchuanAdCompensateStatusGetV10ApiService
-
-	QianchuanAdCreateV10Api *QianchuanAdCreateV10ApiService
-
-	QianchuanAdDetailGetV10Api *QianchuanAdDetailGetV10ApiService
-
-	QianchuanAdGetV10Api *QianchuanAdGetV10ApiService
-
-	QianchuanAdKeywordsGetV10Api *QianchuanAdKeywordsGetV10ApiService
-
-	QianchuanAdKeywordsUpdateV10Api *QianchuanAdKeywordsUpdateV10ApiService
-
-	QianchuanAdLearingStatusGetV10Api *QianchuanAdLearingStatusGetV10ApiService
-
-	QianchuanAdPivativewordsGetV10Api *QianchuanAdPivativewordsGetV10ApiService
-
-	QianchuanAdPivativewordsUpdateV10Api *QianchuanAdPivativewordsUpdateV10ApiService
-
-	QianchuanAdQuotaGetV10Api *QianchuanAdQuotaGetV10ApiService
-
-	QianchuanAdRecommendKeywordsGetV10Api *QianchuanAdRecommendKeywordsGetV10ApiService
-
-	QianchuanAdRegionUpdateV10Api *QianchuanAdRegionUpdateV10ApiService
-
-	QianchuanAdRejectReasonV10Api *QianchuanAdRejectReasonV10ApiService
-
-	QianchuanAdScheduleDateUpdateV10Api *QianchuanAdScheduleDateUpdateV10ApiService
-
-	QianchuanAdScheduleFixedRangeUpdateV10Api *QianchuanAdScheduleFixedRangeUpdateV10ApiService
-
-	QianchuanAdScheduleTimeUpdateV10Api *QianchuanAdScheduleTimeUpdateV10ApiService
-
-	QianchuanAdStatusUpdateV10Api *QianchuanAdStatusUpdateV10ApiService
-
-	QianchuanAdUpdateV10Api *QianchuanAdUpdateV10ApiService
-
-	QianchuanAdvertiserTypeGetV10Api *QianchuanAdvertiserTypeGetV10ApiService
-
-	QianchuanAudienceCreateByFileV10Api *QianchuanAudienceCreateByFileV10ApiService
-
-	QianchuanAudienceDeleteV10Api *QianchuanAudienceDeleteV10ApiService
-
-	QianchuanAudienceFilePartUploadV10Api *QianchuanAudienceFilePartUploadV10ApiService
-
-	QianchuanAudienceFileUploadV10Api *QianchuanAudienceFileUploadV10ApiService
-
-	QianchuanAudienceGroupGetV10Api *QianchuanAudienceGroupGetV10ApiService
-
-	QianchuanAudienceListGetV10Api *QianchuanAudienceListGetV10ApiService
-
-	QianchuanAudiencePushV10Api *QianchuanAudiencePushV10ApiService
-
-	QianchuanAwemeAuthorizedGetV10Api *QianchuanAwemeAuthorizedGetV10ApiService
-
-	QianchuanAwemeEstimateProfitV10Api *QianchuanAwemeEstimateProfitV10ApiService
-
-	QianchuanAwemeInterestActionInterestKeywordV10Api *QianchuanAwemeInterestActionInterestKeywordV10ApiService
-
-	QianchuanAwemeOrderBudgetAddV10Api *QianchuanAwemeOrderBudgetAddV10ApiService
-
-	QianchuanAwemeOrderCreateV10Api *QianchuanAwemeOrderCreateV10ApiService
-
-	QianchuanAwemeOrderDetailGetV10Api *QianchuanAwemeOrderDetailGetV10ApiService
-
-	QianchuanAwemeOrderGetV10Api *QianchuanAwemeOrderGetV10ApiService
-
-	QianchuanAwemeOrderQuotaGetV10Api *QianchuanAwemeOrderQuotaGetV10ApiService
-
-	QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api *QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService
-
-	QianchuanAwemeOrderTerminateV10Api *QianchuanAwemeOrderTerminateV10ApiService
-
-	QianchuanAwemeProductAvailableGetV10Api *QianchuanAwemeProductAvailableGetV10ApiService
-
-	QianchuanAwemeReportOrderGetV10Api *QianchuanAwemeReportOrderGetV10ApiService
-
-	QianchuanAwemeSuggestBidV10Api *QianchuanAwemeSuggestBidV10ApiService
-
-	QianchuanAwemeSuggestRoiGoalV10Api *QianchuanAwemeSuggestRoiGoalV10ApiService
-
-	QianchuanAwemeVideoGetV10Api *QianchuanAwemeVideoGetV10ApiService
-
-	QianchuanBatchCampaignStatusUpdateV10Api *QianchuanBatchCampaignStatusUpdateV10ApiService
-
-	QianchuanBrandAuthorizedGetV10Api *QianchuanBrandAuthorizedGetV10ApiService
-
-	QianchuanCampaignCreateV10Api *QianchuanCampaignCreateV10ApiService
-
-	QianchuanCampaignListGetV10Api *QianchuanCampaignListGetV10ApiService
-
-	QianchuanCampaignUpdateV10Api *QianchuanCampaignUpdateV10ApiService
-
-	QianchuanCarouselAwemeGetV10Api *QianchuanCarouselAwemeGetV10ApiService
-
-	QianchuanCarouselGetV10Api *QianchuanCarouselGetV10ApiService
-
-	QianchuanCreativeGetV10Api *QianchuanCreativeGetV10ApiService
-
-	QianchuanCreativeRejectReasonV10Api *QianchuanCreativeRejectReasonV10ApiService
-
-	QianchuanCreativeStatusUpdateV10Api *QianchuanCreativeStatusUpdateV10ApiService
-
-	QianchuanDmpAudiencesGetV10Api *QianchuanDmpAudiencesGetV10ApiService
-
-	QianchuanEcpAwemeAdGetV10Api *QianchuanEcpAwemeAdGetV10ApiService
-
-	QianchuanEstimateEffectV10Api *QianchuanEstimateEffectV10ApiService
-
-	QianchuanFileImageDeleteV10Api *QianchuanFileImageDeleteV10ApiService
-
-	QianchuanFileVideoAwemeGetV10Api *QianchuanFileVideoAwemeGetV10ApiService
-
-	QianchuanFileVideoDeleteV10Api *QianchuanFileVideoDeleteV10ApiService
-
-	QianchuanFileVideoEfficiencyGetV10Api *QianchuanFileVideoEfficiencyGetV10ApiService
-
-	QianchuanFileVideoOriginalGetV10Api *QianchuanFileVideoOriginalGetV10ApiService
-
-	QianchuanFinanceDetailGetV10Api *QianchuanFinanceDetailGetV10ApiService
-
-	QianchuanFinanceWalletGetV10Api *QianchuanFinanceWalletGetV10ApiService
-
-	QianchuanImageGetV10Api *QianchuanImageGetV10ApiService
-
-	QianchuanKeywordCheckV10Api *QianchuanKeywordCheckV10ApiService
-
-	QianchuanKeywordPackageGetV10Api *QianchuanKeywordPackageGetV10ApiService
-
-	QianchuanLqAdGetV10Api *QianchuanLqAdGetV10ApiService
-
-	QianchuanOrientationPackageGetV10Api *QianchuanOrientationPackageGetV10ApiService
-
-	QianchuanProductAnalyseCompareCreativeV10Api *QianchuanProductAnalyseCompareCreativeV10ApiService
-
-	QianchuanProductAnalyseCompareStatsDataV10Api *QianchuanProductAnalyseCompareStatsDataV10ApiService
-
-	QianchuanProductAnalyseListV10Api *QianchuanProductAnalyseListV10ApiService
-
-	QianchuanProductAvailableGetV10Api *QianchuanProductAvailableGetV10ApiService
-
-	QianchuanReportAdGetV10Api *QianchuanReportAdGetV10ApiService
-
-	QianchuanReportAdvertiserGetV10Api *QianchuanReportAdvertiserGetV10ApiService
-
-	QianchuanReportCreativeGetV10Api *QianchuanReportCreativeGetV10ApiService
-
-	QianchuanReportCustomConfigGetV10Api *QianchuanReportCustomConfigGetV10ApiService
-
-	QianchuanReportCustomGetV10Api *QianchuanReportCustomGetV10ApiService
-
-	QianchuanReportLiveGetV10Api *QianchuanReportLiveGetV10ApiService
-
-	QianchuanReportLongTransferOrderGetV10Api *QianchuanReportLongTransferOrderGetV10ApiService
-
-	QianchuanReportMaterialGetV10Api *QianchuanReportMaterialGetV10ApiService
-
-	QianchuanReportSearchWordGetV10Api *QianchuanReportSearchWordGetV10ApiService
-
-	QianchuanReportUniPromotionDimensionDataAuthorGetV10Api *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService
-
-	QianchuanReportUniPromotionDimensionDataRoomGetV10Api *QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService
-
-	QianchuanReportUniPromotionGetV10Api *QianchuanReportUniPromotionGetV10ApiService
-
-	QianchuanReportVideoUserLoseGetV10Api *QianchuanReportVideoUserLoseGetV10ApiService
-
-	QianchuanRoiGoalUpdateV10Api *QianchuanRoiGoalUpdateV10ApiService
-
-	QianchuanShopAdvertiserListV10Api *QianchuanShopAdvertiserListV10ApiService
-
-	QianchuanShopAuthorizedGetV10Api *QianchuanShopAuthorizedGetV10ApiService
-
-	QianchuanShopGetV10Api *QianchuanShopGetV10ApiService
-
-	QianchuanSuggestBidV10Api *QianchuanSuggestBidV10ApiService
-
-	QianchuanSuggestBudgetV10Api *QianchuanSuggestBudgetV10ApiService
-
-	QianchuanSuggestRoiGoalV10Api *QianchuanSuggestRoiGoalV10ApiService
-
-	QianchuanTodayLiveRoomDetailGetV10Api *QianchuanTodayLiveRoomDetailGetV10ApiService
-
-	QianchuanTodayLiveRoomFlowPerformanceGetV10Api *QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService
-
-	QianchuanTodayLiveRoomGetV10Api *QianchuanTodayLiveRoomGetV10ApiService
-
-	QianchuanTodayLiveRoomProductListGetV10Api *QianchuanTodayLiveRoomProductListGetV10ApiService
-
-	QianchuanTodayLiveRoomUserGetV10Api *QianchuanTodayLiveRoomUserGetV10ApiService
-
-	QianchuanToolsAllowCouponV10Api *QianchuanToolsAllowCouponV10ApiService
-
-	QianchuanToolsAwemeAuthV10Api *QianchuanToolsAwemeAuthV10ApiService
-
-	QianchuanToolsEstimateAudienceV10Api *QianchuanToolsEstimateAudienceV10ApiService
-
-	QianchuanToolsGrayV10Api *QianchuanToolsGrayV10ApiService
-
-	QianchuanToolsShopAuthV10Api *QianchuanToolsShopAuthV10ApiService
-
-	QianchuanToolsSmartBoostAdBoostReportGetV10Api *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService
-
-	QianchuanToolsSmartBoostAdBoostSetV10Api *QianchuanToolsSmartBoostAdBoostSetV10ApiService
-
-	QianchuanToolsSmartBoostAdBoostStatusGetV10Api *QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService
-
-	QianchuanToolsSmartBoostAdBoostVersionGetV10Api *QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService
-
-	QianchuanTrackUrlCheckV10Api *QianchuanTrackUrlCheckV10ApiService
-
-	QianchuanUniAwemeAuthorizedGetV10Api *QianchuanUniAwemeAuthorizedGetV10ApiService
-
-	QianchuanUniPromotionListV10Api *QianchuanUniPromotionListV10ApiService
-
-	QianchuanVideoGetV10Api *QianchuanVideoGetV10ApiService
-
-	QueryInvoiceV2Api *QueryInvoiceV2ApiService
-
-	QueryProjectV2Api *QueryProjectV2ApiService
-
-	QueryStatementV2Api *QueryStatementV2ApiService
-
-	ReportAdGetV2Api *ReportAdGetV2ApiService
-
-	ReportAdvertiserGetV2Api *ReportAdvertiserGetV2ApiService
-
-	ReportAgentGetV2V2Api *ReportAgentGetV2V2ApiService
-
-	ReportAudienceAgeV2Api *ReportAudienceAgeV2ApiService
-
-	ReportAudienceAwemeListV2Api *ReportAudienceAwemeListV2ApiService
-
-	ReportAudienceCityV2Api *ReportAudienceCityV2ApiService
-
-	ReportAudienceGenderV2Api *ReportAudienceGenderV2ApiService
-
-	ReportAudienceInterestActionListV2Api *ReportAudienceInterestActionListV2ApiService
-
-	ReportAudienceProvinceV2Api *ReportAudienceProvinceV2ApiService
-
-	ReportBrandAdGetV30Api *ReportBrandAdGetV30ApiService
-
-	ReportBrandAdvertiserGetV30Api *ReportBrandAdvertiserGetV30ApiService
-
-	ReportBrandCampaignGetV30Api *ReportBrandCampaignGetV30ApiService
-
-	ReportBrandCreativeGetV30Api *ReportBrandCreativeGetV30ApiService
-
-	ReportCampaignGetV2Api *ReportCampaignGetV2ApiService
-
-	ReportCreativeGetV2Api *ReportCreativeGetV2ApiService
-
-	ReportCustomAsyncTaskCreateV30Api *ReportCustomAsyncTaskCreateV30ApiService
-
-	ReportCustomAsyncTaskDownloadV30Api *ReportCustomAsyncTaskDownloadV30ApiService
-
-	ReportCustomAsyncTaskGetV30Api *ReportCustomAsyncTaskGetV30ApiService
-
-	ReportCustomConfigGetV30Api *ReportCustomConfigGetV30ApiService
-
-	ReportCustomCreativeGetV30Api *ReportCustomCreativeGetV30ApiService
-
-	ReportCustomGetV30Api *ReportCustomGetV30ApiService
-
-	ReportLiveRoomAnalysisGetV2Api *ReportLiveRoomAnalysisGetV2ApiService
-
-	ReportLiveRoomAttributeGetV2Api *ReportLiveRoomAttributeGetV2ApiService
-
-	ReportLiveRoomAudiencePortraitGetV2Api *ReportLiveRoomAudiencePortraitGetV2ApiService
-
-	ReportLiveRoomFlowCategoryGetV2Api *ReportLiveRoomFlowCategoryGetV2ApiService
-
-	ReportLiveRoomProductGetV2Api *ReportLiveRoomProductGetV2ApiService
-
-	ReportProductAsyncTaskDownloadV30Api *ReportProductAsyncTaskDownloadV30ApiService
-
-	ReportProductAsyncTaskGetV30Api *ReportProductAsyncTaskGetV30ApiService
-
-	ReportProductDailyAsyncTaskCreateV30Api *ReportProductDailyAsyncTaskCreateV30ApiService
-
-	ReportProductHourlyAsyncTaskCreateV30Api *ReportProductHourlyAsyncTaskCreateV30ApiService
-
-	ReportRtaCusExpGetV2Api *ReportRtaCusExpGetV2ApiService
-
-	ReportRtaExpGetV2Api *ReportRtaExpGetV2ApiService
-
-	ReportRtaExpLocalDailyGetV30Api *ReportRtaExpLocalDailyGetV30ApiService
-
-	ReportRtaExpLocalHourlyGetV30Api *ReportRtaExpLocalHourlyGetV30ApiService
-
-	ReportRtaGetV2Api *ReportRtaGetV2ApiService
-
-	ReportRubeexGetV2Api *ReportRubeexGetV2ApiService
-
-	ReportSitePageV2Api *ReportSitePageV2ApiService
-
-	ReportStardeliveryTaskDataGetV30Api *ReportStardeliveryTaskDataGetV30ApiService
-
-	ReportStardeliveryTaskVideoDataGetV30Api *ReportStardeliveryTaskVideoDataGetV30ApiService
-
-	ReportVideoFrameGetV2Api *ReportVideoFrameGetV2ApiService
-
-	ServeMarketActiveFuncGetV10Api *ServeMarketActiveFuncGetV10ApiService
-
-	ServeMarketCidVerifyTokenV10Api *ServeMarketCidVerifyTokenV10ApiService
-
-	ServeMarketOrderGetV10Api *ServeMarketOrderGetV10ApiService
-
-	SharedWalletDailyStatGetV30Api *SharedWalletDailyStatGetV30ApiService
-
-	SharedWalletMainWalletGetV30Api *SharedWalletMainWalletGetV30ApiService
-
-	SharedWalletTransactionDetailGetV30Api *SharedWalletTransactionDetailGetV30ApiService
-
-	SharedWalletWalletBalanceGetV30Api *SharedWalletWalletBalanceGetV30ApiService
-
-	SharedWalletWalletInfoGetV30Api *SharedWalletWalletInfoGetV30ApiService
-
-	SharedWalletWalletRelationGetV30Api *SharedWalletWalletRelationGetV30ApiService
-
-	SpiTaskGetV2Api *SpiTaskGetV2ApiService
-
-	StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
-
-	StarBillGetPendingV2Api *StarBillGetPendingV2ApiService
-
-	StarBillPayV2Api *StarBillPayV2ApiService
-
-	StarCampaignListV2Api *StarCampaignListV2ApiService
-
-	StarChallengeAddBudgetV2Api *StarChallengeAddBudgetV2ApiService
-
-	StarChallengeAuthorListV2Api *StarChallengeAuthorListV2ApiService
-
-	StarChallengeCancelV2Api *StarChallengeCancelV2ApiService
-
-	StarChallengeExpandRangeV2Api *StarChallengeExpandRangeV2ApiService
-
-	StarChallengeGetPushAdResultsV2Api *StarChallengeGetPushAdResultsV2ApiService
-
-	StarChallengeInfoV2Api *StarChallengeInfoV2ApiService
-
-	StarChallengeItemsDataV2Api *StarChallengeItemsDataV2ApiService
-
-	StarChallengeListV2Api *StarChallengeListV2ApiService
-
-	StarChallengePushItemsToAdV2Api *StarChallengePushItemsToAdV2ApiService
-
-	StarClueGetV2Api *StarClueGetV2ApiService
-
-	StarComponentCreateLinkV2Api *StarComponentCreateLinkV2ApiService
-
-	StarComponentQueryIndustryAnchorV2Api *StarComponentQueryIndustryAnchorV2ApiService
-
-	StarComponentQueryLinkV2Api *StarComponentQueryLinkV2ApiService
-
-	StarComponentUpdateLinkV2Api *StarComponentUpdateLinkV2ApiService
-
-	StarDataTaskTimelineReportV2Api *StarDataTaskTimelineReportV2ApiService
-
-	StarDemandCreateAssignV2Api *StarDemandCreateAssignV2ApiService
-
-	StarDemandCreateChallengeV2Api *StarDemandCreateChallengeV2ApiService
-
-	StarDemandListV2Api *StarDemandListV2ApiService
-
-	StarDemandOmCreateChallengeV2Api *StarDemandOmCreateChallengeV2ApiService
-
-	StarDemandOmExpandChallengeV2Api *StarDemandOmExpandChallengeV2ApiService
-
-	StarDemandOmGetChallengeItemsDataV2Api *StarDemandOmGetChallengeItemsDataV2ApiService
-
-	StarDemandOmGetChallengeV2Api *StarDemandOmGetChallengeV2ApiService
-
-	StarDemandOmGetDemandListV2Api *StarDemandOmGetDemandListV2ApiService
-
-	StarDemandOmUpdateChallengeV2Api *StarDemandOmUpdateChallengeV2ApiService
-
-	StarDemandOrderListV2Api *StarDemandOrderListV2ApiService
-
-	StarGetCreateChallengeDataDictV2Api *StarGetCreateChallengeDataDictV2ApiService
-
-	StarInfoV2Api *StarInfoV2ApiService
-
-	StarMcnContractChallengeV2Api *StarMcnContractChallengeV2ApiService
-
-	StarMcnGetContractChallengeAuthorItemListV2V2Api *StarMcnGetContractChallengeAuthorItemListV2V2ApiService
-
-	StarMcnGetContractedChallengeListV2Api *StarMcnGetContractedChallengeListV2ApiService
-
-	StarMcnGetContractedChallengeUrlV2Api *StarMcnGetContractedChallengeUrlV2ApiService
-
-	StarMcnGetUnparticipatedTaskV2Api *StarMcnGetUnparticipatedTaskV2ApiService
-
-	StarOrderApproveResourceV2Api *StarOrderApproveResourceV2ApiService
-
-	StarOrderDemanderCancelV2Api *StarOrderDemanderCancelV2ApiService
-
-	StarOrderDetailV2Api *StarOrderDetailV2ApiService
-
-	StarOrderFinishV2Api *StarOrderFinishV2ApiService
-
-	StarOrderGetCancelAmountV2Api *StarOrderGetCancelAmountV2ApiService
-
-	StarOrderGetComponentV2Api *StarOrderGetComponentV2ApiService
-
-	StarOrderGetInfoV2Api *StarOrderGetInfoV2ApiService
-
-	StarOrderGetScriptV2Api *StarOrderGetScriptV2ApiService
-
-	StarOrderGetVideoV2Api *StarOrderGetVideoV2ApiService
-
-	StarOrderListByCampaignV2Api *StarOrderListByCampaignV2ApiService
-
-	StarOrderPublishResourceV2Api *StarOrderPublishResourceV2ApiService
-
-	StarOrderPushResourceV2Api *StarOrderPushResourceV2ApiService
-
-	StarOrderRejectResourceV2Api *StarOrderRejectResourceV2ApiService
-
-	StarOrderReplyAuthorCancelV2Api *StarOrderReplyAuthorCancelV2ApiService
-
-	StarOrderUpdateV2Api *StarOrderUpdateV2ApiService
-
-	StarReportCustomDataTopicDailyReportV2Api *StarReportCustomDataTopicDailyReportV2ApiService
-
-	StarReportCustomDataTopicReportV2Api *StarReportCustomDataTopicReportV2ApiService
-
-	StarReportDataTopicConfigV2Api *StarReportDataTopicConfigV2ApiService
-
-	StarReportOrderOverviewGetV2Api *StarReportOrderOverviewGetV2ApiService
-
-	StarReportOrderOverviewV2Api *StarReportOrderOverviewV2ApiService
-
-	StarReportOrderUserDistributionGetV2Api *StarReportOrderUserDistributionGetV2ApiService
-
-	StarStarAdUniteTaskDetailV2Api *StarStarAdUniteTaskDetailV2ApiService
-
-	StarStarAdUniteTaskItemListV2Api *StarStarAdUniteTaskItemListV2ApiService
-
-	StarStarAdUniteTaskListV2Api *StarStarAdUniteTaskListV2ApiService
-
-	StarUserGetAwemeAuthorIdV2Api *StarUserGetAwemeAuthorIdV2ApiService
-
-	StarUserGetStarIdV2Api *StarUserGetStarIdV2ApiService
-
-	StardeliveryTaskAuthorDetailV30Api *StardeliveryTaskAuthorDetailV30ApiService
-
-	StardeliveryTaskAuthorVideoDetailV30Api *StardeliveryTaskAuthorVideoDetailV30ApiService
-
-	StardeliveryTaskBudgetUpdateV30Api *StardeliveryTaskBudgetUpdateV30ApiService
-
-	StardeliveryTaskCancelV30Api *StardeliveryTaskCancelV30ApiService
-
-	StardeliveryTaskCreateResultGetV30Api *StardeliveryTaskCreateResultGetV30ApiService
-
-	StardeliveryTaskCreateV30Api *StardeliveryTaskCreateV30ApiService
-
-	StardeliveryTaskDetailV30Api *StardeliveryTaskDetailV30ApiService
-
-	StardeliveryTaskListV30Api *StardeliveryTaskListV30ApiService
-
-	StardeliveryTaskPostEndTimeUpdateV30Api *StardeliveryTaskPostEndTimeUpdateV30ApiService
-
-	StardeliveryTaskShareV30Api *StardeliveryTaskShareV30ApiService
-
-	StardeliveryTaskShareableListV30Api *StardeliveryTaskShareableListV30ApiService
-
-	StardeliveryTaskSharingListV30Api *StardeliveryTaskSharingListV30ApiService
-
-	StardeliveryTaskUnshareV30Api *StardeliveryTaskUnshareV30ApiService
-
-	StardeliveryTaskUpdateV30Api *StardeliveryTaskUpdateV30ApiService
-
-	SubscribeAccountsAddV30Api *SubscribeAccountsAddV30ApiService
-
-	SubscribeAccountsListV30Api *SubscribeAccountsListV30ApiService
-
-	SubscribeAccountsRemoveV30Api *SubscribeAccountsRemoveV30ApiService
-
-	SuggWordsV30Api *SuggWordsV30ApiService
-
-	ToolQuickAppManagementQuickAppGetV2Api *ToolQuickAppManagementQuickAppGetV2ApiService
-
-	ToolsAbTestCreateV2Api *ToolsAbTestCreateV2ApiService
-
-	ToolsAbTestInfoGetV2Api *ToolsAbTestInfoGetV2ApiService
-
-	ToolsAbTestListGetV2Api *ToolsAbTestListGetV2ApiService
-
-	ToolsAbTestUpdateV2Api *ToolsAbTestUpdateV2ApiService
-
-	ToolsAdConvertDeepbidReadV2Api *ToolsAdConvertDeepbidReadV2ApiService
-
-	ToolsAdConvertOptimizedTargetGetV2Api *ToolsAdConvertOptimizedTargetGetV2ApiService
-
-	ToolsAdConvertQueryV2Api *ToolsAdConvertQueryV2ApiService
-
-	ToolsAdConvertTrackUrlUpdateV2Api *ToolsAdConvertTrackUrlUpdateV2ApiService
-
-	ToolsAdPreviewQrcodeGetV30Api *ToolsAdPreviewQrcodeGetV30ApiService
-
-	ToolsAdRaiseEstimateGetV2Api *ToolsAdRaiseEstimateGetV2ApiService
-
-	ToolsAdRaiseResultGetV2V2Api *ToolsAdRaiseResultGetV2V2ApiService
-
-	ToolsAdRaiseSetV2Api *ToolsAdRaiseSetV2ApiService
-
-	ToolsAdRaiseStatusGetV2Api *ToolsAdRaiseStatusGetV2ApiService
-
-	ToolsAdRaiseVersionGetV2Api *ToolsAdRaiseVersionGetV2ApiService
-
-	ToolsAdStatExtraInfoGetV2Api *ToolsAdStatExtraInfoGetV2ApiService
-
-	ToolsAdminInfoV2Api *ToolsAdminInfoV2ApiService
-
-	ToolsAdvertiserStoreSearchV2Api *ToolsAdvertiserStoreSearchV2ApiService
-
-	ToolsAipThirdSiteCreateV2Api *ToolsAipThirdSiteCreateV2ApiService
-
-	ToolsAipThirdSiteGetV2Api *ToolsAipThirdSiteGetV2ApiService
-
-	ToolsAipThirdSiteUpdateV2Api *ToolsAipThirdSiteUpdateV2ApiService
-
-	ToolsAppAuthGetV2Api *ToolsAppAuthGetV2ApiService
-
-	ToolsAppIosListV2Api *ToolsAppIosListV2ApiService
-
-	ToolsAppManagementAndroidAppListV2Api *ToolsAppManagementAndroidAppListV2ApiService
-
-	ToolsAppManagementAndroidBasicPackageGetV2Api *ToolsAppManagementAndroidBasicPackageGetV2ApiService
-
-	ToolsAppManagementAndroidBasicPackagePublishV2Api *ToolsAppManagementAndroidBasicPackagePublishV2ApiService
-
-	ToolsAppManagementAndroidBasicPackageUpdateV2Api *ToolsAppManagementAndroidBasicPackageUpdateV2ApiService
-
-	ToolsAppManagementAppGetV2Api *ToolsAppManagementAppGetV2ApiService
-
-	ToolsAppManagementBookingGetV2Api *ToolsAppManagementBookingGetV2ApiService
-
-	ToolsAppManagementBookingRecordsGetV2Api *ToolsAppManagementBookingRecordsGetV2ApiService
-
-	ToolsAppManagementBpShareCancelV2Api *ToolsAppManagementBpShareCancelV2ApiService
-
-	ToolsAppManagementBpShareV2Api *ToolsAppManagementBpShareV2ApiService
-
-	ToolsAppManagementExtendPackageCreateV2Api *ToolsAppManagementExtendPackageCreateV2ApiService
-
-	ToolsAppManagementExtendPackageCreateV2V2Api *ToolsAppManagementExtendPackageCreateV2V2ApiService
-
-	ToolsAppManagementExtendPackageListV2Api *ToolsAppManagementExtendPackageListV2ApiService
-
-	ToolsAppManagementExtendPackageListV2V2Api *ToolsAppManagementExtendPackageListV2V2ApiService
-
-	ToolsAppManagementExtendPackageUpdateV2Api *ToolsAppManagementExtendPackageUpdateV2ApiService
-
-	ToolsAppManagementExtendPackageUpdateV2V2Api *ToolsAppManagementExtendPackageUpdateV2V2ApiService
-
-	ToolsAppManagementIndustryInfoListV2Api *ToolsAppManagementIndustryInfoListV2ApiService
-
-	ToolsAppManagementShareAccountListV2Api *ToolsAppManagementShareAccountListV2ApiService
-
-	ToolsAppManagementUpdateAuthorizationV2Api *ToolsAppManagementUpdateAuthorizationV2ApiService
-
-	ToolsAppManagementUploadTaskCreateV2Api *ToolsAppManagementUploadTaskCreateV2ApiService
-
-	ToolsAppManagementUploadTaskListV2Api *ToolsAppManagementUploadTaskListV2ApiService
-
-	ToolsAssetLinkListV30Api *ToolsAssetLinkListV30ApiService
-
-	ToolsAwemeAuthAuthShareAdShareV2Api *ToolsAwemeAuthAuthShareAdShareV2ApiService
-
-	ToolsAwemeAuthCancelV2Api *ToolsAwemeAuthCancelV2ApiService
-
-	ToolsAwemeAuthListV2Api *ToolsAwemeAuthListV2ApiService
-
-	ToolsAwemeAuthRenewalV2Api *ToolsAwemeAuthRenewalV2ApiService
-
-	ToolsAwemeAuthV2Api *ToolsAwemeAuthV2ApiService
-
-	ToolsAwemeAuthorInfoGetV2Api *ToolsAwemeAuthorInfoGetV2ApiService
-
-	ToolsAwemeBannedCreateV30Api *ToolsAwemeBannedCreateV30ApiService
-
-	ToolsAwemeBannedDeleteV30Api *ToolsAwemeBannedDeleteV30ApiService
-
-	ToolsAwemeBannedListV30Api *ToolsAwemeBannedListV30ApiService
-
-	ToolsAwemeCategoryTopAuthorGetV2Api *ToolsAwemeCategoryTopAuthorGetV2ApiService
-
-	ToolsAwemeInfoSearchV2Api *ToolsAwemeInfoSearchV2ApiService
-
-	ToolsAwemeMultiLevelCategoryGetV2Api *ToolsAwemeMultiLevelCategoryGetV2ApiService
-
-	ToolsAwemeSimilarAuthorSearchV2Api *ToolsAwemeSimilarAuthorSearchV2ApiService
-
-	ToolsBidSuggestV2Api *ToolsBidSuggestV2ApiService
-
-	ToolsBidsSuggestV30Api *ToolsBidsSuggestV30ApiService
-
-	ToolsBlueFlowKeywordListV30Api *ToolsBlueFlowKeywordListV30ApiService
-
-	ToolsBlueFlowPackageListV30Api *ToolsBlueFlowPackageListV30ApiService
-
-	ToolsBpAssetManagementShareCancelV30Api *ToolsBpAssetManagementShareCancelV30ApiService
-
-	ToolsBpAssetManagementShareGetV30Api *ToolsBpAssetManagementShareGetV30ApiService
-
-	ToolsBpAssetManagementShareV30Api *ToolsBpAssetManagementShareV30ApiService
-
-	ToolsClueBridgeCallCreateV2Api *ToolsClueBridgeCallCreateV2ApiService
-
-	ToolsClueCallCreateV2Api *ToolsClueCallCreateV2ApiService
-
-	ToolsClueCallVirtualNumberGetV2Api *ToolsClueCallVirtualNumberGetV2ApiService
-
-	ToolsClueCallVirtualNumberRefundDetailGetV2Api *ToolsClueCallVirtualNumberRefundDetailGetV2ApiService
-
-	ToolsClueCallbackV2Api *ToolsClueCallbackV2ApiService
-
-	ToolsClueClueOverviewQueryV2Api *ToolsClueClueOverviewQueryV2ApiService
-
-	ToolsClueContactLogListV2Api *ToolsClueContactLogListV2ApiService
-
-	ToolsClueContactLogOverviewQueryV2Api *ToolsClueContactLogOverviewQueryV2ApiService
-
-	ToolsClueExtInfoCallbackV2Api *ToolsClueExtInfoCallbackV2ApiService
-
-	ToolsClueFormDetailV2Api *ToolsClueFormDetailV2ApiService
-
-	ToolsClueFormGetV2Api *ToolsClueFormGetV2ApiService
-
-	ToolsClueGetV2Api *ToolsClueGetV2ApiService
-
-	ToolsClueInfoUpdateV2Api *ToolsClueInfoUpdateV2ApiService
-
-	ToolsClueLifeGetV2Api *ToolsClueLifeGetV2ApiService
-
-	ToolsClueLiteContactGetV2Api *ToolsClueLiteContactGetV2ApiService
-
-	ToolsClueLiteContactRecordV2Api *ToolsClueLiteContactRecordV2ApiService
-
-	ToolsClueRefundDetailGetV2Api *ToolsClueRefundDetailGetV2ApiService
-
-	ToolsClueRefundInfoQueryV2Api *ToolsClueRefundInfoQueryV2ApiService
-
-	ToolsClueRefundReportGetV2Api *ToolsClueRefundReportGetV2ApiService
-
-	ToolsClueRefundViewGetV2Api *ToolsClueRefundViewGetV2ApiService
-
-	ToolsClueRobotScriptQueryV2Api *ToolsClueRobotScriptQueryV2ApiService
-
-	ToolsClueRobotTaskCancelV2Api *ToolsClueRobotTaskCancelV2ApiService
-
-	ToolsClueRobotTaskCreateV2Api *ToolsClueRobotTaskCreateV2ApiService
-
-	ToolsClueSmartPhoneGetV2Api *ToolsClueSmartPhoneGetV2ApiService
-
-	ToolsClueWebrtcTokenGetV2Api *ToolsClueWebrtcTokenGetV2ApiService
-
-	ToolsCommentGetV30Api *ToolsCommentGetV30ApiService
-
-	ToolsCommentHideV30Api *ToolsCommentHideV30ApiService
-
-	ToolsCommentMetricsGetV30Api *ToolsCommentMetricsGetV30ApiService
-
-	ToolsCommentMid2itemIdV30Api *ToolsCommentMid2itemIdV30ApiService
-
-	ToolsCommentReplyGetV30Api *ToolsCommentReplyGetV30ApiService
-
-	ToolsCommentReplyV30Api *ToolsCommentReplyV30ApiService
-
-	ToolsCommentStickOnTopV30Api *ToolsCommentStickOnTopV30ApiService
-
-	ToolsCommentTermsBannedAddV30Api *ToolsCommentTermsBannedAddV30ApiService
-
-	ToolsCommentTermsBannedDeleteV30Api *ToolsCommentTermsBannedDeleteV30ApiService
-
-	ToolsCommentTermsBannedGetV30Api *ToolsCommentTermsBannedGetV30ApiService
-
-	ToolsCommentTermsBannedUpdateV30Api *ToolsCommentTermsBannedUpdateV30ApiService
-
-	ToolsCountryInfoV2Api *ToolsCountryInfoV2ApiService
-
-	ToolsCreativeWordSelectV2Api *ToolsCreativeWordSelectV2ApiService
-
-	ToolsDiagnosisAdGetV2V2Api *ToolsDiagnosisAdGetV2V2ApiService
-
-	ToolsDiagnosisSuggestionGetV2Api *ToolsDiagnosisSuggestionGetV2ApiService
-
-	ToolsDownloadPackageGetV2Api *ToolsDownloadPackageGetV2ApiService
-
-	ToolsDownloadPackageParseV2Api *ToolsDownloadPackageParseV2ApiService
-
-	ToolsEstimateAudienceV2Api *ToolsEstimateAudienceV2ApiService
-
-	ToolsEstimatedPriceGetV2Api *ToolsEstimatedPriceGetV2ApiService
-
-	ToolsEventAssetsGetV2Api *ToolsEventAssetsGetV2ApiService
-
-	ToolsEventConvertOptimizedGoalGetV30Api *ToolsEventConvertOptimizedGoalGetV30ApiService
-
-	ToolsGrayGetV30Api *ToolsGrayGetV30ApiService
-
-	ToolsIesAccountSearchV2Api *ToolsIesAccountSearchV2ApiService
-
-	ToolsIndustryGetV2Api *ToolsIndustryGetV2ApiService
-
-	ToolsInterestActionActionKeywordV2Api *ToolsInterestActionActionKeywordV2ApiService
-
-	ToolsInterestActionId2wordV2Api *ToolsInterestActionId2wordV2ApiService
-
-	ToolsInterestActionInterestKeywordV2Api *ToolsInterestActionInterestKeywordV2ApiService
-
-	ToolsInterestActionKeywordSuggestV2Api *ToolsInterestActionKeywordSuggestV2ApiService
-
-	ToolsIsSupportUniversalGetV2Api *ToolsIsSupportUniversalGetV2ApiService
-
-	ToolsKeyActionGetV2Api *ToolsKeyActionGetV2ApiService
-
-	ToolsKeywordsBidRatioCreateV30Api *ToolsKeywordsBidRatioCreateV30ApiService
-
-	ToolsKeywordsBidRatioDeleteV30Api *ToolsKeywordsBidRatioDeleteV30ApiService
-
-	ToolsKeywordsBidRatioGetV30Api *ToolsKeywordsBidRatioGetV30ApiService
-
-	ToolsKeywordsBidRatioUpdateV30Api *ToolsKeywordsBidRatioUpdateV30ApiService
-
-	ToolsKeywordsProjectInfoGetV30Api *ToolsKeywordsProjectInfoGetV30ApiService
-
-	ToolsLandingGroupCreateV2Api *ToolsLandingGroupCreateV2ApiService
-
-	ToolsLandingGroupGetV2Api *ToolsLandingGroupGetV2ApiService
-
-	ToolsLandingGroupSiteOptStatusUpdateV2Api *ToolsLandingGroupSiteOptStatusUpdateV2ApiService
-
-	ToolsLandingGroupUpdateV2Api *ToolsLandingGroupUpdateV2ApiService
-
-	ToolsLiveAuthorizeListV2Api *ToolsLiveAuthorizeListV2ApiService
-
-	ToolsLogSearchV2Api *ToolsLogSearchV2ApiService
-
-	ToolsMicroAppCreateV30Api *ToolsMicroAppCreateV30ApiService
-
-	ToolsMicroAppListV30Api *ToolsMicroAppListV30ApiService
-
-	ToolsMicroAppUpdateV30Api *ToolsMicroAppUpdateV30ApiService
-
-	ToolsMicroGameCreateV30Api *ToolsMicroGameCreateV30ApiService
-
-	ToolsMicroGameListV30Api *ToolsMicroGameListV30ApiService
-
-	ToolsMicroGameUpdateV30Api *ToolsMicroGameUpdateV30ApiService
-
-	ToolsNoBidSuggestBidV2Api *ToolsNoBidSuggestBidV2ApiService
-
-	ToolsOrangeSiteGetV30Api *ToolsOrangeSiteGetV30ApiService
-
-	ToolsPioneerProgramAttachmentUploadV2Api *ToolsPioneerProgramAttachmentUploadV2ApiService
-
-	ToolsPlayableCloudGameListV2Api *ToolsPlayableCloudGameListV2ApiService
-
-	ToolsPlayableCreateV2Api *ToolsPlayableCreateV2ApiService
-
-	ToolsPlayableGrantResultV2Api *ToolsPlayableGrantResultV2ApiService
-
-	ToolsPlayableGrantV2Api *ToolsPlayableGrantV2ApiService
-
-	ToolsPlayableListGetV2Api *ToolsPlayableListGetV2ApiService
-
-	ToolsPlayableSaveV2Api *ToolsPlayableSaveV2ApiService
-
-	ToolsPlayableUploadV2Api *ToolsPlayableUploadV2ApiService
-
-	ToolsPlayableValidateV2Api *ToolsPlayableValidateV2ApiService
-
-	ToolsPreAuditGetV2Api *ToolsPreAuditGetV2ApiService
-
-	ToolsPreAuditSendV2Api *ToolsPreAuditSendV2ApiService
-
-	ToolsPrivativeWordAdAddV2Api *ToolsPrivativeWordAdAddV2ApiService
-
-	ToolsPrivativeWordAdUpdateV2Api *ToolsPrivativeWordAdUpdateV2ApiService
-
-	ToolsPrivativeWordBatchGetV30Api *ToolsPrivativeWordBatchGetV30ApiService
-
-	ToolsPrivativeWordCampaignAddV2Api *ToolsPrivativeWordCampaignAddV2ApiService
-
-	ToolsPrivativeWordCampaignUpdateV2Api *ToolsPrivativeWordCampaignUpdateV2ApiService
-
-	ToolsPrivativeWordGetV2Api *ToolsPrivativeWordGetV2ApiService
-
-	ToolsPrivativeWordProjectAddV30Api *ToolsPrivativeWordProjectAddV30ApiService
-
-	ToolsPrivativeWordProjectUpdateV30Api *ToolsPrivativeWordProjectUpdateV30ApiService
-
-	ToolsPrivativeWordPromotionAddV30Api *ToolsPrivativeWordPromotionAddV30ApiService
-
-	ToolsPrivativeWordPromotionUpdateV30Api *ToolsPrivativeWordPromotionUpdateV30ApiService
-
-	ToolsPromotionCardRecommendGetV2Api *ToolsPromotionCardRecommendGetV2ApiService
-
-	ToolsPromotionCardRecommendTitleGetV2Api *ToolsPromotionCardRecommendTitleGetV2ApiService
-
-	ToolsPromotionDiagnosisSuggestionAcceptV30Api *ToolsPromotionDiagnosisSuggestionAcceptV30ApiService
-
-	ToolsPromotionDiagnosisSuggestionGetV30Api *ToolsPromotionDiagnosisSuggestionGetV30ApiService
-
-	ToolsPromotionRaiseSetV30Api *ToolsPromotionRaiseSetV30ApiService
-
-	ToolsPromotionRaiseStatusCurrentIdsGetV30Api *ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService
-
-	ToolsPromotionRaiseStatusGetV30Api *ToolsPromotionRaiseStatusGetV30ApiService
-
-	ToolsPromotionRaiseStopV30Api *ToolsPromotionRaiseStopV30ApiService
-
-	ToolsPromotionRaiseVersionGetV30Api *ToolsPromotionRaiseVersionGetV30ApiService
-
-	ToolsQuotaGetV2Api *ToolsQuotaGetV2ApiService
-
-	ToolsRegionGetV2Api *ToolsRegionGetV2ApiService
-
-	ToolsRtaGetInfoTmpV2Api *ToolsRtaGetInfoTmpV2ApiService
-
-	ToolsRtaGetInfoV2Api *ToolsRtaGetInfoV2ApiService
-
-	ToolsRtaGetV2Api *ToolsRtaGetV2ApiService
-
-	ToolsRtaScopeGetV30Api *ToolsRtaScopeGetV30ApiService
-
-	ToolsRtaSetScopeV2Api *ToolsRtaSetScopeV2ApiService
-
-	ToolsRtaStatusUpdateV2Api *ToolsRtaStatusUpdateV2ApiService
-
-	ToolsRubeexGetV2Api *ToolsRubeexGetV2ApiService
-
-	ToolsRubeexPlayableAdListV2Api *ToolsRubeexPlayableAdListV2ApiService
-
-	ToolsRubeexPlayableListV2Api *ToolsRubeexPlayableListV2ApiService
-
-	ToolsRubeexRemarkV2Api *ToolsRubeexRemarkV2ApiService
-
-	ToolsRubeexVersionGetV2Api *ToolsRubeexVersionGetV2ApiService
-
-	ToolsSearchBidRatioGetV2Api *ToolsSearchBidRatioGetV2ApiService
-
-	ToolsSiteCopyV2Api *ToolsSiteCopyV2ApiService
-
-	ToolsSiteCreateV2Api *ToolsSiteCreateV2ApiService
-
-	ToolsSiteFormsListV2Api *ToolsSiteFormsListV2ApiService
-
-	ToolsSiteGetV2Api *ToolsSiteGetV2ApiService
-
-	ToolsSiteHandselV2Api *ToolsSiteHandselV2ApiService
-
-	ToolsSitePreviewV2Api *ToolsSitePreviewV2ApiService
-
-	ToolsSiteReadV2Api *ToolsSiteReadV2ApiService
-
-	ToolsSiteTemplateCreateV2Api *ToolsSiteTemplateCreateV2ApiService
-
-	ToolsSiteTemplateGetV2Api *ToolsSiteTemplateGetV2ApiService
-
-	ToolsSiteTemplatePicUrlGetV2Api *ToolsSiteTemplatePicUrlGetV2ApiService
-
-	ToolsSiteTemplatePreviewV2Api *ToolsSiteTemplatePreviewV2ApiService
-
-	ToolsSiteTemplateSiteCreateV2Api *ToolsSiteTemplateSiteCreateV2ApiService
-
-	ToolsSiteUpdateStatusV2Api *ToolsSiteUpdateStatusV2ApiService
-
-	ToolsSiteUpdateV2Api *ToolsSiteUpdateV2ApiService
-
-	ToolsStarTaskMaterialTypeV2Api *ToolsStarTaskMaterialTypeV2ApiService
-
-	ToolsStarTaskSettlementConfigV2Api *ToolsStarTaskSettlementConfigV2ApiService
-
-	ToolsStarTaskTitleTopicGetV2Api *ToolsStarTaskTitleTopicGetV2ApiService
-
-	ToolsSuggestBudgetGetV30Api *ToolsSuggestBudgetGetV30ApiService
-
-	ToolsTaskRaiseCreateV2Api *ToolsTaskRaiseCreateV2ApiService
-
-	ToolsTaskRaiseDataGetV2Api *ToolsTaskRaiseDataGetV2ApiService
-
-	ToolsTaskRaiseGetV2Api *ToolsTaskRaiseGetV2ApiService
-
-	ToolsTaskRaiseOptimizationIdsGetV2Api *ToolsTaskRaiseOptimizationIdsGetV2ApiService
-
-	ToolsTaskRaiseStatusStopV2Api *ToolsTaskRaiseStatusStopV2ApiService
-
-	ToolsThirdSiteCreateV2Api *ToolsThirdSiteCreateV2ApiService
-
-	ToolsThirdSiteDeleteV2Api *ToolsThirdSiteDeleteV2ApiService
-
-	ToolsThirdSiteGetV2Api *ToolsThirdSiteGetV2ApiService
-
-	ToolsThirdSitePreviewV2Api *ToolsThirdSitePreviewV2ApiService
-
-	ToolsThirdSiteUpdateV2Api *ToolsThirdSiteUpdateV2ApiService
-
-	ToolsUnionFlowPackageCreateV2Api *ToolsUnionFlowPackageCreateV2ApiService
-
-	ToolsUnionFlowPackageDeleteV2Api *ToolsUnionFlowPackageDeleteV2ApiService
-
-	ToolsUnionFlowPackageGetV2Api *ToolsUnionFlowPackageGetV2ApiService
-
-	ToolsUnionFlowPackagePromotionReportV30Api *ToolsUnionFlowPackagePromotionReportV30ApiService
-
-	ToolsUnionFlowPackageReportV2Api *ToolsUnionFlowPackageReportV2ApiService
-
-	ToolsUnionFlowPackageUpdateV2Api *ToolsUnionFlowPackageUpdateV2ApiService
-
-	ToolsVideoCheckAvailableAnchorV2Api *ToolsVideoCheckAvailableAnchorV2ApiService
-
-	ToolsVideoCoverSuggestV2Api *ToolsVideoCoverSuggestV2ApiService
-
-	ToolsVideoPredictV2Api *ToolsVideoPredictV2ApiService
-
-	ToolsWechatAppletCreateV30Api *ToolsWechatAppletCreateV30ApiService
-
-	ToolsWechatAppletListV30Api *ToolsWechatAppletListV30ApiService
-
-	ToolsWechatAppletUpdateV30Api *ToolsWechatAppletUpdateV30ApiService
-
-	ToolsWechatGameCreateV30Api *ToolsWechatGameCreateV30ApiService
-
-	ToolsWechatGameListV30Api *ToolsWechatGameListV30ApiService
-
-	UserInfoV2Api *UserInfoV2ApiService
-
-	CommonApi *CommonApiService
+	//
+	//QianchuanAccountBalanceGetV10Api *QianchuanAccountBalanceGetV10ApiService
+	//
+	//QianchuanAccountBudgetGetV10Api *QianchuanAccountBudgetGetV10ApiService
+	//
+	//QianchuanAccountBudgetUpdateV10Api *QianchuanAccountBudgetUpdateV10ApiService
+	//
+	//QianchuanAdBidUpdateV10Api *QianchuanAdBidUpdateV10ApiService
+	//
+	//QianchuanAdBudgetUpdateV10Api *QianchuanAdBudgetUpdateV10ApiService
+	//
+	//QianchuanAdCompensateStatusGetV10Api *QianchuanAdCompensateStatusGetV10ApiService
+	//
+	//QianchuanAdCreateV10Api *QianchuanAdCreateV10ApiService
+	//
+	//QianchuanAdDetailGetV10Api *QianchuanAdDetailGetV10ApiService
+	//
+	//QianchuanAdGetV10Api *QianchuanAdGetV10ApiService
+	//
+	//QianchuanAdKeywordsGetV10Api *QianchuanAdKeywordsGetV10ApiService
+	//
+	//QianchuanAdKeywordsUpdateV10Api *QianchuanAdKeywordsUpdateV10ApiService
+	//
+	//QianchuanAdLearingStatusGetV10Api *QianchuanAdLearingStatusGetV10ApiService
+	//
+	//QianchuanAdPivativewordsGetV10Api *QianchuanAdPivativewordsGetV10ApiService
+	//
+	//QianchuanAdPivativewordsUpdateV10Api *QianchuanAdPivativewordsUpdateV10ApiService
+	//
+	//QianchuanAdQuotaGetV10Api *QianchuanAdQuotaGetV10ApiService
+	//
+	//QianchuanAdRecommendKeywordsGetV10Api *QianchuanAdRecommendKeywordsGetV10ApiService
+	//
+	//QianchuanAdRegionUpdateV10Api *QianchuanAdRegionUpdateV10ApiService
+	//
+	//QianchuanAdRejectReasonV10Api *QianchuanAdRejectReasonV10ApiService
+	//
+	//QianchuanAdScheduleDateUpdateV10Api *QianchuanAdScheduleDateUpdateV10ApiService
+	//
+	//QianchuanAdScheduleFixedRangeUpdateV10Api *QianchuanAdScheduleFixedRangeUpdateV10ApiService
+	//
+	//QianchuanAdScheduleTimeUpdateV10Api *QianchuanAdScheduleTimeUpdateV10ApiService
+	//
+	//QianchuanAdStatusUpdateV10Api *QianchuanAdStatusUpdateV10ApiService
+	//
+	//QianchuanAdUpdateV10Api *QianchuanAdUpdateV10ApiService
+	//
+	//QianchuanAdvertiserTypeGetV10Api *QianchuanAdvertiserTypeGetV10ApiService
+	//
+	//QianchuanAudienceCreateByFileV10Api *QianchuanAudienceCreateByFileV10ApiService
+	//
+	//QianchuanAudienceDeleteV10Api *QianchuanAudienceDeleteV10ApiService
+	//
+	//QianchuanAudienceFilePartUploadV10Api *QianchuanAudienceFilePartUploadV10ApiService
+	//
+	//QianchuanAudienceFileUploadV10Api *QianchuanAudienceFileUploadV10ApiService
+	//
+	//QianchuanAudienceGroupGetV10Api *QianchuanAudienceGroupGetV10ApiService
+	//
+	//QianchuanAudienceListGetV10Api *QianchuanAudienceListGetV10ApiService
+	//
+	//QianchuanAudiencePushV10Api *QianchuanAudiencePushV10ApiService
+	//
+	//QianchuanAwemeAuthorizedGetV10Api *QianchuanAwemeAuthorizedGetV10ApiService
+	//
+	//QianchuanAwemeEstimateProfitV10Api *QianchuanAwemeEstimateProfitV10ApiService
+	//
+	//QianchuanAwemeInterestActionInterestKeywordV10Api *QianchuanAwemeInterestActionInterestKeywordV10ApiService
+	//
+	//QianchuanAwemeOrderBudgetAddV10Api *QianchuanAwemeOrderBudgetAddV10ApiService
+	//
+	//QianchuanAwemeOrderCreateV10Api *QianchuanAwemeOrderCreateV10ApiService
+	//
+	//QianchuanAwemeOrderDetailGetV10Api *QianchuanAwemeOrderDetailGetV10ApiService
+	//
+	//QianchuanAwemeOrderGetV10Api *QianchuanAwemeOrderGetV10ApiService
+	//
+	//QianchuanAwemeOrderQuotaGetV10Api *QianchuanAwemeOrderQuotaGetV10ApiService
+	//
+	//QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api *QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService
+	//
+	//QianchuanAwemeOrderTerminateV10Api *QianchuanAwemeOrderTerminateV10ApiService
+	//
+	//QianchuanAwemeProductAvailableGetV10Api *QianchuanAwemeProductAvailableGetV10ApiService
+	//
+	//QianchuanAwemeReportOrderGetV10Api *QianchuanAwemeReportOrderGetV10ApiService
+	//
+	//QianchuanAwemeSuggestBidV10Api *QianchuanAwemeSuggestBidV10ApiService
+	//
+	//QianchuanAwemeSuggestRoiGoalV10Api *QianchuanAwemeSuggestRoiGoalV10ApiService
+	//
+	//QianchuanAwemeVideoGetV10Api *QianchuanAwemeVideoGetV10ApiService
+	//
+	//QianchuanBatchCampaignStatusUpdateV10Api *QianchuanBatchCampaignStatusUpdateV10ApiService
+	//
+	//QianchuanBrandAuthorizedGetV10Api *QianchuanBrandAuthorizedGetV10ApiService
+	//
+	//QianchuanCampaignCreateV10Api *QianchuanCampaignCreateV10ApiService
+	//
+	//QianchuanCampaignListGetV10Api *QianchuanCampaignListGetV10ApiService
+	//
+	//QianchuanCampaignUpdateV10Api *QianchuanCampaignUpdateV10ApiService
+	//
+	//QianchuanCarouselAwemeGetV10Api *QianchuanCarouselAwemeGetV10ApiService
+	//
+	//QianchuanCarouselGetV10Api *QianchuanCarouselGetV10ApiService
+	//
+	//QianchuanCreativeGetV10Api *QianchuanCreativeGetV10ApiService
+	//
+	//QianchuanCreativeRejectReasonV10Api *QianchuanCreativeRejectReasonV10ApiService
+	//
+	//QianchuanCreativeStatusUpdateV10Api *QianchuanCreativeStatusUpdateV10ApiService
+	//
+	//QianchuanDmpAudiencesGetV10Api *QianchuanDmpAudiencesGetV10ApiService
+	//
+	//QianchuanEcpAwemeAdGetV10Api *QianchuanEcpAwemeAdGetV10ApiService
+	//
+	//QianchuanEstimateEffectV10Api *QianchuanEstimateEffectV10ApiService
+	//
+	//QianchuanFileImageDeleteV10Api *QianchuanFileImageDeleteV10ApiService
+	//
+	//QianchuanFileVideoAwemeGetV10Api *QianchuanFileVideoAwemeGetV10ApiService
+	//
+	//QianchuanFileVideoDeleteV10Api *QianchuanFileVideoDeleteV10ApiService
+	//
+	//QianchuanFileVideoEfficiencyGetV10Api *QianchuanFileVideoEfficiencyGetV10ApiService
+	//
+	//QianchuanFileVideoOriginalGetV10Api *QianchuanFileVideoOriginalGetV10ApiService
+	//
+	//QianchuanFinanceDetailGetV10Api *QianchuanFinanceDetailGetV10ApiService
+	//
+	//QianchuanFinanceWalletGetV10Api *QianchuanFinanceWalletGetV10ApiService
+	//
+	//QianchuanImageGetV10Api *QianchuanImageGetV10ApiService
+	//
+	//QianchuanKeywordCheckV10Api *QianchuanKeywordCheckV10ApiService
+	//
+	//QianchuanKeywordPackageGetV10Api *QianchuanKeywordPackageGetV10ApiService
+	//
+	//QianchuanLqAdGetV10Api *QianchuanLqAdGetV10ApiService
+	//
+	//QianchuanOrientationPackageGetV10Api *QianchuanOrientationPackageGetV10ApiService
+	//
+	//QianchuanProductAnalyseCompareCreativeV10Api *QianchuanProductAnalyseCompareCreativeV10ApiService
+	//
+	//QianchuanProductAnalyseCompareStatsDataV10Api *QianchuanProductAnalyseCompareStatsDataV10ApiService
+	//
+	//QianchuanProductAnalyseListV10Api *QianchuanProductAnalyseListV10ApiService
+	//
+	//QianchuanProductAvailableGetV10Api *QianchuanProductAvailableGetV10ApiService
+	//
+	//QianchuanReportAdGetV10Api *QianchuanReportAdGetV10ApiService
+	//
+	//QianchuanReportAdvertiserGetV10Api *QianchuanReportAdvertiserGetV10ApiService
+	//
+	//QianchuanReportCreativeGetV10Api *QianchuanReportCreativeGetV10ApiService
+	//
+	//QianchuanReportCustomConfigGetV10Api *QianchuanReportCustomConfigGetV10ApiService
+	//
+	//QianchuanReportCustomGetV10Api *QianchuanReportCustomGetV10ApiService
+	//
+	//QianchuanReportLiveGetV10Api *QianchuanReportLiveGetV10ApiService
+	//
+	//QianchuanReportLongTransferOrderGetV10Api *QianchuanReportLongTransferOrderGetV10ApiService
+	//
+	//QianchuanReportMaterialGetV10Api *QianchuanReportMaterialGetV10ApiService
+	//
+	//QianchuanReportSearchWordGetV10Api *QianchuanReportSearchWordGetV10ApiService
+	//
+	//QianchuanReportUniPromotionDimensionDataAuthorGetV10Api *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService
+	//
+	//QianchuanReportUniPromotionDimensionDataRoomGetV10Api *QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService
+	//
+	//QianchuanReportUniPromotionGetV10Api *QianchuanReportUniPromotionGetV10ApiService
+	//
+	//QianchuanReportVideoUserLoseGetV10Api *QianchuanReportVideoUserLoseGetV10ApiService
+	//
+	//QianchuanRoiGoalUpdateV10Api *QianchuanRoiGoalUpdateV10ApiService
+	//
+	//QianchuanShopAdvertiserListV10Api *QianchuanShopAdvertiserListV10ApiService
+	//
+	//QianchuanShopAuthorizedGetV10Api *QianchuanShopAuthorizedGetV10ApiService
+	//
+	//QianchuanShopGetV10Api *QianchuanShopGetV10ApiService
+	//
+	//QianchuanSuggestBidV10Api *QianchuanSuggestBidV10ApiService
+	//
+	//QianchuanSuggestBudgetV10Api *QianchuanSuggestBudgetV10ApiService
+	//
+	//QianchuanSuggestRoiGoalV10Api *QianchuanSuggestRoiGoalV10ApiService
+	//
+	//QianchuanTodayLiveRoomDetailGetV10Api *QianchuanTodayLiveRoomDetailGetV10ApiService
+	//
+	//QianchuanTodayLiveRoomFlowPerformanceGetV10Api *QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService
+	//
+	//QianchuanTodayLiveRoomGetV10Api *QianchuanTodayLiveRoomGetV10ApiService
+	//
+	//QianchuanTodayLiveRoomProductListGetV10Api *QianchuanTodayLiveRoomProductListGetV10ApiService
+	//
+	//QianchuanTodayLiveRoomUserGetV10Api *QianchuanTodayLiveRoomUserGetV10ApiService
+	//
+	//QianchuanToolsAllowCouponV10Api *QianchuanToolsAllowCouponV10ApiService
+	//
+	//QianchuanToolsAwemeAuthV10Api *QianchuanToolsAwemeAuthV10ApiService
+	//
+	//QianchuanToolsEstimateAudienceV10Api *QianchuanToolsEstimateAudienceV10ApiService
+	//
+	//QianchuanToolsGrayV10Api *QianchuanToolsGrayV10ApiService
+	//
+	//QianchuanToolsShopAuthV10Api *QianchuanToolsShopAuthV10ApiService
+	//
+	//QianchuanToolsSmartBoostAdBoostReportGetV10Api *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService
+	//
+	//QianchuanToolsSmartBoostAdBoostSetV10Api *QianchuanToolsSmartBoostAdBoostSetV10ApiService
+	//
+	//QianchuanToolsSmartBoostAdBoostStatusGetV10Api *QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService
+	//
+	//QianchuanToolsSmartBoostAdBoostVersionGetV10Api *QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService
+	//
+	//QianchuanTrackUrlCheckV10Api *QianchuanTrackUrlCheckV10ApiService
+	//
+	//QianchuanUniAwemeAuthorizedGetV10Api *QianchuanUniAwemeAuthorizedGetV10ApiService
+	//
+	//QianchuanUniPromotionListV10Api *QianchuanUniPromotionListV10ApiService
+	//
+	//QianchuanVideoGetV10Api *QianchuanVideoGetV10ApiService
+	//
+	//QueryInvoiceV2Api *QueryInvoiceV2ApiService
+	//
+	//QueryProjectV2Api *QueryProjectV2ApiService
+	//
+	//QueryStatementV2Api *QueryStatementV2ApiService
+	//
+	//ReportAdGetV2Api *ReportAdGetV2ApiService
+	//
+	//ReportAdvertiserGetV2Api *ReportAdvertiserGetV2ApiService
+	//
+	//ReportAgentGetV2V2Api *ReportAgentGetV2V2ApiService
+	//
+	//ReportAudienceAgeV2Api *ReportAudienceAgeV2ApiService
+	//
+	//ReportAudienceAwemeListV2Api *ReportAudienceAwemeListV2ApiService
+	//
+	//ReportAudienceCityV2Api *ReportAudienceCityV2ApiService
+	//
+	//ReportAudienceGenderV2Api *ReportAudienceGenderV2ApiService
+	//
+	//ReportAudienceInterestActionListV2Api *ReportAudienceInterestActionListV2ApiService
+	//
+	//ReportAudienceProvinceV2Api *ReportAudienceProvinceV2ApiService
+	//
+	//ReportBrandAdGetV30Api *ReportBrandAdGetV30ApiService
+	//
+	//ReportBrandAdvertiserGetV30Api *ReportBrandAdvertiserGetV30ApiService
+	//
+	//ReportBrandCampaignGetV30Api *ReportBrandCampaignGetV30ApiService
+	//
+	//ReportBrandCreativeGetV30Api *ReportBrandCreativeGetV30ApiService
+	//
+	//ReportCampaignGetV2Api *ReportCampaignGetV2ApiService
+	//
+	//ReportCreativeGetV2Api *ReportCreativeGetV2ApiService
+	//
+	//ReportCustomAsyncTaskCreateV30Api *ReportCustomAsyncTaskCreateV30ApiService
+	//
+	//ReportCustomAsyncTaskDownloadV30Api *ReportCustomAsyncTaskDownloadV30ApiService
+	//
+	//ReportCustomAsyncTaskGetV30Api *ReportCustomAsyncTaskGetV30ApiService
+	//
+	//ReportCustomConfigGetV30Api *ReportCustomConfigGetV30ApiService
+	//
+	//ReportCustomCreativeGetV30Api *ReportCustomCreativeGetV30ApiService
+	//
+	//ReportCustomGetV30Api *ReportCustomGetV30ApiService
+	//
+	//ReportLiveRoomAnalysisGetV2Api *ReportLiveRoomAnalysisGetV2ApiService
+	//
+	//ReportLiveRoomAttributeGetV2Api *ReportLiveRoomAttributeGetV2ApiService
+	//
+	//ReportLiveRoomAudiencePortraitGetV2Api *ReportLiveRoomAudiencePortraitGetV2ApiService
+	//
+	//ReportLiveRoomFlowCategoryGetV2Api *ReportLiveRoomFlowCategoryGetV2ApiService
+	//
+	//ReportLiveRoomProductGetV2Api *ReportLiveRoomProductGetV2ApiService
+	//
+	//ReportProductAsyncTaskDownloadV30Api *ReportProductAsyncTaskDownloadV30ApiService
+	//
+	//ReportProductAsyncTaskGetV30Api *ReportProductAsyncTaskGetV30ApiService
+	//
+	//ReportProductDailyAsyncTaskCreateV30Api *ReportProductDailyAsyncTaskCreateV30ApiService
+	//
+	//ReportProductHourlyAsyncTaskCreateV30Api *ReportProductHourlyAsyncTaskCreateV30ApiService
+	//
+	//ReportRtaCusExpGetV2Api *ReportRtaCusExpGetV2ApiService
+	//
+	//ReportRtaExpGetV2Api *ReportRtaExpGetV2ApiService
+	//
+	//ReportRtaExpLocalDailyGetV30Api *ReportRtaExpLocalDailyGetV30ApiService
+	//
+	//ReportRtaExpLocalHourlyGetV30Api *ReportRtaExpLocalHourlyGetV30ApiService
+	//
+	//ReportRtaGetV2Api *ReportRtaGetV2ApiService
+	//
+	//ReportRubeexGetV2Api *ReportRubeexGetV2ApiService
+	//
+	//ReportSitePageV2Api *ReportSitePageV2ApiService
+	//
+	//ReportStardeliveryTaskDataGetV30Api *ReportStardeliveryTaskDataGetV30ApiService
+	//
+	//ReportStardeliveryTaskVideoDataGetV30Api *ReportStardeliveryTaskVideoDataGetV30ApiService
+	//
+	//ReportVideoFrameGetV2Api *ReportVideoFrameGetV2ApiService
+	//
+	//ServeMarketActiveFuncGetV10Api *ServeMarketActiveFuncGetV10ApiService
+	//
+	//ServeMarketCidVerifyTokenV10Api *ServeMarketCidVerifyTokenV10ApiService
+	//
+	//ServeMarketOrderGetV10Api *ServeMarketOrderGetV10ApiService
+	//
+	//SharedWalletDailyStatGetV30Api *SharedWalletDailyStatGetV30ApiService
+	//
+	//SharedWalletMainWalletGetV30Api *SharedWalletMainWalletGetV30ApiService
+	//
+	//SharedWalletTransactionDetailGetV30Api *SharedWalletTransactionDetailGetV30ApiService
+	//
+	//SharedWalletWalletBalanceGetV30Api *SharedWalletWalletBalanceGetV30ApiService
+	//
+	//SharedWalletWalletInfoGetV30Api *SharedWalletWalletInfoGetV30ApiService
+	//
+	//SharedWalletWalletRelationGetV30Api *SharedWalletWalletRelationGetV30ApiService
+	//
+	//SpiTaskGetV2Api *SpiTaskGetV2ApiService
+	//
+	//StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
+	//
+	//StarBillGetPendingV2Api *StarBillGetPendingV2ApiService
+	//
+	//StarBillPayV2Api *StarBillPayV2ApiService
+	//
+	//StarCampaignListV2Api *StarCampaignListV2ApiService
+	//
+	//StarChallengeAddBudgetV2Api *StarChallengeAddBudgetV2ApiService
+	//
+	//StarChallengeAuthorListV2Api *StarChallengeAuthorListV2ApiService
+	//
+	//StarChallengeCancelV2Api *StarChallengeCancelV2ApiService
+	//
+	//StarChallengeExpandRangeV2Api *StarChallengeExpandRangeV2ApiService
+	//
+	//StarChallengeGetPushAdResultsV2Api *StarChallengeGetPushAdResultsV2ApiService
+	//
+	//StarChallengeInfoV2Api *StarChallengeInfoV2ApiService
+	//
+	//StarChallengeItemsDataV2Api *StarChallengeItemsDataV2ApiService
+	//
+	//StarChallengeListV2Api *StarChallengeListV2ApiService
+	//
+	//StarChallengePushItemsToAdV2Api *StarChallengePushItemsToAdV2ApiService
+	//
+	//StarClueGetV2Api *StarClueGetV2ApiService
+	//
+	//StarComponentCreateLinkV2Api *StarComponentCreateLinkV2ApiService
+	//
+	//StarComponentQueryIndustryAnchorV2Api *StarComponentQueryIndustryAnchorV2ApiService
+	//
+	//StarComponentQueryLinkV2Api *StarComponentQueryLinkV2ApiService
+	//
+	//StarComponentUpdateLinkV2Api *StarComponentUpdateLinkV2ApiService
+	//
+	//StarDataTaskTimelineReportV2Api *StarDataTaskTimelineReportV2ApiService
+	//
+	//StarDemandCreateAssignV2Api *StarDemandCreateAssignV2ApiService
+	//
+	//StarDemandCreateChallengeV2Api *StarDemandCreateChallengeV2ApiService
+	//
+	//StarDemandListV2Api *StarDemandListV2ApiService
+	//
+	//StarDemandOmCreateChallengeV2Api *StarDemandOmCreateChallengeV2ApiService
+	//
+	//StarDemandOmExpandChallengeV2Api *StarDemandOmExpandChallengeV2ApiService
+	//
+	//StarDemandOmGetChallengeItemsDataV2Api *StarDemandOmGetChallengeItemsDataV2ApiService
+	//
+	//StarDemandOmGetChallengeV2Api *StarDemandOmGetChallengeV2ApiService
+	//
+	//StarDemandOmGetDemandListV2Api *StarDemandOmGetDemandListV2ApiService
+	//
+	//StarDemandOmUpdateChallengeV2Api *StarDemandOmUpdateChallengeV2ApiService
+	//
+	//StarDemandOrderListV2Api *StarDemandOrderListV2ApiService
+	//
+	//StarGetCreateChallengeDataDictV2Api *StarGetCreateChallengeDataDictV2ApiService
+	//
+	//StarInfoV2Api *StarInfoV2ApiService
+	//
+	//StarMcnContractChallengeV2Api *StarMcnContractChallengeV2ApiService
+	//
+	//StarMcnGetContractChallengeAuthorItemListV2V2Api *StarMcnGetContractChallengeAuthorItemListV2V2ApiService
+	//
+	//StarMcnGetContractedChallengeListV2Api *StarMcnGetContractedChallengeListV2ApiService
+	//
+	//StarMcnGetContractedChallengeUrlV2Api *StarMcnGetContractedChallengeUrlV2ApiService
+	//
+	//StarMcnGetUnparticipatedTaskV2Api *StarMcnGetUnparticipatedTaskV2ApiService
+	//
+	//StarOrderApproveResourceV2Api *StarOrderApproveResourceV2ApiService
+	//
+	//StarOrderDemanderCancelV2Api *StarOrderDemanderCancelV2ApiService
+	//
+	//StarOrderDetailV2Api *StarOrderDetailV2ApiService
+	//
+	//StarOrderFinishV2Api *StarOrderFinishV2ApiService
+	//
+	//StarOrderGetCancelAmountV2Api *StarOrderGetCancelAmountV2ApiService
+	//
+	//StarOrderGetComponentV2Api *StarOrderGetComponentV2ApiService
+	//
+	//StarOrderGetInfoV2Api *StarOrderGetInfoV2ApiService
+	//
+	//StarOrderGetScriptV2Api *StarOrderGetScriptV2ApiService
+	//
+	//StarOrderGetVideoV2Api *StarOrderGetVideoV2ApiService
+	//
+	//StarOrderListByCampaignV2Api *StarOrderListByCampaignV2ApiService
+	//
+	//StarOrderPublishResourceV2Api *StarOrderPublishResourceV2ApiService
+	//
+	//StarOrderPushResourceV2Api *StarOrderPushResourceV2ApiService
+	//
+	//StarOrderRejectResourceV2Api *StarOrderRejectResourceV2ApiService
+	//
+	//StarOrderReplyAuthorCancelV2Api *StarOrderReplyAuthorCancelV2ApiService
+	//
+	//StarOrderUpdateV2Api *StarOrderUpdateV2ApiService
+	//
+	//StarReportCustomDataTopicDailyReportV2Api *StarReportCustomDataTopicDailyReportV2ApiService
+	//
+	//StarReportCustomDataTopicReportV2Api *StarReportCustomDataTopicReportV2ApiService
+	//
+	//StarReportDataTopicConfigV2Api *StarReportDataTopicConfigV2ApiService
+	//
+	//StarReportOrderOverviewGetV2Api *StarReportOrderOverviewGetV2ApiService
+	//
+	//StarReportOrderOverviewV2Api *StarReportOrderOverviewV2ApiService
+	//
+	//StarReportOrderUserDistributionGetV2Api *StarReportOrderUserDistributionGetV2ApiService
+	//
+	//StarStarAdUniteTaskDetailV2Api *StarStarAdUniteTaskDetailV2ApiService
+	//
+	//StarStarAdUniteTaskItemListV2Api *StarStarAdUniteTaskItemListV2ApiService
+	//
+	//StarStarAdUniteTaskListV2Api *StarStarAdUniteTaskListV2ApiService
+	//
+	//StarUserGetAwemeAuthorIdV2Api *StarUserGetAwemeAuthorIdV2ApiService
+	//
+	//StarUserGetStarIdV2Api *StarUserGetStarIdV2ApiService
+	//
+	//StardeliveryTaskAuthorDetailV30Api *StardeliveryTaskAuthorDetailV30ApiService
+	//
+	//StardeliveryTaskAuthorVideoDetailV30Api *StardeliveryTaskAuthorVideoDetailV30ApiService
+	//
+	//StardeliveryTaskBudgetUpdateV30Api *StardeliveryTaskBudgetUpdateV30ApiService
+	//
+	//StardeliveryTaskCancelV30Api *StardeliveryTaskCancelV30ApiService
+	//
+	//StardeliveryTaskCreateResultGetV30Api *StardeliveryTaskCreateResultGetV30ApiService
+	//
+	//StardeliveryTaskCreateV30Api *StardeliveryTaskCreateV30ApiService
+	//
+	//StardeliveryTaskDetailV30Api *StardeliveryTaskDetailV30ApiService
+	//
+	//StardeliveryTaskListV30Api *StardeliveryTaskListV30ApiService
+	//
+	//StardeliveryTaskPostEndTimeUpdateV30Api *StardeliveryTaskPostEndTimeUpdateV30ApiService
+	//
+	//StardeliveryTaskShareV30Api *StardeliveryTaskShareV30ApiService
+	//
+	//StardeliveryTaskShareableListV30Api *StardeliveryTaskShareableListV30ApiService
+	//
+	//StardeliveryTaskSharingListV30Api *StardeliveryTaskSharingListV30ApiService
+	//
+	//StardeliveryTaskUnshareV30Api *StardeliveryTaskUnshareV30ApiService
+	//
+	//StardeliveryTaskUpdateV30Api *StardeliveryTaskUpdateV30ApiService
+	//
+	//SubscribeAccountsAddV30Api *SubscribeAccountsAddV30ApiService
+	//
+	//SubscribeAccountsListV30Api *SubscribeAccountsListV30ApiService
+	//
+	//SubscribeAccountsRemoveV30Api *SubscribeAccountsRemoveV30ApiService
+	//
+	//SuggWordsV30Api *SuggWordsV30ApiService
+	//
+	//
+	//ToolsAbTestCreateV2Api *ToolsAbTestCreateV2ApiService
+	//
+	//ToolsAbTestInfoGetV2Api *ToolsAbTestInfoGetV2ApiService
+	//
+	//ToolsAbTestListGetV2Api *ToolsAbTestListGetV2ApiService
+	//
+	//ToolsAbTestUpdateV2Api *ToolsAbTestUpdateV2ApiService
+	//
+	//ToolsAdConvertDeepbidReadV2Api *ToolsAdConvertDeepbidReadV2ApiService
+	//
+	//ToolsAdConvertOptimizedTargetGetV2Api *ToolsAdConvertOptimizedTargetGetV2ApiService
+	//
+	//ToolsAdConvertQueryV2Api *ToolsAdConvertQueryV2ApiService
+	//
+	//ToolsAdConvertTrackUrlUpdateV2Api *ToolsAdConvertTrackUrlUpdateV2ApiService
+	//
+	//ToolsAdPreviewQrcodeGetV30Api *ToolsAdPreviewQrcodeGetV30ApiService
+	//
+	//ToolsAdRaiseEstimateGetV2Api *ToolsAdRaiseEstimateGetV2ApiService
+	//
+	//ToolsAdRaiseResultGetV2V2Api *ToolsAdRaiseResultGetV2V2ApiService
+	//
+	//ToolsAdRaiseSetV2Api *ToolsAdRaiseSetV2ApiService
+	//
+	//ToolsAdRaiseStatusGetV2Api *ToolsAdRaiseStatusGetV2ApiService
+	//
+	//ToolsAdRaiseVersionGetV2Api *ToolsAdRaiseVersionGetV2ApiService
+	//
+	//ToolsAdStatExtraInfoGetV2Api *ToolsAdStatExtraInfoGetV2ApiService
+	//
+	//ToolsAdminInfoV2Api *ToolsAdminInfoV2ApiService
+	//
+	//ToolsAdvertiserStoreSearchV2Api *ToolsAdvertiserStoreSearchV2ApiService
+	//
+	//ToolsAipThirdSiteCreateV2Api *ToolsAipThirdSiteCreateV2ApiService
+	//
+	//ToolsAipThirdSiteGetV2Api *ToolsAipThirdSiteGetV2ApiService
+	//
+	//ToolsAipThirdSiteUpdateV2Api *ToolsAipThirdSiteUpdateV2ApiService
+	//
+	//ToolsAppAuthGetV2Api *ToolsAppAuthGetV2ApiService
+	//
+	//ToolsAppIosListV2Api *ToolsAppIosListV2ApiService
+	//
+	//ToolsAppManagementAndroidAppListV2Api *ToolsAppManagementAndroidAppListV2ApiService
+	//
+	//ToolsAppManagementAndroidBasicPackageGetV2Api *ToolsAppManagementAndroidBasicPackageGetV2ApiService
+	//
+	//ToolsAppManagementAndroidBasicPackagePublishV2Api *ToolsAppManagementAndroidBasicPackagePublishV2ApiService
+	//
+	//ToolsAppManagementAndroidBasicPackageUpdateV2Api *ToolsAppManagementAndroidBasicPackageUpdateV2ApiService
+	//
+	//ToolsAppManagementAppGetV2Api *ToolsAppManagementAppGetV2ApiService
+	//
+	//ToolsAppManagementBookingGetV2Api *ToolsAppManagementBookingGetV2ApiService
+	//
+	//ToolsAppManagementBookingRecordsGetV2Api *ToolsAppManagementBookingRecordsGetV2ApiService
+	//
+	//ToolsAppManagementBpShareCancelV2Api *ToolsAppManagementBpShareCancelV2ApiService
+	//
+	//ToolsAppManagementBpShareV2Api *ToolsAppManagementBpShareV2ApiService
+	//
+	//ToolsAppManagementExtendPackageCreateV2Api *ToolsAppManagementExtendPackageCreateV2ApiService
+	//
+	//ToolsAppManagementExtendPackageCreateV2V2Api *ToolsAppManagementExtendPackageCreateV2V2ApiService
+	//
+	//ToolsAppManagementExtendPackageListV2Api *ToolsAppManagementExtendPackageListV2ApiService
+	//
+	//ToolsAppManagementExtendPackageListV2V2Api *ToolsAppManagementExtendPackageListV2V2ApiService
+	//
+	//ToolsAppManagementExtendPackageUpdateV2Api *ToolsAppManagementExtendPackageUpdateV2ApiService
+	//
+	//ToolsAppManagementExtendPackageUpdateV2V2Api *ToolsAppManagementExtendPackageUpdateV2V2ApiService
+	//
+	//ToolsAppManagementIndustryInfoListV2Api *ToolsAppManagementIndustryInfoListV2ApiService
+	//
+	//ToolsAppManagementShareAccountListV2Api *ToolsAppManagementShareAccountListV2ApiService
+	//
+	//ToolsAppManagementUpdateAuthorizationV2Api *ToolsAppManagementUpdateAuthorizationV2ApiService
+	//
+	//ToolsAppManagementUploadTaskCreateV2Api *ToolsAppManagementUploadTaskCreateV2ApiService
+	//
+	//ToolsAppManagementUploadTaskListV2Api *ToolsAppManagementUploadTaskListV2ApiService
+	//
+	//ToolsAssetLinkListV30Api *ToolsAssetLinkListV30ApiService
+	//
+	//ToolsAwemeAuthAuthShareAdShareV2Api *ToolsAwemeAuthAuthShareAdShareV2ApiService
+	//
+	//ToolsAwemeAuthCancelV2Api *ToolsAwemeAuthCancelV2ApiService
+	//
+	//ToolsAwemeAuthListV2Api *ToolsAwemeAuthListV2ApiService
+	//
+	//ToolsAwemeAuthRenewalV2Api *ToolsAwemeAuthRenewalV2ApiService
+	//
+	//ToolsAwemeAuthV2Api *ToolsAwemeAuthV2ApiService
+	//
+	//ToolsAwemeAuthorInfoGetV2Api *ToolsAwemeAuthorInfoGetV2ApiService
+	//
+	//ToolsAwemeBannedCreateV30Api *ToolsAwemeBannedCreateV30ApiService
+	//
+	//ToolsAwemeBannedDeleteV30Api *ToolsAwemeBannedDeleteV30ApiService
+	//
+	//ToolsAwemeBannedListV30Api *ToolsAwemeBannedListV30ApiService
+	//
+	//ToolsAwemeCategoryTopAuthorGetV2Api *ToolsAwemeCategoryTopAuthorGetV2ApiService
+	//
+	//ToolsAwemeInfoSearchV2Api *ToolsAwemeInfoSearchV2ApiService
+	//
+	//ToolsAwemeMultiLevelCategoryGetV2Api *ToolsAwemeMultiLevelCategoryGetV2ApiService
+	//
+	//ToolsAwemeSimilarAuthorSearchV2Api *ToolsAwemeSimilarAuthorSearchV2ApiService
+	//
+	//ToolsBidSuggestV2Api *ToolsBidSuggestV2ApiService
+	//
+	//ToolsBidsSuggestV30Api *ToolsBidsSuggestV30ApiService
+	//
+	//ToolsBlueFlowKeywordListV30Api *ToolsBlueFlowKeywordListV30ApiService
+	//
+	//ToolsBlueFlowPackageListV30Api *ToolsBlueFlowPackageListV30ApiService
+	//
+	//ToolsBpAssetManagementShareCancelV30Api *ToolsBpAssetManagementShareCancelV30ApiService
+	//
+	//ToolsBpAssetManagementShareGetV30Api *ToolsBpAssetManagementShareGetV30ApiService
+	//
+	//ToolsBpAssetManagementShareV30Api *ToolsBpAssetManagementShareV30ApiService
+	//
+	//ToolsClueBridgeCallCreateV2Api *ToolsClueBridgeCallCreateV2ApiService
+	//
+	//ToolsClueCallCreateV2Api *ToolsClueCallCreateV2ApiService
+	//
+	//ToolsClueCallVirtualNumberGetV2Api *ToolsClueCallVirtualNumberGetV2ApiService
+	//
+	//ToolsClueCallVirtualNumberRefundDetailGetV2Api *ToolsClueCallVirtualNumberRefundDetailGetV2ApiService
+	//
+	//ToolsClueCallbackV2Api *ToolsClueCallbackV2ApiService
+	//
+	//ToolsClueClueOverviewQueryV2Api *ToolsClueClueOverviewQueryV2ApiService
+	//
+	//ToolsClueContactLogListV2Api *ToolsClueContactLogListV2ApiService
+	//
+	//ToolsClueContactLogOverviewQueryV2Api *ToolsClueContactLogOverviewQueryV2ApiService
+	//
+	//ToolsClueExtInfoCallbackV2Api *ToolsClueExtInfoCallbackV2ApiService
+	//
+	//ToolsClueFormDetailV2Api *ToolsClueFormDetailV2ApiService
+	//
+	//ToolsClueFormGetV2Api *ToolsClueFormGetV2ApiService
+	//
+	//ToolsClueGetV2Api *ToolsClueGetV2ApiService
+	//
+	//ToolsClueInfoUpdateV2Api *ToolsClueInfoUpdateV2ApiService
+	//
+	//ToolsClueLifeGetV2Api *ToolsClueLifeGetV2ApiService
+	//
+	//ToolsClueLiteContactGetV2Api *ToolsClueLiteContactGetV2ApiService
+	//
+	//ToolsClueLiteContactRecordV2Api *ToolsClueLiteContactRecordV2ApiService
+	//
+	//ToolsClueRefundDetailGetV2Api *ToolsClueRefundDetailGetV2ApiService
+	//
+	//ToolsClueRefundInfoQueryV2Api *ToolsClueRefundInfoQueryV2ApiService
+	//
+	//ToolsClueRefundReportGetV2Api *ToolsClueRefundReportGetV2ApiService
+	//
+	//ToolsClueRefundViewGetV2Api *ToolsClueRefundViewGetV2ApiService
+	//
+	//ToolsClueRobotScriptQueryV2Api *ToolsClueRobotScriptQueryV2ApiService
+	//
+	//ToolsClueRobotTaskCancelV2Api *ToolsClueRobotTaskCancelV2ApiService
+	//
+	//ToolsClueRobotTaskCreateV2Api *ToolsClueRobotTaskCreateV2ApiService
+	//
+	//ToolsClueSmartPhoneGetV2Api *ToolsClueSmartPhoneGetV2ApiService
+	//
+	//ToolsClueWebrtcTokenGetV2Api *ToolsClueWebrtcTokenGetV2ApiService
+	//
+	//ToolsCommentGetV30Api *ToolsCommentGetV30ApiService
+	//
+	//ToolsCommentHideV30Api *ToolsCommentHideV30ApiService
+	//
+	//ToolsCommentMetricsGetV30Api *ToolsCommentMetricsGetV30ApiService
+	//
+	//ToolsCommentMid2itemIdV30Api *ToolsCommentMid2itemIdV30ApiService
+	//
+	//ToolsCommentReplyGetV30Api *ToolsCommentReplyGetV30ApiService
+	//
+	//ToolsCommentReplyV30Api *ToolsCommentReplyV30ApiService
+	//
+	//ToolsCommentStickOnTopV30Api *ToolsCommentStickOnTopV30ApiService
+	//
+	//ToolsCommentTermsBannedAddV30Api *ToolsCommentTermsBannedAddV30ApiService
+	//
+	//ToolsCommentTermsBannedDeleteV30Api *ToolsCommentTermsBannedDeleteV30ApiService
+	//
+	//ToolsCommentTermsBannedGetV30Api *ToolsCommentTermsBannedGetV30ApiService
+	//
+	//ToolsCommentTermsBannedUpdateV30Api *ToolsCommentTermsBannedUpdateV30ApiService
+	//
+	//ToolsCountryInfoV2Api *ToolsCountryInfoV2ApiService
+	//
+	//ToolsCreativeWordSelectV2Api *ToolsCreativeWordSelectV2ApiService
+	//
+	//ToolsDiagnosisAdGetV2V2Api *ToolsDiagnosisAdGetV2V2ApiService
+	//
+	//ToolsDiagnosisSuggestionGetV2Api *ToolsDiagnosisSuggestionGetV2ApiService
+	//
+	//ToolsDownloadPackageGetV2Api *ToolsDownloadPackageGetV2ApiService
+	//
+	//ToolsDownloadPackageParseV2Api *ToolsDownloadPackageParseV2ApiService
+	//
+	//ToolsEstimateAudienceV2Api *ToolsEstimateAudienceV2ApiService
+	//
+	//ToolsEstimatedPriceGetV2Api *ToolsEstimatedPriceGetV2ApiService
+	//
+	//ToolsEventAssetsGetV2Api *ToolsEventAssetsGetV2ApiService
+	//
+	//ToolsEventConvertOptimizedGoalGetV30Api *ToolsEventConvertOptimizedGoalGetV30ApiService
+	//
+	//ToolsGrayGetV30Api *ToolsGrayGetV30ApiService
+	//
+	//
+	//ToolsIndustryGetV2Api *ToolsIndustryGetV2ApiService
+	//
+	//ToolsInterestActionActionKeywordV2Api *ToolsInterestActionActionKeywordV2ApiService
+	//
+	//ToolsInterestActionId2wordV2Api *ToolsInterestActionId2wordV2ApiService
+	//
+	//ToolsInterestActionInterestKeywordV2Api *ToolsInterestActionInterestKeywordV2ApiService
+	//
+	//ToolsInterestActionKeywordSuggestV2Api *ToolsInterestActionKeywordSuggestV2ApiService
+	//
+	//ToolsIsSupportUniversalGetV2Api *ToolsIsSupportUniversalGetV2ApiService
+	//
+	//ToolsKeyActionGetV2Api *ToolsKeyActionGetV2ApiService
+	//
+	//ToolsKeywordsBidRatioCreateV30Api *ToolsKeywordsBidRatioCreateV30ApiService
+	//
+	//ToolsKeywordsBidRatioDeleteV30Api *ToolsKeywordsBidRatioDeleteV30ApiService
+	//
+	//ToolsKeywordsBidRatioGetV30Api *ToolsKeywordsBidRatioGetV30ApiService
+	//
+	//ToolsKeywordsBidRatioUpdateV30Api *ToolsKeywordsBidRatioUpdateV30ApiService
+	//
+	//ToolsKeywordsProjectInfoGetV30Api *ToolsKeywordsProjectInfoGetV30ApiService
+	//
+	//ToolsLandingGroupCreateV2Api *ToolsLandingGroupCreateV2ApiService
+	//
+	//ToolsLandingGroupGetV2Api *ToolsLandingGroupGetV2ApiService
+	//
+	//ToolsLandingGroupSiteOptStatusUpdateV2Api *ToolsLandingGroupSiteOptStatusUpdateV2ApiService
+	//
+	//ToolsLandingGroupUpdateV2Api *ToolsLandingGroupUpdateV2ApiService
+	//
+	//ToolsLiveAuthorizeListV2Api *ToolsLiveAuthorizeListV2ApiService
+	//
+	//ToolsLogSearchV2Api *ToolsLogSearchV2ApiService
+	//
+	//ToolsMicroAppCreateV30Api *ToolsMicroAppCreateV30ApiService
+	//
+	//ToolsMicroAppListV30Api *ToolsMicroAppListV30ApiService
+	//
+	//ToolsMicroAppUpdateV30Api *ToolsMicroAppUpdateV30ApiService
+	//
+	//ToolsMicroGameCreateV30Api *ToolsMicroGameCreateV30ApiService
+	//
+	//ToolsMicroGameListV30Api *ToolsMicroGameListV30ApiService
+	//
+	//ToolsMicroGameUpdateV30Api *ToolsMicroGameUpdateV30ApiService
+	//
+	//ToolsNoBidSuggestBidV2Api *ToolsNoBidSuggestBidV2ApiService
+	//
+	//ToolsOrangeSiteGetV30Api *ToolsOrangeSiteGetV30ApiService
+	//
+	//ToolsPioneerProgramAttachmentUploadV2Api *ToolsPioneerProgramAttachmentUploadV2ApiService
+	//
+	//ToolsPlayableCloudGameListV2Api *ToolsPlayableCloudGameListV2ApiService
+	//
+	//ToolsPlayableCreateV2Api *ToolsPlayableCreateV2ApiService
+	//
+	//ToolsPlayableGrantResultV2Api *ToolsPlayableGrantResultV2ApiService
+	//
+	//ToolsPlayableGrantV2Api *ToolsPlayableGrantV2ApiService
+	//
+	//ToolsPlayableListGetV2Api *ToolsPlayableListGetV2ApiService
+	//
+	//ToolsPlayableSaveV2Api *ToolsPlayableSaveV2ApiService
+	//
+	//ToolsPlayableUploadV2Api *ToolsPlayableUploadV2ApiService
+	//
+	//ToolsPlayableValidateV2Api *ToolsPlayableValidateV2ApiService
+	//
+	//ToolsPreAuditGetV2Api *ToolsPreAuditGetV2ApiService
+	//
+	//ToolsPreAuditSendV2Api *ToolsPreAuditSendV2ApiService
+	//
+	//ToolsPrivativeWordAdAddV2Api *ToolsPrivativeWordAdAddV2ApiService
+	//
+	//ToolsPrivativeWordAdUpdateV2Api *ToolsPrivativeWordAdUpdateV2ApiService
+	//
+	//ToolsPrivativeWordBatchGetV30Api *ToolsPrivativeWordBatchGetV30ApiService
+	//
+	//ToolsPrivativeWordCampaignAddV2Api *ToolsPrivativeWordCampaignAddV2ApiService
+	//
+	//ToolsPrivativeWordCampaignUpdateV2Api *ToolsPrivativeWordCampaignUpdateV2ApiService
+	//
+	//ToolsPrivativeWordGetV2Api *ToolsPrivativeWordGetV2ApiService
+	//
+	//ToolsPrivativeWordProjectAddV30Api *ToolsPrivativeWordProjectAddV30ApiService
+	//
+	//ToolsPrivativeWordProjectUpdateV30Api *ToolsPrivativeWordProjectUpdateV30ApiService
+	//
+	//ToolsPrivativeWordPromotionAddV30Api *ToolsPrivativeWordPromotionAddV30ApiService
+	//
+	//ToolsPrivativeWordPromotionUpdateV30Api *ToolsPrivativeWordPromotionUpdateV30ApiService
+	//
+	//ToolsPromotionCardRecommendGetV2Api *ToolsPromotionCardRecommendGetV2ApiService
+	//
+	//ToolsPromotionCardRecommendTitleGetV2Api *ToolsPromotionCardRecommendTitleGetV2ApiService
+	//
+	//ToolsPromotionDiagnosisSuggestionAcceptV30Api *ToolsPromotionDiagnosisSuggestionAcceptV30ApiService
+	//
+	//ToolsPromotionDiagnosisSuggestionGetV30Api *ToolsPromotionDiagnosisSuggestionGetV30ApiService
+	//
+	//ToolsPromotionRaiseSetV30Api *ToolsPromotionRaiseSetV30ApiService
+	//
+	//ToolsPromotionRaiseStatusCurrentIdsGetV30Api *ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService
+	//
+	//ToolsPromotionRaiseStatusGetV30Api *ToolsPromotionRaiseStatusGetV30ApiService
+	//
+	//ToolsPromotionRaiseStopV30Api *ToolsPromotionRaiseStopV30ApiService
+	//
+	//ToolsPromotionRaiseVersionGetV30Api *ToolsPromotionRaiseVersionGetV30ApiService
+	//
+	//ToolsQuotaGetV2Api *ToolsQuotaGetV2ApiService
+	//
+	//ToolsRegionGetV2Api *ToolsRegionGetV2ApiService
+	//
+	//ToolsRtaGetInfoTmpV2Api *ToolsRtaGetInfoTmpV2ApiService
+	//
+	//ToolsRtaGetInfoV2Api *ToolsRtaGetInfoV2ApiService
+	//
+	//ToolsRtaGetV2Api *ToolsRtaGetV2ApiService
+	//
+	//ToolsRtaScopeGetV30Api *ToolsRtaScopeGetV30ApiService
+	//
+	//ToolsRtaSetScopeV2Api *ToolsRtaSetScopeV2ApiService
+	//
+	//ToolsRtaStatusUpdateV2Api *ToolsRtaStatusUpdateV2ApiService
+	//
+	//ToolsRubeexGetV2Api *ToolsRubeexGetV2ApiService
+	//
+	//ToolsRubeexPlayableAdListV2Api *ToolsRubeexPlayableAdListV2ApiService
+	//
+	//ToolsRubeexPlayableListV2Api *ToolsRubeexPlayableListV2ApiService
+	//
+	//ToolsRubeexRemarkV2Api *ToolsRubeexRemarkV2ApiService
+	//
+	//ToolsRubeexVersionGetV2Api *ToolsRubeexVersionGetV2ApiService
+	//
+	//ToolsSearchBidRatioGetV2Api *ToolsSearchBidRatioGetV2ApiService
+	//
+	//ToolsSiteCopyV2Api *ToolsSiteCopyV2ApiService
+	//
+	//ToolsSiteCreateV2Api *ToolsSiteCreateV2ApiService
+	//
+	//ToolsSiteFormsListV2Api *ToolsSiteFormsListV2ApiService
+	//
+	//ToolsSiteHandselV2Api *ToolsSiteHandselV2ApiService
+	//
+	//ToolsSitePreviewV2Api *ToolsSitePreviewV2ApiService
+	//
+	//ToolsSiteReadV2Api *ToolsSiteReadV2ApiService
+	//
+	//ToolsSiteTemplateCreateV2Api *ToolsSiteTemplateCreateV2ApiService
+	//
+	//ToolsSiteTemplateGetV2Api *ToolsSiteTemplateGetV2ApiService
+	//
+	//ToolsSiteTemplatePicUrlGetV2Api *ToolsSiteTemplatePicUrlGetV2ApiService
+	//
+	//ToolsSiteTemplatePreviewV2Api *ToolsSiteTemplatePreviewV2ApiService
+	//
+	//ToolsSiteTemplateSiteCreateV2Api *ToolsSiteTemplateSiteCreateV2ApiService
+	//
+	//ToolsSiteUpdateStatusV2Api *ToolsSiteUpdateStatusV2ApiService
+	//
+	//ToolsSiteUpdateV2Api *ToolsSiteUpdateV2ApiService
+	//
+	//ToolsStarTaskMaterialTypeV2Api *ToolsStarTaskMaterialTypeV2ApiService
+	//
+	//ToolsStarTaskSettlementConfigV2Api *ToolsStarTaskSettlementConfigV2ApiService
+	//
+	//ToolsStarTaskTitleTopicGetV2Api *ToolsStarTaskTitleTopicGetV2ApiService
+	//
+	//ToolsSuggestBudgetGetV30Api *ToolsSuggestBudgetGetV30ApiService
+	//
+	//ToolsTaskRaiseCreateV2Api *ToolsTaskRaiseCreateV2ApiService
+	//
+	//ToolsTaskRaiseDataGetV2Api *ToolsTaskRaiseDataGetV2ApiService
+	//
+	//ToolsTaskRaiseGetV2Api *ToolsTaskRaiseGetV2ApiService
+	//
+	//ToolsTaskRaiseOptimizationIdsGetV2Api *ToolsTaskRaiseOptimizationIdsGetV2ApiService
+	//
+	//ToolsTaskRaiseStatusStopV2Api *ToolsTaskRaiseStatusStopV2ApiService
+	//
+	//ToolsThirdSiteCreateV2Api *ToolsThirdSiteCreateV2ApiService
+	//
+	//ToolsThirdSiteDeleteV2Api *ToolsThirdSiteDeleteV2ApiService
+	//
+	//ToolsThirdSiteGetV2Api *ToolsThirdSiteGetV2ApiService
+	//
+	//ToolsThirdSitePreviewV2Api *ToolsThirdSitePreviewV2ApiService
+	//
+	//ToolsThirdSiteUpdateV2Api *ToolsThirdSiteUpdateV2ApiService
+	//
+	//ToolsUnionFlowPackageCreateV2Api *ToolsUnionFlowPackageCreateV2ApiService
+	//
+	//ToolsUnionFlowPackageDeleteV2Api *ToolsUnionFlowPackageDeleteV2ApiService
+	//
+	//ToolsUnionFlowPackageGetV2Api *ToolsUnionFlowPackageGetV2ApiService
+	//
+	//ToolsUnionFlowPackagePromotionReportV30Api *ToolsUnionFlowPackagePromotionReportV30ApiService
+	//
+	//ToolsUnionFlowPackageReportV2Api *ToolsUnionFlowPackageReportV2ApiService
+	//
+	//ToolsUnionFlowPackageUpdateV2Api *ToolsUnionFlowPackageUpdateV2ApiService
+	//
+	//ToolsVideoCheckAvailableAnchorV2Api *ToolsVideoCheckAvailableAnchorV2ApiService
+	//
+	//ToolsVideoCoverSuggestV2Api *ToolsVideoCoverSuggestV2ApiService
+	//
+	//ToolsVideoPredictV2Api *ToolsVideoPredictV2ApiService
+	//
+	//ToolsWechatAppletCreateV30Api *ToolsWechatAppletCreateV30ApiService
+	//
+	//ToolsWechatAppletListV30Api *ToolsWechatAppletListV30ApiService
+	//
+	//ToolsWechatAppletUpdateV30Api *ToolsWechatAppletUpdateV30ApiService
+	//
+	//ToolsWechatGameCreateV30Api *ToolsWechatGameCreateV30ApiService
+	//
+	//ToolsWechatGameListV30Api *ToolsWechatGameListV30ApiService
+	//
+	//UserInfoV2Api *UserInfoV2ApiService
+	//
+	//CommonApi *CommonApiService
 }
 
 type service struct {
@@ -1566,262 +1566,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.common.client = c
 
 	// API Services
-	c.AccountFundGetV30Api = (*AccountFundGetV30ApiService)(&c.common)
-	c.AdConvertOptimizedTargetGetV30Api = (*AdConvertOptimizedTargetGetV30ApiService)(&c.common)
-	c.AdCostProtectStatusGetV2Api = (*AdCostProtectStatusGetV2ApiService)(&c.common)
-	c.AdGetV2Api = (*AdGetV2ApiService)(&c.common)
-	c.AdRejectReasonV2Api = (*AdRejectReasonV2ApiService)(&c.common)
-	c.AdShopInfoUpdateV30Api = (*AdShopInfoUpdateV30ApiService)(&c.common)
-	c.AdUdUpdateV2Api = (*AdUdUpdateV2ApiService)(&c.common)
-	c.AdUpdateBidV2Api = (*AdUpdateBidV2ApiService)(&c.common)
-	c.AdUpdateBudgetV2Api = (*AdUpdateBudgetV2ApiService)(&c.common)
-	c.AdUpdateStatusV2Api = (*AdUpdateStatusV2ApiService)(&c.common)
-	c.AdlabGroupCreateV30Api = (*AdlabGroupCreateV30ApiService)(&c.common)
-	c.AdlabGroupDetailV30Api = (*AdlabGroupDetailV30ApiService)(&c.common)
-	c.AdlabGroupListV30Api = (*AdlabGroupListV30ApiService)(&c.common)
-	c.AdlabGroupUpdateBudgetV30Api = (*AdlabGroupUpdateBudgetV30ApiService)(&c.common)
-	c.AdlabGroupUpdateStatusV30Api = (*AdlabGroupUpdateStatusV30ApiService)(&c.common)
-	c.AdlabGroupUpdateV30Api = (*AdlabGroupUpdateV30ApiService)(&c.common)
-	c.AdlabGroupsDeleteV30Api = (*AdlabGroupsDeleteV30ApiService)(&c.common)
-	c.AdvConvertOleConvertV2Api = (*AdvConvertOleConvertV2ApiService)(&c.common)
-	c.AdvertiserAttachmentUploadV30Api = (*AdvertiserAttachmentUploadV30ApiService)(&c.common)
-	c.AdvertiserAvatarGetV2Api = (*AdvertiserAvatarGetV2ApiService)(&c.common)
-	c.AdvertiserAvatarSubmitV2Api = (*AdvertiserAvatarSubmitV2ApiService)(&c.common)
-	c.AdvertiserAvatarUploadV2Api = (*AdvertiserAvatarUploadV2ApiService)(&c.common)
-	c.AdvertiserBudgetGetV2Api = (*AdvertiserBudgetGetV2ApiService)(&c.common)
-	c.AdvertiserDeliveryPkgConfigV30Api = (*AdvertiserDeliveryPkgConfigV30ApiService)(&c.common)
-	c.AdvertiserDeliveryPkgDeleteV30Api = (*AdvertiserDeliveryPkgDeleteV30ApiService)(&c.common)
-	c.AdvertiserDeliveryPkgGetV30Api = (*AdvertiserDeliveryPkgGetV30ApiService)(&c.common)
-	c.AdvertiserDeliveryPkgSubmitV30Api = (*AdvertiserDeliveryPkgSubmitV30ApiService)(&c.common)
-	c.AdvertiserDeliveryQualificationDeleteV30Api = (*AdvertiserDeliveryQualificationDeleteV30ApiService)(&c.common)
-	c.AdvertiserDeliveryQualificationListV30Api = (*AdvertiserDeliveryQualificationListV30ApiService)(&c.common)
-	c.AdvertiserDeliveryQualificationSubmitV30Api = (*AdvertiserDeliveryQualificationSubmitV30ApiService)(&c.common)
-	c.AdvertiserFundDailyStatV2Api = (*AdvertiserFundDailyStatV2ApiService)(&c.common)
-	c.AdvertiserFundGetV2Api = (*AdvertiserFundGetV2ApiService)(&c.common)
-	c.AdvertiserFundGrantTransactionGetV2Api = (*AdvertiserFundGrantTransactionGetV2ApiService)(&c.common)
-	c.AdvertiserFundTransactionGetV2Api = (*AdvertiserFundTransactionGetV2ApiService)(&c.common)
-	c.AdvertiserInfoV2Api = (*AdvertiserInfoV2ApiService)(&c.common)
-	c.AdvertiserPublicInfoV2Api = (*AdvertiserPublicInfoV2ApiService)(&c.common)
-	c.AdvertiserQualificationCreateV2V2Api = (*AdvertiserQualificationCreateV2V2ApiService)(&c.common)
-	c.AdvertiserQualificationGetV30Api = (*AdvertiserQualificationGetV30ApiService)(&c.common)
-	c.AdvertiserQualificationSelectV2V2Api = (*AdvertiserQualificationSelectV2V2ApiService)(&c.common)
-	c.AdvertiserQualificationSubmitV30Api = (*AdvertiserQualificationSubmitV30ApiService)(&c.common)
-	c.AdvertiserTransferableFundGetV2Api = (*AdvertiserTransferableFundGetV2ApiService)(&c.common)
-	c.AdvertiserUpdateBudgetV2Api = (*AdvertiserUpdateBudgetV2ApiService)(&c.common)
-	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
-	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
-	c.AgentAdvertiserSelectV2Api = (*AgentAdvertiserSelectV2ApiService)(&c.common)
-	c.AgentAdvertiserUpdateV2Api = (*AgentAdvertiserUpdateV2ApiService)(&c.common)
-	c.AgentChildAgentSelectV2Api = (*AgentChildAgentSelectV2ApiService)(&c.common)
-	c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
-	c.AgentFundTransferSeqCreateV2Api = (*AgentFundTransferSeqCreateV2ApiService)(&c.common)
-	c.AgentInfoV2Api = (*AgentInfoV2ApiService)(&c.common)
-	c.AgentQueryRiskPromotionListV2Api = (*AgentQueryRiskPromotionListV2ApiService)(&c.common)
-	c.AgentRefundTransferSeqCommitV2Api = (*AgentRefundTransferSeqCommitV2ApiService)(&c.common)
-	c.AgentRefundTransferSeqCreateV2Api = (*AgentRefundTransferSeqCreateV2ApiService)(&c.common)
-	c.AgentTransferTransactionRecordV2Api = (*AgentTransferTransactionRecordV2ApiService)(&c.common)
-	c.AnalyticsAttributionV30Api = (*AnalyticsAttributionV30ApiService)(&c.common)
-	c.AssetsCreativeComponentCreateV2Api = (*AssetsCreativeComponentCreateV2ApiService)(&c.common)
-	c.AssetsCreativeComponentGetV2Api = (*AssetsCreativeComponentGetV2ApiService)(&c.common)
-	c.AssetsCreativeComponentUpdateV2Api = (*AssetsCreativeComponentUpdateV2ApiService)(&c.common)
-	c.AsyncTaskCreateV2Api = (*AsyncTaskCreateV2ApiService)(&c.common)
-	c.AsyncTaskDownloadV2Api = (*AsyncTaskDownloadV2ApiService)(&c.common)
-	c.AsyncTaskGetV2Api = (*AsyncTaskGetV2ApiService)(&c.common)
-	c.AudiencePackageCreateV2Api = (*AudiencePackageCreateV2ApiService)(&c.common)
-	c.AudiencePackageDeleteV2Api = (*AudiencePackageDeleteV2ApiService)(&c.common)
-	c.AudiencePackageGetV2Api = (*AudiencePackageGetV2ApiService)(&c.common)
-	c.AudiencePackageUpdateV2Api = (*AudiencePackageUpdateV2ApiService)(&c.common)
-	c.BrandActionCategoryV30Api = (*BrandActionCategoryV30ApiService)(&c.common)
-	c.BrandAdCreateV30Api = (*BrandAdCreateV30ApiService)(&c.common)
-	c.BrandAdGetV30Api = (*BrandAdGetV30ApiService)(&c.common)
-	c.BrandAwemeListV30Api = (*BrandAwemeListV30ApiService)(&c.common)
-	c.BrandCampaignCreateV30Api = (*BrandCampaignCreateV30ApiService)(&c.common)
-	c.BrandCampaignGetV30Api = (*BrandCampaignGetV30ApiService)(&c.common)
-	c.BrandCreativeCreateV30Api = (*BrandCreativeCreateV30ApiService)(&c.common)
-	c.BrandCreativeGetV30Api = (*BrandCreativeGetV30ApiService)(&c.common)
-	c.BrandFileVideoUploadV30Api = (*BrandFileVideoUploadV30ApiService)(&c.common)
-	c.BrandQueryStockV30Api = (*BrandQueryStockV30ApiService)(&c.common)
-	c.BrandQueryYuntu5aBrandCategoryV30Api = (*BrandQueryYuntu5aBrandCategoryV30ApiService)(&c.common)
-	c.BrandRegionGetV30Api = (*BrandRegionGetV30ApiService)(&c.common)
-	c.BrandUploadImageV30Api = (*BrandUploadImageV30ApiService)(&c.common)
-	c.BudgetGroupCreateV30Api = (*BudgetGroupCreateV30ApiService)(&c.common)
-	c.BudgetGroupDeleteV30Api = (*BudgetGroupDeleteV30ApiService)(&c.common)
-	c.BudgetGroupListV30Api = (*BudgetGroupListV30ApiService)(&c.common)
-	c.BudgetGroupUpdateV30Api = (*BudgetGroupUpdateV30ApiService)(&c.common)
-	c.BusinessPlatformCompanyAccountGetV30Api = (*BusinessPlatformCompanyAccountGetV30ApiService)(&c.common)
-	c.BusinessPlatformCompanyInfoGetV30Api = (*BusinessPlatformCompanyInfoGetV30ApiService)(&c.common)
-	c.BusinessPlatformPartnerOrganizationListV2Api = (*BusinessPlatformPartnerOrganizationListV2ApiService)(&c.common)
-	c.CampaignCreateV2Api = (*CampaignCreateV2ApiService)(&c.common)
-	c.CampaignGetV2Api = (*CampaignGetV2ApiService)(&c.common)
-	c.CampaignUpdateStatusV2Api = (*CampaignUpdateStatusV2ApiService)(&c.common)
-	c.CampaignUpdateV2Api = (*CampaignUpdateV2ApiService)(&c.common)
-	c.CarouselAdGetV2Api = (*CarouselAdGetV2ApiService)(&c.common)
-	c.CarouselCreateV2Api = (*CarouselCreateV2ApiService)(&c.common)
-	c.CarouselDeleteV2Api = (*CarouselDeleteV2ApiService)(&c.common)
-	c.CarouselListV2Api = (*CarouselListV2ApiService)(&c.common)
-	c.CarouselUpdateV2Api = (*CarouselUpdateV2ApiService)(&c.common)
-	c.CdpBrandGetV30Api = (*CdpBrandGetV30ApiService)(&c.common)
-	c.CgTransferCreateTransferV30Api = (*CgTransferCreateTransferV30ApiService)(&c.common)
-	c.CgTransferQueryCanTransferBalanceV30Api = (*CgTransferQueryCanTransferBalanceV30ApiService)(&c.common)
-	c.CgTransferQueryTransferBalanceV30Api = (*CgTransferQueryTransferBalanceV30ApiService)(&c.common)
-	c.CgTransferQueryTransferDetailV30Api = (*CgTransferQueryTransferDetailV30ApiService)(&c.common)
-	c.ClueCouponCodeConsumeV2Api = (*ClueCouponCodeConsumeV2ApiService)(&c.common)
-	c.ClueCouponCodeGetV2Api = (*ClueCouponCodeGetV2ApiService)(&c.common)
-	c.ClueCouponCreateV2Api = (*ClueCouponCreateV2ApiService)(&c.common)
-	c.ClueCouponDetailV2Api = (*ClueCouponDetailV2ApiService)(&c.common)
-	c.ClueCouponEmployeeCreateV2Api = (*ClueCouponEmployeeCreateV2ApiService)(&c.common)
-	c.ClueCouponEmployeeDeleteV2Api = (*ClueCouponEmployeeDeleteV2ApiService)(&c.common)
-	c.ClueCouponEmployeeGetV2Api = (*ClueCouponEmployeeGetV2ApiService)(&c.common)
-	c.ClueCouponGetV2Api = (*ClueCouponGetV2ApiService)(&c.common)
-	c.ClueCouponUpdateV2Api = (*ClueCouponUpdateV2ApiService)(&c.common)
-	c.ClueFormCreateV2Api = (*ClueFormCreateV2ApiService)(&c.common)
-	c.ClueFormDeleteV2Api = (*ClueFormDeleteV2ApiService)(&c.common)
-	c.ClueFormDetailV2Api = (*ClueFormDetailV2ApiService)(&c.common)
-	c.ClueFormListV2Api = (*ClueFormListV2ApiService)(&c.common)
-	c.ClueFormUpdateV2Api = (*ClueFormUpdateV2ApiService)(&c.common)
-	c.CluePackageUploadV2Api = (*CluePackageUploadV2ApiService)(&c.common)
-	c.ClueSmartphoneCreateV2Api = (*ClueSmartphoneCreateV2ApiService)(&c.common)
-	c.ClueSmartphoneDeleteV2Api = (*ClueSmartphoneDeleteV2ApiService)(&c.common)
-	c.ClueSmartphoneGetV2Api = (*ClueSmartphoneGetV2ApiService)(&c.common)
-	c.ClueSmartphoneRecordV2Api = (*ClueSmartphoneRecordV2ApiService)(&c.common)
-	c.ClueWechatDataGetV2Api = (*ClueWechatDataGetV2ApiService)(&c.common)
-	c.ClueWechatInstanceDetailV2Api = (*ClueWechatInstanceDetailV2ApiService)(&c.common)
-	c.ClueWechatInstanceListV2Api = (*ClueWechatInstanceListV2ApiService)(&c.common)
-	c.ClueWechatInstanceUpdateV2Api = (*ClueWechatInstanceUpdateV2ApiService)(&c.common)
-	c.ClueWechatPoolListV2Api = (*ClueWechatPoolListV2ApiService)(&c.common)
-	c.CreativeAdMetricsV2Api = (*CreativeAdMetricsV2ApiService)(&c.common)
-	c.CreativeAutoGenerateConfigGetV2Api = (*CreativeAutoGenerateConfigGetV2ApiService)(&c.common)
-	c.CreativeCustomCreativeCreateV2Api = (*CreativeCustomCreativeCreateV2ApiService)(&c.common)
-	c.CreativeCustomCreativeDeleteV2Api = (*CreativeCustomCreativeDeleteV2ApiService)(&c.common)
-	c.CreativeCustomCreativeUpdateV2Api = (*CreativeCustomCreativeUpdateV2ApiService)(&c.common)
-	c.CreativeDetailGetV30Api = (*CreativeDetailGetV30ApiService)(&c.common)
-	c.CreativeGetV2Api = (*CreativeGetV2ApiService)(&c.common)
-	c.CreativeMaterialMetricsV2Api = (*CreativeMaterialMetricsV2ApiService)(&c.common)
-	c.CreativeProceduralCreativeCreateV2Api = (*CreativeProceduralCreativeCreateV2ApiService)(&c.common)
-	c.CreativeProceduralCreativeUpdateV2Api = (*CreativeProceduralCreativeUpdateV2ApiService)(&c.common)
-	c.CreativeRejectReasonV2Api = (*CreativeRejectReasonV2ApiService)(&c.common)
-	c.CreativeStatusUpdateV2V2Api = (*CreativeStatusUpdateV2V2ApiService)(&c.common)
-	c.CreativeStrategyListV2Api = (*CreativeStrategyListV2ApiService)(&c.common)
-	c.CustomerCenterAdvertiserCopyV2Api = (*CustomerCenterAdvertiserCopyV2ApiService)(&c.common)
-	c.CustomerCenterAdvertiserListV2Api = (*CustomerCenterAdvertiserListV2ApiService)(&c.common)
-	c.CustomerCenterAdvertiserTransferableListV2Api = (*CustomerCenterAdvertiserTransferableListV2ApiService)(&c.common)
-	c.CustomerCenterFundTransferSeqCommitV2Api = (*CustomerCenterFundTransferSeqCommitV2ApiService)(&c.common)
-	c.CustomerCenterFundTransferSeqCreateV2Api = (*CustomerCenterFundTransferSeqCreateV2ApiService)(&c.common)
-	c.DecorationCouponGetV30Api = (*DecorationCouponGetV30ApiService)(&c.common)
-	c.DmpBrandGetV2Api = (*DmpBrandGetV2ApiService)(&c.common)
-	c.DmpCustomAudienceCopyV2Api = (*DmpCustomAudienceCopyV2ApiService)(&c.common)
-	c.DmpCustomAudienceDeleteV2Api = (*DmpCustomAudienceDeleteV2ApiService)(&c.common)
-	c.DmpCustomAudiencePublishV2Api = (*DmpCustomAudiencePublishV2ApiService)(&c.common)
-	c.DmpCustomAudiencePushV2V2Api = (*DmpCustomAudiencePushV2V2ApiService)(&c.common)
-	c.DmpCustomAudienceReadV2Api = (*DmpCustomAudienceReadV2ApiService)(&c.common)
-	c.DmpCustomAudienceSelectV2Api = (*DmpCustomAudienceSelectV2ApiService)(&c.common)
-	c.DmpDataSourceCreateV2Api = (*DmpDataSourceCreateV2ApiService)(&c.common)
-	c.DmpDataSourceFileUploadV2Api = (*DmpDataSourceFileUploadV2ApiService)(&c.common)
-	c.DmpDataSourceReadV2Api = (*DmpDataSourceReadV2ApiService)(&c.common)
-	c.DmpDataSourceUpdateV2Api = (*DmpDataSourceUpdateV2ApiService)(&c.common)
-	c.DouplusOrderCloseV30Api = (*DouplusOrderCloseV30ApiService)(&c.common)
-	c.DouplusOrderCreateV30Api = (*DouplusOrderCreateV30ApiService)(&c.common)
-	c.DouplusOrderListV30Api = (*DouplusOrderListV30ApiService)(&c.common)
-	c.DouplusOrderReportV30Api = (*DouplusOrderReportV30ApiService)(&c.common)
-	c.DpaAssetV2DetailReadV2Api = (*DpaAssetV2DetailReadV2ApiService)(&c.common)
-	c.DpaAssetV2ListV2Api = (*DpaAssetV2ListV2ApiService)(&c.common)
-	c.DpaAssetsDetailReadV2Api = (*DpaAssetsDetailReadV2ApiService)(&c.common)
-	c.DpaAssetsListV2Api = (*DpaAssetsListV2ApiService)(&c.common)
-	c.DpaCategoryGetV2Api = (*DpaCategoryGetV2ApiService)(&c.common)
-	c.DpaCheckIndexEntryProgressV2Api = (*DpaCheckIndexEntryProgressV2ApiService)(&c.common)
-	c.DpaClueProductDetailV2Api = (*DpaClueProductDetailV2ApiService)(&c.common)
-	c.DpaClueProductListV2Api = (*DpaClueProductListV2ApiService)(&c.common)
-	c.DpaDetailGetV2Api = (*DpaDetailGetV2ApiService)(&c.common)
-	c.DpaDictGetV2Api = (*DpaDictGetV2ApiService)(&c.common)
-	c.DpaMetaGetV2Api = (*DpaMetaGetV2ApiService)(&c.common)
-	c.DpaProductAvailablesV2Api = (*DpaProductAvailablesV2ApiService)(&c.common)
-	c.DpaProductCreateV2Api = (*DpaProductCreateV2ApiService)(&c.common)
-	c.DpaProductDeleteV2Api = (*DpaProductDeleteV2ApiService)(&c.common)
-	c.DpaProductDetailGetV2Api = (*DpaProductDetailGetV2ApiService)(&c.common)
-	c.DpaProductStatusBatchUpdateV2Api = (*DpaProductStatusBatchUpdateV2ApiService)(&c.common)
-	c.DpaProductUpdateV2Api = (*DpaProductUpdateV2ApiService)(&c.common)
-	c.DpaTemplateGetV2Api = (*DpaTemplateGetV2ApiService)(&c.common)
-	c.DpaVideoGetV2Api = (*DpaVideoGetV2ApiService)(&c.common)
-	c.EnterpriseBindListGetV10Api = (*EnterpriseBindListGetV10ApiService)(&c.common)
-	c.EnterpriseCommentDetailV10Api = (*EnterpriseCommentDetailV10ApiService)(&c.common)
-	c.EnterpriseCommentListGetV10Api = (*EnterpriseCommentListGetV10ApiService)(&c.common)
-	c.EnterpriseCommentReplyListV10Api = (*EnterpriseCommentReplyListV10ApiService)(&c.common)
-	c.EnterpriseCommentReplyV10Api = (*EnterpriseCommentReplyV10ApiService)(&c.common)
-	c.EnterpriseFlowCategoryGetV10Api = (*EnterpriseFlowCategoryGetV10ApiService)(&c.common)
-	c.EnterpriseInfoV10Api = (*EnterpriseInfoV10ApiService)(&c.common)
-	c.EnterpriseItemListV10Api = (*EnterpriseItemListV10ApiService)(&c.common)
-	c.EnterpriseOperationLogGetV10Api = (*EnterpriseOperationLogGetV10ApiService)(&c.common)
-	c.EnterpriseOverviewDataGetV10Api = (*EnterpriseOverviewDataGetV10ApiService)(&c.common)
-	c.EnterpriseVideoInfoGetV10Api = (*EnterpriseVideoInfoGetV10ApiService)(&c.common)
-	c.EventManagerAssetsCreateV2Api = (*EventManagerAssetsCreateV2ApiService)(&c.common)
-	c.EventManagerAvailableEventsGetV2Api = (*EventManagerAvailableEventsGetV2ApiService)(&c.common)
-	c.EventManagerDeepBidTypeGetV30Api = (*EventManagerDeepBidTypeGetV30ApiService)(&c.common)
-	c.EventManagerEventConfigsGetV2Api = (*EventManagerEventConfigsGetV2ApiService)(&c.common)
-	c.EventManagerEventsCreateV2Api = (*EventManagerEventsCreateV2ApiService)(&c.common)
-	c.EventManagerOfflineDataCreateV2Api = (*EventManagerOfflineDataCreateV2ApiService)(&c.common)
-	c.EventManagerOptimizedGoalGetV2V30Api = (*EventManagerOptimizedGoalGetV2V30ApiService)(&c.common)
-	c.EventManagerShareCancelV30Api = (*EventManagerShareCancelV30ApiService)(&c.common)
-	c.EventManagerShareGetV30Api = (*EventManagerShareGetV30ApiService)(&c.common)
-	c.EventManagerShareV30Api = (*EventManagerShareV30ApiService)(&c.common)
-	c.EventManagerTrackUrlCreateV2Api = (*EventManagerTrackUrlCreateV2ApiService)(&c.common)
-	c.EventManagerTrackUrlGetV2Api = (*EventManagerTrackUrlGetV2ApiService)(&c.common)
-	c.EventManagerTrackUrlUpdateV2Api = (*EventManagerTrackUrlUpdateV2ApiService)(&c.common)
-	c.FileAudioAdV2Api = (*FileAudioAdV2ApiService)(&c.common)
-	c.FileAudioGetV2Api = (*FileAudioGetV2ApiService)(&c.common)
-	c.FileAutoGenerateSourceGetV2Api = (*FileAutoGenerateSourceGetV2ApiService)(&c.common)
-	c.FileImageAdGetV2Api = (*FileImageAdGetV2ApiService)(&c.common)
-	c.FileImageAdV2Api = (*FileImageAdV2ApiService)(&c.common)
-	c.FileImageDeleteV30Api = (*FileImageDeleteV30ApiService)(&c.common)
-	c.FileImageGetV2Api = (*FileImageGetV2ApiService)(&c.common)
-	c.FileMaterialAttributesListV2Api = (*FileMaterialAttributesListV2ApiService)(&c.common)
-	c.FileMaterialAuditResultGetV2Api = (*FileMaterialAuditResultGetV2ApiService)(&c.common)
-	c.FileMaterialBindV2Api = (*FileMaterialBindV2ApiService)(&c.common)
-	c.FileMaterialDetailV2Api = (*FileMaterialDetailV2ApiService)(&c.common)
-	c.FileMaterialListV2Api = (*FileMaterialListV2ApiService)(&c.common)
-	c.FileMediaGetV2Api = (*FileMediaGetV2ApiService)(&c.common)
-	c.FilePreauditGetV30Api = (*FilePreauditGetV30ApiService)(&c.common)
-	c.FilePreauditSubmitV30Api = (*FilePreauditSubmitV30ApiService)(&c.common)
-	c.FileQualityGetV30Api = (*FileQualityGetV30ApiService)(&c.common)
-	c.FileQualitySubmitV30Api = (*FileQualitySubmitV30ApiService)(&c.common)
-	c.FileVideoAdGetV2Api = (*FileVideoAdGetV2ApiService)(&c.common)
-	c.FileVideoAdV2Api = (*FileVideoAdV2ApiService)(&c.common)
-	c.FileVideoAgentV2Api = (*FileVideoAgentV2ApiService)(&c.common)
-	c.FileVideoAwemeGetV2Api = (*FileVideoAwemeGetV2ApiService)(&c.common)
-	c.FileVideoDeleteV2Api = (*FileVideoDeleteV2ApiService)(&c.common)
-	c.FileVideoEfficiencyGetV2Api = (*FileVideoEfficiencyGetV2ApiService)(&c.common)
-	c.FileVideoGetV2Api = (*FileVideoGetV2ApiService)(&c.common)
-	c.FileVideoMaterialClearTaskCreateV2Api = (*FileVideoMaterialClearTaskCreateV2ApiService)(&c.common)
-	c.FileVideoMaterialClearTaskGetV2Api = (*FileVideoMaterialClearTaskGetV2ApiService)(&c.common)
-	c.FileVideoMaterialClearTaskResultGetV2Api = (*FileVideoMaterialClearTaskResultGetV2ApiService)(&c.common)
-	c.FileVideoPauseV2Api = (*FileVideoPauseV2ApiService)(&c.common)
-	c.FileVideoUpdateV2Api = (*FileVideoUpdateV2ApiService)(&c.common)
-	c.FundSharedWalletBalanceGetV2Api = (*FundSharedWalletBalanceGetV2ApiService)(&c.common)
-	c.KeywordCreateV2V2Api = (*KeywordCreateV2V2ApiService)(&c.common)
-	c.KeywordCreateV30Api = (*KeywordCreateV30ApiService)(&c.common)
-	c.KeywordDeleteV2V2Api = (*KeywordDeleteV2V2ApiService)(&c.common)
-	c.KeywordDeleteV30Api = (*KeywordDeleteV30ApiService)(&c.common)
-	c.KeywordFeedadsSuggestV2Api = (*KeywordFeedadsSuggestV2ApiService)(&c.common)
-	c.KeywordGetV2Api = (*KeywordGetV2ApiService)(&c.common)
-	c.KeywordListV30Api = (*KeywordListV30ApiService)(&c.common)
-	c.KeywordUpdateV2V2Api = (*KeywordUpdateV2V2ApiService)(&c.common)
-	c.KeywordUpdateV30Api = (*KeywordUpdateV30ApiService)(&c.common)
-	c.MajordomoAdvertiserSelectV2Api = (*MajordomoAdvertiserSelectV2ApiService)(&c.common)
-	c.MaterialStatusUpdateV30Api = (*MaterialStatusUpdateV30ApiService)(&c.common)
-	c.NativeAnchorCreateV30Api = (*NativeAnchorCreateV30ApiService)(&c.common)
-	c.NativeAnchorDeleteV30Api = (*NativeAnchorDeleteV30ApiService)(&c.common)
-	c.NativeAnchorGetDetailV30Api = (*NativeAnchorGetDetailV30ApiService)(&c.common)
-	c.NativeAnchorGetV30Api = (*NativeAnchorGetV30ApiService)(&c.common)
-	c.NativeAnchorQrcodePreviewGetV30Api = (*NativeAnchorQrcodePreviewGetV30ApiService)(&c.common)
-	c.NativeAnchorUpdateV30Api = (*NativeAnchorUpdateV30ApiService)(&c.common)
-	c.Oauth2AccessTokenApi = (*Oauth2AccessTokenApiService)(&c.common)
-	c.Oauth2AdvertiserGetApi = (*Oauth2AdvertiserGetApiService)(&c.common)
-	c.Oauth2AppAccessTokenApi = (*Oauth2AppAccessTokenApiService)(&c.common)
-	c.Oauth2RefreshTokenApi = (*Oauth2RefreshTokenApiService)(&c.common)
-	c.Oauth2RenewTokenApi = (*Oauth2RenewTokenApiService)(&c.common)
+	c.ProjectListV30Api = (*ProjectListV30ApiService)(&c.common)
 	c.ProjectBudgetUpdateV30Api = (*ProjectBudgetUpdateV30ApiService)(&c.common)
 	c.ProjectCreateV30Api = (*ProjectCreateV30ApiService)(&c.common)
 	c.ProjectDeleteV30Api = (*ProjectDeleteV30ApiService)(&c.common)
-	c.ProjectListV30Api = (*ProjectListV30ApiService)(&c.common)
 	c.ProjectRoigoalUpdateV30Api = (*ProjectRoigoalUpdateV30ApiService)(&c.common)
 	c.ProjectScheduleTimeUpdateV30Api = (*ProjectScheduleTimeUpdateV30ApiService)(&c.common)
 	c.ProjectStatusUpdateV30Api = (*ProjectStatusUpdateV30ApiService)(&c.common)
@@ -1836,485 +1584,741 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.PromotionCreateV30Api = (*PromotionCreateV30ApiService)(&c.common)
 	c.PromotionDeepbidUpdateV30Api = (*PromotionDeepbidUpdateV30ApiService)(&c.common)
 	c.PromotionDeleteV30Api = (*PromotionDeleteV30ApiService)(&c.common)
-	c.PromotionListV30Api = (*PromotionListV30ApiService)(&c.common)
 	c.PromotionMaterialDeleteV30Api = (*PromotionMaterialDeleteV30ApiService)(&c.common)
 	c.PromotionRejectReasonGetV30Api = (*PromotionRejectReasonGetV30ApiService)(&c.common)
 	c.PromotionScheduleTimeUpdateV30Api = (*PromotionScheduleTimeUpdateV30ApiService)(&c.common)
 	c.PromotionShopInfoUpdateV30Api = (*PromotionShopInfoUpdateV30ApiService)(&c.common)
 	c.PromotionStatusUpdateV30Api = (*PromotionStatusUpdateV30ApiService)(&c.common)
 	c.PromotionUpdateV30Api = (*PromotionUpdateV30ApiService)(&c.common)
-	c.QianchuanAccountBalanceGetV10Api = (*QianchuanAccountBalanceGetV10ApiService)(&c.common)
-	c.QianchuanAccountBudgetGetV10Api = (*QianchuanAccountBudgetGetV10ApiService)(&c.common)
-	c.QianchuanAccountBudgetUpdateV10Api = (*QianchuanAccountBudgetUpdateV10ApiService)(&c.common)
-	c.QianchuanAdBidUpdateV10Api = (*QianchuanAdBidUpdateV10ApiService)(&c.common)
-	c.QianchuanAdBudgetUpdateV10Api = (*QianchuanAdBudgetUpdateV10ApiService)(&c.common)
-	c.QianchuanAdCompensateStatusGetV10Api = (*QianchuanAdCompensateStatusGetV10ApiService)(&c.common)
-	c.QianchuanAdCreateV10Api = (*QianchuanAdCreateV10ApiService)(&c.common)
-	c.QianchuanAdDetailGetV10Api = (*QianchuanAdDetailGetV10ApiService)(&c.common)
-	c.QianchuanAdGetV10Api = (*QianchuanAdGetV10ApiService)(&c.common)
-	c.QianchuanAdKeywordsGetV10Api = (*QianchuanAdKeywordsGetV10ApiService)(&c.common)
-	c.QianchuanAdKeywordsUpdateV10Api = (*QianchuanAdKeywordsUpdateV10ApiService)(&c.common)
-	c.QianchuanAdLearingStatusGetV10Api = (*QianchuanAdLearingStatusGetV10ApiService)(&c.common)
-	c.QianchuanAdPivativewordsGetV10Api = (*QianchuanAdPivativewordsGetV10ApiService)(&c.common)
-	c.QianchuanAdPivativewordsUpdateV10Api = (*QianchuanAdPivativewordsUpdateV10ApiService)(&c.common)
-	c.QianchuanAdQuotaGetV10Api = (*QianchuanAdQuotaGetV10ApiService)(&c.common)
-	c.QianchuanAdRecommendKeywordsGetV10Api = (*QianchuanAdRecommendKeywordsGetV10ApiService)(&c.common)
-	c.QianchuanAdRegionUpdateV10Api = (*QianchuanAdRegionUpdateV10ApiService)(&c.common)
-	c.QianchuanAdRejectReasonV10Api = (*QianchuanAdRejectReasonV10ApiService)(&c.common)
-	c.QianchuanAdScheduleDateUpdateV10Api = (*QianchuanAdScheduleDateUpdateV10ApiService)(&c.common)
-	c.QianchuanAdScheduleFixedRangeUpdateV10Api = (*QianchuanAdScheduleFixedRangeUpdateV10ApiService)(&c.common)
-	c.QianchuanAdScheduleTimeUpdateV10Api = (*QianchuanAdScheduleTimeUpdateV10ApiService)(&c.common)
-	c.QianchuanAdStatusUpdateV10Api = (*QianchuanAdStatusUpdateV10ApiService)(&c.common)
-	c.QianchuanAdUpdateV10Api = (*QianchuanAdUpdateV10ApiService)(&c.common)
-	c.QianchuanAdvertiserTypeGetV10Api = (*QianchuanAdvertiserTypeGetV10ApiService)(&c.common)
-	c.QianchuanAudienceCreateByFileV10Api = (*QianchuanAudienceCreateByFileV10ApiService)(&c.common)
-	c.QianchuanAudienceDeleteV10Api = (*QianchuanAudienceDeleteV10ApiService)(&c.common)
-	c.QianchuanAudienceFilePartUploadV10Api = (*QianchuanAudienceFilePartUploadV10ApiService)(&c.common)
-	c.QianchuanAudienceFileUploadV10Api = (*QianchuanAudienceFileUploadV10ApiService)(&c.common)
-	c.QianchuanAudienceGroupGetV10Api = (*QianchuanAudienceGroupGetV10ApiService)(&c.common)
-	c.QianchuanAudienceListGetV10Api = (*QianchuanAudienceListGetV10ApiService)(&c.common)
-	c.QianchuanAudiencePushV10Api = (*QianchuanAudiencePushV10ApiService)(&c.common)
-	c.QianchuanAwemeAuthorizedGetV10Api = (*QianchuanAwemeAuthorizedGetV10ApiService)(&c.common)
-	c.QianchuanAwemeEstimateProfitV10Api = (*QianchuanAwemeEstimateProfitV10ApiService)(&c.common)
-	c.QianchuanAwemeInterestActionInterestKeywordV10Api = (*QianchuanAwemeInterestActionInterestKeywordV10ApiService)(&c.common)
-	c.QianchuanAwemeOrderBudgetAddV10Api = (*QianchuanAwemeOrderBudgetAddV10ApiService)(&c.common)
-	c.QianchuanAwemeOrderCreateV10Api = (*QianchuanAwemeOrderCreateV10ApiService)(&c.common)
-	c.QianchuanAwemeOrderDetailGetV10Api = (*QianchuanAwemeOrderDetailGetV10ApiService)(&c.common)
-	c.QianchuanAwemeOrderGetV10Api = (*QianchuanAwemeOrderGetV10ApiService)(&c.common)
-	c.QianchuanAwemeOrderQuotaGetV10Api = (*QianchuanAwemeOrderQuotaGetV10ApiService)(&c.common)
-	c.QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api = (*QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService)(&c.common)
-	c.QianchuanAwemeOrderTerminateV10Api = (*QianchuanAwemeOrderTerminateV10ApiService)(&c.common)
-	c.QianchuanAwemeProductAvailableGetV10Api = (*QianchuanAwemeProductAvailableGetV10ApiService)(&c.common)
-	c.QianchuanAwemeReportOrderGetV10Api = (*QianchuanAwemeReportOrderGetV10ApiService)(&c.common)
-	c.QianchuanAwemeSuggestBidV10Api = (*QianchuanAwemeSuggestBidV10ApiService)(&c.common)
-	c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
-	c.QianchuanAwemeVideoGetV10Api = (*QianchuanAwemeVideoGetV10ApiService)(&c.common)
-	c.QianchuanBatchCampaignStatusUpdateV10Api = (*QianchuanBatchCampaignStatusUpdateV10ApiService)(&c.common)
-	c.QianchuanBrandAuthorizedGetV10Api = (*QianchuanBrandAuthorizedGetV10ApiService)(&c.common)
-	c.QianchuanCampaignCreateV10Api = (*QianchuanCampaignCreateV10ApiService)(&c.common)
-	c.QianchuanCampaignListGetV10Api = (*QianchuanCampaignListGetV10ApiService)(&c.common)
-	c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
-	c.QianchuanCarouselAwemeGetV10Api = (*QianchuanCarouselAwemeGetV10ApiService)(&c.common)
-	c.QianchuanCarouselGetV10Api = (*QianchuanCarouselGetV10ApiService)(&c.common)
-	c.QianchuanCreativeGetV10Api = (*QianchuanCreativeGetV10ApiService)(&c.common)
-	c.QianchuanCreativeRejectReasonV10Api = (*QianchuanCreativeRejectReasonV10ApiService)(&c.common)
-	c.QianchuanCreativeStatusUpdateV10Api = (*QianchuanCreativeStatusUpdateV10ApiService)(&c.common)
-	c.QianchuanDmpAudiencesGetV10Api = (*QianchuanDmpAudiencesGetV10ApiService)(&c.common)
-	c.QianchuanEcpAwemeAdGetV10Api = (*QianchuanEcpAwemeAdGetV10ApiService)(&c.common)
-	c.QianchuanEstimateEffectV10Api = (*QianchuanEstimateEffectV10ApiService)(&c.common)
-	c.QianchuanFileImageDeleteV10Api = (*QianchuanFileImageDeleteV10ApiService)(&c.common)
-	c.QianchuanFileVideoAwemeGetV10Api = (*QianchuanFileVideoAwemeGetV10ApiService)(&c.common)
-	c.QianchuanFileVideoDeleteV10Api = (*QianchuanFileVideoDeleteV10ApiService)(&c.common)
-	c.QianchuanFileVideoEfficiencyGetV10Api = (*QianchuanFileVideoEfficiencyGetV10ApiService)(&c.common)
-	c.QianchuanFileVideoOriginalGetV10Api = (*QianchuanFileVideoOriginalGetV10ApiService)(&c.common)
-	c.QianchuanFinanceDetailGetV10Api = (*QianchuanFinanceDetailGetV10ApiService)(&c.common)
-	c.QianchuanFinanceWalletGetV10Api = (*QianchuanFinanceWalletGetV10ApiService)(&c.common)
-	c.QianchuanImageGetV10Api = (*QianchuanImageGetV10ApiService)(&c.common)
-	c.QianchuanKeywordCheckV10Api = (*QianchuanKeywordCheckV10ApiService)(&c.common)
-	c.QianchuanKeywordPackageGetV10Api = (*QianchuanKeywordPackageGetV10ApiService)(&c.common)
-	c.QianchuanLqAdGetV10Api = (*QianchuanLqAdGetV10ApiService)(&c.common)
-	c.QianchuanOrientationPackageGetV10Api = (*QianchuanOrientationPackageGetV10ApiService)(&c.common)
-	c.QianchuanProductAnalyseCompareCreativeV10Api = (*QianchuanProductAnalyseCompareCreativeV10ApiService)(&c.common)
-	c.QianchuanProductAnalyseCompareStatsDataV10Api = (*QianchuanProductAnalyseCompareStatsDataV10ApiService)(&c.common)
-	c.QianchuanProductAnalyseListV10Api = (*QianchuanProductAnalyseListV10ApiService)(&c.common)
-	c.QianchuanProductAvailableGetV10Api = (*QianchuanProductAvailableGetV10ApiService)(&c.common)
-	c.QianchuanReportAdGetV10Api = (*QianchuanReportAdGetV10ApiService)(&c.common)
-	c.QianchuanReportAdvertiserGetV10Api = (*QianchuanReportAdvertiserGetV10ApiService)(&c.common)
-	c.QianchuanReportCreativeGetV10Api = (*QianchuanReportCreativeGetV10ApiService)(&c.common)
-	c.QianchuanReportCustomConfigGetV10Api = (*QianchuanReportCustomConfigGetV10ApiService)(&c.common)
-	c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
-	c.QianchuanReportLiveGetV10Api = (*QianchuanReportLiveGetV10ApiService)(&c.common)
-	c.QianchuanReportLongTransferOrderGetV10Api = (*QianchuanReportLongTransferOrderGetV10ApiService)(&c.common)
-	c.QianchuanReportMaterialGetV10Api = (*QianchuanReportMaterialGetV10ApiService)(&c.common)
-	c.QianchuanReportSearchWordGetV10Api = (*QianchuanReportSearchWordGetV10ApiService)(&c.common)
-	c.QianchuanReportUniPromotionDimensionDataAuthorGetV10Api = (*QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService)(&c.common)
-	c.QianchuanReportUniPromotionDimensionDataRoomGetV10Api = (*QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService)(&c.common)
-	c.QianchuanReportUniPromotionGetV10Api = (*QianchuanReportUniPromotionGetV10ApiService)(&c.common)
-	c.QianchuanReportVideoUserLoseGetV10Api = (*QianchuanReportVideoUserLoseGetV10ApiService)(&c.common)
-	c.QianchuanRoiGoalUpdateV10Api = (*QianchuanRoiGoalUpdateV10ApiService)(&c.common)
-	c.QianchuanShopAdvertiserListV10Api = (*QianchuanShopAdvertiserListV10ApiService)(&c.common)
-	c.QianchuanShopAuthorizedGetV10Api = (*QianchuanShopAuthorizedGetV10ApiService)(&c.common)
-	c.QianchuanShopGetV10Api = (*QianchuanShopGetV10ApiService)(&c.common)
-	c.QianchuanSuggestBidV10Api = (*QianchuanSuggestBidV10ApiService)(&c.common)
-	c.QianchuanSuggestBudgetV10Api = (*QianchuanSuggestBudgetV10ApiService)(&c.common)
-	c.QianchuanSuggestRoiGoalV10Api = (*QianchuanSuggestRoiGoalV10ApiService)(&c.common)
-	c.QianchuanTodayLiveRoomDetailGetV10Api = (*QianchuanTodayLiveRoomDetailGetV10ApiService)(&c.common)
-	c.QianchuanTodayLiveRoomFlowPerformanceGetV10Api = (*QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService)(&c.common)
-	c.QianchuanTodayLiveRoomGetV10Api = (*QianchuanTodayLiveRoomGetV10ApiService)(&c.common)
-	c.QianchuanTodayLiveRoomProductListGetV10Api = (*QianchuanTodayLiveRoomProductListGetV10ApiService)(&c.common)
-	c.QianchuanTodayLiveRoomUserGetV10Api = (*QianchuanTodayLiveRoomUserGetV10ApiService)(&c.common)
-	c.QianchuanToolsAllowCouponV10Api = (*QianchuanToolsAllowCouponV10ApiService)(&c.common)
-	c.QianchuanToolsAwemeAuthV10Api = (*QianchuanToolsAwemeAuthV10ApiService)(&c.common)
-	c.QianchuanToolsEstimateAudienceV10Api = (*QianchuanToolsEstimateAudienceV10ApiService)(&c.common)
-	c.QianchuanToolsGrayV10Api = (*QianchuanToolsGrayV10ApiService)(&c.common)
-	c.QianchuanToolsShopAuthV10Api = (*QianchuanToolsShopAuthV10ApiService)(&c.common)
-	c.QianchuanToolsSmartBoostAdBoostReportGetV10Api = (*QianchuanToolsSmartBoostAdBoostReportGetV10ApiService)(&c.common)
-	c.QianchuanToolsSmartBoostAdBoostSetV10Api = (*QianchuanToolsSmartBoostAdBoostSetV10ApiService)(&c.common)
-	c.QianchuanToolsSmartBoostAdBoostStatusGetV10Api = (*QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService)(&c.common)
-	c.QianchuanToolsSmartBoostAdBoostVersionGetV10Api = (*QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService)(&c.common)
-	c.QianchuanTrackUrlCheckV10Api = (*QianchuanTrackUrlCheckV10ApiService)(&c.common)
-	c.QianchuanUniAwemeAuthorizedGetV10Api = (*QianchuanUniAwemeAuthorizedGetV10ApiService)(&c.common)
-	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
-	c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
-	c.QueryInvoiceV2Api = (*QueryInvoiceV2ApiService)(&c.common)
-	c.QueryProjectV2Api = (*QueryProjectV2ApiService)(&c.common)
-	c.QueryStatementV2Api = (*QueryStatementV2ApiService)(&c.common)
-	c.ReportAdGetV2Api = (*ReportAdGetV2ApiService)(&c.common)
-	c.ReportAdvertiserGetV2Api = (*ReportAdvertiserGetV2ApiService)(&c.common)
-	c.ReportAgentGetV2V2Api = (*ReportAgentGetV2V2ApiService)(&c.common)
-	c.ReportAudienceAgeV2Api = (*ReportAudienceAgeV2ApiService)(&c.common)
-	c.ReportAudienceAwemeListV2Api = (*ReportAudienceAwemeListV2ApiService)(&c.common)
-	c.ReportAudienceCityV2Api = (*ReportAudienceCityV2ApiService)(&c.common)
-	c.ReportAudienceGenderV2Api = (*ReportAudienceGenderV2ApiService)(&c.common)
-	c.ReportAudienceInterestActionListV2Api = (*ReportAudienceInterestActionListV2ApiService)(&c.common)
-	c.ReportAudienceProvinceV2Api = (*ReportAudienceProvinceV2ApiService)(&c.common)
-	c.ReportBrandAdGetV30Api = (*ReportBrandAdGetV30ApiService)(&c.common)
-	c.ReportBrandAdvertiserGetV30Api = (*ReportBrandAdvertiserGetV30ApiService)(&c.common)
-	c.ReportBrandCampaignGetV30Api = (*ReportBrandCampaignGetV30ApiService)(&c.common)
-	c.ReportBrandCreativeGetV30Api = (*ReportBrandCreativeGetV30ApiService)(&c.common)
-	c.ReportCampaignGetV2Api = (*ReportCampaignGetV2ApiService)(&c.common)
-	c.ReportCreativeGetV2Api = (*ReportCreativeGetV2ApiService)(&c.common)
-	c.ReportCustomAsyncTaskCreateV30Api = (*ReportCustomAsyncTaskCreateV30ApiService)(&c.common)
-	c.ReportCustomAsyncTaskDownloadV30Api = (*ReportCustomAsyncTaskDownloadV30ApiService)(&c.common)
-	c.ReportCustomAsyncTaskGetV30Api = (*ReportCustomAsyncTaskGetV30ApiService)(&c.common)
-	c.ReportCustomConfigGetV30Api = (*ReportCustomConfigGetV30ApiService)(&c.common)
-	c.ReportCustomCreativeGetV30Api = (*ReportCustomCreativeGetV30ApiService)(&c.common)
-	c.ReportCustomGetV30Api = (*ReportCustomGetV30ApiService)(&c.common)
-	c.ReportLiveRoomAnalysisGetV2Api = (*ReportLiveRoomAnalysisGetV2ApiService)(&c.common)
-	c.ReportLiveRoomAttributeGetV2Api = (*ReportLiveRoomAttributeGetV2ApiService)(&c.common)
-	c.ReportLiveRoomAudiencePortraitGetV2Api = (*ReportLiveRoomAudiencePortraitGetV2ApiService)(&c.common)
-	c.ReportLiveRoomFlowCategoryGetV2Api = (*ReportLiveRoomFlowCategoryGetV2ApiService)(&c.common)
-	c.ReportLiveRoomProductGetV2Api = (*ReportLiveRoomProductGetV2ApiService)(&c.common)
-	c.ReportProductAsyncTaskDownloadV30Api = (*ReportProductAsyncTaskDownloadV30ApiService)(&c.common)
-	c.ReportProductAsyncTaskGetV30Api = (*ReportProductAsyncTaskGetV30ApiService)(&c.common)
-	c.ReportProductDailyAsyncTaskCreateV30Api = (*ReportProductDailyAsyncTaskCreateV30ApiService)(&c.common)
-	c.ReportProductHourlyAsyncTaskCreateV30Api = (*ReportProductHourlyAsyncTaskCreateV30ApiService)(&c.common)
-	c.ReportRtaCusExpGetV2Api = (*ReportRtaCusExpGetV2ApiService)(&c.common)
-	c.ReportRtaExpGetV2Api = (*ReportRtaExpGetV2ApiService)(&c.common)
-	c.ReportRtaExpLocalDailyGetV30Api = (*ReportRtaExpLocalDailyGetV30ApiService)(&c.common)
-	c.ReportRtaExpLocalHourlyGetV30Api = (*ReportRtaExpLocalHourlyGetV30ApiService)(&c.common)
-	c.ReportRtaGetV2Api = (*ReportRtaGetV2ApiService)(&c.common)
-	c.ReportRubeexGetV2Api = (*ReportRubeexGetV2ApiService)(&c.common)
-	c.ReportSitePageV2Api = (*ReportSitePageV2ApiService)(&c.common)
-	c.ReportStardeliveryTaskDataGetV30Api = (*ReportStardeliveryTaskDataGetV30ApiService)(&c.common)
-	c.ReportStardeliveryTaskVideoDataGetV30Api = (*ReportStardeliveryTaskVideoDataGetV30ApiService)(&c.common)
-	c.ReportVideoFrameGetV2Api = (*ReportVideoFrameGetV2ApiService)(&c.common)
-	c.ServeMarketActiveFuncGetV10Api = (*ServeMarketActiveFuncGetV10ApiService)(&c.common)
-	c.ServeMarketCidVerifyTokenV10Api = (*ServeMarketCidVerifyTokenV10ApiService)(&c.common)
-	c.ServeMarketOrderGetV10Api = (*ServeMarketOrderGetV10ApiService)(&c.common)
-	c.SharedWalletDailyStatGetV30Api = (*SharedWalletDailyStatGetV30ApiService)(&c.common)
-	c.SharedWalletMainWalletGetV30Api = (*SharedWalletMainWalletGetV30ApiService)(&c.common)
-	c.SharedWalletTransactionDetailGetV30Api = (*SharedWalletTransactionDetailGetV30ApiService)(&c.common)
-	c.SharedWalletWalletBalanceGetV30Api = (*SharedWalletWalletBalanceGetV30ApiService)(&c.common)
-	c.SharedWalletWalletInfoGetV30Api = (*SharedWalletWalletInfoGetV30ApiService)(&c.common)
-	c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
-	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
-	c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
-	c.StarBillGetPendingV2Api = (*StarBillGetPendingV2ApiService)(&c.common)
-	c.StarBillPayV2Api = (*StarBillPayV2ApiService)(&c.common)
-	c.StarCampaignListV2Api = (*StarCampaignListV2ApiService)(&c.common)
-	c.StarChallengeAddBudgetV2Api = (*StarChallengeAddBudgetV2ApiService)(&c.common)
-	c.StarChallengeAuthorListV2Api = (*StarChallengeAuthorListV2ApiService)(&c.common)
-	c.StarChallengeCancelV2Api = (*StarChallengeCancelV2ApiService)(&c.common)
-	c.StarChallengeExpandRangeV2Api = (*StarChallengeExpandRangeV2ApiService)(&c.common)
-	c.StarChallengeGetPushAdResultsV2Api = (*StarChallengeGetPushAdResultsV2ApiService)(&c.common)
-	c.StarChallengeInfoV2Api = (*StarChallengeInfoV2ApiService)(&c.common)
-	c.StarChallengeItemsDataV2Api = (*StarChallengeItemsDataV2ApiService)(&c.common)
-	c.StarChallengeListV2Api = (*StarChallengeListV2ApiService)(&c.common)
-	c.StarChallengePushItemsToAdV2Api = (*StarChallengePushItemsToAdV2ApiService)(&c.common)
-	c.StarClueGetV2Api = (*StarClueGetV2ApiService)(&c.common)
-	c.StarComponentCreateLinkV2Api = (*StarComponentCreateLinkV2ApiService)(&c.common)
-	c.StarComponentQueryIndustryAnchorV2Api = (*StarComponentQueryIndustryAnchorV2ApiService)(&c.common)
-	c.StarComponentQueryLinkV2Api = (*StarComponentQueryLinkV2ApiService)(&c.common)
-	c.StarComponentUpdateLinkV2Api = (*StarComponentUpdateLinkV2ApiService)(&c.common)
-	c.StarDataTaskTimelineReportV2Api = (*StarDataTaskTimelineReportV2ApiService)(&c.common)
-	c.StarDemandCreateAssignV2Api = (*StarDemandCreateAssignV2ApiService)(&c.common)
-	c.StarDemandCreateChallengeV2Api = (*StarDemandCreateChallengeV2ApiService)(&c.common)
-	c.StarDemandListV2Api = (*StarDemandListV2ApiService)(&c.common)
-	c.StarDemandOmCreateChallengeV2Api = (*StarDemandOmCreateChallengeV2ApiService)(&c.common)
-	c.StarDemandOmExpandChallengeV2Api = (*StarDemandOmExpandChallengeV2ApiService)(&c.common)
-	c.StarDemandOmGetChallengeItemsDataV2Api = (*StarDemandOmGetChallengeItemsDataV2ApiService)(&c.common)
-	c.StarDemandOmGetChallengeV2Api = (*StarDemandOmGetChallengeV2ApiService)(&c.common)
-	c.StarDemandOmGetDemandListV2Api = (*StarDemandOmGetDemandListV2ApiService)(&c.common)
-	c.StarDemandOmUpdateChallengeV2Api = (*StarDemandOmUpdateChallengeV2ApiService)(&c.common)
-	c.StarDemandOrderListV2Api = (*StarDemandOrderListV2ApiService)(&c.common)
-	c.StarGetCreateChallengeDataDictV2Api = (*StarGetCreateChallengeDataDictV2ApiService)(&c.common)
-	c.StarInfoV2Api = (*StarInfoV2ApiService)(&c.common)
-	c.StarMcnContractChallengeV2Api = (*StarMcnContractChallengeV2ApiService)(&c.common)
-	c.StarMcnGetContractChallengeAuthorItemListV2V2Api = (*StarMcnGetContractChallengeAuthorItemListV2V2ApiService)(&c.common)
-	c.StarMcnGetContractedChallengeListV2Api = (*StarMcnGetContractedChallengeListV2ApiService)(&c.common)
-	c.StarMcnGetContractedChallengeUrlV2Api = (*StarMcnGetContractedChallengeUrlV2ApiService)(&c.common)
-	c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
-	c.StarOrderApproveResourceV2Api = (*StarOrderApproveResourceV2ApiService)(&c.common)
-	c.StarOrderDemanderCancelV2Api = (*StarOrderDemanderCancelV2ApiService)(&c.common)
-	c.StarOrderDetailV2Api = (*StarOrderDetailV2ApiService)(&c.common)
-	c.StarOrderFinishV2Api = (*StarOrderFinishV2ApiService)(&c.common)
-	c.StarOrderGetCancelAmountV2Api = (*StarOrderGetCancelAmountV2ApiService)(&c.common)
-	c.StarOrderGetComponentV2Api = (*StarOrderGetComponentV2ApiService)(&c.common)
-	c.StarOrderGetInfoV2Api = (*StarOrderGetInfoV2ApiService)(&c.common)
-	c.StarOrderGetScriptV2Api = (*StarOrderGetScriptV2ApiService)(&c.common)
-	c.StarOrderGetVideoV2Api = (*StarOrderGetVideoV2ApiService)(&c.common)
-	c.StarOrderListByCampaignV2Api = (*StarOrderListByCampaignV2ApiService)(&c.common)
-	c.StarOrderPublishResourceV2Api = (*StarOrderPublishResourceV2ApiService)(&c.common)
-	c.StarOrderPushResourceV2Api = (*StarOrderPushResourceV2ApiService)(&c.common)
-	c.StarOrderRejectResourceV2Api = (*StarOrderRejectResourceV2ApiService)(&c.common)
-	c.StarOrderReplyAuthorCancelV2Api = (*StarOrderReplyAuthorCancelV2ApiService)(&c.common)
-	c.StarOrderUpdateV2Api = (*StarOrderUpdateV2ApiService)(&c.common)
-	c.StarReportCustomDataTopicDailyReportV2Api = (*StarReportCustomDataTopicDailyReportV2ApiService)(&c.common)
-	c.StarReportCustomDataTopicReportV2Api = (*StarReportCustomDataTopicReportV2ApiService)(&c.common)
-	c.StarReportDataTopicConfigV2Api = (*StarReportDataTopicConfigV2ApiService)(&c.common)
-	c.StarReportOrderOverviewGetV2Api = (*StarReportOrderOverviewGetV2ApiService)(&c.common)
-	c.StarReportOrderOverviewV2Api = (*StarReportOrderOverviewV2ApiService)(&c.common)
-	c.StarReportOrderUserDistributionGetV2Api = (*StarReportOrderUserDistributionGetV2ApiService)(&c.common)
-	c.StarStarAdUniteTaskDetailV2Api = (*StarStarAdUniteTaskDetailV2ApiService)(&c.common)
-	c.StarStarAdUniteTaskItemListV2Api = (*StarStarAdUniteTaskItemListV2ApiService)(&c.common)
-	c.StarStarAdUniteTaskListV2Api = (*StarStarAdUniteTaskListV2ApiService)(&c.common)
-	c.StarUserGetAwemeAuthorIdV2Api = (*StarUserGetAwemeAuthorIdV2ApiService)(&c.common)
-	c.StarUserGetStarIdV2Api = (*StarUserGetStarIdV2ApiService)(&c.common)
-	c.StardeliveryTaskAuthorDetailV30Api = (*StardeliveryTaskAuthorDetailV30ApiService)(&c.common)
-	c.StardeliveryTaskAuthorVideoDetailV30Api = (*StardeliveryTaskAuthorVideoDetailV30ApiService)(&c.common)
-	c.StardeliveryTaskBudgetUpdateV30Api = (*StardeliveryTaskBudgetUpdateV30ApiService)(&c.common)
-	c.StardeliveryTaskCancelV30Api = (*StardeliveryTaskCancelV30ApiService)(&c.common)
-	c.StardeliveryTaskCreateResultGetV30Api = (*StardeliveryTaskCreateResultGetV30ApiService)(&c.common)
-	c.StardeliveryTaskCreateV30Api = (*StardeliveryTaskCreateV30ApiService)(&c.common)
-	c.StardeliveryTaskDetailV30Api = (*StardeliveryTaskDetailV30ApiService)(&c.common)
-	c.StardeliveryTaskListV30Api = (*StardeliveryTaskListV30ApiService)(&c.common)
-	c.StardeliveryTaskPostEndTimeUpdateV30Api = (*StardeliveryTaskPostEndTimeUpdateV30ApiService)(&c.common)
-	c.StardeliveryTaskShareV30Api = (*StardeliveryTaskShareV30ApiService)(&c.common)
-	c.StardeliveryTaskShareableListV30Api = (*StardeliveryTaskShareableListV30ApiService)(&c.common)
-	c.StardeliveryTaskSharingListV30Api = (*StardeliveryTaskSharingListV30ApiService)(&c.common)
-	c.StardeliveryTaskUnshareV30Api = (*StardeliveryTaskUnshareV30ApiService)(&c.common)
-	c.StardeliveryTaskUpdateV30Api = (*StardeliveryTaskUpdateV30ApiService)(&c.common)
-	c.SubscribeAccountsAddV30Api = (*SubscribeAccountsAddV30ApiService)(&c.common)
-	c.SubscribeAccountsListV30Api = (*SubscribeAccountsListV30ApiService)(&c.common)
-	c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)
-	c.SuggWordsV30Api = (*SuggWordsV30ApiService)(&c.common)
+	c.PromotionListV30Api = (*PromotionListV30ApiService)(&c.common)
 	c.ToolQuickAppManagementQuickAppGetV2Api = (*ToolQuickAppManagementQuickAppGetV2ApiService)(&c.common)
-	c.ToolsAbTestCreateV2Api = (*ToolsAbTestCreateV2ApiService)(&c.common)
-	c.ToolsAbTestInfoGetV2Api = (*ToolsAbTestInfoGetV2ApiService)(&c.common)
-	c.ToolsAbTestListGetV2Api = (*ToolsAbTestListGetV2ApiService)(&c.common)
-	c.ToolsAbTestUpdateV2Api = (*ToolsAbTestUpdateV2ApiService)(&c.common)
-	c.ToolsAdConvertDeepbidReadV2Api = (*ToolsAdConvertDeepbidReadV2ApiService)(&c.common)
-	c.ToolsAdConvertOptimizedTargetGetV2Api = (*ToolsAdConvertOptimizedTargetGetV2ApiService)(&c.common)
-	c.ToolsAdConvertQueryV2Api = (*ToolsAdConvertQueryV2ApiService)(&c.common)
-	c.ToolsAdConvertTrackUrlUpdateV2Api = (*ToolsAdConvertTrackUrlUpdateV2ApiService)(&c.common)
-	c.ToolsAdPreviewQrcodeGetV30Api = (*ToolsAdPreviewQrcodeGetV30ApiService)(&c.common)
-	c.ToolsAdRaiseEstimateGetV2Api = (*ToolsAdRaiseEstimateGetV2ApiService)(&c.common)
-	c.ToolsAdRaiseResultGetV2V2Api = (*ToolsAdRaiseResultGetV2V2ApiService)(&c.common)
-	c.ToolsAdRaiseSetV2Api = (*ToolsAdRaiseSetV2ApiService)(&c.common)
-	c.ToolsAdRaiseStatusGetV2Api = (*ToolsAdRaiseStatusGetV2ApiService)(&c.common)
-	c.ToolsAdRaiseVersionGetV2Api = (*ToolsAdRaiseVersionGetV2ApiService)(&c.common)
-	c.ToolsAdStatExtraInfoGetV2Api = (*ToolsAdStatExtraInfoGetV2ApiService)(&c.common)
-	c.ToolsAdminInfoV2Api = (*ToolsAdminInfoV2ApiService)(&c.common)
-	c.ToolsAdvertiserStoreSearchV2Api = (*ToolsAdvertiserStoreSearchV2ApiService)(&c.common)
-	c.ToolsAipThirdSiteCreateV2Api = (*ToolsAipThirdSiteCreateV2ApiService)(&c.common)
-	c.ToolsAipThirdSiteGetV2Api = (*ToolsAipThirdSiteGetV2ApiService)(&c.common)
-	c.ToolsAipThirdSiteUpdateV2Api = (*ToolsAipThirdSiteUpdateV2ApiService)(&c.common)
-	c.ToolsAppAuthGetV2Api = (*ToolsAppAuthGetV2ApiService)(&c.common)
-	c.ToolsAppIosListV2Api = (*ToolsAppIosListV2ApiService)(&c.common)
-	c.ToolsAppManagementAndroidAppListV2Api = (*ToolsAppManagementAndroidAppListV2ApiService)(&c.common)
-	c.ToolsAppManagementAndroidBasicPackageGetV2Api = (*ToolsAppManagementAndroidBasicPackageGetV2ApiService)(&c.common)
-	c.ToolsAppManagementAndroidBasicPackagePublishV2Api = (*ToolsAppManagementAndroidBasicPackagePublishV2ApiService)(&c.common)
-	c.ToolsAppManagementAndroidBasicPackageUpdateV2Api = (*ToolsAppManagementAndroidBasicPackageUpdateV2ApiService)(&c.common)
-	c.ToolsAppManagementAppGetV2Api = (*ToolsAppManagementAppGetV2ApiService)(&c.common)
-	c.ToolsAppManagementBookingGetV2Api = (*ToolsAppManagementBookingGetV2ApiService)(&c.common)
-	c.ToolsAppManagementBookingRecordsGetV2Api = (*ToolsAppManagementBookingRecordsGetV2ApiService)(&c.common)
-	c.ToolsAppManagementBpShareCancelV2Api = (*ToolsAppManagementBpShareCancelV2ApiService)(&c.common)
-	c.ToolsAppManagementBpShareV2Api = (*ToolsAppManagementBpShareV2ApiService)(&c.common)
-	c.ToolsAppManagementExtendPackageCreateV2Api = (*ToolsAppManagementExtendPackageCreateV2ApiService)(&c.common)
-	c.ToolsAppManagementExtendPackageCreateV2V2Api = (*ToolsAppManagementExtendPackageCreateV2V2ApiService)(&c.common)
-	c.ToolsAppManagementExtendPackageListV2Api = (*ToolsAppManagementExtendPackageListV2ApiService)(&c.common)
-	c.ToolsAppManagementExtendPackageListV2V2Api = (*ToolsAppManagementExtendPackageListV2V2ApiService)(&c.common)
-	c.ToolsAppManagementExtendPackageUpdateV2Api = (*ToolsAppManagementExtendPackageUpdateV2ApiService)(&c.common)
-	c.ToolsAppManagementExtendPackageUpdateV2V2Api = (*ToolsAppManagementExtendPackageUpdateV2V2ApiService)(&c.common)
-	c.ToolsAppManagementIndustryInfoListV2Api = (*ToolsAppManagementIndustryInfoListV2ApiService)(&c.common)
-	c.ToolsAppManagementShareAccountListV2Api = (*ToolsAppManagementShareAccountListV2ApiService)(&c.common)
-	c.ToolsAppManagementUpdateAuthorizationV2Api = (*ToolsAppManagementUpdateAuthorizationV2ApiService)(&c.common)
-	c.ToolsAppManagementUploadTaskCreateV2Api = (*ToolsAppManagementUploadTaskCreateV2ApiService)(&c.common)
-	c.ToolsAppManagementUploadTaskListV2Api = (*ToolsAppManagementUploadTaskListV2ApiService)(&c.common)
-	c.ToolsAssetLinkListV30Api = (*ToolsAssetLinkListV30ApiService)(&c.common)
-	c.ToolsAwemeAuthAuthShareAdShareV2Api = (*ToolsAwemeAuthAuthShareAdShareV2ApiService)(&c.common)
-	c.ToolsAwemeAuthCancelV2Api = (*ToolsAwemeAuthCancelV2ApiService)(&c.common)
-	c.ToolsAwemeAuthListV2Api = (*ToolsAwemeAuthListV2ApiService)(&c.common)
-	c.ToolsAwemeAuthRenewalV2Api = (*ToolsAwemeAuthRenewalV2ApiService)(&c.common)
-	c.ToolsAwemeAuthV2Api = (*ToolsAwemeAuthV2ApiService)(&c.common)
-	c.ToolsAwemeAuthorInfoGetV2Api = (*ToolsAwemeAuthorInfoGetV2ApiService)(&c.common)
-	c.ToolsAwemeBannedCreateV30Api = (*ToolsAwemeBannedCreateV30ApiService)(&c.common)
-	c.ToolsAwemeBannedDeleteV30Api = (*ToolsAwemeBannedDeleteV30ApiService)(&c.common)
-	c.ToolsAwemeBannedListV30Api = (*ToolsAwemeBannedListV30ApiService)(&c.common)
-	c.ToolsAwemeCategoryTopAuthorGetV2Api = (*ToolsAwemeCategoryTopAuthorGetV2ApiService)(&c.common)
-	c.ToolsAwemeInfoSearchV2Api = (*ToolsAwemeInfoSearchV2ApiService)(&c.common)
-	c.ToolsAwemeMultiLevelCategoryGetV2Api = (*ToolsAwemeMultiLevelCategoryGetV2ApiService)(&c.common)
-	c.ToolsAwemeSimilarAuthorSearchV2Api = (*ToolsAwemeSimilarAuthorSearchV2ApiService)(&c.common)
-	c.ToolsBidSuggestV2Api = (*ToolsBidSuggestV2ApiService)(&c.common)
-	c.ToolsBidsSuggestV30Api = (*ToolsBidsSuggestV30ApiService)(&c.common)
-	c.ToolsBlueFlowKeywordListV30Api = (*ToolsBlueFlowKeywordListV30ApiService)(&c.common)
-	c.ToolsBlueFlowPackageListV30Api = (*ToolsBlueFlowPackageListV30ApiService)(&c.common)
-	c.ToolsBpAssetManagementShareCancelV30Api = (*ToolsBpAssetManagementShareCancelV30ApiService)(&c.common)
-	c.ToolsBpAssetManagementShareGetV30Api = (*ToolsBpAssetManagementShareGetV30ApiService)(&c.common)
-	c.ToolsBpAssetManagementShareV30Api = (*ToolsBpAssetManagementShareV30ApiService)(&c.common)
-	c.ToolsClueBridgeCallCreateV2Api = (*ToolsClueBridgeCallCreateV2ApiService)(&c.common)
-	c.ToolsClueCallCreateV2Api = (*ToolsClueCallCreateV2ApiService)(&c.common)
-	c.ToolsClueCallVirtualNumberGetV2Api = (*ToolsClueCallVirtualNumberGetV2ApiService)(&c.common)
-	c.ToolsClueCallVirtualNumberRefundDetailGetV2Api = (*ToolsClueCallVirtualNumberRefundDetailGetV2ApiService)(&c.common)
-	c.ToolsClueCallbackV2Api = (*ToolsClueCallbackV2ApiService)(&c.common)
-	c.ToolsClueClueOverviewQueryV2Api = (*ToolsClueClueOverviewQueryV2ApiService)(&c.common)
-	c.ToolsClueContactLogListV2Api = (*ToolsClueContactLogListV2ApiService)(&c.common)
-	c.ToolsClueContactLogOverviewQueryV2Api = (*ToolsClueContactLogOverviewQueryV2ApiService)(&c.common)
-	c.ToolsClueExtInfoCallbackV2Api = (*ToolsClueExtInfoCallbackV2ApiService)(&c.common)
-	c.ToolsClueFormDetailV2Api = (*ToolsClueFormDetailV2ApiService)(&c.common)
-	c.ToolsClueFormGetV2Api = (*ToolsClueFormGetV2ApiService)(&c.common)
-	c.ToolsClueGetV2Api = (*ToolsClueGetV2ApiService)(&c.common)
-	c.ToolsClueInfoUpdateV2Api = (*ToolsClueInfoUpdateV2ApiService)(&c.common)
-	c.ToolsClueLifeGetV2Api = (*ToolsClueLifeGetV2ApiService)(&c.common)
-	c.ToolsClueLiteContactGetV2Api = (*ToolsClueLiteContactGetV2ApiService)(&c.common)
-	c.ToolsClueLiteContactRecordV2Api = (*ToolsClueLiteContactRecordV2ApiService)(&c.common)
-	c.ToolsClueRefundDetailGetV2Api = (*ToolsClueRefundDetailGetV2ApiService)(&c.common)
-	c.ToolsClueRefundInfoQueryV2Api = (*ToolsClueRefundInfoQueryV2ApiService)(&c.common)
-	c.ToolsClueRefundReportGetV2Api = (*ToolsClueRefundReportGetV2ApiService)(&c.common)
-	c.ToolsClueRefundViewGetV2Api = (*ToolsClueRefundViewGetV2ApiService)(&c.common)
-	c.ToolsClueRobotScriptQueryV2Api = (*ToolsClueRobotScriptQueryV2ApiService)(&c.common)
-	c.ToolsClueRobotTaskCancelV2Api = (*ToolsClueRobotTaskCancelV2ApiService)(&c.common)
-	c.ToolsClueRobotTaskCreateV2Api = (*ToolsClueRobotTaskCreateV2ApiService)(&c.common)
-	c.ToolsClueSmartPhoneGetV2Api = (*ToolsClueSmartPhoneGetV2ApiService)(&c.common)
-	c.ToolsClueWebrtcTokenGetV2Api = (*ToolsClueWebrtcTokenGetV2ApiService)(&c.common)
-	c.ToolsCommentGetV30Api = (*ToolsCommentGetV30ApiService)(&c.common)
-	c.ToolsCommentHideV30Api = (*ToolsCommentHideV30ApiService)(&c.common)
-	c.ToolsCommentMetricsGetV30Api = (*ToolsCommentMetricsGetV30ApiService)(&c.common)
-	c.ToolsCommentMid2itemIdV30Api = (*ToolsCommentMid2itemIdV30ApiService)(&c.common)
-	c.ToolsCommentReplyGetV30Api = (*ToolsCommentReplyGetV30ApiService)(&c.common)
-	c.ToolsCommentReplyV30Api = (*ToolsCommentReplyV30ApiService)(&c.common)
-	c.ToolsCommentStickOnTopV30Api = (*ToolsCommentStickOnTopV30ApiService)(&c.common)
-	c.ToolsCommentTermsBannedAddV30Api = (*ToolsCommentTermsBannedAddV30ApiService)(&c.common)
-	c.ToolsCommentTermsBannedDeleteV30Api = (*ToolsCommentTermsBannedDeleteV30ApiService)(&c.common)
-	c.ToolsCommentTermsBannedGetV30Api = (*ToolsCommentTermsBannedGetV30ApiService)(&c.common)
-	c.ToolsCommentTermsBannedUpdateV30Api = (*ToolsCommentTermsBannedUpdateV30ApiService)(&c.common)
-	c.ToolsCountryInfoV2Api = (*ToolsCountryInfoV2ApiService)(&c.common)
-	c.ToolsCreativeWordSelectV2Api = (*ToolsCreativeWordSelectV2ApiService)(&c.common)
-	c.ToolsDiagnosisAdGetV2V2Api = (*ToolsDiagnosisAdGetV2V2ApiService)(&c.common)
-	c.ToolsDiagnosisSuggestionGetV2Api = (*ToolsDiagnosisSuggestionGetV2ApiService)(&c.common)
-	c.ToolsDownloadPackageGetV2Api = (*ToolsDownloadPackageGetV2ApiService)(&c.common)
-	c.ToolsDownloadPackageParseV2Api = (*ToolsDownloadPackageParseV2ApiService)(&c.common)
-	c.ToolsEstimateAudienceV2Api = (*ToolsEstimateAudienceV2ApiService)(&c.common)
-	c.ToolsEstimatedPriceGetV2Api = (*ToolsEstimatedPriceGetV2ApiService)(&c.common)
-	c.ToolsEventAssetsGetV2Api = (*ToolsEventAssetsGetV2ApiService)(&c.common)
-	c.ToolsEventConvertOptimizedGoalGetV30Api = (*ToolsEventConvertOptimizedGoalGetV30ApiService)(&c.common)
-	c.ToolsGrayGetV30Api = (*ToolsGrayGetV30ApiService)(&c.common)
 	c.ToolsIesAccountSearchV2Api = (*ToolsIesAccountSearchV2ApiService)(&c.common)
-	c.ToolsIndustryGetV2Api = (*ToolsIndustryGetV2ApiService)(&c.common)
-	c.ToolsInterestActionActionKeywordV2Api = (*ToolsInterestActionActionKeywordV2ApiService)(&c.common)
-	c.ToolsInterestActionId2wordV2Api = (*ToolsInterestActionId2wordV2ApiService)(&c.common)
-	c.ToolsInterestActionInterestKeywordV2Api = (*ToolsInterestActionInterestKeywordV2ApiService)(&c.common)
-	c.ToolsInterestActionKeywordSuggestV2Api = (*ToolsInterestActionKeywordSuggestV2ApiService)(&c.common)
-	c.ToolsIsSupportUniversalGetV2Api = (*ToolsIsSupportUniversalGetV2ApiService)(&c.common)
-	c.ToolsKeyActionGetV2Api = (*ToolsKeyActionGetV2ApiService)(&c.common)
-	c.ToolsKeywordsBidRatioCreateV30Api = (*ToolsKeywordsBidRatioCreateV30ApiService)(&c.common)
-	c.ToolsKeywordsBidRatioDeleteV30Api = (*ToolsKeywordsBidRatioDeleteV30ApiService)(&c.common)
-	c.ToolsKeywordsBidRatioGetV30Api = (*ToolsKeywordsBidRatioGetV30ApiService)(&c.common)
-	c.ToolsKeywordsBidRatioUpdateV30Api = (*ToolsKeywordsBidRatioUpdateV30ApiService)(&c.common)
-	c.ToolsKeywordsProjectInfoGetV30Api = (*ToolsKeywordsProjectInfoGetV30ApiService)(&c.common)
-	c.ToolsLandingGroupCreateV2Api = (*ToolsLandingGroupCreateV2ApiService)(&c.common)
-	c.ToolsLandingGroupGetV2Api = (*ToolsLandingGroupGetV2ApiService)(&c.common)
-	c.ToolsLandingGroupSiteOptStatusUpdateV2Api = (*ToolsLandingGroupSiteOptStatusUpdateV2ApiService)(&c.common)
-	c.ToolsLandingGroupUpdateV2Api = (*ToolsLandingGroupUpdateV2ApiService)(&c.common)
-	c.ToolsLiveAuthorizeListV2Api = (*ToolsLiveAuthorizeListV2ApiService)(&c.common)
-	c.ToolsLogSearchV2Api = (*ToolsLogSearchV2ApiService)(&c.common)
-	c.ToolsMicroAppCreateV30Api = (*ToolsMicroAppCreateV30ApiService)(&c.common)
-	c.ToolsMicroAppListV30Api = (*ToolsMicroAppListV30ApiService)(&c.common)
-	c.ToolsMicroAppUpdateV30Api = (*ToolsMicroAppUpdateV30ApiService)(&c.common)
-	c.ToolsMicroGameCreateV30Api = (*ToolsMicroGameCreateV30ApiService)(&c.common)
-	c.ToolsMicroGameListV30Api = (*ToolsMicroGameListV30ApiService)(&c.common)
-	c.ToolsMicroGameUpdateV30Api = (*ToolsMicroGameUpdateV30ApiService)(&c.common)
-	c.ToolsNoBidSuggestBidV2Api = (*ToolsNoBidSuggestBidV2ApiService)(&c.common)
-	c.ToolsOrangeSiteGetV30Api = (*ToolsOrangeSiteGetV30ApiService)(&c.common)
-	c.ToolsPioneerProgramAttachmentUploadV2Api = (*ToolsPioneerProgramAttachmentUploadV2ApiService)(&c.common)
-	c.ToolsPlayableCloudGameListV2Api = (*ToolsPlayableCloudGameListV2ApiService)(&c.common)
-	c.ToolsPlayableCreateV2Api = (*ToolsPlayableCreateV2ApiService)(&c.common)
-	c.ToolsPlayableGrantResultV2Api = (*ToolsPlayableGrantResultV2ApiService)(&c.common)
-	c.ToolsPlayableGrantV2Api = (*ToolsPlayableGrantV2ApiService)(&c.common)
-	c.ToolsPlayableListGetV2Api = (*ToolsPlayableListGetV2ApiService)(&c.common)
-	c.ToolsPlayableSaveV2Api = (*ToolsPlayableSaveV2ApiService)(&c.common)
-	c.ToolsPlayableUploadV2Api = (*ToolsPlayableUploadV2ApiService)(&c.common)
-	c.ToolsPlayableValidateV2Api = (*ToolsPlayableValidateV2ApiService)(&c.common)
-	c.ToolsPreAuditGetV2Api = (*ToolsPreAuditGetV2ApiService)(&c.common)
-	c.ToolsPreAuditSendV2Api = (*ToolsPreAuditSendV2ApiService)(&c.common)
-	c.ToolsPrivativeWordAdAddV2Api = (*ToolsPrivativeWordAdAddV2ApiService)(&c.common)
-	c.ToolsPrivativeWordAdUpdateV2Api = (*ToolsPrivativeWordAdUpdateV2ApiService)(&c.common)
-	c.ToolsPrivativeWordBatchGetV30Api = (*ToolsPrivativeWordBatchGetV30ApiService)(&c.common)
-	c.ToolsPrivativeWordCampaignAddV2Api = (*ToolsPrivativeWordCampaignAddV2ApiService)(&c.common)
-	c.ToolsPrivativeWordCampaignUpdateV2Api = (*ToolsPrivativeWordCampaignUpdateV2ApiService)(&c.common)
-	c.ToolsPrivativeWordGetV2Api = (*ToolsPrivativeWordGetV2ApiService)(&c.common)
-	c.ToolsPrivativeWordProjectAddV30Api = (*ToolsPrivativeWordProjectAddV30ApiService)(&c.common)
-	c.ToolsPrivativeWordProjectUpdateV30Api = (*ToolsPrivativeWordProjectUpdateV30ApiService)(&c.common)
-	c.ToolsPrivativeWordPromotionAddV30Api = (*ToolsPrivativeWordPromotionAddV30ApiService)(&c.common)
-	c.ToolsPrivativeWordPromotionUpdateV30Api = (*ToolsPrivativeWordPromotionUpdateV30ApiService)(&c.common)
-	c.ToolsPromotionCardRecommendGetV2Api = (*ToolsPromotionCardRecommendGetV2ApiService)(&c.common)
-	c.ToolsPromotionCardRecommendTitleGetV2Api = (*ToolsPromotionCardRecommendTitleGetV2ApiService)(&c.common)
-	c.ToolsPromotionDiagnosisSuggestionAcceptV30Api = (*ToolsPromotionDiagnosisSuggestionAcceptV30ApiService)(&c.common)
-	c.ToolsPromotionDiagnosisSuggestionGetV30Api = (*ToolsPromotionDiagnosisSuggestionGetV30ApiService)(&c.common)
-	c.ToolsPromotionRaiseSetV30Api = (*ToolsPromotionRaiseSetV30ApiService)(&c.common)
-	c.ToolsPromotionRaiseStatusCurrentIdsGetV30Api = (*ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService)(&c.common)
-	c.ToolsPromotionRaiseStatusGetV30Api = (*ToolsPromotionRaiseStatusGetV30ApiService)(&c.common)
-	c.ToolsPromotionRaiseStopV30Api = (*ToolsPromotionRaiseStopV30ApiService)(&c.common)
-	c.ToolsPromotionRaiseVersionGetV30Api = (*ToolsPromotionRaiseVersionGetV30ApiService)(&c.common)
-	c.ToolsQuotaGetV2Api = (*ToolsQuotaGetV2ApiService)(&c.common)
-	c.ToolsRegionGetV2Api = (*ToolsRegionGetV2ApiService)(&c.common)
-	c.ToolsRtaGetInfoTmpV2Api = (*ToolsRtaGetInfoTmpV2ApiService)(&c.common)
-	c.ToolsRtaGetInfoV2Api = (*ToolsRtaGetInfoV2ApiService)(&c.common)
-	c.ToolsRtaGetV2Api = (*ToolsRtaGetV2ApiService)(&c.common)
-	c.ToolsRtaScopeGetV30Api = (*ToolsRtaScopeGetV30ApiService)(&c.common)
-	c.ToolsRtaSetScopeV2Api = (*ToolsRtaSetScopeV2ApiService)(&c.common)
-	c.ToolsRtaStatusUpdateV2Api = (*ToolsRtaStatusUpdateV2ApiService)(&c.common)
-	c.ToolsRubeexGetV2Api = (*ToolsRubeexGetV2ApiService)(&c.common)
-	c.ToolsRubeexPlayableAdListV2Api = (*ToolsRubeexPlayableAdListV2ApiService)(&c.common)
-	c.ToolsRubeexPlayableListV2Api = (*ToolsRubeexPlayableListV2ApiService)(&c.common)
-	c.ToolsRubeexRemarkV2Api = (*ToolsRubeexRemarkV2ApiService)(&c.common)
-	c.ToolsRubeexVersionGetV2Api = (*ToolsRubeexVersionGetV2ApiService)(&c.common)
-	c.ToolsSearchBidRatioGetV2Api = (*ToolsSearchBidRatioGetV2ApiService)(&c.common)
-	c.ToolsSiteCopyV2Api = (*ToolsSiteCopyV2ApiService)(&c.common)
-	c.ToolsSiteCreateV2Api = (*ToolsSiteCreateV2ApiService)(&c.common)
-	c.ToolsSiteFormsListV2Api = (*ToolsSiteFormsListV2ApiService)(&c.common)
 	c.ToolsSiteGetV2Api = (*ToolsSiteGetV2ApiService)(&c.common)
-	c.ToolsSiteHandselV2Api = (*ToolsSiteHandselV2ApiService)(&c.common)
-	c.ToolsSitePreviewV2Api = (*ToolsSitePreviewV2ApiService)(&c.common)
-	c.ToolsSiteReadV2Api = (*ToolsSiteReadV2ApiService)(&c.common)
-	c.ToolsSiteTemplateCreateV2Api = (*ToolsSiteTemplateCreateV2ApiService)(&c.common)
-	c.ToolsSiteTemplateGetV2Api = (*ToolsSiteTemplateGetV2ApiService)(&c.common)
-	c.ToolsSiteTemplatePicUrlGetV2Api = (*ToolsSiteTemplatePicUrlGetV2ApiService)(&c.common)
-	c.ToolsSiteTemplatePreviewV2Api = (*ToolsSiteTemplatePreviewV2ApiService)(&c.common)
-	c.ToolsSiteTemplateSiteCreateV2Api = (*ToolsSiteTemplateSiteCreateV2ApiService)(&c.common)
-	c.ToolsSiteUpdateStatusV2Api = (*ToolsSiteUpdateStatusV2ApiService)(&c.common)
-	c.ToolsSiteUpdateV2Api = (*ToolsSiteUpdateV2ApiService)(&c.common)
-	c.ToolsStarTaskMaterialTypeV2Api = (*ToolsStarTaskMaterialTypeV2ApiService)(&c.common)
-	c.ToolsStarTaskSettlementConfigV2Api = (*ToolsStarTaskSettlementConfigV2ApiService)(&c.common)
-	c.ToolsStarTaskTitleTopicGetV2Api = (*ToolsStarTaskTitleTopicGetV2ApiService)(&c.common)
-	c.ToolsSuggestBudgetGetV30Api = (*ToolsSuggestBudgetGetV30ApiService)(&c.common)
-	c.ToolsTaskRaiseCreateV2Api = (*ToolsTaskRaiseCreateV2ApiService)(&c.common)
-	c.ToolsTaskRaiseDataGetV2Api = (*ToolsTaskRaiseDataGetV2ApiService)(&c.common)
-	c.ToolsTaskRaiseGetV2Api = (*ToolsTaskRaiseGetV2ApiService)(&c.common)
-	c.ToolsTaskRaiseOptimizationIdsGetV2Api = (*ToolsTaskRaiseOptimizationIdsGetV2ApiService)(&c.common)
-	c.ToolsTaskRaiseStatusStopV2Api = (*ToolsTaskRaiseStatusStopV2ApiService)(&c.common)
-	c.ToolsThirdSiteCreateV2Api = (*ToolsThirdSiteCreateV2ApiService)(&c.common)
-	c.ToolsThirdSiteDeleteV2Api = (*ToolsThirdSiteDeleteV2ApiService)(&c.common)
-	c.ToolsThirdSiteGetV2Api = (*ToolsThirdSiteGetV2ApiService)(&c.common)
-	c.ToolsThirdSitePreviewV2Api = (*ToolsThirdSitePreviewV2ApiService)(&c.common)
-	c.ToolsThirdSiteUpdateV2Api = (*ToolsThirdSiteUpdateV2ApiService)(&c.common)
-	c.ToolsUnionFlowPackageCreateV2Api = (*ToolsUnionFlowPackageCreateV2ApiService)(&c.common)
-	c.ToolsUnionFlowPackageDeleteV2Api = (*ToolsUnionFlowPackageDeleteV2ApiService)(&c.common)
-	c.ToolsUnionFlowPackageGetV2Api = (*ToolsUnionFlowPackageGetV2ApiService)(&c.common)
-	c.ToolsUnionFlowPackagePromotionReportV30Api = (*ToolsUnionFlowPackagePromotionReportV30ApiService)(&c.common)
-	c.ToolsUnionFlowPackageReportV2Api = (*ToolsUnionFlowPackageReportV2ApiService)(&c.common)
-	c.ToolsUnionFlowPackageUpdateV2Api = (*ToolsUnionFlowPackageUpdateV2ApiService)(&c.common)
-	c.ToolsVideoCheckAvailableAnchorV2Api = (*ToolsVideoCheckAvailableAnchorV2ApiService)(&c.common)
-	c.ToolsVideoCoverSuggestV2Api = (*ToolsVideoCoverSuggestV2ApiService)(&c.common)
-	c.ToolsVideoPredictV2Api = (*ToolsVideoPredictV2ApiService)(&c.common)
-	c.ToolsWechatAppletCreateV30Api = (*ToolsWechatAppletCreateV30ApiService)(&c.common)
-	c.ToolsWechatAppletListV30Api = (*ToolsWechatAppletListV30ApiService)(&c.common)
-	c.ToolsWechatAppletUpdateV30Api = (*ToolsWechatAppletUpdateV30ApiService)(&c.common)
-	c.ToolsWechatGameCreateV30Api = (*ToolsWechatGameCreateV30ApiService)(&c.common)
-	c.ToolsWechatGameListV30Api = (*ToolsWechatGameListV30ApiService)(&c.common)
-	c.UserInfoV2Api = (*UserInfoV2ApiService)(&c.common)
-	c.CommonApi = (*CommonApiService)(&c.common)
+	//
+	//
+	//
+	//c.AccountFundGetV30Api = (*AccountFundGetV30ApiService)(&c.common)
+	//c.AdConvertOptimizedTargetGetV30Api = (*AdConvertOptimizedTargetGetV30ApiService)(&c.common)
+	//c.AdCostProtectStatusGetV2Api = (*AdCostProtectStatusGetV2ApiService)(&c.common)
+	//c.AdGetV2Api = (*AdGetV2ApiService)(&c.common)
+	//c.AdRejectReasonV2Api = (*AdRejectReasonV2ApiService)(&c.common)
+	//c.AdShopInfoUpdateV30Api = (*AdShopInfoUpdateV30ApiService)(&c.common)
+	//c.AdUdUpdateV2Api = (*AdUdUpdateV2ApiService)(&c.common)
+	//c.AdUpdateBidV2Api = (*AdUpdateBidV2ApiService)(&c.common)
+	//c.AdUpdateBudgetV2Api = (*AdUpdateBudgetV2ApiService)(&c.common)
+	//c.AdUpdateStatusV2Api = (*AdUpdateStatusV2ApiService)(&c.common)
+	//c.AdlabGroupCreateV30Api = (*AdlabGroupCreateV30ApiService)(&c.common)
+	//c.AdlabGroupDetailV30Api = (*AdlabGroupDetailV30ApiService)(&c.common)
+	//c.AdlabGroupListV30Api = (*AdlabGroupListV30ApiService)(&c.common)
+	//c.AdlabGroupUpdateBudgetV30Api = (*AdlabGroupUpdateBudgetV30ApiService)(&c.common)
+	//c.AdlabGroupUpdateStatusV30Api = (*AdlabGroupUpdateStatusV30ApiService)(&c.common)
+	//c.AdlabGroupUpdateV30Api = (*AdlabGroupUpdateV30ApiService)(&c.common)
+	//c.AdlabGroupsDeleteV30Api = (*AdlabGroupsDeleteV30ApiService)(&c.common)
+	//c.AdvConvertOleConvertV2Api = (*AdvConvertOleConvertV2ApiService)(&c.common)
+	//c.AdvertiserAttachmentUploadV30Api = (*AdvertiserAttachmentUploadV30ApiService)(&c.common)
+	//c.AdvertiserAvatarGetV2Api = (*AdvertiserAvatarGetV2ApiService)(&c.common)
+	//c.AdvertiserAvatarSubmitV2Api = (*AdvertiserAvatarSubmitV2ApiService)(&c.common)
+	//c.AdvertiserAvatarUploadV2Api = (*AdvertiserAvatarUploadV2ApiService)(&c.common)
+	//c.AdvertiserBudgetGetV2Api = (*AdvertiserBudgetGetV2ApiService)(&c.common)
+	//c.AdvertiserDeliveryPkgConfigV30Api = (*AdvertiserDeliveryPkgConfigV30ApiService)(&c.common)
+	//c.AdvertiserDeliveryPkgDeleteV30Api = (*AdvertiserDeliveryPkgDeleteV30ApiService)(&c.common)
+	//c.AdvertiserDeliveryPkgGetV30Api = (*AdvertiserDeliveryPkgGetV30ApiService)(&c.common)
+	//c.AdvertiserDeliveryPkgSubmitV30Api = (*AdvertiserDeliveryPkgSubmitV30ApiService)(&c.common)
+	//c.AdvertiserDeliveryQualificationDeleteV30Api = (*AdvertiserDeliveryQualificationDeleteV30ApiService)(&c.common)
+	//c.AdvertiserDeliveryQualificationListV30Api = (*AdvertiserDeliveryQualificationListV30ApiService)(&c.common)
+	//c.AdvertiserDeliveryQualificationSubmitV30Api = (*AdvertiserDeliveryQualificationSubmitV30ApiService)(&c.common)
+	//c.AdvertiserFundDailyStatV2Api = (*AdvertiserFundDailyStatV2ApiService)(&c.common)
+	//c.AdvertiserFundGetV2Api = (*AdvertiserFundGetV2ApiService)(&c.common)
+	//c.AdvertiserFundGrantTransactionGetV2Api = (*AdvertiserFundGrantTransactionGetV2ApiService)(&c.common)
+	//c.AdvertiserFundTransactionGetV2Api = (*AdvertiserFundTransactionGetV2ApiService)(&c.common)
+	//c.AdvertiserInfoV2Api = (*AdvertiserInfoV2ApiService)(&c.common)
+	//c.AdvertiserPublicInfoV2Api = (*AdvertiserPublicInfoV2ApiService)(&c.common)
+	//c.AdvertiserQualificationCreateV2V2Api = (*AdvertiserQualificationCreateV2V2ApiService)(&c.common)
+	//c.AdvertiserQualificationGetV30Api = (*AdvertiserQualificationGetV30ApiService)(&c.common)
+	//c.AdvertiserQualificationSelectV2V2Api = (*AdvertiserQualificationSelectV2V2ApiService)(&c.common)
+	//c.AdvertiserQualificationSubmitV30Api = (*AdvertiserQualificationSubmitV30ApiService)(&c.common)
+	//c.AdvertiserTransferableFundGetV2Api = (*AdvertiserTransferableFundGetV2ApiService)(&c.common)
+	//c.AdvertiserUpdateBudgetV2Api = (*AdvertiserUpdateBudgetV2ApiService)(&c.common)
+	//c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
+	//c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
+	//c.AgentAdvertiserSelectV2Api = (*AgentAdvertiserSelectV2ApiService)(&c.common)
+	//c.AgentAdvertiserUpdateV2Api = (*AgentAdvertiserUpdateV2ApiService)(&c.common)
+	//c.AgentChildAgentSelectV2Api = (*AgentChildAgentSelectV2ApiService)(&c.common)
+	//c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
+	//c.AgentFundTransferSeqCreateV2Api = (*AgentFundTransferSeqCreateV2ApiService)(&c.common)
+	//c.AgentInfoV2Api = (*AgentInfoV2ApiService)(&c.common)
+	//c.AgentQueryRiskPromotionListV2Api = (*AgentQueryRiskPromotionListV2ApiService)(&c.common)
+	//c.AgentRefundTransferSeqCommitV2Api = (*AgentRefundTransferSeqCommitV2ApiService)(&c.common)
+	//c.AgentRefundTransferSeqCreateV2Api = (*AgentRefundTransferSeqCreateV2ApiService)(&c.common)
+	//c.AgentTransferTransactionRecordV2Api = (*AgentTransferTransactionRecordV2ApiService)(&c.common)
+	//c.AnalyticsAttributionV30Api = (*AnalyticsAttributionV30ApiService)(&c.common)
+	//c.AssetsCreativeComponentCreateV2Api = (*AssetsCreativeComponentCreateV2ApiService)(&c.common)
+	//c.AssetsCreativeComponentGetV2Api = (*AssetsCreativeComponentGetV2ApiService)(&c.common)
+	//c.AssetsCreativeComponentUpdateV2Api = (*AssetsCreativeComponentUpdateV2ApiService)(&c.common)
+	//c.AsyncTaskCreateV2Api = (*AsyncTaskCreateV2ApiService)(&c.common)
+	//c.AsyncTaskDownloadV2Api = (*AsyncTaskDownloadV2ApiService)(&c.common)
+	//c.AsyncTaskGetV2Api = (*AsyncTaskGetV2ApiService)(&c.common)
+	//c.AudiencePackageCreateV2Api = (*AudiencePackageCreateV2ApiService)(&c.common)
+	//c.AudiencePackageDeleteV2Api = (*AudiencePackageDeleteV2ApiService)(&c.common)
+	//c.AudiencePackageGetV2Api = (*AudiencePackageGetV2ApiService)(&c.common)
+	//c.AudiencePackageUpdateV2Api = (*AudiencePackageUpdateV2ApiService)(&c.common)
+	//c.BrandActionCategoryV30Api = (*BrandActionCategoryV30ApiService)(&c.common)
+	//c.BrandAdCreateV30Api = (*BrandAdCreateV30ApiService)(&c.common)
+	//c.BrandAdGetV30Api = (*BrandAdGetV30ApiService)(&c.common)
+	//c.BrandAwemeListV30Api = (*BrandAwemeListV30ApiService)(&c.common)
+	//c.BrandCampaignCreateV30Api = (*BrandCampaignCreateV30ApiService)(&c.common)
+	//c.BrandCampaignGetV30Api = (*BrandCampaignGetV30ApiService)(&c.common)
+	//c.BrandCreativeCreateV30Api = (*BrandCreativeCreateV30ApiService)(&c.common)
+	//c.BrandCreativeGetV30Api = (*BrandCreativeGetV30ApiService)(&c.common)
+	//c.BrandFileVideoUploadV30Api = (*BrandFileVideoUploadV30ApiService)(&c.common)
+	//c.BrandQueryStockV30Api = (*BrandQueryStockV30ApiService)(&c.common)
+	//c.BrandQueryYuntu5aBrandCategoryV30Api = (*BrandQueryYuntu5aBrandCategoryV30ApiService)(&c.common)
+	//c.BrandRegionGetV30Api = (*BrandRegionGetV30ApiService)(&c.common)
+	//c.BrandUploadImageV30Api = (*BrandUploadImageV30ApiService)(&c.common)
+	//c.BudgetGroupCreateV30Api = (*BudgetGroupCreateV30ApiService)(&c.common)
+	//c.BudgetGroupDeleteV30Api = (*BudgetGroupDeleteV30ApiService)(&c.common)
+	//c.BudgetGroupListV30Api = (*BudgetGroupListV30ApiService)(&c.common)
+	//c.BudgetGroupUpdateV30Api = (*BudgetGroupUpdateV30ApiService)(&c.common)
+	//c.BusinessPlatformCompanyAccountGetV30Api = (*BusinessPlatformCompanyAccountGetV30ApiService)(&c.common)
+	//c.BusinessPlatformCompanyInfoGetV30Api = (*BusinessPlatformCompanyInfoGetV30ApiService)(&c.common)
+	//c.BusinessPlatformPartnerOrganizationListV2Api = (*BusinessPlatformPartnerOrganizationListV2ApiService)(&c.common)
+	//c.CampaignCreateV2Api = (*CampaignCreateV2ApiService)(&c.common)
+	//c.CampaignGetV2Api = (*CampaignGetV2ApiService)(&c.common)
+	//c.CampaignUpdateStatusV2Api = (*CampaignUpdateStatusV2ApiService)(&c.common)
+	//c.CampaignUpdateV2Api = (*CampaignUpdateV2ApiService)(&c.common)
+	//c.CarouselAdGetV2Api = (*CarouselAdGetV2ApiService)(&c.common)
+	//c.CarouselCreateV2Api = (*CarouselCreateV2ApiService)(&c.common)
+	//c.CarouselDeleteV2Api = (*CarouselDeleteV2ApiService)(&c.common)
+	//c.CarouselListV2Api = (*CarouselListV2ApiService)(&c.common)
+	//c.CarouselUpdateV2Api = (*CarouselUpdateV2ApiService)(&c.common)
+	//c.CdpBrandGetV30Api = (*CdpBrandGetV30ApiService)(&c.common)
+	//c.CgTransferCreateTransferV30Api = (*CgTransferCreateTransferV30ApiService)(&c.common)
+	//c.CgTransferQueryCanTransferBalanceV30Api = (*CgTransferQueryCanTransferBalanceV30ApiService)(&c.common)
+	//c.CgTransferQueryTransferBalanceV30Api = (*CgTransferQueryTransferBalanceV30ApiService)(&c.common)
+	//c.CgTransferQueryTransferDetailV30Api = (*CgTransferQueryTransferDetailV30ApiService)(&c.common)
+	//c.ClueCouponCodeConsumeV2Api = (*ClueCouponCodeConsumeV2ApiService)(&c.common)
+	//c.ClueCouponCodeGetV2Api = (*ClueCouponCodeGetV2ApiService)(&c.common)
+	//c.ClueCouponCreateV2Api = (*ClueCouponCreateV2ApiService)(&c.common)
+	//c.ClueCouponDetailV2Api = (*ClueCouponDetailV2ApiService)(&c.common)
+	//c.ClueCouponEmployeeCreateV2Api = (*ClueCouponEmployeeCreateV2ApiService)(&c.common)
+	//c.ClueCouponEmployeeDeleteV2Api = (*ClueCouponEmployeeDeleteV2ApiService)(&c.common)
+	//c.ClueCouponEmployeeGetV2Api = (*ClueCouponEmployeeGetV2ApiService)(&c.common)
+	//c.ClueCouponGetV2Api = (*ClueCouponGetV2ApiService)(&c.common)
+	//c.ClueCouponUpdateV2Api = (*ClueCouponUpdateV2ApiService)(&c.common)
+	//c.ClueFormCreateV2Api = (*ClueFormCreateV2ApiService)(&c.common)
+	//c.ClueFormDeleteV2Api = (*ClueFormDeleteV2ApiService)(&c.common)
+	//c.ClueFormDetailV2Api = (*ClueFormDetailV2ApiService)(&c.common)
+	//c.ClueFormListV2Api = (*ClueFormListV2ApiService)(&c.common)
+	//c.ClueFormUpdateV2Api = (*ClueFormUpdateV2ApiService)(&c.common)
+	//c.CluePackageUploadV2Api = (*CluePackageUploadV2ApiService)(&c.common)
+	//c.ClueSmartphoneCreateV2Api = (*ClueSmartphoneCreateV2ApiService)(&c.common)
+	//c.ClueSmartphoneDeleteV2Api = (*ClueSmartphoneDeleteV2ApiService)(&c.common)
+	//c.ClueSmartphoneGetV2Api = (*ClueSmartphoneGetV2ApiService)(&c.common)
+	//c.ClueSmartphoneRecordV2Api = (*ClueSmartphoneRecordV2ApiService)(&c.common)
+	//c.ClueWechatDataGetV2Api = (*ClueWechatDataGetV2ApiService)(&c.common)
+	//c.ClueWechatInstanceDetailV2Api = (*ClueWechatInstanceDetailV2ApiService)(&c.common)
+	//c.ClueWechatInstanceListV2Api = (*ClueWechatInstanceListV2ApiService)(&c.common)
+	//c.ClueWechatInstanceUpdateV2Api = (*ClueWechatInstanceUpdateV2ApiService)(&c.common)
+	//c.ClueWechatPoolListV2Api = (*ClueWechatPoolListV2ApiService)(&c.common)
+	//c.CreativeAdMetricsV2Api = (*CreativeAdMetricsV2ApiService)(&c.common)
+	//c.CreativeAutoGenerateConfigGetV2Api = (*CreativeAutoGenerateConfigGetV2ApiService)(&c.common)
+	//c.CreativeCustomCreativeCreateV2Api = (*CreativeCustomCreativeCreateV2ApiService)(&c.common)
+	//c.CreativeCustomCreativeDeleteV2Api = (*CreativeCustomCreativeDeleteV2ApiService)(&c.common)
+	//c.CreativeCustomCreativeUpdateV2Api = (*CreativeCustomCreativeUpdateV2ApiService)(&c.common)
+	//c.CreativeDetailGetV30Api = (*CreativeDetailGetV30ApiService)(&c.common)
+	//c.CreativeGetV2Api = (*CreativeGetV2ApiService)(&c.common)
+	//c.CreativeMaterialMetricsV2Api = (*CreativeMaterialMetricsV2ApiService)(&c.common)
+	//c.CreativeProceduralCreativeCreateV2Api = (*CreativeProceduralCreativeCreateV2ApiService)(&c.common)
+	//c.CreativeProceduralCreativeUpdateV2Api = (*CreativeProceduralCreativeUpdateV2ApiService)(&c.common)
+	//c.CreativeRejectReasonV2Api = (*CreativeRejectReasonV2ApiService)(&c.common)
+	//c.CreativeStatusUpdateV2V2Api = (*CreativeStatusUpdateV2V2ApiService)(&c.common)
+	//c.CreativeStrategyListV2Api = (*CreativeStrategyListV2ApiService)(&c.common)
+	//c.CustomerCenterAdvertiserCopyV2Api = (*CustomerCenterAdvertiserCopyV2ApiService)(&c.common)
+	//c.CustomerCenterAdvertiserListV2Api = (*CustomerCenterAdvertiserListV2ApiService)(&c.common)
+	//c.CustomerCenterAdvertiserTransferableListV2Api = (*CustomerCenterAdvertiserTransferableListV2ApiService)(&c.common)
+	//c.CustomerCenterFundTransferSeqCommitV2Api = (*CustomerCenterFundTransferSeqCommitV2ApiService)(&c.common)
+	//c.CustomerCenterFundTransferSeqCreateV2Api = (*CustomerCenterFundTransferSeqCreateV2ApiService)(&c.common)
+	//c.DecorationCouponGetV30Api = (*DecorationCouponGetV30ApiService)(&c.common)
+	//c.DmpBrandGetV2Api = (*DmpBrandGetV2ApiService)(&c.common)
+	//c.DmpCustomAudienceCopyV2Api = (*DmpCustomAudienceCopyV2ApiService)(&c.common)
+	//c.DmpCustomAudienceDeleteV2Api = (*DmpCustomAudienceDeleteV2ApiService)(&c.common)
+	//c.DmpCustomAudiencePublishV2Api = (*DmpCustomAudiencePublishV2ApiService)(&c.common)
+	//c.DmpCustomAudiencePushV2V2Api = (*DmpCustomAudiencePushV2V2ApiService)(&c.common)
+	//c.DmpCustomAudienceReadV2Api = (*DmpCustomAudienceReadV2ApiService)(&c.common)
+	//c.DmpCustomAudienceSelectV2Api = (*DmpCustomAudienceSelectV2ApiService)(&c.common)
+	//c.DmpDataSourceCreateV2Api = (*DmpDataSourceCreateV2ApiService)(&c.common)
+	//c.DmpDataSourceFileUploadV2Api = (*DmpDataSourceFileUploadV2ApiService)(&c.common)
+	//c.DmpDataSourceReadV2Api = (*DmpDataSourceReadV2ApiService)(&c.common)
+	//c.DmpDataSourceUpdateV2Api = (*DmpDataSourceUpdateV2ApiService)(&c.common)
+	//c.DouplusOrderCloseV30Api = (*DouplusOrderCloseV30ApiService)(&c.common)
+	//c.DouplusOrderCreateV30Api = (*DouplusOrderCreateV30ApiService)(&c.common)
+	//c.DouplusOrderListV30Api = (*DouplusOrderListV30ApiService)(&c.common)
+	//c.DouplusOrderReportV30Api = (*DouplusOrderReportV30ApiService)(&c.common)
+	//c.DpaAssetV2DetailReadV2Api = (*DpaAssetV2DetailReadV2ApiService)(&c.common)
+	//c.DpaAssetV2ListV2Api = (*DpaAssetV2ListV2ApiService)(&c.common)
+	//c.DpaAssetsDetailReadV2Api = (*DpaAssetsDetailReadV2ApiService)(&c.common)
+	//c.DpaAssetsListV2Api = (*DpaAssetsListV2ApiService)(&c.common)
+	//c.DpaCategoryGetV2Api = (*DpaCategoryGetV2ApiService)(&c.common)
+	//c.DpaCheckIndexEntryProgressV2Api = (*DpaCheckIndexEntryProgressV2ApiService)(&c.common)
+	//c.DpaClueProductDetailV2Api = (*DpaClueProductDetailV2ApiService)(&c.common)
+	//c.DpaClueProductListV2Api = (*DpaClueProductListV2ApiService)(&c.common)
+	//c.DpaDetailGetV2Api = (*DpaDetailGetV2ApiService)(&c.common)
+	//c.DpaDictGetV2Api = (*DpaDictGetV2ApiService)(&c.common)
+	//c.DpaMetaGetV2Api = (*DpaMetaGetV2ApiService)(&c.common)
+	//c.DpaProductAvailablesV2Api = (*DpaProductAvailablesV2ApiService)(&c.common)
+	//c.DpaProductCreateV2Api = (*DpaProductCreateV2ApiService)(&c.common)
+	//c.DpaProductDeleteV2Api = (*DpaProductDeleteV2ApiService)(&c.common)
+	//c.DpaProductDetailGetV2Api = (*DpaProductDetailGetV2ApiService)(&c.common)
+	//c.DpaProductStatusBatchUpdateV2Api = (*DpaProductStatusBatchUpdateV2ApiService)(&c.common)
+	//c.DpaProductUpdateV2Api = (*DpaProductUpdateV2ApiService)(&c.common)
+	//c.DpaTemplateGetV2Api = (*DpaTemplateGetV2ApiService)(&c.common)
+	//c.DpaVideoGetV2Api = (*DpaVideoGetV2ApiService)(&c.common)
+	//c.EnterpriseBindListGetV10Api = (*EnterpriseBindListGetV10ApiService)(&c.common)
+	//c.EnterpriseCommentDetailV10Api = (*EnterpriseCommentDetailV10ApiService)(&c.common)
+	//c.EnterpriseCommentListGetV10Api = (*EnterpriseCommentListGetV10ApiService)(&c.common)
+	//c.EnterpriseCommentReplyListV10Api = (*EnterpriseCommentReplyListV10ApiService)(&c.common)
+	//c.EnterpriseCommentReplyV10Api = (*EnterpriseCommentReplyV10ApiService)(&c.common)
+	//c.EnterpriseFlowCategoryGetV10Api = (*EnterpriseFlowCategoryGetV10ApiService)(&c.common)
+	//c.EnterpriseInfoV10Api = (*EnterpriseInfoV10ApiService)(&c.common)
+	//c.EnterpriseItemListV10Api = (*EnterpriseItemListV10ApiService)(&c.common)
+	//c.EnterpriseOperationLogGetV10Api = (*EnterpriseOperationLogGetV10ApiService)(&c.common)
+	//c.EnterpriseOverviewDataGetV10Api = (*EnterpriseOverviewDataGetV10ApiService)(&c.common)
+	//c.EnterpriseVideoInfoGetV10Api = (*EnterpriseVideoInfoGetV10ApiService)(&c.common)
+	//c.EventManagerAssetsCreateV2Api = (*EventManagerAssetsCreateV2ApiService)(&c.common)
+	//c.EventManagerAvailableEventsGetV2Api = (*EventManagerAvailableEventsGetV2ApiService)(&c.common)
+	//c.EventManagerDeepBidTypeGetV30Api = (*EventManagerDeepBidTypeGetV30ApiService)(&c.common)
+	//c.EventManagerEventConfigsGetV2Api = (*EventManagerEventConfigsGetV2ApiService)(&c.common)
+	//c.EventManagerEventsCreateV2Api = (*EventManagerEventsCreateV2ApiService)(&c.common)
+	//c.EventManagerOfflineDataCreateV2Api = (*EventManagerOfflineDataCreateV2ApiService)(&c.common)
+	//c.EventManagerOptimizedGoalGetV2V30Api = (*EventManagerOptimizedGoalGetV2V30ApiService)(&c.common)
+	//c.EventManagerShareCancelV30Api = (*EventManagerShareCancelV30ApiService)(&c.common)
+	//c.EventManagerShareGetV30Api = (*EventManagerShareGetV30ApiService)(&c.common)
+	//c.EventManagerShareV30Api = (*EventManagerShareV30ApiService)(&c.common)
+	//c.EventManagerTrackUrlCreateV2Api = (*EventManagerTrackUrlCreateV2ApiService)(&c.common)
+	//c.EventManagerTrackUrlGetV2Api = (*EventManagerTrackUrlGetV2ApiService)(&c.common)
+	//c.EventManagerTrackUrlUpdateV2Api = (*EventManagerTrackUrlUpdateV2ApiService)(&c.common)
+	//c.FileAudioAdV2Api = (*FileAudioAdV2ApiService)(&c.common)
+	//c.FileAudioGetV2Api = (*FileAudioGetV2ApiService)(&c.common)
+	//c.FileAutoGenerateSourceGetV2Api = (*FileAutoGenerateSourceGetV2ApiService)(&c.common)
+	//c.FileImageAdGetV2Api = (*FileImageAdGetV2ApiService)(&c.common)
+	//c.FileImageAdV2Api = (*FileImageAdV2ApiService)(&c.common)
+	//c.FileImageDeleteV30Api = (*FileImageDeleteV30ApiService)(&c.common)
+	//c.FileImageGetV2Api = (*FileImageGetV2ApiService)(&c.common)
+	//c.FileMaterialAttributesListV2Api = (*FileMaterialAttributesListV2ApiService)(&c.common)
+	//c.FileMaterialAuditResultGetV2Api = (*FileMaterialAuditResultGetV2ApiService)(&c.common)
+	//c.FileMaterialBindV2Api = (*FileMaterialBindV2ApiService)(&c.common)
+	//c.FileMaterialDetailV2Api = (*FileMaterialDetailV2ApiService)(&c.common)
+	//c.FileMaterialListV2Api = (*FileMaterialListV2ApiService)(&c.common)
+	//c.FileMediaGetV2Api = (*FileMediaGetV2ApiService)(&c.common)
+	//c.FilePreauditGetV30Api = (*FilePreauditGetV30ApiService)(&c.common)
+	//c.FilePreauditSubmitV30Api = (*FilePreauditSubmitV30ApiService)(&c.common)
+	//c.FileQualityGetV30Api = (*FileQualityGetV30ApiService)(&c.common)
+	//c.FileQualitySubmitV30Api = (*FileQualitySubmitV30ApiService)(&c.common)
+	//c.FileVideoAdGetV2Api = (*FileVideoAdGetV2ApiService)(&c.common)
+	//c.FileVideoAdV2Api = (*FileVideoAdV2ApiService)(&c.common)
+	//c.FileVideoAgentV2Api = (*FileVideoAgentV2ApiService)(&c.common)
+	//c.FileVideoAwemeGetV2Api = (*FileVideoAwemeGetV2ApiService)(&c.common)
+	//c.FileVideoDeleteV2Api = (*FileVideoDeleteV2ApiService)(&c.common)
+	//c.FileVideoEfficiencyGetV2Api = (*FileVideoEfficiencyGetV2ApiService)(&c.common)
+	//c.FileVideoGetV2Api = (*FileVideoGetV2ApiService)(&c.common)
+	//c.FileVideoMaterialClearTaskCreateV2Api = (*FileVideoMaterialClearTaskCreateV2ApiService)(&c.common)
+	//c.FileVideoMaterialClearTaskGetV2Api = (*FileVideoMaterialClearTaskGetV2ApiService)(&c.common)
+	//c.FileVideoMaterialClearTaskResultGetV2Api = (*FileVideoMaterialClearTaskResultGetV2ApiService)(&c.common)
+	//c.FileVideoPauseV2Api = (*FileVideoPauseV2ApiService)(&c.common)
+	//c.FileVideoUpdateV2Api = (*FileVideoUpdateV2ApiService)(&c.common)
+	//c.FundSharedWalletBalanceGetV2Api = (*FundSharedWalletBalanceGetV2ApiService)(&c.common)
+	//c.KeywordCreateV2V2Api = (*KeywordCreateV2V2ApiService)(&c.common)
+	//c.KeywordCreateV30Api = (*KeywordCreateV30ApiService)(&c.common)
+	//c.KeywordDeleteV2V2Api = (*KeywordDeleteV2V2ApiService)(&c.common)
+	//c.KeywordDeleteV30Api = (*KeywordDeleteV30ApiService)(&c.common)
+	//c.KeywordFeedadsSuggestV2Api = (*KeywordFeedadsSuggestV2ApiService)(&c.common)
+	//c.KeywordGetV2Api = (*KeywordGetV2ApiService)(&c.common)
+	//c.KeywordListV30Api = (*KeywordListV30ApiService)(&c.common)
+	//c.KeywordUpdateV2V2Api = (*KeywordUpdateV2V2ApiService)(&c.common)
+	//c.KeywordUpdateV30Api = (*KeywordUpdateV30ApiService)(&c.common)
+	//c.MajordomoAdvertiserSelectV2Api = (*MajordomoAdvertiserSelectV2ApiService)(&c.common)
+	//c.MaterialStatusUpdateV30Api = (*MaterialStatusUpdateV30ApiService)(&c.common)
+	//c.NativeAnchorCreateV30Api = (*NativeAnchorCreateV30ApiService)(&c.common)
+	//c.NativeAnchorDeleteV30Api = (*NativeAnchorDeleteV30ApiService)(&c.common)
+	//c.NativeAnchorGetDetailV30Api = (*NativeAnchorGetDetailV30ApiService)(&c.common)
+	//c.NativeAnchorGetV30Api = (*NativeAnchorGetV30ApiService)(&c.common)
+	//c.NativeAnchorQrcodePreviewGetV30Api = (*NativeAnchorQrcodePreviewGetV30ApiService)(&c.common)
+	//c.NativeAnchorUpdateV30Api = (*NativeAnchorUpdateV30ApiService)(&c.common)
+	//c.Oauth2AccessTokenApi = (*Oauth2AccessTokenApiService)(&c.common)
+	//c.Oauth2AdvertiserGetApi = (*Oauth2AdvertiserGetApiService)(&c.common)
+	//c.Oauth2AppAccessTokenApi = (*Oauth2AppAccessTokenApiService)(&c.common)
+	//c.Oauth2RefreshTokenApi = (*Oauth2RefreshTokenApiService)(&c.common)
+	//c.Oauth2RenewTokenApi = (*Oauth2RenewTokenApiService)(&c.common)
+
+	//c.QianchuanAccountBalanceGetV10Api = (*QianchuanAccountBalanceGetV10ApiService)(&c.common)
+	//c.QianchuanAccountBudgetGetV10Api = (*QianchuanAccountBudgetGetV10ApiService)(&c.common)
+	//c.QianchuanAccountBudgetUpdateV10Api = (*QianchuanAccountBudgetUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdBidUpdateV10Api = (*QianchuanAdBidUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdBudgetUpdateV10Api = (*QianchuanAdBudgetUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdCompensateStatusGetV10Api = (*QianchuanAdCompensateStatusGetV10ApiService)(&c.common)
+	//c.QianchuanAdCreateV10Api = (*QianchuanAdCreateV10ApiService)(&c.common)
+	//c.QianchuanAdDetailGetV10Api = (*QianchuanAdDetailGetV10ApiService)(&c.common)
+	//c.QianchuanAdGetV10Api = (*QianchuanAdGetV10ApiService)(&c.common)
+	//c.QianchuanAdKeywordsGetV10Api = (*QianchuanAdKeywordsGetV10ApiService)(&c.common)
+	//c.QianchuanAdKeywordsUpdateV10Api = (*QianchuanAdKeywordsUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdLearingStatusGetV10Api = (*QianchuanAdLearingStatusGetV10ApiService)(&c.common)
+	//c.QianchuanAdPivativewordsGetV10Api = (*QianchuanAdPivativewordsGetV10ApiService)(&c.common)
+	//c.QianchuanAdPivativewordsUpdateV10Api = (*QianchuanAdPivativewordsUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdQuotaGetV10Api = (*QianchuanAdQuotaGetV10ApiService)(&c.common)
+	//c.QianchuanAdRecommendKeywordsGetV10Api = (*QianchuanAdRecommendKeywordsGetV10ApiService)(&c.common)
+	//c.QianchuanAdRegionUpdateV10Api = (*QianchuanAdRegionUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdRejectReasonV10Api = (*QianchuanAdRejectReasonV10ApiService)(&c.common)
+	//c.QianchuanAdScheduleDateUpdateV10Api = (*QianchuanAdScheduleDateUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdScheduleFixedRangeUpdateV10Api = (*QianchuanAdScheduleFixedRangeUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdScheduleTimeUpdateV10Api = (*QianchuanAdScheduleTimeUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdStatusUpdateV10Api = (*QianchuanAdStatusUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdUpdateV10Api = (*QianchuanAdUpdateV10ApiService)(&c.common)
+	//c.QianchuanAdvertiserTypeGetV10Api = (*QianchuanAdvertiserTypeGetV10ApiService)(&c.common)
+	//c.QianchuanAudienceCreateByFileV10Api = (*QianchuanAudienceCreateByFileV10ApiService)(&c.common)
+	//c.QianchuanAudienceDeleteV10Api = (*QianchuanAudienceDeleteV10ApiService)(&c.common)
+	//c.QianchuanAudienceFilePartUploadV10Api = (*QianchuanAudienceFilePartUploadV10ApiService)(&c.common)
+	//c.QianchuanAudienceFileUploadV10Api = (*QianchuanAudienceFileUploadV10ApiService)(&c.common)
+	//c.QianchuanAudienceGroupGetV10Api = (*QianchuanAudienceGroupGetV10ApiService)(&c.common)
+	//c.QianchuanAudienceListGetV10Api = (*QianchuanAudienceListGetV10ApiService)(&c.common)
+	//c.QianchuanAudiencePushV10Api = (*QianchuanAudiencePushV10ApiService)(&c.common)
+	//c.QianchuanAwemeAuthorizedGetV10Api = (*QianchuanAwemeAuthorizedGetV10ApiService)(&c.common)
+	//c.QianchuanAwemeEstimateProfitV10Api = (*QianchuanAwemeEstimateProfitV10ApiService)(&c.common)
+	//c.QianchuanAwemeInterestActionInterestKeywordV10Api = (*QianchuanAwemeInterestActionInterestKeywordV10ApiService)(&c.common)
+	//c.QianchuanAwemeOrderBudgetAddV10Api = (*QianchuanAwemeOrderBudgetAddV10ApiService)(&c.common)
+	//c.QianchuanAwemeOrderCreateV10Api = (*QianchuanAwemeOrderCreateV10ApiService)(&c.common)
+	//c.QianchuanAwemeOrderDetailGetV10Api = (*QianchuanAwemeOrderDetailGetV10ApiService)(&c.common)
+	//c.QianchuanAwemeOrderGetV10Api = (*QianchuanAwemeOrderGetV10ApiService)(&c.common)
+	//c.QianchuanAwemeOrderQuotaGetV10Api = (*QianchuanAwemeOrderQuotaGetV10ApiService)(&c.common)
+	//c.QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api = (*QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService)(&c.common)
+	//c.QianchuanAwemeOrderTerminateV10Api = (*QianchuanAwemeOrderTerminateV10ApiService)(&c.common)
+	//c.QianchuanAwemeProductAvailableGetV10Api = (*QianchuanAwemeProductAvailableGetV10ApiService)(&c.common)
+	//c.QianchuanAwemeReportOrderGetV10Api = (*QianchuanAwemeReportOrderGetV10ApiService)(&c.common)
+	//c.QianchuanAwemeSuggestBidV10Api = (*QianchuanAwemeSuggestBidV10ApiService)(&c.common)
+	//c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
+	//c.QianchuanAwemeVideoGetV10Api = (*QianchuanAwemeVideoGetV10ApiService)(&c.common)
+	//c.QianchuanBatchCampaignStatusUpdateV10Api = (*QianchuanBatchCampaignStatusUpdateV10ApiService)(&c.common)
+	//c.QianchuanBrandAuthorizedGetV10Api = (*QianchuanBrandAuthorizedGetV10ApiService)(&c.common)
+	//c.QianchuanCampaignCreateV10Api = (*QianchuanCampaignCreateV10ApiService)(&c.common)
+	//c.QianchuanCampaignListGetV10Api = (*QianchuanCampaignListGetV10ApiService)(&c.common)
+	//c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
+	//c.QianchuanCarouselAwemeGetV10Api = (*QianchuanCarouselAwemeGetV10ApiService)(&c.common)
+	//c.QianchuanCarouselGetV10Api = (*QianchuanCarouselGetV10ApiService)(&c.common)
+	//c.QianchuanCreativeGetV10Api = (*QianchuanCreativeGetV10ApiService)(&c.common)
+	//c.QianchuanCreativeRejectReasonV10Api = (*QianchuanCreativeRejectReasonV10ApiService)(&c.common)
+	//c.QianchuanCreativeStatusUpdateV10Api = (*QianchuanCreativeStatusUpdateV10ApiService)(&c.common)
+	//c.QianchuanDmpAudiencesGetV10Api = (*QianchuanDmpAudiencesGetV10ApiService)(&c.common)
+	//c.QianchuanEcpAwemeAdGetV10Api = (*QianchuanEcpAwemeAdGetV10ApiService)(&c.common)
+	//c.QianchuanEstimateEffectV10Api = (*QianchuanEstimateEffectV10ApiService)(&c.common)
+	//c.QianchuanFileImageDeleteV10Api = (*QianchuanFileImageDeleteV10ApiService)(&c.common)
+	//c.QianchuanFileVideoAwemeGetV10Api = (*QianchuanFileVideoAwemeGetV10ApiService)(&c.common)
+	//c.QianchuanFileVideoDeleteV10Api = (*QianchuanFileVideoDeleteV10ApiService)(&c.common)
+	//c.QianchuanFileVideoEfficiencyGetV10Api = (*QianchuanFileVideoEfficiencyGetV10ApiService)(&c.common)
+	//c.QianchuanFileVideoOriginalGetV10Api = (*QianchuanFileVideoOriginalGetV10ApiService)(&c.common)
+	//c.QianchuanFinanceDetailGetV10Api = (*QianchuanFinanceDetailGetV10ApiService)(&c.common)
+	//c.QianchuanFinanceWalletGetV10Api = (*QianchuanFinanceWalletGetV10ApiService)(&c.common)
+	//c.QianchuanImageGetV10Api = (*QianchuanImageGetV10ApiService)(&c.common)
+	//c.QianchuanKeywordCheckV10Api = (*QianchuanKeywordCheckV10ApiService)(&c.common)
+	//c.QianchuanKeywordPackageGetV10Api = (*QianchuanKeywordPackageGetV10ApiService)(&c.common)
+	//c.QianchuanLqAdGetV10Api = (*QianchuanLqAdGetV10ApiService)(&c.common)
+	//c.QianchuanOrientationPackageGetV10Api = (*QianchuanOrientationPackageGetV10ApiService)(&c.common)
+	//c.QianchuanProductAnalyseCompareCreativeV10Api = (*QianchuanProductAnalyseCompareCreativeV10ApiService)(&c.common)
+	//c.QianchuanProductAnalyseCompareStatsDataV10Api = (*QianchuanProductAnalyseCompareStatsDataV10ApiService)(&c.common)
+	//c.QianchuanProductAnalyseListV10Api = (*QianchuanProductAnalyseListV10ApiService)(&c.common)
+	//c.QianchuanProductAvailableGetV10Api = (*QianchuanProductAvailableGetV10ApiService)(&c.common)
+	//c.QianchuanReportAdGetV10Api = (*QianchuanReportAdGetV10ApiService)(&c.common)
+	//c.QianchuanReportAdvertiserGetV10Api = (*QianchuanReportAdvertiserGetV10ApiService)(&c.common)
+	//c.QianchuanReportCreativeGetV10Api = (*QianchuanReportCreativeGetV10ApiService)(&c.common)
+	//c.QianchuanReportCustomConfigGetV10Api = (*QianchuanReportCustomConfigGetV10ApiService)(&c.common)
+	//c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
+	//c.QianchuanReportLiveGetV10Api = (*QianchuanReportLiveGetV10ApiService)(&c.common)
+	//c.QianchuanReportLongTransferOrderGetV10Api = (*QianchuanReportLongTransferOrderGetV10ApiService)(&c.common)
+	//c.QianchuanReportMaterialGetV10Api = (*QianchuanReportMaterialGetV10ApiService)(&c.common)
+	//c.QianchuanReportSearchWordGetV10Api = (*QianchuanReportSearchWordGetV10ApiService)(&c.common)
+	//c.QianchuanReportUniPromotionDimensionDataAuthorGetV10Api = (*QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService)(&c.common)
+	//c.QianchuanReportUniPromotionDimensionDataRoomGetV10Api = (*QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService)(&c.common)
+	//c.QianchuanReportUniPromotionGetV10Api = (*QianchuanReportUniPromotionGetV10ApiService)(&c.common)
+	//c.QianchuanReportVideoUserLoseGetV10Api = (*QianchuanReportVideoUserLoseGetV10ApiService)(&c.common)
+	//c.QianchuanRoiGoalUpdateV10Api = (*QianchuanRoiGoalUpdateV10ApiService)(&c.common)
+	//c.QianchuanShopAdvertiserListV10Api = (*QianchuanShopAdvertiserListV10ApiService)(&c.common)
+	//c.QianchuanShopAuthorizedGetV10Api = (*QianchuanShopAuthorizedGetV10ApiService)(&c.common)
+	//c.QianchuanShopGetV10Api = (*QianchuanShopGetV10ApiService)(&c.common)
+	//c.QianchuanSuggestBidV10Api = (*QianchuanSuggestBidV10ApiService)(&c.common)
+	//c.QianchuanSuggestBudgetV10Api = (*QianchuanSuggestBudgetV10ApiService)(&c.common)
+	//c.QianchuanSuggestRoiGoalV10Api = (*QianchuanSuggestRoiGoalV10ApiService)(&c.common)
+	//c.QianchuanTodayLiveRoomDetailGetV10Api = (*QianchuanTodayLiveRoomDetailGetV10ApiService)(&c.common)
+	//c.QianchuanTodayLiveRoomFlowPerformanceGetV10Api = (*QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService)(&c.common)
+	//c.QianchuanTodayLiveRoomGetV10Api = (*QianchuanTodayLiveRoomGetV10ApiService)(&c.common)
+	//c.QianchuanTodayLiveRoomProductListGetV10Api = (*QianchuanTodayLiveRoomProductListGetV10ApiService)(&c.common)
+	//c.QianchuanTodayLiveRoomUserGetV10Api = (*QianchuanTodayLiveRoomUserGetV10ApiService)(&c.common)
+	//c.QianchuanToolsAllowCouponV10Api = (*QianchuanToolsAllowCouponV10ApiService)(&c.common)
+	//c.QianchuanToolsAwemeAuthV10Api = (*QianchuanToolsAwemeAuthV10ApiService)(&c.common)
+	//c.QianchuanToolsEstimateAudienceV10Api = (*QianchuanToolsEstimateAudienceV10ApiService)(&c.common)
+	//c.QianchuanToolsGrayV10Api = (*QianchuanToolsGrayV10ApiService)(&c.common)
+	//c.QianchuanToolsShopAuthV10Api = (*QianchuanToolsShopAuthV10ApiService)(&c.common)
+	//c.QianchuanToolsSmartBoostAdBoostReportGetV10Api = (*QianchuanToolsSmartBoostAdBoostReportGetV10ApiService)(&c.common)
+	//c.QianchuanToolsSmartBoostAdBoostSetV10Api = (*QianchuanToolsSmartBoostAdBoostSetV10ApiService)(&c.common)
+	//c.QianchuanToolsSmartBoostAdBoostStatusGetV10Api = (*QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService)(&c.common)
+	//c.QianchuanToolsSmartBoostAdBoostVersionGetV10Api = (*QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService)(&c.common)
+	//c.QianchuanTrackUrlCheckV10Api = (*QianchuanTrackUrlCheckV10ApiService)(&c.common)
+	//c.QianchuanUniAwemeAuthorizedGetV10Api = (*QianchuanUniAwemeAuthorizedGetV10ApiService)(&c.common)
+	//c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
+	//c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
+	//c.QueryInvoiceV2Api = (*QueryInvoiceV2ApiService)(&c.common)
+	//c.QueryProjectV2Api = (*QueryProjectV2ApiService)(&c.common)
+	//c.QueryStatementV2Api = (*QueryStatementV2ApiService)(&c.common)
+	//c.ReportAdGetV2Api = (*ReportAdGetV2ApiService)(&c.common)
+	//c.ReportAdvertiserGetV2Api = (*ReportAdvertiserGetV2ApiService)(&c.common)
+	//c.ReportAgentGetV2V2Api = (*ReportAgentGetV2V2ApiService)(&c.common)
+	//c.ReportAudienceAgeV2Api = (*ReportAudienceAgeV2ApiService)(&c.common)
+	//c.ReportAudienceAwemeListV2Api = (*ReportAudienceAwemeListV2ApiService)(&c.common)
+	//c.ReportAudienceCityV2Api = (*ReportAudienceCityV2ApiService)(&c.common)
+	//c.ReportAudienceGenderV2Api = (*ReportAudienceGenderV2ApiService)(&c.common)
+	//c.ReportAudienceInterestActionListV2Api = (*ReportAudienceInterestActionListV2ApiService)(&c.common)
+	//c.ReportAudienceProvinceV2Api = (*ReportAudienceProvinceV2ApiService)(&c.common)
+	//c.ReportBrandAdGetV30Api = (*ReportBrandAdGetV30ApiService)(&c.common)
+	//c.ReportBrandAdvertiserGetV30Api = (*ReportBrandAdvertiserGetV30ApiService)(&c.common)
+	//c.ReportBrandCampaignGetV30Api = (*ReportBrandCampaignGetV30ApiService)(&c.common)
+	//c.ReportBrandCreativeGetV30Api = (*ReportBrandCreativeGetV30ApiService)(&c.common)
+	//c.ReportCampaignGetV2Api = (*ReportCampaignGetV2ApiService)(&c.common)
+	//c.ReportCreativeGetV2Api = (*ReportCreativeGetV2ApiService)(&c.common)
+	//c.ReportCustomAsyncTaskCreateV30Api = (*ReportCustomAsyncTaskCreateV30ApiService)(&c.common)
+	//c.ReportCustomAsyncTaskDownloadV30Api = (*ReportCustomAsyncTaskDownloadV30ApiService)(&c.common)
+	//c.ReportCustomAsyncTaskGetV30Api = (*ReportCustomAsyncTaskGetV30ApiService)(&c.common)
+	//c.ReportCustomConfigGetV30Api = (*ReportCustomConfigGetV30ApiService)(&c.common)
+	//c.ReportCustomCreativeGetV30Api = (*ReportCustomCreativeGetV30ApiService)(&c.common)
+	//c.ReportCustomGetV30Api = (*ReportCustomGetV30ApiService)(&c.common)
+	//c.ReportLiveRoomAnalysisGetV2Api = (*ReportLiveRoomAnalysisGetV2ApiService)(&c.common)
+	//c.ReportLiveRoomAttributeGetV2Api = (*ReportLiveRoomAttributeGetV2ApiService)(&c.common)
+	//c.ReportLiveRoomAudiencePortraitGetV2Api = (*ReportLiveRoomAudiencePortraitGetV2ApiService)(&c.common)
+	//c.ReportLiveRoomFlowCategoryGetV2Api = (*ReportLiveRoomFlowCategoryGetV2ApiService)(&c.common)
+	//c.ReportLiveRoomProductGetV2Api = (*ReportLiveRoomProductGetV2ApiService)(&c.common)
+	//c.ReportProductAsyncTaskDownloadV30Api = (*ReportProductAsyncTaskDownloadV30ApiService)(&c.common)
+	//c.ReportProductAsyncTaskGetV30Api = (*ReportProductAsyncTaskGetV30ApiService)(&c.common)
+	//c.ReportProductDailyAsyncTaskCreateV30Api = (*ReportProductDailyAsyncTaskCreateV30ApiService)(&c.common)
+	//c.ReportProductHourlyAsyncTaskCreateV30Api = (*ReportProductHourlyAsyncTaskCreateV30ApiService)(&c.common)
+	//c.ReportRtaCusExpGetV2Api = (*ReportRtaCusExpGetV2ApiService)(&c.common)
+	//c.ReportRtaExpGetV2Api = (*ReportRtaExpGetV2ApiService)(&c.common)
+	//c.ReportRtaExpLocalDailyGetV30Api = (*ReportRtaExpLocalDailyGetV30ApiService)(&c.common)
+	//c.ReportRtaExpLocalHourlyGetV30Api = (*ReportRtaExpLocalHourlyGetV30ApiService)(&c.common)
+	//c.ReportRtaGetV2Api = (*ReportRtaGetV2ApiService)(&c.common)
+	//c.ReportRubeexGetV2Api = (*ReportRubeexGetV2ApiService)(&c.common)
+	//c.ReportSitePageV2Api = (*ReportSitePageV2ApiService)(&c.common)
+	//c.ReportStardeliveryTaskDataGetV30Api = (*ReportStardeliveryTaskDataGetV30ApiService)(&c.common)
+	//c.ReportStardeliveryTaskVideoDataGetV30Api = (*ReportStardeliveryTaskVideoDataGetV30ApiService)(&c.common)
+	//c.ReportVideoFrameGetV2Api = (*ReportVideoFrameGetV2ApiService)(&c.common)
+	//c.ServeMarketActiveFuncGetV10Api = (*ServeMarketActiveFuncGetV10ApiService)(&c.common)
+	//c.ServeMarketCidVerifyTokenV10Api = (*ServeMarketCidVerifyTokenV10ApiService)(&c.common)
+	//c.ServeMarketOrderGetV10Api = (*ServeMarketOrderGetV10ApiService)(&c.common)
+	//c.SharedWalletDailyStatGetV30Api = (*SharedWalletDailyStatGetV30ApiService)(&c.common)
+	//c.SharedWalletMainWalletGetV30Api = (*SharedWalletMainWalletGetV30ApiService)(&c.common)
+	//c.SharedWalletTransactionDetailGetV30Api = (*SharedWalletTransactionDetailGetV30ApiService)(&c.common)
+	//c.SharedWalletWalletBalanceGetV30Api = (*SharedWalletWalletBalanceGetV30ApiService)(&c.common)
+	//c.SharedWalletWalletInfoGetV30Api = (*SharedWalletWalletInfoGetV30ApiService)(&c.common)
+	//c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
+	//c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
+	//c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
+	//c.StarBillGetPendingV2Api = (*StarBillGetPendingV2ApiService)(&c.common)
+	//c.StarBillPayV2Api = (*StarBillPayV2ApiService)(&c.common)
+	//c.StarCampaignListV2Api = (*StarCampaignListV2ApiService)(&c.common)
+	//c.StarChallengeAddBudgetV2Api = (*StarChallengeAddBudgetV2ApiService)(&c.common)
+	//c.StarChallengeAuthorListV2Api = (*StarChallengeAuthorListV2ApiService)(&c.common)
+	//c.StarChallengeCancelV2Api = (*StarChallengeCancelV2ApiService)(&c.common)
+	//c.StarChallengeExpandRangeV2Api = (*StarChallengeExpandRangeV2ApiService)(&c.common)
+	//c.StarChallengeGetPushAdResultsV2Api = (*StarChallengeGetPushAdResultsV2ApiService)(&c.common)
+	//c.StarChallengeInfoV2Api = (*StarChallengeInfoV2ApiService)(&c.common)
+	//c.StarChallengeItemsDataV2Api = (*StarChallengeItemsDataV2ApiService)(&c.common)
+	//c.StarChallengeListV2Api = (*StarChallengeListV2ApiService)(&c.common)
+	//c.StarChallengePushItemsToAdV2Api = (*StarChallengePushItemsToAdV2ApiService)(&c.common)
+	//c.StarClueGetV2Api = (*StarClueGetV2ApiService)(&c.common)
+	//c.StarComponentCreateLinkV2Api = (*StarComponentCreateLinkV2ApiService)(&c.common)
+	//c.StarComponentQueryIndustryAnchorV2Api = (*StarComponentQueryIndustryAnchorV2ApiService)(&c.common)
+	//c.StarComponentQueryLinkV2Api = (*StarComponentQueryLinkV2ApiService)(&c.common)
+	//c.StarComponentUpdateLinkV2Api = (*StarComponentUpdateLinkV2ApiService)(&c.common)
+	//c.StarDataTaskTimelineReportV2Api = (*StarDataTaskTimelineReportV2ApiService)(&c.common)
+	//c.StarDemandCreateAssignV2Api = (*StarDemandCreateAssignV2ApiService)(&c.common)
+	//c.StarDemandCreateChallengeV2Api = (*StarDemandCreateChallengeV2ApiService)(&c.common)
+	//c.StarDemandListV2Api = (*StarDemandListV2ApiService)(&c.common)
+	//c.StarDemandOmCreateChallengeV2Api = (*StarDemandOmCreateChallengeV2ApiService)(&c.common)
+	//c.StarDemandOmExpandChallengeV2Api = (*StarDemandOmExpandChallengeV2ApiService)(&c.common)
+	//c.StarDemandOmGetChallengeItemsDataV2Api = (*StarDemandOmGetChallengeItemsDataV2ApiService)(&c.common)
+	//c.StarDemandOmGetChallengeV2Api = (*StarDemandOmGetChallengeV2ApiService)(&c.common)
+	//c.StarDemandOmGetDemandListV2Api = (*StarDemandOmGetDemandListV2ApiService)(&c.common)
+	//c.StarDemandOmUpdateChallengeV2Api = (*StarDemandOmUpdateChallengeV2ApiService)(&c.common)
+	//c.StarDemandOrderListV2Api = (*StarDemandOrderListV2ApiService)(&c.common)
+	//c.StarGetCreateChallengeDataDictV2Api = (*StarGetCreateChallengeDataDictV2ApiService)(&c.common)
+	//c.StarInfoV2Api = (*StarInfoV2ApiService)(&c.common)
+	//c.StarMcnContractChallengeV2Api = (*StarMcnContractChallengeV2ApiService)(&c.common)
+	//c.StarMcnGetContractChallengeAuthorItemListV2V2Api = (*StarMcnGetContractChallengeAuthorItemListV2V2ApiService)(&c.common)
+	//c.StarMcnGetContractedChallengeListV2Api = (*StarMcnGetContractedChallengeListV2ApiService)(&c.common)
+	//c.StarMcnGetContractedChallengeUrlV2Api = (*StarMcnGetContractedChallengeUrlV2ApiService)(&c.common)
+	//c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
+	//c.StarOrderApproveResourceV2Api = (*StarOrderApproveResourceV2ApiService)(&c.common)
+	//c.StarOrderDemanderCancelV2Api = (*StarOrderDemanderCancelV2ApiService)(&c.common)
+	//c.StarOrderDetailV2Api = (*StarOrderDetailV2ApiService)(&c.common)
+	//c.StarOrderFinishV2Api = (*StarOrderFinishV2ApiService)(&c.common)
+	//c.StarOrderGetCancelAmountV2Api = (*StarOrderGetCancelAmountV2ApiService)(&c.common)
+	//c.StarOrderGetComponentV2Api = (*StarOrderGetComponentV2ApiService)(&c.common)
+	//c.StarOrderGetInfoV2Api = (*StarOrderGetInfoV2ApiService)(&c.common)
+	//c.StarOrderGetScriptV2Api = (*StarOrderGetScriptV2ApiService)(&c.common)
+	//c.StarOrderGetVideoV2Api = (*StarOrderGetVideoV2ApiService)(&c.common)
+	//c.StarOrderListByCampaignV2Api = (*StarOrderListByCampaignV2ApiService)(&c.common)
+	//c.StarOrderPublishResourceV2Api = (*StarOrderPublishResourceV2ApiService)(&c.common)
+	//c.StarOrderPushResourceV2Api = (*StarOrderPushResourceV2ApiService)(&c.common)
+	//c.StarOrderRejectResourceV2Api = (*StarOrderRejectResourceV2ApiService)(&c.common)
+	//c.StarOrderReplyAuthorCancelV2Api = (*StarOrderReplyAuthorCancelV2ApiService)(&c.common)
+	//c.StarOrderUpdateV2Api = (*StarOrderUpdateV2ApiService)(&c.common)
+	//c.StarReportCustomDataTopicDailyReportV2Api = (*StarReportCustomDataTopicDailyReportV2ApiService)(&c.common)
+	//c.StarReportCustomDataTopicReportV2Api = (*StarReportCustomDataTopicReportV2ApiService)(&c.common)
+	//c.StarReportDataTopicConfigV2Api = (*StarReportDataTopicConfigV2ApiService)(&c.common)
+	//c.StarReportOrderOverviewGetV2Api = (*StarReportOrderOverviewGetV2ApiService)(&c.common)
+	//c.StarReportOrderOverviewV2Api = (*StarReportOrderOverviewV2ApiService)(&c.common)
+	//c.StarReportOrderUserDistributionGetV2Api = (*StarReportOrderUserDistributionGetV2ApiService)(&c.common)
+	//c.StarStarAdUniteTaskDetailV2Api = (*StarStarAdUniteTaskDetailV2ApiService)(&c.common)
+	//c.StarStarAdUniteTaskItemListV2Api = (*StarStarAdUniteTaskItemListV2ApiService)(&c.common)
+	//c.StarStarAdUniteTaskListV2Api = (*StarStarAdUniteTaskListV2ApiService)(&c.common)
+	//c.StarUserGetAwemeAuthorIdV2Api = (*StarUserGetAwemeAuthorIdV2ApiService)(&c.common)
+	//c.StarUserGetStarIdV2Api = (*StarUserGetStarIdV2ApiService)(&c.common)
+	//c.StardeliveryTaskAuthorDetailV30Api = (*StardeliveryTaskAuthorDetailV30ApiService)(&c.common)
+	//c.StardeliveryTaskAuthorVideoDetailV30Api = (*StardeliveryTaskAuthorVideoDetailV30ApiService)(&c.common)
+	//c.StardeliveryTaskBudgetUpdateV30Api = (*StardeliveryTaskBudgetUpdateV30ApiService)(&c.common)
+	//c.StardeliveryTaskCancelV30Api = (*StardeliveryTaskCancelV30ApiService)(&c.common)
+	//c.StardeliveryTaskCreateResultGetV30Api = (*StardeliveryTaskCreateResultGetV30ApiService)(&c.common)
+	//c.StardeliveryTaskCreateV30Api = (*StardeliveryTaskCreateV30ApiService)(&c.common)
+	//c.StardeliveryTaskDetailV30Api = (*StardeliveryTaskDetailV30ApiService)(&c.common)
+	//c.StardeliveryTaskListV30Api = (*StardeliveryTaskListV30ApiService)(&c.common)
+	//c.StardeliveryTaskPostEndTimeUpdateV30Api = (*StardeliveryTaskPostEndTimeUpdateV30ApiService)(&c.common)
+	//c.StardeliveryTaskShareV30Api = (*StardeliveryTaskShareV30ApiService)(&c.common)
+	//c.StardeliveryTaskShareableListV30Api = (*StardeliveryTaskShareableListV30ApiService)(&c.common)
+	//c.StardeliveryTaskSharingListV30Api = (*StardeliveryTaskSharingListV30ApiService)(&c.common)
+	//c.StardeliveryTaskUnshareV30Api = (*StardeliveryTaskUnshareV30ApiService)(&c.common)
+	//c.StardeliveryTaskUpdateV30Api = (*StardeliveryTaskUpdateV30ApiService)(&c.common)
+	//c.SubscribeAccountsAddV30Api = (*SubscribeAccountsAddV30ApiService)(&c.common)
+	//c.SubscribeAccountsListV30Api = (*SubscribeAccountsListV30ApiService)(&c.common)
+	//c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)
+	//c.SuggWordsV30Api = (*SuggWordsV30ApiService)(&c.common)
+	//c.ToolsAbTestCreateV2Api = (*ToolsAbTestCreateV2ApiService)(&c.common)
+	//c.ToolsAbTestInfoGetV2Api = (*ToolsAbTestInfoGetV2ApiService)(&c.common)
+	//c.ToolsAbTestListGetV2Api = (*ToolsAbTestListGetV2ApiService)(&c.common)
+	//c.ToolsAbTestUpdateV2Api = (*ToolsAbTestUpdateV2ApiService)(&c.common)
+	//c.ToolsAdConvertDeepbidReadV2Api = (*ToolsAdConvertDeepbidReadV2ApiService)(&c.common)
+	//c.ToolsAdConvertOptimizedTargetGetV2Api = (*ToolsAdConvertOptimizedTargetGetV2ApiService)(&c.common)
+	//c.ToolsAdConvertQueryV2Api = (*ToolsAdConvertQueryV2ApiService)(&c.common)
+	//c.ToolsAdConvertTrackUrlUpdateV2Api = (*ToolsAdConvertTrackUrlUpdateV2ApiService)(&c.common)
+	//c.ToolsAdPreviewQrcodeGetV30Api = (*ToolsAdPreviewQrcodeGetV30ApiService)(&c.common)
+	//c.ToolsAdRaiseEstimateGetV2Api = (*ToolsAdRaiseEstimateGetV2ApiService)(&c.common)
+	//c.ToolsAdRaiseResultGetV2V2Api = (*ToolsAdRaiseResultGetV2V2ApiService)(&c.common)
+	//c.ToolsAdRaiseSetV2Api = (*ToolsAdRaiseSetV2ApiService)(&c.common)
+	//c.ToolsAdRaiseStatusGetV2Api = (*ToolsAdRaiseStatusGetV2ApiService)(&c.common)
+	//c.ToolsAdRaiseVersionGetV2Api = (*ToolsAdRaiseVersionGetV2ApiService)(&c.common)
+	//c.ToolsAdStatExtraInfoGetV2Api = (*ToolsAdStatExtraInfoGetV2ApiService)(&c.common)
+	//c.ToolsAdminInfoV2Api = (*ToolsAdminInfoV2ApiService)(&c.common)
+	//c.ToolsAdvertiserStoreSearchV2Api = (*ToolsAdvertiserStoreSearchV2ApiService)(&c.common)
+	//c.ToolsAipThirdSiteCreateV2Api = (*ToolsAipThirdSiteCreateV2ApiService)(&c.common)
+	//c.ToolsAipThirdSiteGetV2Api = (*ToolsAipThirdSiteGetV2ApiService)(&c.common)
+	//c.ToolsAipThirdSiteUpdateV2Api = (*ToolsAipThirdSiteUpdateV2ApiService)(&c.common)
+	//c.ToolsAppAuthGetV2Api = (*ToolsAppAuthGetV2ApiService)(&c.common)
+	//c.ToolsAppIosListV2Api = (*ToolsAppIosListV2ApiService)(&c.common)
+	//c.ToolsAppManagementAndroidAppListV2Api = (*ToolsAppManagementAndroidAppListV2ApiService)(&c.common)
+	//c.ToolsAppManagementAndroidBasicPackageGetV2Api = (*ToolsAppManagementAndroidBasicPackageGetV2ApiService)(&c.common)
+	//c.ToolsAppManagementAndroidBasicPackagePublishV2Api = (*ToolsAppManagementAndroidBasicPackagePublishV2ApiService)(&c.common)
+	//c.ToolsAppManagementAndroidBasicPackageUpdateV2Api = (*ToolsAppManagementAndroidBasicPackageUpdateV2ApiService)(&c.common)
+	//c.ToolsAppManagementAppGetV2Api = (*ToolsAppManagementAppGetV2ApiService)(&c.common)
+	//c.ToolsAppManagementBookingGetV2Api = (*ToolsAppManagementBookingGetV2ApiService)(&c.common)
+	//c.ToolsAppManagementBookingRecordsGetV2Api = (*ToolsAppManagementBookingRecordsGetV2ApiService)(&c.common)
+	//c.ToolsAppManagementBpShareCancelV2Api = (*ToolsAppManagementBpShareCancelV2ApiService)(&c.common)
+	//c.ToolsAppManagementBpShareV2Api = (*ToolsAppManagementBpShareV2ApiService)(&c.common)
+	//c.ToolsAppManagementExtendPackageCreateV2Api = (*ToolsAppManagementExtendPackageCreateV2ApiService)(&c.common)
+	//c.ToolsAppManagementExtendPackageCreateV2V2Api = (*ToolsAppManagementExtendPackageCreateV2V2ApiService)(&c.common)
+	//c.ToolsAppManagementExtendPackageListV2Api = (*ToolsAppManagementExtendPackageListV2ApiService)(&c.common)
+	//c.ToolsAppManagementExtendPackageListV2V2Api = (*ToolsAppManagementExtendPackageListV2V2ApiService)(&c.common)
+	//c.ToolsAppManagementExtendPackageUpdateV2Api = (*ToolsAppManagementExtendPackageUpdateV2ApiService)(&c.common)
+	//c.ToolsAppManagementExtendPackageUpdateV2V2Api = (*ToolsAppManagementExtendPackageUpdateV2V2ApiService)(&c.common)
+	//c.ToolsAppManagementIndustryInfoListV2Api = (*ToolsAppManagementIndustryInfoListV2ApiService)(&c.common)
+	//c.ToolsAppManagementShareAccountListV2Api = (*ToolsAppManagementShareAccountListV2ApiService)(&c.common)
+	//c.ToolsAppManagementUpdateAuthorizationV2Api = (*ToolsAppManagementUpdateAuthorizationV2ApiService)(&c.common)
+	//c.ToolsAppManagementUploadTaskCreateV2Api = (*ToolsAppManagementUploadTaskCreateV2ApiService)(&c.common)
+	//c.ToolsAppManagementUploadTaskListV2Api = (*ToolsAppManagementUploadTaskListV2ApiService)(&c.common)
+	//c.ToolsAssetLinkListV30Api = (*ToolsAssetLinkListV30ApiService)(&c.common)
+	//c.ToolsAwemeAuthAuthShareAdShareV2Api = (*ToolsAwemeAuthAuthShareAdShareV2ApiService)(&c.common)
+	//c.ToolsAwemeAuthCancelV2Api = (*ToolsAwemeAuthCancelV2ApiService)(&c.common)
+	//c.ToolsAwemeAuthListV2Api = (*ToolsAwemeAuthListV2ApiService)(&c.common)
+	//c.ToolsAwemeAuthRenewalV2Api = (*ToolsAwemeAuthRenewalV2ApiService)(&c.common)
+	//c.ToolsAwemeAuthV2Api = (*ToolsAwemeAuthV2ApiService)(&c.common)
+	//c.ToolsAwemeAuthorInfoGetV2Api = (*ToolsAwemeAuthorInfoGetV2ApiService)(&c.common)
+	//c.ToolsAwemeBannedCreateV30Api = (*ToolsAwemeBannedCreateV30ApiService)(&c.common)
+	//c.ToolsAwemeBannedDeleteV30Api = (*ToolsAwemeBannedDeleteV30ApiService)(&c.common)
+	//c.ToolsAwemeBannedListV30Api = (*ToolsAwemeBannedListV30ApiService)(&c.common)
+	//c.ToolsAwemeCategoryTopAuthorGetV2Api = (*ToolsAwemeCategoryTopAuthorGetV2ApiService)(&c.common)
+	//c.ToolsAwemeInfoSearchV2Api = (*ToolsAwemeInfoSearchV2ApiService)(&c.common)
+	//c.ToolsAwemeMultiLevelCategoryGetV2Api = (*ToolsAwemeMultiLevelCategoryGetV2ApiService)(&c.common)
+	//c.ToolsAwemeSimilarAuthorSearchV2Api = (*ToolsAwemeSimilarAuthorSearchV2ApiService)(&c.common)
+	//c.ToolsBidSuggestV2Api = (*ToolsBidSuggestV2ApiService)(&c.common)
+	//c.ToolsBidsSuggestV30Api = (*ToolsBidsSuggestV30ApiService)(&c.common)
+	//c.ToolsBlueFlowKeywordListV30Api = (*ToolsBlueFlowKeywordListV30ApiService)(&c.common)
+	//c.ToolsBlueFlowPackageListV30Api = (*ToolsBlueFlowPackageListV30ApiService)(&c.common)
+	//c.ToolsBpAssetManagementShareCancelV30Api = (*ToolsBpAssetManagementShareCancelV30ApiService)(&c.common)
+	//c.ToolsBpAssetManagementShareGetV30Api = (*ToolsBpAssetManagementShareGetV30ApiService)(&c.common)
+	//c.ToolsBpAssetManagementShareV30Api = (*ToolsBpAssetManagementShareV30ApiService)(&c.common)
+	//c.ToolsClueBridgeCallCreateV2Api = (*ToolsClueBridgeCallCreateV2ApiService)(&c.common)
+	//c.ToolsClueCallCreateV2Api = (*ToolsClueCallCreateV2ApiService)(&c.common)
+	//c.ToolsClueCallVirtualNumberGetV2Api = (*ToolsClueCallVirtualNumberGetV2ApiService)(&c.common)
+	//c.ToolsClueCallVirtualNumberRefundDetailGetV2Api = (*ToolsClueCallVirtualNumberRefundDetailGetV2ApiService)(&c.common)
+	//c.ToolsClueCallbackV2Api = (*ToolsClueCallbackV2ApiService)(&c.common)
+	//c.ToolsClueClueOverviewQueryV2Api = (*ToolsClueClueOverviewQueryV2ApiService)(&c.common)
+	//c.ToolsClueContactLogListV2Api = (*ToolsClueContactLogListV2ApiService)(&c.common)
+	//c.ToolsClueContactLogOverviewQueryV2Api = (*ToolsClueContactLogOverviewQueryV2ApiService)(&c.common)
+	//c.ToolsClueExtInfoCallbackV2Api = (*ToolsClueExtInfoCallbackV2ApiService)(&c.common)
+	//c.ToolsClueFormDetailV2Api = (*ToolsClueFormDetailV2ApiService)(&c.common)
+	//c.ToolsClueFormGetV2Api = (*ToolsClueFormGetV2ApiService)(&c.common)
+	//c.ToolsClueGetV2Api = (*ToolsClueGetV2ApiService)(&c.common)
+	//c.ToolsClueInfoUpdateV2Api = (*ToolsClueInfoUpdateV2ApiService)(&c.common)
+	//c.ToolsClueLifeGetV2Api = (*ToolsClueLifeGetV2ApiService)(&c.common)
+	//c.ToolsClueLiteContactGetV2Api = (*ToolsClueLiteContactGetV2ApiService)(&c.common)
+	//c.ToolsClueLiteContactRecordV2Api = (*ToolsClueLiteContactRecordV2ApiService)(&c.common)
+	//c.ToolsClueRefundDetailGetV2Api = (*ToolsClueRefundDetailGetV2ApiService)(&c.common)
+	//c.ToolsClueRefundInfoQueryV2Api = (*ToolsClueRefundInfoQueryV2ApiService)(&c.common)
+	//c.ToolsClueRefundReportGetV2Api = (*ToolsClueRefundReportGetV2ApiService)(&c.common)
+	//c.ToolsClueRefundViewGetV2Api = (*ToolsClueRefundViewGetV2ApiService)(&c.common)
+	//c.ToolsClueRobotScriptQueryV2Api = (*ToolsClueRobotScriptQueryV2ApiService)(&c.common)
+	//c.ToolsClueRobotTaskCancelV2Api = (*ToolsClueRobotTaskCancelV2ApiService)(&c.common)
+	//c.ToolsClueRobotTaskCreateV2Api = (*ToolsClueRobotTaskCreateV2ApiService)(&c.common)
+	//c.ToolsClueSmartPhoneGetV2Api = (*ToolsClueSmartPhoneGetV2ApiService)(&c.common)
+	//c.ToolsClueWebrtcTokenGetV2Api = (*ToolsClueWebrtcTokenGetV2ApiService)(&c.common)
+	//c.ToolsCommentGetV30Api = (*ToolsCommentGetV30ApiService)(&c.common)
+	//c.ToolsCommentHideV30Api = (*ToolsCommentHideV30ApiService)(&c.common)
+	//c.ToolsCommentMetricsGetV30Api = (*ToolsCommentMetricsGetV30ApiService)(&c.common)
+	//c.ToolsCommentMid2itemIdV30Api = (*ToolsCommentMid2itemIdV30ApiService)(&c.common)
+	//c.ToolsCommentReplyGetV30Api = (*ToolsCommentReplyGetV30ApiService)(&c.common)
+	//c.ToolsCommentReplyV30Api = (*ToolsCommentReplyV30ApiService)(&c.common)
+	//c.ToolsCommentStickOnTopV30Api = (*ToolsCommentStickOnTopV30ApiService)(&c.common)
+	//c.ToolsCommentTermsBannedAddV30Api = (*ToolsCommentTermsBannedAddV30ApiService)(&c.common)
+	//c.ToolsCommentTermsBannedDeleteV30Api = (*ToolsCommentTermsBannedDeleteV30ApiService)(&c.common)
+	//c.ToolsCommentTermsBannedGetV30Api = (*ToolsCommentTermsBannedGetV30ApiService)(&c.common)
+	//c.ToolsCommentTermsBannedUpdateV30Api = (*ToolsCommentTermsBannedUpdateV30ApiService)(&c.common)
+	//c.ToolsCountryInfoV2Api = (*ToolsCountryInfoV2ApiService)(&c.common)
+	//c.ToolsCreativeWordSelectV2Api = (*ToolsCreativeWordSelectV2ApiService)(&c.common)
+	//c.ToolsDiagnosisAdGetV2V2Api = (*ToolsDiagnosisAdGetV2V2ApiService)(&c.common)
+	//c.ToolsDiagnosisSuggestionGetV2Api = (*ToolsDiagnosisSuggestionGetV2ApiService)(&c.common)
+	//c.ToolsDownloadPackageGetV2Api = (*ToolsDownloadPackageGetV2ApiService)(&c.common)
+	//c.ToolsDownloadPackageParseV2Api = (*ToolsDownloadPackageParseV2ApiService)(&c.common)
+	//c.ToolsEstimateAudienceV2Api = (*ToolsEstimateAudienceV2ApiService)(&c.common)
+	//c.ToolsEstimatedPriceGetV2Api = (*ToolsEstimatedPriceGetV2ApiService)(&c.common)
+	//c.ToolsEventAssetsGetV2Api = (*ToolsEventAssetsGetV2ApiService)(&c.common)
+	//c.ToolsEventConvertOptimizedGoalGetV30Api = (*ToolsEventConvertOptimizedGoalGetV30ApiService)(&c.common)
+	//c.ToolsGrayGetV30Api = (*ToolsGrayGetV30ApiService)(&c.common)
+	//c.ToolsIndustryGetV2Api = (*ToolsIndustryGetV2ApiService)(&c.common)
+	//c.ToolsInterestActionActionKeywordV2Api = (*ToolsInterestActionActionKeywordV2ApiService)(&c.common)
+	//c.ToolsInterestActionId2wordV2Api = (*ToolsInterestActionId2wordV2ApiService)(&c.common)
+	//c.ToolsInterestActionInterestKeywordV2Api = (*ToolsInterestActionInterestKeywordV2ApiService)(&c.common)
+	//c.ToolsInterestActionKeywordSuggestV2Api = (*ToolsInterestActionKeywordSuggestV2ApiService)(&c.common)
+	//c.ToolsIsSupportUniversalGetV2Api = (*ToolsIsSupportUniversalGetV2ApiService)(&c.common)
+	//c.ToolsKeyActionGetV2Api = (*ToolsKeyActionGetV2ApiService)(&c.common)
+	//c.ToolsKeywordsBidRatioCreateV30Api = (*ToolsKeywordsBidRatioCreateV30ApiService)(&c.common)
+	//c.ToolsKeywordsBidRatioDeleteV30Api = (*ToolsKeywordsBidRatioDeleteV30ApiService)(&c.common)
+	//c.ToolsKeywordsBidRatioGetV30Api = (*ToolsKeywordsBidRatioGetV30ApiService)(&c.common)
+	//c.ToolsKeywordsBidRatioUpdateV30Api = (*ToolsKeywordsBidRatioUpdateV30ApiService)(&c.common)
+	//c.ToolsKeywordsProjectInfoGetV30Api = (*ToolsKeywordsProjectInfoGetV30ApiService)(&c.common)
+	//c.ToolsLandingGroupCreateV2Api = (*ToolsLandingGroupCreateV2ApiService)(&c.common)
+	//c.ToolsLandingGroupGetV2Api = (*ToolsLandingGroupGetV2ApiService)(&c.common)
+	//c.ToolsLandingGroupSiteOptStatusUpdateV2Api = (*ToolsLandingGroupSiteOptStatusUpdateV2ApiService)(&c.common)
+	//c.ToolsLandingGroupUpdateV2Api = (*ToolsLandingGroupUpdateV2ApiService)(&c.common)
+	//c.ToolsLiveAuthorizeListV2Api = (*ToolsLiveAuthorizeListV2ApiService)(&c.common)
+	//c.ToolsLogSearchV2Api = (*ToolsLogSearchV2ApiService)(&c.common)
+	//c.ToolsMicroAppCreateV30Api = (*ToolsMicroAppCreateV30ApiService)(&c.common)
+	//c.ToolsMicroAppListV30Api = (*ToolsMicroAppListV30ApiService)(&c.common)
+	//c.ToolsMicroAppUpdateV30Api = (*ToolsMicroAppUpdateV30ApiService)(&c.common)
+	//c.ToolsMicroGameCreateV30Api = (*ToolsMicroGameCreateV30ApiService)(&c.common)
+	//c.ToolsMicroGameListV30Api = (*ToolsMicroGameListV30ApiService)(&c.common)
+	//c.ToolsMicroGameUpdateV30Api = (*ToolsMicroGameUpdateV30ApiService)(&c.common)
+	//c.ToolsNoBidSuggestBidV2Api = (*ToolsNoBidSuggestBidV2ApiService)(&c.common)
+	//c.ToolsOrangeSiteGetV30Api = (*ToolsOrangeSiteGetV30ApiService)(&c.common)
+	//c.ToolsPioneerProgramAttachmentUploadV2Api = (*ToolsPioneerProgramAttachmentUploadV2ApiService)(&c.common)
+	//c.ToolsPlayableCloudGameListV2Api = (*ToolsPlayableCloudGameListV2ApiService)(&c.common)
+	//c.ToolsPlayableCreateV2Api = (*ToolsPlayableCreateV2ApiService)(&c.common)
+	//c.ToolsPlayableGrantResultV2Api = (*ToolsPlayableGrantResultV2ApiService)(&c.common)
+	//c.ToolsPlayableGrantV2Api = (*ToolsPlayableGrantV2ApiService)(&c.common)
+	//c.ToolsPlayableListGetV2Api = (*ToolsPlayableListGetV2ApiService)(&c.common)
+	//c.ToolsPlayableSaveV2Api = (*ToolsPlayableSaveV2ApiService)(&c.common)
+	//c.ToolsPlayableUploadV2Api = (*ToolsPlayableUploadV2ApiService)(&c.common)
+	//c.ToolsPlayableValidateV2Api = (*ToolsPlayableValidateV2ApiService)(&c.common)
+	//c.ToolsPreAuditGetV2Api = (*ToolsPreAuditGetV2ApiService)(&c.common)
+	//c.ToolsPreAuditSendV2Api = (*ToolsPreAuditSendV2ApiService)(&c.common)
+	//c.ToolsPrivativeWordAdAddV2Api = (*ToolsPrivativeWordAdAddV2ApiService)(&c.common)
+	//c.ToolsPrivativeWordAdUpdateV2Api = (*ToolsPrivativeWordAdUpdateV2ApiService)(&c.common)
+	//c.ToolsPrivativeWordBatchGetV30Api = (*ToolsPrivativeWordBatchGetV30ApiService)(&c.common)
+	//c.ToolsPrivativeWordCampaignAddV2Api = (*ToolsPrivativeWordCampaignAddV2ApiService)(&c.common)
+	//c.ToolsPrivativeWordCampaignUpdateV2Api = (*ToolsPrivativeWordCampaignUpdateV2ApiService)(&c.common)
+	//c.ToolsPrivativeWordGetV2Api = (*ToolsPrivativeWordGetV2ApiService)(&c.common)
+	//c.ToolsPrivativeWordProjectAddV30Api = (*ToolsPrivativeWordProjectAddV30ApiService)(&c.common)
+	//c.ToolsPrivativeWordProjectUpdateV30Api = (*ToolsPrivativeWordProjectUpdateV30ApiService)(&c.common)
+	//c.ToolsPrivativeWordPromotionAddV30Api = (*ToolsPrivativeWordPromotionAddV30ApiService)(&c.common)
+	//c.ToolsPrivativeWordPromotionUpdateV30Api = (*ToolsPrivativeWordPromotionUpdateV30ApiService)(&c.common)
+	//c.ToolsPromotionCardRecommendGetV2Api = (*ToolsPromotionCardRecommendGetV2ApiService)(&c.common)
+	//c.ToolsPromotionCardRecommendTitleGetV2Api = (*ToolsPromotionCardRecommendTitleGetV2ApiService)(&c.common)
+	//c.ToolsPromotionDiagnosisSuggestionAcceptV30Api = (*ToolsPromotionDiagnosisSuggestionAcceptV30ApiService)(&c.common)
+	//c.ToolsPromotionDiagnosisSuggestionGetV30Api = (*ToolsPromotionDiagnosisSuggestionGetV30ApiService)(&c.common)
+	//c.ToolsPromotionRaiseSetV30Api = (*ToolsPromotionRaiseSetV30ApiService)(&c.common)
+	//c.ToolsPromotionRaiseStatusCurrentIdsGetV30Api = (*ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService)(&c.common)
+	//c.ToolsPromotionRaiseStatusGetV30Api = (*ToolsPromotionRaiseStatusGetV30ApiService)(&c.common)
+	//c.ToolsPromotionRaiseStopV30Api = (*ToolsPromotionRaiseStopV30ApiService)(&c.common)
+	//c.ToolsPromotionRaiseVersionGetV30Api = (*ToolsPromotionRaiseVersionGetV30ApiService)(&c.common)
+	//c.ToolsQuotaGetV2Api = (*ToolsQuotaGetV2ApiService)(&c.common)
+	//c.ToolsRegionGetV2Api = (*ToolsRegionGetV2ApiService)(&c.common)
+	//c.ToolsRtaGetInfoTmpV2Api = (*ToolsRtaGetInfoTmpV2ApiService)(&c.common)
+	//c.ToolsRtaGetInfoV2Api = (*ToolsRtaGetInfoV2ApiService)(&c.common)
+	//c.ToolsRtaGetV2Api = (*ToolsRtaGetV2ApiService)(&c.common)
+	//c.ToolsRtaScopeGetV30Api = (*ToolsRtaScopeGetV30ApiService)(&c.common)
+	//c.ToolsRtaSetScopeV2Api = (*ToolsRtaSetScopeV2ApiService)(&c.common)
+	//c.ToolsRtaStatusUpdateV2Api = (*ToolsRtaStatusUpdateV2ApiService)(&c.common)
+	//c.ToolsRubeexGetV2Api = (*ToolsRubeexGetV2ApiService)(&c.common)
+	//c.ToolsRubeexPlayableAdListV2Api = (*ToolsRubeexPlayableAdListV2ApiService)(&c.common)
+	//c.ToolsRubeexPlayableListV2Api = (*ToolsRubeexPlayableListV2ApiService)(&c.common)
+	//c.ToolsRubeexRemarkV2Api = (*ToolsRubeexRemarkV2ApiService)(&c.common)
+	//c.ToolsRubeexVersionGetV2Api = (*ToolsRubeexVersionGetV2ApiService)(&c.common)
+	//c.ToolsSearchBidRatioGetV2Api = (*ToolsSearchBidRatioGetV2ApiService)(&c.common)
+	//c.ToolsSiteCopyV2Api = (*ToolsSiteCopyV2ApiService)(&c.common)
+	//c.ToolsSiteCreateV2Api = (*ToolsSiteCreateV2ApiService)(&c.common)
+	//c.ToolsSiteFormsListV2Api = (*ToolsSiteFormsListV2ApiService)(&c.common)
+	//c.ToolsSiteHandselV2Api = (*ToolsSiteHandselV2ApiService)(&c.common)
+	//c.ToolsSitePreviewV2Api = (*ToolsSitePreviewV2ApiService)(&c.common)
+	//c.ToolsSiteReadV2Api = (*ToolsSiteReadV2ApiService)(&c.common)
+	//c.ToolsSiteTemplateCreateV2Api = (*ToolsSiteTemplateCreateV2ApiService)(&c.common)
+	//c.ToolsSiteTemplateGetV2Api = (*ToolsSiteTemplateGetV2ApiService)(&c.common)
+	//c.ToolsSiteTemplatePicUrlGetV2Api = (*ToolsSiteTemplatePicUrlGetV2ApiService)(&c.common)
+	//c.ToolsSiteTemplatePreviewV2Api = (*ToolsSiteTemplatePreviewV2ApiService)(&c.common)
+	//c.ToolsSiteTemplateSiteCreateV2Api = (*ToolsSiteTemplateSiteCreateV2ApiService)(&c.common)
+	//c.ToolsSiteUpdateStatusV2Api = (*ToolsSiteUpdateStatusV2ApiService)(&c.common)
+	//c.ToolsSiteUpdateV2Api = (*ToolsSiteUpdateV2ApiService)(&c.common)
+	//c.ToolsStarTaskMaterialTypeV2Api = (*ToolsStarTaskMaterialTypeV2ApiService)(&c.common)
+	//c.ToolsStarTaskSettlementConfigV2Api = (*ToolsStarTaskSettlementConfigV2ApiService)(&c.common)
+	//c.ToolsStarTaskTitleTopicGetV2Api = (*ToolsStarTaskTitleTopicGetV2ApiService)(&c.common)
+	//c.ToolsSuggestBudgetGetV30Api = (*ToolsSuggestBudgetGetV30ApiService)(&c.common)
+	//c.ToolsTaskRaiseCreateV2Api = (*ToolsTaskRaiseCreateV2ApiService)(&c.common)
+	//c.ToolsTaskRaiseDataGetV2Api = (*ToolsTaskRaiseDataGetV2ApiService)(&c.common)
+	//c.ToolsTaskRaiseGetV2Api = (*ToolsTaskRaiseGetV2ApiService)(&c.common)
+	//c.ToolsTaskRaiseOptimizationIdsGetV2Api = (*ToolsTaskRaiseOptimizationIdsGetV2ApiService)(&c.common)
+	//c.ToolsTaskRaiseStatusStopV2Api = (*ToolsTaskRaiseStatusStopV2ApiService)(&c.common)
+	//c.ToolsThirdSiteCreateV2Api = (*ToolsThirdSiteCreateV2ApiService)(&c.common)
+	//c.ToolsThirdSiteDeleteV2Api = (*ToolsThirdSiteDeleteV2ApiService)(&c.common)
+	//c.ToolsThirdSiteGetV2Api = (*ToolsThirdSiteGetV2ApiService)(&c.common)
+	//c.ToolsThirdSitePreviewV2Api = (*ToolsThirdSitePreviewV2ApiService)(&c.common)
+	//c.ToolsThirdSiteUpdateV2Api = (*ToolsThirdSiteUpdateV2ApiService)(&c.common)
+	//c.ToolsUnionFlowPackageCreateV2Api = (*ToolsUnionFlowPackageCreateV2ApiService)(&c.common)
+	//c.ToolsUnionFlowPackageDeleteV2Api = (*ToolsUnionFlowPackageDeleteV2ApiService)(&c.common)
+	//c.ToolsUnionFlowPackageGetV2Api = (*ToolsUnionFlowPackageGetV2ApiService)(&c.common)
+	//c.ToolsUnionFlowPackagePromotionReportV30Api = (*ToolsUnionFlowPackagePromotionReportV30ApiService)(&c.common)
+	//c.ToolsUnionFlowPackageReportV2Api = (*ToolsUnionFlowPackageReportV2ApiService)(&c.common)
+	//c.ToolsUnionFlowPackageUpdateV2Api = (*ToolsUnionFlowPackageUpdateV2ApiService)(&c.common)
+	//c.ToolsVideoCheckAvailableAnchorV2Api = (*ToolsVideoCheckAvailableAnchorV2ApiService)(&c.common)
+	//c.ToolsVideoCoverSuggestV2Api = (*ToolsVideoCoverSuggestV2ApiService)(&c.common)
+	//c.ToolsVideoPredictV2Api = (*ToolsVideoPredictV2ApiService)(&c.common)
+	//c.ToolsWechatAppletCreateV30Api = (*ToolsWechatAppletCreateV30ApiService)(&c.common)
+	//c.ToolsWechatAppletListV30Api = (*ToolsWechatAppletListV30ApiService)(&c.common)
+	//c.ToolsWechatAppletUpdateV30Api = (*ToolsWechatAppletUpdateV30ApiService)(&c.common)
+	//c.ToolsWechatGameCreateV30Api = (*ToolsWechatGameCreateV30ApiService)(&c.common)
+	//c.ToolsWechatGameListV30Api = (*ToolsWechatGameListV30ApiService)(&c.common)
+	//c.UserInfoV2Api = (*UserInfoV2ApiService)(&c.common)
+	//c.CommonApi = (*CommonApiService)(&c.common)
 
 	return c
 }
