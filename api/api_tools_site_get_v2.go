@@ -32,6 +32,7 @@ type ApiOpenApi2ToolsSiteGetGetRequest struct {
 	page          *int64
 	pageSize      *int64
 	status        *ToolsSiteGetV2Status
+	shareType     *ToolsSiteGetV2ShareType
 	filtering     *ToolsSiteGetV2Filtering
 }
 
@@ -61,6 +62,11 @@ func (r *ApiOpenApi2ToolsSiteGetGetRequest) PageSize(pageSize int64) *ApiOpenApi
 // 建站粗粒度状态，详见【附录-枚举值-建站粗粒度状态】
 func (r *ApiOpenApi2ToolsSiteGetGetRequest) Status(status ToolsSiteGetV2Status) *ApiOpenApi2ToolsSiteGetGetRequest {
 	r.status = &status
+	return r
+}
+
+func (r *ApiOpenApi2ToolsSiteGetGetRequest) ShareType(shareType ToolsSiteGetV2ShareType) *ApiOpenApi2ToolsSiteGetGetRequest {
+	r.shareType = &shareType
 	return r
 }
 
@@ -133,6 +139,9 @@ func (a *ToolsSiteGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteGetGetReque
 	}
 	if r.status != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "status", r.status)
+	}
+	if r.shareType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "share_type", r.shareType)
 	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
