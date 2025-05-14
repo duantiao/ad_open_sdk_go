@@ -469,17 +469,17 @@ type APIClient struct {
 	//
 	//FileImageDeleteV30Api *FileImageDeleteV30ApiService
 	//
-	//FileImageGetV2Api *FileImageGetV2ApiService
+	FileImageGetV2Api *FileImageGetV2ApiService
 	//
-	//FileMaterialAttributesListV2Api *FileMaterialAttributesListV2ApiService
+	FileMaterialAttributesListV2Api *FileMaterialAttributesListV2ApiService
 	//
 	//FileMaterialAuditResultGetV2Api *FileMaterialAuditResultGetV2ApiService
 	//
 	//FileMaterialBindV2Api *FileMaterialBindV2ApiService
 	//
-	//FileMaterialDetailV2Api *FileMaterialDetailV2ApiService
+	FileMaterialDetailV2Api *FileMaterialDetailV2ApiService
 	//
-	//FileMaterialListV2Api *FileMaterialListV2ApiService
+	FileMaterialListV2Api *FileMaterialListV2ApiService
 	//
 	//FileMediaGetV2Api *FileMediaGetV2ApiService
 	//
@@ -503,7 +503,7 @@ type APIClient struct {
 	//
 	//FileVideoEfficiencyGetV2Api *FileVideoEfficiencyGetV2ApiService
 	//
-	//FileVideoGetV2Api *FileVideoGetV2ApiService
+	FileVideoGetV2Api *FileVideoGetV2ApiService
 	//
 	//FileVideoMaterialClearTaskCreateV2Api *FileVideoMaterialClearTaskCreateV2ApiService
 	//
@@ -1803,12 +1803,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.FileImageAdGetV2Api = (*FileImageAdGetV2ApiService)(&c.common)
 	//c.FileImageAdV2Api = (*FileImageAdV2ApiService)(&c.common)
 	//c.FileImageDeleteV30Api = (*FileImageDeleteV30ApiService)(&c.common)
-	//c.FileImageGetV2Api = (*FileImageGetV2ApiService)(&c.common)
-	//c.FileMaterialAttributesListV2Api = (*FileMaterialAttributesListV2ApiService)(&c.common)
+	c.FileImageGetV2Api = (*FileImageGetV2ApiService)(&c.common)
+	c.FileMaterialAttributesListV2Api = (*FileMaterialAttributesListV2ApiService)(&c.common)
 	//c.FileMaterialAuditResultGetV2Api = (*FileMaterialAuditResultGetV2ApiService)(&c.common)
 	//c.FileMaterialBindV2Api = (*FileMaterialBindV2ApiService)(&c.common)
-	//c.FileMaterialDetailV2Api = (*FileMaterialDetailV2ApiService)(&c.common)
-	//c.FileMaterialListV2Api = (*FileMaterialListV2ApiService)(&c.common)
+	c.FileMaterialDetailV2Api = (*FileMaterialDetailV2ApiService)(&c.common)
+	c.FileMaterialListV2Api = (*FileMaterialListV2ApiService)(&c.common)
 	//c.FileMediaGetV2Api = (*FileMediaGetV2ApiService)(&c.common)
 	//c.FilePreauditGetV30Api = (*FilePreauditGetV30ApiService)(&c.common)
 	//c.FilePreauditSubmitV30Api = (*FilePreauditSubmitV30ApiService)(&c.common)
@@ -1820,7 +1820,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.FileVideoAwemeGetV2Api = (*FileVideoAwemeGetV2ApiService)(&c.common)
 	//c.FileVideoDeleteV2Api = (*FileVideoDeleteV2ApiService)(&c.common)
 	//c.FileVideoEfficiencyGetV2Api = (*FileVideoEfficiencyGetV2ApiService)(&c.common)
-	//c.FileVideoGetV2Api = (*FileVideoGetV2ApiService)(&c.common)
+	c.FileVideoGetV2Api = (*FileVideoGetV2ApiService)(&c.common)
 	//c.FileVideoMaterialClearTaskCreateV2Api = (*FileVideoMaterialClearTaskCreateV2ApiService)(&c.common)
 	//c.FileVideoMaterialClearTaskGetV2Api = (*FileVideoMaterialClearTaskGetV2ApiService)(&c.common)
 	//c.FileVideoMaterialClearTaskResultGetV2Api = (*FileVideoMaterialClearTaskResultGetV2ApiService)(&c.common)
