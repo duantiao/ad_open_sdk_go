@@ -55,6 +55,7 @@ type APIClient struct {
 	ToolQuickAppManagementQuickAppGetV2Api *ToolQuickAppManagementQuickAppGetV2ApiService
 	ToolsIesAccountSearchV2Api *ToolsIesAccountSearchV2ApiService
 	ToolsSiteGetV2Api *ToolsSiteGetV2ApiService
+	ToolsEventAllAssetsDetailV2Api *ToolsEventAllAssetsDetailV2ApiService
 
 
 	//AccountFundGetV30Api *AccountFundGetV30ApiService
@@ -1594,6 +1595,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolQuickAppManagementQuickAppGetV2Api = (*ToolQuickAppManagementQuickAppGetV2ApiService)(&c.common)
 	c.ToolsIesAccountSearchV2Api = (*ToolsIesAccountSearchV2ApiService)(&c.common)
 	c.ToolsSiteGetV2Api = (*ToolsSiteGetV2ApiService)(&c.common)
+	c.ToolsEventAllAssetsDetailV2Api = (*ToolsEventAllAssetsDetailV2ApiService)(&c.common)
 	//
 	//
 	//

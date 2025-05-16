@@ -24,901 +24,901 @@ func Init(cfg *config.Configuration) *Client {
 	return client
 }
 
-//func (c *Client) AccountFundGetV30Api() *api.AccountFundGetV30ApiService {
-//	return c.ApiClient.AccountFundGetV30Api
-//}
-//
-//func (c *Client) AdConvertOptimizedTargetGetV30Api() *api.AdConvertOptimizedTargetGetV30ApiService {
-//	return c.ApiClient.AdConvertOptimizedTargetGetV30Api
-//}
-//
-//func (c *Client) AdCostProtectStatusGetV2Api() *api.AdCostProtectStatusGetV2ApiService {
-//	return c.ApiClient.AdCostProtectStatusGetV2Api
-//}
-//
-//func (c *Client) AdGetV2Api() *api.AdGetV2ApiService {
-//	return c.ApiClient.AdGetV2Api
-//}
-//
-//func (c *Client) AdRejectReasonV2Api() *api.AdRejectReasonV2ApiService {
-//	return c.ApiClient.AdRejectReasonV2Api
-//}
-//
-//func (c *Client) AdShopInfoUpdateV30Api() *api.AdShopInfoUpdateV30ApiService {
-//	return c.ApiClient.AdShopInfoUpdateV30Api
-//}
-//
-//func (c *Client) AdUdUpdateV2Api() *api.AdUdUpdateV2ApiService {
-//	return c.ApiClient.AdUdUpdateV2Api
-//}
-//
-//func (c *Client) AdUpdateBidV2Api() *api.AdUpdateBidV2ApiService {
-//	return c.ApiClient.AdUpdateBidV2Api
-//}
-//
-//func (c *Client) AdUpdateBudgetV2Api() *api.AdUpdateBudgetV2ApiService {
-//	return c.ApiClient.AdUpdateBudgetV2Api
-//}
-//
-//func (c *Client) AdUpdateStatusV2Api() *api.AdUpdateStatusV2ApiService {
-//	return c.ApiClient.AdUpdateStatusV2Api
-//}
-//
-//func (c *Client) AdlabGroupCreateV30Api() *api.AdlabGroupCreateV30ApiService {
-//	return c.ApiClient.AdlabGroupCreateV30Api
-//}
-//
-//func (c *Client) AdlabGroupDetailV30Api() *api.AdlabGroupDetailV30ApiService {
-//	return c.ApiClient.AdlabGroupDetailV30Api
-//}
-//
-//func (c *Client) AdlabGroupListV30Api() *api.AdlabGroupListV30ApiService {
-//	return c.ApiClient.AdlabGroupListV30Api
-//}
-//
-//func (c *Client) AdlabGroupUpdateBudgetV30Api() *api.AdlabGroupUpdateBudgetV30ApiService {
-//	return c.ApiClient.AdlabGroupUpdateBudgetV30Api
-//}
-//
-//func (c *Client) AdlabGroupUpdateStatusV30Api() *api.AdlabGroupUpdateStatusV30ApiService {
-//	return c.ApiClient.AdlabGroupUpdateStatusV30Api
-//}
-//
-//func (c *Client) AdlabGroupUpdateV30Api() *api.AdlabGroupUpdateV30ApiService {
-//	return c.ApiClient.AdlabGroupUpdateV30Api
-//}
-//
-//func (c *Client) AdlabGroupsDeleteV30Api() *api.AdlabGroupsDeleteV30ApiService {
-//	return c.ApiClient.AdlabGroupsDeleteV30Api
-//}
-//
-//func (c *Client) AdvConvertOleConvertV2Api() *api.AdvConvertOleConvertV2ApiService {
-//	return c.ApiClient.AdvConvertOleConvertV2Api
-//}
-//
-//func (c *Client) AdvertiserAttachmentUploadV30Api() *api.AdvertiserAttachmentUploadV30ApiService {
-//	return c.ApiClient.AdvertiserAttachmentUploadV30Api
-//}
-//
-//func (c *Client) AdvertiserAvatarGetV2Api() *api.AdvertiserAvatarGetV2ApiService {
-//	return c.ApiClient.AdvertiserAvatarGetV2Api
-//}
-//
-//func (c *Client) AdvertiserAvatarSubmitV2Api() *api.AdvertiserAvatarSubmitV2ApiService {
-//	return c.ApiClient.AdvertiserAvatarSubmitV2Api
-//}
-//
-//func (c *Client) AdvertiserAvatarUploadV2Api() *api.AdvertiserAvatarUploadV2ApiService {
-//	return c.ApiClient.AdvertiserAvatarUploadV2Api
-//}
-//
-//func (c *Client) AdvertiserBudgetGetV2Api() *api.AdvertiserBudgetGetV2ApiService {
-//	return c.ApiClient.AdvertiserBudgetGetV2Api
-//}
-//
-//func (c *Client) AdvertiserDeliveryPkgConfigV30Api() *api.AdvertiserDeliveryPkgConfigV30ApiService {
-//	return c.ApiClient.AdvertiserDeliveryPkgConfigV30Api
-//}
-//
-//func (c *Client) AdvertiserDeliveryPkgDeleteV30Api() *api.AdvertiserDeliveryPkgDeleteV30ApiService {
-//	return c.ApiClient.AdvertiserDeliveryPkgDeleteV30Api
-//}
-//
-//func (c *Client) AdvertiserDeliveryPkgGetV30Api() *api.AdvertiserDeliveryPkgGetV30ApiService {
-//	return c.ApiClient.AdvertiserDeliveryPkgGetV30Api
-//}
-//
-//func (c *Client) AdvertiserDeliveryPkgSubmitV30Api() *api.AdvertiserDeliveryPkgSubmitV30ApiService {
-//	return c.ApiClient.AdvertiserDeliveryPkgSubmitV30Api
-//}
-//
-//func (c *Client) AdvertiserDeliveryQualificationDeleteV30Api() *api.AdvertiserDeliveryQualificationDeleteV30ApiService {
-//	return c.ApiClient.AdvertiserDeliveryQualificationDeleteV30Api
-//}
-//
-//func (c *Client) AdvertiserDeliveryQualificationListV30Api() *api.AdvertiserDeliveryQualificationListV30ApiService {
-//	return c.ApiClient.AdvertiserDeliveryQualificationListV30Api
-//}
-//
-//func (c *Client) AdvertiserDeliveryQualificationSubmitV30Api() *api.AdvertiserDeliveryQualificationSubmitV30ApiService {
-//	return c.ApiClient.AdvertiserDeliveryQualificationSubmitV30Api
-//}
-//
-//func (c *Client) AdvertiserFundDailyStatV2Api() *api.AdvertiserFundDailyStatV2ApiService {
-//	return c.ApiClient.AdvertiserFundDailyStatV2Api
-//}
-//
-//func (c *Client) AdvertiserFundGetV2Api() *api.AdvertiserFundGetV2ApiService {
-//	return c.ApiClient.AdvertiserFundGetV2Api
-//}
-//
-//func (c *Client) AdvertiserFundGrantTransactionGetV2Api() *api.AdvertiserFundGrantTransactionGetV2ApiService {
-//	return c.ApiClient.AdvertiserFundGrantTransactionGetV2Api
-//}
-//
-//func (c *Client) AdvertiserFundTransactionGetV2Api() *api.AdvertiserFundTransactionGetV2ApiService {
-//	return c.ApiClient.AdvertiserFundTransactionGetV2Api
-//}
-//
-//func (c *Client) AdvertiserInfoV2Api() *api.AdvertiserInfoV2ApiService {
-//	return c.ApiClient.AdvertiserInfoV2Api
-//}
-//
-//func (c *Client) AdvertiserPublicInfoV2Api() *api.AdvertiserPublicInfoV2ApiService {
-//	return c.ApiClient.AdvertiserPublicInfoV2Api
-//}
-//
-//func (c *Client) AdvertiserQualificationCreateV2V2Api() *api.AdvertiserQualificationCreateV2V2ApiService {
-//	return c.ApiClient.AdvertiserQualificationCreateV2V2Api
-//}
-//
-//func (c *Client) AdvertiserQualificationGetV30Api() *api.AdvertiserQualificationGetV30ApiService {
-//	return c.ApiClient.AdvertiserQualificationGetV30Api
-//}
-//
-//func (c *Client) AdvertiserQualificationSelectV2V2Api() *api.AdvertiserQualificationSelectV2V2ApiService {
-//	return c.ApiClient.AdvertiserQualificationSelectV2V2Api
-//}
-//
-//func (c *Client) AdvertiserQualificationSubmitV30Api() *api.AdvertiserQualificationSubmitV30ApiService {
-//	return c.ApiClient.AdvertiserQualificationSubmitV30Api
-//}
-//
-//func (c *Client) AdvertiserTransferableFundGetV2Api() *api.AdvertiserTransferableFundGetV2ApiService {
-//	return c.ApiClient.AdvertiserTransferableFundGetV2Api
-//}
-//
-//func (c *Client) AdvertiserUpdateBudgetV2Api() *api.AdvertiserUpdateBudgetV2ApiService {
-//	return c.ApiClient.AdvertiserUpdateBudgetV2Api
-//}
-//
-//func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQueryV2ApiService {
-//	return c.ApiClient.AgentAdvCostReportListQueryV2Api
-//}
-//
-//func (c *Client) AgentAdvertiserCopyV2Api() *api.AgentAdvertiserCopyV2ApiService {
-//	return c.ApiClient.AgentAdvertiserCopyV2Api
-//}
-//
-//func (c *Client) AgentAdvertiserSelectV2Api() *api.AgentAdvertiserSelectV2ApiService {
-//	return c.ApiClient.AgentAdvertiserSelectV2Api
-//}
-//
-//func (c *Client) AgentAdvertiserUpdateV2Api() *api.AgentAdvertiserUpdateV2ApiService {
-//	return c.ApiClient.AgentAdvertiserUpdateV2Api
-//}
-//
-//func (c *Client) AgentChildAgentSelectV2Api() *api.AgentChildAgentSelectV2ApiService {
-//	return c.ApiClient.AgentChildAgentSelectV2Api
-//}
-//
-//func (c *Client) AgentFundTransferSeqCommitV2Api() *api.AgentFundTransferSeqCommitV2ApiService {
-//	return c.ApiClient.AgentFundTransferSeqCommitV2Api
-//}
-//
-//func (c *Client) AgentFundTransferSeqCreateV2Api() *api.AgentFundTransferSeqCreateV2ApiService {
-//	return c.ApiClient.AgentFundTransferSeqCreateV2Api
-//}
-//
-//func (c *Client) AgentInfoV2Api() *api.AgentInfoV2ApiService {
-//	return c.ApiClient.AgentInfoV2Api
-//}
-//
-//func (c *Client) AgentQueryRiskPromotionListV2Api() *api.AgentQueryRiskPromotionListV2ApiService {
-//	return c.ApiClient.AgentQueryRiskPromotionListV2Api
-//}
-//
-//func (c *Client) AgentRefundTransferSeqCommitV2Api() *api.AgentRefundTransferSeqCommitV2ApiService {
-//	return c.ApiClient.AgentRefundTransferSeqCommitV2Api
-//}
-//
-//func (c *Client) AgentRefundTransferSeqCreateV2Api() *api.AgentRefundTransferSeqCreateV2ApiService {
-//	return c.ApiClient.AgentRefundTransferSeqCreateV2Api
-//}
-//
-//func (c *Client) AgentTransferTransactionRecordV2Api() *api.AgentTransferTransactionRecordV2ApiService {
-//	return c.ApiClient.AgentTransferTransactionRecordV2Api
-//}
-//
-//func (c *Client) AnalyticsAttributionV30Api() *api.AnalyticsAttributionV30ApiService {
-//	return c.ApiClient.AnalyticsAttributionV30Api
-//}
-//
-//func (c *Client) AssetsCreativeComponentCreateV2Api() *api.AssetsCreativeComponentCreateV2ApiService {
-//	return c.ApiClient.AssetsCreativeComponentCreateV2Api
-//}
-//
-//func (c *Client) AssetsCreativeComponentGetV2Api() *api.AssetsCreativeComponentGetV2ApiService {
-//	return c.ApiClient.AssetsCreativeComponentGetV2Api
-//}
-//
-//func (c *Client) AssetsCreativeComponentUpdateV2Api() *api.AssetsCreativeComponentUpdateV2ApiService {
-//	return c.ApiClient.AssetsCreativeComponentUpdateV2Api
-//}
-//
-//func (c *Client) AsyncTaskCreateV2Api() *api.AsyncTaskCreateV2ApiService {
-//	return c.ApiClient.AsyncTaskCreateV2Api
-//}
-//
-//func (c *Client) AsyncTaskDownloadV2Api() *api.AsyncTaskDownloadV2ApiService {
-//	return c.ApiClient.AsyncTaskDownloadV2Api
-//}
-//
-//func (c *Client) AsyncTaskGetV2Api() *api.AsyncTaskGetV2ApiService {
-//	return c.ApiClient.AsyncTaskGetV2Api
-//}
-//
-//func (c *Client) AudiencePackageCreateV2Api() *api.AudiencePackageCreateV2ApiService {
-//	return c.ApiClient.AudiencePackageCreateV2Api
-//}
-//
-//func (c *Client) AudiencePackageDeleteV2Api() *api.AudiencePackageDeleteV2ApiService {
-//	return c.ApiClient.AudiencePackageDeleteV2Api
-//}
-//
-//func (c *Client) AudiencePackageGetV2Api() *api.AudiencePackageGetV2ApiService {
-//	return c.ApiClient.AudiencePackageGetV2Api
-//}
-//
-//func (c *Client) AudiencePackageUpdateV2Api() *api.AudiencePackageUpdateV2ApiService {
-//	return c.ApiClient.AudiencePackageUpdateV2Api
-//}
-//
-//func (c *Client) BrandActionCategoryV30Api() *api.BrandActionCategoryV30ApiService {
-//	return c.ApiClient.BrandActionCategoryV30Api
-//}
-//
-//func (c *Client) BrandAdCreateV30Api() *api.BrandAdCreateV30ApiService {
-//	return c.ApiClient.BrandAdCreateV30Api
-//}
-//
-//func (c *Client) BrandAdGetV30Api() *api.BrandAdGetV30ApiService {
-//	return c.ApiClient.BrandAdGetV30Api
-//}
-//
-//func (c *Client) BrandAwemeListV30Api() *api.BrandAwemeListV30ApiService {
-//	return c.ApiClient.BrandAwemeListV30Api
-//}
-//
-//func (c *Client) BrandCampaignCreateV30Api() *api.BrandCampaignCreateV30ApiService {
-//	return c.ApiClient.BrandCampaignCreateV30Api
-//}
-//
-//func (c *Client) BrandCampaignGetV30Api() *api.BrandCampaignGetV30ApiService {
-//	return c.ApiClient.BrandCampaignGetV30Api
-//}
-//
-//func (c *Client) BrandCreativeCreateV30Api() *api.BrandCreativeCreateV30ApiService {
-//	return c.ApiClient.BrandCreativeCreateV30Api
-//}
-//
-//func (c *Client) BrandCreativeGetV30Api() *api.BrandCreativeGetV30ApiService {
-//	return c.ApiClient.BrandCreativeGetV30Api
-//}
-//
-//func (c *Client) BrandFileVideoUploadV30Api() *api.BrandFileVideoUploadV30ApiService {
-//	return c.ApiClient.BrandFileVideoUploadV30Api
-//}
-//
-//func (c *Client) BrandQueryStockV30Api() *api.BrandQueryStockV30ApiService {
-//	return c.ApiClient.BrandQueryStockV30Api
-//}
-//
-//func (c *Client) BrandQueryYuntu5aBrandCategoryV30Api() *api.BrandQueryYuntu5aBrandCategoryV30ApiService {
-//	return c.ApiClient.BrandQueryYuntu5aBrandCategoryV30Api
-//}
-//
-//func (c *Client) BrandRegionGetV30Api() *api.BrandRegionGetV30ApiService {
-//	return c.ApiClient.BrandRegionGetV30Api
-//}
-//
-//func (c *Client) BrandUploadImageV30Api() *api.BrandUploadImageV30ApiService {
-//	return c.ApiClient.BrandUploadImageV30Api
-//}
-//
-//func (c *Client) BudgetGroupCreateV30Api() *api.BudgetGroupCreateV30ApiService {
-//	return c.ApiClient.BudgetGroupCreateV30Api
-//}
-//
-//func (c *Client) BudgetGroupDeleteV30Api() *api.BudgetGroupDeleteV30ApiService {
-//	return c.ApiClient.BudgetGroupDeleteV30Api
-//}
-//
-//func (c *Client) BudgetGroupListV30Api() *api.BudgetGroupListV30ApiService {
-//	return c.ApiClient.BudgetGroupListV30Api
-//}
-//
-//func (c *Client) BudgetGroupUpdateV30Api() *api.BudgetGroupUpdateV30ApiService {
-//	return c.ApiClient.BudgetGroupUpdateV30Api
-//}
-//
-//func (c *Client) BusinessPlatformCompanyAccountGetV30Api() *api.BusinessPlatformCompanyAccountGetV30ApiService {
-//	return c.ApiClient.BusinessPlatformCompanyAccountGetV30Api
-//}
-//
-//func (c *Client) BusinessPlatformCompanyInfoGetV30Api() *api.BusinessPlatformCompanyInfoGetV30ApiService {
-//	return c.ApiClient.BusinessPlatformCompanyInfoGetV30Api
-//}
-//
-//func (c *Client) BusinessPlatformPartnerOrganizationListV2Api() *api.BusinessPlatformPartnerOrganizationListV2ApiService {
-//	return c.ApiClient.BusinessPlatformPartnerOrganizationListV2Api
-//}
-//
-//func (c *Client) CampaignCreateV2Api() *api.CampaignCreateV2ApiService {
-//	return c.ApiClient.CampaignCreateV2Api
-//}
-//
-//func (c *Client) CampaignGetV2Api() *api.CampaignGetV2ApiService {
-//	return c.ApiClient.CampaignGetV2Api
-//}
-//
-//func (c *Client) CampaignUpdateStatusV2Api() *api.CampaignUpdateStatusV2ApiService {
-//	return c.ApiClient.CampaignUpdateStatusV2Api
-//}
-//
-//func (c *Client) CampaignUpdateV2Api() *api.CampaignUpdateV2ApiService {
-//	return c.ApiClient.CampaignUpdateV2Api
-//}
-//
-//func (c *Client) CarouselAdGetV2Api() *api.CarouselAdGetV2ApiService {
-//	return c.ApiClient.CarouselAdGetV2Api
-//}
-//
-//func (c *Client) CarouselCreateV2Api() *api.CarouselCreateV2ApiService {
-//	return c.ApiClient.CarouselCreateV2Api
-//}
-//
-//func (c *Client) CarouselDeleteV2Api() *api.CarouselDeleteV2ApiService {
-//	return c.ApiClient.CarouselDeleteV2Api
-//}
-//
-//func (c *Client) CarouselListV2Api() *api.CarouselListV2ApiService {
-//	return c.ApiClient.CarouselListV2Api
-//}
-//
-//func (c *Client) CarouselUpdateV2Api() *api.CarouselUpdateV2ApiService {
-//	return c.ApiClient.CarouselUpdateV2Api
-//}
-//
-//func (c *Client) CdpBrandGetV30Api() *api.CdpBrandGetV30ApiService {
-//	return c.ApiClient.CdpBrandGetV30Api
-//}
-//
-//func (c *Client) CgTransferCreateTransferV30Api() *api.CgTransferCreateTransferV30ApiService {
-//	return c.ApiClient.CgTransferCreateTransferV30Api
-//}
-//
-//func (c *Client) CgTransferQueryCanTransferBalanceV30Api() *api.CgTransferQueryCanTransferBalanceV30ApiService {
-//	return c.ApiClient.CgTransferQueryCanTransferBalanceV30Api
-//}
-//
-//func (c *Client) CgTransferQueryTransferBalanceV30Api() *api.CgTransferQueryTransferBalanceV30ApiService {
-//	return c.ApiClient.CgTransferQueryTransferBalanceV30Api
-//}
-//
-//func (c *Client) CgTransferQueryTransferDetailV30Api() *api.CgTransferQueryTransferDetailV30ApiService {
-//	return c.ApiClient.CgTransferQueryTransferDetailV30Api
-//}
-//
-//func (c *Client) ClueCouponCodeConsumeV2Api() *api.ClueCouponCodeConsumeV2ApiService {
-//	return c.ApiClient.ClueCouponCodeConsumeV2Api
-//}
-//
-//func (c *Client) ClueCouponCodeGetV2Api() *api.ClueCouponCodeGetV2ApiService {
-//	return c.ApiClient.ClueCouponCodeGetV2Api
-//}
-//
-//func (c *Client) ClueCouponCreateV2Api() *api.ClueCouponCreateV2ApiService {
-//	return c.ApiClient.ClueCouponCreateV2Api
-//}
-//
-//func (c *Client) ClueCouponDetailV2Api() *api.ClueCouponDetailV2ApiService {
-//	return c.ApiClient.ClueCouponDetailV2Api
-//}
-//
-//func (c *Client) ClueCouponEmployeeCreateV2Api() *api.ClueCouponEmployeeCreateV2ApiService {
-//	return c.ApiClient.ClueCouponEmployeeCreateV2Api
-//}
-//
-//func (c *Client) ClueCouponEmployeeDeleteV2Api() *api.ClueCouponEmployeeDeleteV2ApiService {
-//	return c.ApiClient.ClueCouponEmployeeDeleteV2Api
-//}
-//
-//func (c *Client) ClueCouponEmployeeGetV2Api() *api.ClueCouponEmployeeGetV2ApiService {
-//	return c.ApiClient.ClueCouponEmployeeGetV2Api
-//}
-//
-//func (c *Client) ClueCouponGetV2Api() *api.ClueCouponGetV2ApiService {
-//	return c.ApiClient.ClueCouponGetV2Api
-//}
-//
-//func (c *Client) ClueCouponUpdateV2Api() *api.ClueCouponUpdateV2ApiService {
-//	return c.ApiClient.ClueCouponUpdateV2Api
-//}
-//
-//func (c *Client) ClueFormCreateV2Api() *api.ClueFormCreateV2ApiService {
-//	return c.ApiClient.ClueFormCreateV2Api
-//}
-//
-//func (c *Client) ClueFormDeleteV2Api() *api.ClueFormDeleteV2ApiService {
-//	return c.ApiClient.ClueFormDeleteV2Api
-//}
-//
-//func (c *Client) ClueFormDetailV2Api() *api.ClueFormDetailV2ApiService {
-//	return c.ApiClient.ClueFormDetailV2Api
-//}
-//
-//func (c *Client) ClueFormListV2Api() *api.ClueFormListV2ApiService {
-//	return c.ApiClient.ClueFormListV2Api
-//}
-//
-//func (c *Client) ClueFormUpdateV2Api() *api.ClueFormUpdateV2ApiService {
-//	return c.ApiClient.ClueFormUpdateV2Api
-//}
-//
-//func (c *Client) CluePackageUploadV2Api() *api.CluePackageUploadV2ApiService {
-//	return c.ApiClient.CluePackageUploadV2Api
-//}
-//
-//func (c *Client) ClueSmartphoneCreateV2Api() *api.ClueSmartphoneCreateV2ApiService {
-//	return c.ApiClient.ClueSmartphoneCreateV2Api
-//}
-//
-//func (c *Client) ClueSmartphoneDeleteV2Api() *api.ClueSmartphoneDeleteV2ApiService {
-//	return c.ApiClient.ClueSmartphoneDeleteV2Api
-//}
-//
-//func (c *Client) ClueSmartphoneGetV2Api() *api.ClueSmartphoneGetV2ApiService {
-//	return c.ApiClient.ClueSmartphoneGetV2Api
-//}
-//
-//func (c *Client) ClueSmartphoneRecordV2Api() *api.ClueSmartphoneRecordV2ApiService {
-//	return c.ApiClient.ClueSmartphoneRecordV2Api
-//}
-//
-//func (c *Client) ClueWechatDataGetV2Api() *api.ClueWechatDataGetV2ApiService {
-//	return c.ApiClient.ClueWechatDataGetV2Api
-//}
-//
-//func (c *Client) ClueWechatInstanceDetailV2Api() *api.ClueWechatInstanceDetailV2ApiService {
-//	return c.ApiClient.ClueWechatInstanceDetailV2Api
-//}
-//
-//func (c *Client) ClueWechatInstanceListV2Api() *api.ClueWechatInstanceListV2ApiService {
-//	return c.ApiClient.ClueWechatInstanceListV2Api
-//}
-//
-//func (c *Client) ClueWechatInstanceUpdateV2Api() *api.ClueWechatInstanceUpdateV2ApiService {
-//	return c.ApiClient.ClueWechatInstanceUpdateV2Api
-//}
-//
-//func (c *Client) ClueWechatPoolListV2Api() *api.ClueWechatPoolListV2ApiService {
-//	return c.ApiClient.ClueWechatPoolListV2Api
-//}
-//
-//func (c *Client) CreativeAdMetricsV2Api() *api.CreativeAdMetricsV2ApiService {
-//	return c.ApiClient.CreativeAdMetricsV2Api
-//}
-//
-//func (c *Client) CreativeAutoGenerateConfigGetV2Api() *api.CreativeAutoGenerateConfigGetV2ApiService {
-//	return c.ApiClient.CreativeAutoGenerateConfigGetV2Api
-//}
-//
-//func (c *Client) CreativeCustomCreativeCreateV2Api() *api.CreativeCustomCreativeCreateV2ApiService {
-//	return c.ApiClient.CreativeCustomCreativeCreateV2Api
-//}
-//
-//func (c *Client) CreativeCustomCreativeDeleteV2Api() *api.CreativeCustomCreativeDeleteV2ApiService {
-//	return c.ApiClient.CreativeCustomCreativeDeleteV2Api
-//}
-//
-//func (c *Client) CreativeCustomCreativeUpdateV2Api() *api.CreativeCustomCreativeUpdateV2ApiService {
-//	return c.ApiClient.CreativeCustomCreativeUpdateV2Api
-//}
-//
-//func (c *Client) CreativeDetailGetV30Api() *api.CreativeDetailGetV30ApiService {
-//	return c.ApiClient.CreativeDetailGetV30Api
-//}
-//
-//func (c *Client) CreativeGetV2Api() *api.CreativeGetV2ApiService {
-//	return c.ApiClient.CreativeGetV2Api
-//}
-//
-//func (c *Client) CreativeMaterialMetricsV2Api() *api.CreativeMaterialMetricsV2ApiService {
-//	return c.ApiClient.CreativeMaterialMetricsV2Api
-//}
-//
-//func (c *Client) CreativeProceduralCreativeCreateV2Api() *api.CreativeProceduralCreativeCreateV2ApiService {
-//	return c.ApiClient.CreativeProceduralCreativeCreateV2Api
-//}
-//
-//func (c *Client) CreativeProceduralCreativeUpdateV2Api() *api.CreativeProceduralCreativeUpdateV2ApiService {
-//	return c.ApiClient.CreativeProceduralCreativeUpdateV2Api
-//}
-//
-//func (c *Client) CreativeRejectReasonV2Api() *api.CreativeRejectReasonV2ApiService {
-//	return c.ApiClient.CreativeRejectReasonV2Api
-//}
-//
-//func (c *Client) CreativeStatusUpdateV2V2Api() *api.CreativeStatusUpdateV2V2ApiService {
-//	return c.ApiClient.CreativeStatusUpdateV2V2Api
-//}
-//
-//func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiService {
-//	return c.ApiClient.CreativeStrategyListV2Api
-//}
-//
-//func (c *Client) CustomerCenterAdvertiserCopyV2Api() *api.CustomerCenterAdvertiserCopyV2ApiService {
-//	return c.ApiClient.CustomerCenterAdvertiserCopyV2Api
-//}
-//
-//func (c *Client) CustomerCenterAdvertiserListV2Api() *api.CustomerCenterAdvertiserListV2ApiService {
-//	return c.ApiClient.CustomerCenterAdvertiserListV2Api
-//}
-//
-//func (c *Client) CustomerCenterAdvertiserTransferableListV2Api() *api.CustomerCenterAdvertiserTransferableListV2ApiService {
-//	return c.ApiClient.CustomerCenterAdvertiserTransferableListV2Api
-//}
-//
-//func (c *Client) CustomerCenterFundTransferSeqCommitV2Api() *api.CustomerCenterFundTransferSeqCommitV2ApiService {
-//	return c.ApiClient.CustomerCenterFundTransferSeqCommitV2Api
-//}
-//
-//func (c *Client) CustomerCenterFundTransferSeqCreateV2Api() *api.CustomerCenterFundTransferSeqCreateV2ApiService {
-//	return c.ApiClient.CustomerCenterFundTransferSeqCreateV2Api
-//}
-//
-//func (c *Client) DecorationCouponGetV30Api() *api.DecorationCouponGetV30ApiService {
-//	return c.ApiClient.DecorationCouponGetV30Api
-//}
-//
-//func (c *Client) DmpBrandGetV2Api() *api.DmpBrandGetV2ApiService {
-//	return c.ApiClient.DmpBrandGetV2Api
-//}
-//
-//func (c *Client) DmpCustomAudienceCopyV2Api() *api.DmpCustomAudienceCopyV2ApiService {
-//	return c.ApiClient.DmpCustomAudienceCopyV2Api
-//}
-//
-//func (c *Client) DmpCustomAudienceDeleteV2Api() *api.DmpCustomAudienceDeleteV2ApiService {
-//	return c.ApiClient.DmpCustomAudienceDeleteV2Api
-//}
-//
-//func (c *Client) DmpCustomAudiencePublishV2Api() *api.DmpCustomAudiencePublishV2ApiService {
-//	return c.ApiClient.DmpCustomAudiencePublishV2Api
-//}
-//
-//func (c *Client) DmpCustomAudiencePushV2V2Api() *api.DmpCustomAudiencePushV2V2ApiService {
-//	return c.ApiClient.DmpCustomAudiencePushV2V2Api
-//}
-//
-//func (c *Client) DmpCustomAudienceReadV2Api() *api.DmpCustomAudienceReadV2ApiService {
-//	return c.ApiClient.DmpCustomAudienceReadV2Api
-//}
-//
-//func (c *Client) DmpCustomAudienceSelectV2Api() *api.DmpCustomAudienceSelectV2ApiService {
-//	return c.ApiClient.DmpCustomAudienceSelectV2Api
-//}
-//
-//func (c *Client) DmpDataSourceCreateV2Api() *api.DmpDataSourceCreateV2ApiService {
-//	return c.ApiClient.DmpDataSourceCreateV2Api
-//}
-//
-//func (c *Client) DmpDataSourceFileUploadV2Api() *api.DmpDataSourceFileUploadV2ApiService {
-//	return c.ApiClient.DmpDataSourceFileUploadV2Api
-//}
-//
-//func (c *Client) DmpDataSourceReadV2Api() *api.DmpDataSourceReadV2ApiService {
-//	return c.ApiClient.DmpDataSourceReadV2Api
-//}
-//
-//func (c *Client) DmpDataSourceUpdateV2Api() *api.DmpDataSourceUpdateV2ApiService {
-//	return c.ApiClient.DmpDataSourceUpdateV2Api
-//}
-//
-//func (c *Client) DouplusOrderCloseV30Api() *api.DouplusOrderCloseV30ApiService {
-//	return c.ApiClient.DouplusOrderCloseV30Api
-//}
-//
-//func (c *Client) DouplusOrderCreateV30Api() *api.DouplusOrderCreateV30ApiService {
-//	return c.ApiClient.DouplusOrderCreateV30Api
-//}
-//
-//func (c *Client) DouplusOrderListV30Api() *api.DouplusOrderListV30ApiService {
-//	return c.ApiClient.DouplusOrderListV30Api
-//}
-//
-//func (c *Client) DouplusOrderReportV30Api() *api.DouplusOrderReportV30ApiService {
-//	return c.ApiClient.DouplusOrderReportV30Api
-//}
-//
-//func (c *Client) DpaAssetV2DetailReadV2Api() *api.DpaAssetV2DetailReadV2ApiService {
-//	return c.ApiClient.DpaAssetV2DetailReadV2Api
-//}
-//
-//func (c *Client) DpaAssetV2ListV2Api() *api.DpaAssetV2ListV2ApiService {
-//	return c.ApiClient.DpaAssetV2ListV2Api
-//}
-//
-//func (c *Client) DpaAssetsDetailReadV2Api() *api.DpaAssetsDetailReadV2ApiService {
-//	return c.ApiClient.DpaAssetsDetailReadV2Api
-//}
-//
-//func (c *Client) DpaAssetsListV2Api() *api.DpaAssetsListV2ApiService {
-//	return c.ApiClient.DpaAssetsListV2Api
-//}
-//
-//func (c *Client) DpaCategoryGetV2Api() *api.DpaCategoryGetV2ApiService {
-//	return c.ApiClient.DpaCategoryGetV2Api
-//}
-//
-//func (c *Client) DpaCheckIndexEntryProgressV2Api() *api.DpaCheckIndexEntryProgressV2ApiService {
-//	return c.ApiClient.DpaCheckIndexEntryProgressV2Api
-//}
-//
-//func (c *Client) DpaClueProductDetailV2Api() *api.DpaClueProductDetailV2ApiService {
-//	return c.ApiClient.DpaClueProductDetailV2Api
-//}
-//
-//func (c *Client) DpaClueProductListV2Api() *api.DpaClueProductListV2ApiService {
-//	return c.ApiClient.DpaClueProductListV2Api
-//}
-//
-//func (c *Client) DpaDetailGetV2Api() *api.DpaDetailGetV2ApiService {
-//	return c.ApiClient.DpaDetailGetV2Api
-//}
-//
-//func (c *Client) DpaDictGetV2Api() *api.DpaDictGetV2ApiService {
-//	return c.ApiClient.DpaDictGetV2Api
-//}
-//
-//func (c *Client) DpaMetaGetV2Api() *api.DpaMetaGetV2ApiService {
-//	return c.ApiClient.DpaMetaGetV2Api
-//}
-//
-//func (c *Client) DpaProductAvailablesV2Api() *api.DpaProductAvailablesV2ApiService {
-//	return c.ApiClient.DpaProductAvailablesV2Api
-//}
-//
-//func (c *Client) DpaProductCreateV2Api() *api.DpaProductCreateV2ApiService {
-//	return c.ApiClient.DpaProductCreateV2Api
-//}
-//
-//func (c *Client) DpaProductDeleteV2Api() *api.DpaProductDeleteV2ApiService {
-//	return c.ApiClient.DpaProductDeleteV2Api
-//}
-//
-//func (c *Client) DpaProductDetailGetV2Api() *api.DpaProductDetailGetV2ApiService {
-//	return c.ApiClient.DpaProductDetailGetV2Api
-//}
-//
-//func (c *Client) DpaProductStatusBatchUpdateV2Api() *api.DpaProductStatusBatchUpdateV2ApiService {
-//	return c.ApiClient.DpaProductStatusBatchUpdateV2Api
-//}
-//
-//func (c *Client) DpaProductUpdateV2Api() *api.DpaProductUpdateV2ApiService {
-//	return c.ApiClient.DpaProductUpdateV2Api
-//}
-//
-//func (c *Client) DpaTemplateGetV2Api() *api.DpaTemplateGetV2ApiService {
-//	return c.ApiClient.DpaTemplateGetV2Api
-//}
-//
-//func (c *Client) DpaVideoGetV2Api() *api.DpaVideoGetV2ApiService {
-//	return c.ApiClient.DpaVideoGetV2Api
-//}
-//
-//func (c *Client) EnterpriseBindListGetV10Api() *api.EnterpriseBindListGetV10ApiService {
-//	return c.ApiClient.EnterpriseBindListGetV10Api
-//}
-//
-//func (c *Client) EnterpriseCommentDetailV10Api() *api.EnterpriseCommentDetailV10ApiService {
-//	return c.ApiClient.EnterpriseCommentDetailV10Api
-//}
-//
-//func (c *Client) EnterpriseCommentListGetV10Api() *api.EnterpriseCommentListGetV10ApiService {
-//	return c.ApiClient.EnterpriseCommentListGetV10Api
-//}
-//
-//func (c *Client) EnterpriseCommentReplyListV10Api() *api.EnterpriseCommentReplyListV10ApiService {
-//	return c.ApiClient.EnterpriseCommentReplyListV10Api
-//}
-//
-//func (c *Client) EnterpriseCommentReplyV10Api() *api.EnterpriseCommentReplyV10ApiService {
-//	return c.ApiClient.EnterpriseCommentReplyV10Api
-//}
-//
-//func (c *Client) EnterpriseFlowCategoryGetV10Api() *api.EnterpriseFlowCategoryGetV10ApiService {
-//	return c.ApiClient.EnterpriseFlowCategoryGetV10Api
-//}
-//
-//func (c *Client) EnterpriseInfoV10Api() *api.EnterpriseInfoV10ApiService {
-//	return c.ApiClient.EnterpriseInfoV10Api
-//}
-//
-//func (c *Client) EnterpriseItemListV10Api() *api.EnterpriseItemListV10ApiService {
-//	return c.ApiClient.EnterpriseItemListV10Api
-//}
-//
-//func (c *Client) EnterpriseOperationLogGetV10Api() *api.EnterpriseOperationLogGetV10ApiService {
-//	return c.ApiClient.EnterpriseOperationLogGetV10Api
-//}
-//
-//func (c *Client) EnterpriseOverviewDataGetV10Api() *api.EnterpriseOverviewDataGetV10ApiService {
-//	return c.ApiClient.EnterpriseOverviewDataGetV10Api
-//}
-//
-//func (c *Client) EnterpriseVideoInfoGetV10Api() *api.EnterpriseVideoInfoGetV10ApiService {
-//	return c.ApiClient.EnterpriseVideoInfoGetV10Api
-//}
-//
-//func (c *Client) EventManagerAssetsCreateV2Api() *api.EventManagerAssetsCreateV2ApiService {
-//	return c.ApiClient.EventManagerAssetsCreateV2Api
-//}
-//
-//func (c *Client) EventManagerAvailableEventsGetV2Api() *api.EventManagerAvailableEventsGetV2ApiService {
-//	return c.ApiClient.EventManagerAvailableEventsGetV2Api
-//}
-//
-//func (c *Client) EventManagerDeepBidTypeGetV30Api() *api.EventManagerDeepBidTypeGetV30ApiService {
-//	return c.ApiClient.EventManagerDeepBidTypeGetV30Api
-//}
-//
-//func (c *Client) EventManagerEventConfigsGetV2Api() *api.EventManagerEventConfigsGetV2ApiService {
-//	return c.ApiClient.EventManagerEventConfigsGetV2Api
-//}
-//
-//func (c *Client) EventManagerEventsCreateV2Api() *api.EventManagerEventsCreateV2ApiService {
-//	return c.ApiClient.EventManagerEventsCreateV2Api
-//}
-//
-//func (c *Client) EventManagerOfflineDataCreateV2Api() *api.EventManagerOfflineDataCreateV2ApiService {
-//	return c.ApiClient.EventManagerOfflineDataCreateV2Api
-//}
-//
-//func (c *Client) EventManagerOptimizedGoalGetV2V30Api() *api.EventManagerOptimizedGoalGetV2V30ApiService {
-//	return c.ApiClient.EventManagerOptimizedGoalGetV2V30Api
-//}
-//
-//func (c *Client) EventManagerShareCancelV30Api() *api.EventManagerShareCancelV30ApiService {
-//	return c.ApiClient.EventManagerShareCancelV30Api
-//}
-//
-//func (c *Client) EventManagerShareGetV30Api() *api.EventManagerShareGetV30ApiService {
-//	return c.ApiClient.EventManagerShareGetV30Api
-//}
-//
-//func (c *Client) EventManagerShareV30Api() *api.EventManagerShareV30ApiService {
-//	return c.ApiClient.EventManagerShareV30Api
-//}
-//
-//func (c *Client) EventManagerTrackUrlCreateV2Api() *api.EventManagerTrackUrlCreateV2ApiService {
-//	return c.ApiClient.EventManagerTrackUrlCreateV2Api
-//}
-//
-//func (c *Client) EventManagerTrackUrlGetV2Api() *api.EventManagerTrackUrlGetV2ApiService {
-//	return c.ApiClient.EventManagerTrackUrlGetV2Api
-//}
-//
-//func (c *Client) EventManagerTrackUrlUpdateV2Api() *api.EventManagerTrackUrlUpdateV2ApiService {
-//	return c.ApiClient.EventManagerTrackUrlUpdateV2Api
-//}
-//
-//func (c *Client) FileAudioAdV2Api() *api.FileAudioAdV2ApiService {
-//	return c.ApiClient.FileAudioAdV2Api
-//}
-//
-//func (c *Client) FileAudioGetV2Api() *api.FileAudioGetV2ApiService {
-//	return c.ApiClient.FileAudioGetV2Api
-//}
-//
-//func (c *Client) FileAutoGenerateSourceGetV2Api() *api.FileAutoGenerateSourceGetV2ApiService {
-//	return c.ApiClient.FileAutoGenerateSourceGetV2Api
-//}
-//
-//func (c *Client) FileImageAdGetV2Api() *api.FileImageAdGetV2ApiService {
-//	return c.ApiClient.FileImageAdGetV2Api
-//}
-//
-//func (c *Client) FileImageAdV2Api() *api.FileImageAdV2ApiService {
-//	return c.ApiClient.FileImageAdV2Api
-//}
-//
-//func (c *Client) FileImageDeleteV30Api() *api.FileImageDeleteV30ApiService {
-//	return c.ApiClient.FileImageDeleteV30Api
-//}
-//
-//func (c *Client) FileImageGetV2Api() *api.FileImageGetV2ApiService {
-//	return c.ApiClient.FileImageGetV2Api
-//}
-//
-//func (c *Client) FileMaterialAttributesListV2Api() *api.FileMaterialAttributesListV2ApiService {
-//	return c.ApiClient.FileMaterialAttributesListV2Api
-//}
-//
-//func (c *Client) FileMaterialAuditResultGetV2Api() *api.FileMaterialAuditResultGetV2ApiService {
-//	return c.ApiClient.FileMaterialAuditResultGetV2Api
-//}
-//
-//func (c *Client) FileMaterialBindV2Api() *api.FileMaterialBindV2ApiService {
-//	return c.ApiClient.FileMaterialBindV2Api
-//}
-//
-//func (c *Client) FileMaterialDetailV2Api() *api.FileMaterialDetailV2ApiService {
-//	return c.ApiClient.FileMaterialDetailV2Api
-//}
-//
-//func (c *Client) FileMaterialListV2Api() *api.FileMaterialListV2ApiService {
-//	return c.ApiClient.FileMaterialListV2Api
-//}
-//
-//func (c *Client) FileMediaGetV2Api() *api.FileMediaGetV2ApiService {
-//	return c.ApiClient.FileMediaGetV2Api
-//}
-//
-//func (c *Client) FilePreauditGetV30Api() *api.FilePreauditGetV30ApiService {
-//	return c.ApiClient.FilePreauditGetV30Api
-//}
-//
-//func (c *Client) FilePreauditSubmitV30Api() *api.FilePreauditSubmitV30ApiService {
-//	return c.ApiClient.FilePreauditSubmitV30Api
-//}
-//
-//func (c *Client) FileQualityGetV30Api() *api.FileQualityGetV30ApiService {
-//	return c.ApiClient.FileQualityGetV30Api
-//}
-//
-//func (c *Client) FileQualitySubmitV30Api() *api.FileQualitySubmitV30ApiService {
-//	return c.ApiClient.FileQualitySubmitV30Api
-//}
-//
-//func (c *Client) FileVideoAdGetV2Api() *api.FileVideoAdGetV2ApiService {
-//	return c.ApiClient.FileVideoAdGetV2Api
-//}
-//
-//func (c *Client) FileVideoAdV2Api() *api.FileVideoAdV2ApiService {
-//	return c.ApiClient.FileVideoAdV2Api
-//}
-//
-//func (c *Client) FileVideoAgentV2Api() *api.FileVideoAgentV2ApiService {
-//	return c.ApiClient.FileVideoAgentV2Api
-//}
-//
-//func (c *Client) FileVideoAwemeGetV2Api() *api.FileVideoAwemeGetV2ApiService {
-//	return c.ApiClient.FileVideoAwemeGetV2Api
-//}
-//
-//func (c *Client) FileVideoDeleteV2Api() *api.FileVideoDeleteV2ApiService {
-//	return c.ApiClient.FileVideoDeleteV2Api
-//}
-//
-//func (c *Client) FileVideoEfficiencyGetV2Api() *api.FileVideoEfficiencyGetV2ApiService {
-//	return c.ApiClient.FileVideoEfficiencyGetV2Api
-//}
-//
-//func (c *Client) FileVideoGetV2Api() *api.FileVideoGetV2ApiService {
-//	return c.ApiClient.FileVideoGetV2Api
-//}
+func (c *Client) ToolsEventAllAssetsDetailV2Api() *api.ToolsEventAllAssetsDetailV2ApiService {
+	return c.ApiClient.ToolsEventAllAssetsDetailV2Api
+}
+
+//	func (c *Client) AccountFundGetV30Api() *api.AccountFundGetV30ApiService {
+//		return c.ApiClient.AccountFundGetV30Api
+//	}
+//
+//	func (c *Client) AdConvertOptimizedTargetGetV30Api() *api.AdConvertOptimizedTargetGetV30ApiService {
+//		return c.ApiClient.AdConvertOptimizedTargetGetV30Api
+//	}
+//
+//	func (c *Client) AdCostProtectStatusGetV2Api() *api.AdCostProtectStatusGetV2ApiService {
+//		return c.ApiClient.AdCostProtectStatusGetV2Api
+//	}
+//
+//	func (c *Client) AdGetV2Api() *api.AdGetV2ApiService {
+//		return c.ApiClient.AdGetV2Api
+//	}
+//
+//	func (c *Client) AdRejectReasonV2Api() *api.AdRejectReasonV2ApiService {
+//		return c.ApiClient.AdRejectReasonV2Api
+//	}
+//
+//	func (c *Client) AdShopInfoUpdateV30Api() *api.AdShopInfoUpdateV30ApiService {
+//		return c.ApiClient.AdShopInfoUpdateV30Api
+//	}
+//
+//	func (c *Client) AdUdUpdateV2Api() *api.AdUdUpdateV2ApiService {
+//		return c.ApiClient.AdUdUpdateV2Api
+//	}
+//
+//	func (c *Client) AdUpdateBidV2Api() *api.AdUpdateBidV2ApiService {
+//		return c.ApiClient.AdUpdateBidV2Api
+//	}
+//
+//	func (c *Client) AdUpdateBudgetV2Api() *api.AdUpdateBudgetV2ApiService {
+//		return c.ApiClient.AdUpdateBudgetV2Api
+//	}
+//
+//	func (c *Client) AdUpdateStatusV2Api() *api.AdUpdateStatusV2ApiService {
+//		return c.ApiClient.AdUpdateStatusV2Api
+//	}
+//
+//	func (c *Client) AdlabGroupCreateV30Api() *api.AdlabGroupCreateV30ApiService {
+//		return c.ApiClient.AdlabGroupCreateV30Api
+//	}
+//
+//	func (c *Client) AdlabGroupDetailV30Api() *api.AdlabGroupDetailV30ApiService {
+//		return c.ApiClient.AdlabGroupDetailV30Api
+//	}
+//
+//	func (c *Client) AdlabGroupListV30Api() *api.AdlabGroupListV30ApiService {
+//		return c.ApiClient.AdlabGroupListV30Api
+//	}
+//
+//	func (c *Client) AdlabGroupUpdateBudgetV30Api() *api.AdlabGroupUpdateBudgetV30ApiService {
+//		return c.ApiClient.AdlabGroupUpdateBudgetV30Api
+//	}
+//
+//	func (c *Client) AdlabGroupUpdateStatusV30Api() *api.AdlabGroupUpdateStatusV30ApiService {
+//		return c.ApiClient.AdlabGroupUpdateStatusV30Api
+//	}
+//
+//	func (c *Client) AdlabGroupUpdateV30Api() *api.AdlabGroupUpdateV30ApiService {
+//		return c.ApiClient.AdlabGroupUpdateV30Api
+//	}
+//
+//	func (c *Client) AdlabGroupsDeleteV30Api() *api.AdlabGroupsDeleteV30ApiService {
+//		return c.ApiClient.AdlabGroupsDeleteV30Api
+//	}
+//
+//	func (c *Client) AdvConvertOleConvertV2Api() *api.AdvConvertOleConvertV2ApiService {
+//		return c.ApiClient.AdvConvertOleConvertV2Api
+//	}
+//
+//	func (c *Client) AdvertiserAttachmentUploadV30Api() *api.AdvertiserAttachmentUploadV30ApiService {
+//		return c.ApiClient.AdvertiserAttachmentUploadV30Api
+//	}
+//
+//	func (c *Client) AdvertiserAvatarGetV2Api() *api.AdvertiserAvatarGetV2ApiService {
+//		return c.ApiClient.AdvertiserAvatarGetV2Api
+//	}
+//
+//	func (c *Client) AdvertiserAvatarSubmitV2Api() *api.AdvertiserAvatarSubmitV2ApiService {
+//		return c.ApiClient.AdvertiserAvatarSubmitV2Api
+//	}
+//
+//	func (c *Client) AdvertiserAvatarUploadV2Api() *api.AdvertiserAvatarUploadV2ApiService {
+//		return c.ApiClient.AdvertiserAvatarUploadV2Api
+//	}
+//
+//	func (c *Client) AdvertiserBudgetGetV2Api() *api.AdvertiserBudgetGetV2ApiService {
+//		return c.ApiClient.AdvertiserBudgetGetV2Api
+//	}
+//
+//	func (c *Client) AdvertiserDeliveryPkgConfigV30Api() *api.AdvertiserDeliveryPkgConfigV30ApiService {
+//		return c.ApiClient.AdvertiserDeliveryPkgConfigV30Api
+//	}
+//
+//	func (c *Client) AdvertiserDeliveryPkgDeleteV30Api() *api.AdvertiserDeliveryPkgDeleteV30ApiService {
+//		return c.ApiClient.AdvertiserDeliveryPkgDeleteV30Api
+//	}
+//
+//	func (c *Client) AdvertiserDeliveryPkgGetV30Api() *api.AdvertiserDeliveryPkgGetV30ApiService {
+//		return c.ApiClient.AdvertiserDeliveryPkgGetV30Api
+//	}
+//
+//	func (c *Client) AdvertiserDeliveryPkgSubmitV30Api() *api.AdvertiserDeliveryPkgSubmitV30ApiService {
+//		return c.ApiClient.AdvertiserDeliveryPkgSubmitV30Api
+//	}
+//
+//	func (c *Client) AdvertiserDeliveryQualificationDeleteV30Api() *api.AdvertiserDeliveryQualificationDeleteV30ApiService {
+//		return c.ApiClient.AdvertiserDeliveryQualificationDeleteV30Api
+//	}
+//
+//	func (c *Client) AdvertiserDeliveryQualificationListV30Api() *api.AdvertiserDeliveryQualificationListV30ApiService {
+//		return c.ApiClient.AdvertiserDeliveryQualificationListV30Api
+//	}
+//
+//	func (c *Client) AdvertiserDeliveryQualificationSubmitV30Api() *api.AdvertiserDeliveryQualificationSubmitV30ApiService {
+//		return c.ApiClient.AdvertiserDeliveryQualificationSubmitV30Api
+//	}
+//
+//	func (c *Client) AdvertiserFundDailyStatV2Api() *api.AdvertiserFundDailyStatV2ApiService {
+//		return c.ApiClient.AdvertiserFundDailyStatV2Api
+//	}
+//
+//	func (c *Client) AdvertiserFundGetV2Api() *api.AdvertiserFundGetV2ApiService {
+//		return c.ApiClient.AdvertiserFundGetV2Api
+//	}
+//
+//	func (c *Client) AdvertiserFundGrantTransactionGetV2Api() *api.AdvertiserFundGrantTransactionGetV2ApiService {
+//		return c.ApiClient.AdvertiserFundGrantTransactionGetV2Api
+//	}
+//
+//	func (c *Client) AdvertiserFundTransactionGetV2Api() *api.AdvertiserFundTransactionGetV2ApiService {
+//		return c.ApiClient.AdvertiserFundTransactionGetV2Api
+//	}
+//
+//	func (c *Client) AdvertiserInfoV2Api() *api.AdvertiserInfoV2ApiService {
+//		return c.ApiClient.AdvertiserInfoV2Api
+//	}
+//
+//	func (c *Client) AdvertiserPublicInfoV2Api() *api.AdvertiserPublicInfoV2ApiService {
+//		return c.ApiClient.AdvertiserPublicInfoV2Api
+//	}
+//
+//	func (c *Client) AdvertiserQualificationCreateV2V2Api() *api.AdvertiserQualificationCreateV2V2ApiService {
+//		return c.ApiClient.AdvertiserQualificationCreateV2V2Api
+//	}
+//
+//	func (c *Client) AdvertiserQualificationGetV30Api() *api.AdvertiserQualificationGetV30ApiService {
+//		return c.ApiClient.AdvertiserQualificationGetV30Api
+//	}
+//
+//	func (c *Client) AdvertiserQualificationSelectV2V2Api() *api.AdvertiserQualificationSelectV2V2ApiService {
+//		return c.ApiClient.AdvertiserQualificationSelectV2V2Api
+//	}
+//
+//	func (c *Client) AdvertiserQualificationSubmitV30Api() *api.AdvertiserQualificationSubmitV30ApiService {
+//		return c.ApiClient.AdvertiserQualificationSubmitV30Api
+//	}
+//
+//	func (c *Client) AdvertiserTransferableFundGetV2Api() *api.AdvertiserTransferableFundGetV2ApiService {
+//		return c.ApiClient.AdvertiserTransferableFundGetV2Api
+//	}
+//
+//	func (c *Client) AdvertiserUpdateBudgetV2Api() *api.AdvertiserUpdateBudgetV2ApiService {
+//		return c.ApiClient.AdvertiserUpdateBudgetV2Api
+//	}
+//
+//	func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQueryV2ApiService {
+//		return c.ApiClient.AgentAdvCostReportListQueryV2Api
+//	}
+//
+//	func (c *Client) AgentAdvertiserCopyV2Api() *api.AgentAdvertiserCopyV2ApiService {
+//		return c.ApiClient.AgentAdvertiserCopyV2Api
+//	}
+//
+//	func (c *Client) AgentAdvertiserSelectV2Api() *api.AgentAdvertiserSelectV2ApiService {
+//		return c.ApiClient.AgentAdvertiserSelectV2Api
+//	}
+//
+//	func (c *Client) AgentAdvertiserUpdateV2Api() *api.AgentAdvertiserUpdateV2ApiService {
+//		return c.ApiClient.AgentAdvertiserUpdateV2Api
+//	}
+//
+//	func (c *Client) AgentChildAgentSelectV2Api() *api.AgentChildAgentSelectV2ApiService {
+//		return c.ApiClient.AgentChildAgentSelectV2Api
+//	}
+//
+//	func (c *Client) AgentFundTransferSeqCommitV2Api() *api.AgentFundTransferSeqCommitV2ApiService {
+//		return c.ApiClient.AgentFundTransferSeqCommitV2Api
+//	}
+//
+//	func (c *Client) AgentFundTransferSeqCreateV2Api() *api.AgentFundTransferSeqCreateV2ApiService {
+//		return c.ApiClient.AgentFundTransferSeqCreateV2Api
+//	}
+//
+//	func (c *Client) AgentInfoV2Api() *api.AgentInfoV2ApiService {
+//		return c.ApiClient.AgentInfoV2Api
+//	}
+//
+//	func (c *Client) AgentQueryRiskPromotionListV2Api() *api.AgentQueryRiskPromotionListV2ApiService {
+//		return c.ApiClient.AgentQueryRiskPromotionListV2Api
+//	}
+//
+//	func (c *Client) AgentRefundTransferSeqCommitV2Api() *api.AgentRefundTransferSeqCommitV2ApiService {
+//		return c.ApiClient.AgentRefundTransferSeqCommitV2Api
+//	}
+//
+//	func (c *Client) AgentRefundTransferSeqCreateV2Api() *api.AgentRefundTransferSeqCreateV2ApiService {
+//		return c.ApiClient.AgentRefundTransferSeqCreateV2Api
+//	}
+//
+//	func (c *Client) AgentTransferTransactionRecordV2Api() *api.AgentTransferTransactionRecordV2ApiService {
+//		return c.ApiClient.AgentTransferTransactionRecordV2Api
+//	}
+//
+//	func (c *Client) AnalyticsAttributionV30Api() *api.AnalyticsAttributionV30ApiService {
+//		return c.ApiClient.AnalyticsAttributionV30Api
+//	}
+//
+//	func (c *Client) AssetsCreativeComponentCreateV2Api() *api.AssetsCreativeComponentCreateV2ApiService {
+//		return c.ApiClient.AssetsCreativeComponentCreateV2Api
+//	}
+//
+//	func (c *Client) AssetsCreativeComponentGetV2Api() *api.AssetsCreativeComponentGetV2ApiService {
+//		return c.ApiClient.AssetsCreativeComponentGetV2Api
+//	}
+//
+//	func (c *Client) AssetsCreativeComponentUpdateV2Api() *api.AssetsCreativeComponentUpdateV2ApiService {
+//		return c.ApiClient.AssetsCreativeComponentUpdateV2Api
+//	}
+//
+//	func (c *Client) AsyncTaskCreateV2Api() *api.AsyncTaskCreateV2ApiService {
+//		return c.ApiClient.AsyncTaskCreateV2Api
+//	}
+//
+//	func (c *Client) AsyncTaskDownloadV2Api() *api.AsyncTaskDownloadV2ApiService {
+//		return c.ApiClient.AsyncTaskDownloadV2Api
+//	}
+//
+//	func (c *Client) AsyncTaskGetV2Api() *api.AsyncTaskGetV2ApiService {
+//		return c.ApiClient.AsyncTaskGetV2Api
+//	}
+//
+//	func (c *Client) AudiencePackageCreateV2Api() *api.AudiencePackageCreateV2ApiService {
+//		return c.ApiClient.AudiencePackageCreateV2Api
+//	}
+//
+//	func (c *Client) AudiencePackageDeleteV2Api() *api.AudiencePackageDeleteV2ApiService {
+//		return c.ApiClient.AudiencePackageDeleteV2Api
+//	}
+//
+//	func (c *Client) AudiencePackageGetV2Api() *api.AudiencePackageGetV2ApiService {
+//		return c.ApiClient.AudiencePackageGetV2Api
+//	}
+//
+//	func (c *Client) AudiencePackageUpdateV2Api() *api.AudiencePackageUpdateV2ApiService {
+//		return c.ApiClient.AudiencePackageUpdateV2Api
+//	}
+//
+//	func (c *Client) BrandActionCategoryV30Api() *api.BrandActionCategoryV30ApiService {
+//		return c.ApiClient.BrandActionCategoryV30Api
+//	}
+//
+//	func (c *Client) BrandAdCreateV30Api() *api.BrandAdCreateV30ApiService {
+//		return c.ApiClient.BrandAdCreateV30Api
+//	}
+//
+//	func (c *Client) BrandAdGetV30Api() *api.BrandAdGetV30ApiService {
+//		return c.ApiClient.BrandAdGetV30Api
+//	}
+//
+//	func (c *Client) BrandAwemeListV30Api() *api.BrandAwemeListV30ApiService {
+//		return c.ApiClient.BrandAwemeListV30Api
+//	}
+//
+//	func (c *Client) BrandCampaignCreateV30Api() *api.BrandCampaignCreateV30ApiService {
+//		return c.ApiClient.BrandCampaignCreateV30Api
+//	}
+//
+//	func (c *Client) BrandCampaignGetV30Api() *api.BrandCampaignGetV30ApiService {
+//		return c.ApiClient.BrandCampaignGetV30Api
+//	}
+//
+//	func (c *Client) BrandCreativeCreateV30Api() *api.BrandCreativeCreateV30ApiService {
+//		return c.ApiClient.BrandCreativeCreateV30Api
+//	}
+//
+//	func (c *Client) BrandCreativeGetV30Api() *api.BrandCreativeGetV30ApiService {
+//		return c.ApiClient.BrandCreativeGetV30Api
+//	}
+//
+//	func (c *Client) BrandFileVideoUploadV30Api() *api.BrandFileVideoUploadV30ApiService {
+//		return c.ApiClient.BrandFileVideoUploadV30Api
+//	}
+//
+//	func (c *Client) BrandQueryStockV30Api() *api.BrandQueryStockV30ApiService {
+//		return c.ApiClient.BrandQueryStockV30Api
+//	}
+//
+//	func (c *Client) BrandQueryYuntu5aBrandCategoryV30Api() *api.BrandQueryYuntu5aBrandCategoryV30ApiService {
+//		return c.ApiClient.BrandQueryYuntu5aBrandCategoryV30Api
+//	}
+//
+//	func (c *Client) BrandRegionGetV30Api() *api.BrandRegionGetV30ApiService {
+//		return c.ApiClient.BrandRegionGetV30Api
+//	}
+//
+//	func (c *Client) BrandUploadImageV30Api() *api.BrandUploadImageV30ApiService {
+//		return c.ApiClient.BrandUploadImageV30Api
+//	}
+//
+//	func (c *Client) BudgetGroupCreateV30Api() *api.BudgetGroupCreateV30ApiService {
+//		return c.ApiClient.BudgetGroupCreateV30Api
+//	}
+//
+//	func (c *Client) BudgetGroupDeleteV30Api() *api.BudgetGroupDeleteV30ApiService {
+//		return c.ApiClient.BudgetGroupDeleteV30Api
+//	}
+//
+//	func (c *Client) BudgetGroupListV30Api() *api.BudgetGroupListV30ApiService {
+//		return c.ApiClient.BudgetGroupListV30Api
+//	}
+//
+//	func (c *Client) BudgetGroupUpdateV30Api() *api.BudgetGroupUpdateV30ApiService {
+//		return c.ApiClient.BudgetGroupUpdateV30Api
+//	}
+//
+//	func (c *Client) BusinessPlatformCompanyAccountGetV30Api() *api.BusinessPlatformCompanyAccountGetV30ApiService {
+//		return c.ApiClient.BusinessPlatformCompanyAccountGetV30Api
+//	}
+//
+//	func (c *Client) BusinessPlatformCompanyInfoGetV30Api() *api.BusinessPlatformCompanyInfoGetV30ApiService {
+//		return c.ApiClient.BusinessPlatformCompanyInfoGetV30Api
+//	}
+//
+//	func (c *Client) BusinessPlatformPartnerOrganizationListV2Api() *api.BusinessPlatformPartnerOrganizationListV2ApiService {
+//		return c.ApiClient.BusinessPlatformPartnerOrganizationListV2Api
+//	}
+//
+//	func (c *Client) CampaignCreateV2Api() *api.CampaignCreateV2ApiService {
+//		return c.ApiClient.CampaignCreateV2Api
+//	}
+//
+//	func (c *Client) CampaignGetV2Api() *api.CampaignGetV2ApiService {
+//		return c.ApiClient.CampaignGetV2Api
+//	}
+//
+//	func (c *Client) CampaignUpdateStatusV2Api() *api.CampaignUpdateStatusV2ApiService {
+//		return c.ApiClient.CampaignUpdateStatusV2Api
+//	}
+//
+//	func (c *Client) CampaignUpdateV2Api() *api.CampaignUpdateV2ApiService {
+//		return c.ApiClient.CampaignUpdateV2Api
+//	}
+//
+//	func (c *Client) CarouselAdGetV2Api() *api.CarouselAdGetV2ApiService {
+//		return c.ApiClient.CarouselAdGetV2Api
+//	}
+//
+//	func (c *Client) CarouselCreateV2Api() *api.CarouselCreateV2ApiService {
+//		return c.ApiClient.CarouselCreateV2Api
+//	}
+//
+//	func (c *Client) CarouselDeleteV2Api() *api.CarouselDeleteV2ApiService {
+//		return c.ApiClient.CarouselDeleteV2Api
+//	}
+//
+//	func (c *Client) CarouselListV2Api() *api.CarouselListV2ApiService {
+//		return c.ApiClient.CarouselListV2Api
+//	}
+//
+//	func (c *Client) CarouselUpdateV2Api() *api.CarouselUpdateV2ApiService {
+//		return c.ApiClient.CarouselUpdateV2Api
+//	}
+//
+//	func (c *Client) CdpBrandGetV30Api() *api.CdpBrandGetV30ApiService {
+//		return c.ApiClient.CdpBrandGetV30Api
+//	}
+//
+//	func (c *Client) CgTransferCreateTransferV30Api() *api.CgTransferCreateTransferV30ApiService {
+//		return c.ApiClient.CgTransferCreateTransferV30Api
+//	}
+//
+//	func (c *Client) CgTransferQueryCanTransferBalanceV30Api() *api.CgTransferQueryCanTransferBalanceV30ApiService {
+//		return c.ApiClient.CgTransferQueryCanTransferBalanceV30Api
+//	}
+//
+//	func (c *Client) CgTransferQueryTransferBalanceV30Api() *api.CgTransferQueryTransferBalanceV30ApiService {
+//		return c.ApiClient.CgTransferQueryTransferBalanceV30Api
+//	}
+//
+//	func (c *Client) CgTransferQueryTransferDetailV30Api() *api.CgTransferQueryTransferDetailV30ApiService {
+//		return c.ApiClient.CgTransferQueryTransferDetailV30Api
+//	}
+//
+//	func (c *Client) ClueCouponCodeConsumeV2Api() *api.ClueCouponCodeConsumeV2ApiService {
+//		return c.ApiClient.ClueCouponCodeConsumeV2Api
+//	}
+//
+//	func (c *Client) ClueCouponCodeGetV2Api() *api.ClueCouponCodeGetV2ApiService {
+//		return c.ApiClient.ClueCouponCodeGetV2Api
+//	}
+//
+//	func (c *Client) ClueCouponCreateV2Api() *api.ClueCouponCreateV2ApiService {
+//		return c.ApiClient.ClueCouponCreateV2Api
+//	}
+//
+//	func (c *Client) ClueCouponDetailV2Api() *api.ClueCouponDetailV2ApiService {
+//		return c.ApiClient.ClueCouponDetailV2Api
+//	}
+//
+//	func (c *Client) ClueCouponEmployeeCreateV2Api() *api.ClueCouponEmployeeCreateV2ApiService {
+//		return c.ApiClient.ClueCouponEmployeeCreateV2Api
+//	}
+//
+//	func (c *Client) ClueCouponEmployeeDeleteV2Api() *api.ClueCouponEmployeeDeleteV2ApiService {
+//		return c.ApiClient.ClueCouponEmployeeDeleteV2Api
+//	}
+//
+//	func (c *Client) ClueCouponEmployeeGetV2Api() *api.ClueCouponEmployeeGetV2ApiService {
+//		return c.ApiClient.ClueCouponEmployeeGetV2Api
+//	}
+//
+//	func (c *Client) ClueCouponGetV2Api() *api.ClueCouponGetV2ApiService {
+//		return c.ApiClient.ClueCouponGetV2Api
+//	}
+//
+//	func (c *Client) ClueCouponUpdateV2Api() *api.ClueCouponUpdateV2ApiService {
+//		return c.ApiClient.ClueCouponUpdateV2Api
+//	}
+//
+//	func (c *Client) ClueFormCreateV2Api() *api.ClueFormCreateV2ApiService {
+//		return c.ApiClient.ClueFormCreateV2Api
+//	}
+//
+//	func (c *Client) ClueFormDeleteV2Api() *api.ClueFormDeleteV2ApiService {
+//		return c.ApiClient.ClueFormDeleteV2Api
+//	}
+//
+//	func (c *Client) ClueFormDetailV2Api() *api.ClueFormDetailV2ApiService {
+//		return c.ApiClient.ClueFormDetailV2Api
+//	}
+//
+//	func (c *Client) ClueFormListV2Api() *api.ClueFormListV2ApiService {
+//		return c.ApiClient.ClueFormListV2Api
+//	}
+//
+//	func (c *Client) ClueFormUpdateV2Api() *api.ClueFormUpdateV2ApiService {
+//		return c.ApiClient.ClueFormUpdateV2Api
+//	}
+//
+//	func (c *Client) CluePackageUploadV2Api() *api.CluePackageUploadV2ApiService {
+//		return c.ApiClient.CluePackageUploadV2Api
+//	}
+//
+//	func (c *Client) ClueSmartphoneCreateV2Api() *api.ClueSmartphoneCreateV2ApiService {
+//		return c.ApiClient.ClueSmartphoneCreateV2Api
+//	}
+//
+//	func (c *Client) ClueSmartphoneDeleteV2Api() *api.ClueSmartphoneDeleteV2ApiService {
+//		return c.ApiClient.ClueSmartphoneDeleteV2Api
+//	}
+//
+//	func (c *Client) ClueSmartphoneGetV2Api() *api.ClueSmartphoneGetV2ApiService {
+//		return c.ApiClient.ClueSmartphoneGetV2Api
+//	}
+//
+//	func (c *Client) ClueSmartphoneRecordV2Api() *api.ClueSmartphoneRecordV2ApiService {
+//		return c.ApiClient.ClueSmartphoneRecordV2Api
+//	}
+//
+//	func (c *Client) ClueWechatDataGetV2Api() *api.ClueWechatDataGetV2ApiService {
+//		return c.ApiClient.ClueWechatDataGetV2Api
+//	}
+//
+//	func (c *Client) ClueWechatInstanceDetailV2Api() *api.ClueWechatInstanceDetailV2ApiService {
+//		return c.ApiClient.ClueWechatInstanceDetailV2Api
+//	}
+//
+//	func (c *Client) ClueWechatInstanceListV2Api() *api.ClueWechatInstanceListV2ApiService {
+//		return c.ApiClient.ClueWechatInstanceListV2Api
+//	}
+//
+//	func (c *Client) ClueWechatInstanceUpdateV2Api() *api.ClueWechatInstanceUpdateV2ApiService {
+//		return c.ApiClient.ClueWechatInstanceUpdateV2Api
+//	}
+//
+//	func (c *Client) ClueWechatPoolListV2Api() *api.ClueWechatPoolListV2ApiService {
+//		return c.ApiClient.ClueWechatPoolListV2Api
+//	}
+//
+//	func (c *Client) CreativeAdMetricsV2Api() *api.CreativeAdMetricsV2ApiService {
+//		return c.ApiClient.CreativeAdMetricsV2Api
+//	}
+//
+//	func (c *Client) CreativeAutoGenerateConfigGetV2Api() *api.CreativeAutoGenerateConfigGetV2ApiService {
+//		return c.ApiClient.CreativeAutoGenerateConfigGetV2Api
+//	}
+//
+//	func (c *Client) CreativeCustomCreativeCreateV2Api() *api.CreativeCustomCreativeCreateV2ApiService {
+//		return c.ApiClient.CreativeCustomCreativeCreateV2Api
+//	}
+//
+//	func (c *Client) CreativeCustomCreativeDeleteV2Api() *api.CreativeCustomCreativeDeleteV2ApiService {
+//		return c.ApiClient.CreativeCustomCreativeDeleteV2Api
+//	}
+//
+//	func (c *Client) CreativeCustomCreativeUpdateV2Api() *api.CreativeCustomCreativeUpdateV2ApiService {
+//		return c.ApiClient.CreativeCustomCreativeUpdateV2Api
+//	}
+//
+//	func (c *Client) CreativeDetailGetV30Api() *api.CreativeDetailGetV30ApiService {
+//		return c.ApiClient.CreativeDetailGetV30Api
+//	}
+//
+//	func (c *Client) CreativeGetV2Api() *api.CreativeGetV2ApiService {
+//		return c.ApiClient.CreativeGetV2Api
+//	}
+//
+//	func (c *Client) CreativeMaterialMetricsV2Api() *api.CreativeMaterialMetricsV2ApiService {
+//		return c.ApiClient.CreativeMaterialMetricsV2Api
+//	}
+//
+//	func (c *Client) CreativeProceduralCreativeCreateV2Api() *api.CreativeProceduralCreativeCreateV2ApiService {
+//		return c.ApiClient.CreativeProceduralCreativeCreateV2Api
+//	}
+//
+//	func (c *Client) CreativeProceduralCreativeUpdateV2Api() *api.CreativeProceduralCreativeUpdateV2ApiService {
+//		return c.ApiClient.CreativeProceduralCreativeUpdateV2Api
+//	}
+//
+//	func (c *Client) CreativeRejectReasonV2Api() *api.CreativeRejectReasonV2ApiService {
+//		return c.ApiClient.CreativeRejectReasonV2Api
+//	}
+//
+//	func (c *Client) CreativeStatusUpdateV2V2Api() *api.CreativeStatusUpdateV2V2ApiService {
+//		return c.ApiClient.CreativeStatusUpdateV2V2Api
+//	}
+//
+//	func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiService {
+//		return c.ApiClient.CreativeStrategyListV2Api
+//	}
+//
+//	func (c *Client) CustomerCenterAdvertiserCopyV2Api() *api.CustomerCenterAdvertiserCopyV2ApiService {
+//		return c.ApiClient.CustomerCenterAdvertiserCopyV2Api
+//	}
+//
+//	func (c *Client) CustomerCenterAdvertiserListV2Api() *api.CustomerCenterAdvertiserListV2ApiService {
+//		return c.ApiClient.CustomerCenterAdvertiserListV2Api
+//	}
+//
+//	func (c *Client) CustomerCenterAdvertiserTransferableListV2Api() *api.CustomerCenterAdvertiserTransferableListV2ApiService {
+//		return c.ApiClient.CustomerCenterAdvertiserTransferableListV2Api
+//	}
+//
+//	func (c *Client) CustomerCenterFundTransferSeqCommitV2Api() *api.CustomerCenterFundTransferSeqCommitV2ApiService {
+//		return c.ApiClient.CustomerCenterFundTransferSeqCommitV2Api
+//	}
+//
+//	func (c *Client) CustomerCenterFundTransferSeqCreateV2Api() *api.CustomerCenterFundTransferSeqCreateV2ApiService {
+//		return c.ApiClient.CustomerCenterFundTransferSeqCreateV2Api
+//	}
+//
+//	func (c *Client) DecorationCouponGetV30Api() *api.DecorationCouponGetV30ApiService {
+//		return c.ApiClient.DecorationCouponGetV30Api
+//	}
+//
+//	func (c *Client) DmpBrandGetV2Api() *api.DmpBrandGetV2ApiService {
+//		return c.ApiClient.DmpBrandGetV2Api
+//	}
+//
+//	func (c *Client) DmpCustomAudienceCopyV2Api() *api.DmpCustomAudienceCopyV2ApiService {
+//		return c.ApiClient.DmpCustomAudienceCopyV2Api
+//	}
+//
+//	func (c *Client) DmpCustomAudienceDeleteV2Api() *api.DmpCustomAudienceDeleteV2ApiService {
+//		return c.ApiClient.DmpCustomAudienceDeleteV2Api
+//	}
+//
+//	func (c *Client) DmpCustomAudiencePublishV2Api() *api.DmpCustomAudiencePublishV2ApiService {
+//		return c.ApiClient.DmpCustomAudiencePublishV2Api
+//	}
+//
+//	func (c *Client) DmpCustomAudiencePushV2V2Api() *api.DmpCustomAudiencePushV2V2ApiService {
+//		return c.ApiClient.DmpCustomAudiencePushV2V2Api
+//	}
+//
+//	func (c *Client) DmpCustomAudienceReadV2Api() *api.DmpCustomAudienceReadV2ApiService {
+//		return c.ApiClient.DmpCustomAudienceReadV2Api
+//	}
+//
+//	func (c *Client) DmpCustomAudienceSelectV2Api() *api.DmpCustomAudienceSelectV2ApiService {
+//		return c.ApiClient.DmpCustomAudienceSelectV2Api
+//	}
+//
+//	func (c *Client) DmpDataSourceCreateV2Api() *api.DmpDataSourceCreateV2ApiService {
+//		return c.ApiClient.DmpDataSourceCreateV2Api
+//	}
+//
+//	func (c *Client) DmpDataSourceFileUploadV2Api() *api.DmpDataSourceFileUploadV2ApiService {
+//		return c.ApiClient.DmpDataSourceFileUploadV2Api
+//	}
+//
+//	func (c *Client) DmpDataSourceReadV2Api() *api.DmpDataSourceReadV2ApiService {
+//		return c.ApiClient.DmpDataSourceReadV2Api
+//	}
+//
+//	func (c *Client) DmpDataSourceUpdateV2Api() *api.DmpDataSourceUpdateV2ApiService {
+//		return c.ApiClient.DmpDataSourceUpdateV2Api
+//	}
+//
+//	func (c *Client) DouplusOrderCloseV30Api() *api.DouplusOrderCloseV30ApiService {
+//		return c.ApiClient.DouplusOrderCloseV30Api
+//	}
+//
+//	func (c *Client) DouplusOrderCreateV30Api() *api.DouplusOrderCreateV30ApiService {
+//		return c.ApiClient.DouplusOrderCreateV30Api
+//	}
+//
+//	func (c *Client) DouplusOrderListV30Api() *api.DouplusOrderListV30ApiService {
+//		return c.ApiClient.DouplusOrderListV30Api
+//	}
+//
+//	func (c *Client) DouplusOrderReportV30Api() *api.DouplusOrderReportV30ApiService {
+//		return c.ApiClient.DouplusOrderReportV30Api
+//	}
+//
+//	func (c *Client) DpaAssetV2DetailReadV2Api() *api.DpaAssetV2DetailReadV2ApiService {
+//		return c.ApiClient.DpaAssetV2DetailReadV2Api
+//	}
+//
+//	func (c *Client) DpaAssetV2ListV2Api() *api.DpaAssetV2ListV2ApiService {
+//		return c.ApiClient.DpaAssetV2ListV2Api
+//	}
+//
+//	func (c *Client) DpaAssetsDetailReadV2Api() *api.DpaAssetsDetailReadV2ApiService {
+//		return c.ApiClient.DpaAssetsDetailReadV2Api
+//	}
+//
+//	func (c *Client) DpaAssetsListV2Api() *api.DpaAssetsListV2ApiService {
+//		return c.ApiClient.DpaAssetsListV2Api
+//	}
+//
+//	func (c *Client) DpaCategoryGetV2Api() *api.DpaCategoryGetV2ApiService {
+//		return c.ApiClient.DpaCategoryGetV2Api
+//	}
+//
+//	func (c *Client) DpaCheckIndexEntryProgressV2Api() *api.DpaCheckIndexEntryProgressV2ApiService {
+//		return c.ApiClient.DpaCheckIndexEntryProgressV2Api
+//	}
+//
+//	func (c *Client) DpaClueProductDetailV2Api() *api.DpaClueProductDetailV2ApiService {
+//		return c.ApiClient.DpaClueProductDetailV2Api
+//	}
+//
+//	func (c *Client) DpaClueProductListV2Api() *api.DpaClueProductListV2ApiService {
+//		return c.ApiClient.DpaClueProductListV2Api
+//	}
+//
+//	func (c *Client) DpaDetailGetV2Api() *api.DpaDetailGetV2ApiService {
+//		return c.ApiClient.DpaDetailGetV2Api
+//	}
+//
+//	func (c *Client) DpaDictGetV2Api() *api.DpaDictGetV2ApiService {
+//		return c.ApiClient.DpaDictGetV2Api
+//	}
+//
+//	func (c *Client) DpaMetaGetV2Api() *api.DpaMetaGetV2ApiService {
+//		return c.ApiClient.DpaMetaGetV2Api
+//	}
+//
+//	func (c *Client) DpaProductAvailablesV2Api() *api.DpaProductAvailablesV2ApiService {
+//		return c.ApiClient.DpaProductAvailablesV2Api
+//	}
+//
+//	func (c *Client) DpaProductCreateV2Api() *api.DpaProductCreateV2ApiService {
+//		return c.ApiClient.DpaProductCreateV2Api
+//	}
+//
+//	func (c *Client) DpaProductDeleteV2Api() *api.DpaProductDeleteV2ApiService {
+//		return c.ApiClient.DpaProductDeleteV2Api
+//	}
+//
+//	func (c *Client) DpaProductDetailGetV2Api() *api.DpaProductDetailGetV2ApiService {
+//		return c.ApiClient.DpaProductDetailGetV2Api
+//	}
+//
+//	func (c *Client) DpaProductStatusBatchUpdateV2Api() *api.DpaProductStatusBatchUpdateV2ApiService {
+//		return c.ApiClient.DpaProductStatusBatchUpdateV2Api
+//	}
+//
+//	func (c *Client) DpaProductUpdateV2Api() *api.DpaProductUpdateV2ApiService {
+//		return c.ApiClient.DpaProductUpdateV2Api
+//	}
+//
+//	func (c *Client) DpaTemplateGetV2Api() *api.DpaTemplateGetV2ApiService {
+//		return c.ApiClient.DpaTemplateGetV2Api
+//	}
+//
+//	func (c *Client) DpaVideoGetV2Api() *api.DpaVideoGetV2ApiService {
+//		return c.ApiClient.DpaVideoGetV2Api
+//	}
+//
+//	func (c *Client) EnterpriseBindListGetV10Api() *api.EnterpriseBindListGetV10ApiService {
+//		return c.ApiClient.EnterpriseBindListGetV10Api
+//	}
+//
+//	func (c *Client) EnterpriseCommentDetailV10Api() *api.EnterpriseCommentDetailV10ApiService {
+//		return c.ApiClient.EnterpriseCommentDetailV10Api
+//	}
+//
+//	func (c *Client) EnterpriseCommentListGetV10Api() *api.EnterpriseCommentListGetV10ApiService {
+//		return c.ApiClient.EnterpriseCommentListGetV10Api
+//	}
+//
+//	func (c *Client) EnterpriseCommentReplyListV10Api() *api.EnterpriseCommentReplyListV10ApiService {
+//		return c.ApiClient.EnterpriseCommentReplyListV10Api
+//	}
+//
+//	func (c *Client) EnterpriseCommentReplyV10Api() *api.EnterpriseCommentReplyV10ApiService {
+//		return c.ApiClient.EnterpriseCommentReplyV10Api
+//	}
+//
+//	func (c *Client) EnterpriseFlowCategoryGetV10Api() *api.EnterpriseFlowCategoryGetV10ApiService {
+//		return c.ApiClient.EnterpriseFlowCategoryGetV10Api
+//	}
+//
+//	func (c *Client) EnterpriseInfoV10Api() *api.EnterpriseInfoV10ApiService {
+//		return c.ApiClient.EnterpriseInfoV10Api
+//	}
+//
+//	func (c *Client) EnterpriseItemListV10Api() *api.EnterpriseItemListV10ApiService {
+//		return c.ApiClient.EnterpriseItemListV10Api
+//	}
+//
+//	func (c *Client) EnterpriseOperationLogGetV10Api() *api.EnterpriseOperationLogGetV10ApiService {
+//		return c.ApiClient.EnterpriseOperationLogGetV10Api
+//	}
+//
+//	func (c *Client) EnterpriseOverviewDataGetV10Api() *api.EnterpriseOverviewDataGetV10ApiService {
+//		return c.ApiClient.EnterpriseOverviewDataGetV10Api
+//	}
+//
+//	func (c *Client) EnterpriseVideoInfoGetV10Api() *api.EnterpriseVideoInfoGetV10ApiService {
+//		return c.ApiClient.EnterpriseVideoInfoGetV10Api
+//	}
+//
+//	func (c *Client) EventManagerAssetsCreateV2Api() *api.EventManagerAssetsCreateV2ApiService {
+//		return c.ApiClient.EventManagerAssetsCreateV2Api
+//	}
+//
+//	func (c *Client) EventManagerAvailableEventsGetV2Api() *api.EventManagerAvailableEventsGetV2ApiService {
+//		return c.ApiClient.EventManagerAvailableEventsGetV2Api
+//	}
+//
+//	func (c *Client) EventManagerDeepBidTypeGetV30Api() *api.EventManagerDeepBidTypeGetV30ApiService {
+//		return c.ApiClient.EventManagerDeepBidTypeGetV30Api
+//	}
+//
+//	func (c *Client) EventManagerEventConfigsGetV2Api() *api.EventManagerEventConfigsGetV2ApiService {
+//		return c.ApiClient.EventManagerEventConfigsGetV2Api
+//	}
+//
+//	func (c *Client) EventManagerEventsCreateV2Api() *api.EventManagerEventsCreateV2ApiService {
+//		return c.ApiClient.EventManagerEventsCreateV2Api
+//	}
+//
+//	func (c *Client) EventManagerOfflineDataCreateV2Api() *api.EventManagerOfflineDataCreateV2ApiService {
+//		return c.ApiClient.EventManagerOfflineDataCreateV2Api
+//	}
+//
+//	func (c *Client) EventManagerOptimizedGoalGetV2V30Api() *api.EventManagerOptimizedGoalGetV2V30ApiService {
+//		return c.ApiClient.EventManagerOptimizedGoalGetV2V30Api
+//	}
+//
+//	func (c *Client) EventManagerShareCancelV30Api() *api.EventManagerShareCancelV30ApiService {
+//		return c.ApiClient.EventManagerShareCancelV30Api
+//	}
+//
+//	func (c *Client) EventManagerShareGetV30Api() *api.EventManagerShareGetV30ApiService {
+//		return c.ApiClient.EventManagerShareGetV30Api
+//	}
+//
+//	func (c *Client) EventManagerShareV30Api() *api.EventManagerShareV30ApiService {
+//		return c.ApiClient.EventManagerShareV30Api
+//	}
+//
+//	func (c *Client) EventManagerTrackUrlCreateV2Api() *api.EventManagerTrackUrlCreateV2ApiService {
+//		return c.ApiClient.EventManagerTrackUrlCreateV2Api
+//	}
+//
+//	func (c *Client) EventManagerTrackUrlGetV2Api() *api.EventManagerTrackUrlGetV2ApiService {
+//		return c.ApiClient.EventManagerTrackUrlGetV2Api
+//	}
+//
+//	func (c *Client) EventManagerTrackUrlUpdateV2Api() *api.EventManagerTrackUrlUpdateV2ApiService {
+//		return c.ApiClient.EventManagerTrackUrlUpdateV2Api
+//	}
+//
+//	func (c *Client) FileAudioAdV2Api() *api.FileAudioAdV2ApiService {
+//		return c.ApiClient.FileAudioAdV2Api
+//	}
+//
+//	func (c *Client) FileAudioGetV2Api() *api.FileAudioGetV2ApiService {
+//		return c.ApiClient.FileAudioGetV2Api
+//	}
+//
+//	func (c *Client) FileAutoGenerateSourceGetV2Api() *api.FileAutoGenerateSourceGetV2ApiService {
+//		return c.ApiClient.FileAutoGenerateSourceGetV2Api
+//	}
+//
+//	func (c *Client) FileImageAdGetV2Api() *api.FileImageAdGetV2ApiService {
+//		return c.ApiClient.FileImageAdGetV2Api
+//	}
+//
+//	func (c *Client) FileImageAdV2Api() *api.FileImageAdV2ApiService {
+//		return c.ApiClient.FileImageAdV2Api
+//	}
+//
+//	func (c *Client) FileImageDeleteV30Api() *api.FileImageDeleteV30ApiService {
+//		return c.ApiClient.FileImageDeleteV30Api
+//	}
+func (c *Client) FileImageGetV2Api() *api.FileImageGetV2ApiService {
+	return c.ApiClient.FileImageGetV2Api
+}
+func (c *Client) FileMaterialAttributesListV2Api() *api.FileMaterialAttributesListV2ApiService {
+	return c.ApiClient.FileMaterialAttributesListV2Api
+}
+
+//	func (c *Client) FileMaterialAuditResultGetV2Api() *api.FileMaterialAuditResultGetV2ApiService {
+//		return c.ApiClient.FileMaterialAuditResultGetV2Api
+//	}
+//
+//	func (c *Client) FileMaterialBindV2Api() *api.FileMaterialBindV2ApiService {
+//		return c.ApiClient.FileMaterialBindV2Api
+//	}
+func (c *Client) FileMaterialDetailV2Api() *api.FileMaterialDetailV2ApiService {
+	return c.ApiClient.FileMaterialDetailV2Api
+}
+func (c *Client) FileMaterialListV2Api() *api.FileMaterialListV2ApiService {
+	return c.ApiClient.FileMaterialListV2Api
+}
+
+//	func (c *Client) FileMediaGetV2Api() *api.FileMediaGetV2ApiService {
+//		return c.ApiClient.FileMediaGetV2Api
+//	}
+//
+//	func (c *Client) FilePreauditGetV30Api() *api.FilePreauditGetV30ApiService {
+//		return c.ApiClient.FilePreauditGetV30Api
+//	}
+//
+//	func (c *Client) FilePreauditSubmitV30Api() *api.FilePreauditSubmitV30ApiService {
+//		return c.ApiClient.FilePreauditSubmitV30Api
+//	}
+//
+//	func (c *Client) FileQualityGetV30Api() *api.FileQualityGetV30ApiService {
+//		return c.ApiClient.FileQualityGetV30Api
+//	}
+//
+//	func (c *Client) FileQualitySubmitV30Api() *api.FileQualitySubmitV30ApiService {
+//		return c.ApiClient.FileQualitySubmitV30Api
+//	}
+//
+//	func (c *Client) FileVideoAdGetV2Api() *api.FileVideoAdGetV2ApiService {
+//		return c.ApiClient.FileVideoAdGetV2Api
+//	}
+//
+//	func (c *Client) FileVideoAdV2Api() *api.FileVideoAdV2ApiService {
+//		return c.ApiClient.FileVideoAdV2Api
+//	}
+//
+//	func (c *Client) FileVideoAgentV2Api() *api.FileVideoAgentV2ApiService {
+//		return c.ApiClient.FileVideoAgentV2Api
+//	}
+//
+//	func (c *Client) FileVideoAwemeGetV2Api() *api.FileVideoAwemeGetV2ApiService {
+//		return c.ApiClient.FileVideoAwemeGetV2Api
+//	}
+//
+//	func (c *Client) FileVideoDeleteV2Api() *api.FileVideoDeleteV2ApiService {
+//		return c.ApiClient.FileVideoDeleteV2Api
+//	}
+//
+//	func (c *Client) FileVideoEfficiencyGetV2Api() *api.FileVideoEfficiencyGetV2ApiService {
+//		return c.ApiClient.FileVideoEfficiencyGetV2Api
+//	}
+func (c *Client) FileVideoGetV2Api() *api.FileVideoGetV2ApiService {
+	return c.ApiClient.FileVideoGetV2Api
+}
+
 //
 //func (c *Client) FileVideoMaterialClearTaskCreateV2Api() *api.FileVideoMaterialClearTaskCreateV2ApiService {
 //	return c.ApiClient.FileVideoMaterialClearTaskCreateV2Api
