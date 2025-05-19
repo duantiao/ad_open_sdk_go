@@ -822,9 +822,9 @@ type APIClient struct {
 	//
 	//QianchuanToolsSmartBoostAdBoostReportGetV10Api *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService
 	//
-	//QianchuanToolsSmartBoostAdBoostSetV10Api *QianchuanToolsSmartBoostAdBoostSetV10ApiService
+	QianchuanToolsSmartBoostAdBoostSetV10Api *QianchuanToolsSmartBoostAdBoostSetV10ApiService
 	//
-	//QianchuanToolsSmartBoostAdBoostStatusGetV10Api *QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService
+	QianchuanToolsSmartBoostAdBoostStatusGetV10Api *QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService
 	//
 	//QianchuanToolsSmartBoostAdBoostVersionGetV10Api *QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService
 	//
@@ -1426,13 +1426,13 @@ type APIClient struct {
 	//
 	//ToolsPromotionDiagnosisSuggestionGetV30Api *ToolsPromotionDiagnosisSuggestionGetV30ApiService
 	//
-	//ToolsPromotionRaiseSetV30Api *ToolsPromotionRaiseSetV30ApiService
+	ToolsPromotionRaiseSetV30Api *ToolsPromotionRaiseSetV30ApiService
 	//
-	//ToolsPromotionRaiseStatusCurrentIdsGetV30Api *ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService
+	ToolsPromotionRaiseStatusCurrentIdsGetV30Api *ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService
 	//
 	//ToolsPromotionRaiseStatusGetV30Api *ToolsPromotionRaiseStatusGetV30ApiService
 	//
-	//ToolsPromotionRaiseStopV30Api *ToolsPromotionRaiseStopV30ApiService
+	ToolsPromotionRaiseStopV30Api *ToolsPromotionRaiseStopV30ApiService
 	//
 	//ToolsPromotionRaiseVersionGetV30Api *ToolsPromotionRaiseVersionGetV30ApiService
 	//
@@ -1496,7 +1496,7 @@ type APIClient struct {
 	//
 	//ToolsStarTaskTitleTopicGetV2Api *ToolsStarTaskTitleTopicGetV2ApiService
 	//
-	//ToolsSuggestBudgetGetV30Api *ToolsSuggestBudgetGetV30ApiService
+	ToolsSuggestBudgetGetV30Api *ToolsSuggestBudgetGetV30ApiService
 	//
 	//ToolsTaskRaiseCreateV2Api *ToolsTaskRaiseCreateV2ApiService
 	//
@@ -1958,8 +1958,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanToolsGrayV10Api = (*QianchuanToolsGrayV10ApiService)(&c.common)
 	//c.QianchuanToolsShopAuthV10Api = (*QianchuanToolsShopAuthV10ApiService)(&c.common)
 	//c.QianchuanToolsSmartBoostAdBoostReportGetV10Api = (*QianchuanToolsSmartBoostAdBoostReportGetV10ApiService)(&c.common)
-	//c.QianchuanToolsSmartBoostAdBoostSetV10Api = (*QianchuanToolsSmartBoostAdBoostSetV10ApiService)(&c.common)
-	//c.QianchuanToolsSmartBoostAdBoostStatusGetV10Api = (*QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService)(&c.common)
+	c.QianchuanToolsSmartBoostAdBoostSetV10Api = (*QianchuanToolsSmartBoostAdBoostSetV10ApiService)(&c.common)
+	c.QianchuanToolsSmartBoostAdBoostStatusGetV10Api = (*QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService)(&c.common)
 	//c.QianchuanToolsSmartBoostAdBoostVersionGetV10Api = (*QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService)(&c.common)
 	//c.QianchuanTrackUrlCheckV10Api = (*QianchuanTrackUrlCheckV10ApiService)(&c.common)
 	//c.QianchuanUniAwemeAuthorizedGetV10Api = (*QianchuanUniAwemeAuthorizedGetV10ApiService)(&c.common)
@@ -2259,10 +2259,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.ToolsPromotionCardRecommendTitleGetV2Api = (*ToolsPromotionCardRecommendTitleGetV2ApiService)(&c.common)
 	//c.ToolsPromotionDiagnosisSuggestionAcceptV30Api = (*ToolsPromotionDiagnosisSuggestionAcceptV30ApiService)(&c.common)
 	//c.ToolsPromotionDiagnosisSuggestionGetV30Api = (*ToolsPromotionDiagnosisSuggestionGetV30ApiService)(&c.common)
-	//c.ToolsPromotionRaiseSetV30Api = (*ToolsPromotionRaiseSetV30ApiService)(&c.common)
-	//c.ToolsPromotionRaiseStatusCurrentIdsGetV30Api = (*ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService)(&c.common)
+	c.ToolsPromotionRaiseSetV30Api = (*ToolsPromotionRaiseSetV30ApiService)(&c.common)
+	c.ToolsPromotionRaiseStatusCurrentIdsGetV30Api = (*ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService)(&c.common)
 	//c.ToolsPromotionRaiseStatusGetV30Api = (*ToolsPromotionRaiseStatusGetV30ApiService)(&c.common)
-	//c.ToolsPromotionRaiseStopV30Api = (*ToolsPromotionRaiseStopV30ApiService)(&c.common)
+	c.ToolsPromotionRaiseStopV30Api = (*ToolsPromotionRaiseStopV30ApiService)(&c.common)
 	//c.ToolsPromotionRaiseVersionGetV30Api = (*ToolsPromotionRaiseVersionGetV30ApiService)(&c.common)
 	//c.ToolsQuotaGetV2Api = (*ToolsQuotaGetV2ApiService)(&c.common)
 	//c.ToolsRegionGetV2Api = (*ToolsRegionGetV2ApiService)(&c.common)
@@ -2294,7 +2294,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.ToolsStarTaskMaterialTypeV2Api = (*ToolsStarTaskMaterialTypeV2ApiService)(&c.common)
 	//c.ToolsStarTaskSettlementConfigV2Api = (*ToolsStarTaskSettlementConfigV2ApiService)(&c.common)
 	//c.ToolsStarTaskTitleTopicGetV2Api = (*ToolsStarTaskTitleTopicGetV2ApiService)(&c.common)
-	//c.ToolsSuggestBudgetGetV30Api = (*ToolsSuggestBudgetGetV30ApiService)(&c.common)
+	c.ToolsSuggestBudgetGetV30Api = (*ToolsSuggestBudgetGetV30ApiService)(&c.common)
 	//c.ToolsTaskRaiseCreateV2Api = (*ToolsTaskRaiseCreateV2ApiService)(&c.common)
 	//c.ToolsTaskRaiseDataGetV2Api = (*ToolsTaskRaiseDataGetV2ApiService)(&c.common)
 	//c.ToolsTaskRaiseGetV2Api = (*ToolsTaskRaiseGetV2ApiService)(&c.common)

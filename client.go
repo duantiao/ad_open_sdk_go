@@ -1132,437 +1132,437 @@ func (c *Client) PromotionUpdateV30Api() *api.PromotionUpdateV30ApiService {
 	return c.ApiClient.PromotionUpdateV30Api
 }
 
-//func (c *Client) QianchuanAccountBalanceGetV10Api() *api.QianchuanAccountBalanceGetV10ApiService {
-//	return c.ApiClient.QianchuanAccountBalanceGetV10Api
-//}
-//
-//func (c *Client) QianchuanAccountBudgetGetV10Api() *api.QianchuanAccountBudgetGetV10ApiService {
-//	return c.ApiClient.QianchuanAccountBudgetGetV10Api
-//}
-//
-//func (c *Client) QianchuanAccountBudgetUpdateV10Api() *api.QianchuanAccountBudgetUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAccountBudgetUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdBidUpdateV10Api() *api.QianchuanAdBidUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdBidUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdBudgetUpdateV10Api() *api.QianchuanAdBudgetUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdBudgetUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdCompensateStatusGetV10Api() *api.QianchuanAdCompensateStatusGetV10ApiService {
-//	return c.ApiClient.QianchuanAdCompensateStatusGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdCreateV10Api() *api.QianchuanAdCreateV10ApiService {
-//	return c.ApiClient.QianchuanAdCreateV10Api
-//}
-//
-//func (c *Client) QianchuanAdDetailGetV10Api() *api.QianchuanAdDetailGetV10ApiService {
-//	return c.ApiClient.QianchuanAdDetailGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdGetV10Api() *api.QianchuanAdGetV10ApiService {
-//	return c.ApiClient.QianchuanAdGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdKeywordsGetV10Api() *api.QianchuanAdKeywordsGetV10ApiService {
-//	return c.ApiClient.QianchuanAdKeywordsGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdKeywordsUpdateV10Api() *api.QianchuanAdKeywordsUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdKeywordsUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdLearingStatusGetV10Api() *api.QianchuanAdLearingStatusGetV10ApiService {
-//	return c.ApiClient.QianchuanAdLearingStatusGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdPivativewordsGetV10Api() *api.QianchuanAdPivativewordsGetV10ApiService {
-//	return c.ApiClient.QianchuanAdPivativewordsGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdPivativewordsUpdateV10Api() *api.QianchuanAdPivativewordsUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdPivativewordsUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdQuotaGetV10Api() *api.QianchuanAdQuotaGetV10ApiService {
-//	return c.ApiClient.QianchuanAdQuotaGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdRecommendKeywordsGetV10Api() *api.QianchuanAdRecommendKeywordsGetV10ApiService {
-//	return c.ApiClient.QianchuanAdRecommendKeywordsGetV10Api
-//}
-//
-//func (c *Client) QianchuanAdRegionUpdateV10Api() *api.QianchuanAdRegionUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdRegionUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdRejectReasonV10Api() *api.QianchuanAdRejectReasonV10ApiService {
-//	return c.ApiClient.QianchuanAdRejectReasonV10Api
-//}
-//
-//func (c *Client) QianchuanAdScheduleDateUpdateV10Api() *api.QianchuanAdScheduleDateUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdScheduleDateUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdScheduleFixedRangeUpdateV10Api() *api.QianchuanAdScheduleFixedRangeUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdScheduleFixedRangeUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdScheduleTimeUpdateV10Api() *api.QianchuanAdScheduleTimeUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdScheduleTimeUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdStatusUpdateV10Api() *api.QianchuanAdStatusUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdStatusUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdUpdateV10Api() *api.QianchuanAdUpdateV10ApiService {
-//	return c.ApiClient.QianchuanAdUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanAdvertiserTypeGetV10Api() *api.QianchuanAdvertiserTypeGetV10ApiService {
-//	return c.ApiClient.QianchuanAdvertiserTypeGetV10Api
-//}
-//
-//func (c *Client) QianchuanAudienceCreateByFileV10Api() *api.QianchuanAudienceCreateByFileV10ApiService {
-//	return c.ApiClient.QianchuanAudienceCreateByFileV10Api
-//}
-//
-//func (c *Client) QianchuanAudienceDeleteV10Api() *api.QianchuanAudienceDeleteV10ApiService {
-//	return c.ApiClient.QianchuanAudienceDeleteV10Api
-//}
-//
-//func (c *Client) QianchuanAudienceFilePartUploadV10Api() *api.QianchuanAudienceFilePartUploadV10ApiService {
-//	return c.ApiClient.QianchuanAudienceFilePartUploadV10Api
-//}
-//
-//func (c *Client) QianchuanAudienceFileUploadV10Api() *api.QianchuanAudienceFileUploadV10ApiService {
-//	return c.ApiClient.QianchuanAudienceFileUploadV10Api
-//}
-//
-//func (c *Client) QianchuanAudienceGroupGetV10Api() *api.QianchuanAudienceGroupGetV10ApiService {
-//	return c.ApiClient.QianchuanAudienceGroupGetV10Api
-//}
-//
-//func (c *Client) QianchuanAudienceListGetV10Api() *api.QianchuanAudienceListGetV10ApiService {
-//	return c.ApiClient.QianchuanAudienceListGetV10Api
-//}
-//
-//func (c *Client) QianchuanAudiencePushV10Api() *api.QianchuanAudiencePushV10ApiService {
-//	return c.ApiClient.QianchuanAudiencePushV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeAuthorizedGetV10Api() *api.QianchuanAwemeAuthorizedGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeAuthorizedGetV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeEstimateProfitV10Api() *api.QianchuanAwemeEstimateProfitV10ApiService {
-//	return c.ApiClient.QianchuanAwemeEstimateProfitV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeInterestActionInterestKeywordV10Api() *api.QianchuanAwemeInterestActionInterestKeywordV10ApiService {
-//	return c.ApiClient.QianchuanAwemeInterestActionInterestKeywordV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeOrderBudgetAddV10Api() *api.QianchuanAwemeOrderBudgetAddV10ApiService {
-//	return c.ApiClient.QianchuanAwemeOrderBudgetAddV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeOrderCreateV10Api() *api.QianchuanAwemeOrderCreateV10ApiService {
-//	return c.ApiClient.QianchuanAwemeOrderCreateV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeOrderDetailGetV10Api() *api.QianchuanAwemeOrderDetailGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeOrderDetailGetV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeOrderGetV10Api() *api.QianchuanAwemeOrderGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeOrderGetV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeOrderQuotaGetV10Api() *api.QianchuanAwemeOrderQuotaGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeOrderQuotaGetV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api() *api.QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeOrderTerminateV10Api() *api.QianchuanAwemeOrderTerminateV10ApiService {
-//	return c.ApiClient.QianchuanAwemeOrderTerminateV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeProductAvailableGetV10Api() *api.QianchuanAwemeProductAvailableGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeProductAvailableGetV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeReportOrderGetV10Api() *api.QianchuanAwemeReportOrderGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeReportOrderGetV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeSuggestBidV10Api() *api.QianchuanAwemeSuggestBidV10ApiService {
-//	return c.ApiClient.QianchuanAwemeSuggestBidV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeSuggestRoiGoalV10Api() *api.QianchuanAwemeSuggestRoiGoalV10ApiService {
-//	return c.ApiClient.QianchuanAwemeSuggestRoiGoalV10Api
-//}
-//
-//func (c *Client) QianchuanAwemeVideoGetV10Api() *api.QianchuanAwemeVideoGetV10ApiService {
-//	return c.ApiClient.QianchuanAwemeVideoGetV10Api
-//}
-//
-//func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchCampaignStatusUpdateV10ApiService {
-//	return c.ApiClient.QianchuanBatchCampaignStatusUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
-//	return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
-//}
-//
-//func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
-//	return c.ApiClient.QianchuanCampaignCreateV10Api
-//}
-//
-//func (c *Client) QianchuanCampaignListGetV10Api() *api.QianchuanCampaignListGetV10ApiService {
-//	return c.ApiClient.QianchuanCampaignListGetV10Api
-//}
-//
-//func (c *Client) QianchuanCampaignUpdateV10Api() *api.QianchuanCampaignUpdateV10ApiService {
-//	return c.ApiClient.QianchuanCampaignUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanCarouselAwemeGetV10Api() *api.QianchuanCarouselAwemeGetV10ApiService {
-//	return c.ApiClient.QianchuanCarouselAwemeGetV10Api
-//}
-//
-//func (c *Client) QianchuanCarouselGetV10Api() *api.QianchuanCarouselGetV10ApiService {
-//	return c.ApiClient.QianchuanCarouselGetV10Api
-//}
-//
-//func (c *Client) QianchuanCreativeGetV10Api() *api.QianchuanCreativeGetV10ApiService {
-//	return c.ApiClient.QianchuanCreativeGetV10Api
-//}
-//
-//func (c *Client) QianchuanCreativeRejectReasonV10Api() *api.QianchuanCreativeRejectReasonV10ApiService {
-//	return c.ApiClient.QianchuanCreativeRejectReasonV10Api
-//}
-//
-//func (c *Client) QianchuanCreativeStatusUpdateV10Api() *api.QianchuanCreativeStatusUpdateV10ApiService {
-//	return c.ApiClient.QianchuanCreativeStatusUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanDmpAudiencesGetV10Api() *api.QianchuanDmpAudiencesGetV10ApiService {
-//	return c.ApiClient.QianchuanDmpAudiencesGetV10Api
-//}
-//
-//func (c *Client) QianchuanEcpAwemeAdGetV10Api() *api.QianchuanEcpAwemeAdGetV10ApiService {
-//	return c.ApiClient.QianchuanEcpAwemeAdGetV10Api
-//}
-//
-//func (c *Client) QianchuanEstimateEffectV10Api() *api.QianchuanEstimateEffectV10ApiService {
-//	return c.ApiClient.QianchuanEstimateEffectV10Api
-//}
-//
-//func (c *Client) QianchuanFileImageDeleteV10Api() *api.QianchuanFileImageDeleteV10ApiService {
-//	return c.ApiClient.QianchuanFileImageDeleteV10Api
-//}
-//
-//func (c *Client) QianchuanFileVideoAwemeGetV10Api() *api.QianchuanFileVideoAwemeGetV10ApiService {
-//	return c.ApiClient.QianchuanFileVideoAwemeGetV10Api
-//}
-//
-//func (c *Client) QianchuanFileVideoDeleteV10Api() *api.QianchuanFileVideoDeleteV10ApiService {
-//	return c.ApiClient.QianchuanFileVideoDeleteV10Api
-//}
-//
-//func (c *Client) QianchuanFileVideoEfficiencyGetV10Api() *api.QianchuanFileVideoEfficiencyGetV10ApiService {
-//	return c.ApiClient.QianchuanFileVideoEfficiencyGetV10Api
-//}
-//
-//func (c *Client) QianchuanFileVideoOriginalGetV10Api() *api.QianchuanFileVideoOriginalGetV10ApiService {
-//	return c.ApiClient.QianchuanFileVideoOriginalGetV10Api
-//}
-//
-//func (c *Client) QianchuanFinanceDetailGetV10Api() *api.QianchuanFinanceDetailGetV10ApiService {
-//	return c.ApiClient.QianchuanFinanceDetailGetV10Api
-//}
-//
-//func (c *Client) QianchuanFinanceWalletGetV10Api() *api.QianchuanFinanceWalletGetV10ApiService {
-//	return c.ApiClient.QianchuanFinanceWalletGetV10Api
-//}
-//
-//func (c *Client) QianchuanImageGetV10Api() *api.QianchuanImageGetV10ApiService {
-//	return c.ApiClient.QianchuanImageGetV10Api
-//}
-//
-//func (c *Client) QianchuanKeywordCheckV10Api() *api.QianchuanKeywordCheckV10ApiService {
-//	return c.ApiClient.QianchuanKeywordCheckV10Api
-//}
-//
-//func (c *Client) QianchuanKeywordPackageGetV10Api() *api.QianchuanKeywordPackageGetV10ApiService {
-//	return c.ApiClient.QianchuanKeywordPackageGetV10Api
-//}
-//
-//func (c *Client) QianchuanLqAdGetV10Api() *api.QianchuanLqAdGetV10ApiService {
-//	return c.ApiClient.QianchuanLqAdGetV10Api
-//}
-//
-//func (c *Client) QianchuanOrientationPackageGetV10Api() *api.QianchuanOrientationPackageGetV10ApiService {
-//	return c.ApiClient.QianchuanOrientationPackageGetV10Api
-//}
-//
-//func (c *Client) QianchuanProductAnalyseCompareCreativeV10Api() *api.QianchuanProductAnalyseCompareCreativeV10ApiService {
-//	return c.ApiClient.QianchuanProductAnalyseCompareCreativeV10Api
-//}
-//
-//func (c *Client) QianchuanProductAnalyseCompareStatsDataV10Api() *api.QianchuanProductAnalyseCompareStatsDataV10ApiService {
-//	return c.ApiClient.QianchuanProductAnalyseCompareStatsDataV10Api
-//}
-//
-//func (c *Client) QianchuanProductAnalyseListV10Api() *api.QianchuanProductAnalyseListV10ApiService {
-//	return c.ApiClient.QianchuanProductAnalyseListV10Api
-//}
-//
-//func (c *Client) QianchuanProductAvailableGetV10Api() *api.QianchuanProductAvailableGetV10ApiService {
-//	return c.ApiClient.QianchuanProductAvailableGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportAdGetV10Api() *api.QianchuanReportAdGetV10ApiService {
-//	return c.ApiClient.QianchuanReportAdGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportAdvertiserGetV10Api() *api.QianchuanReportAdvertiserGetV10ApiService {
-//	return c.ApiClient.QianchuanReportAdvertiserGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportCreativeGetV10Api() *api.QianchuanReportCreativeGetV10ApiService {
-//	return c.ApiClient.QianchuanReportCreativeGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportCustomConfigGetV10Api() *api.QianchuanReportCustomConfigGetV10ApiService {
-//	return c.ApiClient.QianchuanReportCustomConfigGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportCustomGetV10Api() *api.QianchuanReportCustomGetV10ApiService {
-//	return c.ApiClient.QianchuanReportCustomGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportLiveGetV10Api() *api.QianchuanReportLiveGetV10ApiService {
-//	return c.ApiClient.QianchuanReportLiveGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportLongTransferOrderGetV10Api() *api.QianchuanReportLongTransferOrderGetV10ApiService {
-//	return c.ApiClient.QianchuanReportLongTransferOrderGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportMaterialGetV10Api() *api.QianchuanReportMaterialGetV10ApiService {
-//	return c.ApiClient.QianchuanReportMaterialGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportSearchWordGetV10Api() *api.QianchuanReportSearchWordGetV10ApiService {
-//	return c.ApiClient.QianchuanReportSearchWordGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportUniPromotionDimensionDataAuthorGetV10Api() *api.QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService {
-//	return c.ApiClient.QianchuanReportUniPromotionDimensionDataAuthorGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportUniPromotionDimensionDataRoomGetV10Api() *api.QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService {
-//	return c.ApiClient.QianchuanReportUniPromotionDimensionDataRoomGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportUniPromotionGetV10Api() *api.QianchuanReportUniPromotionGetV10ApiService {
-//	return c.ApiClient.QianchuanReportUniPromotionGetV10Api
-//}
-//
-//func (c *Client) QianchuanReportVideoUserLoseGetV10Api() *api.QianchuanReportVideoUserLoseGetV10ApiService {
-//	return c.ApiClient.QianchuanReportVideoUserLoseGetV10Api
-//}
-//
-//func (c *Client) QianchuanRoiGoalUpdateV10Api() *api.QianchuanRoiGoalUpdateV10ApiService {
-//	return c.ApiClient.QianchuanRoiGoalUpdateV10Api
-//}
-//
-//func (c *Client) QianchuanShopAdvertiserListV10Api() *api.QianchuanShopAdvertiserListV10ApiService {
-//	return c.ApiClient.QianchuanShopAdvertiserListV10Api
-//}
-//
-//func (c *Client) QianchuanShopAuthorizedGetV10Api() *api.QianchuanShopAuthorizedGetV10ApiService {
-//	return c.ApiClient.QianchuanShopAuthorizedGetV10Api
-//}
-//
-//func (c *Client) QianchuanShopGetV10Api() *api.QianchuanShopGetV10ApiService {
-//	return c.ApiClient.QianchuanShopGetV10Api
-//}
-//
-//func (c *Client) QianchuanSuggestBidV10Api() *api.QianchuanSuggestBidV10ApiService {
-//	return c.ApiClient.QianchuanSuggestBidV10Api
-//}
-//
-//func (c *Client) QianchuanSuggestBudgetV10Api() *api.QianchuanSuggestBudgetV10ApiService {
-//	return c.ApiClient.QianchuanSuggestBudgetV10Api
-//}
-//
-//func (c *Client) QianchuanSuggestRoiGoalV10Api() *api.QianchuanSuggestRoiGoalV10ApiService {
-//	return c.ApiClient.QianchuanSuggestRoiGoalV10Api
-//}
-//
-//func (c *Client) QianchuanTodayLiveRoomDetailGetV10Api() *api.QianchuanTodayLiveRoomDetailGetV10ApiService {
-//	return c.ApiClient.QianchuanTodayLiveRoomDetailGetV10Api
-//}
-//
-//func (c *Client) QianchuanTodayLiveRoomFlowPerformanceGetV10Api() *api.QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService {
-//	return c.ApiClient.QianchuanTodayLiveRoomFlowPerformanceGetV10Api
-//}
-//
-//func (c *Client) QianchuanTodayLiveRoomGetV10Api() *api.QianchuanTodayLiveRoomGetV10ApiService {
-//	return c.ApiClient.QianchuanTodayLiveRoomGetV10Api
-//}
-//
-//func (c *Client) QianchuanTodayLiveRoomProductListGetV10Api() *api.QianchuanTodayLiveRoomProductListGetV10ApiService {
-//	return c.ApiClient.QianchuanTodayLiveRoomProductListGetV10Api
-//}
-//
-//func (c *Client) QianchuanTodayLiveRoomUserGetV10Api() *api.QianchuanTodayLiveRoomUserGetV10ApiService {
-//	return c.ApiClient.QianchuanTodayLiveRoomUserGetV10Api
-//}
-//
-//func (c *Client) QianchuanToolsAllowCouponV10Api() *api.QianchuanToolsAllowCouponV10ApiService {
-//	return c.ApiClient.QianchuanToolsAllowCouponV10Api
-//}
-//
-//func (c *Client) QianchuanToolsAwemeAuthV10Api() *api.QianchuanToolsAwemeAuthV10ApiService {
-//	return c.ApiClient.QianchuanToolsAwemeAuthV10Api
-//}
-//
-//func (c *Client) QianchuanToolsEstimateAudienceV10Api() *api.QianchuanToolsEstimateAudienceV10ApiService {
-//	return c.ApiClient.QianchuanToolsEstimateAudienceV10Api
-//}
-//
-//func (c *Client) QianchuanToolsGrayV10Api() *api.QianchuanToolsGrayV10ApiService {
-//	return c.ApiClient.QianchuanToolsGrayV10Api
-//}
-//
-//func (c *Client) QianchuanToolsShopAuthV10Api() *api.QianchuanToolsShopAuthV10ApiService {
-//	return c.ApiClient.QianchuanToolsShopAuthV10Api
-//}
-//
-//func (c *Client) QianchuanToolsSmartBoostAdBoostReportGetV10Api() *api.QianchuanToolsSmartBoostAdBoostReportGetV10ApiService {
-//	return c.ApiClient.QianchuanToolsSmartBoostAdBoostReportGetV10Api
-//}
-//
-//func (c *Client) QianchuanToolsSmartBoostAdBoostSetV10Api() *api.QianchuanToolsSmartBoostAdBoostSetV10ApiService {
-//	return c.ApiClient.QianchuanToolsSmartBoostAdBoostSetV10Api
-//}
-//
-//func (c *Client) QianchuanToolsSmartBoostAdBoostStatusGetV10Api() *api.QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService {
-//	return c.ApiClient.QianchuanToolsSmartBoostAdBoostStatusGetV10Api
-//}
+//	func (c *Client) QianchuanAccountBalanceGetV10Api() *api.QianchuanAccountBalanceGetV10ApiService {
+//		return c.ApiClient.QianchuanAccountBalanceGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAccountBudgetGetV10Api() *api.QianchuanAccountBudgetGetV10ApiService {
+//		return c.ApiClient.QianchuanAccountBudgetGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAccountBudgetUpdateV10Api() *api.QianchuanAccountBudgetUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAccountBudgetUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdBidUpdateV10Api() *api.QianchuanAdBidUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdBidUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdBudgetUpdateV10Api() *api.QianchuanAdBudgetUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdBudgetUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdCompensateStatusGetV10Api() *api.QianchuanAdCompensateStatusGetV10ApiService {
+//		return c.ApiClient.QianchuanAdCompensateStatusGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdCreateV10Api() *api.QianchuanAdCreateV10ApiService {
+//		return c.ApiClient.QianchuanAdCreateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdDetailGetV10Api() *api.QianchuanAdDetailGetV10ApiService {
+//		return c.ApiClient.QianchuanAdDetailGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdGetV10Api() *api.QianchuanAdGetV10ApiService {
+//		return c.ApiClient.QianchuanAdGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdKeywordsGetV10Api() *api.QianchuanAdKeywordsGetV10ApiService {
+//		return c.ApiClient.QianchuanAdKeywordsGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdKeywordsUpdateV10Api() *api.QianchuanAdKeywordsUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdKeywordsUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdLearingStatusGetV10Api() *api.QianchuanAdLearingStatusGetV10ApiService {
+//		return c.ApiClient.QianchuanAdLearingStatusGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdPivativewordsGetV10Api() *api.QianchuanAdPivativewordsGetV10ApiService {
+//		return c.ApiClient.QianchuanAdPivativewordsGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdPivativewordsUpdateV10Api() *api.QianchuanAdPivativewordsUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdPivativewordsUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdQuotaGetV10Api() *api.QianchuanAdQuotaGetV10ApiService {
+//		return c.ApiClient.QianchuanAdQuotaGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdRecommendKeywordsGetV10Api() *api.QianchuanAdRecommendKeywordsGetV10ApiService {
+//		return c.ApiClient.QianchuanAdRecommendKeywordsGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdRegionUpdateV10Api() *api.QianchuanAdRegionUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdRegionUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdRejectReasonV10Api() *api.QianchuanAdRejectReasonV10ApiService {
+//		return c.ApiClient.QianchuanAdRejectReasonV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdScheduleDateUpdateV10Api() *api.QianchuanAdScheduleDateUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdScheduleDateUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdScheduleFixedRangeUpdateV10Api() *api.QianchuanAdScheduleFixedRangeUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdScheduleFixedRangeUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdScheduleTimeUpdateV10Api() *api.QianchuanAdScheduleTimeUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdScheduleTimeUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdStatusUpdateV10Api() *api.QianchuanAdStatusUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdStatusUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdUpdateV10Api() *api.QianchuanAdUpdateV10ApiService {
+//		return c.ApiClient.QianchuanAdUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAdvertiserTypeGetV10Api() *api.QianchuanAdvertiserTypeGetV10ApiService {
+//		return c.ApiClient.QianchuanAdvertiserTypeGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAudienceCreateByFileV10Api() *api.QianchuanAudienceCreateByFileV10ApiService {
+//		return c.ApiClient.QianchuanAudienceCreateByFileV10Api
+//	}
+//
+//	func (c *Client) QianchuanAudienceDeleteV10Api() *api.QianchuanAudienceDeleteV10ApiService {
+//		return c.ApiClient.QianchuanAudienceDeleteV10Api
+//	}
+//
+//	func (c *Client) QianchuanAudienceFilePartUploadV10Api() *api.QianchuanAudienceFilePartUploadV10ApiService {
+//		return c.ApiClient.QianchuanAudienceFilePartUploadV10Api
+//	}
+//
+//	func (c *Client) QianchuanAudienceFileUploadV10Api() *api.QianchuanAudienceFileUploadV10ApiService {
+//		return c.ApiClient.QianchuanAudienceFileUploadV10Api
+//	}
+//
+//	func (c *Client) QianchuanAudienceGroupGetV10Api() *api.QianchuanAudienceGroupGetV10ApiService {
+//		return c.ApiClient.QianchuanAudienceGroupGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAudienceListGetV10Api() *api.QianchuanAudienceListGetV10ApiService {
+//		return c.ApiClient.QianchuanAudienceListGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAudiencePushV10Api() *api.QianchuanAudiencePushV10ApiService {
+//		return c.ApiClient.QianchuanAudiencePushV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeAuthorizedGetV10Api() *api.QianchuanAwemeAuthorizedGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeAuthorizedGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeEstimateProfitV10Api() *api.QianchuanAwemeEstimateProfitV10ApiService {
+//		return c.ApiClient.QianchuanAwemeEstimateProfitV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeInterestActionInterestKeywordV10Api() *api.QianchuanAwemeInterestActionInterestKeywordV10ApiService {
+//		return c.ApiClient.QianchuanAwemeInterestActionInterestKeywordV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeOrderBudgetAddV10Api() *api.QianchuanAwemeOrderBudgetAddV10ApiService {
+//		return c.ApiClient.QianchuanAwemeOrderBudgetAddV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeOrderCreateV10Api() *api.QianchuanAwemeOrderCreateV10ApiService {
+//		return c.ApiClient.QianchuanAwemeOrderCreateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeOrderDetailGetV10Api() *api.QianchuanAwemeOrderDetailGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeOrderDetailGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeOrderGetV10Api() *api.QianchuanAwemeOrderGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeOrderGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeOrderQuotaGetV10Api() *api.QianchuanAwemeOrderQuotaGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeOrderQuotaGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api() *api.QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeOrderTerminateV10Api() *api.QianchuanAwemeOrderTerminateV10ApiService {
+//		return c.ApiClient.QianchuanAwemeOrderTerminateV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeProductAvailableGetV10Api() *api.QianchuanAwemeProductAvailableGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeProductAvailableGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeReportOrderGetV10Api() *api.QianchuanAwemeReportOrderGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeReportOrderGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeSuggestBidV10Api() *api.QianchuanAwemeSuggestBidV10ApiService {
+//		return c.ApiClient.QianchuanAwemeSuggestBidV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeSuggestRoiGoalV10Api() *api.QianchuanAwemeSuggestRoiGoalV10ApiService {
+//		return c.ApiClient.QianchuanAwemeSuggestRoiGoalV10Api
+//	}
+//
+//	func (c *Client) QianchuanAwemeVideoGetV10Api() *api.QianchuanAwemeVideoGetV10ApiService {
+//		return c.ApiClient.QianchuanAwemeVideoGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchCampaignStatusUpdateV10ApiService {
+//		return c.ApiClient.QianchuanBatchCampaignStatusUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
+//		return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
+//		return c.ApiClient.QianchuanCampaignCreateV10Api
+//	}
+//
+//	func (c *Client) QianchuanCampaignListGetV10Api() *api.QianchuanCampaignListGetV10ApiService {
+//		return c.ApiClient.QianchuanCampaignListGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanCampaignUpdateV10Api() *api.QianchuanCampaignUpdateV10ApiService {
+//		return c.ApiClient.QianchuanCampaignUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanCarouselAwemeGetV10Api() *api.QianchuanCarouselAwemeGetV10ApiService {
+//		return c.ApiClient.QianchuanCarouselAwemeGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanCarouselGetV10Api() *api.QianchuanCarouselGetV10ApiService {
+//		return c.ApiClient.QianchuanCarouselGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanCreativeGetV10Api() *api.QianchuanCreativeGetV10ApiService {
+//		return c.ApiClient.QianchuanCreativeGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanCreativeRejectReasonV10Api() *api.QianchuanCreativeRejectReasonV10ApiService {
+//		return c.ApiClient.QianchuanCreativeRejectReasonV10Api
+//	}
+//
+//	func (c *Client) QianchuanCreativeStatusUpdateV10Api() *api.QianchuanCreativeStatusUpdateV10ApiService {
+//		return c.ApiClient.QianchuanCreativeStatusUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanDmpAudiencesGetV10Api() *api.QianchuanDmpAudiencesGetV10ApiService {
+//		return c.ApiClient.QianchuanDmpAudiencesGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanEcpAwemeAdGetV10Api() *api.QianchuanEcpAwemeAdGetV10ApiService {
+//		return c.ApiClient.QianchuanEcpAwemeAdGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanEstimateEffectV10Api() *api.QianchuanEstimateEffectV10ApiService {
+//		return c.ApiClient.QianchuanEstimateEffectV10Api
+//	}
+//
+//	func (c *Client) QianchuanFileImageDeleteV10Api() *api.QianchuanFileImageDeleteV10ApiService {
+//		return c.ApiClient.QianchuanFileImageDeleteV10Api
+//	}
+//
+//	func (c *Client) QianchuanFileVideoAwemeGetV10Api() *api.QianchuanFileVideoAwemeGetV10ApiService {
+//		return c.ApiClient.QianchuanFileVideoAwemeGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanFileVideoDeleteV10Api() *api.QianchuanFileVideoDeleteV10ApiService {
+//		return c.ApiClient.QianchuanFileVideoDeleteV10Api
+//	}
+//
+//	func (c *Client) QianchuanFileVideoEfficiencyGetV10Api() *api.QianchuanFileVideoEfficiencyGetV10ApiService {
+//		return c.ApiClient.QianchuanFileVideoEfficiencyGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanFileVideoOriginalGetV10Api() *api.QianchuanFileVideoOriginalGetV10ApiService {
+//		return c.ApiClient.QianchuanFileVideoOriginalGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanFinanceDetailGetV10Api() *api.QianchuanFinanceDetailGetV10ApiService {
+//		return c.ApiClient.QianchuanFinanceDetailGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanFinanceWalletGetV10Api() *api.QianchuanFinanceWalletGetV10ApiService {
+//		return c.ApiClient.QianchuanFinanceWalletGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanImageGetV10Api() *api.QianchuanImageGetV10ApiService {
+//		return c.ApiClient.QianchuanImageGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanKeywordCheckV10Api() *api.QianchuanKeywordCheckV10ApiService {
+//		return c.ApiClient.QianchuanKeywordCheckV10Api
+//	}
+//
+//	func (c *Client) QianchuanKeywordPackageGetV10Api() *api.QianchuanKeywordPackageGetV10ApiService {
+//		return c.ApiClient.QianchuanKeywordPackageGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanLqAdGetV10Api() *api.QianchuanLqAdGetV10ApiService {
+//		return c.ApiClient.QianchuanLqAdGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanOrientationPackageGetV10Api() *api.QianchuanOrientationPackageGetV10ApiService {
+//		return c.ApiClient.QianchuanOrientationPackageGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanProductAnalyseCompareCreativeV10Api() *api.QianchuanProductAnalyseCompareCreativeV10ApiService {
+//		return c.ApiClient.QianchuanProductAnalyseCompareCreativeV10Api
+//	}
+//
+//	func (c *Client) QianchuanProductAnalyseCompareStatsDataV10Api() *api.QianchuanProductAnalyseCompareStatsDataV10ApiService {
+//		return c.ApiClient.QianchuanProductAnalyseCompareStatsDataV10Api
+//	}
+//
+//	func (c *Client) QianchuanProductAnalyseListV10Api() *api.QianchuanProductAnalyseListV10ApiService {
+//		return c.ApiClient.QianchuanProductAnalyseListV10Api
+//	}
+//
+//	func (c *Client) QianchuanProductAvailableGetV10Api() *api.QianchuanProductAvailableGetV10ApiService {
+//		return c.ApiClient.QianchuanProductAvailableGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportAdGetV10Api() *api.QianchuanReportAdGetV10ApiService {
+//		return c.ApiClient.QianchuanReportAdGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportAdvertiserGetV10Api() *api.QianchuanReportAdvertiserGetV10ApiService {
+//		return c.ApiClient.QianchuanReportAdvertiserGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportCreativeGetV10Api() *api.QianchuanReportCreativeGetV10ApiService {
+//		return c.ApiClient.QianchuanReportCreativeGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportCustomConfigGetV10Api() *api.QianchuanReportCustomConfigGetV10ApiService {
+//		return c.ApiClient.QianchuanReportCustomConfigGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportCustomGetV10Api() *api.QianchuanReportCustomGetV10ApiService {
+//		return c.ApiClient.QianchuanReportCustomGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportLiveGetV10Api() *api.QianchuanReportLiveGetV10ApiService {
+//		return c.ApiClient.QianchuanReportLiveGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportLongTransferOrderGetV10Api() *api.QianchuanReportLongTransferOrderGetV10ApiService {
+//		return c.ApiClient.QianchuanReportLongTransferOrderGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportMaterialGetV10Api() *api.QianchuanReportMaterialGetV10ApiService {
+//		return c.ApiClient.QianchuanReportMaterialGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportSearchWordGetV10Api() *api.QianchuanReportSearchWordGetV10ApiService {
+//		return c.ApiClient.QianchuanReportSearchWordGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportUniPromotionDimensionDataAuthorGetV10Api() *api.QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService {
+//		return c.ApiClient.QianchuanReportUniPromotionDimensionDataAuthorGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportUniPromotionDimensionDataRoomGetV10Api() *api.QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService {
+//		return c.ApiClient.QianchuanReportUniPromotionDimensionDataRoomGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportUniPromotionGetV10Api() *api.QianchuanReportUniPromotionGetV10ApiService {
+//		return c.ApiClient.QianchuanReportUniPromotionGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanReportVideoUserLoseGetV10Api() *api.QianchuanReportVideoUserLoseGetV10ApiService {
+//		return c.ApiClient.QianchuanReportVideoUserLoseGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanRoiGoalUpdateV10Api() *api.QianchuanRoiGoalUpdateV10ApiService {
+//		return c.ApiClient.QianchuanRoiGoalUpdateV10Api
+//	}
+//
+//	func (c *Client) QianchuanShopAdvertiserListV10Api() *api.QianchuanShopAdvertiserListV10ApiService {
+//		return c.ApiClient.QianchuanShopAdvertiserListV10Api
+//	}
+//
+//	func (c *Client) QianchuanShopAuthorizedGetV10Api() *api.QianchuanShopAuthorizedGetV10ApiService {
+//		return c.ApiClient.QianchuanShopAuthorizedGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanShopGetV10Api() *api.QianchuanShopGetV10ApiService {
+//		return c.ApiClient.QianchuanShopGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanSuggestBidV10Api() *api.QianchuanSuggestBidV10ApiService {
+//		return c.ApiClient.QianchuanSuggestBidV10Api
+//	}
+//
+//	func (c *Client) QianchuanSuggestBudgetV10Api() *api.QianchuanSuggestBudgetV10ApiService {
+//		return c.ApiClient.QianchuanSuggestBudgetV10Api
+//	}
+//
+//	func (c *Client) QianchuanSuggestRoiGoalV10Api() *api.QianchuanSuggestRoiGoalV10ApiService {
+//		return c.ApiClient.QianchuanSuggestRoiGoalV10Api
+//	}
+//
+//	func (c *Client) QianchuanTodayLiveRoomDetailGetV10Api() *api.QianchuanTodayLiveRoomDetailGetV10ApiService {
+//		return c.ApiClient.QianchuanTodayLiveRoomDetailGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanTodayLiveRoomFlowPerformanceGetV10Api() *api.QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService {
+//		return c.ApiClient.QianchuanTodayLiveRoomFlowPerformanceGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanTodayLiveRoomGetV10Api() *api.QianchuanTodayLiveRoomGetV10ApiService {
+//		return c.ApiClient.QianchuanTodayLiveRoomGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanTodayLiveRoomProductListGetV10Api() *api.QianchuanTodayLiveRoomProductListGetV10ApiService {
+//		return c.ApiClient.QianchuanTodayLiveRoomProductListGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanTodayLiveRoomUserGetV10Api() *api.QianchuanTodayLiveRoomUserGetV10ApiService {
+//		return c.ApiClient.QianchuanTodayLiveRoomUserGetV10Api
+//	}
+//
+//	func (c *Client) QianchuanToolsAllowCouponV10Api() *api.QianchuanToolsAllowCouponV10ApiService {
+//		return c.ApiClient.QianchuanToolsAllowCouponV10Api
+//	}
+//
+//	func (c *Client) QianchuanToolsAwemeAuthV10Api() *api.QianchuanToolsAwemeAuthV10ApiService {
+//		return c.ApiClient.QianchuanToolsAwemeAuthV10Api
+//	}
+//
+//	func (c *Client) QianchuanToolsEstimateAudienceV10Api() *api.QianchuanToolsEstimateAudienceV10ApiService {
+//		return c.ApiClient.QianchuanToolsEstimateAudienceV10Api
+//	}
+//
+//	func (c *Client) QianchuanToolsGrayV10Api() *api.QianchuanToolsGrayV10ApiService {
+//		return c.ApiClient.QianchuanToolsGrayV10Api
+//	}
+//
+//	func (c *Client) QianchuanToolsShopAuthV10Api() *api.QianchuanToolsShopAuthV10ApiService {
+//		return c.ApiClient.QianchuanToolsShopAuthV10Api
+//	}
+//
+//	func (c *Client) QianchuanToolsSmartBoostAdBoostReportGetV10Api() *api.QianchuanToolsSmartBoostAdBoostReportGetV10ApiService {
+//		return c.ApiClient.QianchuanToolsSmartBoostAdBoostReportGetV10Api
+//	}
+func (c *Client) QianchuanToolsSmartBoostAdBoostSetV10Api() *api.QianchuanToolsSmartBoostAdBoostSetV10ApiService {
+	return c.ApiClient.QianchuanToolsSmartBoostAdBoostSetV10Api
+}
+
+func (c *Client) QianchuanToolsSmartBoostAdBoostStatusGetV10Api() *api.QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService {
+	return c.ApiClient.QianchuanToolsSmartBoostAdBoostStatusGetV10Api
+}
+
 //
 //func (c *Client) QianchuanToolsSmartBoostAdBoostVersionGetV10Api() *api.QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService {
 //	return c.ApiClient.QianchuanToolsSmartBoostAdBoostVersionGetV10Api
@@ -2564,225 +2564,224 @@ func (c *Client) ToolsIesAccountSearchV2Api() *api.ToolsIesAccountSearchV2ApiSer
 	return c.ApiClient.ToolsIesAccountSearchV2Api
 }
 
-//func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {
-//	return c.ApiClient.ToolsIndustryGetV2Api
-//}
+//	func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {
+//		return c.ApiClient.ToolsIndustryGetV2Api
+//	}
 //
-//func (c *Client) ToolsInterestActionActionKeywordV2Api() *api.ToolsInterestActionActionKeywordV2ApiService {
-//	return c.ApiClient.ToolsInterestActionActionKeywordV2Api
-//}
+//	func (c *Client) ToolsInterestActionActionKeywordV2Api() *api.ToolsInterestActionActionKeywordV2ApiService {
+//		return c.ApiClient.ToolsInterestActionActionKeywordV2Api
+//	}
 //
-//func (c *Client) ToolsInterestActionId2wordV2Api() *api.ToolsInterestActionId2wordV2ApiService {
-//	return c.ApiClient.ToolsInterestActionId2wordV2Api
-//}
+//	func (c *Client) ToolsInterestActionId2wordV2Api() *api.ToolsInterestActionId2wordV2ApiService {
+//		return c.ApiClient.ToolsInterestActionId2wordV2Api
+//	}
 //
-//func (c *Client) ToolsInterestActionInterestKeywordV2Api() *api.ToolsInterestActionInterestKeywordV2ApiService {
-//	return c.ApiClient.ToolsInterestActionInterestKeywordV2Api
-//}
+//	func (c *Client) ToolsInterestActionInterestKeywordV2Api() *api.ToolsInterestActionInterestKeywordV2ApiService {
+//		return c.ApiClient.ToolsInterestActionInterestKeywordV2Api
+//	}
 //
-//func (c *Client) ToolsInterestActionKeywordSuggestV2Api() *api.ToolsInterestActionKeywordSuggestV2ApiService {
-//	return c.ApiClient.ToolsInterestActionKeywordSuggestV2Api
-//}
+//	func (c *Client) ToolsInterestActionKeywordSuggestV2Api() *api.ToolsInterestActionKeywordSuggestV2ApiService {
+//		return c.ApiClient.ToolsInterestActionKeywordSuggestV2Api
+//	}
 //
-//func (c *Client) ToolsIsSupportUniversalGetV2Api() *api.ToolsIsSupportUniversalGetV2ApiService {
-//	return c.ApiClient.ToolsIsSupportUniversalGetV2Api
-//}
+//	func (c *Client) ToolsIsSupportUniversalGetV2Api() *api.ToolsIsSupportUniversalGetV2ApiService {
+//		return c.ApiClient.ToolsIsSupportUniversalGetV2Api
+//	}
 //
-//func (c *Client) ToolsKeyActionGetV2Api() *api.ToolsKeyActionGetV2ApiService {
-//	return c.ApiClient.ToolsKeyActionGetV2Api
-//}
+//	func (c *Client) ToolsKeyActionGetV2Api() *api.ToolsKeyActionGetV2ApiService {
+//		return c.ApiClient.ToolsKeyActionGetV2Api
+//	}
 //
-//func (c *Client) ToolsKeywordsBidRatioCreateV30Api() *api.ToolsKeywordsBidRatioCreateV30ApiService {
-//	return c.ApiClient.ToolsKeywordsBidRatioCreateV30Api
-//}
+//	func (c *Client) ToolsKeywordsBidRatioCreateV30Api() *api.ToolsKeywordsBidRatioCreateV30ApiService {
+//		return c.ApiClient.ToolsKeywordsBidRatioCreateV30Api
+//	}
 //
-//func (c *Client) ToolsKeywordsBidRatioDeleteV30Api() *api.ToolsKeywordsBidRatioDeleteV30ApiService {
-//	return c.ApiClient.ToolsKeywordsBidRatioDeleteV30Api
-//}
+//	func (c *Client) ToolsKeywordsBidRatioDeleteV30Api() *api.ToolsKeywordsBidRatioDeleteV30ApiService {
+//		return c.ApiClient.ToolsKeywordsBidRatioDeleteV30Api
+//	}
 //
-//func (c *Client) ToolsKeywordsBidRatioGetV30Api() *api.ToolsKeywordsBidRatioGetV30ApiService {
-//	return c.ApiClient.ToolsKeywordsBidRatioGetV30Api
-//}
+//	func (c *Client) ToolsKeywordsBidRatioGetV30Api() *api.ToolsKeywordsBidRatioGetV30ApiService {
+//		return c.ApiClient.ToolsKeywordsBidRatioGetV30Api
+//	}
 //
-//func (c *Client) ToolsKeywordsBidRatioUpdateV30Api() *api.ToolsKeywordsBidRatioUpdateV30ApiService {
-//	return c.ApiClient.ToolsKeywordsBidRatioUpdateV30Api
-//}
+//	func (c *Client) ToolsKeywordsBidRatioUpdateV30Api() *api.ToolsKeywordsBidRatioUpdateV30ApiService {
+//		return c.ApiClient.ToolsKeywordsBidRatioUpdateV30Api
+//	}
 //
-//func (c *Client) ToolsKeywordsProjectInfoGetV30Api() *api.ToolsKeywordsProjectInfoGetV30ApiService {
-//	return c.ApiClient.ToolsKeywordsProjectInfoGetV30Api
-//}
+//	func (c *Client) ToolsKeywordsProjectInfoGetV30Api() *api.ToolsKeywordsProjectInfoGetV30ApiService {
+//		return c.ApiClient.ToolsKeywordsProjectInfoGetV30Api
+//	}
 //
-//func (c *Client) ToolsLandingGroupCreateV2Api() *api.ToolsLandingGroupCreateV2ApiService {
-//	return c.ApiClient.ToolsLandingGroupCreateV2Api
-//}
+//	func (c *Client) ToolsLandingGroupCreateV2Api() *api.ToolsLandingGroupCreateV2ApiService {
+//		return c.ApiClient.ToolsLandingGroupCreateV2Api
+//	}
 //
-//func (c *Client) ToolsLandingGroupGetV2Api() *api.ToolsLandingGroupGetV2ApiService {
-//	return c.ApiClient.ToolsLandingGroupGetV2Api
-//}
+//	func (c *Client) ToolsLandingGroupGetV2Api() *api.ToolsLandingGroupGetV2ApiService {
+//		return c.ApiClient.ToolsLandingGroupGetV2Api
+//	}
 //
-//func (c *Client) ToolsLandingGroupSiteOptStatusUpdateV2Api() *api.ToolsLandingGroupSiteOptStatusUpdateV2ApiService {
-//	return c.ApiClient.ToolsLandingGroupSiteOptStatusUpdateV2Api
-//}
+//	func (c *Client) ToolsLandingGroupSiteOptStatusUpdateV2Api() *api.ToolsLandingGroupSiteOptStatusUpdateV2ApiService {
+//		return c.ApiClient.ToolsLandingGroupSiteOptStatusUpdateV2Api
+//	}
 //
-//func (c *Client) ToolsLandingGroupUpdateV2Api() *api.ToolsLandingGroupUpdateV2ApiService {
-//	return c.ApiClient.ToolsLandingGroupUpdateV2Api
-//}
+//	func (c *Client) ToolsLandingGroupUpdateV2Api() *api.ToolsLandingGroupUpdateV2ApiService {
+//		return c.ApiClient.ToolsLandingGroupUpdateV2Api
+//	}
 //
-//func (c *Client) ToolsLiveAuthorizeListV2Api() *api.ToolsLiveAuthorizeListV2ApiService {
-//	return c.ApiClient.ToolsLiveAuthorizeListV2Api
-//}
+//	func (c *Client) ToolsLiveAuthorizeListV2Api() *api.ToolsLiveAuthorizeListV2ApiService {
+//		return c.ApiClient.ToolsLiveAuthorizeListV2Api
+//	}
 //
-//func (c *Client) ToolsLogSearchV2Api() *api.ToolsLogSearchV2ApiService {
-//	return c.ApiClient.ToolsLogSearchV2Api
-//}
+//	func (c *Client) ToolsLogSearchV2Api() *api.ToolsLogSearchV2ApiService {
+//		return c.ApiClient.ToolsLogSearchV2Api
+//	}
 //
-//func (c *Client) ToolsMicroAppCreateV30Api() *api.ToolsMicroAppCreateV30ApiService {
-//	return c.ApiClient.ToolsMicroAppCreateV30Api
-//}
+//	func (c *Client) ToolsMicroAppCreateV30Api() *api.ToolsMicroAppCreateV30ApiService {
+//		return c.ApiClient.ToolsMicroAppCreateV30Api
+//	}
 //
-//func (c *Client) ToolsMicroAppListV30Api() *api.ToolsMicroAppListV30ApiService {
-//	return c.ApiClient.ToolsMicroAppListV30Api
-//}
+//	func (c *Client) ToolsMicroAppListV30Api() *api.ToolsMicroAppListV30ApiService {
+//		return c.ApiClient.ToolsMicroAppListV30Api
+//	}
 //
-//func (c *Client) ToolsMicroAppUpdateV30Api() *api.ToolsMicroAppUpdateV30ApiService {
-//	return c.ApiClient.ToolsMicroAppUpdateV30Api
-//}
+//	func (c *Client) ToolsMicroAppUpdateV30Api() *api.ToolsMicroAppUpdateV30ApiService {
+//		return c.ApiClient.ToolsMicroAppUpdateV30Api
+//	}
 //
-//func (c *Client) ToolsMicroGameCreateV30Api() *api.ToolsMicroGameCreateV30ApiService {
-//	return c.ApiClient.ToolsMicroGameCreateV30Api
-//}
+//	func (c *Client) ToolsMicroGameCreateV30Api() *api.ToolsMicroGameCreateV30ApiService {
+//		return c.ApiClient.ToolsMicroGameCreateV30Api
+//	}
 //
-//func (c *Client) ToolsMicroGameListV30Api() *api.ToolsMicroGameListV30ApiService {
-//	return c.ApiClient.ToolsMicroGameListV30Api
-//}
+//	func (c *Client) ToolsMicroGameListV30Api() *api.ToolsMicroGameListV30ApiService {
+//		return c.ApiClient.ToolsMicroGameListV30Api
+//	}
 //
-//func (c *Client) ToolsMicroGameUpdateV30Api() *api.ToolsMicroGameUpdateV30ApiService {
-//	return c.ApiClient.ToolsMicroGameUpdateV30Api
-//}
+//	func (c *Client) ToolsMicroGameUpdateV30Api() *api.ToolsMicroGameUpdateV30ApiService {
+//		return c.ApiClient.ToolsMicroGameUpdateV30Api
+//	}
 //
-//func (c *Client) ToolsNoBidSuggestBidV2Api() *api.ToolsNoBidSuggestBidV2ApiService {
-//	return c.ApiClient.ToolsNoBidSuggestBidV2Api
-//}
+//	func (c *Client) ToolsNoBidSuggestBidV2Api() *api.ToolsNoBidSuggestBidV2ApiService {
+//		return c.ApiClient.ToolsNoBidSuggestBidV2Api
+//	}
 //
-//func (c *Client) ToolsOrangeSiteGetV30Api() *api.ToolsOrangeSiteGetV30ApiService {
-//	return c.ApiClient.ToolsOrangeSiteGetV30Api
-//}
+//	func (c *Client) ToolsOrangeSiteGetV30Api() *api.ToolsOrangeSiteGetV30ApiService {
+//		return c.ApiClient.ToolsOrangeSiteGetV30Api
+//	}
 //
-//func (c *Client) ToolsPioneerProgramAttachmentUploadV2Api() *api.ToolsPioneerProgramAttachmentUploadV2ApiService {
-//	return c.ApiClient.ToolsPioneerProgramAttachmentUploadV2Api
-//}
+//	func (c *Client) ToolsPioneerProgramAttachmentUploadV2Api() *api.ToolsPioneerProgramAttachmentUploadV2ApiService {
+//		return c.ApiClient.ToolsPioneerProgramAttachmentUploadV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableCloudGameListV2Api() *api.ToolsPlayableCloudGameListV2ApiService {
-//	return c.ApiClient.ToolsPlayableCloudGameListV2Api
-//}
+//	func (c *Client) ToolsPlayableCloudGameListV2Api() *api.ToolsPlayableCloudGameListV2ApiService {
+//		return c.ApiClient.ToolsPlayableCloudGameListV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableCreateV2Api() *api.ToolsPlayableCreateV2ApiService {
-//	return c.ApiClient.ToolsPlayableCreateV2Api
-//}
+//	func (c *Client) ToolsPlayableCreateV2Api() *api.ToolsPlayableCreateV2ApiService {
+//		return c.ApiClient.ToolsPlayableCreateV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableGrantResultV2Api() *api.ToolsPlayableGrantResultV2ApiService {
-//	return c.ApiClient.ToolsPlayableGrantResultV2Api
-//}
+//	func (c *Client) ToolsPlayableGrantResultV2Api() *api.ToolsPlayableGrantResultV2ApiService {
+//		return c.ApiClient.ToolsPlayableGrantResultV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableGrantV2Api() *api.ToolsPlayableGrantV2ApiService {
-//	return c.ApiClient.ToolsPlayableGrantV2Api
-//}
+//	func (c *Client) ToolsPlayableGrantV2Api() *api.ToolsPlayableGrantV2ApiService {
+//		return c.ApiClient.ToolsPlayableGrantV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableListGetV2Api() *api.ToolsPlayableListGetV2ApiService {
-//	return c.ApiClient.ToolsPlayableListGetV2Api
-//}
+//	func (c *Client) ToolsPlayableListGetV2Api() *api.ToolsPlayableListGetV2ApiService {
+//		return c.ApiClient.ToolsPlayableListGetV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableSaveV2Api() *api.ToolsPlayableSaveV2ApiService {
-//	return c.ApiClient.ToolsPlayableSaveV2Api
-//}
+//	func (c *Client) ToolsPlayableSaveV2Api() *api.ToolsPlayableSaveV2ApiService {
+//		return c.ApiClient.ToolsPlayableSaveV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableUploadV2Api() *api.ToolsPlayableUploadV2ApiService {
-//	return c.ApiClient.ToolsPlayableUploadV2Api
-//}
+//	func (c *Client) ToolsPlayableUploadV2Api() *api.ToolsPlayableUploadV2ApiService {
+//		return c.ApiClient.ToolsPlayableUploadV2Api
+//	}
 //
-//func (c *Client) ToolsPlayableValidateV2Api() *api.ToolsPlayableValidateV2ApiService {
-//	return c.ApiClient.ToolsPlayableValidateV2Api
-//}
+//	func (c *Client) ToolsPlayableValidateV2Api() *api.ToolsPlayableValidateV2ApiService {
+//		return c.ApiClient.ToolsPlayableValidateV2Api
+//	}
 //
-//func (c *Client) ToolsPreAuditGetV2Api() *api.ToolsPreAuditGetV2ApiService {
-//	return c.ApiClient.ToolsPreAuditGetV2Api
-//}
+//	func (c *Client) ToolsPreAuditGetV2Api() *api.ToolsPreAuditGetV2ApiService {
+//		return c.ApiClient.ToolsPreAuditGetV2Api
+//	}
 //
-//func (c *Client) ToolsPreAuditSendV2Api() *api.ToolsPreAuditSendV2ApiService {
-//	return c.ApiClient.ToolsPreAuditSendV2Api
-//}
+//	func (c *Client) ToolsPreAuditSendV2Api() *api.ToolsPreAuditSendV2ApiService {
+//		return c.ApiClient.ToolsPreAuditSendV2Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordAdAddV2Api() *api.ToolsPrivativeWordAdAddV2ApiService {
-//	return c.ApiClient.ToolsPrivativeWordAdAddV2Api
-//}
+//	func (c *Client) ToolsPrivativeWordAdAddV2Api() *api.ToolsPrivativeWordAdAddV2ApiService {
+//		return c.ApiClient.ToolsPrivativeWordAdAddV2Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordAdUpdateV2Api() *api.ToolsPrivativeWordAdUpdateV2ApiService {
-//	return c.ApiClient.ToolsPrivativeWordAdUpdateV2Api
-//}
+//	func (c *Client) ToolsPrivativeWordAdUpdateV2Api() *api.ToolsPrivativeWordAdUpdateV2ApiService {
+//		return c.ApiClient.ToolsPrivativeWordAdUpdateV2Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordBatchGetV30Api() *api.ToolsPrivativeWordBatchGetV30ApiService {
-//	return c.ApiClient.ToolsPrivativeWordBatchGetV30Api
-//}
+//	func (c *Client) ToolsPrivativeWordBatchGetV30Api() *api.ToolsPrivativeWordBatchGetV30ApiService {
+//		return c.ApiClient.ToolsPrivativeWordBatchGetV30Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordCampaignAddV2Api() *api.ToolsPrivativeWordCampaignAddV2ApiService {
-//	return c.ApiClient.ToolsPrivativeWordCampaignAddV2Api
-//}
+//	func (c *Client) ToolsPrivativeWordCampaignAddV2Api() *api.ToolsPrivativeWordCampaignAddV2ApiService {
+//		return c.ApiClient.ToolsPrivativeWordCampaignAddV2Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordCampaignUpdateV2Api() *api.ToolsPrivativeWordCampaignUpdateV2ApiService {
-//	return c.ApiClient.ToolsPrivativeWordCampaignUpdateV2Api
-//}
+//	func (c *Client) ToolsPrivativeWordCampaignUpdateV2Api() *api.ToolsPrivativeWordCampaignUpdateV2ApiService {
+//		return c.ApiClient.ToolsPrivativeWordCampaignUpdateV2Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordGetV2Api() *api.ToolsPrivativeWordGetV2ApiService {
-//	return c.ApiClient.ToolsPrivativeWordGetV2Api
-//}
+//	func (c *Client) ToolsPrivativeWordGetV2Api() *api.ToolsPrivativeWordGetV2ApiService {
+//		return c.ApiClient.ToolsPrivativeWordGetV2Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordProjectAddV30Api() *api.ToolsPrivativeWordProjectAddV30ApiService {
-//	return c.ApiClient.ToolsPrivativeWordProjectAddV30Api
-//}
+//	func (c *Client) ToolsPrivativeWordProjectAddV30Api() *api.ToolsPrivativeWordProjectAddV30ApiService {
+//		return c.ApiClient.ToolsPrivativeWordProjectAddV30Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordProjectUpdateV30Api() *api.ToolsPrivativeWordProjectUpdateV30ApiService {
-//	return c.ApiClient.ToolsPrivativeWordProjectUpdateV30Api
-//}
+//	func (c *Client) ToolsPrivativeWordProjectUpdateV30Api() *api.ToolsPrivativeWordProjectUpdateV30ApiService {
+//		return c.ApiClient.ToolsPrivativeWordProjectUpdateV30Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordPromotionAddV30Api() *api.ToolsPrivativeWordPromotionAddV30ApiService {
-//	return c.ApiClient.ToolsPrivativeWordPromotionAddV30Api
-//}
+//	func (c *Client) ToolsPrivativeWordPromotionAddV30Api() *api.ToolsPrivativeWordPromotionAddV30ApiService {
+//		return c.ApiClient.ToolsPrivativeWordPromotionAddV30Api
+//	}
 //
-//func (c *Client) ToolsPrivativeWordPromotionUpdateV30Api() *api.ToolsPrivativeWordPromotionUpdateV30ApiService {
-//	return c.ApiClient.ToolsPrivativeWordPromotionUpdateV30Api
-//}
+//	func (c *Client) ToolsPrivativeWordPromotionUpdateV30Api() *api.ToolsPrivativeWordPromotionUpdateV30ApiService {
+//		return c.ApiClient.ToolsPrivativeWordPromotionUpdateV30Api
+//	}
 //
-//func (c *Client) ToolsPromotionCardRecommendGetV2Api() *api.ToolsPromotionCardRecommendGetV2ApiService {
-//	return c.ApiClient.ToolsPromotionCardRecommendGetV2Api
-//}
+//	func (c *Client) ToolsPromotionCardRecommendGetV2Api() *api.ToolsPromotionCardRecommendGetV2ApiService {
+//		return c.ApiClient.ToolsPromotionCardRecommendGetV2Api
+//	}
 //
-//func (c *Client) ToolsPromotionCardRecommendTitleGetV2Api() *api.ToolsPromotionCardRecommendTitleGetV2ApiService {
-//	return c.ApiClient.ToolsPromotionCardRecommendTitleGetV2Api
-//}
+//	func (c *Client) ToolsPromotionCardRecommendTitleGetV2Api() *api.ToolsPromotionCardRecommendTitleGetV2ApiService {
+//		return c.ApiClient.ToolsPromotionCardRecommendTitleGetV2Api
+//	}
 //
-//func (c *Client) ToolsPromotionDiagnosisSuggestionAcceptV30Api() *api.ToolsPromotionDiagnosisSuggestionAcceptV30ApiService {
-//	return c.ApiClient.ToolsPromotionDiagnosisSuggestionAcceptV30Api
-//}
+//	func (c *Client) ToolsPromotionDiagnosisSuggestionAcceptV30Api() *api.ToolsPromotionDiagnosisSuggestionAcceptV30ApiService {
+//		return c.ApiClient.ToolsPromotionDiagnosisSuggestionAcceptV30Api
+//	}
 //
-//func (c *Client) ToolsPromotionDiagnosisSuggestionGetV30Api() *api.ToolsPromotionDiagnosisSuggestionGetV30ApiService {
-//	return c.ApiClient.ToolsPromotionDiagnosisSuggestionGetV30Api
-//}
-//
-//func (c *Client) ToolsPromotionRaiseSetV30Api() *api.ToolsPromotionRaiseSetV30ApiService {
-//	return c.ApiClient.ToolsPromotionRaiseSetV30Api
-//}
-//
-//func (c *Client) ToolsPromotionRaiseStatusCurrentIdsGetV30Api() *api.ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService {
-//	return c.ApiClient.ToolsPromotionRaiseStatusCurrentIdsGetV30Api
-//}
-//
-//func (c *Client) ToolsPromotionRaiseStatusGetV30Api() *api.ToolsPromotionRaiseStatusGetV30ApiService {
-//	return c.ApiClient.ToolsPromotionRaiseStatusGetV30Api
-//}
-//
-//func (c *Client) ToolsPromotionRaiseStopV30Api() *api.ToolsPromotionRaiseStopV30ApiService {
-//	return c.ApiClient.ToolsPromotionRaiseStopV30Api
-//}
+//	func (c *Client) ToolsPromotionDiagnosisSuggestionGetV30Api() *api.ToolsPromotionDiagnosisSuggestionGetV30ApiService {
+//		return c.ApiClient.ToolsPromotionDiagnosisSuggestionGetV30Api
+//	}
+func (c *Client) ToolsPromotionRaiseSetV30Api() *api.ToolsPromotionRaiseSetV30ApiService {
+	return c.ApiClient.ToolsPromotionRaiseSetV30Api
+}
+
+func (c *Client) ToolsPromotionRaiseStatusCurrentIdsGetV30Api() *api.ToolsPromotionRaiseStatusCurrentIdsGetV30ApiService {
+	return c.ApiClient.ToolsPromotionRaiseStatusCurrentIdsGetV30Api
+}
+
+//	func (c *Client) ToolsPromotionRaiseStatusGetV30Api() *api.ToolsPromotionRaiseStatusGetV30ApiService {
+//		return c.ApiClient.ToolsPromotionRaiseStatusGetV30Api
+//	}
+func (c *Client) ToolsPromotionRaiseStopV30Api() *api.ToolsPromotionRaiseStopV30ApiService {
+	return c.ApiClient.ToolsPromotionRaiseStopV30Api
+}
+
 //
 //func (c *Client) ToolsPromotionRaiseVersionGetV30Api() *api.ToolsPromotionRaiseVersionGetV30ApiService {
 //	return c.ApiClient.ToolsPromotionRaiseVersionGetV30Api
@@ -2860,61 +2859,61 @@ func (c *Client) ToolsSiteGetV2Api() *api.ToolsSiteGetV2ApiService {
 	return c.ApiClient.ToolsSiteGetV2Api
 }
 
-//func (c *Client) ToolsSiteHandselV2Api() *api.ToolsSiteHandselV2ApiService {
-//	return c.ApiClient.ToolsSiteHandselV2Api
-//}
+//	func (c *Client) ToolsSiteHandselV2Api() *api.ToolsSiteHandselV2ApiService {
+//		return c.ApiClient.ToolsSiteHandselV2Api
+//	}
 //
-//func (c *Client) ToolsSitePreviewV2Api() *api.ToolsSitePreviewV2ApiService {
-//	return c.ApiClient.ToolsSitePreviewV2Api
-//}
+//	func (c *Client) ToolsSitePreviewV2Api() *api.ToolsSitePreviewV2ApiService {
+//		return c.ApiClient.ToolsSitePreviewV2Api
+//	}
 //
-//func (c *Client) ToolsSiteReadV2Api() *api.ToolsSiteReadV2ApiService {
-//	return c.ApiClient.ToolsSiteReadV2Api
-//}
+//	func (c *Client) ToolsSiteReadV2Api() *api.ToolsSiteReadV2ApiService {
+//		return c.ApiClient.ToolsSiteReadV2Api
+//	}
 //
-//func (c *Client) ToolsSiteTemplateCreateV2Api() *api.ToolsSiteTemplateCreateV2ApiService {
-//	return c.ApiClient.ToolsSiteTemplateCreateV2Api
-//}
+//	func (c *Client) ToolsSiteTemplateCreateV2Api() *api.ToolsSiteTemplateCreateV2ApiService {
+//		return c.ApiClient.ToolsSiteTemplateCreateV2Api
+//	}
 //
-//func (c *Client) ToolsSiteTemplateGetV2Api() *api.ToolsSiteTemplateGetV2ApiService {
-//	return c.ApiClient.ToolsSiteTemplateGetV2Api
-//}
+//	func (c *Client) ToolsSiteTemplateGetV2Api() *api.ToolsSiteTemplateGetV2ApiService {
+//		return c.ApiClient.ToolsSiteTemplateGetV2Api
+//	}
 //
-//func (c *Client) ToolsSiteTemplatePicUrlGetV2Api() *api.ToolsSiteTemplatePicUrlGetV2ApiService {
-//	return c.ApiClient.ToolsSiteTemplatePicUrlGetV2Api
-//}
+//	func (c *Client) ToolsSiteTemplatePicUrlGetV2Api() *api.ToolsSiteTemplatePicUrlGetV2ApiService {
+//		return c.ApiClient.ToolsSiteTemplatePicUrlGetV2Api
+//	}
 //
-//func (c *Client) ToolsSiteTemplatePreviewV2Api() *api.ToolsSiteTemplatePreviewV2ApiService {
-//	return c.ApiClient.ToolsSiteTemplatePreviewV2Api
-//}
+//	func (c *Client) ToolsSiteTemplatePreviewV2Api() *api.ToolsSiteTemplatePreviewV2ApiService {
+//		return c.ApiClient.ToolsSiteTemplatePreviewV2Api
+//	}
 //
-//func (c *Client) ToolsSiteTemplateSiteCreateV2Api() *api.ToolsSiteTemplateSiteCreateV2ApiService {
-//	return c.ApiClient.ToolsSiteTemplateSiteCreateV2Api
-//}
+//	func (c *Client) ToolsSiteTemplateSiteCreateV2Api() *api.ToolsSiteTemplateSiteCreateV2ApiService {
+//		return c.ApiClient.ToolsSiteTemplateSiteCreateV2Api
+//	}
 //
-//func (c *Client) ToolsSiteUpdateStatusV2Api() *api.ToolsSiteUpdateStatusV2ApiService {
-//	return c.ApiClient.ToolsSiteUpdateStatusV2Api
-//}
+//	func (c *Client) ToolsSiteUpdateStatusV2Api() *api.ToolsSiteUpdateStatusV2ApiService {
+//		return c.ApiClient.ToolsSiteUpdateStatusV2Api
+//	}
 //
-//func (c *Client) ToolsSiteUpdateV2Api() *api.ToolsSiteUpdateV2ApiService {
-//	return c.ApiClient.ToolsSiteUpdateV2Api
-//}
+//	func (c *Client) ToolsSiteUpdateV2Api() *api.ToolsSiteUpdateV2ApiService {
+//		return c.ApiClient.ToolsSiteUpdateV2Api
+//	}
 //
-//func (c *Client) ToolsStarTaskMaterialTypeV2Api() *api.ToolsStarTaskMaterialTypeV2ApiService {
-//	return c.ApiClient.ToolsStarTaskMaterialTypeV2Api
-//}
+//	func (c *Client) ToolsStarTaskMaterialTypeV2Api() *api.ToolsStarTaskMaterialTypeV2ApiService {
+//		return c.ApiClient.ToolsStarTaskMaterialTypeV2Api
+//	}
 //
-//func (c *Client) ToolsStarTaskSettlementConfigV2Api() *api.ToolsStarTaskSettlementConfigV2ApiService {
-//	return c.ApiClient.ToolsStarTaskSettlementConfigV2Api
-//}
+//	func (c *Client) ToolsStarTaskSettlementConfigV2Api() *api.ToolsStarTaskSettlementConfigV2ApiService {
+//		return c.ApiClient.ToolsStarTaskSettlementConfigV2Api
+//	}
 //
-//func (c *Client) ToolsStarTaskTitleTopicGetV2Api() *api.ToolsStarTaskTitleTopicGetV2ApiService {
-//	return c.ApiClient.ToolsStarTaskTitleTopicGetV2Api
-//}
-//
-//func (c *Client) ToolsSuggestBudgetGetV30Api() *api.ToolsSuggestBudgetGetV30ApiService {
-//	return c.ApiClient.ToolsSuggestBudgetGetV30Api
-//}
+//	func (c *Client) ToolsStarTaskTitleTopicGetV2Api() *api.ToolsStarTaskTitleTopicGetV2ApiService {
+//		return c.ApiClient.ToolsStarTaskTitleTopicGetV2Api
+//	}
+func (c *Client) ToolsSuggestBudgetGetV30Api() *api.ToolsSuggestBudgetGetV30ApiService {
+	return c.ApiClient.ToolsSuggestBudgetGetV30Api
+}
+
 //
 //func (c *Client) ToolsTaskRaiseCreateV2Api() *api.ToolsTaskRaiseCreateV2ApiService {
 //	return c.ApiClient.ToolsTaskRaiseCreateV2Api
