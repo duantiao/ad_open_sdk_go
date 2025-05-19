@@ -843,11 +843,10 @@ func (c *Client) ToolsEventAllAssetsDetailV2Api() *api.ToolsEventAllAssetsDetail
 //	func (c *Client) FileImageAdGetV2Api() *api.FileImageAdGetV2ApiService {
 //		return c.ApiClient.FileImageAdGetV2Api
 //	}
-//
-//	func (c *Client) FileImageAdV2Api() *api.FileImageAdV2ApiService {
-//		return c.ApiClient.FileImageAdV2Api
-//	}
-//
+func (c *Client) FileImageAdV2Api() *api.FileImageAdV2ApiService {
+	return c.ApiClient.FileImageAdV2Api
+}
+
 //	func (c *Client) FileImageDeleteV30Api() *api.FileImageDeleteV30ApiService {
 //		return c.ApiClient.FileImageDeleteV30Api
 //	}

@@ -466,7 +466,7 @@ type APIClient struct {
 	//
 	//FileImageAdGetV2Api *FileImageAdGetV2ApiService
 	//
-	//FileImageAdV2Api *FileImageAdV2ApiService
+	FileImageAdV2Api *FileImageAdV2ApiService
 	//
 	//FileImageDeleteV30Api *FileImageDeleteV30ApiService
 	//
@@ -1803,7 +1803,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.FileAudioGetV2Api = (*FileAudioGetV2ApiService)(&c.common)
 	//c.FileAutoGenerateSourceGetV2Api = (*FileAutoGenerateSourceGetV2ApiService)(&c.common)
 	//c.FileImageAdGetV2Api = (*FileImageAdGetV2ApiService)(&c.common)
-	//c.FileImageAdV2Api = (*FileImageAdV2ApiService)(&c.common)
+	c.FileImageAdV2Api = (*FileImageAdV2ApiService)(&c.common)
 	//c.FileImageDeleteV30Api = (*FileImageDeleteV30ApiService)(&c.common)
 	c.FileImageGetV2Api = (*FileImageGetV2ApiService)(&c.common)
 	c.FileMaterialAttributesListV2Api = (*FileMaterialAttributesListV2ApiService)(&c.common)
