@@ -1146,23 +1146,21 @@ func (c *Client) PromotionUpdateV30Api() *api.PromotionUpdateV30ApiService {
 //	func (c *Client) QianchuanAdBidUpdateV10Api() *api.QianchuanAdBidUpdateV10ApiService {
 //		return c.ApiClient.QianchuanAdBidUpdateV10Api
 //	}
-//
-//	func (c *Client) QianchuanAdBudgetUpdateV10Api() *api.QianchuanAdBudgetUpdateV10ApiService {
-//		return c.ApiClient.QianchuanAdBudgetUpdateV10Api
-//	}
-//
+func (c *Client) QianchuanAdBudgetUpdateV10Api() *api.QianchuanAdBudgetUpdateV10ApiService {
+	return c.ApiClient.QianchuanAdBudgetUpdateV10Api
+}
+
 //	func (c *Client) QianchuanAdCompensateStatusGetV10Api() *api.QianchuanAdCompensateStatusGetV10ApiService {
 //		return c.ApiClient.QianchuanAdCompensateStatusGetV10Api
 //	}
-//
-//	func (c *Client) QianchuanAdCreateV10Api() *api.QianchuanAdCreateV10ApiService {
-//		return c.ApiClient.QianchuanAdCreateV10Api
-//	}
-//
-//	func (c *Client) QianchuanAdDetailGetV10Api() *api.QianchuanAdDetailGetV10ApiService {
-//		return c.ApiClient.QianchuanAdDetailGetV10Api
-//	}
-//
+func (c *Client) QianchuanAdCreateV10Api() *api.QianchuanAdCreateV10ApiService {
+	return c.ApiClient.QianchuanAdCreateV10Api
+}
+
+func (c *Client) QianchuanAdDetailGetV10Api() *api.QianchuanAdDetailGetV10ApiService {
+	return c.ApiClient.QianchuanAdDetailGetV10Api
+}
+
 //	func (c *Client) QianchuanAdGetV10Api() *api.QianchuanAdGetV10ApiService {
 //		return c.ApiClient.QianchuanAdGetV10Api
 //	}
@@ -1214,15 +1212,13 @@ func (c *Client) PromotionUpdateV30Api() *api.PromotionUpdateV30ApiService {
 //	func (c *Client) QianchuanAdScheduleTimeUpdateV10Api() *api.QianchuanAdScheduleTimeUpdateV10ApiService {
 //		return c.ApiClient.QianchuanAdScheduleTimeUpdateV10Api
 //	}
-//
-//	func (c *Client) QianchuanAdStatusUpdateV10Api() *api.QianchuanAdStatusUpdateV10ApiService {
-//		return c.ApiClient.QianchuanAdStatusUpdateV10Api
-//	}
-//
-//	func (c *Client) QianchuanAdUpdateV10Api() *api.QianchuanAdUpdateV10ApiService {
-//		return c.ApiClient.QianchuanAdUpdateV10Api
-//	}
-//
+func (c *Client) QianchuanAdStatusUpdateV10Api() *api.QianchuanAdStatusUpdateV10ApiService {
+	return c.ApiClient.QianchuanAdStatusUpdateV10Api
+}
+func (c *Client) QianchuanAdUpdateV10Api() *api.QianchuanAdUpdateV10ApiService {
+	return c.ApiClient.QianchuanAdUpdateV10Api
+}
+
 //	func (c *Client) QianchuanAdvertiserTypeGetV10Api() *api.QianchuanAdvertiserTypeGetV10ApiService {
 //		return c.ApiClient.QianchuanAdvertiserTypeGetV10Api
 //	}
@@ -1314,27 +1310,25 @@ func (c *Client) PromotionUpdateV30Api() *api.PromotionUpdateV30ApiService {
 //	func (c *Client) QianchuanAwemeVideoGetV10Api() *api.QianchuanAwemeVideoGetV10ApiService {
 //		return c.ApiClient.QianchuanAwemeVideoGetV10Api
 //	}
-//
-//	func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchCampaignStatusUpdateV10ApiService {
-//		return c.ApiClient.QianchuanBatchCampaignStatusUpdateV10Api
-//	}
-//
+func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchCampaignStatusUpdateV10ApiService {
+	return c.ApiClient.QianchuanBatchCampaignStatusUpdateV10Api
+}
+
 //	func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
 //		return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
 //	}
-//
-//	func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
-//		return c.ApiClient.QianchuanCampaignCreateV10Api
-//	}
-//
-//	func (c *Client) QianchuanCampaignListGetV10Api() *api.QianchuanCampaignListGetV10ApiService {
-//		return c.ApiClient.QianchuanCampaignListGetV10Api
-//	}
-//
-//	func (c *Client) QianchuanCampaignUpdateV10Api() *api.QianchuanCampaignUpdateV10ApiService {
-//		return c.ApiClient.QianchuanCampaignUpdateV10Api
-//	}
-//
+func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
+	return c.ApiClient.QianchuanCampaignCreateV10Api
+}
+
+func (c *Client) QianchuanCampaignListGetV10Api() *api.QianchuanCampaignListGetV10ApiService {
+	return c.ApiClient.QianchuanCampaignListGetV10Api
+}
+
+func (c *Client) QianchuanCampaignUpdateV10Api() *api.QianchuanCampaignUpdateV10ApiService {
+	return c.ApiClient.QianchuanCampaignUpdateV10Api
+}
+
 //	func (c *Client) QianchuanCarouselAwemeGetV10Api() *api.QianchuanCarouselAwemeGetV10ApiService {
 //		return c.ApiClient.QianchuanCarouselAwemeGetV10Api
 //	}
@@ -1562,22 +1556,30 @@ func (c *Client) QianchuanToolsSmartBoostAdBoostStatusGetV10Api() *api.Qianchuan
 	return c.ApiClient.QianchuanToolsSmartBoostAdBoostStatusGetV10Api
 }
 
+//	func (c *Client) QianchuanToolsSmartBoostAdBoostVersionGetV10Api() *api.QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService {
+//		return c.ApiClient.QianchuanToolsSmartBoostAdBoostVersionGetV10Api
+//	}
 //
-//func (c *Client) QianchuanToolsSmartBoostAdBoostVersionGetV10Api() *api.QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService {
-//	return c.ApiClient.QianchuanToolsSmartBoostAdBoostVersionGetV10Api
-//}
-//
-//func (c *Client) QianchuanTrackUrlCheckV10Api() *api.QianchuanTrackUrlCheckV10ApiService {
-//	return c.ApiClient.QianchuanTrackUrlCheckV10Api
-//}
-//
-//func (c *Client) QianchuanUniAwemeAuthorizedGetV10Api() *api.QianchuanUniAwemeAuthorizedGetV10ApiService {
-//	return c.ApiClient.QianchuanUniAwemeAuthorizedGetV10Api
-//}
-//
-//func (c *Client) QianchuanUniPromotionListV10Api() *api.QianchuanUniPromotionListV10ApiService {
-//	return c.ApiClient.QianchuanUniPromotionListV10Api
-//}
+//	func (c *Client) QianchuanTrackUrlCheckV10Api() *api.QianchuanTrackUrlCheckV10ApiService {
+//		return c.ApiClient.QianchuanTrackUrlCheckV10Api
+//	}
+func (c *Client) QianchuanUniAwemeAdCreateV10Api() *api.QianchuanUniAwemeAdCreateV10ApiService {
+	return c.ApiClient.QianchuanUniAwemeAdCreateV10Api
+}
+
+//	func (c *Client) QianchuanUniAwemeAuthorizedGetV10Api() *api.QianchuanUniAwemeAuthorizedGetV10ApiService {
+//		return c.ApiClient.QianchuanUniAwemeAuthorizedGetV10Api
+//	}
+func (c *Client) QianchuanUniPromotionAdDetailV10Api() *api.QianchuanUniPromotionAdDetailV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdDetailV10Api
+}
+func (c *Client) QianchuanUniPromotionAdStatusUpdateV10Api() *api.QianchuanUniPromotionAdStatusUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdStatusUpdateV10Api
+}
+func (c *Client) QianchuanUniPromotionListV10Api() *api.QianchuanUniPromotionListV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionListV10Api
+}
+
 //
 //func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {
 //	return c.ApiClient.QianchuanVideoGetV10Api

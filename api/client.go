@@ -618,15 +618,15 @@ type APIClient struct {
 	//
 	//QianchuanAdBidUpdateV10Api *QianchuanAdBidUpdateV10ApiService
 	//
-	//QianchuanAdBudgetUpdateV10Api *QianchuanAdBudgetUpdateV10ApiService
+	QianchuanAdBudgetUpdateV10Api *QianchuanAdBudgetUpdateV10ApiService
 	//
 	//QianchuanAdCompensateStatusGetV10Api *QianchuanAdCompensateStatusGetV10ApiService
 	//
-	//QianchuanAdCreateV10Api *QianchuanAdCreateV10ApiService
+	QianchuanAdCreateV10Api *QianchuanAdCreateV10ApiService
 	//
-	//QianchuanAdDetailGetV10Api *QianchuanAdDetailGetV10ApiService
+	QianchuanAdDetailGetV10Api *QianchuanAdDetailGetV10ApiService
 	//
-	//QianchuanAdGetV10Api *QianchuanAdGetV10ApiService
+	QianchuanAdGetV10Api *QianchuanAdGetV10ApiService
 	//
 	//QianchuanAdKeywordsGetV10Api *QianchuanAdKeywordsGetV10ApiService
 	//
@@ -652,9 +652,9 @@ type APIClient struct {
 	//
 	//QianchuanAdScheduleTimeUpdateV10Api *QianchuanAdScheduleTimeUpdateV10ApiService
 	//
-	//QianchuanAdStatusUpdateV10Api *QianchuanAdStatusUpdateV10ApiService
+	QianchuanAdStatusUpdateV10Api *QianchuanAdStatusUpdateV10ApiService
 	//
-	//QianchuanAdUpdateV10Api *QianchuanAdUpdateV10ApiService
+	QianchuanAdUpdateV10Api *QianchuanAdUpdateV10ApiService
 	//
 	//QianchuanAdvertiserTypeGetV10Api *QianchuanAdvertiserTypeGetV10ApiService
 	//
@@ -702,15 +702,15 @@ type APIClient struct {
 	//
 	//QianchuanAwemeVideoGetV10Api *QianchuanAwemeVideoGetV10ApiService
 	//
-	//QianchuanBatchCampaignStatusUpdateV10Api *QianchuanBatchCampaignStatusUpdateV10ApiService
+	QianchuanBatchCampaignStatusUpdateV10Api *QianchuanBatchCampaignStatusUpdateV10ApiService
 	//
 	//QianchuanBrandAuthorizedGetV10Api *QianchuanBrandAuthorizedGetV10ApiService
 	//
-	//QianchuanCampaignCreateV10Api *QianchuanCampaignCreateV10ApiService
+	QianchuanCampaignCreateV10Api *QianchuanCampaignCreateV10ApiService
 	//
-	//QianchuanCampaignListGetV10Api *QianchuanCampaignListGetV10ApiService
+	QianchuanCampaignListGetV10Api *QianchuanCampaignListGetV10ApiService
 	//
-	//QianchuanCampaignUpdateV10Api *QianchuanCampaignUpdateV10ApiService
+	QianchuanCampaignUpdateV10Api *QianchuanCampaignUpdateV10ApiService
 	//
 	//QianchuanCarouselAwemeGetV10Api *QianchuanCarouselAwemeGetV10ApiService
 	//
@@ -830,9 +830,12 @@ type APIClient struct {
 	//
 	//QianchuanTrackUrlCheckV10Api *QianchuanTrackUrlCheckV10ApiService
 	//
+	QianchuanUniAwemeAdCreateV10Api *QianchuanUniAwemeAdCreateV10ApiService
+	QianchuanUniAwemeAdUpdateV10Api *QianchuanUniAwemeAdUpdateV10ApiService
 	//QianchuanUniAwemeAuthorizedGetV10Api *QianchuanUniAwemeAuthorizedGetV10ApiService
-	//
-	//QianchuanUniPromotionListV10Api *QianchuanUniPromotionListV10ApiService
+	QianchuanUniPromotionAdDetailV10Api *QianchuanUniPromotionAdDetailV10ApiService
+	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
+	QianchuanUniPromotionListV10Api *QianchuanUniPromotionListV10ApiService
 	//
 	//QianchuanVideoGetV10Api *QianchuanVideoGetV10ApiService
 	//
@@ -1858,9 +1861,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanAdBidUpdateV10Api = (*QianchuanAdBidUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdBudgetUpdateV10Api = (*QianchuanAdBudgetUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdCompensateStatusGetV10Api = (*QianchuanAdCompensateStatusGetV10ApiService)(&c.common)
-	//c.QianchuanAdCreateV10Api = (*QianchuanAdCreateV10ApiService)(&c.common)
-	//c.QianchuanAdDetailGetV10Api = (*QianchuanAdDetailGetV10ApiService)(&c.common)
-	//c.QianchuanAdGetV10Api = (*QianchuanAdGetV10ApiService)(&c.common)
+	c.QianchuanAdCreateV10Api = (*QianchuanAdCreateV10ApiService)(&c.common)
+	c.QianchuanAdDetailGetV10Api = (*QianchuanAdDetailGetV10ApiService)(&c.common)
+	c.QianchuanAdGetV10Api = (*QianchuanAdGetV10ApiService)(&c.common)
 	//c.QianchuanAdKeywordsGetV10Api = (*QianchuanAdKeywordsGetV10ApiService)(&c.common)
 	//c.QianchuanAdKeywordsUpdateV10Api = (*QianchuanAdKeywordsUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdLearingStatusGetV10Api = (*QianchuanAdLearingStatusGetV10ApiService)(&c.common)
@@ -1873,8 +1876,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanAdScheduleDateUpdateV10Api = (*QianchuanAdScheduleDateUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdScheduleFixedRangeUpdateV10Api = (*QianchuanAdScheduleFixedRangeUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdScheduleTimeUpdateV10Api = (*QianchuanAdScheduleTimeUpdateV10ApiService)(&c.common)
-	//c.QianchuanAdStatusUpdateV10Api = (*QianchuanAdStatusUpdateV10ApiService)(&c.common)
-	//c.QianchuanAdUpdateV10Api = (*QianchuanAdUpdateV10ApiService)(&c.common)
+	c.QianchuanAdStatusUpdateV10Api = (*QianchuanAdStatusUpdateV10ApiService)(&c.common)
+	c.QianchuanAdUpdateV10Api = (*QianchuanAdUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdvertiserTypeGetV10Api = (*QianchuanAdvertiserTypeGetV10ApiService)(&c.common)
 	//c.QianchuanAudienceCreateByFileV10Api = (*QianchuanAudienceCreateByFileV10ApiService)(&c.common)
 	//c.QianchuanAudienceDeleteV10Api = (*QianchuanAudienceDeleteV10ApiService)(&c.common)
@@ -1898,11 +1901,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanAwemeSuggestBidV10Api = (*QianchuanAwemeSuggestBidV10ApiService)(&c.common)
 	//c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
 	//c.QianchuanAwemeVideoGetV10Api = (*QianchuanAwemeVideoGetV10ApiService)(&c.common)
-	//c.QianchuanBatchCampaignStatusUpdateV10Api = (*QianchuanBatchCampaignStatusUpdateV10ApiService)(&c.common)
+	c.QianchuanBatchCampaignStatusUpdateV10Api = (*QianchuanBatchCampaignStatusUpdateV10ApiService)(&c.common)
 	//c.QianchuanBrandAuthorizedGetV10Api = (*QianchuanBrandAuthorizedGetV10ApiService)(&c.common)
-	//c.QianchuanCampaignCreateV10Api = (*QianchuanCampaignCreateV10ApiService)(&c.common)
-	//c.QianchuanCampaignListGetV10Api = (*QianchuanCampaignListGetV10ApiService)(&c.common)
-	//c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
+	c.QianchuanCampaignCreateV10Api = (*QianchuanCampaignCreateV10ApiService)(&c.common)
+	c.QianchuanCampaignListGetV10Api = (*QianchuanCampaignListGetV10ApiService)(&c.common)
+	c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
 	//c.QianchuanCarouselAwemeGetV10Api = (*QianchuanCarouselAwemeGetV10ApiService)(&c.common)
 	//c.QianchuanCarouselGetV10Api = (*QianchuanCarouselGetV10ApiService)(&c.common)
 	//c.QianchuanCreativeGetV10Api = (*QianchuanCreativeGetV10ApiService)(&c.common)
@@ -1962,8 +1965,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanToolsSmartBoostAdBoostStatusGetV10Api = (*QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService)(&c.common)
 	//c.QianchuanToolsSmartBoostAdBoostVersionGetV10Api = (*QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService)(&c.common)
 	//c.QianchuanTrackUrlCheckV10Api = (*QianchuanTrackUrlCheckV10ApiService)(&c.common)
+	c.QianchuanUniAwemeAdCreateV10Api = (*QianchuanUniAwemeAdCreateV10ApiService)(&c.common)
+	c.QianchuanUniAwemeAdUpdateV10Api = (*QianchuanUniAwemeAdUpdateV10ApiService)(&c.common)
 	//c.QianchuanUniAwemeAuthorizedGetV10Api = (*QianchuanUniAwemeAuthorizedGetV10ApiService)(&c.common)
-	//c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdDetailV10Api = (*QianchuanUniPromotionAdDetailV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
 	//c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
 	//c.QueryInvoiceV2Api = (*QueryInvoiceV2ApiService)(&c.common)
 	//c.QueryProjectV2Api = (*QueryProjectV2ApiService)(&c.common)
@@ -2457,6 +2464,35 @@ func (c *APIClient) callAPI(ctx context.Context, request *http.Request) (*http.R
 		return c.mws(c.do)(ctx, request)
 	}
 	return c.do(ctx, request)
+}
+
+func (c *APIClient) call(ctx context.Context, request *http.Request, response interface{}) (*http.Response, error) {
+	httpResp, err := c.callAPI(ctx, request)
+	if err != nil || httpResp == nil {
+		return httpResp, err
+	}
+	body, err := io.ReadAll(httpResp.Body)
+	httpResp.Body.Close()
+	httpResp.Body = io.NopCloser(bytes.NewBuffer(body))
+	if err != nil {
+		return httpResp, err
+	}
+	if httpResp.StatusCode >= 300 {
+		newErr := &GenericOpenAPIError{
+			body:  body,
+			error: httpResp.Status,
+		}
+		return httpResp, newErr
+	}
+	err = c.decode(&response, body, httpResp.Header.Get("Content-Type"))
+	if err != nil {
+		newErr := &GenericOpenAPIError{
+			body:  body,
+			error: err.Error(),
+		}
+		return httpResp, newErr
+	}
+	return httpResp, nil
 }
 
 func (c *APIClient) do(ctx context.Context, req *http.Request) (*http.Response, error) {
