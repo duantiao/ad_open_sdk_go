@@ -167,11 +167,10 @@ func (c *Client) ToolsEventAllAssetsDetailV2Api() *api.ToolsEventAllAssetsDetail
 //	func (c *Client) AdvertiserInfoV2Api() *api.AdvertiserInfoV2ApiService {
 //		return c.ApiClient.AdvertiserInfoV2Api
 //	}
-//
-//	func (c *Client) AdvertiserPublicInfoV2Api() *api.AdvertiserPublicInfoV2ApiService {
-//		return c.ApiClient.AdvertiserPublicInfoV2Api
-//	}
-//
+func (c *Client) AdvertiserPublicInfoV2Api() *api.AdvertiserPublicInfoV2ApiService {
+	return c.ApiClient.AdvertiserPublicInfoV2Api
+}
+
 //	func (c *Client) AdvertiserQualificationCreateV2V2Api() *api.AdvertiserQualificationCreateV2V2ApiService {
 //		return c.ApiClient.AdvertiserQualificationCreateV2V2Api
 //	}
@@ -1364,11 +1363,10 @@ func (c *Client) QianchuanCampaignUpdateV10Api() *api.QianchuanCampaignUpdateV10
 //	func (c *Client) QianchuanFileImageDeleteV10Api() *api.QianchuanFileImageDeleteV10ApiService {
 //		return c.ApiClient.QianchuanFileImageDeleteV10Api
 //	}
-//
-//	func (c *Client) QianchuanFileVideoAwemeGetV10Api() *api.QianchuanFileVideoAwemeGetV10ApiService {
-//		return c.ApiClient.QianchuanFileVideoAwemeGetV10Api
-//	}
-//
+func (c *Client) QianchuanFileVideoAwemeGetV10Api() *api.QianchuanFileVideoAwemeGetV10ApiService {
+	return c.ApiClient.QianchuanFileVideoAwemeGetV10Api
+}
+
 //	func (c *Client) QianchuanFileVideoDeleteV10Api() *api.QianchuanFileVideoDeleteV10ApiService {
 //		return c.ApiClient.QianchuanFileVideoDeleteV10Api
 //	}

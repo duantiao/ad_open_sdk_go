@@ -128,7 +128,7 @@ type APIClient struct {
 	//
 	//AdvertiserInfoV2Api *AdvertiserInfoV2ApiService
 	//
-	//AdvertiserPublicInfoV2Api *AdvertiserPublicInfoV2ApiService
+	AdvertiserPublicInfoV2Api *AdvertiserPublicInfoV2ApiService
 	//
 	//AdvertiserQualificationCreateV2V2Api *AdvertiserQualificationCreateV2V2ApiService
 	//
@@ -730,7 +730,7 @@ type APIClient struct {
 	//
 	//QianchuanFileImageDeleteV10Api *QianchuanFileImageDeleteV10ApiService
 	//
-	//QianchuanFileVideoAwemeGetV10Api *QianchuanFileVideoAwemeGetV10ApiService
+	QianchuanFileVideoAwemeGetV10Api *QianchuanFileVideoAwemeGetV10ApiService
 	//
 	//QianchuanFileVideoDeleteV10Api *QianchuanFileVideoDeleteV10ApiService
 	//
@@ -1637,7 +1637,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.AdvertiserFundGrantTransactionGetV2Api = (*AdvertiserFundGrantTransactionGetV2ApiService)(&c.common)
 	//c.AdvertiserFundTransactionGetV2Api = (*AdvertiserFundTransactionGetV2ApiService)(&c.common)
 	//c.AdvertiserInfoV2Api = (*AdvertiserInfoV2ApiService)(&c.common)
-	//c.AdvertiserPublicInfoV2Api = (*AdvertiserPublicInfoV2ApiService)(&c.common)
+	c.AdvertiserPublicInfoV2Api = (*AdvertiserPublicInfoV2ApiService)(&c.common)
 	//c.AdvertiserQualificationCreateV2V2Api = (*AdvertiserQualificationCreateV2V2ApiService)(&c.common)
 	//c.AdvertiserQualificationGetV30Api = (*AdvertiserQualificationGetV30ApiService)(&c.common)
 	//c.AdvertiserQualificationSelectV2V2Api = (*AdvertiserQualificationSelectV2V2ApiService)(&c.common)
@@ -1915,7 +1915,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanEcpAwemeAdGetV10Api = (*QianchuanEcpAwemeAdGetV10ApiService)(&c.common)
 	//c.QianchuanEstimateEffectV10Api = (*QianchuanEstimateEffectV10ApiService)(&c.common)
 	//c.QianchuanFileImageDeleteV10Api = (*QianchuanFileImageDeleteV10ApiService)(&c.common)
-	//c.QianchuanFileVideoAwemeGetV10Api = (*QianchuanFileVideoAwemeGetV10ApiService)(&c.common)
+	c.QianchuanFileVideoAwemeGetV10Api = (*QianchuanFileVideoAwemeGetV10ApiService)(&c.common)
 	//c.QianchuanFileVideoDeleteV10Api = (*QianchuanFileVideoDeleteV10ApiService)(&c.common)
 	//c.QianchuanFileVideoEfficiencyGetV10Api = (*QianchuanFileVideoEfficiencyGetV10ApiService)(&c.common)
 	//c.QianchuanFileVideoOriginalGetV10Api = (*QianchuanFileVideoOriginalGetV10ApiService)(&c.common)
