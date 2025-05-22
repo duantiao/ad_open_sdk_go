@@ -1160,10 +1160,10 @@ func (c *Client) QianchuanAdDetailGetV10Api() *api.QianchuanAdDetailGetV10ApiSer
 	return c.ApiClient.QianchuanAdDetailGetV10Api
 }
 
-//	func (c *Client) QianchuanAdGetV10Api() *api.QianchuanAdGetV10ApiService {
-//		return c.ApiClient.QianchuanAdGetV10Api
-//	}
-//
+func (c *Client) QianchuanAdGetV10Api() *api.QianchuanAdGetV10ApiService {
+	return c.ApiClient.QianchuanAdGetV10Api
+}
+
 //	func (c *Client) QianchuanAdKeywordsGetV10Api() *api.QianchuanAdKeywordsGetV10ApiService {
 //		return c.ApiClient.QianchuanAdKeywordsGetV10Api
 //	}
