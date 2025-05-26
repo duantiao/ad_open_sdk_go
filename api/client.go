@@ -885,7 +885,7 @@ type APIClient struct {
 	//
 	//ReportCustomCreativeGetV30Api *ReportCustomCreativeGetV30ApiService
 	//
-	//ReportCustomGetV30Api *ReportCustomGetV30ApiService
+	ReportCustomGetV30Api *ReportCustomGetV30ApiService
 	//
 	//ReportLiveRoomAnalysisGetV2Api *ReportLiveRoomAnalysisGetV2ApiService
 	//
@@ -1995,7 +1995,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.ReportCustomAsyncTaskGetV30Api = (*ReportCustomAsyncTaskGetV30ApiService)(&c.common)
 	//c.ReportCustomConfigGetV30Api = (*ReportCustomConfigGetV30ApiService)(&c.common)
 	//c.ReportCustomCreativeGetV30Api = (*ReportCustomCreativeGetV30ApiService)(&c.common)
-	//c.ReportCustomGetV30Api = (*ReportCustomGetV30ApiService)(&c.common)
+	c.ReportCustomGetV30Api = (*ReportCustomGetV30ApiService)(&c.common)
 	//c.ReportLiveRoomAnalysisGetV2Api = (*ReportLiveRoomAnalysisGetV2ApiService)(&c.common)
 	//c.ReportLiveRoomAttributeGetV2Api = (*ReportLiveRoomAttributeGetV2ApiService)(&c.common)
 	//c.ReportLiveRoomAudiencePortraitGetV2Api = (*ReportLiveRoomAudiencePortraitGetV2ApiService)(&c.common)

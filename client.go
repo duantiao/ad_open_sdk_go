@@ -1578,106 +1578,105 @@ func (c *Client) QianchuanUniPromotionListV10Api() *api.QianchuanUniPromotionLis
 	return c.ApiClient.QianchuanUniPromotionListV10Api
 }
 
+//	func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {
+//		return c.ApiClient.QianchuanVideoGetV10Api
+//	}
 //
-//func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {
-//	return c.ApiClient.QianchuanVideoGetV10Api
-//}
+//	func (c *Client) QueryInvoiceV2Api() *api.QueryInvoiceV2ApiService {
+//		return c.ApiClient.QueryInvoiceV2Api
+//	}
 //
-//func (c *Client) QueryInvoiceV2Api() *api.QueryInvoiceV2ApiService {
-//	return c.ApiClient.QueryInvoiceV2Api
-//}
+//	func (c *Client) QueryProjectV2Api() *api.QueryProjectV2ApiService {
+//		return c.ApiClient.QueryProjectV2Api
+//	}
 //
-//func (c *Client) QueryProjectV2Api() *api.QueryProjectV2ApiService {
-//	return c.ApiClient.QueryProjectV2Api
-//}
+//	func (c *Client) QueryStatementV2Api() *api.QueryStatementV2ApiService {
+//		return c.ApiClient.QueryStatementV2Api
+//	}
 //
-//func (c *Client) QueryStatementV2Api() *api.QueryStatementV2ApiService {
-//	return c.ApiClient.QueryStatementV2Api
-//}
+//	func (c *Client) ReportAdGetV2Api() *api.ReportAdGetV2ApiService {
+//		return c.ApiClient.ReportAdGetV2Api
+//	}
 //
-//func (c *Client) ReportAdGetV2Api() *api.ReportAdGetV2ApiService {
-//	return c.ApiClient.ReportAdGetV2Api
-//}
+//	func (c *Client) ReportAdvertiserGetV2Api() *api.ReportAdvertiserGetV2ApiService {
+//		return c.ApiClient.ReportAdvertiserGetV2Api
+//	}
 //
-//func (c *Client) ReportAdvertiserGetV2Api() *api.ReportAdvertiserGetV2ApiService {
-//	return c.ApiClient.ReportAdvertiserGetV2Api
-//}
+//	func (c *Client) ReportAgentGetV2V2Api() *api.ReportAgentGetV2V2ApiService {
+//		return c.ApiClient.ReportAgentGetV2V2Api
+//	}
 //
-//func (c *Client) ReportAgentGetV2V2Api() *api.ReportAgentGetV2V2ApiService {
-//	return c.ApiClient.ReportAgentGetV2V2Api
-//}
+//	func (c *Client) ReportAudienceAgeV2Api() *api.ReportAudienceAgeV2ApiService {
+//		return c.ApiClient.ReportAudienceAgeV2Api
+//	}
 //
-//func (c *Client) ReportAudienceAgeV2Api() *api.ReportAudienceAgeV2ApiService {
-//	return c.ApiClient.ReportAudienceAgeV2Api
-//}
+//	func (c *Client) ReportAudienceAwemeListV2Api() *api.ReportAudienceAwemeListV2ApiService {
+//		return c.ApiClient.ReportAudienceAwemeListV2Api
+//	}
 //
-//func (c *Client) ReportAudienceAwemeListV2Api() *api.ReportAudienceAwemeListV2ApiService {
-//	return c.ApiClient.ReportAudienceAwemeListV2Api
-//}
+//	func (c *Client) ReportAudienceCityV2Api() *api.ReportAudienceCityV2ApiService {
+//		return c.ApiClient.ReportAudienceCityV2Api
+//	}
 //
-//func (c *Client) ReportAudienceCityV2Api() *api.ReportAudienceCityV2ApiService {
-//	return c.ApiClient.ReportAudienceCityV2Api
-//}
+//	func (c *Client) ReportAudienceGenderV2Api() *api.ReportAudienceGenderV2ApiService {
+//		return c.ApiClient.ReportAudienceGenderV2Api
+//	}
 //
-//func (c *Client) ReportAudienceGenderV2Api() *api.ReportAudienceGenderV2ApiService {
-//	return c.ApiClient.ReportAudienceGenderV2Api
-//}
+//	func (c *Client) ReportAudienceInterestActionListV2Api() *api.ReportAudienceInterestActionListV2ApiService {
+//		return c.ApiClient.ReportAudienceInterestActionListV2Api
+//	}
 //
-//func (c *Client) ReportAudienceInterestActionListV2Api() *api.ReportAudienceInterestActionListV2ApiService {
-//	return c.ApiClient.ReportAudienceInterestActionListV2Api
-//}
+//	func (c *Client) ReportAudienceProvinceV2Api() *api.ReportAudienceProvinceV2ApiService {
+//		return c.ApiClient.ReportAudienceProvinceV2Api
+//	}
 //
-//func (c *Client) ReportAudienceProvinceV2Api() *api.ReportAudienceProvinceV2ApiService {
-//	return c.ApiClient.ReportAudienceProvinceV2Api
-//}
+//	func (c *Client) ReportBrandAdGetV30Api() *api.ReportBrandAdGetV30ApiService {
+//		return c.ApiClient.ReportBrandAdGetV30Api
+//	}
 //
-//func (c *Client) ReportBrandAdGetV30Api() *api.ReportBrandAdGetV30ApiService {
-//	return c.ApiClient.ReportBrandAdGetV30Api
-//}
+//	func (c *Client) ReportBrandAdvertiserGetV30Api() *api.ReportBrandAdvertiserGetV30ApiService {
+//		return c.ApiClient.ReportBrandAdvertiserGetV30Api
+//	}
 //
-//func (c *Client) ReportBrandAdvertiserGetV30Api() *api.ReportBrandAdvertiserGetV30ApiService {
-//	return c.ApiClient.ReportBrandAdvertiserGetV30Api
-//}
+//	func (c *Client) ReportBrandCampaignGetV30Api() *api.ReportBrandCampaignGetV30ApiService {
+//		return c.ApiClient.ReportBrandCampaignGetV30Api
+//	}
 //
-//func (c *Client) ReportBrandCampaignGetV30Api() *api.ReportBrandCampaignGetV30ApiService {
-//	return c.ApiClient.ReportBrandCampaignGetV30Api
-//}
+//	func (c *Client) ReportBrandCreativeGetV30Api() *api.ReportBrandCreativeGetV30ApiService {
+//		return c.ApiClient.ReportBrandCreativeGetV30Api
+//	}
 //
-//func (c *Client) ReportBrandCreativeGetV30Api() *api.ReportBrandCreativeGetV30ApiService {
-//	return c.ApiClient.ReportBrandCreativeGetV30Api
-//}
+//	func (c *Client) ReportCampaignGetV2Api() *api.ReportCampaignGetV2ApiService {
+//		return c.ApiClient.ReportCampaignGetV2Api
+//	}
 //
-//func (c *Client) ReportCampaignGetV2Api() *api.ReportCampaignGetV2ApiService {
-//	return c.ApiClient.ReportCampaignGetV2Api
-//}
+//	func (c *Client) ReportCreativeGetV2Api() *api.ReportCreativeGetV2ApiService {
+//		return c.ApiClient.ReportCreativeGetV2Api
+//	}
 //
-//func (c *Client) ReportCreativeGetV2Api() *api.ReportCreativeGetV2ApiService {
-//	return c.ApiClient.ReportCreativeGetV2Api
-//}
+//	func (c *Client) ReportCustomAsyncTaskCreateV30Api() *api.ReportCustomAsyncTaskCreateV30ApiService {
+//		return c.ApiClient.ReportCustomAsyncTaskCreateV30Api
+//	}
 //
-//func (c *Client) ReportCustomAsyncTaskCreateV30Api() *api.ReportCustomAsyncTaskCreateV30ApiService {
-//	return c.ApiClient.ReportCustomAsyncTaskCreateV30Api
-//}
+//	func (c *Client) ReportCustomAsyncTaskDownloadV30Api() *api.ReportCustomAsyncTaskDownloadV30ApiService {
+//		return c.ApiClient.ReportCustomAsyncTaskDownloadV30Api
+//	}
 //
-//func (c *Client) ReportCustomAsyncTaskDownloadV30Api() *api.ReportCustomAsyncTaskDownloadV30ApiService {
-//	return c.ApiClient.ReportCustomAsyncTaskDownloadV30Api
-//}
+//	func (c *Client) ReportCustomAsyncTaskGetV30Api() *api.ReportCustomAsyncTaskGetV30ApiService {
+//		return c.ApiClient.ReportCustomAsyncTaskGetV30Api
+//	}
 //
-//func (c *Client) ReportCustomAsyncTaskGetV30Api() *api.ReportCustomAsyncTaskGetV30ApiService {
-//	return c.ApiClient.ReportCustomAsyncTaskGetV30Api
-//}
+//	func (c *Client) ReportCustomConfigGetV30Api() *api.ReportCustomConfigGetV30ApiService {
+//		return c.ApiClient.ReportCustomConfigGetV30Api
+//	}
 //
-//func (c *Client) ReportCustomConfigGetV30Api() *api.ReportCustomConfigGetV30ApiService {
-//	return c.ApiClient.ReportCustomConfigGetV30Api
-//}
-//
-//func (c *Client) ReportCustomCreativeGetV30Api() *api.ReportCustomCreativeGetV30ApiService {
-//	return c.ApiClient.ReportCustomCreativeGetV30Api
-//}
-//
-//func (c *Client) ReportCustomGetV30Api() *api.ReportCustomGetV30ApiService {
-//	return c.ApiClient.ReportCustomGetV30Api
-//}
+//	func (c *Client) ReportCustomCreativeGetV30Api() *api.ReportCustomCreativeGetV30ApiService {
+//		return c.ApiClient.ReportCustomCreativeGetV30Api
+//	}
+func (c *Client) ReportCustomGetV30Api() *api.ReportCustomGetV30ApiService {
+	return c.ApiClient.ReportCustomGetV30Api
+}
+
 //
 //func (c *Client) ReportLiveRoomAnalysisGetV2Api() *api.ReportLiveRoomAnalysisGetV2ApiService {
 //	return c.ApiClient.ReportLiveRoomAnalysisGetV2Api
