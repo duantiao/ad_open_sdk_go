@@ -768,7 +768,7 @@ type APIClient struct {
 	//
 	//QianchuanReportCustomConfigGetV10Api *QianchuanReportCustomConfigGetV10ApiService
 	//
-	//QianchuanReportCustomGetV10Api *QianchuanReportCustomGetV10ApiService
+	QianchuanReportCustomGetV10Api *QianchuanReportCustomGetV10ApiService
 	//
 	//QianchuanReportLiveGetV10Api *QianchuanReportLiveGetV10ApiService
 	//
@@ -1934,7 +1934,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanReportAdvertiserGetV10Api = (*QianchuanReportAdvertiserGetV10ApiService)(&c.common)
 	//c.QianchuanReportCreativeGetV10Api = (*QianchuanReportCreativeGetV10ApiService)(&c.common)
 	//c.QianchuanReportCustomConfigGetV10Api = (*QianchuanReportCustomConfigGetV10ApiService)(&c.common)
-	//c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
+	c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
 	//c.QianchuanReportLiveGetV10Api = (*QianchuanReportLiveGetV10ApiService)(&c.common)
 	//c.QianchuanReportLongTransferOrderGetV10Api = (*QianchuanReportLongTransferOrderGetV10ApiService)(&c.common)
 	//c.QianchuanReportMaterialGetV10Api = (*QianchuanReportMaterialGetV10ApiService)(&c.common)

@@ -1438,11 +1438,10 @@ func (c *Client) QianchuanFileVideoAwemeGetV10Api() *api.QianchuanFileVideoAweme
 //	func (c *Client) QianchuanReportCustomConfigGetV10Api() *api.QianchuanReportCustomConfigGetV10ApiService {
 //		return c.ApiClient.QianchuanReportCustomConfigGetV10Api
 //	}
-//
-//	func (c *Client) QianchuanReportCustomGetV10Api() *api.QianchuanReportCustomGetV10ApiService {
-//		return c.ApiClient.QianchuanReportCustomGetV10Api
-//	}
-//
+func (c *Client) QianchuanReportCustomGetV10Api() *api.QianchuanReportCustomGetV10ApiService {
+	return c.ApiClient.QianchuanReportCustomGetV10Api
+}
+
 //	func (c *Client) QianchuanReportLiveGetV10Api() *api.QianchuanReportLiveGetV10ApiService {
 //		return c.ApiClient.QianchuanReportLiveGetV10Api
 //	}
