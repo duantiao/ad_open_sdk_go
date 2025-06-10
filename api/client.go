@@ -742,7 +742,7 @@ type APIClient struct {
 	//
 	//QianchuanFinanceWalletGetV10Api *QianchuanFinanceWalletGetV10ApiService
 	//
-	//QianchuanImageGetV10Api *QianchuanImageGetV10ApiService
+	QianchuanImageGetV10Api *QianchuanImageGetV10ApiService
 	//
 	//QianchuanKeywordCheckV10Api *QianchuanKeywordCheckV10ApiService
 	//
@@ -837,7 +837,7 @@ type APIClient struct {
 	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
 	QianchuanUniPromotionListV10Api *QianchuanUniPromotionListV10ApiService
 	//
-	//QianchuanVideoGetV10Api *QianchuanVideoGetV10ApiService
+	QianchuanVideoGetV10Api *QianchuanVideoGetV10ApiService
 	//
 	//QueryInvoiceV2Api *QueryInvoiceV2ApiService
 	//
@@ -1921,7 +1921,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanFileVideoOriginalGetV10Api = (*QianchuanFileVideoOriginalGetV10ApiService)(&c.common)
 	//c.QianchuanFinanceDetailGetV10Api = (*QianchuanFinanceDetailGetV10ApiService)(&c.common)
 	//c.QianchuanFinanceWalletGetV10Api = (*QianchuanFinanceWalletGetV10ApiService)(&c.common)
-	//c.QianchuanImageGetV10Api = (*QianchuanImageGetV10ApiService)(&c.common)
+	c.QianchuanImageGetV10Api = (*QianchuanImageGetV10ApiService)(&c.common)
 	//c.QianchuanKeywordCheckV10Api = (*QianchuanKeywordCheckV10ApiService)(&c.common)
 	//c.QianchuanKeywordPackageGetV10Api = (*QianchuanKeywordPackageGetV10ApiService)(&c.common)
 	//c.QianchuanLqAdGetV10Api = (*QianchuanLqAdGetV10ApiService)(&c.common)
@@ -1971,7 +1971,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniPromotionAdDetailV10Api = (*QianchuanUniPromotionAdDetailV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
-	//c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
+	c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
 	//c.QueryInvoiceV2Api = (*QueryInvoiceV2ApiService)(&c.common)
 	//c.QueryProjectV2Api = (*QueryProjectV2ApiService)(&c.common)
 	//c.QueryStatementV2Api = (*QueryStatementV2ApiService)(&c.common)
