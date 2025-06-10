@@ -1249,11 +1249,10 @@ func (c *Client) QianchuanAdUpdateV10Api() *api.QianchuanAdUpdateV10ApiService {
 //	func (c *Client) QianchuanAudiencePushV10Api() *api.QianchuanAudiencePushV10ApiService {
 //		return c.ApiClient.QianchuanAudiencePushV10Api
 //	}
-//
-//	func (c *Client) QianchuanAwemeAuthorizedGetV10Api() *api.QianchuanAwemeAuthorizedGetV10ApiService {
-//		return c.ApiClient.QianchuanAwemeAuthorizedGetV10Api
-//	}
-//
+func (c *Client) QianchuanAwemeAuthorizedGetV10Api() *api.QianchuanAwemeAuthorizedGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeAuthorizedGetV10Api
+}
+
 //	func (c *Client) QianchuanAwemeEstimateProfitV10Api() *api.QianchuanAwemeEstimateProfitV10ApiService {
 //		return c.ApiClient.QianchuanAwemeEstimateProfitV10Api
 //	}
@@ -1313,9 +1312,9 @@ func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchC
 	return c.ApiClient.QianchuanBatchCampaignStatusUpdateV10Api
 }
 
-//	func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
-//		return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
-//	}
+func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
+	return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
+}
 func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
 	return c.ApiClient.QianchuanCampaignCreateV10Api
 }
@@ -1480,11 +1479,10 @@ func (c *Client) QianchuanReportCustomGetV10Api() *api.QianchuanReportCustomGetV
 //	func (c *Client) QianchuanShopAdvertiserListV10Api() *api.QianchuanShopAdvertiserListV10ApiService {
 //		return c.ApiClient.QianchuanShopAdvertiserListV10Api
 //	}
-//
-//	func (c *Client) QianchuanShopAuthorizedGetV10Api() *api.QianchuanShopAuthorizedGetV10ApiService {
-//		return c.ApiClient.QianchuanShopAuthorizedGetV10Api
-//	}
-//
+func (c *Client) QianchuanShopAuthorizedGetV10Api() *api.QianchuanShopAuthorizedGetV10ApiService {
+	return c.ApiClient.QianchuanShopAuthorizedGetV10Api
+}
+
 //	func (c *Client) QianchuanShopGetV10Api() *api.QianchuanShopGetV10ApiService {
 //		return c.ApiClient.QianchuanShopGetV10Api
 //	}
