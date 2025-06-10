@@ -1386,11 +1386,10 @@ func (c *Client) QianchuanFileVideoAwemeGetV10Api() *api.QianchuanFileVideoAweme
 //	func (c *Client) QianchuanFinanceWalletGetV10Api() *api.QianchuanFinanceWalletGetV10ApiService {
 //		return c.ApiClient.QianchuanFinanceWalletGetV10Api
 //	}
-//
-//	func (c *Client) QianchuanImageGetV10Api() *api.QianchuanImageGetV10ApiService {
-//		return c.ApiClient.QianchuanImageGetV10Api
-//	}
-//
+func (c *Client) QianchuanImageGetV10Api() *api.QianchuanImageGetV10ApiService {
+	return c.ApiClient.QianchuanImageGetV10Api
+}
+
 //	func (c *Client) QianchuanKeywordCheckV10Api() *api.QianchuanKeywordCheckV10ApiService {
 //		return c.ApiClient.QianchuanKeywordCheckV10Api
 //	}
@@ -1577,10 +1576,10 @@ func (c *Client) QianchuanUniPromotionListV10Api() *api.QianchuanUniPromotionLis
 	return c.ApiClient.QianchuanUniPromotionListV10Api
 }
 
-//	func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {
-//		return c.ApiClient.QianchuanVideoGetV10Api
-//	}
-//
+func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {
+	return c.ApiClient.QianchuanVideoGetV10Api
+}
+
 //	func (c *Client) QueryInvoiceV2Api() *api.QueryInvoiceV2ApiService {
 //		return c.ApiClient.QueryInvoiceV2Api
 //	}
@@ -1672,11 +1671,11 @@ func (c *Client) QianchuanUniPromotionListV10Api() *api.QianchuanUniPromotionLis
 //	func (c *Client) ReportCustomCreativeGetV30Api() *api.ReportCustomCreativeGetV30ApiService {
 //		return c.ApiClient.ReportCustomCreativeGetV30Api
 //	}
+
 func (c *Client) ReportCustomGetV30Api() *api.ReportCustomGetV30ApiService {
 	return c.ApiClient.ReportCustomGetV30Api
 }
 
-//
 //func (c *Client) ReportLiveRoomAnalysisGetV2Api() *api.ReportLiveRoomAnalysisGetV2ApiService {
 //	return c.ApiClient.ReportLiveRoomAnalysisGetV2Api
 //}
