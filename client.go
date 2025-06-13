@@ -893,11 +893,11 @@ func (c *Client) FileMaterialListV2Api() *api.FileMaterialListV2ApiService {
 //	func (c *Client) FileVideoAdGetV2Api() *api.FileVideoAdGetV2ApiService {
 //		return c.ApiClient.FileVideoAdGetV2Api
 //	}
-//
-//	func (c *Client) FileVideoAdV2Api() *api.FileVideoAdV2ApiService {
-//		return c.ApiClient.FileVideoAdV2Api
-//	}
-//
+
+func (c *Client) FileVideoAdV2Api() *api.FileVideoAdV2ApiService {
+	return c.ApiClient.FileVideoAdV2Api
+}
+
 //	func (c *Client) FileVideoAgentV2Api() *api.FileVideoAgentV2ApiService {
 //		return c.ApiClient.FileVideoAgentV2Api
 //	}

@@ -493,9 +493,9 @@ type APIClient struct {
 	//FileQualitySubmitV30Api *FileQualitySubmitV30ApiService
 	//
 	//FileVideoAdGetV2Api *FileVideoAdGetV2ApiService
-	//
-	//FileVideoAdV2Api *FileVideoAdV2ApiService
-	//
+
+	FileVideoAdV2Api *FileVideoAdV2ApiService
+
 	//FileVideoAgentV2Api *FileVideoAgentV2ApiService
 	//
 	//FileVideoAwemeGetV2Api *FileVideoAwemeGetV2ApiService
@@ -1820,7 +1820,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.FileQualityGetV30Api = (*FileQualityGetV30ApiService)(&c.common)
 	//c.FileQualitySubmitV30Api = (*FileQualitySubmitV30ApiService)(&c.common)
 	//c.FileVideoAdGetV2Api = (*FileVideoAdGetV2ApiService)(&c.common)
-	//c.FileVideoAdV2Api = (*FileVideoAdV2ApiService)(&c.common)
+	c.FileVideoAdV2Api = (*FileVideoAdV2ApiService)(&c.common)
 	//c.FileVideoAgentV2Api = (*FileVideoAgentV2ApiService)(&c.common)
 	//c.FileVideoAwemeGetV2Api = (*FileVideoAwemeGetV2ApiService)(&c.common)
 	//c.FileVideoDeleteV2Api = (*FileVideoDeleteV2ApiService)(&c.common)
