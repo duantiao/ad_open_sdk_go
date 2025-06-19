@@ -1859,7 +1859,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanAccountBudgetGetV10Api = (*QianchuanAccountBudgetGetV10ApiService)(&c.common)
 	//c.QianchuanAccountBudgetUpdateV10Api = (*QianchuanAccountBudgetUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdBidUpdateV10Api = (*QianchuanAdBidUpdateV10ApiService)(&c.common)
-	//c.QianchuanAdBudgetUpdateV10Api = (*QianchuanAdBudgetUpdateV10ApiService)(&c.common)
+	c.QianchuanAdBudgetUpdateV10Api = (*QianchuanAdBudgetUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdCompensateStatusGetV10Api = (*QianchuanAdCompensateStatusGetV10ApiService)(&c.common)
 	c.QianchuanAdCreateV10Api = (*QianchuanAdCreateV10ApiService)(&c.common)
 	c.QianchuanAdDetailGetV10Api = (*QianchuanAdDetailGetV10ApiService)(&c.common)
