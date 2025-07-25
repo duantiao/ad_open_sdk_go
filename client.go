@@ -1207,10 +1207,9 @@ func (c *Client) QianchuanAdGetV10Api() *api.QianchuanAdGetV10ApiService {
 //	func (c *Client) QianchuanAdScheduleFixedRangeUpdateV10Api() *api.QianchuanAdScheduleFixedRangeUpdateV10ApiService {
 //		return c.ApiClient.QianchuanAdScheduleFixedRangeUpdateV10Api
 //	}
-//
-//	func (c *Client) QianchuanAdScheduleTimeUpdateV10Api() *api.QianchuanAdScheduleTimeUpdateV10ApiService {
-//		return c.ApiClient.QianchuanAdScheduleTimeUpdateV10Api
-//	}
+func (c *Client) QianchuanAdScheduleTimeUpdateV10Api() *api.QianchuanAdScheduleTimeUpdateV10ApiService {
+	return c.ApiClient.QianchuanAdScheduleTimeUpdateV10Api
+}
 func (c *Client) QianchuanAdStatusUpdateV10Api() *api.QianchuanAdStatusUpdateV10ApiService {
 	return c.ApiClient.QianchuanAdStatusUpdateV10Api
 }

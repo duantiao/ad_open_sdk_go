@@ -650,7 +650,7 @@ type APIClient struct {
 	//
 	//QianchuanAdScheduleFixedRangeUpdateV10Api *QianchuanAdScheduleFixedRangeUpdateV10ApiService
 	//
-	//QianchuanAdScheduleTimeUpdateV10Api *QianchuanAdScheduleTimeUpdateV10ApiService
+	QianchuanAdScheduleTimeUpdateV10Api *QianchuanAdScheduleTimeUpdateV10ApiService
 	//
 	QianchuanAdStatusUpdateV10Api *QianchuanAdStatusUpdateV10ApiService
 	//
@@ -1875,7 +1875,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.QianchuanAdRejectReasonV10Api = (*QianchuanAdRejectReasonV10ApiService)(&c.common)
 	//c.QianchuanAdScheduleDateUpdateV10Api = (*QianchuanAdScheduleDateUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdScheduleFixedRangeUpdateV10Api = (*QianchuanAdScheduleFixedRangeUpdateV10ApiService)(&c.common)
-	//c.QianchuanAdScheduleTimeUpdateV10Api = (*QianchuanAdScheduleTimeUpdateV10ApiService)(&c.common)
+	c.QianchuanAdScheduleTimeUpdateV10Api = (*QianchuanAdScheduleTimeUpdateV10ApiService)(&c.common)
 	c.QianchuanAdStatusUpdateV10Api = (*QianchuanAdStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanAdUpdateV10Api = (*QianchuanAdUpdateV10ApiService)(&c.common)
 	//c.QianchuanAdvertiserTypeGetV10Api = (*QianchuanAdvertiserTypeGetV10ApiService)(&c.common)
