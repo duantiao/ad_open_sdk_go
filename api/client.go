@@ -1551,7 +1551,7 @@ type APIClient struct {
 	//
 	//UserInfoV2Api *UserInfoV2ApiService
 	//
-	//CommonApi *CommonApiService
+	CommonApi *CommonApiService
 }
 
 type service struct {
@@ -2327,7 +2327,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	//c.ToolsWechatGameCreateV30Api = (*ToolsWechatGameCreateV30ApiService)(&c.common)
 	//c.ToolsWechatGameListV30Api = (*ToolsWechatGameListV30ApiService)(&c.common)
 	//c.UserInfoV2Api = (*UserInfoV2ApiService)(&c.common)
-	//c.CommonApi = (*CommonApiService)(&c.common)
+	c.CommonApi = (*CommonApiService)(&c.common)
 
 	return c
 }

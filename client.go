@@ -2907,110 +2907,108 @@ func (c *Client) ToolsSuggestBudgetGetV30Api() *api.ToolsSuggestBudgetGetV30ApiS
 	return c.ApiClient.ToolsSuggestBudgetGetV30Api
 }
 
+//	func (c *Client) ToolsTaskRaiseCreateV2Api() *api.ToolsTaskRaiseCreateV2ApiService {
+//		return c.ApiClient.ToolsTaskRaiseCreateV2Api
+//	}
 //
-//func (c *Client) ToolsTaskRaiseCreateV2Api() *api.ToolsTaskRaiseCreateV2ApiService {
-//	return c.ApiClient.ToolsTaskRaiseCreateV2Api
-//}
+//	func (c *Client) ToolsTaskRaiseDataGetV2Api() *api.ToolsTaskRaiseDataGetV2ApiService {
+//		return c.ApiClient.ToolsTaskRaiseDataGetV2Api
+//	}
 //
-//func (c *Client) ToolsTaskRaiseDataGetV2Api() *api.ToolsTaskRaiseDataGetV2ApiService {
-//	return c.ApiClient.ToolsTaskRaiseDataGetV2Api
-//}
+//	func (c *Client) ToolsTaskRaiseGetV2Api() *api.ToolsTaskRaiseGetV2ApiService {
+//		return c.ApiClient.ToolsTaskRaiseGetV2Api
+//	}
 //
-//func (c *Client) ToolsTaskRaiseGetV2Api() *api.ToolsTaskRaiseGetV2ApiService {
-//	return c.ApiClient.ToolsTaskRaiseGetV2Api
-//}
+//	func (c *Client) ToolsTaskRaiseOptimizationIdsGetV2Api() *api.ToolsTaskRaiseOptimizationIdsGetV2ApiService {
+//		return c.ApiClient.ToolsTaskRaiseOptimizationIdsGetV2Api
+//	}
 //
-//func (c *Client) ToolsTaskRaiseOptimizationIdsGetV2Api() *api.ToolsTaskRaiseOptimizationIdsGetV2ApiService {
-//	return c.ApiClient.ToolsTaskRaiseOptimizationIdsGetV2Api
-//}
+//	func (c *Client) ToolsTaskRaiseStatusStopV2Api() *api.ToolsTaskRaiseStatusStopV2ApiService {
+//		return c.ApiClient.ToolsTaskRaiseStatusStopV2Api
+//	}
 //
-//func (c *Client) ToolsTaskRaiseStatusStopV2Api() *api.ToolsTaskRaiseStatusStopV2ApiService {
-//	return c.ApiClient.ToolsTaskRaiseStatusStopV2Api
-//}
+//	func (c *Client) ToolsThirdSiteCreateV2Api() *api.ToolsThirdSiteCreateV2ApiService {
+//		return c.ApiClient.ToolsThirdSiteCreateV2Api
+//	}
 //
-//func (c *Client) ToolsThirdSiteCreateV2Api() *api.ToolsThirdSiteCreateV2ApiService {
-//	return c.ApiClient.ToolsThirdSiteCreateV2Api
-//}
+//	func (c *Client) ToolsThirdSiteDeleteV2Api() *api.ToolsThirdSiteDeleteV2ApiService {
+//		return c.ApiClient.ToolsThirdSiteDeleteV2Api
+//	}
 //
-//func (c *Client) ToolsThirdSiteDeleteV2Api() *api.ToolsThirdSiteDeleteV2ApiService {
-//	return c.ApiClient.ToolsThirdSiteDeleteV2Api
-//}
+//	func (c *Client) ToolsThirdSiteGetV2Api() *api.ToolsThirdSiteGetV2ApiService {
+//		return c.ApiClient.ToolsThirdSiteGetV2Api
+//	}
 //
-//func (c *Client) ToolsThirdSiteGetV2Api() *api.ToolsThirdSiteGetV2ApiService {
-//	return c.ApiClient.ToolsThirdSiteGetV2Api
-//}
+//	func (c *Client) ToolsThirdSitePreviewV2Api() *api.ToolsThirdSitePreviewV2ApiService {
+//		return c.ApiClient.ToolsThirdSitePreviewV2Api
+//	}
 //
-//func (c *Client) ToolsThirdSitePreviewV2Api() *api.ToolsThirdSitePreviewV2ApiService {
-//	return c.ApiClient.ToolsThirdSitePreviewV2Api
-//}
+//	func (c *Client) ToolsThirdSiteUpdateV2Api() *api.ToolsThirdSiteUpdateV2ApiService {
+//		return c.ApiClient.ToolsThirdSiteUpdateV2Api
+//	}
 //
-//func (c *Client) ToolsThirdSiteUpdateV2Api() *api.ToolsThirdSiteUpdateV2ApiService {
-//	return c.ApiClient.ToolsThirdSiteUpdateV2Api
-//}
+//	func (c *Client) ToolsUnionFlowPackageCreateV2Api() *api.ToolsUnionFlowPackageCreateV2ApiService {
+//		return c.ApiClient.ToolsUnionFlowPackageCreateV2Api
+//	}
 //
-//func (c *Client) ToolsUnionFlowPackageCreateV2Api() *api.ToolsUnionFlowPackageCreateV2ApiService {
-//	return c.ApiClient.ToolsUnionFlowPackageCreateV2Api
-//}
+//	func (c *Client) ToolsUnionFlowPackageDeleteV2Api() *api.ToolsUnionFlowPackageDeleteV2ApiService {
+//		return c.ApiClient.ToolsUnionFlowPackageDeleteV2Api
+//	}
 //
-//func (c *Client) ToolsUnionFlowPackageDeleteV2Api() *api.ToolsUnionFlowPackageDeleteV2ApiService {
-//	return c.ApiClient.ToolsUnionFlowPackageDeleteV2Api
-//}
+//	func (c *Client) ToolsUnionFlowPackageGetV2Api() *api.ToolsUnionFlowPackageGetV2ApiService {
+//		return c.ApiClient.ToolsUnionFlowPackageGetV2Api
+//	}
 //
-//func (c *Client) ToolsUnionFlowPackageGetV2Api() *api.ToolsUnionFlowPackageGetV2ApiService {
-//	return c.ApiClient.ToolsUnionFlowPackageGetV2Api
-//}
+//	func (c *Client) ToolsUnionFlowPackagePromotionReportV30Api() *api.ToolsUnionFlowPackagePromotionReportV30ApiService {
+//		return c.ApiClient.ToolsUnionFlowPackagePromotionReportV30Api
+//	}
 //
-//func (c *Client) ToolsUnionFlowPackagePromotionReportV30Api() *api.ToolsUnionFlowPackagePromotionReportV30ApiService {
-//	return c.ApiClient.ToolsUnionFlowPackagePromotionReportV30Api
-//}
+//	func (c *Client) ToolsUnionFlowPackageReportV2Api() *api.ToolsUnionFlowPackageReportV2ApiService {
+//		return c.ApiClient.ToolsUnionFlowPackageReportV2Api
+//	}
 //
-//func (c *Client) ToolsUnionFlowPackageReportV2Api() *api.ToolsUnionFlowPackageReportV2ApiService {
-//	return c.ApiClient.ToolsUnionFlowPackageReportV2Api
-//}
+//	func (c *Client) ToolsUnionFlowPackageUpdateV2Api() *api.ToolsUnionFlowPackageUpdateV2ApiService {
+//		return c.ApiClient.ToolsUnionFlowPackageUpdateV2Api
+//	}
 //
-//func (c *Client) ToolsUnionFlowPackageUpdateV2Api() *api.ToolsUnionFlowPackageUpdateV2ApiService {
-//	return c.ApiClient.ToolsUnionFlowPackageUpdateV2Api
-//}
+//	func (c *Client) ToolsVideoCheckAvailableAnchorV2Api() *api.ToolsVideoCheckAvailableAnchorV2ApiService {
+//		return c.ApiClient.ToolsVideoCheckAvailableAnchorV2Api
+//	}
 //
-//func (c *Client) ToolsVideoCheckAvailableAnchorV2Api() *api.ToolsVideoCheckAvailableAnchorV2ApiService {
-//	return c.ApiClient.ToolsVideoCheckAvailableAnchorV2Api
-//}
+//	func (c *Client) ToolsVideoCoverSuggestV2Api() *api.ToolsVideoCoverSuggestV2ApiService {
+//		return c.ApiClient.ToolsVideoCoverSuggestV2Api
+//	}
 //
-//func (c *Client) ToolsVideoCoverSuggestV2Api() *api.ToolsVideoCoverSuggestV2ApiService {
-//	return c.ApiClient.ToolsVideoCoverSuggestV2Api
-//}
+//	func (c *Client) ToolsVideoPredictV2Api() *api.ToolsVideoPredictV2ApiService {
+//		return c.ApiClient.ToolsVideoPredictV2Api
+//	}
 //
-//func (c *Client) ToolsVideoPredictV2Api() *api.ToolsVideoPredictV2ApiService {
-//	return c.ApiClient.ToolsVideoPredictV2Api
-//}
+//	func (c *Client) ToolsWechatAppletCreateV30Api() *api.ToolsWechatAppletCreateV30ApiService {
+//		return c.ApiClient.ToolsWechatAppletCreateV30Api
+//	}
 //
-//func (c *Client) ToolsWechatAppletCreateV30Api() *api.ToolsWechatAppletCreateV30ApiService {
-//	return c.ApiClient.ToolsWechatAppletCreateV30Api
-//}
+//	func (c *Client) ToolsWechatAppletListV30Api() *api.ToolsWechatAppletListV30ApiService {
+//		return c.ApiClient.ToolsWechatAppletListV30Api
+//	}
 //
-//func (c *Client) ToolsWechatAppletListV30Api() *api.ToolsWechatAppletListV30ApiService {
-//	return c.ApiClient.ToolsWechatAppletListV30Api
-//}
+//	func (c *Client) ToolsWechatAppletUpdateV30Api() *api.ToolsWechatAppletUpdateV30ApiService {
+//		return c.ApiClient.ToolsWechatAppletUpdateV30Api
+//	}
 //
-//func (c *Client) ToolsWechatAppletUpdateV30Api() *api.ToolsWechatAppletUpdateV30ApiService {
-//	return c.ApiClient.ToolsWechatAppletUpdateV30Api
-//}
+//	func (c *Client) ToolsWechatGameCreateV30Api() *api.ToolsWechatGameCreateV30ApiService {
+//		return c.ApiClient.ToolsWechatGameCreateV30Api
+//	}
 //
-//func (c *Client) ToolsWechatGameCreateV30Api() *api.ToolsWechatGameCreateV30ApiService {
-//	return c.ApiClient.ToolsWechatGameCreateV30Api
-//}
+//	func (c *Client) ToolsWechatGameListV30Api() *api.ToolsWechatGameListV30ApiService {
+//		return c.ApiClient.ToolsWechatGameListV30Api
+//	}
 //
-//func (c *Client) ToolsWechatGameListV30Api() *api.ToolsWechatGameListV30ApiService {
-//	return c.ApiClient.ToolsWechatGameListV30Api
-//}
-//
-//func (c *Client) UserInfoV2Api() *api.UserInfoV2ApiService {
-//	return c.ApiClient.UserInfoV2Api
-//}
-//
-//func (c *Client) CommonApi() *api.CommonApiService {
-//	return c.ApiClient.CommonApi
-//}
+//	func (c *Client) UserInfoV2Api() *api.UserInfoV2ApiService {
+//		return c.ApiClient.UserInfoV2Api
+//	}
+func (c *Client) CommonApi() *api.CommonApiService {
+	return c.ApiClient.CommonApi
+}
 
 func (c *Client) SetHost(host string) {
 	c.ApiClient.Cfg.Host = host
