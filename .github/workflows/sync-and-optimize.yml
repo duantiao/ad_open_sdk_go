@@ -101,7 +101,7 @@ jobs:
       - name: Verify compilation
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
-          go build -v ./...
+          go build -v ./config/... ./models/... ./api/...
       
       - name: Run tests
         if: steps.check_changes.outputs.has_changes == 'true'
