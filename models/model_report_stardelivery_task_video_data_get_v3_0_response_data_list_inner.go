@@ -19,6 +19,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	ActiveRegister *int64 `json:"active_register,omitempty"`
 	//
+	AndroidConvertCnt *int64 `json:"android_convert_cnt,omitempty"`
+	//
 	GamePayCount *int64 `json:"game_pay_count,omitempty"`
 	//
 	IesAvatarUrl *string `json:"ies_avatar_url,omitempty"`
@@ -34,6 +36,12 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	InAppStatCostRangeT1 []float64 `json:"in_app_stat_cost_range_t1,omitempty"`
 	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
+	//
+	IosConvertCnt *int64 `json:"ios_convert_cnt,omitempty"`
+	// 服务商ID
+	IsvId *int64 `json:"isv_id,omitempty"`
+	// 服务商名称
+	IsvName *string `json:"isv_name,omitempty"`
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
 	//
@@ -52,21 +60,18 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	StarDeepPurchaseCount *int64 `json:"star_deep_purchase_count,omitempty"`
 	//
 	StarInstallFinishCount *int64 `json:"star_install_finish_count,omitempty"`
-	//
-	StarMaterialFirstName *string `json:"star_material_first_name,omitempty"`
-	//
-	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
+	// 视频创意方向
+	StarMaterialCreativeOrient *string `json:"star_material_creative_orient,omitempty"`
+	// 视频呈现形式
+	StarMaterialDisplayFormat *string `json:"star_material_display_format,omitempty"`
 	//
 	StarMaterialNaturalViewsT1 *int64                                                                   `json:"star_material_natural_views_t1,omitempty"`
 	StarMaterialPurchaseMethod *ReportStardeliveryTaskVideoDataGetV30DataListStarMaterialPurchaseMethod `json:"star_material_purchase_method,omitempty"`
 	//
-	StarMaterialSecondName *string `json:"star_material_second_name,omitempty"`
-	//
-	StarMaterialSecondType *int32 `json:"star_material_second_type,omitempty"`
-	//
 	StarMaterialStatCost *float64 `json:"star_material_stat_cost,omitempty"`
 	//
-	StarMaterialTotalViews *int64 `json:"star_material_total_views,omitempty"`
+	StarMaterialTotalViews *int64                                                         `json:"star_material_total_views,omitempty"`
+	StarMaterialType       *ReportStardeliveryTaskVideoDataGetV30DataListStarMaterialType `json:"star_material_type,omitempty"`
 	//
 	StarSaleMaterialStatCost *float64 `json:"star_sale_material_stat_cost,omitempty"`
 	//
@@ -74,10 +79,16 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	//
+	StarVideoMaterialAssessment []*ReportStardeliveryTaskVideoDataGetV30DataListStarVideoMaterialAssessment `json:"star_video_material_assessment,omitempty"`
+	//
 	StarVideoRelatePromotionCount *int64                                                        `json:"star_video_relate_promotion_count,omitempty"`
 	StarVideoStatus               *ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus `json:"star_video_status,omitempty"`
 	//
+	StatAndroidCost *float64 `json:"stat_android_cost,omitempty"`
+	//
 	StatCost *float64 `json:"stat_cost,omitempty"`
+	//
+	StatIosCost *float64 `json:"stat_ios_cost,omitempty"`
 	//
 	VideoCoverUrl *string `json:"video_cover_url,omitempty"`
 	//

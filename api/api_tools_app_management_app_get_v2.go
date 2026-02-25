@@ -23,16 +23,17 @@ import (
 type ToolsAppManagementAppGetV2ApiService service
 
 type ApiOpenApi2ToolsAppManagementAppGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *ToolsAppManagementAppGetV2ApiService
-	advertiserId *int64
-	page         *int32
-	pageSize     *int32
-	searchKey    *string
-	searchType   *ToolsAppManagementAppGetV2SearchType
-	status       *ToolsAppManagementAppGetV2Status
-	publishTime  *ToolsAppManagementAppGetV2PublishTime
-	createTime   *ToolsAppManagementAppGetV2CreateTime
+	ctx                    context.Context
+	ApiService             *ToolsAppManagementAppGetV2ApiService
+	advertiserId           *int64
+	page                   *int32
+	pageSize               *int32
+	searchKey              *string
+	searchType             *ToolsAppManagementAppGetV2SearchType
+	status                 *ToolsAppManagementAppGetV2Status
+	publishTime            *ToolsAppManagementAppGetV2PublishTime
+	createTime             *ToolsAppManagementAppGetV2CreateTime
+	accountAssetQueryScope *ToolsAppManagementAppGetV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
@@ -75,6 +76,11 @@ func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) CreateTime(createTime To
 	return r
 }
 
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementAppGetV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
+	return r
+}
+
 func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) Execute() (*ToolsAppManagementAppGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -93,6 +99,8 @@ func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) WithLog(enable bool) *Ap
 
 /*
 OpenApi2ToolsAppManagementAppGetGet Method for OpenApi2ToolsAppManagementAppGetGet
+
+查询应用信息 可通过请求参数advertiser_id广告主id 查询广告主下应用列表及应用详细信息，具体返回信息见返回参数
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAppGetGetRequest
@@ -150,6 +158,9 @@ func (a *ToolsAppManagementAppGetV2ApiService) getExecute(r *ApiOpenApi2ToolsApp
 	}
 	if r.createTime != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "create_time", r.createTime)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

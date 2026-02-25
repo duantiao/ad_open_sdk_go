@@ -28,6 +28,7 @@ type ApiOpenApiOauth2AdvertiserGetGetRequest struct {
 	accessToken *string
 }
 
+// 根据授权auth_code获取生成的AccessToken 授权页面使用相同账号授权对应同一个AccessToken，如使用多个不同的账号授权，则需要区分维护多个不同的AccessToken
 func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) AccessToken(accessToken string) *ApiOpenApiOauth2AdvertiserGetGetRequest {
 	r.accessToken = &accessToken
 	return r
@@ -46,6 +47,8 @@ func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) WithLog(enable bool) *ApiOpenA
 
 /*
 OpenApiOauth2AdvertiserGetGet Method for OpenApiOauth2AdvertiserGetGet
+
+获取账号下已授权的管理/业务账户，如果是管理账户可再通过相关管理账户接口查询管理账户下的具体业务账户。例如工作台和代理商为管理账户，可通过工作台下业务账户列表/代理商下业务账户列表查询具体管理业务账户。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiOauth2AdvertiserGetGetRequest
@@ -78,11 +81,10 @@ func (a *Oauth2AdvertiserGetApiService) getExecute(r *ApiOpenApiOauth2Advertiser
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.accessToken == nil {
-		return localVarReturnValue, nil, ReportError("accessToken is required and must be specified")
-	}
 
-	parameterAddToHeaderOrQuery(localVarQueryParams, "access_token", r.accessToken)
+	if r.accessToken != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "access_token", r.accessToken)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

@@ -28,7 +28,9 @@ type ProjectCreateV30RequestDeliverySetting struct {
 	EndTime           *string                                           `json:"end_time,omitempty"`
 	FilterNightSwitch *ProjectCreateV30DeliverySettingFilterNightSwitch `json:"filter_night_switch,omitempty"`
 	//
-	FirstRoiGoal  *float64                                      `json:"first_roi_goal,omitempty"`
+	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
+	//
+	LiveDuration  *float64                                      `json:"live_duration,omitempty"`
 	Pricing       *ProjectCreateV30DeliverySettingPricing       `json:"pricing,omitempty"`
 	ProjectCustom *ProjectCreateV30DeliverySettingProjectCustom `json:"project_custom,omitempty"`
 	//
@@ -38,7 +40,7 @@ type ProjectCreateV30RequestDeliverySetting struct {
 	ScheduleType           *ProjectCreateV30DeliverySettingScheduleType           `json:"schedule_type,omitempty"`
 	SearchContinueDelivery *ProjectCreateV30DeliverySettingSearchContinueDelivery `json:"search_continue_delivery,omitempty"`
 	//
-	ShopMultiRoiGoals []*ProjectCreateV30RequestDeliverySettingShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
 	//
 	StartTime *string `json:"start_time,omitempty"`
 }

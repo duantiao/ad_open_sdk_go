@@ -19,9 +19,13 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	ActiveRegister *int64 `json:"active_register,omitempty"`
 	//
+	AndroidConvertCnt *int64 `json:"android_convert_cnt,omitempty"`
+	//
 	GamePayCount *int64 `json:"game_pay_count,omitempty"`
 	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
+	//
+	IosConvertCnt *int64 `json:"ios_convert_cnt,omitempty"`
 	//
 	NonAdStatCost *float64 `json:"non_ad_stat_cost,omitempty"`
 	//
@@ -48,12 +52,17 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	StarTaskAlbumName  *string                                                     `json:"star_task_album_name,omitempty"`
 	StarTaskAnchorType *ReportStardeliveryTaskDataGetV30DataListStarTaskAnchorType `json:"star_task_anchor_type,omitempty"`
 	//
+	StarTaskApproachingBudgetLimitIsvCount *int64 `json:"star_task_approaching_budget_limit_isv_count,omitempty"`
+	//
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`
 	//
 	StarTaskBudgetCostRate *float64 `json:"star_task_budget_cost_rate,omitempty"`
 	//
-	StarTaskCanDeliveryItemCount *int64                                                          `json:"star_task_can_delivery_item_count,omitempty"`
-	StarTaskExternalAction       *ReportStardeliveryTaskDataGetV30DataListStarTaskExternalAction `json:"star_task_external_action,omitempty"`
+	StarTaskCanDeliveryItemCount *int64 `json:"star_task_can_delivery_item_count,omitempty"`
+	//
+	StarTaskCategoryName   *string                                                         `json:"star_task_category_name,omitempty"`
+	StarTaskCategoryType   *ReportStardeliveryTaskDataGetV30DataListStarTaskCategoryType   `json:"star_task_category_type,omitempty"`
+	StarTaskExternalAction *ReportStardeliveryTaskDataGetV30DataListStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	//
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	//
@@ -71,5 +80,9 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	StarTaskUnfrozenAmount *float64 `json:"star_task_unfrozen_amount,omitempty"`
 	//
+	StatAndroidCost *float64 `json:"stat_android_cost,omitempty"`
+	//
 	StatCost *float64 `json:"stat_cost,omitempty"`
+	//
+	StatIosCost *float64 `json:"stat_ios_cost,omitempty"`
 }

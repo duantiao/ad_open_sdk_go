@@ -10,13 +10,14 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30FilteringLocalDeliveryScene
+// LocalProjectListV30FilteringLocalDeliveryScene 推广目的筛选，默认不限
 type LocalProjectListV30FilteringLocalDeliveryScene string
 
 // List of local_project_list_v3.0_filtering_local_delivery_scene
 const (
 	ALL_LocalProjectListV30FilteringLocalDeliveryScene           LocalProjectListV30FilteringLocalDeliveryScene = "ALL"
 	CONTENT_HEAT_LocalProjectListV30FilteringLocalDeliveryScene  LocalProjectListV30FilteringLocalDeliveryScene = "CONTENT_HEAT"
+	EXTERNAL_LocalProjectListV30FilteringLocalDeliveryScene      LocalProjectListV30FilteringLocalDeliveryScene = "EXTERNAL"
 	POI_RECOMMEND_LocalProjectListV30FilteringLocalDeliveryScene LocalProjectListV30FilteringLocalDeliveryScene = "POI_RECOMMEND"
 	PRODUCT_PAY_LocalProjectListV30FilteringLocalDeliveryScene   LocalProjectListV30FilteringLocalDeliveryScene = "PRODUCT_PAY"
 )

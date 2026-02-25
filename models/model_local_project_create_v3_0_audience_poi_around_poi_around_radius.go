@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius
+// LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius 半径，门店附近仅支持固定半径的设置
 type LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius string
 
 // List of local_project_create_v3.0_audience_poi_around_poi_around_radius
@@ -19,6 +19,8 @@ const (
 	KM_12_LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius = "KM_12"
 	KM_15_LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius = "KM_15"
 	KM_20_LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius = "KM_20"
+	KM_25_LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius = "KM_25"
+	KM_30_LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius = "KM_30"
 	KM_6_LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius  LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius = "KM_6"
 	KM_8_LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius  LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius = "KM_8"
 )

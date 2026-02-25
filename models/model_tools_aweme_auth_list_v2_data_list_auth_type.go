@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthListV2DataListAuthType
+// ToolsAwemeAuthListV2DataListAuthType 授权类型
 type ToolsAwemeAuthListV2DataListAuthType string
 
 // List of tools_aweme_auth_list_v2_data_list_auth_type
@@ -18,6 +18,7 @@ const (
 	AWEME_ACCOUNT_ToolsAwemeAuthListV2DataListAuthType  ToolsAwemeAuthListV2DataListAuthType = "AWEME_ACCOUNT"
 	AWEME_HOMEPAGE_ToolsAwemeAuthListV2DataListAuthType ToolsAwemeAuthListV2DataListAuthType = "AWEME_HOMEPAGE"
 	LIVE_ACCOUNT_ToolsAwemeAuthListV2DataListAuthType   ToolsAwemeAuthListV2DataListAuthType = "LIVE_ACCOUNT"
+	UNI_PROMOTION_ToolsAwemeAuthListV2DataListAuthType  ToolsAwemeAuthListV2DataListAuthType = "UNI_PROMOTION"
 	VIDEO_ITEM_ToolsAwemeAuthListV2DataListAuthType     ToolsAwemeAuthListV2DataListAuthType = "VIDEO_ITEM"
 )
 

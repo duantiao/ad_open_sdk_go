@@ -10,13 +10,14 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30DataProjectListProjectBudgetMode
+// LocalProjectListV30DataProjectListProjectBudgetMode 项目预算类型
 type LocalProjectListV30DataProjectListProjectBudgetMode string
 
 // List of local_project_list_v3.0_data_project_list_project_budget_mode
 const (
-	BUDGET_MODE_DAY_LocalProjectListV30DataProjectListProjectBudgetMode   LocalProjectListV30DataProjectListProjectBudgetMode = "BUDGET_MODE_DAY"
-	BUDGET_MODE_TOTAL_LocalProjectListV30DataProjectListProjectBudgetMode LocalProjectListV30DataProjectListProjectBudgetMode = "BUDGET_MODE_TOTAL"
+	BUDGET_MODE_7_DAY_TOTAL_LocalProjectListV30DataProjectListProjectBudgetMode LocalProjectListV30DataProjectListProjectBudgetMode = "BUDGET_MODE_7DAY_TOTAL"
+	BUDGET_MODE_DAY_LocalProjectListV30DataProjectListProjectBudgetMode         LocalProjectListV30DataProjectListProjectBudgetMode = "BUDGET_MODE_DAY"
+	BUDGET_MODE_TOTAL_LocalProjectListV30DataProjectListProjectBudgetMode       LocalProjectListV30DataProjectListProjectBudgetMode = "BUDGET_MODE_TOTAL"
 )
 
 // Ptr returns reference to local_project_list_v3.0_data_project_list_project_budget_mode value

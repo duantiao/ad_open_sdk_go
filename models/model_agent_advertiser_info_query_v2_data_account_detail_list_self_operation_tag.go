@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag
+// AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag 账户报备类型
 type AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag string
 
 // List of agent_advertiser_info_query_v2_data_account_detail_list_self_operation_tag
@@ -18,6 +18,7 @@ const (
 	DECREASE_QUANTITY_AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag = "DECREASE_QUANTITY"
 	EMPTY_AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag             AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag = "EMPTY"
 	INCREASE_QUANTITY_AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag = "INCREASE_QUANTITY"
+	NON_DESCEND_AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag       AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag = "NON_DESCEND"
 	SELF_OPERATION_AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag    AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag = "SELF_OPERATION"
 )
 

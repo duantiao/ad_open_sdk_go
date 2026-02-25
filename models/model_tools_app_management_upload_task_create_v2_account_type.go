@@ -10,13 +10,14 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementUploadTaskCreateV2AccountType
+// ToolsAppManagementUploadTaskCreateV2AccountType 账户类型
 type ToolsAppManagementUploadTaskCreateV2AccountType string
 
 // List of tools_app_management_upload_task_create_v2_account_type
 const (
-	AD_ToolsAppManagementUploadTaskCreateV2AccountType ToolsAppManagementUploadTaskCreateV2AccountType = "AD"
-	BP_ToolsAppManagementUploadTaskCreateV2AccountType ToolsAppManagementUploadTaskCreateV2AccountType = "BP"
+	AD_ToolsAppManagementUploadTaskCreateV2AccountType   ToolsAppManagementUploadTaskCreateV2AccountType = "AD"
+	BP_ToolsAppManagementUploadTaskCreateV2AccountType   ToolsAppManagementUploadTaskCreateV2AccountType = "BP"
+	STAR_ToolsAppManagementUploadTaskCreateV2AccountType ToolsAppManagementUploadTaskCreateV2AccountType = "STAR"
 )
 
 // Ptr returns reference to tools_app_management_upload_task_create_v2_account_type value

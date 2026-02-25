@@ -10,13 +10,15 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataBidType
+// LocalProjectDetailV30DataBidType 出价方式
 type LocalProjectDetailV30DataBidType string
 
 // List of local_project_detail_v3.0_data_bid_type
 const (
-	MANUAL_LocalProjectDetailV30DataBidType LocalProjectDetailV30DataBidType = "MANUAL"
-	SMART_LocalProjectDetailV30DataBidType  LocalProjectDetailV30DataBidType = "SMART"
+	MANUAL_LocalProjectDetailV30DataBidType          LocalProjectDetailV30DataBidType = "MANUAL"
+	MAX_CONVERSION_LocalProjectDetailV30DataBidType  LocalProjectDetailV30DataBidType = "MAX_CONVERSION"
+	SMART_LocalProjectDetailV30DataBidType           LocalProjectDetailV30DataBidType = "SMART"
+	STABILIZE_COSTS_LocalProjectDetailV30DataBidType LocalProjectDetailV30DataBidType = "STABILIZE_COSTS"
 )
 
 // Ptr returns reference to local_project_detail_v3.0_data_bid_type value

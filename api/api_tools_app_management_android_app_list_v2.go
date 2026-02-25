@@ -23,13 +23,14 @@ import (
 type ToolsAppManagementAndroidAppListV2ApiService service
 
 type ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest struct {
-	ctx         context.Context
-	ApiService  *ToolsAppManagementAndroidAppListV2ApiService
-	accountId   *int64
-	accountType *ToolsAppManagementAndroidAppListV2AccountType
-	page        *int32
-	pageSize    *int32
-	filtering   *ToolsAppManagementAndroidAppListV2Filtering
+	ctx                    context.Context
+	ApiService             *ToolsAppManagementAndroidAppListV2ApiService
+	accountId              *int64
+	accountType            *ToolsAppManagementAndroidAppListV2AccountType
+	page                   *int32
+	pageSize               *int32
+	filtering              *ToolsAppManagementAndroidAppListV2Filtering
+	accountAssetQueryScope *ToolsAppManagementAndroidAppListV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
@@ -57,6 +58,11 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) Filtering(filter
 	return r
 }
 
+func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementAndroidAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
+	return r
+}
+
 func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) Execute() (*ToolsAppManagementAndroidAppListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -75,6 +81,8 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) WithLog(enable b
 
 /*
 OpenApi2ToolsAppManagementAndroidAppListGet Method for OpenApi2ToolsAppManagementAndroidAppListGet
+
+查询账户下安卓应用信息（支持所有账户体系）及应用详细信息
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest
@@ -124,6 +132,9 @@ func (a *ToolsAppManagementAndroidAppListV2ApiService) getExecute(r *ApiOpenApi2
 	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

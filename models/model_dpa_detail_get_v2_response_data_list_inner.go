@@ -15,6 +15,14 @@ type DpaDetailGetV2ResponseDataListInner struct {
 	//
 	Age []int64 `json:"age,omitempty"`
 	//
+	AuditHitField *string `json:"audit_hit_field,omitempty"`
+	//
+	AuditReasonText *string `json:"audit_reason_text,omitempty"`
+	//
+	AuditReasons []*DpaDetailGetV2ResponseDataListInnerAuditReasonsInner `json:"audit_reasons,omitempty"`
+	//
+	AuditStatus *int32 `json:"audit_status,omitempty"`
+	//
 	Bought    *int64                                        `json:"bought,omitempty"`
 	BrandInfo *DpaDetailGetV2ResponseDataListInnerBrandInfo `json:"brand_info,omitempty"`
 	//
@@ -59,7 +67,8 @@ type DpaDetailGetV2ResponseDataListInner struct {
 	Province       []string                                           `json:"province,omitempty"`
 	ShopKeeperInfo *DpaDetailGetV2ResponseDataListInnerShopKeeperInfo `json:"shop_keeper_info,omitempty"`
 	//
-	SpuId *string `json:"spu_id,omitempty"`
+	SpuId     *string                          `json:"spu_id,omitempty"`
+	SpuSource *DpaDetailGetV2DataListSpuSource `json:"spu_source,omitempty"`
 	//
 	Status *int32 `json:"status,omitempty"`
 	//

@@ -30,6 +30,8 @@ type ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest struct {
 	filtering    *QianchuanCarouselAwemeGetV10Filtering
 	cursor       *int64
 	count        *int64
+	orderField   *QianchuanCarouselAwemeGetV10OrderField
+	orderType    *QianchuanCarouselAwemeGetV10OrderType
 }
 
 func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
@@ -58,6 +60,18 @@ func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Count(count int64) *A
 	return r
 }
 
+// 排序字段
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderField(orderField QianchuanCarouselAwemeGetV10OrderField) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
+	r.orderField = &orderField
+	return r
+}
+
+// 排序方式
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderType(orderType QianchuanCarouselAwemeGetV10OrderType) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
+	r.orderType = &orderType
+	return r
+}
+
 func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Execute() (*QianchuanCarouselAwemeGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -76,6 +90,8 @@ func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) WithLog(enable bool) 
 
 /*
 OpenApiV10QianchuanCarouselAwemeGetGet Method for OpenApiV10QianchuanCarouselAwemeGetGet
+
+通过商品id获取抖音号下已有的图文素材，当前仅短视频带货支持，必须传商品id
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest
@@ -125,6 +141,12 @@ func (a *QianchuanCarouselAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	}
 	if r.count != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
+	}
+	if r.orderField != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_field", r.orderField)
+	}
+	if r.orderType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_type", r.orderType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

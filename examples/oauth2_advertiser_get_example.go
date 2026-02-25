@@ -23,7 +23,7 @@ import (
 )
 
 type ApiOpenApiOauth2AdvertiserGetGetRequestExample struct {
-	AccessToken string `json:"access_token"`
+	AccessToken string `json:"access_token,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/oauth2/advertiser/get/ Get

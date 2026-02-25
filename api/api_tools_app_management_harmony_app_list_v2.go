@@ -23,13 +23,14 @@ import (
 type ToolsAppManagementHarmonyAppListV2ApiService service
 
 type ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest struct {
-	ctx         context.Context
-	ApiService  *ToolsAppManagementHarmonyAppListV2ApiService
-	accountId   *int64
-	accountType *ToolsAppManagementHarmonyAppListV2AccountType
-	page        *int64
-	pageSize    *int64
-	filtering   *ToolsAppManagementHarmonyAppListV2Filtering
+	ctx                    context.Context
+	ApiService             *ToolsAppManagementHarmonyAppListV2ApiService
+	accountId              *int64
+	accountType            *ToolsAppManagementHarmonyAppListV2AccountType
+	page                   *int64
+	pageSize               *int64
+	filtering              *ToolsAppManagementHarmonyAppListV2Filtering
+	accountAssetQueryScope *ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
@@ -59,6 +60,11 @@ func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Filtering(filter
 	return r
 }
 
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
+	return r
+}
+
 func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Execute() (*ToolsAppManagementHarmonyAppListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -77,6 +83,8 @@ func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) WithLog(enable b
 
 /*
 OpenApi2ToolsAppManagementHarmonyAppListGet Method for OpenApi2ToolsAppManagementHarmonyAppListGet
+
+查询鸿蒙应用列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest
@@ -126,6 +134,9 @@ func (a *ToolsAppManagementHarmonyAppListV2ApiService) getExecute(r *ApiOpenApi2
 	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -10,14 +10,16 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30FilteringBidType
+// LocalProjectListV30FilteringBidType 出价方式筛选，默认不限
 type LocalProjectListV30FilteringBidType string
 
 // List of local_project_list_v3.0_filtering_bid_type
 const (
-	ALL_LocalProjectListV30FilteringBidType    LocalProjectListV30FilteringBidType = "ALL"
-	MANUAL_LocalProjectListV30FilteringBidType LocalProjectListV30FilteringBidType = "MANUAL"
-	SMART_LocalProjectListV30FilteringBidType  LocalProjectListV30FilteringBidType = "SMART"
+	ALL_LocalProjectListV30FilteringBidType             LocalProjectListV30FilteringBidType = "ALL"
+	MANUAL_LocalProjectListV30FilteringBidType          LocalProjectListV30FilteringBidType = "MANUAL"
+	MAX_CONVERSION_LocalProjectListV30FilteringBidType  LocalProjectListV30FilteringBidType = "MAX_CONVERSION"
+	SMART_LocalProjectListV30FilteringBidType           LocalProjectListV30FilteringBidType = "SMART"
+	STABILIZE_COSTS_LocalProjectListV30FilteringBidType LocalProjectListV30FilteringBidType = "STABILIZE_COSTS"
 )
 
 // Ptr returns reference to local_project_list_v3.0_filtering_bid_type value

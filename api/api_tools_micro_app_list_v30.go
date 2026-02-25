@@ -23,12 +23,13 @@ import (
 type ToolsMicroAppListV30ApiService service
 
 type ApiOpenApiV30ToolsMicroAppListGetRequest struct {
-	ctx          context.Context
-	ApiService   *ToolsMicroAppListV30ApiService
-	advertiserId *int64
-	filtering    *ToolsMicroAppListV30Filtering
-	page         *int32
-	pageSize     *int32
+	ctx                    context.Context
+	ApiService             *ToolsMicroAppListV30ApiService
+	advertiserId           *int64
+	filtering              *ToolsMicroAppListV30Filtering
+	page                   *int32
+	pageSize               *int32
+	accountAssetQueryScope *ToolsMicroAppListV30AccountAssetQueryScope
 }
 
 func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsMicroAppListGetRequest {
@@ -51,6 +52,11 @@ func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) PageSize(pageSize int32) *Api
 	return r
 }
 
+func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsMicroAppListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsMicroAppListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
+	return r
+}
+
 func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) Execute() (*ToolsMicroAppListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -69,6 +75,8 @@ func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) WithLog(enable bool) *ApiOpen
 
 /*
 OpenApiV30ToolsMicroAppListGet Method for OpenApiV30ToolsMicroAppListGet
+
+mapi场景获取字节小程序列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroAppListGetRequest
@@ -114,6 +122,9 @@ func (a *ToolsMicroAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroAp
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

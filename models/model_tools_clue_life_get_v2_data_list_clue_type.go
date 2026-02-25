@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListClueType
+// ToolsClueLifeGetV2DataListClueType 留资组件
 type ToolsClueLifeGetV2DataListClueType string
 
 // List of tools_clue_life_get_v2_data_list_clue_type
@@ -19,6 +19,7 @@ const (
 	CONSULT_ToolsClueLifeGetV2DataListClueType      ToolsClueLifeGetV2DataListClueType = "CONSULT"
 	SMARTPHONE_ToolsClueLifeGetV2DataListClueType   ToolsClueLifeGetV2DataListClueType = "SMARTPHONE"
 	GROUP_BUYING_ToolsClueLifeGetV2DataListClueType ToolsClueLifeGetV2DataListClueType = "GROUP_BUYING"
+	ENT_WECHAT_ToolsClueLifeGetV2DataListClueType   ToolsClueLifeGetV2DataListClueType = "ENT_WECHAT"
 )
 
 // Ptr returns reference to tools_clue_life_get_v2_data_list_clue_type value

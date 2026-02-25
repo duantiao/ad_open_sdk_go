@@ -34,6 +34,9 @@ type ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest struct {
 	landingType        *EventManagerDeepBidTypeGetV30LandingType
 	adType             *EventManagerDeepBidTypeGetV30AdType
 	marketingGoal      *EventManagerDeepBidTypeGetV30MarketingGoal
+	microPromotionType *EventManagerDeepBidTypeGetV30MicroPromotionType
+	productSetting     *EventManagerDeepBidTypeGetV30ProductSetting
+	valueOptimizedType *EventManagerDeepBidTypeGetV30ValueOptimizedType
 }
 
 // 广告主id
@@ -86,6 +89,21 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MarketingGoal(market
 	return r
 }
 
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MicroPromotionType(microPromotionType EventManagerDeepBidTypeGetV30MicroPromotionType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+	r.microPromotionType = &microPromotionType
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ProductSetting(productSetting EventManagerDeepBidTypeGetV30ProductSetting) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+	r.productSetting = &productSetting
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ValueOptimizedType(valueOptimizedType EventManagerDeepBidTypeGetV30ValueOptimizedType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+	r.valueOptimizedType = &valueOptimizedType
+	return r
+}
+
 func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) Execute() (*EventManagerDeepBidTypeGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -104,6 +122,8 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) WithLog(enable bool)
 
 /*
 OpenApiV30EventManagerDeepBidTypeGetGet Method for OpenApiV30EventManagerDeepBidTypeGetGet
+
+投放2.0获取可用深度优化方式
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest
@@ -168,6 +188,15 @@ func (a *EventManagerDeepBidTypeGetV30ApiService) getExecute(r *ApiOpenApiV30Eve
 	}
 	if r.marketingGoal != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
+	}
+	if r.microPromotionType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "micro_promotion_type", r.microPromotionType)
+	}
+	if r.productSetting != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "product_setting", r.productSetting)
+	}
+	if r.valueOptimizedType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "value_optimized_type", r.valueOptimizedType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

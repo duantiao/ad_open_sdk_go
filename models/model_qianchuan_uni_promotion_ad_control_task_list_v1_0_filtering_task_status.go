@@ -10,13 +10,14 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus
+// QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus 投放状态，默认查询全部 调控中PROCESSING
 type QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus string
 
 // List of qianchuan_uni_promotion_ad_control_task_list_v1.0_filtering_task_status
 const (
 	DELETED_QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus         QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus = "DELETED"
 	DISABLE_QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus         QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus = "DISABLE"
+	FROZEN_QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus          QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus = "FROZEN"
 	OFFLINE_BALANCE_QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus = "OFFLINE_BALANCE"
 	OFFLINE_BUDGET_QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus  QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus = "OFFLINE_BUDGET"
 	OFFLINE_TIME_QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus    QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus = "OFFLINE_TIME"

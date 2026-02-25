@@ -15,6 +15,7 @@ type EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction string
 
 // List of event_manager_optimized_goal_get_v2_v3.0_data_goals_external_action
 const (
+	AD_CONVERT_ADD_TO_CART_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                      EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_ADD_TO_CART"
 	AD_CONVERT_PAGE_VIEW_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                        EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_PAGE_VIEW"
 	AD_CONVERT_TYPE_ACTIVE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                      EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_ACTIVE"
 	AD_CONVERT_TYPE_ACTIVE_REGISTER_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction             EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_ACTIVE_REGISTER"
@@ -128,6 +129,7 @@ const (
 	AD_CONVERT_TYPE_PHONE_CONFIRM_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction               EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PHONE_CONFIRM"
 	AD_CONVERT_TYPE_PHONE_CONNECT_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction               EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PHONE_CONNECT"
 	AD_CONVERT_TYPE_PHONE_EFFECTIVE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction             EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PHONE_EFFECTIVE"
+	AD_CONVERT_TYPE_PLANTING_GRASS_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PLANTING_GRASS"
 	AD_CONVERT_TYPE_POI_ADDRESS_CLICK_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction           EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_POI_ADDRESS_CLICK"
 	AD_CONVERT_TYPE_POI_COLLECT_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_POI_COLLECT"
 	AD_CONVERT_TYPE_POI_MULTIPLE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_POI_MULTIPLE"

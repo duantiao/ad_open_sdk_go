@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -29,7 +28,6 @@ type ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest struct {
 	accountId   *int64
 	accountType *ToolsAppManagementUploadTaskListV2AccountType
 	filtering   *ToolsAppManagementUploadTaskListV2Filtering
-	version     string
 }
 
 // 账户id指可以接的账号体系如广告主id、巨量纵横组织id等
@@ -69,15 +67,15 @@ func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) WithLog(enable b
 /*
 OpenApi2ToolsAppManagementUploadTaskListGet Method for OpenApi2ToolsAppManagementUploadTaskListGet
 
+查询异步上传解析任务的状态信息「支持所有账户体系」
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest
 */
-func (a *ToolsAppManagementUploadTaskListV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest {
+func (a *ToolsAppManagementUploadTaskListV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest {
 	return &ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -97,7 +95,6 @@ func (a *ToolsAppManagementUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/upload_task/list/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)
@@ -105,9 +102,6 @@ func (a *ToolsAppManagementUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
-	}
-	if *r.accountId < 1 {
-		return localVarReturnValue, nil, ReportError("accountId must be greater than 1")
 	}
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")

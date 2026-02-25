@@ -29,6 +29,8 @@ type ApiOpenApiV30ToolsAssetLinkListGetRequest struct {
 	filtering    *ToolsAssetLinkListV30Filtering
 	page         *int32
 	pageSize     *int32
+	cursor       *int64
+	count        *int64
 }
 
 func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsAssetLinkListGetRequest {
@@ -51,6 +53,18 @@ func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) PageSize(pageSize int32) *Ap
 	return r
 }
 
+// 页码游标值，第一次拉取，请传入0 不传入或者传空字符串默认使用page+page_size 注：page+page_size与cursor+count为两种分页方式
+func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) Cursor(cursor int64) *ApiOpenApiV30ToolsAssetLinkListGetRequest {
+	r.cursor = &cursor
+	return r
+}
+
+// 页面数据量 注：page+page_size与cursor+count为两种分页方式
+func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) Count(count int64) *ApiOpenApiV30ToolsAssetLinkListGetRequest {
+	r.count = &count
+	return r
+}
+
 func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) Execute() (*ToolsAssetLinkListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -69,6 +83,8 @@ func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) WithLog(enable bool) *ApiOpe
 
 /*
 OpenApiV30ToolsAssetLinkListGet Method for OpenApiV30ToolsAssetLinkListGet
+
+mapi场景获取字节小程序小游戏链接
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsAssetLinkListGetRequest
@@ -115,6 +131,12 @@ func (a *ToolsAssetLinkListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAssetL
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.cursor != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "cursor", r.cursor)
+	}
+	if r.count != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

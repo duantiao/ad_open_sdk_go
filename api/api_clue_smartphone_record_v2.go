@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -27,7 +26,6 @@ type ApiOpenApi2ClueSmartphoneRecordGetRequest struct {
 	ctx          context.Context
 	ApiService   *ClueSmartphoneRecordV2ApiService
 	advertiserId *int64
-	version      string
 	instanceIds  *[]int64
 	clueIds      *[]int64
 	siteIds      *[]int64
@@ -102,15 +100,15 @@ func (r *ApiOpenApi2ClueSmartphoneRecordGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ClueSmartphoneRecordGet Method for OpenApi2ClueSmartphoneRecordGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2ClueSmartphoneRecordGetRequest
 */
-func (a *ClueSmartphoneRecordV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ClueSmartphoneRecordGetRequest {
+func (a *ClueSmartphoneRecordV2ApiService) Get(ctx context.Context) *ApiOpenApi2ClueSmartphoneRecordGetRequest {
 	return &ApiOpenApi2ClueSmartphoneRecordGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -130,7 +128,6 @@ func (a *ClueSmartphoneRecordV2ApiService) getExecute(r *ApiOpenApi2ClueSmartpho
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/clue/smartphone/record/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)
@@ -142,8 +139,8 @@ func (a *ClueSmartphoneRecordV2ApiService) getExecute(r *ApiOpenApi2ClueSmartpho
 	if *r.advertiserId < 1 {
 		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
 	}
-	if *r.advertiserId > 9223372036854775807 {
-		return localVarReturnValue, nil, ReportError("advertiserId must be less than 9223372036854775807")
+	if *r.advertiserId > -9223372036854775616 {
+		return localVarReturnValue, nil, ReportError("advertiserId must be less than -9223372036854775616")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)

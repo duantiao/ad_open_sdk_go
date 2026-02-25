@@ -38,8 +38,6 @@ type ProjectCreateV30Request struct {
 	//
 	DownloadUrl *string                    `json:"download_url,omitempty"`
 	DpaAdtype   *ProjectCreateV30DpaAdtype `json:"dpa_adtype,omitempty"`
-	// 商品投放范围，分类列表，由【DPA商品广告-获取DPA分类】 得到
-	DpaCategories []int64 `json:"dpa_categories,omitempty"`
 	// 自定义筛选条件（商品投放条件）。用于圈定商品投放范围，结合商品库字段搭配判断条件，圈定商品投放范围。获取商品库元信息-商品广告-商业开放平台
 	DpaProductTarget []*ProjectCreateV30RequestDpaProductTargetInner `json:"dpa_product_target,omitempty"`
 	//
@@ -70,8 +68,11 @@ type ProjectCreateV30Request struct {
 	//
 	QuickAppId     *int64                                 `json:"quick_app_id,omitempty"`
 	RelatedProduct *ProjectCreateV30RequestRelatedProduct `json:"related_product,omitempty"`
+	//
+	RtaId *int64 `json:"rta_id,omitempty"`
 	// 出价系数
 	SearchBidRatio                 *float64                                        `json:"search_bid_ratio,omitempty"`
+	StarAutoDeliverySwitch         *ProjectCreateV30StarAutoDeliverySwitch         `json:"star_auto_delivery_switch,omitempty"`
 	StarAutoMaterialAdditionSwitch *ProjectCreateV30StarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
 	// 星广联投二期任务id
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
@@ -82,4 +83,8 @@ type ProjectCreateV30Request struct {
 	UlinkUrl           *string                             `json:"ulink_url,omitempty"`
 	UlinkUrlType       *ProjectCreateV30UlinkUrlType       `json:"ulink_url_type,omitempty"`
 	ValueOptimizedType *ProjectCreateV30ValueOptimizedType `json:"value_optimized_type,omitempty"`
+	// 云图品牌ID
+	Yuntu5aBrandId *int64 `json:"yuntu_5a_brand_id,omitempty"`
+	// 云图品牌版行业ID
+	Yuntu5aBrandMainIndustryId *int64 `json:"yuntu_5a_brand_main_industry_id,omitempty"`
 }

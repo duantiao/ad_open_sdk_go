@@ -18,6 +18,7 @@ const (
 	MATERIAL_STATUS_ADV_OFFLINE_BUDGET_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus          PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_ADV_OFFLINE_BUDGET"
 	MATERIAL_STATUS_ADV_PRE_OFFLINE_BUDGET_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus      PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_ADV_PRE_OFFLINE_BUDGET"
 	MATERIAL_STATUS_AUDIT_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                       PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_AUDIT"
+	MATERIAL_STATUS_AVATAR_DISABLED_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus             PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_AVATAR_DISABLED"
 	MATERIAL_STATUS_AWEME_AC_DISABLED_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus           PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_AWEME_AC_DISABLED"
 	MATERIAL_STATUS_AWEME_ANCHOR_DISABLED_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus       PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_AWEME_ANCHOR_DISABLED"
 	MATERIAL_STATUS_AWEME_VIDEO_DISABLED_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus        PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_AWEME_VIDEO_DISABLED"
@@ -26,6 +27,7 @@ const (
 	MATERIAL_STATUS_DISABLE_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                     PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_DISABLE"
 	MATERIAL_STATUS_ERROR_DEFAULT_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus               PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_ERROR_DEFAULT"
 	MATERIAL_STATUS_FROZEN_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                      PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_FROZEN"
+	MATERIAL_STATUS_GUIDE_VIDEO_NOT_EXIST_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus       PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_GUIDE_VIDEO_NOT_EXIST"
 	MATERIAL_STATUS_LIVE_ROOM_OFF_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus               PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_LIVE_ROOM_OFF"
 	MATERIAL_STATUS_MATERIAL_DELETE_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus             PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_MATERIAL_DELETE"
 	MATERIAL_STATUS_NO_SCHEDULE_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                 PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_NO_SCHEDULE"
@@ -46,6 +48,7 @@ const (
 	MATERIAL_STATUS_SYSTEM_DISABLE_QUOTA_LIMIT_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus  PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_SYSTEM_DISABLE_QUOTA_LIMIT"
 	MATERIAL_STATUS_TIME_DONE_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                   PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_TIME_DONE"
 	MATERIAL_STATUS_TIME_NO_REACH_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus               PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_TIME_NO_REACH"
+	MATERIAL_STATUS_VIDEO_NO_ADS_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_VIDEO_NO_ADS"
 )
 
 // Ptr returns reference to promotion_list_v3.0_data_list_promotion_materials_video_material_list_material_status value

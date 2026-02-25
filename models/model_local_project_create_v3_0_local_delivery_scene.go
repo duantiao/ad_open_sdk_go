@@ -10,12 +10,13 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30LocalDeliveryScene
+// LocalProjectCreateV30LocalDeliveryScene 推广目的，允许值： - `CONTENT_HEAT` 内容加热 - `POI_RECOMMEND` 门店引流 -- 当marketing_goal =`LIVE` 直播时，不支持传入`POI_RECOMMEND` 门店引流 - `PRODUCT_PAY` 团购成交
 type LocalProjectCreateV30LocalDeliveryScene string
 
 // List of local_project_create_v3.0_local_delivery_scene
 const (
 	CONTENT_HEAT_LocalProjectCreateV30LocalDeliveryScene  LocalProjectCreateV30LocalDeliveryScene = "CONTENT_HEAT"
+	EXTERNAL_LocalProjectCreateV30LocalDeliveryScene      LocalProjectCreateV30LocalDeliveryScene = "EXTERNAL"
 	POI_RECOMMEND_LocalProjectCreateV30LocalDeliveryScene LocalProjectCreateV30LocalDeliveryScene = "POI_RECOMMEND"
 	PRODUCT_PAY_LocalProjectCreateV30LocalDeliveryScene   LocalProjectCreateV30LocalDeliveryScene = "PRODUCT_PAY"
 )

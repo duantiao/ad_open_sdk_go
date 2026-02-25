@@ -30,6 +30,7 @@ type ApiOpenApi2ToolsClueGetGetRequest struct {
 	endTime       *string
 	page          *int32
 	pageSize      *int32
+	clueIds       *[]int64
 }
 
 func (r *ApiOpenApi2ToolsClueGetGetRequest) AdvertiserIds(advertiserIds []int64) *ApiOpenApi2ToolsClueGetGetRequest {
@@ -57,6 +58,11 @@ func (r *ApiOpenApi2ToolsClueGetGetRequest) PageSize(pageSize int32) *ApiOpenApi
 	return r
 }
 
+func (r *ApiOpenApi2ToolsClueGetGetRequest) ClueIds(clueIds []int64) *ApiOpenApi2ToolsClueGetGetRequest {
+	r.clueIds = &clueIds
+	return r
+}
+
 func (r *ApiOpenApi2ToolsClueGetGetRequest) Execute() (*ToolsClueGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -75,6 +81,8 @@ func (r *ApiOpenApi2ToolsClueGetGetRequest) WithLog(enable bool) *ApiOpenApi2Too
 
 /*
 OpenApi2ToolsClueGetGet Method for OpenApi2ToolsClueGetGet
+
+该接口用于获取广告主的飞鱼线索列表。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueGetGetRequest
@@ -122,6 +130,9 @@ func (a *ToolsClueGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueGetGetReque
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.clueIds != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "clue_ids", r.clueIds)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

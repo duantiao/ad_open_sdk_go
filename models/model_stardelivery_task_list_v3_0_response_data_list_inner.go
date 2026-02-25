@@ -25,14 +25,6 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
 	StarMaterialBidRange []float64 `json:"star_material_bid_range,omitempty"`
 	//
-	StarMaterialFirstName *string `json:"star_material_first_name,omitempty"`
-	//
-	StarMaterialFirstType *int64 `json:"star_material_first_type,omitempty"`
-	//
-	StarMaterialSecondName *string `json:"star_material_second_name,omitempty"`
-	//
-	StarMaterialSecondType *int64 `json:"star_material_second_type,omitempty"`
-	//
 	StarPendingConfirmCount *int64 `json:"star_pending_confirm_count,omitempty"`
 	//
 	StarSaleCostEndTime *string `json:"star_sale_cost_end_time,omitempty"`
@@ -44,9 +36,16 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
 	StarTaskBid *float64 `json:"star_task_bid,omitempty"`
 	//
+	StarTaskBidAndroid *float64 `json:"star_task_bid_android,omitempty"`
+	//
+	StarTaskBidIos *float64 `json:"star_task_bid_ios,omitempty"`
+	//
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`
 	//
 	StarTaskCanDeliveryItemCount *int64 `json:"star_task_can_delivery_item_count,omitempty"`
+	//
+	StarTaskCategoryName *string                                              `json:"star_task_category_name,omitempty"`
+	StarTaskCategoryType *StardeliveryTaskListV30DataListStarTaskCategoryType `json:"star_task_category_type,omitempty"`
 	//
 	StarTaskCreateTime     *string                                                `json:"star_task_create_time,omitempty"`
 	StarTaskExternalAction *StardeliveryTaskListV30DataListStarTaskExternalAction `json:"star_task_external_action,omitempty"`

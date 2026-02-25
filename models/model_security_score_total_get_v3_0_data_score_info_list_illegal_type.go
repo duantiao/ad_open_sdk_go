@@ -10,15 +10,19 @@ Oceanengine Open Api
 
 package models
 
-// SecurityScoreTotalGetV30DataScoreInfoListIllegalType
+// SecurityScoreTotalGetV30DataScoreInfoListIllegalType 违规类型
 type SecurityScoreTotalGetV30DataScoreInfoListIllegalType string
 
 // List of security_score_total_get_v3.0_data_score_info_list_illegal_type
 const (
-	GENERAL_SecurityScoreTotalGetV30DataScoreInfoListIllegalType       SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "GENERAL"
-	ONECLASS_SecurityScoreTotalGetV30DataScoreInfoListIllegalType      SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "ONECLASS"
-	SERIOUS_SecurityScoreTotalGetV30DataScoreInfoListIllegalType       SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "SERIOUS"
-	TWOTHREECLASS_SecurityScoreTotalGetV30DataScoreInfoListIllegalType SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "TWOTHREECLASS"
+	BACKLINKGENERAL_SecurityScoreTotalGetV30DataScoreInfoListIllegalType SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "BACKLINKGENERAL"
+	BACKLINKSERIOUS_SecurityScoreTotalGetV30DataScoreInfoListIllegalType SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "BACKLINKSERIOUS"
+	CRITICAL_SecurityScoreTotalGetV30DataScoreInfoListIllegalType        SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "CRITICAL"
+	GENERAL_SecurityScoreTotalGetV30DataScoreInfoListIllegalType         SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "GENERAL"
+	MINOR_SecurityScoreTotalGetV30DataScoreInfoListIllegalType           SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "MINOR"
+	ONECLASS_SecurityScoreTotalGetV30DataScoreInfoListIllegalType        SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "ONECLASS"
+	SERIOUS_SecurityScoreTotalGetV30DataScoreInfoListIllegalType         SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "SERIOUS"
+	TWOTHREECLASS_SecurityScoreTotalGetV30DataScoreInfoListIllegalType   SecurityScoreTotalGetV30DataScoreInfoListIllegalType = "TWOTHREECLASS"
 )
 
 // Ptr returns reference to security_score_total_get_v3.0_data_score_info_list_illegal_type value

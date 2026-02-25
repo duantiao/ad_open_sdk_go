@@ -23,18 +23,19 @@ import (
 type QianchuanUniPromotionListV10ApiService service
 
 type ApiOpenApiV10QianchuanUniPromotionListGetRequest struct {
-	ctx           context.Context
-	ApiService    *QianchuanUniPromotionListV10ApiService
-	advertiserId  *int64
-	startTime     *string
-	endTime       *string
-	marketingGoal *QianchuanUniPromotionListV10MarketingGoal
-	fields        *[]*QianchuanUniPromotionListV10Fields
-	orderType     *QianchuanUniPromotionListV10OrderType
-	orderField    *QianchuanUniPromotionListV10OrderField
-	page          *int32
-	pageSize      *QianchuanUniPromotionListV10PageSize
-	filtering     *QianchuanUniPromotionListV10Filtering
+	ctx                context.Context
+	ApiService         *QianchuanUniPromotionListV10ApiService
+	advertiserId       *int64
+	startTime          *string
+	endTime            *string
+	marketingGoal      *QianchuanUniPromotionListV10MarketingGoal
+	fields             *[]*QianchuanUniPromotionListV10Fields
+	filtering          *QianchuanUniPromotionListV10Filtering
+	needCompensateInfo *bool
+	orderType          *QianchuanUniPromotionListV10OrderType
+	orderField         *QianchuanUniPromotionListV10OrderField
+	page               *int32
+	pageSize           *QianchuanUniPromotionListV10PageSize
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
@@ -62,6 +63,18 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Fields(fields []*Qian
 	return r
 }
 
+// 过滤器
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Filtering(filtering QianchuanUniPromotionListV10Filtering) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+	r.filtering = &filtering
+	return r
+}
+
+// 是否获取成本保障信息
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) NeedCompensateInfo(needCompensateInfo bool) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+	r.needCompensateInfo = &needCompensateInfo
+	return r
+}
+
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) OrderType(orderType QianchuanUniPromotionListV10OrderType) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.orderType = &orderType
 	return r
@@ -79,12 +92,6 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Page(page int32) *Api
 
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) PageSize(pageSize QianchuanUniPromotionListV10PageSize) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-// 过滤器
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Filtering(filtering QianchuanUniPromotionListV10Filtering) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -106,6 +113,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) WithLog(enable bool) 
 
 /*
 OpenApiV10QianchuanUniPromotionListGet Method for OpenApiV10QianchuanUniPromotionListGet
+
+获取全域推广列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionListGetRequest
@@ -158,6 +167,12 @@ func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	parameterAddToHeaderOrQuery(localVarQueryParams, "start_time", r.startTime)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "end_time", r.endTime)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
+	if r.needCompensateInfo != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "need_compensate_info", r.needCompensateInfo)
+	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "fields", r.fields)
 	if r.orderType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "order_type", r.orderType)
@@ -170,9 +185,6 @@ func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

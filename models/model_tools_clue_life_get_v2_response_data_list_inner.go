@@ -13,6 +13,7 @@ package models
 // ToolsClueLifeGetV2ResponseDataListInner struct for ToolsClueLifeGetV2ResponseDataListInner
 type ToolsClueLifeGetV2ResponseDataListInner struct {
 	ActionType *ToolsClueLifeGetV2DataListActionType `json:"action_type,omitempty"`
+	AdType     *ToolsClueLifeGetV2DataListAdType     `json:"ad_type,omitempty"`
 	// 详细地址
 	Address *string `json:"address,omitempty"`
 	// 广告主名
@@ -36,19 +37,28 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	CityName *string `json:"city_name,omitempty"`
 	// 线索ID
 	ClueId *string `json:"clue_id,omitempty"`
+	// 线索意向，格式 json
+	ClueIntention *string `json:"clue_intention,omitempty"`
 	// 所属人姓名
-	ClueOwnerName *string                             `json:"clue_owner_name,omitempty"`
-	ClueType      *ToolsClueLifeGetV2DataListClueType `json:"clue_type,omitempty"`
+	ClueOwnerName *string `json:"clue_owner_name,omitempty"`
+	// 线索返回状态：正常 or 账户状态异常
+	ClueReturnStatus *string                             `json:"clue_return_status,omitempty"`
+	ClueType         *ToolsClueLifeGetV2DataListClueType `json:"clue_type,omitempty"`
 	// 内容ID
-	ContentId *string `json:"content_id,omitempty"`
+	ContentId     *string                                  `json:"content_id,omitempty"`
+	ConvertStatus *ToolsClueLifeGetV2DataListConvertStatus `json:"convert_status,omitempty"`
+	// 区县，取值同 county_name 命名与飞鱼保持一致
+	CountryName *string `json:"country_name,omitempty"`
 	// 用户填写区县
 	CountyName *string `json:"county_name,omitempty"`
 	// 线索创建时间，如：2020-04-29 00:00:00
 	CreateTimeDetail   *string                                       `json:"create_time_detail,omitempty"`
 	EffectiveState     *ToolsClueLifeGetV2DataListEffectiveState     `json:"effective_state,omitempty"`
 	EffectiveStateName *ToolsClueLifeGetV2DataListEffectiveStateName `json:"effective_state_name,omitempty"`
-	FlowEntrance       *ToolsClueLifeGetV2DataListFlowEntrance       `json:"flow_entrance,omitempty"`
-	FlowType           *ToolsClueLifeGetV2DataListFlowType           `json:"flow_type,omitempty"`
+	// 扩展字段
+	ExtInfo      *string                                 `json:"ext_info,omitempty"`
+	FlowEntrance *ToolsClueLifeGetV2DataListFlowEntrance `json:"flow_entrance,omitempty"`
+	FlowType     *ToolsClueLifeGetV2DataListFlowType     `json:"flow_type,omitempty"`
 	// 跟进账户ID
 	FollowLifeAccountId *string `json:"follow_life_account_id,omitempty"`
 	// 跟进账户名称
@@ -74,18 +84,28 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	OrderId *int64 `json:"order_id,omitempty"`
 	// 订单状态，包括交易成功、交易关闭、部分支付、支付成功、履约中
 	OrderStatus *string `json:"order_status,omitempty"`
+	// 商品id
+	ProductId *string `json:"product_id,omitempty"`
+	// 商品名称
+	ProductName *string                                `json:"product_name,omitempty"`
+	ProductType *ToolsClueLifeGetV2DataListProductType `json:"product_type,omitempty"`
 	// 广告ID
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	// 广告名称
 	PromotionName *string `json:"promotion_name,omitempty"`
 	// 用户填写省份
 	ProvinceName *string `json:"province_name,omitempty"`
+	// 买单补贴券信息
+	QcpxTicketInfo   *string                                     `json:"qcpx_ticket_info,omitempty"`
+	QcpxTicketStatus *ToolsClueLifeGetV2DataListQcpxTicketStatus `json:"qcpx_ticket_status,omitempty"`
 	// 商家备注
 	Remark *string `json:"remark,omitempty"`
 	// 商家表单自定义的字段信息，及其他线索相关信息
 	RemarkDict *string `json:"remark_dict,omitempty"`
 	// 当前线索对应广告的请求id
 	ReqId *string `json:"req_id,omitempty"`
+	// 搜索关键词
+	SearchBidWord *string `json:"search_bid_word,omitempty"`
 	// 来源职人号抖音号
 	SourceCraftsmanDouyinId *string `json:"source_craftsman_douyin_id,omitempty"`
 	// 来源职人号昵称

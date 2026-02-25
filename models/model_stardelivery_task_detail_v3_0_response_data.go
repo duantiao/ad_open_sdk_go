@@ -60,11 +60,7 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	// 素材出价（元），每条视频最低需要付给达人的底价价格
 	StarMaterialBid *float64 `json:"star_material_bid,omitempty"`
 	// 基础素材费单价区间，报价区间为建议值，系统优先邀约符合报价区间的达人
-	StarMaterialBidRange []float64 `json:"star_material_bid_range,omitempty"`
-	// 素材一级类目id
-	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
-	// 素材二级类目id
-	StarMaterialSecondType    *int32                                                          `json:"star_material_second_type,omitempty"`
+	StarMaterialBidRange      []float64                                                       `json:"star_material_bid_range,omitempty"`
 	StarTaskAlbumMicroAppInfo *StardeliveryTaskDetailV30ResponseDataStarTaskAlbumMicroAppInfo `json:"star_task_album_micro_app_info,omitempty"`
 	// 原生锚点ID
 	StarTaskAnchorId   *int64                                                  `json:"star_task_anchor_id,omitempty"`
@@ -74,11 +70,17 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	StarTaskBanReasonDetail *string `json:"star_task_ban_reason_detail,omitempty"`
 	// 任务出价（元）
 	StarTaskBid *float64 `json:"star_task_bid,omitempty"`
+	// 安卓出价（元）
+	StarTaskBidAndroid *float64 `json:"star_task_bid_android,omitempty"`
+	// IOS出价（元）
+	StarTaskBidIos *float64 `json:"star_task_bid_ios,omitempty"`
 	// 任务预算（元），只能是10000-1000000元之间的整数
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`
 	// 任务创建时间，格式YYYY-MM-DD
-	StarTaskCreateTime     *string                                              `json:"star_task_create_time,omitempty"`
-	StarTaskExternalAction *StardeliveryTaskDetailV30DataStarTaskExternalAction `json:"star_task_external_action,omitempty"`
+	StarTaskCreateTime *string `json:"star_task_create_time,omitempty"`
+	// 服务商延长后的实际投稿截止时间
+	StarTaskDelayedPostEndTime *string                                              `json:"star_task_delayed_post_end_time,omitempty"`
+	StarTaskExternalAction     *StardeliveryTaskDetailV30DataStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	// 星广联投任务ID
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	// 任务内介绍文案

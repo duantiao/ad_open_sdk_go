@@ -29,6 +29,7 @@ type ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest struct {
 	awemeId      *int64
 	filtering    *QianchuanUniPromotionProductAwemeGetV10Filtering
 	cursor       *int64
+	platform     *QianchuanUniPromotionProductAwemeGetV10Platform
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
@@ -54,6 +55,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Cursor(cur
 	return r
 }
 
+// 0-Unknown 1-PC 2-随心推 不传默认PC
+func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Platform(platform QianchuanUniPromotionProductAwemeGetV10Platform) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
+	r.platform = &platform
+	return r
+}
+
 func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Execute() (*QianchuanUniPromotionProductAwemeGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -72,6 +79,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) WithLog(en
 
 /*
 OpenApiV10QianchuanUniPromotionProductAwemeGetGet Method for OpenApiV10QianchuanUniPromotionProductAwemeGetGet
+
+全域达人获取可投商品列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest
@@ -122,6 +131,9 @@ func (a *QianchuanUniPromotionProductAwemeGetV10ApiService) getExecute(r *ApiOpe
 	parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	if r.cursor != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "cursor", r.cursor)
+	}
+	if r.platform != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "platform", r.platform)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

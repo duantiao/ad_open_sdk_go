@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityScoreViolationEventGetV30FilteringStatus
+// SecurityScoreViolationEventGetV30FilteringStatus 生效状态
 type SecurityScoreViolationEventGetV30FilteringStatus string
 
 // List of security_score_violation_event_get_v3.0_filtering_status
@@ -18,6 +18,7 @@ const (
 	APPEAL_SecurityScoreViolationEventGetV30FilteringStatus     SecurityScoreViolationEventGetV30FilteringStatus = "APPEAL"
 	FAILAPPEAL_SecurityScoreViolationEventGetV30FilteringStatus SecurityScoreViolationEventGetV30FilteringStatus = "FAILAPPEAL"
 	ONAPPEAL_SecurityScoreViolationEventGetV30FilteringStatus   SecurityScoreViolationEventGetV30FilteringStatus = "ONAPPEAL"
+	TIMEOUT_SecurityScoreViolationEventGetV30FilteringStatus    SecurityScoreViolationEventGetV30FilteringStatus = "TIMEOUT"
 	VALID_SecurityScoreViolationEventGetV30FilteringStatus      SecurityScoreViolationEventGetV30FilteringStatus = "VALID"
 )
 

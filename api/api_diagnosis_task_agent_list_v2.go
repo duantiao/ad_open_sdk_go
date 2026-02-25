@@ -23,15 +23,17 @@ import (
 type DiagnosisTaskAgentListV2ApiService service
 
 type ApiOpenApi2DiagnosisTaskAgentListGetRequest struct {
-	ctx        context.Context
-	ApiService *DiagnosisTaskAgentListV2ApiService
-	agentId    *int64
-	results    *[]*DiagnosisTaskAgentListV2Results
-	status     *[]*DiagnosisTaskAgentListV2Status
-	startTime  *string
-	endTime    *string
-	page       *int32
-	pageSize   *int32
+	ctx           context.Context
+	ApiService    *DiagnosisTaskAgentListV2ApiService
+	agentId       *int64
+	results       *[]*DiagnosisTaskAgentListV2Results
+	status        *[]*DiagnosisTaskAgentListV2Status
+	startTime     *string
+	endTime       *string
+	page          *int32
+	pageSize      *int32
+	startDateTime *string
+	endDateTime   *string
 }
 
 // 代理商ID
@@ -76,6 +78,18 @@ func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) PageSize(pageSize int32) *
 	return r
 }
 
+// 根据任务创建时间进行过滤的起始时间，优先级高于start_time，与end_date_time搭配使用，格式：yyyy-mm-dd hh:mm:ss
+func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) StartDateTime(startDateTime string) *ApiOpenApi2DiagnosisTaskAgentListGetRequest {
+	r.startDateTime = &startDateTime
+	return r
+}
+
+// 根据任务创建时间进行过滤的截止时间，优先级高于end_time，与start_date_time搭配使用，格式：yyyy-mm-dd hh:mm:ss
+func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) EndDateTime(endDateTime string) *ApiOpenApi2DiagnosisTaskAgentListGetRequest {
+	r.endDateTime = &endDateTime
+	return r
+}
+
 func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) Execute() (*DiagnosisTaskAgentListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -94,6 +108,8 @@ func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) WithLog(enable bool) *ApiO
 
 /*
 OpenApi2DiagnosisTaskAgentListGet Method for OpenApi2DiagnosisTaskAgentListGet
+
+代理商获取前测任务列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DiagnosisTaskAgentListGetRequest
@@ -148,6 +164,12 @@ func (a *DiagnosisTaskAgentListV2ApiService) getExecute(r *ApiOpenApi2DiagnosisT
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.startDateTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "start_date_time", r.startDateTime)
+	}
+	if r.endDateTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "end_date_time", r.endDateTime)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

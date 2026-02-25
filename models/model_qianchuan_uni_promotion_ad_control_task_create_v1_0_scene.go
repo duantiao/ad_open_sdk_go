@@ -10,12 +10,13 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdControlTaskCreateV10Scene
+// QianchuanUniPromotionAdControlTaskCreateV10Scene 调控任务类型
 type QianchuanUniPromotionAdControlTaskCreateV10Scene string
 
 // List of qianchuan_uni_promotion_ad_control_task_create_v1.0_scene
 const (
-	SMART_BOOST_QianchuanUniPromotionAdControlTaskCreateV10Scene QianchuanUniPromotionAdControlTaskCreateV10Scene = "SMART_BOOST"
+	MATERIAL_ADD_BUDGET_QianchuanUniPromotionAdControlTaskCreateV10Scene QianchuanUniPromotionAdControlTaskCreateV10Scene = "MATERIAL_ADD_BUDGET"
+	SMART_BOOST_QianchuanUniPromotionAdControlTaskCreateV10Scene         QianchuanUniPromotionAdControlTaskCreateV10Scene = "SMART_BOOST"
 )
 
 // Ptr returns reference to qianchuan_uni_promotion_ad_control_task_create_v1.0_scene value

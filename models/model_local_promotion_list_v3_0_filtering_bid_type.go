@@ -10,14 +10,16 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionListV30FilteringBidType
+// LocalPromotionListV30FilteringBidType 出价方式筛选，默认不限
 type LocalPromotionListV30FilteringBidType string
 
 // List of local_promotion_list_v3.0_filtering_bid_type
 const (
-	ALL_LocalPromotionListV30FilteringBidType    LocalPromotionListV30FilteringBidType = "ALL"
-	MANUAL_LocalPromotionListV30FilteringBidType LocalPromotionListV30FilteringBidType = "MANUAL"
-	SMART_LocalPromotionListV30FilteringBidType  LocalPromotionListV30FilteringBidType = "SMART"
+	ALL_LocalPromotionListV30FilteringBidType             LocalPromotionListV30FilteringBidType = "ALL"
+	MANUAL_LocalPromotionListV30FilteringBidType          LocalPromotionListV30FilteringBidType = "MANUAL"
+	MAX_CONVERSION_LocalPromotionListV30FilteringBidType  LocalPromotionListV30FilteringBidType = "MAX_CONVERSION"
+	SMART_LocalPromotionListV30FilteringBidType           LocalPromotionListV30FilteringBidType = "SMART"
+	STABILIZE_COSTS_LocalPromotionListV30FilteringBidType LocalPromotionListV30FilteringBidType = "STABILIZE_COSTS"
 )
 
 // Ptr returns reference to local_promotion_list_v3.0_filtering_bid_type value

@@ -27,11 +27,15 @@ type ProjectUpdateV30RequestDeliverySetting struct {
 	//
 	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
 	//
+	LiveDuration *float64 `json:"live_duration,omitempty"`
+	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	//
 	ScheduleTime           *string                                                `json:"schedule_time,omitempty"`
 	ScheduleType           *ProjectUpdateV30DeliverySettingScheduleType           `json:"schedule_type,omitempty"`
 	SearchContinueDelivery *ProjectUpdateV30DeliverySettingSearchContinueDelivery `json:"search_continue_delivery,omitempty"`
+	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
 	//
 	ShopMultiRoiGoals []*ProjectUpdateV30RequestDeliverySettingShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
 }

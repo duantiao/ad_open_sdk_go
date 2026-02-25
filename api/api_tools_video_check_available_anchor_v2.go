@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -26,15 +25,14 @@ type ToolsVideoCheckAvailableAnchorV2ApiService service
 type ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest struct {
 	ctx            context.Context
 	ApiService     *ToolsVideoCheckAvailableAnchorV2ApiService
-	advertiserId   *string
+	advertiserId   *int64
 	itemIds        *[]int64
 	landingType    *ToolsVideoCheckAvailableAnchorV2LandingType
 	externalAction *ToolsVideoCheckAvailableAnchorV2ExternalAction
-	version        string
 }
 
 // 广告主ID
-func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) AdvertiserId(advertiserId string) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
+func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
@@ -76,15 +74,15 @@ func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) WithLog(enable boo
 /*
 OpenApi2ToolsVideoCheckAvailableAnchorGet Method for OpenApi2ToolsVideoCheckAvailableAnchorGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest
 */
-func (a *ToolsVideoCheckAvailableAnchorV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
+func (a *ToolsVideoCheckAvailableAnchorV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
 	return &ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -104,7 +102,6 @@ func (a *ToolsVideoCheckAvailableAnchorV2ApiService) getExecute(r *ApiOpenApi2To
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/video/check_available_anchor/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)
@@ -112,6 +109,9 @@ func (a *ToolsVideoCheckAvailableAnchorV2ApiService) getExecute(r *ApiOpenApi2To
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {
 		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
+	}
+	if *r.advertiserId < 1 {
+		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
 	}
 	if r.itemIds == nil {
 		return localVarReturnValue, nil, ReportError("itemIds is required and must be specified")

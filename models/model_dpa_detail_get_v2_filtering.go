@@ -12,12 +12,15 @@ package models
 
 // DpaDetailGetV2Filtering
 type DpaDetailGetV2Filtering struct {
+	AuditStatus *DpaDetailGetV2FilteringAuditStatus `json:"audit_status,omitempty"`
 	//
 	DpaCategories []int64                             `json:"dpa_categories,omitempty"`
 	IsRecommend   *DpaDetailGetV2FilteringIsRecommend `json:"is_recommend,omitempty"`
 	//
 	ProductId *int64 `json:"product_id,omitempty"`
 	//
-	ProductName *string                        `json:"product_name,omitempty"`
-	Status      *DpaDetailGetV2FilteringStatus `json:"status,omitempty"`
+	ProductName *string `json:"product_name,omitempty"`
+	//
+	SpuId  *string                        `json:"spu_id,omitempty"`
+	Status *DpaDetailGetV2FilteringStatus `json:"status,omitempty"`
 }

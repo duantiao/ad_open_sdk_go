@@ -26,13 +26,14 @@ type ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanUniPromotionProductGetV10ApiService
 	advertiserId *int64
-	awemeId      *int64
 	filtering    *QianchuanUniPromotionProductGetV10Filtering
+	awemeId      *int64
 	orderField   *QianchuanUniPromotionProductGetV10OrderField
 	orderType    *QianchuanUniPromotionProductGetV10OrderType
 	page         *int32
 	pageSize     *int32
 	cursor       *int64
+	platfrom     *QianchuanUniPromotionProductGetV10Platfrom
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
@@ -40,15 +41,15 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) AdvertiserId(ad
 	return r
 }
 
-// 抖音号id
-func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) AwemeId(awemeId int64) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
-	r.awemeId = &awemeId
-	return r
-}
-
 // 过滤器
 func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) Filtering(filtering QianchuanUniPromotionProductGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+// 抖音号id
+func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) AwemeId(awemeId int64) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
+	r.awemeId = &awemeId
 	return r
 }
 
@@ -82,6 +83,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) Cursor(cursor i
 	return r
 }
 
+// 平台
+func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) Platfrom(platfrom QianchuanUniPromotionProductGetV10Platfrom) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
+	r.platfrom = &platfrom
+	return r
+}
+
 func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) Execute() (*QianchuanUniPromotionProductGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
@@ -100,6 +107,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) WithLog(enable 
 
 /*
 OpenApiV10QianchuanUniPromotionProductGetGet Method for OpenApiV10QianchuanUniPromotionProductGetGet
+
+全域商家可选商品列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest
@@ -138,18 +147,14 @@ func (a *QianchuanUniPromotionProductGetV10ApiService) getExecute(r *ApiOpenApiV
 	if *r.advertiserId < 0 {
 		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 0")
 	}
-	if r.awemeId == nil {
-		return localVarReturnValue, nil, ReportError("awemeId is required and must be specified")
-	}
-	if *r.awemeId < 0 {
-		return localVarReturnValue, nil, ReportError("awemeId must be greater than 0")
-	}
 	if r.filtering == nil {
 		return localVarReturnValue, nil, ReportError("filtering is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
+	if r.awemeId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
+	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	if r.orderField != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "order_field", r.orderField)
@@ -165,6 +170,9 @@ func (a *QianchuanUniPromotionProductGetV10ApiService) getExecute(r *ApiOpenApiV
 	}
 	if r.cursor != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "cursor", r.cursor)
+	}
+	if r.platfrom != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "platfrom", r.platfrom)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

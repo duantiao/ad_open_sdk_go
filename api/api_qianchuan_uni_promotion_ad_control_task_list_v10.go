@@ -34,7 +34,7 @@ type ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest struct {
 	fields        *[]*QianchuanUniPromotionAdControlTaskListV10Fields
 	filtering     *QianchuanUniPromotionAdControlTaskListV10Filtering
 	orderType     *QianchuanUniPromotionAdControlTaskListV10OrderType
-	orderField    *QianchuanUniPromotionAdControlTaskListV10OrderField
+	orderField    *string
 	page          *int64
 	pageSize      *int64
 }
@@ -92,7 +92,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) OrderTyp
 }
 
 // 排序字段，默认计划创建时间倒序，同时支持根据消耗指标排序
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) OrderField(orderField QianchuanUniPromotionAdControlTaskListV10OrderField) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) OrderField(orderField string) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
 	r.orderField = &orderField
 	return r
 }
@@ -127,6 +127,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) WithLog(
 
 /*
 OpenApiV10QianchuanUniPromotionAdControlTaskListGet Method for OpenApiV10QianchuanUniPromotionAdControlTaskListGet
+
+获取调控任务列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest

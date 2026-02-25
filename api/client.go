@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.50
+// APIClient manages communication with the Oceanengine Open Api API v1.1.82
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -54,6 +54,10 @@ type APIClient struct {
 	AccountFundGetV30Api *AccountFundGetV30ApiService
 
 	AccountUpdateV30Api *AccountUpdateV30ApiService
+
+	AdBillingUniqueIdGetV30Api *AdBillingUniqueIdGetV30ApiService
+
+	AdConvertSignalV2Api *AdConvertSignalV2ApiService
 
 	AdCostProtectStatusGetV2Api *AdCostProtectStatusGetV2ApiService
 
@@ -68,8 +72,6 @@ type APIClient struct {
 	AdUpdateBidV2Api *AdUpdateBidV2ApiService
 
 	AdUpdateBudgetV2Api *AdUpdateBudgetV2ApiService
-
-	AdUpdateStatusV2Api *AdUpdateStatusV2ApiService
 
 	AdvConvertOleConvertV2Api *AdvConvertOleConvertV2ApiService
 
@@ -99,6 +101,8 @@ type APIClient struct {
 
 	AdvertiserFundDailyStatV2Api *AdvertiserFundDailyStatV2ApiService
 
+	AdvertiserFundDetailGrantV2Api *AdvertiserFundDetailGrantV2ApiService
+
 	AdvertiserFundGetV2Api *AdvertiserFundGetV2ApiService
 
 	AdvertiserFundGrantTransactionGetV2Api *AdvertiserFundGrantTransactionGetV2ApiService
@@ -123,6 +127,8 @@ type APIClient struct {
 
 	AdvertiserVerifyInfoGetV30Api *AdvertiserVerifyInfoGetV30ApiService
 
+	AgentAdvAdvertiserUpdateSaleV2Api *AgentAdvAdvertiserUpdateSaleV2ApiService
+
 	AgentAdvBiddingListQueryV2Api *AgentAdvBiddingListQueryV2ApiService
 
 	AgentAdvBrandListQueryV2Api *AgentAdvBrandListQueryV2ApiService
@@ -130,6 +136,12 @@ type APIClient struct {
 	AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
 
 	AgentAdvPerenniallyPunishHistoryQueryV2Api *AgentAdvPerenniallyPunishHistoryQueryV2ApiService
+
+	AgentAdvPerenniallyPunishV2Api *AgentAdvPerenniallyPunishV2ApiService
+
+	AgentAdvRechargeRechargeRecordV2Api *AgentAdvRechargeRechargeRecordV2ApiService
+
+	AgentAdvTemporaryPunishV2Api *AgentAdvTemporaryPunishV2ApiService
 
 	AgentAdvertiserAssignV2Api *AgentAdvertiserAssignV2ApiService
 
@@ -143,23 +155,21 @@ type APIClient struct {
 
 	AgentAdvertiserUpdateV2Api *AgentAdvertiserUpdateV2ApiService
 
+	AgentChargeVerifyV2Api *AgentChargeVerifyV2ApiService
+
 	AgentChildAgentSelectV2Api *AgentChildAgentSelectV2ApiService
 
 	AgentCompanyBiddingListQueryV2Api *AgentCompanyBiddingListQueryV2ApiService
 
 	AgentCompanyBrandListQueryV2Api *AgentCompanyBrandListQueryV2ApiService
 
-	AgentFundTransferSeqCommitV2Api *AgentFundTransferSeqCommitV2ApiService
-
-	AgentFundTransferSeqCreateV2Api *AgentFundTransferSeqCreateV2ApiService
+	AgentCreditChargeSubmitV2Api *AgentCreditChargeSubmitV2ApiService
 
 	AgentInfoV2Api *AgentInfoV2ApiService
 
+	AgentPrepayChargeGenerateRemittanceCodeV2Api *AgentPrepayChargeGenerateRemittanceCodeV2ApiService
+
 	AgentQueryRiskPromotionListV2Api *AgentQueryRiskPromotionListV2ApiService
-
-	AgentRefundTransferSeqCommitV2Api *AgentRefundTransferSeqCommitV2ApiService
-
-	AgentRefundTransferSeqCreateV2Api *AgentRefundTransferSeqCreateV2ApiService
 
 	AgentTransferTransactionRecordV2Api *AgentTransferTransactionRecordV2ApiService
 
@@ -211,8 +221,6 @@ type APIClient struct {
 
 	BrandAdCancelDeleteV30Api *BrandAdCancelDeleteV30ApiService
 
-	BrandAdCreateV30Api *BrandAdCreateV30ApiService
-
 	BrandAdDeleteV30Api *BrandAdDeleteV30ApiService
 
 	BrandAdGetV30Api *BrandAdGetV30ApiService
@@ -226,8 +234,6 @@ type APIClient struct {
 	BrandAwemeListV30Api *BrandAwemeListV30ApiService
 
 	BrandCampaignAddV30Api *BrandCampaignAddV30ApiService
-
-	BrandCampaignCreateV30Api *BrandCampaignCreateV30ApiService
 
 	BrandCampaignDeleteV30Api *BrandCampaignDeleteV30ApiService
 
@@ -359,6 +365,12 @@ type APIClient struct {
 
 	CgTransferWalletTransferListV30Api *CgTransferWalletTransferListV30ApiService
 
+	ChargeListV30Api *ChargeListV30ApiService
+
+	ChargeResultV30Api *ChargeResultV30ApiService
+
+	ChargeVerifyGetV30Api *ChargeVerifyGetV30ApiService
+
 	ClueCaCreateV2Api *ClueCaCreateV2ApiService
 
 	ClueCaInterfaceCreateV2Api *ClueCaInterfaceCreateV2ApiService
@@ -435,6 +447,10 @@ type APIClient struct {
 
 	CreativeStrategyListV2Api *CreativeStrategyListV2ApiService
 
+	CustomerCenterAccountListV30Api *CustomerCenterAccountListV30ApiService
+
+	CustomerCenterAccountOfflineListV30Api *CustomerCenterAccountOfflineListV30ApiService
+
 	CustomerCenterAdvertiserCopyV2Api *CustomerCenterAdvertiserCopyV2ApiService
 
 	CustomerCenterAdvertiserListV2Api *CustomerCenterAdvertiserListV2ApiService
@@ -444,6 +460,8 @@ type APIClient struct {
 	CustomerCenterFundTransferSeqCommitV2Api *CustomerCenterFundTransferSeqCommitV2ApiService
 
 	CustomerCenterFundTransferSeqCreateV2Api *CustomerCenterFundTransferSeqCreateV2ApiService
+
+	DcdChargeSubmitV30Api *DcdChargeSubmitV30ApiService
 
 	DecorationCouponGetV30Api *DecorationCouponGetV30ApiService
 
@@ -470,6 +488,8 @@ type APIClient struct {
 	DmpCustomAudiencePushV2V2Api *DmpCustomAudiencePushV2V2ApiService
 
 	DmpCustomAudienceReadV2Api *DmpCustomAudienceReadV2ApiService
+
+	DmpCustomAudienceSelectV2Api *DmpCustomAudienceSelectV2ApiService
 
 	DmpDataSourceCreateV2Api *DmpDataSourceCreateV2ApiService
 
@@ -501,13 +521,17 @@ type APIClient struct {
 
 	DownloadStatementV2Api *DownloadStatementV2ApiService
 
+	DpaAlbumCreateV30Api *DpaAlbumCreateV30ApiService
+
+	DpaAlbumStatusGetV30Api *DpaAlbumStatusGetV30ApiService
+
 	DpaAssetV2DetailReadV2Api *DpaAssetV2DetailReadV2ApiService
 
 	DpaAssetV2ListV2Api *DpaAssetV2ListV2ApiService
 
 	DpaAssetsDetailReadV2Api *DpaAssetsDetailReadV2ApiService
 
-	DpaAssetsListV2Api *DpaAssetsListV2ApiService
+	DpaBrandFuzzyGetV30Api *DpaBrandFuzzyGetV30ApiService
 
 	DpaCategoryGetV2Api *DpaCategoryGetV2ApiService
 
@@ -524,6 +548,36 @@ type APIClient struct {
 	DpaDetailGetV2Api *DpaDetailGetV2ApiService
 
 	DpaDictGetV2Api *DpaDictGetV2ApiService
+
+	DpaEbpCategoryGetV30Api *DpaEbpCategoryGetV30ApiService
+
+	DpaEbpClueProductDeleteV30Api *DpaEbpClueProductDeleteV30ApiService
+
+	DpaEbpClueProductGetV30Api *DpaEbpClueProductGetV30ApiService
+
+	DpaEbpClueProductListV30Api *DpaEbpClueProductListV30ApiService
+
+	DpaEbpClueProductSaveV30Api *DpaEbpClueProductSaveV30ApiService
+
+	DpaEbpDictGetV30Api *DpaEbpDictGetV30ApiService
+
+	DpaEbpLibraryListV30Api *DpaEbpLibraryListV30ApiService
+
+	DpaEbpMetaGetV30Api *DpaEbpMetaGetV30ApiService
+
+	DpaEbpPlayletAuthGetV30Api *DpaEbpPlayletAuthGetV30ApiService
+
+	DpaEbpProductCreateV30Api *DpaEbpProductCreateV30ApiService
+
+	DpaEbpProductDeleteV30Api *DpaEbpProductDeleteV30ApiService
+
+	DpaEbpProductDetailGetV30Api *DpaEbpProductDetailGetV30ApiService
+
+	DpaEbpProductListV30Api *DpaEbpProductListV30ApiService
+
+	DpaEbpProductStatusBatchUpdateV30Api *DpaEbpProductStatusBatchUpdateV30ApiService
+
+	DpaEbpProductUpdateV30Api *DpaEbpProductUpdateV30ApiService
 
 	DpaMetaGetV2Api *DpaMetaGetV2ApiService
 
@@ -557,29 +611,23 @@ type APIClient struct {
 
 	EnterpriseBindListGetV10Api *EnterpriseBindListGetV10ApiService
 
-	EnterpriseCommentDetailV10Api *EnterpriseCommentDetailV10ApiService
-
-	EnterpriseCommentListGetV10Api *EnterpriseCommentListGetV10ApiService
-
-	EnterpriseCommentReplyListV10Api *EnterpriseCommentReplyListV10ApiService
-
-	EnterpriseCommentReplyV10Api *EnterpriseCommentReplyV10ApiService
-
-	EnterpriseFlowCategoryGetV10Api *EnterpriseFlowCategoryGetV10ApiService
-
-	EnterpriseInfoV10Api *EnterpriseInfoV10ApiService
-
-	EnterpriseItemListV10Api *EnterpriseItemListV10ApiService
-
-	EnterpriseOperationLogGetV10Api *EnterpriseOperationLogGetV10ApiService
-
-	EnterpriseOverviewDataGetV10Api *EnterpriseOverviewDataGetV10ApiService
-
-	EnterpriseVideoInfoGetV10Api *EnterpriseVideoInfoGetV10ApiService
-
 	EventManagerAbnormalAssetsGetV30Api *EventManagerAbnormalAssetsGetV30ApiService
 
 	EventManagerAssetsCreateV2Api *EventManagerAssetsCreateV2ApiService
+
+	EventManagerAuthAddPublicKeyV2Api *EventManagerAuthAddPublicKeyV2ApiService
+
+	EventManagerAuthDelPublicKeyV2Api *EventManagerAuthDelPublicKeyV2ApiService
+
+	EventManagerAuthDisableV2Api *EventManagerAuthDisableV2ApiService
+
+	EventManagerAuthEnableV2Api *EventManagerAuthEnableV2ApiService
+
+	EventManagerAuthGetAllPublicKeysV2Api *EventManagerAuthGetAllPublicKeysV2ApiService
+
+	EventManagerAuthGetAuthStatusV2Api *EventManagerAuthGetAuthStatusV2ApiService
+
+	EventManagerAuthGetPublicKeyV2Api *EventManagerAuthGetPublicKeyV2ApiService
 
 	EventManagerAvailableEventsGetV2Api *EventManagerAvailableEventsGetV2ApiService
 
@@ -611,6 +659,8 @@ type APIClient struct {
 
 	FileCarouselAwemeGetV30Api *FileCarouselAwemeGetV30ApiService
 
+	FileEbpVideoGetV30Api *FileEbpVideoGetV30ApiService
+
 	FileImageAdGetV2Api *FileImageAdGetV2ApiService
 
 	FileImageAdV2Api *FileImageAdV2ApiService
@@ -628,6 +678,10 @@ type APIClient struct {
 	FileMaterialDetailV2Api *FileMaterialDetailV2ApiService
 
 	FileMaterialListV2Api *FileMaterialListV2ApiService
+
+	FilePlayableCreateV30Api *FilePlayableCreateV30ApiService
+
+	FilePlayableListV30Api *FilePlayableListV30ApiService
 
 	FilePreauditGetV30Api *FilePreauditGetV30ApiService
 
@@ -681,9 +735,13 @@ type APIClient struct {
 
 	FileVideoUploadTaskListV2Api *FileVideoUploadTaskListV2ApiService
 
+	FixRemittanceCodeListGetV30Api *FixRemittanceCodeListGetV30ApiService
+
 	FundSharedWalletBalanceGetV2Api *FundSharedWalletBalanceGetV2ApiService
 
 	GameAddictionIdGetV30Api *GameAddictionIdGetV30ApiService
+
+	GameplayListV30Api *GameplayListV30ApiService
 
 	KeywordCreateV2V2Api *KeywordCreateV2V2ApiService
 
@@ -703,6 +761,12 @@ type APIClient struct {
 
 	KeywordUpdateV30Api *KeywordUpdateV30ApiService
 
+	LocalActionCategoryV30Api *LocalActionCategoryV30ApiService
+
+	LocalActionKeywordV30Api *LocalActionKeywordV30ApiService
+
+	LocalAdvertiserBudgetGetV30Api *LocalAdvertiserBudgetGetV30ApiService
+
 	LocalAwemeAuthorizedGetV30Api *LocalAwemeAuthorizedGetV30ApiService
 
 	LocalChargeListV30Api *LocalChargeListV30ApiService
@@ -711,27 +775,13 @@ type APIClient struct {
 
 	LocalChargeSubmitV30Api *LocalChargeSubmitV30ApiService
 
+	LocalConsultAwameListGetV30Api *LocalConsultAwameListGetV30ApiService
+
 	LocalCustomAudienceGetV30Api *LocalCustomAudienceGetV30ApiService
 
-	LocalCxtAudienceUpdateV30Api *LocalCxtAudienceUpdateV30ApiService
+	LocalDeliveryQualificationListV30Api *LocalDeliveryQualificationListV30ApiService
 
-	LocalCxtBudgetUpdateV30Api *LocalCxtBudgetUpdateV30ApiService
-
-	LocalCxtCreateV30Api *LocalCxtCreateV30ApiService
-
-	LocalCxtDetailV30Api *LocalCxtDetailV30ApiService
-
-	LocalCxtExternalActionUpdateV30Api *LocalCxtExternalActionUpdateV30ApiService
-
-	LocalCxtPoiUpdateV30Api *LocalCxtPoiUpdateV30ApiService
-
-	LocalCxtReportAudienceGetV30Api *LocalCxtReportAudienceGetV30ApiService
-
-	LocalCxtReportBasicGetV30Api *LocalCxtReportBasicGetV30ApiService
-
-	LocalCxtReportConvertGetV30Api *LocalCxtReportConvertGetV30ApiService
-
-	LocalCxtStatusUpdateV30Api *LocalCxtStatusUpdateV30ApiService
+	LocalFileCarouselListV30Api *LocalFileCarouselListV30ApiService
 
 	LocalFileUploadTaskCreateV30Api *LocalFileUploadTaskCreateV30ApiService
 
@@ -743,9 +793,27 @@ type APIClient struct {
 
 	LocalFileVideoUploadV30Api *LocalFileVideoUploadV30ApiService
 
+	LocalImAccountGetV30Api *LocalImAccountGetV30ApiService
+
+	LocalImQueryMsgV30Api *LocalImQueryMsgV30ApiService
+
+	LocalImSendMsgV30Api *LocalImSendMsgV30ApiService
+
+	LocalImUploadImageV30Api *LocalImUploadImageV30ApiService
+
+	LocalImageUploadV30Api *LocalImageUploadV30ApiService
+
+	LocalInterestCategoryV30Api *LocalInterestCategoryV30ApiService
+
+	LocalInterestKeywordV30Api *LocalInterestKeywordV30ApiService
+
 	LocalLifeAdvertiserCreateV30Api *LocalLifeAdvertiserCreateV30ApiService
 
 	LocalLifeAdvertiserListV30Api *LocalLifeAdvertiserListV30ApiService
+
+	LocalMarketPageGetV30Api *LocalMarketPageGetV30ApiService
+
+	LocalMarketPageListGetV30Api *LocalMarketPageListGetV30ApiService
 
 	LocalMultiPoiIdPoiIdsGetV30Api *LocalMultiPoiIdPoiIdsGetV30ApiService
 
@@ -765,15 +833,21 @@ type APIClient struct {
 
 	LocalProjectUpdateV30Api *LocalProjectUpdateV30ApiService
 
+	LocalProjectWeekScheduleUpdateV30Api *LocalProjectWeekScheduleUpdateV30ApiService
+
 	LocalPromotionCreateV30Api *LocalPromotionCreateV30ApiService
 
 	LocalPromotionDetailV30Api *LocalPromotionDetailV30ApiService
 
 	LocalPromotionListV30Api *LocalPromotionListV30ApiService
 
+	LocalPromotionRejectReasonGetV30Api *LocalPromotionRejectReasonGetV30ApiService
+
 	LocalPromotionStatusUpdateV30Api *LocalPromotionStatusUpdateV30ApiService
 
 	LocalPromotionUpdateV30Api *LocalPromotionUpdateV30ApiService
+
+	LocalQualificationGetV30Api *LocalQualificationGetV30ApiService
 
 	LocalReportAccountGetV30Api *LocalReportAccountGetV30ApiService
 
@@ -784,6 +858,10 @@ type APIClient struct {
 	LocalReportProjectGetV30Api *LocalReportProjectGetV30ApiService
 
 	LocalReportPromotionGetV30Api *LocalReportPromotionGetV30ApiService
+
+	LocalToolPackDetailV30Api *LocalToolPackDetailV30ApiService
+
+	LocalToolPackListGetV30Api *LocalToolPackListGetV30ApiService
 
 	MajordomoAdvertiserSelectV2Api *MajordomoAdvertiserSelectV2ApiService
 
@@ -810,6 +888,16 @@ type APIClient struct {
 	Oauth2RefreshTokenApi *Oauth2RefreshTokenApiService
 
 	Oauth2RenewTokenApi *Oauth2RenewTokenApiService
+
+	OpenMaterialAuditProGetV30Api *OpenMaterialAuditProGetV30ApiService
+
+	OpenMaterialAuditProSubmitV30Api *OpenMaterialAuditProSubmitV30ApiService
+
+	PenaltyTaskGetV30Api *PenaltyTaskGetV30ApiService
+
+	PrepayChargeGenerateFixRemiattanceCodeCreateV30Api *PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService
+
+	PrepayChargeGenerateRemittanceCodeCreateV30Api *PrepayChargeGenerateRemittanceCodeCreateV30ApiService
 
 	ProjectBudgetUpdateV30Api *ProjectBudgetUpdateV30ApiService
 
@@ -895,8 +983,6 @@ type APIClient struct {
 
 	QianchuanAdKeywordsGetV10Api *QianchuanAdKeywordsGetV10ApiService
 
-	QianchuanAdKeywordsUpdateV10Api *QianchuanAdKeywordsUpdateV10ApiService
-
 	QianchuanAdLearingStatusGetV10Api *QianchuanAdLearingStatusGetV10ApiService
 
 	QianchuanAdMaterialDeleteV10Api *QianchuanAdMaterialDeleteV10ApiService
@@ -904,10 +990,6 @@ type APIClient struct {
 	QianchuanAdMaterialGetV10Api *QianchuanAdMaterialGetV10ApiService
 
 	QianchuanAdMaterialSuggestionV10Api *QianchuanAdMaterialSuggestionV10ApiService
-
-	QianchuanAdPivativewordsGetV10Api *QianchuanAdPivativewordsGetV10ApiService
-
-	QianchuanAdPivativewordsUpdateV10Api *QianchuanAdPivativewordsUpdateV10ApiService
 
 	QianchuanAdQuotaGetV10Api *QianchuanAdQuotaGetV10ApiService
 
@@ -971,11 +1053,37 @@ type APIClient struct {
 
 	QianchuanAwemeSuggestRoiGoalV10Api *QianchuanAwemeSuggestRoiGoalV10ApiService
 
+	QianchuanAwemeUniPromotionAdMaterialGetV10Api *QianchuanAwemeUniPromotionAdMaterialGetV10ApiService
+
+	QianchuanAwemeUniPromotionEstimateEffectV10Api *QianchuanAwemeUniPromotionEstimateEffectV10ApiService
+
+	QianchuanAwemeUniPromotionOrderBudgetAddV10Api *QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService
+
+	QianchuanAwemeUniPromotionOrderCreateV10Api *QianchuanAwemeUniPromotionOrderCreateV10ApiService
+
+	QianchuanAwemeUniPromotionOrderDetailV10Api *QianchuanAwemeUniPromotionOrderDetailV10ApiService
+
+	QianchuanAwemeUniPromotionOrderGetV10Api *QianchuanAwemeUniPromotionOrderGetV10ApiService
+
+	QianchuanAwemeUniPromotionOrderReportGetV10Api *QianchuanAwemeUniPromotionOrderReportGetV10ApiService
+
+	QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService
+
+	QianchuanAwemeUniPromotionReportV10Api *QianchuanAwemeUniPromotionReportV10ApiService
+
+	QianchuanAwemeUniPromotionSuggestRoiV10Api *QianchuanAwemeUniPromotionSuggestRoiV10ApiService
+
+	QianchuanAwemeUniPromotionSuggestV10Api *QianchuanAwemeUniPromotionSuggestV10ApiService
+
 	QianchuanAwemeVideoGetV10Api *QianchuanAwemeVideoGetV10ApiService
 
 	QianchuanBatchCampaignStatusUpdateV10Api *QianchuanBatchCampaignStatusUpdateV10ApiService
 
 	QianchuanBrandAuthorizedGetV10Api *QianchuanBrandAuthorizedGetV10ApiService
+
+	QianchuanBrandReportAdGetV10Api *QianchuanBrandReportAdGetV10ApiService
+
+	QianchuanBrandReportAdvertiserGetV10Api *QianchuanBrandReportAdvertiserGetV10ApiService
 
 	QianchuanCampaignCreateV10Api *QianchuanCampaignCreateV10ApiService
 
@@ -1019,12 +1127,6 @@ type APIClient struct {
 
 	QianchuanOrientationPackageGetV10Api *QianchuanOrientationPackageGetV10ApiService
 
-	QianchuanProductAnalyseCompareCreativeV10Api *QianchuanProductAnalyseCompareCreativeV10ApiService
-
-	QianchuanProductAnalyseCompareStatsDataV10Api *QianchuanProductAnalyseCompareStatsDataV10ApiService
-
-	QianchuanProductAnalyseListV10Api *QianchuanProductAnalyseListV10ApiService
-
 	QianchuanProductAvailableGetV10Api *QianchuanProductAvailableGetV10ApiService
 
 	QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api *QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService
@@ -1052,6 +1154,8 @@ type APIClient struct {
 	QianchuanReportMaterialGetV10Api *QianchuanReportMaterialGetV10ApiService
 
 	QianchuanReportSearchWordGetV10Api *QianchuanReportSearchWordGetV10ApiService
+
+	QianchuanReportTodayLiveGetV10Api *QianchuanReportTodayLiveGetV10ApiService
 
 	QianchuanReportTodayLiveRoomConfigGetV10Api *QianchuanReportTodayLiveRoomConfigGetV10ApiService
 
@@ -1093,6 +1197,8 @@ type APIClient struct {
 
 	QianchuanTodayLiveRoomUserGetV10Api *QianchuanTodayLiveRoomUserGetV10ApiService
 
+	QianchuanTodayLiveV2RoomUserGetV10Api *QianchuanTodayLiveV2RoomUserGetV10ApiService
+
 	QianchuanToolsAllowCouponV10Api *QianchuanToolsAllowCouponV10ApiService
 
 	QianchuanToolsAwemeAuthV10Api *QianchuanToolsAwemeAuthV10ApiService
@@ -1100,6 +1206,8 @@ type APIClient struct {
 	QianchuanToolsEstimateAudienceV10Api *QianchuanToolsEstimateAudienceV10ApiService
 
 	QianchuanToolsGrayV10Api *QianchuanToolsGrayV10ApiService
+
+	QianchuanToolsLogSearchV10Api *QianchuanToolsLogSearchV10ApiService
 
 	QianchuanToolsShopAuthV10Api *QianchuanToolsShopAuthV10ApiService
 
@@ -1121,19 +1229,53 @@ type APIClient struct {
 
 	QianchuanUniAwemeSuggestBudgetV10Api *QianchuanUniAwemeSuggestBudgetV10ApiService
 
+	QianchuanUniAwemeSuggestRoiV10Api *QianchuanUniAwemeSuggestRoiV10ApiService
+
+	QianchuanUniPromotionAdBudgetUpdateV10Api *QianchuanUniPromotionAdBudgetUpdateV10ApiService
+
+	QianchuanUniPromotionAdControlTaskBudgetUpdateV10Api *QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService
+
 	QianchuanUniPromotionAdControlTaskCreateV10Api *QianchuanUniPromotionAdControlTaskCreateV10ApiService
+
+	QianchuanUniPromotionAdControlTaskDurationUpdateV10Api *QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService
 
 	QianchuanUniPromotionAdControlTaskListV10Api *QianchuanUniPromotionAdControlTaskListV10ApiService
 
+	QianchuanUniPromotionAdControlTaskSmartControlCreateV10Api *QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService
+
+	QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Api *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService
+
 	QianchuanUniPromotionAdControlTaskStatusUpdateV10Api *QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService
 
+	QianchuanUniPromotionAdControlTaskUpdateV10Api *QianchuanUniPromotionAdControlTaskUpdateV10ApiService
+
 	QianchuanUniPromotionAdDetailV10Api *QianchuanUniPromotionAdDetailV10ApiService
+
+	QianchuanUniPromotionAdMaterialAddV10Api *QianchuanUniPromotionAdMaterialAddV10ApiService
 
 	QianchuanUniPromotionAdMaterialDeleteV10Api *QianchuanUniPromotionAdMaterialDeleteV10ApiService
 
 	QianchuanUniPromotionAdMaterialGetV10Api *QianchuanUniPromotionAdMaterialGetV10ApiService
 
+	QianchuanUniPromotionAdNameUpdateV10Api *QianchuanUniPromotionAdNameUpdateV10ApiService
+
+	QianchuanUniPromotionAdProductDeleteV10Api *QianchuanUniPromotionAdProductDeleteV10ApiService
+
+	QianchuanUniPromotionAdProductGetV10Api *QianchuanUniPromotionAdProductGetV10ApiService
+
+	QianchuanUniPromotionAdRoi2GoalUpdateV10Api *QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService
+
+	QianchuanUniPromotionAdScheduleDateUpdateV10Api *QianchuanUniPromotionAdScheduleDateUpdateV10ApiService
+
 	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
+
+	QianchuanUniPromotionAdSuggestionV10Api *QianchuanUniPromotionAdSuggestionV10ApiService
+
+	QianchuanUniPromotionAuthInitV10Api *QianchuanUniPromotionAuthInitV10ApiService
+
+	QianchuanUniPromotionAuthorizableShopListV10Api *QianchuanUniPromotionAuthorizableShopListV10ApiService
+
+	QianchuanUniPromotionAuthorizationApplyV10Api *QianchuanUniPromotionAuthorizationApplyV10ApiService
 
 	QianchuanUniPromotionBlockMaterialGetV10Api *QianchuanUniPromotionBlockMaterialGetV10ApiService
 
@@ -1183,6 +1325,10 @@ type APIClient struct {
 
 	RejectMaterialAiRepairGetV30Api *RejectMaterialAiRepairGetV30ApiService
 
+	RemittanceCodeListGetV30Api *RemittanceCodeListGetV30ApiService
+
+	RemittanceCodeListV30Api *RemittanceCodeListV30ApiService
+
 	ReportAdGetV2Api *ReportAdGetV2ApiService
 
 	ReportAdvertiserGetV2Api *ReportAdvertiserGetV2ApiService
@@ -1231,13 +1377,11 @@ type APIClient struct {
 
 	ReportCustomGetV30Api *ReportCustomGetV30ApiService
 
-	ReportLiveRoomAnalysisGetV2Api *ReportLiveRoomAnalysisGetV2ApiService
+	ReportJointGrowthCusGetV30Api *ReportJointGrowthCusGetV30ApiService
 
-	ReportLiveRoomAttributeGetV2Api *ReportLiveRoomAttributeGetV2ApiService
+	ReportJointGrowthGetV30Api *ReportJointGrowthGetV30ApiService
 
-	ReportLiveRoomAudiencePortraitGetV2Api *ReportLiveRoomAudiencePortraitGetV2ApiService
-
-	ReportLiveRoomFlowCategoryGetV2Api *ReportLiveRoomFlowCategoryGetV2ApiService
+	ReportLiveRoomAnalysisGetV30Api *ReportLiveRoomAnalysisGetV30ApiService
 
 	ReportProductAsyncTaskDownloadV30Api *ReportProductAsyncTaskDownloadV30ApiService
 
@@ -1246,6 +1390,8 @@ type APIClient struct {
 	ReportProductDailyAsyncTaskCreateV30Api *ReportProductDailyAsyncTaskCreateV30ApiService
 
 	ReportProductHourlyAsyncTaskCreateV30Api *ReportProductHourlyAsyncTaskCreateV30ApiService
+
+	ReportReportLiveRoomAudiencePortraitGetV30Api *ReportReportLiveRoomAudiencePortraitGetV30ApiService
 
 	ReportRtaCusExpGetV2Api *ReportRtaCusExpGetV2ApiService
 
@@ -1269,6 +1415,10 @@ type APIClient struct {
 
 	SecurityAuditResultsV30Api *SecurityAuditResultsV30ApiService
 
+	SecurityCreateAppealV30Api *SecurityCreateAppealV30ApiService
+
+	SecurityGetConsultResultV30Api *SecurityGetConsultResultV30ApiService
+
 	SecurityOpenMaterialAuditV30Api *SecurityOpenMaterialAuditV30ApiService
 
 	SecurityScoreDisposalInfoGetV30Api *SecurityScoreDisposalInfoGetV30ApiService
@@ -1285,21 +1435,41 @@ type APIClient struct {
 
 	SharedWalletAccountRelationGetV30Api *SharedWalletAccountRelationGetV30ApiService
 
+	SharedWalletBudgetGetV30Api *SharedWalletBudgetGetV30ApiService
+
+	SharedWalletBudgetSubmitV30Api *SharedWalletBudgetSubmitV30ApiService
+
 	SharedWalletDailyStatGetV30Api *SharedWalletDailyStatGetV30ApiService
 
 	SharedWalletMainWalletGetV30Api *SharedWalletMainWalletGetV30ApiService
 
+	SharedWalletSharedRelationCreateV30Api *SharedWalletSharedRelationCreateV30ApiService
+
 	SharedWalletTransactionDetailGetV30Api *SharedWalletTransactionDetailGetV30ApiService
+
+	SharedWalletWalletAdvOperationLogGetV30Api *SharedWalletWalletAdvOperationLogGetV30ApiService
 
 	SharedWalletWalletBalanceGetV30Api *SharedWalletWalletBalanceGetV30ApiService
 
 	SharedWalletWalletInfoGetV30Api *SharedWalletWalletInfoGetV30ApiService
 
+	SharedWalletWalletOperationLogGetV30Api *SharedWalletWalletOperationLogGetV30ApiService
+
 	SharedWalletWalletRelationGetV30Api *SharedWalletWalletRelationGetV30ApiService
+
+	SharedWalletWatchRuleGetV30Api *SharedWalletWatchRuleGetV30ApiService
+
+	SharedWalletWatchRuleSubmitV30Api *SharedWalletWatchRuleSubmitV30ApiService
+
+	ShopBonusCreateV30Api *ShopBonusCreateV30ApiService
+
+	ShopBonusSuccessGetV30Api *ShopBonusSuccessGetV30ApiService
 
 	SpiTaskGetV2Api *SpiTaskGetV2ApiService
 
 	StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
+
+	StarAttributeItemEventFeedbackV2Api *StarAttributeItemEventFeedbackV2ApiService
 
 	StarAttributeJdOverflowConvertV2Api *StarAttributeJdOverflowConvertV2ApiService
 
@@ -1357,6 +1527,12 @@ type APIClient struct {
 
 	StarComponentUpdateLinkV2Api *StarComponentUpdateLinkV2ApiService
 
+	StarCopyrightCreateV2Api *StarCopyrightCreateV2ApiService
+
+	StarCopyrightGetV2Api *StarCopyrightGetV2ApiService
+
+	StarCreateProjectV2Api *StarCreateProjectV2ApiService
+
 	StarDataTaskTimelineReportV2Api *StarDataTaskTimelineReportV2ApiService
 
 	StarDemandCreateAssignV2Api *StarDemandCreateAssignV2ApiService
@@ -1393,6 +1569,12 @@ type APIClient struct {
 
 	StarDemanderDemanderGetBindShareCodeV2Api *StarDemanderDemanderGetBindShareCodeV2ApiService
 
+	StarDemanderGetCarBrandListV2Api *StarDemanderGetCarBrandListV2ApiService
+
+	StarDemanderGetRegisteredIpActsV2Api *StarDemanderGetRegisteredIpActsV2ApiService
+
+	StarDemanderQueryCpsTaskSalesV2Api *StarDemanderQueryCpsTaskSalesV2ApiService
+
 	StarDemanderUploadCpsTaskSalesV2Api *StarDemanderUploadCpsTaskSalesV2ApiService
 
 	StarFeCommonServiceTalentDayGetCheckInCodeV2Api *StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService
@@ -1402,6 +1584,8 @@ type APIClient struct {
 	StarGetCreateChallengeDataDictV2Api *StarGetCreateChallengeDataDictV2ApiService
 
 	StarInfoV2Api *StarInfoV2ApiService
+
+	StarItemAuthorGetV2Api *StarItemAuthorGetV2ApiService
 
 	StarMcnContractChallengeV2Api *StarMcnContractChallengeV2ApiService
 
@@ -1419,6 +1603,8 @@ type APIClient struct {
 
 	StarMcnProviderGetTagOnTaskV2Api *StarMcnProviderGetTagOnTaskV2ApiService
 
+	StarMcnProviderGetTaskAuthorListV2Api *StarMcnProviderGetTaskAuthorListV2ApiService
+
 	StarMcnProviderGetTaskDetailV2Api *StarMcnProviderGetTaskDetailV2ApiService
 
 	StarMcnProviderGetTaskItemListV2Api *StarMcnProviderGetTaskItemListV2ApiService
@@ -1426,6 +1612,8 @@ type APIClient struct {
 	StarMcnProviderGetTaskShareCodeV2Api *StarMcnProviderGetTaskShareCodeV2ApiService
 
 	StarMcnProviderGetUnparticipatedTaskV2Api *StarMcnProviderGetUnparticipatedTaskV2ApiService
+
+	StarMcnProviderHandleJoinedAuthorV2Api *StarMcnProviderHandleJoinedAuthorV2ApiService
 
 	StarMcnProviderUploadSearchItemV2Api *StarMcnProviderUploadSearchItemV2ApiService
 
@@ -1485,6 +1673,8 @@ type APIClient struct {
 
 	StarTaskListByProjectV2Api *StarTaskListByProjectV2ApiService
 
+	StarUpdateProjectV2Api *StarUpdateProjectV2ApiService
+
 	StarUserGetAwemeAuthorIdV2Api *StarUserGetAwemeAuthorIdV2ApiService
 
 	StarUserGetStarIdV2Api *StarUserGetStarIdV2ApiService
@@ -1496,6 +1686,8 @@ type APIClient struct {
 	StarVasCreateBoostItemGroupV2Api *StarVasCreateBoostItemGroupV2ApiService
 
 	StarVasGetBoostGroupListV2Api *StarVasGetBoostGroupListV2ApiService
+
+	StarVasGetBoostGroupOptionsV2Api *StarVasGetBoostGroupOptionsV2ApiService
 
 	StarVasGetBoostItemGroupDetailV2Api *StarVasGetBoostItemGroupDetailV2ApiService
 
@@ -1537,23 +1729,19 @@ type APIClient struct {
 
 	SuggWordsV30Api *SuggWordsV30ApiService
 
+	SvipChargeVerifyGetV30Api *SvipChargeVerifyGetV30ApiService
+
 	ToolQuickAppManagementQuickAppGetV2Api *ToolQuickAppManagementQuickAppGetV2ApiService
-
-	ToolsAbTestCreateV2Api *ToolsAbTestCreateV2ApiService
-
-	ToolsAbTestInfoGetV2Api *ToolsAbTestInfoGetV2ApiService
-
-	ToolsAbTestListGetV2Api *ToolsAbTestListGetV2ApiService
-
-	ToolsAbTestUpdateV2Api *ToolsAbTestUpdateV2ApiService
 
 	ToolsAdPreviewQrcodeGetV30Api *ToolsAdPreviewQrcodeGetV30ApiService
 
 	ToolsAdRaiseStatusGetV2Api *ToolsAdRaiseStatusGetV2ApiService
 
-	ToolsAdRaiseVersionGetV2Api *ToolsAdRaiseVersionGetV2ApiService
-
 	ToolsAdminInfoV2Api *ToolsAdminInfoV2ApiService
+
+	ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService
+
+	ToolsAdvertiserDiagnosisSuggestionGetV30Api *ToolsAdvertiserDiagnosisSuggestionGetV30ApiService
 
 	ToolsAdvertiserStoreSearchV2Api *ToolsAdvertiserStoreSearchV2ApiService
 
@@ -1675,6 +1863,8 @@ type APIClient struct {
 
 	ToolsClueGetV2Api *ToolsClueGetV2ApiService
 
+	ToolsClueInfoGetV2Api *ToolsClueInfoGetV2ApiService
+
 	ToolsClueInfoUpdateV2Api *ToolsClueInfoUpdateV2ApiService
 
 	ToolsClueLifeCallbackV2Api *ToolsClueLifeCallbackV2ApiService
@@ -1703,7 +1893,11 @@ type APIClient struct {
 
 	ToolsClueSmartPhoneGetV2Api *ToolsClueSmartPhoneGetV2ApiService
 
+	ToolsClueWebrtcCreateV2V30Api *ToolsClueWebrtcCreateV2V30ApiService
+
 	ToolsClueWebrtcTokenGetV2Api *ToolsClueWebrtcTokenGetV2ApiService
+
+	ToolsClueWebrtcTokenGetV2V30Api *ToolsClueWebrtcTokenGetV2V30ApiService
 
 	ToolsCommentGetV30Api *ToolsCommentGetV30ApiService
 
@@ -1731,13 +1925,77 @@ type APIClient struct {
 
 	ToolsCreativeWordSelectV2Api *ToolsCreativeWordSelectV2ApiService
 
-	ToolsDiagnosisAdGetV2V2Api *ToolsDiagnosisAdGetV2V2ApiService
-
-	ToolsDiagnosisSuggestionGetV2Api *ToolsDiagnosisSuggestionGetV2ApiService
+	ToolsDiagnosisSuggestionGetV30Api *ToolsDiagnosisSuggestionGetV30ApiService
 
 	ToolsDownloadPackageGetV2Api *ToolsDownloadPackageGetV2ApiService
 
 	ToolsDownloadPackageParseV2Api *ToolsDownloadPackageParseV2ApiService
+
+	ToolsEbpAppDetailV30Api *ToolsEbpAppDetailV30ApiService
+
+	ToolsEbpAppExtendCreateV30Api *ToolsEbpAppExtendCreateV30ApiService
+
+	ToolsEbpAppExtendListV30Api *ToolsEbpAppExtendListV30ApiService
+
+	ToolsEbpAppExtendUpdateV30Api *ToolsEbpAppExtendUpdateV30ApiService
+
+	ToolsEbpAppGameBookListV30Api *ToolsEbpAppGameBookListV30ApiService
+
+	ToolsEbpAppListV30Api *ToolsEbpAppListV30ApiService
+
+	ToolsEbpAppPublishV30Api *ToolsEbpAppPublishV30ApiService
+
+	ToolsEbpAppUpdateV30Api *ToolsEbpAppUpdateV30ApiService
+
+	ToolsEbpAssetAuthCancelV30Api *ToolsEbpAssetAuthCancelV30ApiService
+
+	ToolsEbpAssetAuthListV30Api *ToolsEbpAssetAuthListV30ApiService
+
+	ToolsEbpAssetAuthV30Api *ToolsEbpAssetAuthV30ApiService
+
+	ToolsEbpMaterialAuthCreateV30Api *ToolsEbpMaterialAuthCreateV30ApiService
+
+	ToolsEbpMaterialAuthDeleteV30Api *ToolsEbpMaterialAuthDeleteV30ApiService
+
+	ToolsEbpMaterialAuthListV30Api *ToolsEbpMaterialAuthListV30ApiService
+
+	ToolsEbpMicroAppletCreateV30Api *ToolsEbpMicroAppletCreateV30ApiService
+
+	ToolsEbpMicroAppletLinkListV30Api *ToolsEbpMicroAppletLinkListV30ApiService
+
+	ToolsEbpMicroAppletListV30Api *ToolsEbpMicroAppletListV30ApiService
+
+	ToolsEbpMicroAppletUpdateV30Api *ToolsEbpMicroAppletUpdateV30ApiService
+
+	ToolsEbpMicroGameCreateV30Api *ToolsEbpMicroGameCreateV30ApiService
+
+	ToolsEbpMicroGameLinkListV30Api *ToolsEbpMicroGameLinkListV30ApiService
+
+	ToolsEbpMicroGameListV30Api *ToolsEbpMicroGameListV30ApiService
+
+	ToolsEbpMicroGameUpdateV30Api *ToolsEbpMicroGameUpdateV30ApiService
+
+	ToolsEbpSubjectListV30Api *ToolsEbpSubjectListV30ApiService
+
+	ToolsEbpVideoAttributesListV30Api *ToolsEbpVideoAttributesListV30ApiService
+
+	ToolsEbpVideoDeleteV30Api *ToolsEbpVideoDeleteV30ApiService
+
+	ToolsEbpVideoUpdateV30Api *ToolsEbpVideoUpdateV30ApiService
+
+	ToolsEbpVideoUploadV30Api *ToolsEbpVideoUploadV30ApiService
+
+	ToolsEbpWechatAppletCreateV30Api *ToolsEbpWechatAppletCreateV30ApiService
+
+	ToolsEbpWechatAppletListV30Api *ToolsEbpWechatAppletListV30ApiService
+
+	ToolsEbpWechatAppletUpdateV30Api *ToolsEbpWechatAppletUpdateV30ApiService
+
+	ToolsEbpWechatGameCreateV30Api *ToolsEbpWechatGameCreateV30ApiService
+
+	ToolsEbpWechatGameListV30Api *ToolsEbpWechatGameListV30ApiService
+
+	ToolsEbpWechatGameUpdateV30Api *ToolsEbpWechatGameUpdateV30ApiService
 
 	ToolsEstimateAudienceV2Api *ToolsEstimateAudienceV2ApiService
 
@@ -1755,6 +2013,16 @@ type APIClient struct {
 
 	ToolsGrayGetV30Api *ToolsGrayGetV30ApiService
 
+	ToolsHotMaterialDeriveAdoptV30Api *ToolsHotMaterialDeriveAdoptV30ApiService
+
+	ToolsHotMaterialDeriveGetV30Api *ToolsHotMaterialDeriveGetV30ApiService
+
+	ToolsHotMaterialDeriveListV30Api *ToolsHotMaterialDeriveListV30ApiService
+
+	ToolsHotMaterialDeriveSubmitV30Api *ToolsHotMaterialDeriveSubmitV30ApiService
+
+	ToolsInactiveAdvertiserListV30Api *ToolsInactiveAdvertiserListV30ApiService
+
 	ToolsIndustryGetV2Api *ToolsIndustryGetV2ApiService
 
 	ToolsInterestActionActionKeywordV2Api *ToolsInterestActionActionKeywordV2ApiService
@@ -1767,7 +2035,11 @@ type APIClient struct {
 
 	ToolsIsSupportUniversalGetV2Api *ToolsIsSupportUniversalGetV2ApiService
 
-	ToolsKeyActionGetV2Api *ToolsKeyActionGetV2ApiService
+	ToolsJointBidCreateV30Api *ToolsJointBidCreateV30ApiService
+
+	ToolsJointBidGetV30Api *ToolsJointBidGetV30ApiService
+
+	ToolsJointBidUpdateV30Api *ToolsJointBidUpdateV30ApiService
 
 	ToolsKeywordsBidRatioCreateV30Api *ToolsKeywordsBidRatioCreateV30ApiService
 
@@ -1790,6 +2062,18 @@ type APIClient struct {
 	ToolsLiveAuthorizeListV2Api *ToolsLiveAuthorizeListV2ApiService
 
 	ToolsLogSearchV2Api *ToolsLogSearchV2ApiService
+
+	ToolsMaterialRaiseCreateV30Api *ToolsMaterialRaiseCreateV30ApiService
+
+	ToolsMaterialRaiseGetV30Api *ToolsMaterialRaiseGetV30ApiService
+
+	ToolsMaterialRaiseMaterialIdsGetV30Api *ToolsMaterialRaiseMaterialIdsGetV30ApiService
+
+	ToolsMaterialRaiseRecordsGetV30Api *ToolsMaterialRaiseRecordsGetV30ApiService
+
+	ToolsMaterialRaiseStatusGetV30Api *ToolsMaterialRaiseStatusGetV30ApiService
+
+	ToolsMaterialRaiseStopV30Api *ToolsMaterialRaiseStopV30ApiService
 
 	ToolsMicroAppCreateV30Api *ToolsMicroAppCreateV30ApiService
 
@@ -1887,8 +2171,6 @@ type APIClient struct {
 
 	ToolsRtaStatusUpdateV2Api *ToolsRtaStatusUpdateV2ApiService
 
-	ToolsRubeexGetV2Api *ToolsRubeexGetV2ApiService
-
 	ToolsRubeexPlayableAdListV2Api *ToolsRubeexPlayableAdListV2ApiService
 
 	ToolsRubeexPlayableListV2Api *ToolsRubeexPlayableListV2ApiService
@@ -1927,8 +2209,6 @@ type APIClient struct {
 
 	ToolsSiteUpdateV2Api *ToolsSiteUpdateV2ApiService
 
-	ToolsStarTaskMaterialTypeV2Api *ToolsStarTaskMaterialTypeV2ApiService
-
 	ToolsStarTaskSettlementConfigV2Api *ToolsStarTaskSettlementConfigV2ApiService
 
 	ToolsStarTaskTitleTopicGetV2Api *ToolsStarTaskTitleTopicGetV2ApiService
@@ -1944,8 +2224,6 @@ type APIClient struct {
 	ToolsTaskRaiseOptimizationIdsGetV2Api *ToolsTaskRaiseOptimizationIdsGetV2ApiService
 
 	ToolsTaskRaiseStatusStopV2Api *ToolsTaskRaiseStatusStopV2ApiService
-
-	ToolsThirdSiteCreateV2Api *ToolsThirdSiteCreateV2ApiService
 
 	ToolsThirdSiteDeleteV2Api *ToolsThirdSiteDeleteV2ApiService
 
@@ -2020,6 +2298,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	// API Services
 	c.AccountFundGetV30Api = (*AccountFundGetV30ApiService)(&c.common)
 	c.AccountUpdateV30Api = (*AccountUpdateV30ApiService)(&c.common)
+	c.AdBillingUniqueIdGetV30Api = (*AdBillingUniqueIdGetV30ApiService)(&c.common)
+	c.AdConvertSignalV2Api = (*AdConvertSignalV2ApiService)(&c.common)
 	c.AdCostProtectStatusGetV2Api = (*AdCostProtectStatusGetV2ApiService)(&c.common)
 	c.AdGetV2Api = (*AdGetV2ApiService)(&c.common)
 	c.AdRejectReasonV2Api = (*AdRejectReasonV2ApiService)(&c.common)
@@ -2027,7 +2307,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdUdUpdateV2Api = (*AdUdUpdateV2ApiService)(&c.common)
 	c.AdUpdateBidV2Api = (*AdUpdateBidV2ApiService)(&c.common)
 	c.AdUpdateBudgetV2Api = (*AdUpdateBudgetV2ApiService)(&c.common)
-	c.AdUpdateStatusV2Api = (*AdUpdateStatusV2ApiService)(&c.common)
 	c.AdvConvertOleConvertV2Api = (*AdvConvertOleConvertV2ApiService)(&c.common)
 	c.AdvertiserAttachmentUploadV30Api = (*AdvertiserAttachmentUploadV30ApiService)(&c.common)
 	c.AdvertiserAvatarGetV2Api = (*AdvertiserAvatarGetV2ApiService)(&c.common)
@@ -2042,6 +2321,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserDeliveryQualificationListV30Api = (*AdvertiserDeliveryQualificationListV30ApiService)(&c.common)
 	c.AdvertiserDeliveryQualificationSubmitV30Api = (*AdvertiserDeliveryQualificationSubmitV30ApiService)(&c.common)
 	c.AdvertiserFundDailyStatV2Api = (*AdvertiserFundDailyStatV2ApiService)(&c.common)
+	c.AdvertiserFundDetailGrantV2Api = (*AdvertiserFundDetailGrantV2ApiService)(&c.common)
 	c.AdvertiserFundGetV2Api = (*AdvertiserFundGetV2ApiService)(&c.common)
 	c.AdvertiserFundGrantTransactionGetV2Api = (*AdvertiserFundGrantTransactionGetV2ApiService)(&c.common)
 	c.AdvertiserFundTransactionGetV2Api = (*AdvertiserFundTransactionGetV2ApiService)(&c.common)
@@ -2054,25 +2334,28 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserTransferableFundGetV2Api = (*AdvertiserTransferableFundGetV2ApiService)(&c.common)
 	c.AdvertiserUpdateBudgetV2Api = (*AdvertiserUpdateBudgetV2ApiService)(&c.common)
 	c.AdvertiserVerifyInfoGetV30Api = (*AdvertiserVerifyInfoGetV30ApiService)(&c.common)
+	c.AgentAdvAdvertiserUpdateSaleV2Api = (*AgentAdvAdvertiserUpdateSaleV2ApiService)(&c.common)
 	c.AgentAdvBiddingListQueryV2Api = (*AgentAdvBiddingListQueryV2ApiService)(&c.common)
 	c.AgentAdvBrandListQueryV2Api = (*AgentAdvBrandListQueryV2ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
 	c.AgentAdvPerenniallyPunishHistoryQueryV2Api = (*AgentAdvPerenniallyPunishHistoryQueryV2ApiService)(&c.common)
+	c.AgentAdvPerenniallyPunishV2Api = (*AgentAdvPerenniallyPunishV2ApiService)(&c.common)
+	c.AgentAdvRechargeRechargeRecordV2Api = (*AgentAdvRechargeRechargeRecordV2ApiService)(&c.common)
+	c.AgentAdvTemporaryPunishV2Api = (*AgentAdvTemporaryPunishV2ApiService)(&c.common)
 	c.AgentAdvertiserAssignV2Api = (*AgentAdvertiserAssignV2ApiService)(&c.common)
 	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
 	c.AgentAdvertiserInfoQueryV2Api = (*AgentAdvertiserInfoQueryV2ApiService)(&c.common)
 	c.AgentAdvertiserSelectV2Api = (*AgentAdvertiserSelectV2ApiService)(&c.common)
 	c.AgentAdvertiserUnassignV2Api = (*AgentAdvertiserUnassignV2ApiService)(&c.common)
 	c.AgentAdvertiserUpdateV2Api = (*AgentAdvertiserUpdateV2ApiService)(&c.common)
+	c.AgentChargeVerifyV2Api = (*AgentChargeVerifyV2ApiService)(&c.common)
 	c.AgentChildAgentSelectV2Api = (*AgentChildAgentSelectV2ApiService)(&c.common)
 	c.AgentCompanyBiddingListQueryV2Api = (*AgentCompanyBiddingListQueryV2ApiService)(&c.common)
 	c.AgentCompanyBrandListQueryV2Api = (*AgentCompanyBrandListQueryV2ApiService)(&c.common)
-	c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
-	c.AgentFundTransferSeqCreateV2Api = (*AgentFundTransferSeqCreateV2ApiService)(&c.common)
+	c.AgentCreditChargeSubmitV2Api = (*AgentCreditChargeSubmitV2ApiService)(&c.common)
 	c.AgentInfoV2Api = (*AgentInfoV2ApiService)(&c.common)
+	c.AgentPrepayChargeGenerateRemittanceCodeV2Api = (*AgentPrepayChargeGenerateRemittanceCodeV2ApiService)(&c.common)
 	c.AgentQueryRiskPromotionListV2Api = (*AgentQueryRiskPromotionListV2ApiService)(&c.common)
-	c.AgentRefundTransferSeqCommitV2Api = (*AgentRefundTransferSeqCommitV2ApiService)(&c.common)
-	c.AgentRefundTransferSeqCreateV2Api = (*AgentRefundTransferSeqCreateV2ApiService)(&c.common)
 	c.AgentTransferTransactionRecordV2Api = (*AgentTransferTransactionRecordV2ApiService)(&c.common)
 	c.AicElementDeleteV30Api = (*AicElementDeleteV30ApiService)(&c.common)
 	c.AicElementGetV30Api = (*AicElementGetV30ApiService)(&c.common)
@@ -2098,7 +2381,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AudiencePackageUpdateV2Api = (*AudiencePackageUpdateV2ApiService)(&c.common)
 	c.BrandActionCategoryV30Api = (*BrandActionCategoryV30ApiService)(&c.common)
 	c.BrandAdCancelDeleteV30Api = (*BrandAdCancelDeleteV30ApiService)(&c.common)
-	c.BrandAdCreateV30Api = (*BrandAdCreateV30ApiService)(&c.common)
 	c.BrandAdDeleteV30Api = (*BrandAdDeleteV30ApiService)(&c.common)
 	c.BrandAdGetV30Api = (*BrandAdGetV30ApiService)(&c.common)
 	c.BrandAdUpdateBaseInfoV30Api = (*BrandAdUpdateBaseInfoV30ApiService)(&c.common)
@@ -2106,7 +2388,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BrandAnchorListV30Api = (*BrandAnchorListV30ApiService)(&c.common)
 	c.BrandAwemeListV30Api = (*BrandAwemeListV30ApiService)(&c.common)
 	c.BrandCampaignAddV30Api = (*BrandCampaignAddV30ApiService)(&c.common)
-	c.BrandCampaignCreateV30Api = (*BrandCampaignCreateV30ApiService)(&c.common)
 	c.BrandCampaignDeleteV30Api = (*BrandCampaignDeleteV30ApiService)(&c.common)
 	c.BrandCampaignEditV30Api = (*BrandCampaignEditV30ApiService)(&c.common)
 	c.BrandCampaignGetV30Api = (*BrandCampaignGetV30ApiService)(&c.common)
@@ -2172,6 +2453,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CgTransferWalletTransferCreateV30Api = (*CgTransferWalletTransferCreateV30ApiService)(&c.common)
 	c.CgTransferWalletTransferDetailV30Api = (*CgTransferWalletTransferDetailV30ApiService)(&c.common)
 	c.CgTransferWalletTransferListV30Api = (*CgTransferWalletTransferListV30ApiService)(&c.common)
+	c.ChargeListV30Api = (*ChargeListV30ApiService)(&c.common)
+	c.ChargeResultV30Api = (*ChargeResultV30ApiService)(&c.common)
+	c.ChargeVerifyGetV30Api = (*ChargeVerifyGetV30ApiService)(&c.common)
 	c.ClueCaCreateV2Api = (*ClueCaCreateV2ApiService)(&c.common)
 	c.ClueCaInterfaceCreateV2Api = (*ClueCaInterfaceCreateV2ApiService)(&c.common)
 	c.ClueCaInterfaceUpdateV2Api = (*ClueCaInterfaceUpdateV2ApiService)(&c.common)
@@ -2210,11 +2494,14 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CreativeProceduralCreativeUpdateV2Api = (*CreativeProceduralCreativeUpdateV2ApiService)(&c.common)
 	c.CreativeRejectReasonV2Api = (*CreativeRejectReasonV2ApiService)(&c.common)
 	c.CreativeStrategyListV2Api = (*CreativeStrategyListV2ApiService)(&c.common)
+	c.CustomerCenterAccountListV30Api = (*CustomerCenterAccountListV30ApiService)(&c.common)
+	c.CustomerCenterAccountOfflineListV30Api = (*CustomerCenterAccountOfflineListV30ApiService)(&c.common)
 	c.CustomerCenterAdvertiserCopyV2Api = (*CustomerCenterAdvertiserCopyV2ApiService)(&c.common)
 	c.CustomerCenterAdvertiserListV2Api = (*CustomerCenterAdvertiserListV2ApiService)(&c.common)
 	c.CustomerCenterAdvertiserTransferableListV2Api = (*CustomerCenterAdvertiserTransferableListV2ApiService)(&c.common)
 	c.CustomerCenterFundTransferSeqCommitV2Api = (*CustomerCenterFundTransferSeqCommitV2ApiService)(&c.common)
 	c.CustomerCenterFundTransferSeqCreateV2Api = (*CustomerCenterFundTransferSeqCreateV2ApiService)(&c.common)
+	c.DcdChargeSubmitV30Api = (*DcdChargeSubmitV30ApiService)(&c.common)
 	c.DecorationCouponGetV30Api = (*DecorationCouponGetV30ApiService)(&c.common)
 	c.DiagnosisTaskAdvCreateV2Api = (*DiagnosisTaskAdvCreateV2ApiService)(&c.common)
 	c.DiagnosisTaskAdvGetV2Api = (*DiagnosisTaskAdvGetV2ApiService)(&c.common)
@@ -2228,6 +2515,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DmpCustomAudiencePublishV2Api = (*DmpCustomAudiencePublishV2ApiService)(&c.common)
 	c.DmpCustomAudiencePushV2V2Api = (*DmpCustomAudiencePushV2V2ApiService)(&c.common)
 	c.DmpCustomAudienceReadV2Api = (*DmpCustomAudienceReadV2ApiService)(&c.common)
+	c.DmpCustomAudienceSelectV2Api = (*DmpCustomAudienceSelectV2ApiService)(&c.common)
 	c.DmpDataSourceCreateV2Api = (*DmpDataSourceCreateV2ApiService)(&c.common)
 	c.DmpDataSourceFileUploadV2Api = (*DmpDataSourceFileUploadV2ApiService)(&c.common)
 	c.DmpDataSourceReadV2Api = (*DmpDataSourceReadV2ApiService)(&c.common)
@@ -2243,10 +2531,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DouplusRtaSetScopeV30Api = (*DouplusRtaSetScopeV30ApiService)(&c.common)
 	c.DownloadStatementEsignFileV2Api = (*DownloadStatementEsignFileV2ApiService)(&c.common)
 	c.DownloadStatementV2Api = (*DownloadStatementV2ApiService)(&c.common)
+	c.DpaAlbumCreateV30Api = (*DpaAlbumCreateV30ApiService)(&c.common)
+	c.DpaAlbumStatusGetV30Api = (*DpaAlbumStatusGetV30ApiService)(&c.common)
 	c.DpaAssetV2DetailReadV2Api = (*DpaAssetV2DetailReadV2ApiService)(&c.common)
 	c.DpaAssetV2ListV2Api = (*DpaAssetV2ListV2ApiService)(&c.common)
 	c.DpaAssetsDetailReadV2Api = (*DpaAssetsDetailReadV2ApiService)(&c.common)
-	c.DpaAssetsListV2Api = (*DpaAssetsListV2ApiService)(&c.common)
+	c.DpaBrandFuzzyGetV30Api = (*DpaBrandFuzzyGetV30ApiService)(&c.common)
 	c.DpaCategoryGetV2Api = (*DpaCategoryGetV2ApiService)(&c.common)
 	c.DpaCheckIndexEntryProgressV2Api = (*DpaCheckIndexEntryProgressV2ApiService)(&c.common)
 	c.DpaClueProductDeleteV2Api = (*DpaClueProductDeleteV2ApiService)(&c.common)
@@ -2255,6 +2545,21 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DpaClueProductSaveV2Api = (*DpaClueProductSaveV2ApiService)(&c.common)
 	c.DpaDetailGetV2Api = (*DpaDetailGetV2ApiService)(&c.common)
 	c.DpaDictGetV2Api = (*DpaDictGetV2ApiService)(&c.common)
+	c.DpaEbpCategoryGetV30Api = (*DpaEbpCategoryGetV30ApiService)(&c.common)
+	c.DpaEbpClueProductDeleteV30Api = (*DpaEbpClueProductDeleteV30ApiService)(&c.common)
+	c.DpaEbpClueProductGetV30Api = (*DpaEbpClueProductGetV30ApiService)(&c.common)
+	c.DpaEbpClueProductListV30Api = (*DpaEbpClueProductListV30ApiService)(&c.common)
+	c.DpaEbpClueProductSaveV30Api = (*DpaEbpClueProductSaveV30ApiService)(&c.common)
+	c.DpaEbpDictGetV30Api = (*DpaEbpDictGetV30ApiService)(&c.common)
+	c.DpaEbpLibraryListV30Api = (*DpaEbpLibraryListV30ApiService)(&c.common)
+	c.DpaEbpMetaGetV30Api = (*DpaEbpMetaGetV30ApiService)(&c.common)
+	c.DpaEbpPlayletAuthGetV30Api = (*DpaEbpPlayletAuthGetV30ApiService)(&c.common)
+	c.DpaEbpProductCreateV30Api = (*DpaEbpProductCreateV30ApiService)(&c.common)
+	c.DpaEbpProductDeleteV30Api = (*DpaEbpProductDeleteV30ApiService)(&c.common)
+	c.DpaEbpProductDetailGetV30Api = (*DpaEbpProductDetailGetV30ApiService)(&c.common)
+	c.DpaEbpProductListV30Api = (*DpaEbpProductListV30ApiService)(&c.common)
+	c.DpaEbpProductStatusBatchUpdateV30Api = (*DpaEbpProductStatusBatchUpdateV30ApiService)(&c.common)
+	c.DpaEbpProductUpdateV30Api = (*DpaEbpProductUpdateV30ApiService)(&c.common)
 	c.DpaMetaGetV2Api = (*DpaMetaGetV2ApiService)(&c.common)
 	c.DpaPlayletAuthGetV2Api = (*DpaPlayletAuthGetV2ApiService)(&c.common)
 	c.DpaProductAvailablesV2Api = (*DpaProductAvailablesV2ApiService)(&c.common)
@@ -2271,18 +2576,15 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.EbpAdvertiserTaskListV2Api = (*EbpAdvertiserTaskListV2ApiService)(&c.common)
 	c.EbpLevelGetV2Api = (*EbpLevelGetV2ApiService)(&c.common)
 	c.EnterpriseBindListGetV10Api = (*EnterpriseBindListGetV10ApiService)(&c.common)
-	c.EnterpriseCommentDetailV10Api = (*EnterpriseCommentDetailV10ApiService)(&c.common)
-	c.EnterpriseCommentListGetV10Api = (*EnterpriseCommentListGetV10ApiService)(&c.common)
-	c.EnterpriseCommentReplyListV10Api = (*EnterpriseCommentReplyListV10ApiService)(&c.common)
-	c.EnterpriseCommentReplyV10Api = (*EnterpriseCommentReplyV10ApiService)(&c.common)
-	c.EnterpriseFlowCategoryGetV10Api = (*EnterpriseFlowCategoryGetV10ApiService)(&c.common)
-	c.EnterpriseInfoV10Api = (*EnterpriseInfoV10ApiService)(&c.common)
-	c.EnterpriseItemListV10Api = (*EnterpriseItemListV10ApiService)(&c.common)
-	c.EnterpriseOperationLogGetV10Api = (*EnterpriseOperationLogGetV10ApiService)(&c.common)
-	c.EnterpriseOverviewDataGetV10Api = (*EnterpriseOverviewDataGetV10ApiService)(&c.common)
-	c.EnterpriseVideoInfoGetV10Api = (*EnterpriseVideoInfoGetV10ApiService)(&c.common)
 	c.EventManagerAbnormalAssetsGetV30Api = (*EventManagerAbnormalAssetsGetV30ApiService)(&c.common)
 	c.EventManagerAssetsCreateV2Api = (*EventManagerAssetsCreateV2ApiService)(&c.common)
+	c.EventManagerAuthAddPublicKeyV2Api = (*EventManagerAuthAddPublicKeyV2ApiService)(&c.common)
+	c.EventManagerAuthDelPublicKeyV2Api = (*EventManagerAuthDelPublicKeyV2ApiService)(&c.common)
+	c.EventManagerAuthDisableV2Api = (*EventManagerAuthDisableV2ApiService)(&c.common)
+	c.EventManagerAuthEnableV2Api = (*EventManagerAuthEnableV2ApiService)(&c.common)
+	c.EventManagerAuthGetAllPublicKeysV2Api = (*EventManagerAuthGetAllPublicKeysV2ApiService)(&c.common)
+	c.EventManagerAuthGetAuthStatusV2Api = (*EventManagerAuthGetAuthStatusV2ApiService)(&c.common)
+	c.EventManagerAuthGetPublicKeyV2Api = (*EventManagerAuthGetPublicKeyV2ApiService)(&c.common)
 	c.EventManagerAvailableEventsGetV2Api = (*EventManagerAvailableEventsGetV2ApiService)(&c.common)
 	c.EventManagerDeepBidTypeGetV30Api = (*EventManagerDeepBidTypeGetV30ApiService)(&c.common)
 	c.EventManagerEventConfigsGetV2Api = (*EventManagerEventConfigsGetV2ApiService)(&c.common)
@@ -2298,6 +2600,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileAudioGetV2Api = (*FileAudioGetV2ApiService)(&c.common)
 	c.FileAutoGenerateSourceGetV2Api = (*FileAutoGenerateSourceGetV2ApiService)(&c.common)
 	c.FileCarouselAwemeGetV30Api = (*FileCarouselAwemeGetV30ApiService)(&c.common)
+	c.FileEbpVideoGetV30Api = (*FileEbpVideoGetV30ApiService)(&c.common)
 	c.FileImageAdGetV2Api = (*FileImageAdGetV2ApiService)(&c.common)
 	c.FileImageAdV2Api = (*FileImageAdV2ApiService)(&c.common)
 	c.FileImageAdvertiserV2Api = (*FileImageAdvertiserV2ApiService)(&c.common)
@@ -2307,6 +2610,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileMaterialBindV2Api = (*FileMaterialBindV2ApiService)(&c.common)
 	c.FileMaterialDetailV2Api = (*FileMaterialDetailV2ApiService)(&c.common)
 	c.FileMaterialListV2Api = (*FileMaterialListV2ApiService)(&c.common)
+	c.FilePlayableCreateV30Api = (*FilePlayableCreateV30ApiService)(&c.common)
+	c.FilePlayableListV30Api = (*FilePlayableListV30ApiService)(&c.common)
 	c.FilePreauditGetV30Api = (*FilePreauditGetV30ApiService)(&c.common)
 	c.FilePreauditSubmitV30Api = (*FilePreauditSubmitV30ApiService)(&c.common)
 	c.FileQualityGetV30Api = (*FileQualityGetV30ApiService)(&c.common)
@@ -2333,8 +2638,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileVideoPauseV2Api = (*FileVideoPauseV2ApiService)(&c.common)
 	c.FileVideoUpdateV2Api = (*FileVideoUpdateV2ApiService)(&c.common)
 	c.FileVideoUploadTaskListV2Api = (*FileVideoUploadTaskListV2ApiService)(&c.common)
+	c.FixRemittanceCodeListGetV30Api = (*FixRemittanceCodeListGetV30ApiService)(&c.common)
 	c.FundSharedWalletBalanceGetV2Api = (*FundSharedWalletBalanceGetV2ApiService)(&c.common)
 	c.GameAddictionIdGetV30Api = (*GameAddictionIdGetV30ApiService)(&c.common)
+	c.GameplayListV30Api = (*GameplayListV30ApiService)(&c.common)
 	c.KeywordCreateV2V2Api = (*KeywordCreateV2V2ApiService)(&c.common)
 	c.KeywordCreateV30Api = (*KeywordCreateV30ApiService)(&c.common)
 	c.KeywordDeleteV2V2Api = (*KeywordDeleteV2V2ApiService)(&c.common)
@@ -2344,28 +2651,33 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.KeywordListV30Api = (*KeywordListV30ApiService)(&c.common)
 	c.KeywordUpdateV2V2Api = (*KeywordUpdateV2V2ApiService)(&c.common)
 	c.KeywordUpdateV30Api = (*KeywordUpdateV30ApiService)(&c.common)
+	c.LocalActionCategoryV30Api = (*LocalActionCategoryV30ApiService)(&c.common)
+	c.LocalActionKeywordV30Api = (*LocalActionKeywordV30ApiService)(&c.common)
+	c.LocalAdvertiserBudgetGetV30Api = (*LocalAdvertiserBudgetGetV30ApiService)(&c.common)
 	c.LocalAwemeAuthorizedGetV30Api = (*LocalAwemeAuthorizedGetV30ApiService)(&c.common)
 	c.LocalChargeListV30Api = (*LocalChargeListV30ApiService)(&c.common)
 	c.LocalChargeResultV30Api = (*LocalChargeResultV30ApiService)(&c.common)
 	c.LocalChargeSubmitV30Api = (*LocalChargeSubmitV30ApiService)(&c.common)
+	c.LocalConsultAwameListGetV30Api = (*LocalConsultAwameListGetV30ApiService)(&c.common)
 	c.LocalCustomAudienceGetV30Api = (*LocalCustomAudienceGetV30ApiService)(&c.common)
-	c.LocalCxtAudienceUpdateV30Api = (*LocalCxtAudienceUpdateV30ApiService)(&c.common)
-	c.LocalCxtBudgetUpdateV30Api = (*LocalCxtBudgetUpdateV30ApiService)(&c.common)
-	c.LocalCxtCreateV30Api = (*LocalCxtCreateV30ApiService)(&c.common)
-	c.LocalCxtDetailV30Api = (*LocalCxtDetailV30ApiService)(&c.common)
-	c.LocalCxtExternalActionUpdateV30Api = (*LocalCxtExternalActionUpdateV30ApiService)(&c.common)
-	c.LocalCxtPoiUpdateV30Api = (*LocalCxtPoiUpdateV30ApiService)(&c.common)
-	c.LocalCxtReportAudienceGetV30Api = (*LocalCxtReportAudienceGetV30ApiService)(&c.common)
-	c.LocalCxtReportBasicGetV30Api = (*LocalCxtReportBasicGetV30ApiService)(&c.common)
-	c.LocalCxtReportConvertGetV30Api = (*LocalCxtReportConvertGetV30ApiService)(&c.common)
-	c.LocalCxtStatusUpdateV30Api = (*LocalCxtStatusUpdateV30ApiService)(&c.common)
+	c.LocalDeliveryQualificationListV30Api = (*LocalDeliveryQualificationListV30ApiService)(&c.common)
+	c.LocalFileCarouselListV30Api = (*LocalFileCarouselListV30ApiService)(&c.common)
 	c.LocalFileUploadTaskCreateV30Api = (*LocalFileUploadTaskCreateV30ApiService)(&c.common)
 	c.LocalFileVideoAwemeGetV30Api = (*LocalFileVideoAwemeGetV30ApiService)(&c.common)
 	c.LocalFileVideoGetV30Api = (*LocalFileVideoGetV30ApiService)(&c.common)
 	c.LocalFileVideoUploadTaskListV30Api = (*LocalFileVideoUploadTaskListV30ApiService)(&c.common)
 	c.LocalFileVideoUploadV30Api = (*LocalFileVideoUploadV30ApiService)(&c.common)
+	c.LocalImAccountGetV30Api = (*LocalImAccountGetV30ApiService)(&c.common)
+	c.LocalImQueryMsgV30Api = (*LocalImQueryMsgV30ApiService)(&c.common)
+	c.LocalImSendMsgV30Api = (*LocalImSendMsgV30ApiService)(&c.common)
+	c.LocalImUploadImageV30Api = (*LocalImUploadImageV30ApiService)(&c.common)
+	c.LocalImageUploadV30Api = (*LocalImageUploadV30ApiService)(&c.common)
+	c.LocalInterestCategoryV30Api = (*LocalInterestCategoryV30ApiService)(&c.common)
+	c.LocalInterestKeywordV30Api = (*LocalInterestKeywordV30ApiService)(&c.common)
 	c.LocalLifeAdvertiserCreateV30Api = (*LocalLifeAdvertiserCreateV30ApiService)(&c.common)
 	c.LocalLifeAdvertiserListV30Api = (*LocalLifeAdvertiserListV30ApiService)(&c.common)
+	c.LocalMarketPageGetV30Api = (*LocalMarketPageGetV30ApiService)(&c.common)
+	c.LocalMarketPageListGetV30Api = (*LocalMarketPageListGetV30ApiService)(&c.common)
 	c.LocalMultiPoiIdPoiIdsGetV30Api = (*LocalMultiPoiIdPoiIdsGetV30ApiService)(&c.common)
 	c.LocalPoiGetV30Api = (*LocalPoiGetV30ApiService)(&c.common)
 	c.LocalProductGetByPoiidsV30Api = (*LocalProductGetByPoiidsV30ApiService)(&c.common)
@@ -2375,16 +2687,21 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalProjectListV30Api = (*LocalProjectListV30ApiService)(&c.common)
 	c.LocalProjectStatusUpdateV30Api = (*LocalProjectStatusUpdateV30ApiService)(&c.common)
 	c.LocalProjectUpdateV30Api = (*LocalProjectUpdateV30ApiService)(&c.common)
+	c.LocalProjectWeekScheduleUpdateV30Api = (*LocalProjectWeekScheduleUpdateV30ApiService)(&c.common)
 	c.LocalPromotionCreateV30Api = (*LocalPromotionCreateV30ApiService)(&c.common)
 	c.LocalPromotionDetailV30Api = (*LocalPromotionDetailV30ApiService)(&c.common)
 	c.LocalPromotionListV30Api = (*LocalPromotionListV30ApiService)(&c.common)
+	c.LocalPromotionRejectReasonGetV30Api = (*LocalPromotionRejectReasonGetV30ApiService)(&c.common)
 	c.LocalPromotionStatusUpdateV30Api = (*LocalPromotionStatusUpdateV30ApiService)(&c.common)
 	c.LocalPromotionUpdateV30Api = (*LocalPromotionUpdateV30ApiService)(&c.common)
+	c.LocalQualificationGetV30Api = (*LocalQualificationGetV30ApiService)(&c.common)
 	c.LocalReportAccountGetV30Api = (*LocalReportAccountGetV30ApiService)(&c.common)
 	c.LocalReportAudienceGetV30Api = (*LocalReportAudienceGetV30ApiService)(&c.common)
 	c.LocalReportMaterialGetV30Api = (*LocalReportMaterialGetV30ApiService)(&c.common)
 	c.LocalReportProjectGetV30Api = (*LocalReportProjectGetV30ApiService)(&c.common)
 	c.LocalReportPromotionGetV30Api = (*LocalReportPromotionGetV30ApiService)(&c.common)
+	c.LocalToolPackDetailV30Api = (*LocalToolPackDetailV30ApiService)(&c.common)
+	c.LocalToolPackListGetV30Api = (*LocalToolPackListGetV30ApiService)(&c.common)
 	c.MajordomoAdvertiserSelectV2Api = (*MajordomoAdvertiserSelectV2ApiService)(&c.common)
 	c.MaterialStatusUpdateV30Api = (*MaterialStatusUpdateV30ApiService)(&c.common)
 	c.NativeAnchorCreateV30Api = (*NativeAnchorCreateV30ApiService)(&c.common)
@@ -2398,6 +2715,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.Oauth2AppAccessTokenApi = (*Oauth2AppAccessTokenApiService)(&c.common)
 	c.Oauth2RefreshTokenApi = (*Oauth2RefreshTokenApiService)(&c.common)
 	c.Oauth2RenewTokenApi = (*Oauth2RenewTokenApiService)(&c.common)
+	c.OpenMaterialAuditProGetV30Api = (*OpenMaterialAuditProGetV30ApiService)(&c.common)
+	c.OpenMaterialAuditProSubmitV30Api = (*OpenMaterialAuditProSubmitV30ApiService)(&c.common)
+	c.PenaltyTaskGetV30Api = (*PenaltyTaskGetV30ApiService)(&c.common)
+	c.PrepayChargeGenerateFixRemiattanceCodeCreateV30Api = (*PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService)(&c.common)
+	c.PrepayChargeGenerateRemittanceCodeCreateV30Api = (*PrepayChargeGenerateRemittanceCodeCreateV30ApiService)(&c.common)
 	c.ProjectBudgetUpdateV30Api = (*ProjectBudgetUpdateV30ApiService)(&c.common)
 	c.ProjectCostProtectStatusGetV30Api = (*ProjectCostProtectStatusGetV30ApiService)(&c.common)
 	c.ProjectCreateV30Api = (*ProjectCreateV30ApiService)(&c.common)
@@ -2440,13 +2762,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAdDetailGetV10Api = (*QianchuanAdDetailGetV10ApiService)(&c.common)
 	c.QianchuanAdGetV10Api = (*QianchuanAdGetV10ApiService)(&c.common)
 	c.QianchuanAdKeywordsGetV10Api = (*QianchuanAdKeywordsGetV10ApiService)(&c.common)
-	c.QianchuanAdKeywordsUpdateV10Api = (*QianchuanAdKeywordsUpdateV10ApiService)(&c.common)
 	c.QianchuanAdLearingStatusGetV10Api = (*QianchuanAdLearingStatusGetV10ApiService)(&c.common)
 	c.QianchuanAdMaterialDeleteV10Api = (*QianchuanAdMaterialDeleteV10ApiService)(&c.common)
 	c.QianchuanAdMaterialGetV10Api = (*QianchuanAdMaterialGetV10ApiService)(&c.common)
 	c.QianchuanAdMaterialSuggestionV10Api = (*QianchuanAdMaterialSuggestionV10ApiService)(&c.common)
-	c.QianchuanAdPivativewordsGetV10Api = (*QianchuanAdPivativewordsGetV10ApiService)(&c.common)
-	c.QianchuanAdPivativewordsUpdateV10Api = (*QianchuanAdPivativewordsUpdateV10ApiService)(&c.common)
 	c.QianchuanAdQuotaGetV10Api = (*QianchuanAdQuotaGetV10ApiService)(&c.common)
 	c.QianchuanAdRecommendKeywordsGetV10Api = (*QianchuanAdRecommendKeywordsGetV10ApiService)(&c.common)
 	c.QianchuanAdRegionUpdateV10Api = (*QianchuanAdRegionUpdateV10ApiService)(&c.common)
@@ -2478,9 +2797,22 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAwemeReportOrderGetV10Api = (*QianchuanAwemeReportOrderGetV10ApiService)(&c.common)
 	c.QianchuanAwemeSuggestBidV10Api = (*QianchuanAwemeSuggestBidV10ApiService)(&c.common)
 	c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionAdMaterialGetV10Api = (*QianchuanAwemeUniPromotionAdMaterialGetV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionEstimateEffectV10Api = (*QianchuanAwemeUniPromotionEstimateEffectV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderBudgetAddV10Api = (*QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderCreateV10Api = (*QianchuanAwemeUniPromotionOrderCreateV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderDetailV10Api = (*QianchuanAwemeUniPromotionOrderDetailV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderGetV10Api = (*QianchuanAwemeUniPromotionOrderGetV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderReportGetV10Api = (*QianchuanAwemeUniPromotionOrderReportGetV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api = (*QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionReportV10Api = (*QianchuanAwemeUniPromotionReportV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionSuggestRoiV10Api = (*QianchuanAwemeUniPromotionSuggestRoiV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionSuggestV10Api = (*QianchuanAwemeUniPromotionSuggestV10ApiService)(&c.common)
 	c.QianchuanAwemeVideoGetV10Api = (*QianchuanAwemeVideoGetV10ApiService)(&c.common)
 	c.QianchuanBatchCampaignStatusUpdateV10Api = (*QianchuanBatchCampaignStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanBrandAuthorizedGetV10Api = (*QianchuanBrandAuthorizedGetV10ApiService)(&c.common)
+	c.QianchuanBrandReportAdGetV10Api = (*QianchuanBrandReportAdGetV10ApiService)(&c.common)
+	c.QianchuanBrandReportAdvertiserGetV10Api = (*QianchuanBrandReportAdvertiserGetV10ApiService)(&c.common)
 	c.QianchuanCampaignCreateV10Api = (*QianchuanCampaignCreateV10ApiService)(&c.common)
 	c.QianchuanCampaignListGetV10Api = (*QianchuanCampaignListGetV10ApiService)(&c.common)
 	c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
@@ -2502,9 +2834,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanMaterialAdGetV10Api = (*QianchuanMaterialAdGetV10ApiService)(&c.common)
 	c.QianchuanMaterialGetV10Api = (*QianchuanMaterialGetV10ApiService)(&c.common)
 	c.QianchuanOrientationPackageGetV10Api = (*QianchuanOrientationPackageGetV10ApiService)(&c.common)
-	c.QianchuanProductAnalyseCompareCreativeV10Api = (*QianchuanProductAnalyseCompareCreativeV10ApiService)(&c.common)
-	c.QianchuanProductAnalyseCompareStatsDataV10Api = (*QianchuanProductAnalyseCompareStatsDataV10ApiService)(&c.common)
-	c.QianchuanProductAnalyseListV10Api = (*QianchuanProductAnalyseListV10ApiService)(&c.common)
 	c.QianchuanProductAvailableGetV10Api = (*QianchuanProductAvailableGetV10ApiService)(&c.common)
 	c.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api = (*QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService)(&c.common)
 	c.QianchuanQianchuanVideoStarGetV10Api = (*QianchuanQianchuanVideoStarGetV10ApiService)(&c.common)
@@ -2519,6 +2848,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanReportLongTransferOrderGetV10Api = (*QianchuanReportLongTransferOrderGetV10ApiService)(&c.common)
 	c.QianchuanReportMaterialGetV10Api = (*QianchuanReportMaterialGetV10ApiService)(&c.common)
 	c.QianchuanReportSearchWordGetV10Api = (*QianchuanReportSearchWordGetV10ApiService)(&c.common)
+	c.QianchuanReportTodayLiveGetV10Api = (*QianchuanReportTodayLiveGetV10ApiService)(&c.common)
 	c.QianchuanReportTodayLiveRoomConfigGetV10Api = (*QianchuanReportTodayLiveRoomConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportTodayLiveRoomDataGetV10Api = (*QianchuanReportTodayLiveRoomDataGetV10ApiService)(&c.common)
 	c.QianchuanReportUniPromotionConfigGetV10Api = (*QianchuanReportUniPromotionConfigGetV10ApiService)(&c.common)
@@ -2539,10 +2869,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanTodayLiveRoomGetV10Api = (*QianchuanTodayLiveRoomGetV10ApiService)(&c.common)
 	c.QianchuanTodayLiveRoomProductListGetV10Api = (*QianchuanTodayLiveRoomProductListGetV10ApiService)(&c.common)
 	c.QianchuanTodayLiveRoomUserGetV10Api = (*QianchuanTodayLiveRoomUserGetV10ApiService)(&c.common)
+	c.QianchuanTodayLiveV2RoomUserGetV10Api = (*QianchuanTodayLiveV2RoomUserGetV10ApiService)(&c.common)
 	c.QianchuanToolsAllowCouponV10Api = (*QianchuanToolsAllowCouponV10ApiService)(&c.common)
 	c.QianchuanToolsAwemeAuthV10Api = (*QianchuanToolsAwemeAuthV10ApiService)(&c.common)
 	c.QianchuanToolsEstimateAudienceV10Api = (*QianchuanToolsEstimateAudienceV10ApiService)(&c.common)
 	c.QianchuanToolsGrayV10Api = (*QianchuanToolsGrayV10ApiService)(&c.common)
+	c.QianchuanToolsLogSearchV10Api = (*QianchuanToolsLogSearchV10ApiService)(&c.common)
 	c.QianchuanToolsShopAuthV10Api = (*QianchuanToolsShopAuthV10ApiService)(&c.common)
 	c.QianchuanToolsSmartBoostAdBoostReportGetV10Api = (*QianchuanToolsSmartBoostAdBoostReportGetV10ApiService)(&c.common)
 	c.QianchuanToolsSmartBoostAdBoostSetV10Api = (*QianchuanToolsSmartBoostAdBoostSetV10ApiService)(&c.common)
@@ -2553,13 +2885,30 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniAwemeAdUpdateV10Api = (*QianchuanUniAwemeAdUpdateV10ApiService)(&c.common)
 	c.QianchuanUniAwemeAuthorizedGetV10Api = (*QianchuanUniAwemeAuthorizedGetV10ApiService)(&c.common)
 	c.QianchuanUniAwemeSuggestBudgetV10Api = (*QianchuanUniAwemeSuggestBudgetV10ApiService)(&c.common)
+	c.QianchuanUniAwemeSuggestRoiV10Api = (*QianchuanUniAwemeSuggestRoiV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdBudgetUpdateV10Api = (*QianchuanUniPromotionAdBudgetUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Api = (*QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdControlTaskCreateV10Api = (*QianchuanUniPromotionAdControlTaskCreateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskDurationUpdateV10Api = (*QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdControlTaskListV10Api = (*QianchuanUniPromotionAdControlTaskListV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Api = (*QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Api = (*QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdControlTaskStatusUpdateV10Api = (*QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskUpdateV10Api = (*QianchuanUniPromotionAdControlTaskUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdDetailV10Api = (*QianchuanUniPromotionAdDetailV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdMaterialAddV10Api = (*QianchuanUniPromotionAdMaterialAddV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialDeleteV10Api = (*QianchuanUniPromotionAdMaterialDeleteV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialGetV10Api = (*QianchuanUniPromotionAdMaterialGetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdNameUpdateV10Api = (*QianchuanUniPromotionAdNameUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdProductDeleteV10Api = (*QianchuanUniPromotionAdProductDeleteV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdProductGetV10Api = (*QianchuanUniPromotionAdProductGetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdRoi2GoalUpdateV10Api = (*QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdScheduleDateUpdateV10Api = (*QianchuanUniPromotionAdScheduleDateUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdSuggestionV10Api = (*QianchuanUniPromotionAdSuggestionV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAuthInitV10Api = (*QianchuanUniPromotionAuthInitV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAuthorizableShopListV10Api = (*QianchuanUniPromotionAuthorizableShopListV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAuthorizationApplyV10Api = (*QianchuanUniPromotionAuthorizationApplyV10ApiService)(&c.common)
 	c.QianchuanUniPromotionBlockMaterialGetV10Api = (*QianchuanUniPromotionBlockMaterialGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
 	c.QianchuanUniPromotionProductAwemeGetV10Api = (*QianchuanUniPromotionProductAwemeGetV10ApiService)(&c.common)
@@ -2584,6 +2933,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.RejectMaterialAiRepairAcceptTaskListV30Api = (*RejectMaterialAiRepairAcceptTaskListV30ApiService)(&c.common)
 	c.RejectMaterialAiRepairCrossAccountGetV30Api = (*RejectMaterialAiRepairCrossAccountGetV30ApiService)(&c.common)
 	c.RejectMaterialAiRepairGetV30Api = (*RejectMaterialAiRepairGetV30ApiService)(&c.common)
+	c.RemittanceCodeListGetV30Api = (*RemittanceCodeListGetV30ApiService)(&c.common)
+	c.RemittanceCodeListV30Api = (*RemittanceCodeListV30ApiService)(&c.common)
 	c.ReportAdGetV2Api = (*ReportAdGetV2ApiService)(&c.common)
 	c.ReportAdvertiserGetV2Api = (*ReportAdvertiserGetV2ApiService)(&c.common)
 	c.ReportAgentGetV2V2Api = (*ReportAgentGetV2V2ApiService)(&c.common)
@@ -2608,14 +2959,14 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportCustomConfigGetV30Api = (*ReportCustomConfigGetV30ApiService)(&c.common)
 	c.ReportCustomCreativeGetV30Api = (*ReportCustomCreativeGetV30ApiService)(&c.common)
 	c.ReportCustomGetV30Api = (*ReportCustomGetV30ApiService)(&c.common)
-	c.ReportLiveRoomAnalysisGetV2Api = (*ReportLiveRoomAnalysisGetV2ApiService)(&c.common)
-	c.ReportLiveRoomAttributeGetV2Api = (*ReportLiveRoomAttributeGetV2ApiService)(&c.common)
-	c.ReportLiveRoomAudiencePortraitGetV2Api = (*ReportLiveRoomAudiencePortraitGetV2ApiService)(&c.common)
-	c.ReportLiveRoomFlowCategoryGetV2Api = (*ReportLiveRoomFlowCategoryGetV2ApiService)(&c.common)
+	c.ReportJointGrowthCusGetV30Api = (*ReportJointGrowthCusGetV30ApiService)(&c.common)
+	c.ReportJointGrowthGetV30Api = (*ReportJointGrowthGetV30ApiService)(&c.common)
+	c.ReportLiveRoomAnalysisGetV30Api = (*ReportLiveRoomAnalysisGetV30ApiService)(&c.common)
 	c.ReportProductAsyncTaskDownloadV30Api = (*ReportProductAsyncTaskDownloadV30ApiService)(&c.common)
 	c.ReportProductAsyncTaskGetV30Api = (*ReportProductAsyncTaskGetV30ApiService)(&c.common)
 	c.ReportProductDailyAsyncTaskCreateV30Api = (*ReportProductDailyAsyncTaskCreateV30ApiService)(&c.common)
 	c.ReportProductHourlyAsyncTaskCreateV30Api = (*ReportProductHourlyAsyncTaskCreateV30ApiService)(&c.common)
+	c.ReportReportLiveRoomAudiencePortraitGetV30Api = (*ReportReportLiveRoomAudiencePortraitGetV30ApiService)(&c.common)
 	c.ReportRtaCusExpGetV2Api = (*ReportRtaCusExpGetV2ApiService)(&c.common)
 	c.ReportRtaExpGetV2Api = (*ReportRtaExpGetV2ApiService)(&c.common)
 	c.ReportRtaExpLocalDailyGetV30Api = (*ReportRtaExpLocalDailyGetV30ApiService)(&c.common)
@@ -2627,6 +2978,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportStardeliveryTaskVideoDataGetV30Api = (*ReportStardeliveryTaskVideoDataGetV30ApiService)(&c.common)
 	c.ReportVideoFrameGetV2Api = (*ReportVideoFrameGetV2ApiService)(&c.common)
 	c.SecurityAuditResultsV30Api = (*SecurityAuditResultsV30ApiService)(&c.common)
+	c.SecurityCreateAppealV30Api = (*SecurityCreateAppealV30ApiService)(&c.common)
+	c.SecurityGetConsultResultV30Api = (*SecurityGetConsultResultV30ApiService)(&c.common)
 	c.SecurityOpenMaterialAuditV30Api = (*SecurityOpenMaterialAuditV30ApiService)(&c.common)
 	c.SecurityScoreDisposalInfoGetV30Api = (*SecurityScoreDisposalInfoGetV30ApiService)(&c.common)
 	c.SecurityScoreTotalGetV30Api = (*SecurityScoreTotalGetV30ApiService)(&c.common)
@@ -2635,14 +2988,24 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ServeMarketCidVerifyTokenV10Api = (*ServeMarketCidVerifyTokenV10ApiService)(&c.common)
 	c.ServeMarketOrderGetV10Api = (*ServeMarketOrderGetV10ApiService)(&c.common)
 	c.SharedWalletAccountRelationGetV30Api = (*SharedWalletAccountRelationGetV30ApiService)(&c.common)
+	c.SharedWalletBudgetGetV30Api = (*SharedWalletBudgetGetV30ApiService)(&c.common)
+	c.SharedWalletBudgetSubmitV30Api = (*SharedWalletBudgetSubmitV30ApiService)(&c.common)
 	c.SharedWalletDailyStatGetV30Api = (*SharedWalletDailyStatGetV30ApiService)(&c.common)
 	c.SharedWalletMainWalletGetV30Api = (*SharedWalletMainWalletGetV30ApiService)(&c.common)
+	c.SharedWalletSharedRelationCreateV30Api = (*SharedWalletSharedRelationCreateV30ApiService)(&c.common)
 	c.SharedWalletTransactionDetailGetV30Api = (*SharedWalletTransactionDetailGetV30ApiService)(&c.common)
+	c.SharedWalletWalletAdvOperationLogGetV30Api = (*SharedWalletWalletAdvOperationLogGetV30ApiService)(&c.common)
 	c.SharedWalletWalletBalanceGetV30Api = (*SharedWalletWalletBalanceGetV30ApiService)(&c.common)
 	c.SharedWalletWalletInfoGetV30Api = (*SharedWalletWalletInfoGetV30ApiService)(&c.common)
+	c.SharedWalletWalletOperationLogGetV30Api = (*SharedWalletWalletOperationLogGetV30ApiService)(&c.common)
 	c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
+	c.SharedWalletWatchRuleGetV30Api = (*SharedWalletWatchRuleGetV30ApiService)(&c.common)
+	c.SharedWalletWatchRuleSubmitV30Api = (*SharedWalletWatchRuleSubmitV30ApiService)(&c.common)
+	c.ShopBonusCreateV30Api = (*ShopBonusCreateV30ApiService)(&c.common)
+	c.ShopBonusSuccessGetV30Api = (*ShopBonusSuccessGetV30ApiService)(&c.common)
 	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
 	c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
+	c.StarAttributeItemEventFeedbackV2Api = (*StarAttributeItemEventFeedbackV2ApiService)(&c.common)
 	c.StarAttributeJdOverflowConvertV2Api = (*StarAttributeJdOverflowConvertV2ApiService)(&c.common)
 	c.StarAttributeUserEventFeedbackV2Api = (*StarAttributeUserEventFeedbackV2ApiService)(&c.common)
 	c.StarAttributeUserInfoFeedbackV2Api = (*StarAttributeUserInfoFeedbackV2ApiService)(&c.common)
@@ -2671,6 +3034,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarComponentQueryLinkV2Api = (*StarComponentQueryLinkV2ApiService)(&c.common)
 	c.StarComponentUpdateCommonComponentV2Api = (*StarComponentUpdateCommonComponentV2ApiService)(&c.common)
 	c.StarComponentUpdateLinkV2Api = (*StarComponentUpdateLinkV2ApiService)(&c.common)
+	c.StarCopyrightCreateV2Api = (*StarCopyrightCreateV2ApiService)(&c.common)
+	c.StarCopyrightGetV2Api = (*StarCopyrightGetV2ApiService)(&c.common)
+	c.StarCreateProjectV2Api = (*StarCreateProjectV2ApiService)(&c.common)
 	c.StarDataTaskTimelineReportV2Api = (*StarDataTaskTimelineReportV2ApiService)(&c.common)
 	c.StarDemandCreateAssignV2Api = (*StarDemandCreateAssignV2ApiService)(&c.common)
 	c.StarDemandCreateChallengeV2Api = (*StarDemandCreateChallengeV2ApiService)(&c.common)
@@ -2689,11 +3055,15 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDemandSearchWordModifyV2Api = (*StarDemandSearchWordModifyV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetAuthorBindInfoV2Api = (*StarDemanderDemanderGetAuthorBindInfoV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetBindShareCodeV2Api = (*StarDemanderDemanderGetBindShareCodeV2ApiService)(&c.common)
+	c.StarDemanderGetCarBrandListV2Api = (*StarDemanderGetCarBrandListV2ApiService)(&c.common)
+	c.StarDemanderGetRegisteredIpActsV2Api = (*StarDemanderGetRegisteredIpActsV2ApiService)(&c.common)
+	c.StarDemanderQueryCpsTaskSalesV2Api = (*StarDemanderQueryCpsTaskSalesV2ApiService)(&c.common)
 	c.StarDemanderUploadCpsTaskSalesV2Api = (*StarDemanderUploadCpsTaskSalesV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayGetCheckInCodeV2Api = (*StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayJudgeCheckedInV2Api = (*StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService)(&c.common)
 	c.StarGetCreateChallengeDataDictV2Api = (*StarGetCreateChallengeDataDictV2ApiService)(&c.common)
 	c.StarInfoV2Api = (*StarInfoV2ApiService)(&c.common)
+	c.StarItemAuthorGetV2Api = (*StarItemAuthorGetV2ApiService)(&c.common)
 	c.StarMcnContractChallengeV2Api = (*StarMcnContractChallengeV2ApiService)(&c.common)
 	c.StarMcnGetAuthorListV2Api = (*StarMcnGetAuthorListV2ApiService)(&c.common)
 	c.StarMcnGetContractChallengeAuthorItemListV2V2Api = (*StarMcnGetContractChallengeAuthorItemListV2V2ApiService)(&c.common)
@@ -2702,10 +3072,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetParticipatedTaskV2Api = (*StarMcnProviderGetParticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetTagOnTaskV2Api = (*StarMcnProviderGetTagOnTaskV2ApiService)(&c.common)
+	c.StarMcnProviderGetTaskAuthorListV2Api = (*StarMcnProviderGetTaskAuthorListV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskDetailV2Api = (*StarMcnProviderGetTaskDetailV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskItemListV2Api = (*StarMcnProviderGetTaskItemListV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskShareCodeV2Api = (*StarMcnProviderGetTaskShareCodeV2ApiService)(&c.common)
 	c.StarMcnProviderGetUnparticipatedTaskV2Api = (*StarMcnProviderGetUnparticipatedTaskV2ApiService)(&c.common)
+	c.StarMcnProviderHandleJoinedAuthorV2Api = (*StarMcnProviderHandleJoinedAuthorV2ApiService)(&c.common)
 	c.StarMcnProviderUploadSearchItemV2Api = (*StarMcnProviderUploadSearchItemV2ApiService)(&c.common)
 	c.StarOrderApproveResourceV2Api = (*StarOrderApproveResourceV2ApiService)(&c.common)
 	c.StarOrderDemanderCancelV2Api = (*StarOrderDemanderCancelV2ApiService)(&c.common)
@@ -2735,12 +3107,14 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarStarAdUniteTaskListV2Api = (*StarStarAdUniteTaskListV2ApiService)(&c.common)
 	c.StarTaskBindProjectV2Api = (*StarTaskBindProjectV2ApiService)(&c.common)
 	c.StarTaskListByProjectV2Api = (*StarTaskListByProjectV2ApiService)(&c.common)
+	c.StarUpdateProjectV2Api = (*StarUpdateProjectV2ApiService)(&c.common)
 	c.StarUserGetAwemeAuthorIdV2Api = (*StarUserGetAwemeAuthorIdV2ApiService)(&c.common)
 	c.StarUserGetStarIdV2Api = (*StarUserGetStarIdV2ApiService)(&c.common)
 	c.StarVasAppendOrderToBoostItemGroupV2Api = (*StarVasAppendOrderToBoostItemGroupV2ApiService)(&c.common)
 	c.StarVasCancelBoostItemGroupV2Api = (*StarVasCancelBoostItemGroupV2ApiService)(&c.common)
 	c.StarVasCreateBoostItemGroupV2Api = (*StarVasCreateBoostItemGroupV2ApiService)(&c.common)
 	c.StarVasGetBoostGroupListV2Api = (*StarVasGetBoostGroupListV2ApiService)(&c.common)
+	c.StarVasGetBoostGroupOptionsV2Api = (*StarVasGetBoostGroupOptionsV2ApiService)(&c.common)
 	c.StarVasGetBoostItemGroupDetailV2Api = (*StarVasGetBoostItemGroupDetailV2ApiService)(&c.common)
 	c.StarVasGetCommonAuthorPackageListV2Api = (*StarVasGetCommonAuthorPackageListV2ApiService)(&c.common)
 	c.StarVasGetExportBoostItemGroupResultV2Api = (*StarVasGetExportBoostItemGroupResultV2ApiService)(&c.common)
@@ -2761,15 +3135,13 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SubscribeAccountsListV30Api = (*SubscribeAccountsListV30ApiService)(&c.common)
 	c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)
 	c.SuggWordsV30Api = (*SuggWordsV30ApiService)(&c.common)
+	c.SvipChargeVerifyGetV30Api = (*SvipChargeVerifyGetV30ApiService)(&c.common)
 	c.ToolQuickAppManagementQuickAppGetV2Api = (*ToolQuickAppManagementQuickAppGetV2ApiService)(&c.common)
-	c.ToolsAbTestCreateV2Api = (*ToolsAbTestCreateV2ApiService)(&c.common)
-	c.ToolsAbTestInfoGetV2Api = (*ToolsAbTestInfoGetV2ApiService)(&c.common)
-	c.ToolsAbTestListGetV2Api = (*ToolsAbTestListGetV2ApiService)(&c.common)
-	c.ToolsAbTestUpdateV2Api = (*ToolsAbTestUpdateV2ApiService)(&c.common)
 	c.ToolsAdPreviewQrcodeGetV30Api = (*ToolsAdPreviewQrcodeGetV30ApiService)(&c.common)
 	c.ToolsAdRaiseStatusGetV2Api = (*ToolsAdRaiseStatusGetV2ApiService)(&c.common)
-	c.ToolsAdRaiseVersionGetV2Api = (*ToolsAdRaiseVersionGetV2ApiService)(&c.common)
 	c.ToolsAdminInfoV2Api = (*ToolsAdminInfoV2ApiService)(&c.common)
+	c.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api = (*ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService)(&c.common)
+	c.ToolsAdvertiserDiagnosisSuggestionGetV30Api = (*ToolsAdvertiserDiagnosisSuggestionGetV30ApiService)(&c.common)
 	c.ToolsAdvertiserStoreSearchV2Api = (*ToolsAdvertiserStoreSearchV2ApiService)(&c.common)
 	c.ToolsAipThirdSiteCreateV2Api = (*ToolsAipThirdSiteCreateV2ApiService)(&c.common)
 	c.ToolsAipThirdSiteGetV2Api = (*ToolsAipThirdSiteGetV2ApiService)(&c.common)
@@ -2830,6 +3202,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsClueFormDetailV2Api = (*ToolsClueFormDetailV2ApiService)(&c.common)
 	c.ToolsClueFormGetV2Api = (*ToolsClueFormGetV2ApiService)(&c.common)
 	c.ToolsClueGetV2Api = (*ToolsClueGetV2ApiService)(&c.common)
+	c.ToolsClueInfoGetV2Api = (*ToolsClueInfoGetV2ApiService)(&c.common)
 	c.ToolsClueInfoUpdateV2Api = (*ToolsClueInfoUpdateV2ApiService)(&c.common)
 	c.ToolsClueLifeCallbackV2Api = (*ToolsClueLifeCallbackV2ApiService)(&c.common)
 	c.ToolsClueLifeGetV2Api = (*ToolsClueLifeGetV2ApiService)(&c.common)
@@ -2844,7 +3217,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsClueRobotTaskCancelV2Api = (*ToolsClueRobotTaskCancelV2ApiService)(&c.common)
 	c.ToolsClueRobotTaskCreateV2Api = (*ToolsClueRobotTaskCreateV2ApiService)(&c.common)
 	c.ToolsClueSmartPhoneGetV2Api = (*ToolsClueSmartPhoneGetV2ApiService)(&c.common)
+	c.ToolsClueWebrtcCreateV2V30Api = (*ToolsClueWebrtcCreateV2V30ApiService)(&c.common)
 	c.ToolsClueWebrtcTokenGetV2Api = (*ToolsClueWebrtcTokenGetV2ApiService)(&c.common)
+	c.ToolsClueWebrtcTokenGetV2V30Api = (*ToolsClueWebrtcTokenGetV2V30ApiService)(&c.common)
 	c.ToolsCommentGetV30Api = (*ToolsCommentGetV30ApiService)(&c.common)
 	c.ToolsCommentHideV30Api = (*ToolsCommentHideV30ApiService)(&c.common)
 	c.ToolsCommentMetricsGetV30Api = (*ToolsCommentMetricsGetV30ApiService)(&c.common)
@@ -2858,10 +3233,42 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsCommentTermsBannedUpdateV30Api = (*ToolsCommentTermsBannedUpdateV30ApiService)(&c.common)
 	c.ToolsCountryInfoV2Api = (*ToolsCountryInfoV2ApiService)(&c.common)
 	c.ToolsCreativeWordSelectV2Api = (*ToolsCreativeWordSelectV2ApiService)(&c.common)
-	c.ToolsDiagnosisAdGetV2V2Api = (*ToolsDiagnosisAdGetV2V2ApiService)(&c.common)
-	c.ToolsDiagnosisSuggestionGetV2Api = (*ToolsDiagnosisSuggestionGetV2ApiService)(&c.common)
+	c.ToolsDiagnosisSuggestionGetV30Api = (*ToolsDiagnosisSuggestionGetV30ApiService)(&c.common)
 	c.ToolsDownloadPackageGetV2Api = (*ToolsDownloadPackageGetV2ApiService)(&c.common)
 	c.ToolsDownloadPackageParseV2Api = (*ToolsDownloadPackageParseV2ApiService)(&c.common)
+	c.ToolsEbpAppDetailV30Api = (*ToolsEbpAppDetailV30ApiService)(&c.common)
+	c.ToolsEbpAppExtendCreateV30Api = (*ToolsEbpAppExtendCreateV30ApiService)(&c.common)
+	c.ToolsEbpAppExtendListV30Api = (*ToolsEbpAppExtendListV30ApiService)(&c.common)
+	c.ToolsEbpAppExtendUpdateV30Api = (*ToolsEbpAppExtendUpdateV30ApiService)(&c.common)
+	c.ToolsEbpAppGameBookListV30Api = (*ToolsEbpAppGameBookListV30ApiService)(&c.common)
+	c.ToolsEbpAppListV30Api = (*ToolsEbpAppListV30ApiService)(&c.common)
+	c.ToolsEbpAppPublishV30Api = (*ToolsEbpAppPublishV30ApiService)(&c.common)
+	c.ToolsEbpAppUpdateV30Api = (*ToolsEbpAppUpdateV30ApiService)(&c.common)
+	c.ToolsEbpAssetAuthCancelV30Api = (*ToolsEbpAssetAuthCancelV30ApiService)(&c.common)
+	c.ToolsEbpAssetAuthListV30Api = (*ToolsEbpAssetAuthListV30ApiService)(&c.common)
+	c.ToolsEbpAssetAuthV30Api = (*ToolsEbpAssetAuthV30ApiService)(&c.common)
+	c.ToolsEbpMaterialAuthCreateV30Api = (*ToolsEbpMaterialAuthCreateV30ApiService)(&c.common)
+	c.ToolsEbpMaterialAuthDeleteV30Api = (*ToolsEbpMaterialAuthDeleteV30ApiService)(&c.common)
+	c.ToolsEbpMaterialAuthListV30Api = (*ToolsEbpMaterialAuthListV30ApiService)(&c.common)
+	c.ToolsEbpMicroAppletCreateV30Api = (*ToolsEbpMicroAppletCreateV30ApiService)(&c.common)
+	c.ToolsEbpMicroAppletLinkListV30Api = (*ToolsEbpMicroAppletLinkListV30ApiService)(&c.common)
+	c.ToolsEbpMicroAppletListV30Api = (*ToolsEbpMicroAppletListV30ApiService)(&c.common)
+	c.ToolsEbpMicroAppletUpdateV30Api = (*ToolsEbpMicroAppletUpdateV30ApiService)(&c.common)
+	c.ToolsEbpMicroGameCreateV30Api = (*ToolsEbpMicroGameCreateV30ApiService)(&c.common)
+	c.ToolsEbpMicroGameLinkListV30Api = (*ToolsEbpMicroGameLinkListV30ApiService)(&c.common)
+	c.ToolsEbpMicroGameListV30Api = (*ToolsEbpMicroGameListV30ApiService)(&c.common)
+	c.ToolsEbpMicroGameUpdateV30Api = (*ToolsEbpMicroGameUpdateV30ApiService)(&c.common)
+	c.ToolsEbpSubjectListV30Api = (*ToolsEbpSubjectListV30ApiService)(&c.common)
+	c.ToolsEbpVideoAttributesListV30Api = (*ToolsEbpVideoAttributesListV30ApiService)(&c.common)
+	c.ToolsEbpVideoDeleteV30Api = (*ToolsEbpVideoDeleteV30ApiService)(&c.common)
+	c.ToolsEbpVideoUpdateV30Api = (*ToolsEbpVideoUpdateV30ApiService)(&c.common)
+	c.ToolsEbpVideoUploadV30Api = (*ToolsEbpVideoUploadV30ApiService)(&c.common)
+	c.ToolsEbpWechatAppletCreateV30Api = (*ToolsEbpWechatAppletCreateV30ApiService)(&c.common)
+	c.ToolsEbpWechatAppletListV30Api = (*ToolsEbpWechatAppletListV30ApiService)(&c.common)
+	c.ToolsEbpWechatAppletUpdateV30Api = (*ToolsEbpWechatAppletUpdateV30ApiService)(&c.common)
+	c.ToolsEbpWechatGameCreateV30Api = (*ToolsEbpWechatGameCreateV30ApiService)(&c.common)
+	c.ToolsEbpWechatGameListV30Api = (*ToolsEbpWechatGameListV30ApiService)(&c.common)
+	c.ToolsEbpWechatGameUpdateV30Api = (*ToolsEbpWechatGameUpdateV30ApiService)(&c.common)
 	c.ToolsEstimateAudienceV2Api = (*ToolsEstimateAudienceV2ApiService)(&c.common)
 	c.ToolsEstimatedPriceGetV2Api = (*ToolsEstimatedPriceGetV2ApiService)(&c.common)
 	c.ToolsEventAllAssetsDetailV2Api = (*ToolsEventAllAssetsDetailV2ApiService)(&c.common)
@@ -2870,13 +3277,20 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsEventConvertOptimizedGoalGetV30Api = (*ToolsEventConvertOptimizedGoalGetV30ApiService)(&c.common)
 	c.ToolsForbiddenLinkGreyGetV30Api = (*ToolsForbiddenLinkGreyGetV30ApiService)(&c.common)
 	c.ToolsGrayGetV30Api = (*ToolsGrayGetV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveAdoptV30Api = (*ToolsHotMaterialDeriveAdoptV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveGetV30Api = (*ToolsHotMaterialDeriveGetV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveListV30Api = (*ToolsHotMaterialDeriveListV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveSubmitV30Api = (*ToolsHotMaterialDeriveSubmitV30ApiService)(&c.common)
+	c.ToolsInactiveAdvertiserListV30Api = (*ToolsInactiveAdvertiserListV30ApiService)(&c.common)
 	c.ToolsIndustryGetV2Api = (*ToolsIndustryGetV2ApiService)(&c.common)
 	c.ToolsInterestActionActionKeywordV2Api = (*ToolsInterestActionActionKeywordV2ApiService)(&c.common)
 	c.ToolsInterestActionId2wordV2Api = (*ToolsInterestActionId2wordV2ApiService)(&c.common)
 	c.ToolsInterestActionInterestKeywordV2Api = (*ToolsInterestActionInterestKeywordV2ApiService)(&c.common)
 	c.ToolsInterestActionKeywordSuggestV2Api = (*ToolsInterestActionKeywordSuggestV2ApiService)(&c.common)
 	c.ToolsIsSupportUniversalGetV2Api = (*ToolsIsSupportUniversalGetV2ApiService)(&c.common)
-	c.ToolsKeyActionGetV2Api = (*ToolsKeyActionGetV2ApiService)(&c.common)
+	c.ToolsJointBidCreateV30Api = (*ToolsJointBidCreateV30ApiService)(&c.common)
+	c.ToolsJointBidGetV30Api = (*ToolsJointBidGetV30ApiService)(&c.common)
+	c.ToolsJointBidUpdateV30Api = (*ToolsJointBidUpdateV30ApiService)(&c.common)
 	c.ToolsKeywordsBidRatioCreateV30Api = (*ToolsKeywordsBidRatioCreateV30ApiService)(&c.common)
 	c.ToolsKeywordsBidRatioDeleteV30Api = (*ToolsKeywordsBidRatioDeleteV30ApiService)(&c.common)
 	c.ToolsKeywordsBidRatioGetV30Api = (*ToolsKeywordsBidRatioGetV30ApiService)(&c.common)
@@ -2888,6 +3302,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsLandingGroupUpdateV2Api = (*ToolsLandingGroupUpdateV2ApiService)(&c.common)
 	c.ToolsLiveAuthorizeListV2Api = (*ToolsLiveAuthorizeListV2ApiService)(&c.common)
 	c.ToolsLogSearchV2Api = (*ToolsLogSearchV2ApiService)(&c.common)
+	c.ToolsMaterialRaiseCreateV30Api = (*ToolsMaterialRaiseCreateV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseGetV30Api = (*ToolsMaterialRaiseGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseMaterialIdsGetV30Api = (*ToolsMaterialRaiseMaterialIdsGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseRecordsGetV30Api = (*ToolsMaterialRaiseRecordsGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseStatusGetV30Api = (*ToolsMaterialRaiseStatusGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseStopV30Api = (*ToolsMaterialRaiseStopV30ApiService)(&c.common)
 	c.ToolsMicroAppCreateV30Api = (*ToolsMicroAppCreateV30ApiService)(&c.common)
 	c.ToolsMicroAppListV30Api = (*ToolsMicroAppListV30ApiService)(&c.common)
 	c.ToolsMicroAppUpdateV30Api = (*ToolsMicroAppUpdateV30ApiService)(&c.common)
@@ -2936,7 +3356,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsRtaScopeGetV30Api = (*ToolsRtaScopeGetV30ApiService)(&c.common)
 	c.ToolsRtaSetScopeV2Api = (*ToolsRtaSetScopeV2ApiService)(&c.common)
 	c.ToolsRtaStatusUpdateV2Api = (*ToolsRtaStatusUpdateV2ApiService)(&c.common)
-	c.ToolsRubeexGetV2Api = (*ToolsRubeexGetV2ApiService)(&c.common)
 	c.ToolsRubeexPlayableAdListV2Api = (*ToolsRubeexPlayableAdListV2ApiService)(&c.common)
 	c.ToolsRubeexPlayableListV2Api = (*ToolsRubeexPlayableListV2ApiService)(&c.common)
 	c.ToolsRubeexRemarkV2Api = (*ToolsRubeexRemarkV2ApiService)(&c.common)
@@ -2956,7 +3375,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsSiteTemplateSiteCreateV2Api = (*ToolsSiteTemplateSiteCreateV2ApiService)(&c.common)
 	c.ToolsSiteUpdateStatusV2Api = (*ToolsSiteUpdateStatusV2ApiService)(&c.common)
 	c.ToolsSiteUpdateV2Api = (*ToolsSiteUpdateV2ApiService)(&c.common)
-	c.ToolsStarTaskMaterialTypeV2Api = (*ToolsStarTaskMaterialTypeV2ApiService)(&c.common)
 	c.ToolsStarTaskSettlementConfigV2Api = (*ToolsStarTaskSettlementConfigV2ApiService)(&c.common)
 	c.ToolsStarTaskTitleTopicGetV2Api = (*ToolsStarTaskTitleTopicGetV2ApiService)(&c.common)
 	c.ToolsSuggestBudgetGetV30Api = (*ToolsSuggestBudgetGetV30ApiService)(&c.common)
@@ -2965,7 +3383,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsTaskRaiseGetV2Api = (*ToolsTaskRaiseGetV2ApiService)(&c.common)
 	c.ToolsTaskRaiseOptimizationIdsGetV2Api = (*ToolsTaskRaiseOptimizationIdsGetV2ApiService)(&c.common)
 	c.ToolsTaskRaiseStatusStopV2Api = (*ToolsTaskRaiseStatusStopV2ApiService)(&c.common)
-	c.ToolsThirdSiteCreateV2Api = (*ToolsThirdSiteCreateV2ApiService)(&c.common)
 	c.ToolsThirdSiteDeleteV2Api = (*ToolsThirdSiteDeleteV2ApiService)(&c.common)
 	c.ToolsThirdSiteGetV2Api = (*ToolsThirdSiteGetV2ApiService)(&c.common)
 	c.ToolsThirdSitePreviewV2Api = (*ToolsThirdSitePreviewV2ApiService)(&c.common)

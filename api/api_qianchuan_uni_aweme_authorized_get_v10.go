@@ -26,13 +26,19 @@ type ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanUniAwemeAuthorizedGetV10ApiService
 	advertiserId *int64
+	filtering    *QianchuanUniAwemeAuthorizedGetV10Filtering
 	page         *int64
 	pageSize     *int64
-	filtering    *QianchuanUniAwemeAuthorizedGetV10Filtering
 }
 
 func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest {
 	r.advertiserId = &advertiserId
+	return r
+}
+
+// 过滤器
+func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) Filtering(filtering QianchuanUniAwemeAuthorizedGetV10Filtering) *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
@@ -43,12 +49,6 @@ func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) Page(page int64)
 
 func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) PageSize(pageSize int64) *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-// 过滤器
-func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) Filtering(filtering QianchuanUniAwemeAuthorizedGetV10Filtering) *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) WithLog(enable b
 
 /*
 OpenApiV10QianchuanUniAwemeAuthorizedGetGet Method for OpenApiV10QianchuanUniAwemeAuthorizedGetGet
+
+获取可投全域推广抖音号列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest
@@ -107,14 +109,14 @@ func (a *QianchuanUniAwemeAuthorizedGetV10ApiService) getExecute(r *ApiOpenApiV1
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

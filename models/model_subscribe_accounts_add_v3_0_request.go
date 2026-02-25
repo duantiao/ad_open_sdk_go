@@ -12,12 +12,14 @@ package models
 
 // SubscribeAccountsAddV30Request struct for SubscribeAccountsAddV30Request
 type SubscribeAccountsAddV30Request struct {
+	AccountType *SubscribeAccountsAddV30AccountType `json:"account_type,omitempty"`
 	//
 	AdvertiserIds []int64 `json:"advertiser_ids"`
 	//
 	AppId int64 `json:"app_id"`
 	//
-	CoreUserId int64 `json:"core_user_id"`
+	CoreUserId           int64                                        `json:"core_user_id"`
+	SubscribePackageType *SubscribeAccountsAddV30SubscribePackageType `json:"subscribe_package_type,omitempty"`
 	//
-	SubscribeTaskId int64 `json:"subscribe_task_id"`
+	SubscribeTaskId *int64 `json:"subscribe_task_id,omitempty"`
 }

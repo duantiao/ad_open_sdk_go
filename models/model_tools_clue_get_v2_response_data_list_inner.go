@@ -35,6 +35,8 @@ type ToolsClueGetV2ResponseDataListInner struct {
 	//
 	ClueOwnerName *string `json:"clue_owner_name,omitempty"`
 	//
+	ClueReturnStatus *string `json:"clue_return_status,omitempty"`
+	//
 	ClueSource *int64 `json:"clue_source,omitempty"`
 	//
 	ClueState *int64 `json:"clue_state,omitempty"`
@@ -81,6 +83,8 @@ type ToolsClueGetV2ResponseDataListInner struct {
 	//
 	Name *string `json:"name,omitempty"`
 	//
+	ProjectId *string `json:"project_id,omitempty"`
+	//
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	//
 	PromotionName *string `json:"promotion_name,omitempty"`
@@ -94,6 +98,8 @@ type ToolsClueGetV2ResponseDataListInner struct {
 	RemarkDict map[string]interface{} `json:"remark_dict,omitempty"`
 	//
 	ReqId *string `json:"req_id,omitempty"`
+	//
+	SearchBidWord *string `json:"search_bid_word,omitempty"`
 	//
 	SiteId *string `json:"site_id,omitempty"`
 	//

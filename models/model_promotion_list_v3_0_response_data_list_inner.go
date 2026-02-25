@@ -32,7 +32,9 @@ type PromotionListV30ResponseDataListInner struct {
 	CpaBid                     *float64                                            `json:"cpa_bid,omitempty"`
 	CreativeAutoGenerateSwitch *PromotionListV30DataListCreativeAutoGenerateSwitch `json:"creative_auto_generate_switch,omitempty"`
 	//
-	DeepCpabid       *float64                                  `json:"deep_cpabid,omitempty"`
+	DeepCpabid *float64 `json:"deep_cpabid,omitempty"`
+	//
+	FirstRoiGoal     *float64                                  `json:"first_roi_goal,omitempty"`
 	HasCarryMaterial *PromotionListV30DataListHasCarryMaterial `json:"has_carry_material,omitempty"`
 	//
 	IfNewcustomerdelivery *bool                                     `json:"if_newcustomerdelivery,omitempty"`
@@ -65,6 +67,7 @@ type PromotionListV30ResponseDataListInner struct {
 	ShopMultiRoiGoals []*PromotionListV30ResponseDataListInnerShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
 	//
 	Source                         *string                                                 `json:"source,omitempty"`
+	StarAutoDeliverySwitch         *PromotionListV30DataListStarAutoDeliverySwitch         `json:"star_auto_delivery_switch,omitempty"`
 	StarAutoMaterialAdditionSwitch *PromotionListV30DataListStarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
 	//
 	StarTaskId      *int64                                   `json:"star_task_id,omitempty"`

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.50
+API version: 1.1.82
 */
 package ad_open_sdk_go
 
@@ -35,6 +35,14 @@ func (c *Client) AccountUpdateV30Api() *api.AccountUpdateV30ApiService {
 	return c.ApiClient.AccountUpdateV30Api
 }
 
+func (c *Client) AdBillingUniqueIdGetV30Api() *api.AdBillingUniqueIdGetV30ApiService {
+	return c.ApiClient.AdBillingUniqueIdGetV30Api
+}
+
+func (c *Client) AdConvertSignalV2Api() *api.AdConvertSignalV2ApiService {
+	return c.ApiClient.AdConvertSignalV2Api
+}
+
 func (c *Client) AdCostProtectStatusGetV2Api() *api.AdCostProtectStatusGetV2ApiService {
 	return c.ApiClient.AdCostProtectStatusGetV2Api
 }
@@ -61,10 +69,6 @@ func (c *Client) AdUpdateBidV2Api() *api.AdUpdateBidV2ApiService {
 
 func (c *Client) AdUpdateBudgetV2Api() *api.AdUpdateBudgetV2ApiService {
 	return c.ApiClient.AdUpdateBudgetV2Api
-}
-
-func (c *Client) AdUpdateStatusV2Api() *api.AdUpdateStatusV2ApiService {
-	return c.ApiClient.AdUpdateStatusV2Api
 }
 
 func (c *Client) AdvConvertOleConvertV2Api() *api.AdvConvertOleConvertV2ApiService {
@@ -123,6 +127,10 @@ func (c *Client) AdvertiserFundDailyStatV2Api() *api.AdvertiserFundDailyStatV2Ap
 	return c.ApiClient.AdvertiserFundDailyStatV2Api
 }
 
+func (c *Client) AdvertiserFundDetailGrantV2Api() *api.AdvertiserFundDetailGrantV2ApiService {
+	return c.ApiClient.AdvertiserFundDetailGrantV2Api
+}
+
 func (c *Client) AdvertiserFundGetV2Api() *api.AdvertiserFundGetV2ApiService {
 	return c.ApiClient.AdvertiserFundGetV2Api
 }
@@ -171,6 +179,10 @@ func (c *Client) AdvertiserVerifyInfoGetV30Api() *api.AdvertiserVerifyInfoGetV30
 	return c.ApiClient.AdvertiserVerifyInfoGetV30Api
 }
 
+func (c *Client) AgentAdvAdvertiserUpdateSaleV2Api() *api.AgentAdvAdvertiserUpdateSaleV2ApiService {
+	return c.ApiClient.AgentAdvAdvertiserUpdateSaleV2Api
+}
+
 func (c *Client) AgentAdvBiddingListQueryV2Api() *api.AgentAdvBiddingListQueryV2ApiService {
 	return c.ApiClient.AgentAdvBiddingListQueryV2Api
 }
@@ -185,6 +197,18 @@ func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQ
 
 func (c *Client) AgentAdvPerenniallyPunishHistoryQueryV2Api() *api.AgentAdvPerenniallyPunishHistoryQueryV2ApiService {
 	return c.ApiClient.AgentAdvPerenniallyPunishHistoryQueryV2Api
+}
+
+func (c *Client) AgentAdvPerenniallyPunishV2Api() *api.AgentAdvPerenniallyPunishV2ApiService {
+	return c.ApiClient.AgentAdvPerenniallyPunishV2Api
+}
+
+func (c *Client) AgentAdvRechargeRechargeRecordV2Api() *api.AgentAdvRechargeRechargeRecordV2ApiService {
+	return c.ApiClient.AgentAdvRechargeRechargeRecordV2Api
+}
+
+func (c *Client) AgentAdvTemporaryPunishV2Api() *api.AgentAdvTemporaryPunishV2ApiService {
+	return c.ApiClient.AgentAdvTemporaryPunishV2Api
 }
 
 func (c *Client) AgentAdvertiserAssignV2Api() *api.AgentAdvertiserAssignV2ApiService {
@@ -211,6 +235,10 @@ func (c *Client) AgentAdvertiserUpdateV2Api() *api.AgentAdvertiserUpdateV2ApiSer
 	return c.ApiClient.AgentAdvertiserUpdateV2Api
 }
 
+func (c *Client) AgentChargeVerifyV2Api() *api.AgentChargeVerifyV2ApiService {
+	return c.ApiClient.AgentChargeVerifyV2Api
+}
+
 func (c *Client) AgentChildAgentSelectV2Api() *api.AgentChildAgentSelectV2ApiService {
 	return c.ApiClient.AgentChildAgentSelectV2Api
 }
@@ -223,28 +251,20 @@ func (c *Client) AgentCompanyBrandListQueryV2Api() *api.AgentCompanyBrandListQue
 	return c.ApiClient.AgentCompanyBrandListQueryV2Api
 }
 
-func (c *Client) AgentFundTransferSeqCommitV2Api() *api.AgentFundTransferSeqCommitV2ApiService {
-	return c.ApiClient.AgentFundTransferSeqCommitV2Api
-}
-
-func (c *Client) AgentFundTransferSeqCreateV2Api() *api.AgentFundTransferSeqCreateV2ApiService {
-	return c.ApiClient.AgentFundTransferSeqCreateV2Api
+func (c *Client) AgentCreditChargeSubmitV2Api() *api.AgentCreditChargeSubmitV2ApiService {
+	return c.ApiClient.AgentCreditChargeSubmitV2Api
 }
 
 func (c *Client) AgentInfoV2Api() *api.AgentInfoV2ApiService {
 	return c.ApiClient.AgentInfoV2Api
 }
 
+func (c *Client) AgentPrepayChargeGenerateRemittanceCodeV2Api() *api.AgentPrepayChargeGenerateRemittanceCodeV2ApiService {
+	return c.ApiClient.AgentPrepayChargeGenerateRemittanceCodeV2Api
+}
+
 func (c *Client) AgentQueryRiskPromotionListV2Api() *api.AgentQueryRiskPromotionListV2ApiService {
 	return c.ApiClient.AgentQueryRiskPromotionListV2Api
-}
-
-func (c *Client) AgentRefundTransferSeqCommitV2Api() *api.AgentRefundTransferSeqCommitV2ApiService {
-	return c.ApiClient.AgentRefundTransferSeqCommitV2Api
-}
-
-func (c *Client) AgentRefundTransferSeqCreateV2Api() *api.AgentRefundTransferSeqCreateV2ApiService {
-	return c.ApiClient.AgentRefundTransferSeqCreateV2Api
 }
 
 func (c *Client) AgentTransferTransactionRecordV2Api() *api.AgentTransferTransactionRecordV2ApiService {
@@ -347,10 +367,6 @@ func (c *Client) BrandAdCancelDeleteV30Api() *api.BrandAdCancelDeleteV30ApiServi
 	return c.ApiClient.BrandAdCancelDeleteV30Api
 }
 
-func (c *Client) BrandAdCreateV30Api() *api.BrandAdCreateV30ApiService {
-	return c.ApiClient.BrandAdCreateV30Api
-}
-
 func (c *Client) BrandAdDeleteV30Api() *api.BrandAdDeleteV30ApiService {
 	return c.ApiClient.BrandAdDeleteV30Api
 }
@@ -377,10 +393,6 @@ func (c *Client) BrandAwemeListV30Api() *api.BrandAwemeListV30ApiService {
 
 func (c *Client) BrandCampaignAddV30Api() *api.BrandCampaignAddV30ApiService {
 	return c.ApiClient.BrandCampaignAddV30Api
-}
-
-func (c *Client) BrandCampaignCreateV30Api() *api.BrandCampaignCreateV30ApiService {
-	return c.ApiClient.BrandCampaignCreateV30Api
 }
 
 func (c *Client) BrandCampaignDeleteV30Api() *api.BrandCampaignDeleteV30ApiService {
@@ -643,6 +655,18 @@ func (c *Client) CgTransferWalletTransferListV30Api() *api.CgTransferWalletTrans
 	return c.ApiClient.CgTransferWalletTransferListV30Api
 }
 
+func (c *Client) ChargeListV30Api() *api.ChargeListV30ApiService {
+	return c.ApiClient.ChargeListV30Api
+}
+
+func (c *Client) ChargeResultV30Api() *api.ChargeResultV30ApiService {
+	return c.ApiClient.ChargeResultV30Api
+}
+
+func (c *Client) ChargeVerifyGetV30Api() *api.ChargeVerifyGetV30ApiService {
+	return c.ApiClient.ChargeVerifyGetV30Api
+}
+
 func (c *Client) ClueCaCreateV2Api() *api.ClueCaCreateV2ApiService {
 	return c.ApiClient.ClueCaCreateV2Api
 }
@@ -795,6 +819,14 @@ func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiServi
 	return c.ApiClient.CreativeStrategyListV2Api
 }
 
+func (c *Client) CustomerCenterAccountListV30Api() *api.CustomerCenterAccountListV30ApiService {
+	return c.ApiClient.CustomerCenterAccountListV30Api
+}
+
+func (c *Client) CustomerCenterAccountOfflineListV30Api() *api.CustomerCenterAccountOfflineListV30ApiService {
+	return c.ApiClient.CustomerCenterAccountOfflineListV30Api
+}
+
 func (c *Client) CustomerCenterAdvertiserCopyV2Api() *api.CustomerCenterAdvertiserCopyV2ApiService {
 	return c.ApiClient.CustomerCenterAdvertiserCopyV2Api
 }
@@ -813,6 +845,10 @@ func (c *Client) CustomerCenterFundTransferSeqCommitV2Api() *api.CustomerCenterF
 
 func (c *Client) CustomerCenterFundTransferSeqCreateV2Api() *api.CustomerCenterFundTransferSeqCreateV2ApiService {
 	return c.ApiClient.CustomerCenterFundTransferSeqCreateV2Api
+}
+
+func (c *Client) DcdChargeSubmitV30Api() *api.DcdChargeSubmitV30ApiService {
+	return c.ApiClient.DcdChargeSubmitV30Api
 }
 
 func (c *Client) DecorationCouponGetV30Api() *api.DecorationCouponGetV30ApiService {
@@ -865,6 +901,10 @@ func (c *Client) DmpCustomAudiencePushV2V2Api() *api.DmpCustomAudiencePushV2V2Ap
 
 func (c *Client) DmpCustomAudienceReadV2Api() *api.DmpCustomAudienceReadV2ApiService {
 	return c.ApiClient.DmpCustomAudienceReadV2Api
+}
+
+func (c *Client) DmpCustomAudienceSelectV2Api() *api.DmpCustomAudienceSelectV2ApiService {
+	return c.ApiClient.DmpCustomAudienceSelectV2Api
 }
 
 func (c *Client) DmpDataSourceCreateV2Api() *api.DmpDataSourceCreateV2ApiService {
@@ -927,6 +967,14 @@ func (c *Client) DownloadStatementV2Api() *api.DownloadStatementV2ApiService {
 	return c.ApiClient.DownloadStatementV2Api
 }
 
+func (c *Client) DpaAlbumCreateV30Api() *api.DpaAlbumCreateV30ApiService {
+	return c.ApiClient.DpaAlbumCreateV30Api
+}
+
+func (c *Client) DpaAlbumStatusGetV30Api() *api.DpaAlbumStatusGetV30ApiService {
+	return c.ApiClient.DpaAlbumStatusGetV30Api
+}
+
 func (c *Client) DpaAssetV2DetailReadV2Api() *api.DpaAssetV2DetailReadV2ApiService {
 	return c.ApiClient.DpaAssetV2DetailReadV2Api
 }
@@ -939,8 +987,8 @@ func (c *Client) DpaAssetsDetailReadV2Api() *api.DpaAssetsDetailReadV2ApiService
 	return c.ApiClient.DpaAssetsDetailReadV2Api
 }
 
-func (c *Client) DpaAssetsListV2Api() *api.DpaAssetsListV2ApiService {
-	return c.ApiClient.DpaAssetsListV2Api
+func (c *Client) DpaBrandFuzzyGetV30Api() *api.DpaBrandFuzzyGetV30ApiService {
+	return c.ApiClient.DpaBrandFuzzyGetV30Api
 }
 
 func (c *Client) DpaCategoryGetV2Api() *api.DpaCategoryGetV2ApiService {
@@ -973,6 +1021,66 @@ func (c *Client) DpaDetailGetV2Api() *api.DpaDetailGetV2ApiService {
 
 func (c *Client) DpaDictGetV2Api() *api.DpaDictGetV2ApiService {
 	return c.ApiClient.DpaDictGetV2Api
+}
+
+func (c *Client) DpaEbpCategoryGetV30Api() *api.DpaEbpCategoryGetV30ApiService {
+	return c.ApiClient.DpaEbpCategoryGetV30Api
+}
+
+func (c *Client) DpaEbpClueProductDeleteV30Api() *api.DpaEbpClueProductDeleteV30ApiService {
+	return c.ApiClient.DpaEbpClueProductDeleteV30Api
+}
+
+func (c *Client) DpaEbpClueProductGetV30Api() *api.DpaEbpClueProductGetV30ApiService {
+	return c.ApiClient.DpaEbpClueProductGetV30Api
+}
+
+func (c *Client) DpaEbpClueProductListV30Api() *api.DpaEbpClueProductListV30ApiService {
+	return c.ApiClient.DpaEbpClueProductListV30Api
+}
+
+func (c *Client) DpaEbpClueProductSaveV30Api() *api.DpaEbpClueProductSaveV30ApiService {
+	return c.ApiClient.DpaEbpClueProductSaveV30Api
+}
+
+func (c *Client) DpaEbpDictGetV30Api() *api.DpaEbpDictGetV30ApiService {
+	return c.ApiClient.DpaEbpDictGetV30Api
+}
+
+func (c *Client) DpaEbpLibraryListV30Api() *api.DpaEbpLibraryListV30ApiService {
+	return c.ApiClient.DpaEbpLibraryListV30Api
+}
+
+func (c *Client) DpaEbpMetaGetV30Api() *api.DpaEbpMetaGetV30ApiService {
+	return c.ApiClient.DpaEbpMetaGetV30Api
+}
+
+func (c *Client) DpaEbpPlayletAuthGetV30Api() *api.DpaEbpPlayletAuthGetV30ApiService {
+	return c.ApiClient.DpaEbpPlayletAuthGetV30Api
+}
+
+func (c *Client) DpaEbpProductCreateV30Api() *api.DpaEbpProductCreateV30ApiService {
+	return c.ApiClient.DpaEbpProductCreateV30Api
+}
+
+func (c *Client) DpaEbpProductDeleteV30Api() *api.DpaEbpProductDeleteV30ApiService {
+	return c.ApiClient.DpaEbpProductDeleteV30Api
+}
+
+func (c *Client) DpaEbpProductDetailGetV30Api() *api.DpaEbpProductDetailGetV30ApiService {
+	return c.ApiClient.DpaEbpProductDetailGetV30Api
+}
+
+func (c *Client) DpaEbpProductListV30Api() *api.DpaEbpProductListV30ApiService {
+	return c.ApiClient.DpaEbpProductListV30Api
+}
+
+func (c *Client) DpaEbpProductStatusBatchUpdateV30Api() *api.DpaEbpProductStatusBatchUpdateV30ApiService {
+	return c.ApiClient.DpaEbpProductStatusBatchUpdateV30Api
+}
+
+func (c *Client) DpaEbpProductUpdateV30Api() *api.DpaEbpProductUpdateV30ApiService {
+	return c.ApiClient.DpaEbpProductUpdateV30Api
 }
 
 func (c *Client) DpaMetaGetV2Api() *api.DpaMetaGetV2ApiService {
@@ -1039,52 +1147,40 @@ func (c *Client) EnterpriseBindListGetV10Api() *api.EnterpriseBindListGetV10ApiS
 	return c.ApiClient.EnterpriseBindListGetV10Api
 }
 
-func (c *Client) EnterpriseCommentDetailV10Api() *api.EnterpriseCommentDetailV10ApiService {
-	return c.ApiClient.EnterpriseCommentDetailV10Api
-}
-
-func (c *Client) EnterpriseCommentListGetV10Api() *api.EnterpriseCommentListGetV10ApiService {
-	return c.ApiClient.EnterpriseCommentListGetV10Api
-}
-
-func (c *Client) EnterpriseCommentReplyListV10Api() *api.EnterpriseCommentReplyListV10ApiService {
-	return c.ApiClient.EnterpriseCommentReplyListV10Api
-}
-
-func (c *Client) EnterpriseCommentReplyV10Api() *api.EnterpriseCommentReplyV10ApiService {
-	return c.ApiClient.EnterpriseCommentReplyV10Api
-}
-
-func (c *Client) EnterpriseFlowCategoryGetV10Api() *api.EnterpriseFlowCategoryGetV10ApiService {
-	return c.ApiClient.EnterpriseFlowCategoryGetV10Api
-}
-
-func (c *Client) EnterpriseInfoV10Api() *api.EnterpriseInfoV10ApiService {
-	return c.ApiClient.EnterpriseInfoV10Api
-}
-
-func (c *Client) EnterpriseItemListV10Api() *api.EnterpriseItemListV10ApiService {
-	return c.ApiClient.EnterpriseItemListV10Api
-}
-
-func (c *Client) EnterpriseOperationLogGetV10Api() *api.EnterpriseOperationLogGetV10ApiService {
-	return c.ApiClient.EnterpriseOperationLogGetV10Api
-}
-
-func (c *Client) EnterpriseOverviewDataGetV10Api() *api.EnterpriseOverviewDataGetV10ApiService {
-	return c.ApiClient.EnterpriseOverviewDataGetV10Api
-}
-
-func (c *Client) EnterpriseVideoInfoGetV10Api() *api.EnterpriseVideoInfoGetV10ApiService {
-	return c.ApiClient.EnterpriseVideoInfoGetV10Api
-}
-
 func (c *Client) EventManagerAbnormalAssetsGetV30Api() *api.EventManagerAbnormalAssetsGetV30ApiService {
 	return c.ApiClient.EventManagerAbnormalAssetsGetV30Api
 }
 
 func (c *Client) EventManagerAssetsCreateV2Api() *api.EventManagerAssetsCreateV2ApiService {
 	return c.ApiClient.EventManagerAssetsCreateV2Api
+}
+
+func (c *Client) EventManagerAuthAddPublicKeyV2Api() *api.EventManagerAuthAddPublicKeyV2ApiService {
+	return c.ApiClient.EventManagerAuthAddPublicKeyV2Api
+}
+
+func (c *Client) EventManagerAuthDelPublicKeyV2Api() *api.EventManagerAuthDelPublicKeyV2ApiService {
+	return c.ApiClient.EventManagerAuthDelPublicKeyV2Api
+}
+
+func (c *Client) EventManagerAuthDisableV2Api() *api.EventManagerAuthDisableV2ApiService {
+	return c.ApiClient.EventManagerAuthDisableV2Api
+}
+
+func (c *Client) EventManagerAuthEnableV2Api() *api.EventManagerAuthEnableV2ApiService {
+	return c.ApiClient.EventManagerAuthEnableV2Api
+}
+
+func (c *Client) EventManagerAuthGetAllPublicKeysV2Api() *api.EventManagerAuthGetAllPublicKeysV2ApiService {
+	return c.ApiClient.EventManagerAuthGetAllPublicKeysV2Api
+}
+
+func (c *Client) EventManagerAuthGetAuthStatusV2Api() *api.EventManagerAuthGetAuthStatusV2ApiService {
+	return c.ApiClient.EventManagerAuthGetAuthStatusV2Api
+}
+
+func (c *Client) EventManagerAuthGetPublicKeyV2Api() *api.EventManagerAuthGetPublicKeyV2ApiService {
+	return c.ApiClient.EventManagerAuthGetPublicKeyV2Api
 }
 
 func (c *Client) EventManagerAvailableEventsGetV2Api() *api.EventManagerAvailableEventsGetV2ApiService {
@@ -1147,6 +1243,10 @@ func (c *Client) FileCarouselAwemeGetV30Api() *api.FileCarouselAwemeGetV30ApiSer
 	return c.ApiClient.FileCarouselAwemeGetV30Api
 }
 
+func (c *Client) FileEbpVideoGetV30Api() *api.FileEbpVideoGetV30ApiService {
+	return c.ApiClient.FileEbpVideoGetV30Api
+}
+
 func (c *Client) FileImageAdGetV2Api() *api.FileImageAdGetV2ApiService {
 	return c.ApiClient.FileImageAdGetV2Api
 }
@@ -1181,6 +1281,14 @@ func (c *Client) FileMaterialDetailV2Api() *api.FileMaterialDetailV2ApiService {
 
 func (c *Client) FileMaterialListV2Api() *api.FileMaterialListV2ApiService {
 	return c.ApiClient.FileMaterialListV2Api
+}
+
+func (c *Client) FilePlayableCreateV30Api() *api.FilePlayableCreateV30ApiService {
+	return c.ApiClient.FilePlayableCreateV30Api
+}
+
+func (c *Client) FilePlayableListV30Api() *api.FilePlayableListV30ApiService {
+	return c.ApiClient.FilePlayableListV30Api
 }
 
 func (c *Client) FilePreauditGetV30Api() *api.FilePreauditGetV30ApiService {
@@ -1287,12 +1395,20 @@ func (c *Client) FileVideoUploadTaskListV2Api() *api.FileVideoUploadTaskListV2Ap
 	return c.ApiClient.FileVideoUploadTaskListV2Api
 }
 
+func (c *Client) FixRemittanceCodeListGetV30Api() *api.FixRemittanceCodeListGetV30ApiService {
+	return c.ApiClient.FixRemittanceCodeListGetV30Api
+}
+
 func (c *Client) FundSharedWalletBalanceGetV2Api() *api.FundSharedWalletBalanceGetV2ApiService {
 	return c.ApiClient.FundSharedWalletBalanceGetV2Api
 }
 
 func (c *Client) GameAddictionIdGetV30Api() *api.GameAddictionIdGetV30ApiService {
 	return c.ApiClient.GameAddictionIdGetV30Api
+}
+
+func (c *Client) GameplayListV30Api() *api.GameplayListV30ApiService {
+	return c.ApiClient.GameplayListV30Api
 }
 
 func (c *Client) KeywordCreateV2V2Api() *api.KeywordCreateV2V2ApiService {
@@ -1331,6 +1447,18 @@ func (c *Client) KeywordUpdateV30Api() *api.KeywordUpdateV30ApiService {
 	return c.ApiClient.KeywordUpdateV30Api
 }
 
+func (c *Client) LocalActionCategoryV30Api() *api.LocalActionCategoryV30ApiService {
+	return c.ApiClient.LocalActionCategoryV30Api
+}
+
+func (c *Client) LocalActionKeywordV30Api() *api.LocalActionKeywordV30ApiService {
+	return c.ApiClient.LocalActionKeywordV30Api
+}
+
+func (c *Client) LocalAdvertiserBudgetGetV30Api() *api.LocalAdvertiserBudgetGetV30ApiService {
+	return c.ApiClient.LocalAdvertiserBudgetGetV30Api
+}
+
 func (c *Client) LocalAwemeAuthorizedGetV30Api() *api.LocalAwemeAuthorizedGetV30ApiService {
 	return c.ApiClient.LocalAwemeAuthorizedGetV30Api
 }
@@ -1347,48 +1475,20 @@ func (c *Client) LocalChargeSubmitV30Api() *api.LocalChargeSubmitV30ApiService {
 	return c.ApiClient.LocalChargeSubmitV30Api
 }
 
+func (c *Client) LocalConsultAwameListGetV30Api() *api.LocalConsultAwameListGetV30ApiService {
+	return c.ApiClient.LocalConsultAwameListGetV30Api
+}
+
 func (c *Client) LocalCustomAudienceGetV30Api() *api.LocalCustomAudienceGetV30ApiService {
 	return c.ApiClient.LocalCustomAudienceGetV30Api
 }
 
-func (c *Client) LocalCxtAudienceUpdateV30Api() *api.LocalCxtAudienceUpdateV30ApiService {
-	return c.ApiClient.LocalCxtAudienceUpdateV30Api
+func (c *Client) LocalDeliveryQualificationListV30Api() *api.LocalDeliveryQualificationListV30ApiService {
+	return c.ApiClient.LocalDeliveryQualificationListV30Api
 }
 
-func (c *Client) LocalCxtBudgetUpdateV30Api() *api.LocalCxtBudgetUpdateV30ApiService {
-	return c.ApiClient.LocalCxtBudgetUpdateV30Api
-}
-
-func (c *Client) LocalCxtCreateV30Api() *api.LocalCxtCreateV30ApiService {
-	return c.ApiClient.LocalCxtCreateV30Api
-}
-
-func (c *Client) LocalCxtDetailV30Api() *api.LocalCxtDetailV30ApiService {
-	return c.ApiClient.LocalCxtDetailV30Api
-}
-
-func (c *Client) LocalCxtExternalActionUpdateV30Api() *api.LocalCxtExternalActionUpdateV30ApiService {
-	return c.ApiClient.LocalCxtExternalActionUpdateV30Api
-}
-
-func (c *Client) LocalCxtPoiUpdateV30Api() *api.LocalCxtPoiUpdateV30ApiService {
-	return c.ApiClient.LocalCxtPoiUpdateV30Api
-}
-
-func (c *Client) LocalCxtReportAudienceGetV30Api() *api.LocalCxtReportAudienceGetV30ApiService {
-	return c.ApiClient.LocalCxtReportAudienceGetV30Api
-}
-
-func (c *Client) LocalCxtReportBasicGetV30Api() *api.LocalCxtReportBasicGetV30ApiService {
-	return c.ApiClient.LocalCxtReportBasicGetV30Api
-}
-
-func (c *Client) LocalCxtReportConvertGetV30Api() *api.LocalCxtReportConvertGetV30ApiService {
-	return c.ApiClient.LocalCxtReportConvertGetV30Api
-}
-
-func (c *Client) LocalCxtStatusUpdateV30Api() *api.LocalCxtStatusUpdateV30ApiService {
-	return c.ApiClient.LocalCxtStatusUpdateV30Api
+func (c *Client) LocalFileCarouselListV30Api() *api.LocalFileCarouselListV30ApiService {
+	return c.ApiClient.LocalFileCarouselListV30Api
 }
 
 func (c *Client) LocalFileUploadTaskCreateV30Api() *api.LocalFileUploadTaskCreateV30ApiService {
@@ -1411,12 +1511,48 @@ func (c *Client) LocalFileVideoUploadV30Api() *api.LocalFileVideoUploadV30ApiSer
 	return c.ApiClient.LocalFileVideoUploadV30Api
 }
 
+func (c *Client) LocalImAccountGetV30Api() *api.LocalImAccountGetV30ApiService {
+	return c.ApiClient.LocalImAccountGetV30Api
+}
+
+func (c *Client) LocalImQueryMsgV30Api() *api.LocalImQueryMsgV30ApiService {
+	return c.ApiClient.LocalImQueryMsgV30Api
+}
+
+func (c *Client) LocalImSendMsgV30Api() *api.LocalImSendMsgV30ApiService {
+	return c.ApiClient.LocalImSendMsgV30Api
+}
+
+func (c *Client) LocalImUploadImageV30Api() *api.LocalImUploadImageV30ApiService {
+	return c.ApiClient.LocalImUploadImageV30Api
+}
+
+func (c *Client) LocalImageUploadV30Api() *api.LocalImageUploadV30ApiService {
+	return c.ApiClient.LocalImageUploadV30Api
+}
+
+func (c *Client) LocalInterestCategoryV30Api() *api.LocalInterestCategoryV30ApiService {
+	return c.ApiClient.LocalInterestCategoryV30Api
+}
+
+func (c *Client) LocalInterestKeywordV30Api() *api.LocalInterestKeywordV30ApiService {
+	return c.ApiClient.LocalInterestKeywordV30Api
+}
+
 func (c *Client) LocalLifeAdvertiserCreateV30Api() *api.LocalLifeAdvertiserCreateV30ApiService {
 	return c.ApiClient.LocalLifeAdvertiserCreateV30Api
 }
 
 func (c *Client) LocalLifeAdvertiserListV30Api() *api.LocalLifeAdvertiserListV30ApiService {
 	return c.ApiClient.LocalLifeAdvertiserListV30Api
+}
+
+func (c *Client) LocalMarketPageGetV30Api() *api.LocalMarketPageGetV30ApiService {
+	return c.ApiClient.LocalMarketPageGetV30Api
+}
+
+func (c *Client) LocalMarketPageListGetV30Api() *api.LocalMarketPageListGetV30ApiService {
+	return c.ApiClient.LocalMarketPageListGetV30Api
 }
 
 func (c *Client) LocalMultiPoiIdPoiIdsGetV30Api() *api.LocalMultiPoiIdPoiIdsGetV30ApiService {
@@ -1455,6 +1591,10 @@ func (c *Client) LocalProjectUpdateV30Api() *api.LocalProjectUpdateV30ApiService
 	return c.ApiClient.LocalProjectUpdateV30Api
 }
 
+func (c *Client) LocalProjectWeekScheduleUpdateV30Api() *api.LocalProjectWeekScheduleUpdateV30ApiService {
+	return c.ApiClient.LocalProjectWeekScheduleUpdateV30Api
+}
+
 func (c *Client) LocalPromotionCreateV30Api() *api.LocalPromotionCreateV30ApiService {
 	return c.ApiClient.LocalPromotionCreateV30Api
 }
@@ -1467,12 +1607,20 @@ func (c *Client) LocalPromotionListV30Api() *api.LocalPromotionListV30ApiService
 	return c.ApiClient.LocalPromotionListV30Api
 }
 
+func (c *Client) LocalPromotionRejectReasonGetV30Api() *api.LocalPromotionRejectReasonGetV30ApiService {
+	return c.ApiClient.LocalPromotionRejectReasonGetV30Api
+}
+
 func (c *Client) LocalPromotionStatusUpdateV30Api() *api.LocalPromotionStatusUpdateV30ApiService {
 	return c.ApiClient.LocalPromotionStatusUpdateV30Api
 }
 
 func (c *Client) LocalPromotionUpdateV30Api() *api.LocalPromotionUpdateV30ApiService {
 	return c.ApiClient.LocalPromotionUpdateV30Api
+}
+
+func (c *Client) LocalQualificationGetV30Api() *api.LocalQualificationGetV30ApiService {
+	return c.ApiClient.LocalQualificationGetV30Api
 }
 
 func (c *Client) LocalReportAccountGetV30Api() *api.LocalReportAccountGetV30ApiService {
@@ -1493,6 +1641,14 @@ func (c *Client) LocalReportProjectGetV30Api() *api.LocalReportProjectGetV30ApiS
 
 func (c *Client) LocalReportPromotionGetV30Api() *api.LocalReportPromotionGetV30ApiService {
 	return c.ApiClient.LocalReportPromotionGetV30Api
+}
+
+func (c *Client) LocalToolPackDetailV30Api() *api.LocalToolPackDetailV30ApiService {
+	return c.ApiClient.LocalToolPackDetailV30Api
+}
+
+func (c *Client) LocalToolPackListGetV30Api() *api.LocalToolPackListGetV30ApiService {
+	return c.ApiClient.LocalToolPackListGetV30Api
 }
 
 func (c *Client) MajordomoAdvertiserSelectV2Api() *api.MajordomoAdvertiserSelectV2ApiService {
@@ -1545,6 +1701,26 @@ func (c *Client) Oauth2RefreshTokenApi() *api.Oauth2RefreshTokenApiService {
 
 func (c *Client) Oauth2RenewTokenApi() *api.Oauth2RenewTokenApiService {
 	return c.ApiClient.Oauth2RenewTokenApi
+}
+
+func (c *Client) OpenMaterialAuditProGetV30Api() *api.OpenMaterialAuditProGetV30ApiService {
+	return c.ApiClient.OpenMaterialAuditProGetV30Api
+}
+
+func (c *Client) OpenMaterialAuditProSubmitV30Api() *api.OpenMaterialAuditProSubmitV30ApiService {
+	return c.ApiClient.OpenMaterialAuditProSubmitV30Api
+}
+
+func (c *Client) PenaltyTaskGetV30Api() *api.PenaltyTaskGetV30ApiService {
+	return c.ApiClient.PenaltyTaskGetV30Api
+}
+
+func (c *Client) PrepayChargeGenerateFixRemiattanceCodeCreateV30Api() *api.PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService {
+	return c.ApiClient.PrepayChargeGenerateFixRemiattanceCodeCreateV30Api
+}
+
+func (c *Client) PrepayChargeGenerateRemittanceCodeCreateV30Api() *api.PrepayChargeGenerateRemittanceCodeCreateV30ApiService {
+	return c.ApiClient.PrepayChargeGenerateRemittanceCodeCreateV30Api
 }
 
 func (c *Client) ProjectBudgetUpdateV30Api() *api.ProjectBudgetUpdateV30ApiService {
@@ -1715,10 +1891,6 @@ func (c *Client) QianchuanAdKeywordsGetV10Api() *api.QianchuanAdKeywordsGetV10Ap
 	return c.ApiClient.QianchuanAdKeywordsGetV10Api
 }
 
-func (c *Client) QianchuanAdKeywordsUpdateV10Api() *api.QianchuanAdKeywordsUpdateV10ApiService {
-	return c.ApiClient.QianchuanAdKeywordsUpdateV10Api
-}
-
 func (c *Client) QianchuanAdLearingStatusGetV10Api() *api.QianchuanAdLearingStatusGetV10ApiService {
 	return c.ApiClient.QianchuanAdLearingStatusGetV10Api
 }
@@ -1733,14 +1905,6 @@ func (c *Client) QianchuanAdMaterialGetV10Api() *api.QianchuanAdMaterialGetV10Ap
 
 func (c *Client) QianchuanAdMaterialSuggestionV10Api() *api.QianchuanAdMaterialSuggestionV10ApiService {
 	return c.ApiClient.QianchuanAdMaterialSuggestionV10Api
-}
-
-func (c *Client) QianchuanAdPivativewordsGetV10Api() *api.QianchuanAdPivativewordsGetV10ApiService {
-	return c.ApiClient.QianchuanAdPivativewordsGetV10Api
-}
-
-func (c *Client) QianchuanAdPivativewordsUpdateV10Api() *api.QianchuanAdPivativewordsUpdateV10ApiService {
-	return c.ApiClient.QianchuanAdPivativewordsUpdateV10Api
 }
 
 func (c *Client) QianchuanAdQuotaGetV10Api() *api.QianchuanAdQuotaGetV10ApiService {
@@ -1867,6 +2031,50 @@ func (c *Client) QianchuanAwemeSuggestRoiGoalV10Api() *api.QianchuanAwemeSuggest
 	return c.ApiClient.QianchuanAwemeSuggestRoiGoalV10Api
 }
 
+func (c *Client) QianchuanAwemeUniPromotionAdMaterialGetV10Api() *api.QianchuanAwemeUniPromotionAdMaterialGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionAdMaterialGetV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionEstimateEffectV10Api() *api.QianchuanAwemeUniPromotionEstimateEffectV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionEstimateEffectV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderBudgetAddV10Api() *api.QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderBudgetAddV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderCreateV10Api() *api.QianchuanAwemeUniPromotionOrderCreateV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderCreateV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderDetailV10Api() *api.QianchuanAwemeUniPromotionOrderDetailV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderDetailV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderGetV10Api() *api.QianchuanAwemeUniPromotionOrderGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderGetV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderReportGetV10Api() *api.QianchuanAwemeUniPromotionOrderReportGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderReportGetV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api() *api.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionReportV10Api() *api.QianchuanAwemeUniPromotionReportV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionReportV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionSuggestRoiV10Api() *api.QianchuanAwemeUniPromotionSuggestRoiV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionSuggestRoiV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionSuggestV10Api() *api.QianchuanAwemeUniPromotionSuggestV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionSuggestV10Api
+}
+
 func (c *Client) QianchuanAwemeVideoGetV10Api() *api.QianchuanAwemeVideoGetV10ApiService {
 	return c.ApiClient.QianchuanAwemeVideoGetV10Api
 }
@@ -1877,6 +2085,14 @@ func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchC
 
 func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
 	return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
+}
+
+func (c *Client) QianchuanBrandReportAdGetV10Api() *api.QianchuanBrandReportAdGetV10ApiService {
+	return c.ApiClient.QianchuanBrandReportAdGetV10Api
+}
+
+func (c *Client) QianchuanBrandReportAdvertiserGetV10Api() *api.QianchuanBrandReportAdvertiserGetV10ApiService {
+	return c.ApiClient.QianchuanBrandReportAdvertiserGetV10Api
 }
 
 func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
@@ -1963,18 +2179,6 @@ func (c *Client) QianchuanOrientationPackageGetV10Api() *api.QianchuanOrientatio
 	return c.ApiClient.QianchuanOrientationPackageGetV10Api
 }
 
-func (c *Client) QianchuanProductAnalyseCompareCreativeV10Api() *api.QianchuanProductAnalyseCompareCreativeV10ApiService {
-	return c.ApiClient.QianchuanProductAnalyseCompareCreativeV10Api
-}
-
-func (c *Client) QianchuanProductAnalyseCompareStatsDataV10Api() *api.QianchuanProductAnalyseCompareStatsDataV10ApiService {
-	return c.ApiClient.QianchuanProductAnalyseCompareStatsDataV10Api
-}
-
-func (c *Client) QianchuanProductAnalyseListV10Api() *api.QianchuanProductAnalyseListV10ApiService {
-	return c.ApiClient.QianchuanProductAnalyseListV10Api
-}
-
 func (c *Client) QianchuanProductAvailableGetV10Api() *api.QianchuanProductAvailableGetV10ApiService {
 	return c.ApiClient.QianchuanProductAvailableGetV10Api
 }
@@ -2029,6 +2233,10 @@ func (c *Client) QianchuanReportMaterialGetV10Api() *api.QianchuanReportMaterial
 
 func (c *Client) QianchuanReportSearchWordGetV10Api() *api.QianchuanReportSearchWordGetV10ApiService {
 	return c.ApiClient.QianchuanReportSearchWordGetV10Api
+}
+
+func (c *Client) QianchuanReportTodayLiveGetV10Api() *api.QianchuanReportTodayLiveGetV10ApiService {
+	return c.ApiClient.QianchuanReportTodayLiveGetV10Api
 }
 
 func (c *Client) QianchuanReportTodayLiveRoomConfigGetV10Api() *api.QianchuanReportTodayLiveRoomConfigGetV10ApiService {
@@ -2111,6 +2319,10 @@ func (c *Client) QianchuanTodayLiveRoomUserGetV10Api() *api.QianchuanTodayLiveRo
 	return c.ApiClient.QianchuanTodayLiveRoomUserGetV10Api
 }
 
+func (c *Client) QianchuanTodayLiveV2RoomUserGetV10Api() *api.QianchuanTodayLiveV2RoomUserGetV10ApiService {
+	return c.ApiClient.QianchuanTodayLiveV2RoomUserGetV10Api
+}
+
 func (c *Client) QianchuanToolsAllowCouponV10Api() *api.QianchuanToolsAllowCouponV10ApiService {
 	return c.ApiClient.QianchuanToolsAllowCouponV10Api
 }
@@ -2125,6 +2337,10 @@ func (c *Client) QianchuanToolsEstimateAudienceV10Api() *api.QianchuanToolsEstim
 
 func (c *Client) QianchuanToolsGrayV10Api() *api.QianchuanToolsGrayV10ApiService {
 	return c.ApiClient.QianchuanToolsGrayV10Api
+}
+
+func (c *Client) QianchuanToolsLogSearchV10Api() *api.QianchuanToolsLogSearchV10ApiService {
+	return c.ApiClient.QianchuanToolsLogSearchV10Api
 }
 
 func (c *Client) QianchuanToolsShopAuthV10Api() *api.QianchuanToolsShopAuthV10ApiService {
@@ -2167,20 +2383,52 @@ func (c *Client) QianchuanUniAwemeSuggestBudgetV10Api() *api.QianchuanUniAwemeSu
 	return c.ApiClient.QianchuanUniAwemeSuggestBudgetV10Api
 }
 
+func (c *Client) QianchuanUniAwemeSuggestRoiV10Api() *api.QianchuanUniAwemeSuggestRoiV10ApiService {
+	return c.ApiClient.QianchuanUniAwemeSuggestRoiV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdBudgetUpdateV10Api() *api.QianchuanUniPromotionAdBudgetUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdBudgetUpdateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskBudgetUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdControlTaskCreateV10Api() *api.QianchuanUniPromotionAdControlTaskCreateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskCreateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskDurationUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskDurationUpdateV10Api
 }
 
 func (c *Client) QianchuanUniPromotionAdControlTaskListV10Api() *api.QianchuanUniPromotionAdControlTaskListV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskListV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdControlTaskSmartControlCreateV10Api() *api.QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdControlTaskStatusUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskStatusUpdateV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdControlTaskUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdDetailV10Api() *api.QianchuanUniPromotionAdDetailV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdDetailV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdMaterialAddV10Api() *api.QianchuanUniPromotionAdMaterialAddV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdMaterialAddV10Api
 }
 
 func (c *Client) QianchuanUniPromotionAdMaterialDeleteV10Api() *api.QianchuanUniPromotionAdMaterialDeleteV10ApiService {
@@ -2191,8 +2439,44 @@ func (c *Client) QianchuanUniPromotionAdMaterialGetV10Api() *api.QianchuanUniPro
 	return c.ApiClient.QianchuanUniPromotionAdMaterialGetV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdNameUpdateV10Api() *api.QianchuanUniPromotionAdNameUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdNameUpdateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdProductDeleteV10Api() *api.QianchuanUniPromotionAdProductDeleteV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdProductDeleteV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdProductGetV10Api() *api.QianchuanUniPromotionAdProductGetV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdProductGetV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdRoi2GoalUpdateV10Api() *api.QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdRoi2GoalUpdateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdScheduleDateUpdateV10Api() *api.QianchuanUniPromotionAdScheduleDateUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdScheduleDateUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdStatusUpdateV10Api() *api.QianchuanUniPromotionAdStatusUpdateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdStatusUpdateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdSuggestionV10Api() *api.QianchuanUniPromotionAdSuggestionV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdSuggestionV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAuthInitV10Api() *api.QianchuanUniPromotionAuthInitV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAuthInitV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAuthorizableShopListV10Api() *api.QianchuanUniPromotionAuthorizableShopListV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAuthorizableShopListV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAuthorizationApplyV10Api() *api.QianchuanUniPromotionAuthorizationApplyV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAuthorizationApplyV10Api
 }
 
 func (c *Client) QianchuanUniPromotionBlockMaterialGetV10Api() *api.QianchuanUniPromotionBlockMaterialGetV10ApiService {
@@ -2291,6 +2575,14 @@ func (c *Client) RejectMaterialAiRepairGetV30Api() *api.RejectMaterialAiRepairGe
 	return c.ApiClient.RejectMaterialAiRepairGetV30Api
 }
 
+func (c *Client) RemittanceCodeListGetV30Api() *api.RemittanceCodeListGetV30ApiService {
+	return c.ApiClient.RemittanceCodeListGetV30Api
+}
+
+func (c *Client) RemittanceCodeListV30Api() *api.RemittanceCodeListV30ApiService {
+	return c.ApiClient.RemittanceCodeListV30Api
+}
+
 func (c *Client) ReportAdGetV2Api() *api.ReportAdGetV2ApiService {
 	return c.ApiClient.ReportAdGetV2Api
 }
@@ -2387,20 +2679,16 @@ func (c *Client) ReportCustomGetV30Api() *api.ReportCustomGetV30ApiService {
 	return c.ApiClient.ReportCustomGetV30Api
 }
 
-func (c *Client) ReportLiveRoomAnalysisGetV2Api() *api.ReportLiveRoomAnalysisGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomAnalysisGetV2Api
+func (c *Client) ReportJointGrowthCusGetV30Api() *api.ReportJointGrowthCusGetV30ApiService {
+	return c.ApiClient.ReportJointGrowthCusGetV30Api
 }
 
-func (c *Client) ReportLiveRoomAttributeGetV2Api() *api.ReportLiveRoomAttributeGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomAttributeGetV2Api
+func (c *Client) ReportJointGrowthGetV30Api() *api.ReportJointGrowthGetV30ApiService {
+	return c.ApiClient.ReportJointGrowthGetV30Api
 }
 
-func (c *Client) ReportLiveRoomAudiencePortraitGetV2Api() *api.ReportLiveRoomAudiencePortraitGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomAudiencePortraitGetV2Api
-}
-
-func (c *Client) ReportLiveRoomFlowCategoryGetV2Api() *api.ReportLiveRoomFlowCategoryGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomFlowCategoryGetV2Api
+func (c *Client) ReportLiveRoomAnalysisGetV30Api() *api.ReportLiveRoomAnalysisGetV30ApiService {
+	return c.ApiClient.ReportLiveRoomAnalysisGetV30Api
 }
 
 func (c *Client) ReportProductAsyncTaskDownloadV30Api() *api.ReportProductAsyncTaskDownloadV30ApiService {
@@ -2417,6 +2705,10 @@ func (c *Client) ReportProductDailyAsyncTaskCreateV30Api() *api.ReportProductDai
 
 func (c *Client) ReportProductHourlyAsyncTaskCreateV30Api() *api.ReportProductHourlyAsyncTaskCreateV30ApiService {
 	return c.ApiClient.ReportProductHourlyAsyncTaskCreateV30Api
+}
+
+func (c *Client) ReportReportLiveRoomAudiencePortraitGetV30Api() *api.ReportReportLiveRoomAudiencePortraitGetV30ApiService {
+	return c.ApiClient.ReportReportLiveRoomAudiencePortraitGetV30Api
 }
 
 func (c *Client) ReportRtaCusExpGetV2Api() *api.ReportRtaCusExpGetV2ApiService {
@@ -2463,6 +2755,14 @@ func (c *Client) SecurityAuditResultsV30Api() *api.SecurityAuditResultsV30ApiSer
 	return c.ApiClient.SecurityAuditResultsV30Api
 }
 
+func (c *Client) SecurityCreateAppealV30Api() *api.SecurityCreateAppealV30ApiService {
+	return c.ApiClient.SecurityCreateAppealV30Api
+}
+
+func (c *Client) SecurityGetConsultResultV30Api() *api.SecurityGetConsultResultV30ApiService {
+	return c.ApiClient.SecurityGetConsultResultV30Api
+}
+
 func (c *Client) SecurityOpenMaterialAuditV30Api() *api.SecurityOpenMaterialAuditV30ApiService {
 	return c.ApiClient.SecurityOpenMaterialAuditV30Api
 }
@@ -2495,6 +2795,14 @@ func (c *Client) SharedWalletAccountRelationGetV30Api() *api.SharedWalletAccount
 	return c.ApiClient.SharedWalletAccountRelationGetV30Api
 }
 
+func (c *Client) SharedWalletBudgetGetV30Api() *api.SharedWalletBudgetGetV30ApiService {
+	return c.ApiClient.SharedWalletBudgetGetV30Api
+}
+
+func (c *Client) SharedWalletBudgetSubmitV30Api() *api.SharedWalletBudgetSubmitV30ApiService {
+	return c.ApiClient.SharedWalletBudgetSubmitV30Api
+}
+
 func (c *Client) SharedWalletDailyStatGetV30Api() *api.SharedWalletDailyStatGetV30ApiService {
 	return c.ApiClient.SharedWalletDailyStatGetV30Api
 }
@@ -2503,8 +2811,16 @@ func (c *Client) SharedWalletMainWalletGetV30Api() *api.SharedWalletMainWalletGe
 	return c.ApiClient.SharedWalletMainWalletGetV30Api
 }
 
+func (c *Client) SharedWalletSharedRelationCreateV30Api() *api.SharedWalletSharedRelationCreateV30ApiService {
+	return c.ApiClient.SharedWalletSharedRelationCreateV30Api
+}
+
 func (c *Client) SharedWalletTransactionDetailGetV30Api() *api.SharedWalletTransactionDetailGetV30ApiService {
 	return c.ApiClient.SharedWalletTransactionDetailGetV30Api
+}
+
+func (c *Client) SharedWalletWalletAdvOperationLogGetV30Api() *api.SharedWalletWalletAdvOperationLogGetV30ApiService {
+	return c.ApiClient.SharedWalletWalletAdvOperationLogGetV30Api
 }
 
 func (c *Client) SharedWalletWalletBalanceGetV30Api() *api.SharedWalletWalletBalanceGetV30ApiService {
@@ -2515,8 +2831,28 @@ func (c *Client) SharedWalletWalletInfoGetV30Api() *api.SharedWalletWalletInfoGe
 	return c.ApiClient.SharedWalletWalletInfoGetV30Api
 }
 
+func (c *Client) SharedWalletWalletOperationLogGetV30Api() *api.SharedWalletWalletOperationLogGetV30ApiService {
+	return c.ApiClient.SharedWalletWalletOperationLogGetV30Api
+}
+
 func (c *Client) SharedWalletWalletRelationGetV30Api() *api.SharedWalletWalletRelationGetV30ApiService {
 	return c.ApiClient.SharedWalletWalletRelationGetV30Api
+}
+
+func (c *Client) SharedWalletWatchRuleGetV30Api() *api.SharedWalletWatchRuleGetV30ApiService {
+	return c.ApiClient.SharedWalletWatchRuleGetV30Api
+}
+
+func (c *Client) SharedWalletWatchRuleSubmitV30Api() *api.SharedWalletWatchRuleSubmitV30ApiService {
+	return c.ApiClient.SharedWalletWatchRuleSubmitV30Api
+}
+
+func (c *Client) ShopBonusCreateV30Api() *api.ShopBonusCreateV30ApiService {
+	return c.ApiClient.ShopBonusCreateV30Api
+}
+
+func (c *Client) ShopBonusSuccessGetV30Api() *api.ShopBonusSuccessGetV30ApiService {
+	return c.ApiClient.ShopBonusSuccessGetV30Api
 }
 
 func (c *Client) SpiTaskGetV2Api() *api.SpiTaskGetV2ApiService {
@@ -2525,6 +2861,10 @@ func (c *Client) SpiTaskGetV2Api() *api.SpiTaskGetV2ApiService {
 
 func (c *Client) StarAttachmentUploadV2Api() *api.StarAttachmentUploadV2ApiService {
 	return c.ApiClient.StarAttachmentUploadV2Api
+}
+
+func (c *Client) StarAttributeItemEventFeedbackV2Api() *api.StarAttributeItemEventFeedbackV2ApiService {
+	return c.ApiClient.StarAttributeItemEventFeedbackV2Api
 }
 
 func (c *Client) StarAttributeJdOverflowConvertV2Api() *api.StarAttributeJdOverflowConvertV2ApiService {
@@ -2639,6 +2979,18 @@ func (c *Client) StarComponentUpdateLinkV2Api() *api.StarComponentUpdateLinkV2Ap
 	return c.ApiClient.StarComponentUpdateLinkV2Api
 }
 
+func (c *Client) StarCopyrightCreateV2Api() *api.StarCopyrightCreateV2ApiService {
+	return c.ApiClient.StarCopyrightCreateV2Api
+}
+
+func (c *Client) StarCopyrightGetV2Api() *api.StarCopyrightGetV2ApiService {
+	return c.ApiClient.StarCopyrightGetV2Api
+}
+
+func (c *Client) StarCreateProjectV2Api() *api.StarCreateProjectV2ApiService {
+	return c.ApiClient.StarCreateProjectV2Api
+}
+
 func (c *Client) StarDataTaskTimelineReportV2Api() *api.StarDataTaskTimelineReportV2ApiService {
 	return c.ApiClient.StarDataTaskTimelineReportV2Api
 }
@@ -2711,6 +3063,18 @@ func (c *Client) StarDemanderDemanderGetBindShareCodeV2Api() *api.StarDemanderDe
 	return c.ApiClient.StarDemanderDemanderGetBindShareCodeV2Api
 }
 
+func (c *Client) StarDemanderGetCarBrandListV2Api() *api.StarDemanderGetCarBrandListV2ApiService {
+	return c.ApiClient.StarDemanderGetCarBrandListV2Api
+}
+
+func (c *Client) StarDemanderGetRegisteredIpActsV2Api() *api.StarDemanderGetRegisteredIpActsV2ApiService {
+	return c.ApiClient.StarDemanderGetRegisteredIpActsV2Api
+}
+
+func (c *Client) StarDemanderQueryCpsTaskSalesV2Api() *api.StarDemanderQueryCpsTaskSalesV2ApiService {
+	return c.ApiClient.StarDemanderQueryCpsTaskSalesV2Api
+}
+
 func (c *Client) StarDemanderUploadCpsTaskSalesV2Api() *api.StarDemanderUploadCpsTaskSalesV2ApiService {
 	return c.ApiClient.StarDemanderUploadCpsTaskSalesV2Api
 }
@@ -2729,6 +3093,10 @@ func (c *Client) StarGetCreateChallengeDataDictV2Api() *api.StarGetCreateChallen
 
 func (c *Client) StarInfoV2Api() *api.StarInfoV2ApiService {
 	return c.ApiClient.StarInfoV2Api
+}
+
+func (c *Client) StarItemAuthorGetV2Api() *api.StarItemAuthorGetV2ApiService {
+	return c.ApiClient.StarItemAuthorGetV2Api
 }
 
 func (c *Client) StarMcnContractChallengeV2Api() *api.StarMcnContractChallengeV2ApiService {
@@ -2763,6 +3131,10 @@ func (c *Client) StarMcnProviderGetTagOnTaskV2Api() *api.StarMcnProviderGetTagOn
 	return c.ApiClient.StarMcnProviderGetTagOnTaskV2Api
 }
 
+func (c *Client) StarMcnProviderGetTaskAuthorListV2Api() *api.StarMcnProviderGetTaskAuthorListV2ApiService {
+	return c.ApiClient.StarMcnProviderGetTaskAuthorListV2Api
+}
+
 func (c *Client) StarMcnProviderGetTaskDetailV2Api() *api.StarMcnProviderGetTaskDetailV2ApiService {
 	return c.ApiClient.StarMcnProviderGetTaskDetailV2Api
 }
@@ -2777,6 +3149,10 @@ func (c *Client) StarMcnProviderGetTaskShareCodeV2Api() *api.StarMcnProviderGetT
 
 func (c *Client) StarMcnProviderGetUnparticipatedTaskV2Api() *api.StarMcnProviderGetUnparticipatedTaskV2ApiService {
 	return c.ApiClient.StarMcnProviderGetUnparticipatedTaskV2Api
+}
+
+func (c *Client) StarMcnProviderHandleJoinedAuthorV2Api() *api.StarMcnProviderHandleJoinedAuthorV2ApiService {
+	return c.ApiClient.StarMcnProviderHandleJoinedAuthorV2Api
 }
 
 func (c *Client) StarMcnProviderUploadSearchItemV2Api() *api.StarMcnProviderUploadSearchItemV2ApiService {
@@ -2895,6 +3271,10 @@ func (c *Client) StarTaskListByProjectV2Api() *api.StarTaskListByProjectV2ApiSer
 	return c.ApiClient.StarTaskListByProjectV2Api
 }
 
+func (c *Client) StarUpdateProjectV2Api() *api.StarUpdateProjectV2ApiService {
+	return c.ApiClient.StarUpdateProjectV2Api
+}
+
 func (c *Client) StarUserGetAwemeAuthorIdV2Api() *api.StarUserGetAwemeAuthorIdV2ApiService {
 	return c.ApiClient.StarUserGetAwemeAuthorIdV2Api
 }
@@ -2917,6 +3297,10 @@ func (c *Client) StarVasCreateBoostItemGroupV2Api() *api.StarVasCreateBoostItemG
 
 func (c *Client) StarVasGetBoostGroupListV2Api() *api.StarVasGetBoostGroupListV2ApiService {
 	return c.ApiClient.StarVasGetBoostGroupListV2Api
+}
+
+func (c *Client) StarVasGetBoostGroupOptionsV2Api() *api.StarVasGetBoostGroupOptionsV2ApiService {
+	return c.ApiClient.StarVasGetBoostGroupOptionsV2Api
 }
 
 func (c *Client) StarVasGetBoostItemGroupDetailV2Api() *api.StarVasGetBoostItemGroupDetailV2ApiService {
@@ -2999,24 +3383,12 @@ func (c *Client) SuggWordsV30Api() *api.SuggWordsV30ApiService {
 	return c.ApiClient.SuggWordsV30Api
 }
 
+func (c *Client) SvipChargeVerifyGetV30Api() *api.SvipChargeVerifyGetV30ApiService {
+	return c.ApiClient.SvipChargeVerifyGetV30Api
+}
+
 func (c *Client) ToolQuickAppManagementQuickAppGetV2Api() *api.ToolQuickAppManagementQuickAppGetV2ApiService {
 	return c.ApiClient.ToolQuickAppManagementQuickAppGetV2Api
-}
-
-func (c *Client) ToolsAbTestCreateV2Api() *api.ToolsAbTestCreateV2ApiService {
-	return c.ApiClient.ToolsAbTestCreateV2Api
-}
-
-func (c *Client) ToolsAbTestInfoGetV2Api() *api.ToolsAbTestInfoGetV2ApiService {
-	return c.ApiClient.ToolsAbTestInfoGetV2Api
-}
-
-func (c *Client) ToolsAbTestListGetV2Api() *api.ToolsAbTestListGetV2ApiService {
-	return c.ApiClient.ToolsAbTestListGetV2Api
-}
-
-func (c *Client) ToolsAbTestUpdateV2Api() *api.ToolsAbTestUpdateV2ApiService {
-	return c.ApiClient.ToolsAbTestUpdateV2Api
 }
 
 func (c *Client) ToolsAdPreviewQrcodeGetV30Api() *api.ToolsAdPreviewQrcodeGetV30ApiService {
@@ -3027,12 +3399,16 @@ func (c *Client) ToolsAdRaiseStatusGetV2Api() *api.ToolsAdRaiseStatusGetV2ApiSer
 	return c.ApiClient.ToolsAdRaiseStatusGetV2Api
 }
 
-func (c *Client) ToolsAdRaiseVersionGetV2Api() *api.ToolsAdRaiseVersionGetV2ApiService {
-	return c.ApiClient.ToolsAdRaiseVersionGetV2Api
-}
-
 func (c *Client) ToolsAdminInfoV2Api() *api.ToolsAdminInfoV2ApiService {
 	return c.ApiClient.ToolsAdminInfoV2Api
+}
+
+func (c *Client) ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api() *api.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService {
+	return c.ApiClient.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api
+}
+
+func (c *Client) ToolsAdvertiserDiagnosisSuggestionGetV30Api() *api.ToolsAdvertiserDiagnosisSuggestionGetV30ApiService {
+	return c.ApiClient.ToolsAdvertiserDiagnosisSuggestionGetV30Api
 }
 
 func (c *Client) ToolsAdvertiserStoreSearchV2Api() *api.ToolsAdvertiserStoreSearchV2ApiService {
@@ -3275,6 +3651,10 @@ func (c *Client) ToolsClueGetV2Api() *api.ToolsClueGetV2ApiService {
 	return c.ApiClient.ToolsClueGetV2Api
 }
 
+func (c *Client) ToolsClueInfoGetV2Api() *api.ToolsClueInfoGetV2ApiService {
+	return c.ApiClient.ToolsClueInfoGetV2Api
+}
+
 func (c *Client) ToolsClueInfoUpdateV2Api() *api.ToolsClueInfoUpdateV2ApiService {
 	return c.ApiClient.ToolsClueInfoUpdateV2Api
 }
@@ -3331,8 +3711,16 @@ func (c *Client) ToolsClueSmartPhoneGetV2Api() *api.ToolsClueSmartPhoneGetV2ApiS
 	return c.ApiClient.ToolsClueSmartPhoneGetV2Api
 }
 
+func (c *Client) ToolsClueWebrtcCreateV2V30Api() *api.ToolsClueWebrtcCreateV2V30ApiService {
+	return c.ApiClient.ToolsClueWebrtcCreateV2V30Api
+}
+
 func (c *Client) ToolsClueWebrtcTokenGetV2Api() *api.ToolsClueWebrtcTokenGetV2ApiService {
 	return c.ApiClient.ToolsClueWebrtcTokenGetV2Api
+}
+
+func (c *Client) ToolsClueWebrtcTokenGetV2V30Api() *api.ToolsClueWebrtcTokenGetV2V30ApiService {
+	return c.ApiClient.ToolsClueWebrtcTokenGetV2V30Api
 }
 
 func (c *Client) ToolsCommentGetV30Api() *api.ToolsCommentGetV30ApiService {
@@ -3387,12 +3775,8 @@ func (c *Client) ToolsCreativeWordSelectV2Api() *api.ToolsCreativeWordSelectV2Ap
 	return c.ApiClient.ToolsCreativeWordSelectV2Api
 }
 
-func (c *Client) ToolsDiagnosisAdGetV2V2Api() *api.ToolsDiagnosisAdGetV2V2ApiService {
-	return c.ApiClient.ToolsDiagnosisAdGetV2V2Api
-}
-
-func (c *Client) ToolsDiagnosisSuggestionGetV2Api() *api.ToolsDiagnosisSuggestionGetV2ApiService {
-	return c.ApiClient.ToolsDiagnosisSuggestionGetV2Api
+func (c *Client) ToolsDiagnosisSuggestionGetV30Api() *api.ToolsDiagnosisSuggestionGetV30ApiService {
+	return c.ApiClient.ToolsDiagnosisSuggestionGetV30Api
 }
 
 func (c *Client) ToolsDownloadPackageGetV2Api() *api.ToolsDownloadPackageGetV2ApiService {
@@ -3401,6 +3785,138 @@ func (c *Client) ToolsDownloadPackageGetV2Api() *api.ToolsDownloadPackageGetV2Ap
 
 func (c *Client) ToolsDownloadPackageParseV2Api() *api.ToolsDownloadPackageParseV2ApiService {
 	return c.ApiClient.ToolsDownloadPackageParseV2Api
+}
+
+func (c *Client) ToolsEbpAppDetailV30Api() *api.ToolsEbpAppDetailV30ApiService {
+	return c.ApiClient.ToolsEbpAppDetailV30Api
+}
+
+func (c *Client) ToolsEbpAppExtendCreateV30Api() *api.ToolsEbpAppExtendCreateV30ApiService {
+	return c.ApiClient.ToolsEbpAppExtendCreateV30Api
+}
+
+func (c *Client) ToolsEbpAppExtendListV30Api() *api.ToolsEbpAppExtendListV30ApiService {
+	return c.ApiClient.ToolsEbpAppExtendListV30Api
+}
+
+func (c *Client) ToolsEbpAppExtendUpdateV30Api() *api.ToolsEbpAppExtendUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpAppExtendUpdateV30Api
+}
+
+func (c *Client) ToolsEbpAppGameBookListV30Api() *api.ToolsEbpAppGameBookListV30ApiService {
+	return c.ApiClient.ToolsEbpAppGameBookListV30Api
+}
+
+func (c *Client) ToolsEbpAppListV30Api() *api.ToolsEbpAppListV30ApiService {
+	return c.ApiClient.ToolsEbpAppListV30Api
+}
+
+func (c *Client) ToolsEbpAppPublishV30Api() *api.ToolsEbpAppPublishV30ApiService {
+	return c.ApiClient.ToolsEbpAppPublishV30Api
+}
+
+func (c *Client) ToolsEbpAppUpdateV30Api() *api.ToolsEbpAppUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpAppUpdateV30Api
+}
+
+func (c *Client) ToolsEbpAssetAuthCancelV30Api() *api.ToolsEbpAssetAuthCancelV30ApiService {
+	return c.ApiClient.ToolsEbpAssetAuthCancelV30Api
+}
+
+func (c *Client) ToolsEbpAssetAuthListV30Api() *api.ToolsEbpAssetAuthListV30ApiService {
+	return c.ApiClient.ToolsEbpAssetAuthListV30Api
+}
+
+func (c *Client) ToolsEbpAssetAuthV30Api() *api.ToolsEbpAssetAuthV30ApiService {
+	return c.ApiClient.ToolsEbpAssetAuthV30Api
+}
+
+func (c *Client) ToolsEbpMaterialAuthCreateV30Api() *api.ToolsEbpMaterialAuthCreateV30ApiService {
+	return c.ApiClient.ToolsEbpMaterialAuthCreateV30Api
+}
+
+func (c *Client) ToolsEbpMaterialAuthDeleteV30Api() *api.ToolsEbpMaterialAuthDeleteV30ApiService {
+	return c.ApiClient.ToolsEbpMaterialAuthDeleteV30Api
+}
+
+func (c *Client) ToolsEbpMaterialAuthListV30Api() *api.ToolsEbpMaterialAuthListV30ApiService {
+	return c.ApiClient.ToolsEbpMaterialAuthListV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletCreateV30Api() *api.ToolsEbpMicroAppletCreateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletCreateV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletLinkListV30Api() *api.ToolsEbpMicroAppletLinkListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletLinkListV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletListV30Api() *api.ToolsEbpMicroAppletListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletListV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletUpdateV30Api() *api.ToolsEbpMicroAppletUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletUpdateV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameCreateV30Api() *api.ToolsEbpMicroGameCreateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameCreateV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameLinkListV30Api() *api.ToolsEbpMicroGameLinkListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameLinkListV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameListV30Api() *api.ToolsEbpMicroGameListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameListV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameUpdateV30Api() *api.ToolsEbpMicroGameUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameUpdateV30Api
+}
+
+func (c *Client) ToolsEbpSubjectListV30Api() *api.ToolsEbpSubjectListV30ApiService {
+	return c.ApiClient.ToolsEbpSubjectListV30Api
+}
+
+func (c *Client) ToolsEbpVideoAttributesListV30Api() *api.ToolsEbpVideoAttributesListV30ApiService {
+	return c.ApiClient.ToolsEbpVideoAttributesListV30Api
+}
+
+func (c *Client) ToolsEbpVideoDeleteV30Api() *api.ToolsEbpVideoDeleteV30ApiService {
+	return c.ApiClient.ToolsEbpVideoDeleteV30Api
+}
+
+func (c *Client) ToolsEbpVideoUpdateV30Api() *api.ToolsEbpVideoUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpVideoUpdateV30Api
+}
+
+func (c *Client) ToolsEbpVideoUploadV30Api() *api.ToolsEbpVideoUploadV30ApiService {
+	return c.ApiClient.ToolsEbpVideoUploadV30Api
+}
+
+func (c *Client) ToolsEbpWechatAppletCreateV30Api() *api.ToolsEbpWechatAppletCreateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatAppletCreateV30Api
+}
+
+func (c *Client) ToolsEbpWechatAppletListV30Api() *api.ToolsEbpWechatAppletListV30ApiService {
+	return c.ApiClient.ToolsEbpWechatAppletListV30Api
+}
+
+func (c *Client) ToolsEbpWechatAppletUpdateV30Api() *api.ToolsEbpWechatAppletUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatAppletUpdateV30Api
+}
+
+func (c *Client) ToolsEbpWechatGameCreateV30Api() *api.ToolsEbpWechatGameCreateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatGameCreateV30Api
+}
+
+func (c *Client) ToolsEbpWechatGameListV30Api() *api.ToolsEbpWechatGameListV30ApiService {
+	return c.ApiClient.ToolsEbpWechatGameListV30Api
+}
+
+func (c *Client) ToolsEbpWechatGameUpdateV30Api() *api.ToolsEbpWechatGameUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatGameUpdateV30Api
 }
 
 func (c *Client) ToolsEstimateAudienceV2Api() *api.ToolsEstimateAudienceV2ApiService {
@@ -3435,6 +3951,26 @@ func (c *Client) ToolsGrayGetV30Api() *api.ToolsGrayGetV30ApiService {
 	return c.ApiClient.ToolsGrayGetV30Api
 }
 
+func (c *Client) ToolsHotMaterialDeriveAdoptV30Api() *api.ToolsHotMaterialDeriveAdoptV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveAdoptV30Api
+}
+
+func (c *Client) ToolsHotMaterialDeriveGetV30Api() *api.ToolsHotMaterialDeriveGetV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveGetV30Api
+}
+
+func (c *Client) ToolsHotMaterialDeriveListV30Api() *api.ToolsHotMaterialDeriveListV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveListV30Api
+}
+
+func (c *Client) ToolsHotMaterialDeriveSubmitV30Api() *api.ToolsHotMaterialDeriveSubmitV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveSubmitV30Api
+}
+
+func (c *Client) ToolsInactiveAdvertiserListV30Api() *api.ToolsInactiveAdvertiserListV30ApiService {
+	return c.ApiClient.ToolsInactiveAdvertiserListV30Api
+}
+
 func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {
 	return c.ApiClient.ToolsIndustryGetV2Api
 }
@@ -3459,8 +3995,16 @@ func (c *Client) ToolsIsSupportUniversalGetV2Api() *api.ToolsIsSupportUniversalG
 	return c.ApiClient.ToolsIsSupportUniversalGetV2Api
 }
 
-func (c *Client) ToolsKeyActionGetV2Api() *api.ToolsKeyActionGetV2ApiService {
-	return c.ApiClient.ToolsKeyActionGetV2Api
+func (c *Client) ToolsJointBidCreateV30Api() *api.ToolsJointBidCreateV30ApiService {
+	return c.ApiClient.ToolsJointBidCreateV30Api
+}
+
+func (c *Client) ToolsJointBidGetV30Api() *api.ToolsJointBidGetV30ApiService {
+	return c.ApiClient.ToolsJointBidGetV30Api
+}
+
+func (c *Client) ToolsJointBidUpdateV30Api() *api.ToolsJointBidUpdateV30ApiService {
+	return c.ApiClient.ToolsJointBidUpdateV30Api
 }
 
 func (c *Client) ToolsKeywordsBidRatioCreateV30Api() *api.ToolsKeywordsBidRatioCreateV30ApiService {
@@ -3505,6 +4049,30 @@ func (c *Client) ToolsLiveAuthorizeListV2Api() *api.ToolsLiveAuthorizeListV2ApiS
 
 func (c *Client) ToolsLogSearchV2Api() *api.ToolsLogSearchV2ApiService {
 	return c.ApiClient.ToolsLogSearchV2Api
+}
+
+func (c *Client) ToolsMaterialRaiseCreateV30Api() *api.ToolsMaterialRaiseCreateV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseCreateV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseGetV30Api() *api.ToolsMaterialRaiseGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseMaterialIdsGetV30Api() *api.ToolsMaterialRaiseMaterialIdsGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseMaterialIdsGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseRecordsGetV30Api() *api.ToolsMaterialRaiseRecordsGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseRecordsGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseStatusGetV30Api() *api.ToolsMaterialRaiseStatusGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseStatusGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseStopV30Api() *api.ToolsMaterialRaiseStopV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseStopV30Api
 }
 
 func (c *Client) ToolsMicroAppCreateV30Api() *api.ToolsMicroAppCreateV30ApiService {
@@ -3699,10 +4267,6 @@ func (c *Client) ToolsRtaStatusUpdateV2Api() *api.ToolsRtaStatusUpdateV2ApiServi
 	return c.ApiClient.ToolsRtaStatusUpdateV2Api
 }
 
-func (c *Client) ToolsRubeexGetV2Api() *api.ToolsRubeexGetV2ApiService {
-	return c.ApiClient.ToolsRubeexGetV2Api
-}
-
 func (c *Client) ToolsRubeexPlayableAdListV2Api() *api.ToolsRubeexPlayableAdListV2ApiService {
 	return c.ApiClient.ToolsRubeexPlayableAdListV2Api
 }
@@ -3779,10 +4343,6 @@ func (c *Client) ToolsSiteUpdateV2Api() *api.ToolsSiteUpdateV2ApiService {
 	return c.ApiClient.ToolsSiteUpdateV2Api
 }
 
-func (c *Client) ToolsStarTaskMaterialTypeV2Api() *api.ToolsStarTaskMaterialTypeV2ApiService {
-	return c.ApiClient.ToolsStarTaskMaterialTypeV2Api
-}
-
 func (c *Client) ToolsStarTaskSettlementConfigV2Api() *api.ToolsStarTaskSettlementConfigV2ApiService {
 	return c.ApiClient.ToolsStarTaskSettlementConfigV2Api
 }
@@ -3813,10 +4373,6 @@ func (c *Client) ToolsTaskRaiseOptimizationIdsGetV2Api() *api.ToolsTaskRaiseOpti
 
 func (c *Client) ToolsTaskRaiseStatusStopV2Api() *api.ToolsTaskRaiseStatusStopV2ApiService {
 	return c.ApiClient.ToolsTaskRaiseStatusStopV2Api
-}
-
-func (c *Client) ToolsThirdSiteCreateV2Api() *api.ToolsThirdSiteCreateV2ApiService {
-	return c.ApiClient.ToolsThirdSiteCreateV2Api
 }
 
 func (c *Client) ToolsThirdSiteDeleteV2Api() *api.ToolsThirdSiteDeleteV2ApiService {

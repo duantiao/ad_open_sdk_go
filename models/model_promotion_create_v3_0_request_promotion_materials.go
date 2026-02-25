@@ -23,7 +23,6 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	CarouselMaterialList []*PromotionCreateV30RequestPromotionMaterialsCarouselMaterialListInner `json:"carousel_material_list,omitempty"`
 	//
 	ComponentMaterialList []*PromotionCreateV30RequestPromotionMaterialsComponentMaterialListInner `json:"component_material_list,omitempty"`
-	DecorationMaterial    *PromotionCreateV30RequestPromotionMaterialsDecorationMaterial           `json:"decoration_material,omitempty"`
 	DynamicCreativeSwitch *PromotionCreateV30PromotionMaterialsDynamicCreativeSwitch               `json:"dynamic_creative_switch,omitempty"`
 	// 落地页链接字段选择，当params_type为DPA时必填
 	ExternalUrlField *string `json:"external_url_field,omitempty"`
@@ -32,9 +31,11 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	// 落地页检测参数
 	ExternalUrlParams *string `json:"external_url_params,omitempty"`
 	//
-	ImageMaterialList     []*PromotionCreateV30RequestPromotionMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
-	IntelligentGeneration *PromotionCreateV30PromotionMaterialsIntelligentGeneration           `json:"intelligent_generation,omitempty"`
-	MiniProgramInfo       *PromotionCreateV30RequestPromotionMaterialsMiniProgramInfo          `json:"mini_program_info,omitempty"`
+	ImageMaterialList []*PromotionCreateV30RequestPromotionMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
+	//
+	InstantPlayMaterialList []*PromotionCreateV30RequestPromotionMaterialsInstantPlayMaterialListInner `json:"instant_play_material_list,omitempty"`
+	IntelligentGeneration   *PromotionCreateV30PromotionMaterialsIntelligentGeneration                 `json:"intelligent_generation,omitempty"`
+	MiniProgramInfo         *PromotionCreateV30RequestPromotionMaterialsMiniProgramInfo                `json:"mini_program_info,omitempty"`
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	// 直达链接字段选择，当dpa_open_url_type为DPA必填
@@ -46,6 +47,8 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	OpenUrls           []string                                                `json:"open_urls,omitempty"`
 	OriginalVideoTitle *PromotionCreateV30PromotionMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
 	ParamsType         *PromotionCreateV30PromotionMaterialsParamsType         `json:"params_type,omitempty"`
+	// 种草搜索词素材
+	PlantGrassSearchWordMaterialList []*PromotionCreateV30RequestPromotionMaterialsPlantGrassSearchWordMaterialListInner `json:"plant_grass_search_word_material_list,omitempty"`
 	//
 	PlayletSeriesUrlList []string                                                `json:"playlet_series_url_list,omitempty"`
 	ProductInfo          *PromotionCreateV30RequestPromotionMaterialsProductInfo `json:"product_info,omitempty"`
@@ -53,6 +56,8 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	TextAbstractList []*PromotionCreateV30RequestPromotionMaterialsTextAbstractListInner `json:"text_abstract_list,omitempty"`
 	//
 	TitleMaterialList []*PromotionCreateV30RequestPromotionMaterialsTitleMaterialListInner `json:"title_material_list,omitempty"`
+	//
+	TrialPlayMaterialList []*PromotionCreateV30RequestPromotionMaterialsTrialPlayMaterialListInner `json:"trial_play_material_list,omitempty"`
 	//
 	Ulink     *string                                        `json:"ulink,omitempty"`
 	UlinkType *PromotionCreateV30PromotionMaterialsUlinkType `json:"ulink_type,omitempty"`
