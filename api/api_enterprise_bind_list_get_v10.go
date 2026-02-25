@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EnterpriseBindListGetV10ApiService EnterpriseBindListGetV10Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV10EnterpriseBindListGetGetRequest) AdvertiserId(advertiserId
 	return r
 }
 
-func (r *ApiOpenApiV10EnterpriseBindListGetGetRequest) Execute() (*EnterpriseBindListGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10EnterpriseBindListGetGetRequest) Execute() (*models.EnterpriseBindListGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EnterpriseBindListGetV10ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return EnterpriseBindListGetV10Response
-func (a *EnterpriseBindListGetV10ApiService) getExecute(r *ApiOpenApiV10EnterpriseBindListGetGetRequest) (*EnterpriseBindListGetV10Response, *http.Response, error) {
+func (a *EnterpriseBindListGetV10ApiService) getExecute(r *ApiOpenApiV10EnterpriseBindListGetGetRequest) (*models.EnterpriseBindListGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EnterpriseBindListGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EnterpriseBindListGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EnterpriseBindListGetV10ApiService) getExecute(r *ApiOpenApiV10Enterpri
 	localVarPath := localBasePath + "/open_api/v1.0/enterprise/bind/list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
