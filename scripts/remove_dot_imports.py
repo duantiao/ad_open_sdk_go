@@ -41,8 +41,8 @@ class DotImportRemover:
                 with open(model_file, 'r', encoding='utf-8') as f:
                     content = f.read()
                     
-                # 匹配类型定义: type TypeName struct/interface/string
-                type_pattern = r'^type\s+(\w+)\s+(?:struct|interface|string)\b'
+                # 匹配类型定义: type TypeName struct/interface/string/基本类型
+                type_pattern = r'^type\s+(\w+)\s+(?:struct|interface|string|int\d*|float\d*|bool|byte|rune|uint\d*|complex\d*|error)\b'
                 matches = re.findall(type_pattern, content, re.MULTILINE)
                 types.update(matches)
                 
@@ -68,6 +68,15 @@ class DotImportRemover:
             original_content = content
             has_dot_import = False
             
+            # 收集当前文件中定义的类型
+            local_types = set()
+            # 匹配类型定义：type TypeName Alias 或 type TypeName struct/interface/string/基本类型
+            # 使用 findall 匹配所有组，收集所有类型名
+            type_pattern = r'^type\s+(\w+)\s+(\w+)'
+            for match in re.finditer(type_pattern, content, re.MULTILINE):
+                # 添加类型名（第一个词）
+                local_types.add(match.group(1))
+            
             # 检查并移除点导入
             if self.dot_import_pattern.search(content):
                 has_dot_import = True
@@ -87,10 +96,9 @@ class DotImportRemover:
                     match = self.import_block_pattern.search(content)
                     if match:
                         import_block = match.group(1)
-                        if not import_block.strip().endswith(')'):
-                            # 在import块末尾添加
-                            new_import = import_block.rstrip() + '\n\t"github.com/oceanengine/ad_open_sdk_go/models"\n)'
-                            content = content.replace(import_block, new_import)
+                        # 在import块末尾添加（在 ) 之前）
+                        new_import = import_block.rstrip(')') + '\n\t"github.com/oceanengine/ad_open_sdk_go/models"\n)'
+                        content = content.replace(import_block, new_import)
                     else:
                         # 创建新的import块
                         content = self.package_pattern.sub(
@@ -100,42 +108,95 @@ class DotImportRemover:
                         )
             
             # 更新类型引用（添加models前缀）
+            # 只有当文件中有点导入时才进行替换
             if has_dot_import:
-                # 先找出文件中实际使用的类型，而不是对所有类型都进行替换
-                used_types = set()
-                for type_name in model_types:
-                    # 快速检查类型是否在文件中出现
-                    if type_name in content:
-                        used_types.add(type_name)
+                # 只替换从 models 包导入的类型，不替换当前文件中定义的类型
+                types_to_replace = model_types - local_types
                 
-                # 只对实际使用的类型进行替换
-                if used_types:
-                    # 按长度降序排序，避免部分匹配
-                    sorted_types = sorted(used_types, key=len, reverse=True)
+                if types_to_replace:
+                    # 先找出文件中实际使用的类型
+                    used_types = set()
+                    for type_name in types_to_replace:
+                        if type_name in content:
+                            used_types.add(type_name)
                     
-                    # 构建一个大的正则表达式，一次性匹配所有类型
-                    # 使用单词边界确保只匹配完整的类型名
-                    type_pattern = r'\b(' + '|'.join(re.escape(t) for t in sorted_types) + r')\b'
-                    type_regex = re.compile(type_pattern)
-                    
-                    # 使用替换函数，根据上下文决定是否添加 models. 前缀
-                    def add_models_prefix(match):
-                        type_name = match.group(1)
-                        # 检查前面是否已经有 models. 前缀
-                        start_pos = match.start()
-                        if start_pos >= 7 and content[start_pos-7:start_pos] == 'models.':
-                            return type_name
-                        # 检查是否在字符串中（简单检查）
-                        line_start = content.rfind('\n', 0, start_pos) + 1
-                        line_before = content[line_start:start_pos]
-                        if '"' in line_before:
-                            return type_name
-                        # 检查是否在注释中
-                        if '//' in line_before:
-                            return type_name
-                        return f'models.{type_name}'
-                    
-                    content = type_regex.sub(add_models_prefix, content)
+                    # 只对实际使用的类型进行替换
+                    if used_types:
+                        # 按长度降序排序，避免部分匹配
+                        sorted_types = sorted(used_types, key=len, reverse=True)
+                        
+                        # 构建一个大的正则表达式，一次性匹配所有类型
+                        type_pattern = r'\b(' + '|'.join(re.escape(t) for t in sorted_types) + r')\b'
+                        type_regex = re.compile(type_pattern)
+                        
+                        # 使用替换函数，根据上下文决定是否添加 models. 前缀
+                        original_content_for_check = content
+                        
+                        def add_models_prefix(match):
+                            type_name = match.group(1)
+                            start_pos = match.start()
+                            end_pos = match.end()
+                            
+                            # 检查前面是否已经有 models. 前缀
+                            if start_pos >= 7 and original_content_for_check[start_pos-7:start_pos] == 'models.':
+                                return type_name
+                            
+                            # 获取当前行的内容（使用原始内容）
+                            line_start = original_content_for_check.rfind('\n', 0, start_pos) + 1
+                            line_end = original_content_for_check.find('\n', end_pos)
+                            if line_end == -1:
+                                line_end = len(original_content_for_check)
+                            line_content = original_content_for_check[line_start:line_end]
+                            before_match = line_content[:start_pos-line_start]
+                            
+                            # 检查是否在字符串中
+                            if before_match.count('"') % 2 == 1:
+                                return type_name
+                            
+                            # 检查是否在注释中
+                            if '//' in before_match:
+                                return type_name
+                            
+                            # 检查是否是函数/方法名
+                            full_before = before_match + type_name
+                            after_char = original_content_for_check[end_pos:end_pos+1] if end_pos < len(original_content_for_check) else ''
+                            
+                            # 模式1: func (receiver) MethodName( - 方法名
+                            if re.search(r'func\s*\([^)]*\)\s+\w+\s*$', full_before) and after_char == '(':
+                                return type_name
+                            
+                            # 模式2: func FunctionName( - 函数名
+                            if re.search(r'func\s+\w+\s*$', full_before) and after_char == '(':
+                                return type_name
+                            
+                            # 检查是否是方法调用：object.Method(
+                            if start_pos > 0 and original_content_for_check[start_pos-1] == '.' and after_char == '(':
+                                return type_name
+                            
+                            # 检查是否是类型转换：Type(value)
+                            if start_pos > 0 and original_content_for_check[start_pos-1] == '(' and after_char == ')':
+                                return f'models.{type_name}'
+                            
+                            # 检查是否是变量声明：var name Type 或 name Type 或 name := Type
+                            if re.search(r'\bvar\b', before_match):
+                                return f'models.{type_name}'
+                            
+                            # 检查是否是结构体字段：FieldName Type
+                            if re.search(r'\w+\s+$', before_match):
+                                return f'models.{type_name}'
+                            
+                            # 检查是否是函数参数或返回值：(param Type) 或 () Type
+                            if start_pos > 0 and original_content_for_check[start_pos-1] in '(,*':
+                                return f'models.{type_name}'
+                            
+                            # 检查是否是数组/切片/指针类型：[]Type, *Type, map[string]Type
+                            if start_pos > 0 and original_content_for_check[start_pos-1] in '[]*':
+                                return f'models.{type_name}'
+                            
+                            # 默认情况下添加 models. 前缀
+                            return f'models.{type_name}'
+                        
+                        content = type_regex.sub(add_models_prefix, content)
                 
                 # 移除重复的models.前缀
                 content = self.models_prefix_pattern.sub('models.', content)
@@ -193,14 +254,92 @@ class DotImportRemover:
             
             original_content = content
             
-            # client.go中已经有正常的models导入，只需要移除点导入
+            # 检查是否有点导入
+            has_dot_import = bool(self.dot_import_pattern.search(content))
+            
+            if not has_dot_import:
+                return False
+            
+            # 收集当前文件中定义的类型
+            local_types = set()
+            type_pattern = r'^type\s+(\w+)\s+(\w+)'
+            for match in re.finditer(type_pattern, content, re.MULTILINE):
+                local_types.add(match.group(1))
+            
+            # 收集需要替换的类型
+            types_to_replace = set()
+            for type_name in self.type_cache:
+                if type_name in content and type_name not in local_types:
+                    types_to_replace.add(type_name)
+            
+            # 移除点导入行
             lines = content.split('\n')
             new_lines = []
             for line in lines:
-                if not re.search(r'^\s*\.\s*"github\.com/oceanengine/ad_open_sdk_go/models"', line):
+                if not self.dot_import_pattern.search(line):
                     new_lines.append(line)
             
             content = '\n'.join(new_lines)
+            
+            # 添加正常导入（如果还没有）
+            if not self.normal_import_pattern.search(content):
+                match = self.import_block_pattern.search(content)
+                if match:
+                    import_block = match.group(1)
+                    new_import = import_block.rstrip(')') + '\n\t"github.com/oceanengine/ad_open_sdk_go/models"\n)'
+                    content = content.replace(import_block, new_import)
+            
+            # 替换类型引用
+            if types_to_replace:
+                sorted_types = sorted(types_to_replace, key=len, reverse=True)
+                type_pattern = r'\b(' + '|'.join(re.escape(t) for t in sorted_types) + r')\b'
+                type_regex = re.compile(type_pattern)
+                
+                original_for_check = content
+                
+                def add_prefix(match):
+                    type_name = match.group(1)
+                    start_pos = match.start()
+                    
+                    if start_pos >= 7 and original_for_check[start_pos-7:start_pos] == 'models.':
+                        return type_name
+                    
+                    line_start = original_for_check.rfind('\n', 0, start_pos) + 1
+                    line_end = original_for_check.find('\n', start_pos)
+                    if line_end == -1:
+                        line_end = len(original_for_check)
+                    line_content = original_for_check[line_start:line_end]
+                    before = line_content[:start_pos-line_start]
+                    
+                    if before.count('"') % 2 == 1:
+                        return type_name
+                    if '//' in before:
+                        return type_name
+                    
+                    full_before = before + type_name
+                    after = original_for_check[match.end():match.end()+1] if match.end() < len(original_for_check) else ''
+                    
+                    if re.search(r'func\s*\([^)]*\)\s+\w+\s*$', full_before) and after == '(':
+                        return type_name
+                    if re.search(r'func\s+\w+\s*$', full_before) and after == '(':
+                        return type_name
+                    if start_pos > 0 and original_for_check[start_pos-1] == '.' and after == '(':
+                        return type_name
+                    if start_pos > 0 and original_for_check[start_pos-1] == '(' and after == ')':
+                        return f'models.{type_name}'
+                    if re.search(r'\bvar\b', before):
+                        return f'models.{type_name}'
+                    if re.search(r'\w+\s+$', before):
+                        return f'models.{type_name}'
+                    if start_pos > 0 and original_for_check[start_pos-1] in '(,*':
+                        return f'models.{type_name}'
+                    if start_pos > 0 and original_for_check[start_pos-1] in '[]*':
+                        return f'models.{type_name}'
+                    
+                    return f'models.{type_name}'
+                
+                content = type_regex.sub(add_prefix, content)
+                content = self.models_prefix_pattern.sub('models.', content)
             
             if content != original_content:
                 with open(client_file, 'w', encoding='utf-8') as f:
@@ -211,7 +350,7 @@ class DotImportRemover:
             return False
             
         except Exception as e:
-            print(f"错误: 处理client.go失败: {e}")
+            print(f"错误: 处理client.go失败: {e}", flush=True)
             return False
     
     def verify_compilation(self) -> bool:
@@ -248,6 +387,10 @@ class DotImportRemover:
         print("=" * 60, flush=True)
         print("开始移除点导入优化", flush=True)
         print("=" * 60, flush=True)
+        
+        # 收集模型类型并缓存
+        print("正在收集模型类型...", flush=True)
+        self.type_cache = self.collect_model_types()
         
         # 处理API文件
         api_count = self.process_api_files()
