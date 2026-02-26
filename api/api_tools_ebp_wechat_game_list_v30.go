@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpWechatGameListV30ApiService ToolsEbpWechatGameListV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30ToolsEbpWechatGameListGetRequest struct {
 	ctx                  context.Context
 	ApiService           *ToolsEbpWechatGameListV30ApiService
 	accountId            *int64
-	accountType          *ToolsEbpWechatGameListV30AccountType
-	assetManagementScope *ToolsEbpWechatGameListV30AssetManagementScope
-	filtering            *ToolsEbpWechatGameListV30Filtering
+	accountType          *models.ToolsEbpWechatGameListV30AccountType
+	assetManagementScope *models.ToolsEbpWechatGameListV30AssetManagementScope
+	filtering            *models.ToolsEbpWechatGameListV30Filtering
 	page                 *int64
 	pageSize             *int64
 }
@@ -38,18 +39,18 @@ func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) AccountId(accountId int6
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) AccountType(accountType ToolsEbpWechatGameListV30AccountType) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) AccountType(accountType models.ToolsEbpWechatGameListV30AccountType) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpWechatGameListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) AssetManagementScope(assetManagementScope models.ToolsEbpWechatGameListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) Filtering(filtering ToolsEbpWechatGameListV30Filtering) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) Filtering(filtering models.ToolsEbpWechatGameListV30Filtering) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -66,7 +67,7 @@ func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) Execute() (*ToolsEbpWechatGameListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) Execute() (*models.ToolsEbpWechatGameListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -100,12 +101,12 @@ func (a *ToolsEbpWechatGameListV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsEbpWechatGameListV30Response
-func (a *ToolsEbpWechatGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) (*ToolsEbpWechatGameListV30Response, *http.Response, error) {
+func (a *ToolsEbpWechatGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) (*models.ToolsEbpWechatGameListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpWechatGameListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpWechatGameListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -115,7 +116,7 @@ func (a *ToolsEbpWechatGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEb
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/wechat_game/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {
