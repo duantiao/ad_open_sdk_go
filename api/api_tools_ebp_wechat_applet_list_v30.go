@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpWechatAppletListV30ApiService ToolsEbpWechatAppletListV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30ToolsEbpWechatAppletListGetRequest struct {
 	ctx                  context.Context
 	ApiService           *ToolsEbpWechatAppletListV30ApiService
 	accountId            *int64
-	accountType          *ToolsEbpWechatAppletListV30AccountType
-	assetManagementScope *ToolsEbpWechatAppletListV30AssetManagementScope
-	filtering            *ToolsEbpWechatAppletListV30Filtering
+	accountType          *models.ToolsEbpWechatAppletListV30AccountType
+	assetManagementScope *models.ToolsEbpWechatAppletListV30AssetManagementScope
+	filtering            *models.ToolsEbpWechatAppletListV30Filtering
 	page                 *int64
 	pageSize             *int64
 }
@@ -39,18 +40,18 @@ func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) AccountId(accountId in
 }
 
 // 操作账号类型
-func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) AccountType(accountType ToolsEbpWechatAppletListV30AccountType) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) AccountType(accountType models.ToolsEbpWechatAppletListV30AccountType) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpWechatAppletListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) AssetManagementScope(assetManagementScope models.ToolsEbpWechatAppletListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) Filtering(filtering ToolsEbpWechatAppletListV30Filtering) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) Filtering(filtering models.ToolsEbpWechatAppletListV30Filtering) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -67,7 +68,7 @@ func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) PageSize(pageSize int6
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) Execute() (*ToolsEbpWechatAppletListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) Execute() (*models.ToolsEbpWechatAppletListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -101,12 +102,12 @@ func (a *ToolsEbpWechatAppletListV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsEbpWechatAppletListV30Response
-func (a *ToolsEbpWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) (*ToolsEbpWechatAppletListV30Response, *http.Response, error) {
+func (a *ToolsEbpWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) (*models.ToolsEbpWechatAppletListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpWechatAppletListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpWechatAppletListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -116,7 +117,7 @@ func (a *ToolsEbpWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/wechat_applet/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {
