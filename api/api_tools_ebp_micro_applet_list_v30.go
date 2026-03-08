@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMicroAppletListV30ApiService ToolsEbpMicroAppletListV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30ToolsEbpMicroAppletListGetRequest struct {
 	ctx                  context.Context
 	ApiService           *ToolsEbpMicroAppletListV30ApiService
 	accountId            *int64
-	accountType          *ToolsEbpMicroAppletListV30AccountType
-	assetManagementScope *ToolsEbpMicroAppletListV30AssetManagementScope
-	filtering            *ToolsEbpMicroAppletListV30Filtering
+	accountType          *models.ToolsEbpMicroAppletListV30AccountType
+	assetManagementScope *models.ToolsEbpMicroAppletListV30AssetManagementScope
+	filtering            *models.ToolsEbpMicroAppletListV30Filtering
 	page                 *int64
 	pageSize             *int64
 }
@@ -39,18 +40,18 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) AccountId(accountId int
 }
 
 // 操作账号类型
-func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) AccountType(accountType ToolsEbpMicroAppletListV30AccountType) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) AccountType(accountType models.ToolsEbpMicroAppletListV30AccountType) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpMicroAppletListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) AssetManagementScope(assetManagementScope models.ToolsEbpMicroAppletListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) Filtering(filtering ToolsEbpMicroAppletListV30Filtering) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) Filtering(filtering models.ToolsEbpMicroAppletListV30Filtering) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -65,7 +66,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) PageSize(pageSize int64
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) Execute() (*ToolsEbpMicroAppletListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) Execute() (*models.ToolsEbpMicroAppletListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -99,12 +100,12 @@ func (a *ToolsEbpMicroAppletListV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsEbpMicroAppletListV30Response
-func (a *ToolsEbpMicroAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) (*ToolsEbpMicroAppletListV30Response, *http.Response, error) {
+func (a *ToolsEbpMicroAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) (*models.ToolsEbpMicroAppletListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMicroAppletListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMicroAppletListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -114,7 +115,7 @@ func (a *ToolsEbpMicroAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsE
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/micro_applet/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

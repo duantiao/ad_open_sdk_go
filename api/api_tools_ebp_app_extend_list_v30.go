@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAppExtendListV30ApiService ToolsEbpAppExtendListV30Api service
@@ -29,9 +30,9 @@ type ApiOpenApiV30ToolsEbpAppExtendListGetRequest struct {
 	packageId   *string
 	page        *int64
 	pageSize    *int64
-	accountType *ToolsEbpAppExtendListV30AccountType
-	filtering   *ToolsEbpAppExtendListV30Filtering
-	updateTime  *ToolsEbpAppExtendListV30UpdateTime
+	accountType *models.ToolsEbpAppExtendListV30AccountType
+	filtering   *models.ToolsEbpAppExtendListV30Filtering
+	updateTime  *models.ToolsEbpAppExtendListV30UpdateTime
 }
 
 func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
@@ -56,24 +57,24 @@ func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) PageSize(pageSize int64) 
 }
 
 // 操作账号类型
-func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) AccountType(accountType ToolsEbpAppExtendListV30AccountType) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) AccountType(accountType models.ToolsEbpAppExtendListV30AccountType) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) Filtering(filtering ToolsEbpAppExtendListV30Filtering) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) Filtering(filtering models.ToolsEbpAppExtendListV30Filtering) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 时间范围
-func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) UpdateTime(updateTime ToolsEbpAppExtendListV30UpdateTime) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) UpdateTime(updateTime models.ToolsEbpAppExtendListV30UpdateTime) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
 	r.updateTime = &updateTime
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) Execute() (*ToolsEbpAppExtendListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) Execute() (*models.ToolsEbpAppExtendListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -107,12 +108,12 @@ func (a *ToolsEbpAppExtendListV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsEbpAppExtendListV30Response
-func (a *ToolsEbpAppExtendListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) (*ToolsEbpAppExtendListV30Response, *http.Response, error) {
+func (a *ToolsEbpAppExtendListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) (*models.ToolsEbpAppExtendListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAppExtendListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAppExtendListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -122,7 +123,7 @@ func (a *ToolsEbpAppExtendListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/app_extend/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {
