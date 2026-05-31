@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerDbtGetV30ApiService EventManagerDbtGetV30Api service
@@ -26,14 +27,14 @@ type ApiOpenApiV30EventManagerDbtGetGetRequest struct {
 	ctx                context.Context
 	ApiService         *EventManagerDbtGetV30ApiService
 	advertiserId       *int64
-	externalAction     *EventManagerDbtGetV30ExternalAction
-	landingType        *EventManagerDbtGetV30LandingType
-	adType             *EventManagerDbtGetV30AdType
-	marketingGoal      *EventManagerDbtGetV30MarketingGoal
+	externalAction     *models.EventManagerDbtGetV30ExternalAction
+	landingType        *models.EventManagerDbtGetV30LandingType
+	adType             *models.EventManagerDbtGetV30AdType
+	marketingGoal      *models.EventManagerDbtGetV30MarketingGoal
 	assetId            *int64
-	deepExternalAction *EventManagerDbtGetV30DeepExternalAction
-	valueOptimizedType *EventManagerDbtGetV30ValueOptimizedType
-	deliveryMode       *EventManagerDbtGetV30DeliveryMode
+	deepExternalAction *models.EventManagerDbtGetV30DeepExternalAction
+	valueOptimizedType *models.EventManagerDbtGetV30ValueOptimizedType
+	deliveryMode       *models.EventManagerDbtGetV30DeliveryMode
 }
 
 // 广告主id
@@ -43,22 +44,22 @@ func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) AdvertiserId(advertiserId in
 }
 
 // 优化目标
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) ExternalAction(externalAction EventManagerDbtGetV30ExternalAction) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) ExternalAction(externalAction models.EventManagerDbtGetV30ExternalAction) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) LandingType(landingType EventManagerDbtGetV30LandingType) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) LandingType(landingType models.EventManagerDbtGetV30LandingType) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.landingType = &landingType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) AdType(adType EventManagerDbtGetV30AdType) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) AdType(adType models.EventManagerDbtGetV30AdType) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.adType = &adType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) MarketingGoal(marketingGoal EventManagerDbtGetV30MarketingGoal) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) MarketingGoal(marketingGoal models.EventManagerDbtGetV30MarketingGoal) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
@@ -70,22 +71,22 @@ func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) AssetId(assetId int64) *ApiO
 }
 
 // 深度优化目标，当优化目标不等于AD_CONVERT_TYPE_PAY、AD_CONVERT_TYPE_FORM、AD_CONVERT_TYPE_MULTIPLE时深度优化目标必填
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeepExternalAction(deepExternalAction EventManagerDbtGetV30DeepExternalAction) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeepExternalAction(deepExternalAction models.EventManagerDbtGetV30DeepExternalAction) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) ValueOptimizedType(valueOptimizedType EventManagerDbtGetV30ValueOptimizedType) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) ValueOptimizedType(valueOptimizedType models.EventManagerDbtGetV30ValueOptimizedType) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.valueOptimizedType = &valueOptimizedType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeliveryMode(deliveryMode EventManagerDbtGetV30DeliveryMode) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeliveryMode(deliveryMode models.EventManagerDbtGetV30DeliveryMode) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.deliveryMode = &deliveryMode
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) Execute() (*EventManagerDbtGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) Execute() (*models.EventManagerDbtGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -119,12 +120,12 @@ func (a *EventManagerDbtGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return EventManagerDbtGetV30Response
-func (a *EventManagerDbtGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerDbtGetGetRequest) (*EventManagerDbtGetV30Response, *http.Response, error) {
+func (a *EventManagerDbtGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerDbtGetGetRequest) (*models.EventManagerDbtGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerDbtGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerDbtGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -134,7 +135,7 @@ func (a *EventManagerDbtGetV30ApiService) getExecute(r *ApiOpenApiV30EventManage
 	localVarPath := localBasePath + "/open_api/v3.0/event_manager/dbt/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

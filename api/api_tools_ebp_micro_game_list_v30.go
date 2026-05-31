@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMicroGameListV30ApiService ToolsEbpMicroGameListV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30ToolsEbpMicroGameListGetRequest struct {
 	ctx                  context.Context
 	ApiService           *ToolsEbpMicroGameListV30ApiService
 	accountId            *int64
-	accountType          *ToolsEbpMicroGameListV30AccountType
-	assetManagementScope *ToolsEbpMicroGameListV30AssetManagementScope
-	filtering            *ToolsEbpMicroGameListV30Filtering
+	accountType          *models.ToolsEbpMicroGameListV30AccountType
+	assetManagementScope *models.ToolsEbpMicroGameListV30AssetManagementScope
+	filtering            *models.ToolsEbpMicroGameListV30Filtering
 	page                 *int32
 	pageSize             *int32
 }
@@ -39,18 +40,18 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AccountId(accountId int64
 }
 
 // 操作账号类型
-func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AccountType(accountType ToolsEbpMicroGameListV30AccountType) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AccountType(accountType models.ToolsEbpMicroGameListV30AccountType) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpMicroGameListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AssetManagementScope(assetManagementScope models.ToolsEbpMicroGameListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Filtering(filtering ToolsEbpMicroGameListV30Filtering) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Filtering(filtering models.ToolsEbpMicroGameListV30Filtering) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -65,7 +66,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) PageSize(pageSize int32) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Execute() (*ToolsEbpMicroGameListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Execute() (*models.ToolsEbpMicroGameListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -99,12 +100,12 @@ func (a *ToolsEbpMicroGameListV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsEbpMicroGameListV30Response
-func (a *ToolsEbpMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) (*ToolsEbpMicroGameListV30Response, *http.Response, error) {
+func (a *ToolsEbpMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) (*models.ToolsEbpMicroGameListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMicroGameListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMicroGameListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -114,7 +115,7 @@ func (a *ToolsEbpMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/micro_game/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {
