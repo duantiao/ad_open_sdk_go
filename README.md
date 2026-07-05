@@ -520,6 +520,7 @@ Class | Method | HTTP request
 *FileImageAdvertiserV2Api* | **OpenApi2FileImageAdvertiserPost** | **Post** /open_api/2/file/image/advertiser/
 *FileImageDeleteV30Api* | **OpenApiV30FileImageDeletePost** | **Post** /open_api/v3.0/file/image/delete/
 *FileImageGetV2Api* | **OpenApi2FileImageGetGet** | **Get** /open_api/2/file/image/get/
+*FileIncentivePolicyBaseInfoGetV2Api* | **OpenApi2FileIncentivePolicyBaseInfoGetGet** | **Get** /open_api/2/file/incentive_policy_base_info/get/
 *FileMaterialAttributesListV2Api* | **OpenApi2FileMaterialAttributesListGet** | **Get** /open_api/2/file/material_attributes/list/
 *FileMaterialBindV2Api* | **OpenApi2FileMaterialBindPost** | **Post** /open_api/2/file/material/bind/
 *FileMaterialDetailV2Api* | **OpenApi2FileMaterialDetailGet** | **Get** /open_api/2/file/material/detail/
@@ -533,9 +534,6 @@ Class | Method | HTTP request
 *FileRebateCommonDownloadCreateTaskV2Api* | **OpenApi2FileRebateCommonDownloadCreateTaskPost** | **Post** /open_api/2/file/rebate/common_download/create_task/
 *FileRebateCommonDownloadDownloadFileV2Api* | **OpenApi2FileRebateCommonDownloadDownloadFileGet** | **Get** /open_api/2/file/rebate/common_download/download_file/
 *FileRebateCommonDownloadGetDownloadTaskListV2Api* | **OpenApi2FileRebateCommonDownloadGetDownloadTaskListGet** | **Get** /open_api/2/file/rebate/common_download/get_download_task_list/
-*FileRebateMaterialDownloadCreateTaskV2Api* | **OpenApi2FileRebateMaterialDownloadCreateTaskPost** | **Post** /open_api/2/file/rebate/material_download/create_task/
-*FileRebateMaterialDownloadDownloadFileV2Api* | **OpenApi2FileRebateMaterialDownloadDownloadFileGet** | **Get** /open_api/2/file/rebate/material_download/download_file/
-*FileRebateMaterialDownloadGetDownloadTaskListV2Api* | **OpenApi2FileRebateMaterialDownloadGetDownloadTaskListGet** | **Get** /open_api/2/file/rebate/material_download/get_download_task_list/
 *FileRebateRebateDownloadCreateTaskV2Api* | **OpenApi2FileRebateRebateDownloadCreateTaskPost** | **Post** /open_api/2/file/rebate/rebate_download/create_task/
 *FileUploadTaskCreateV2Api* | **OpenApi2FileUploadTaskCreatePost** | **Post** /open_api/2/file/upload_task/create/
 *FileVideoAdGetV2Api* | **OpenApi2FileVideoAdGetGet** | **Get** /open_api/2/file/video/ad/get/
@@ -576,6 +574,10 @@ Class | Method | HTTP request
 *LocalAdvertiserBudgetGetV30Api* | **OpenApiV30LocalAdvertiserBudgetGetGet** | **Get** /open_api/v3.0/local/advertiser/budget/get/
 *LocalAudiencePackageGetV30Api* | **OpenApiV30LocalAudiencePackageGetGet** | **Get** /open_api/v3.0/local/audience_package/get/
 *LocalAudiencePackageUpdateV30Api* | **OpenApiV30LocalAudiencePackageUpdatePost** | **Post** /open_api/v3.0/local/audience_package/update/
+*LocalAwemeAuthCancelUpdateV30Api* | **OpenApiV30LocalAwemeAuthCancelUpdatePost** | **Post** /open_api/v3.0/local/aweme_auth_cancel/update/
+*LocalAwemeAuthCreateV30Api* | **OpenApiV30LocalAwemeAuthCreatePost** | **Post** /open_api/v3.0/local/aweme_auth/create/
+*LocalAwemeAuthListV30Api* | **OpenApiV30LocalAwemeAuthListGet** | **Get** /open_api/v3.0/local/aweme_auth/list/
+*LocalAwemeAuthRenewCreateV30Api* | **OpenApiV30LocalAwemeAuthRenewCreatePost** | **Post** /open_api/v3.0/local/aweme_auth_renew/create/
 *LocalAwemeAuthorizedGetV30Api* | **OpenApiV30LocalAwemeAuthorizedGetGet** | **Get** /open_api/v3.0/local/aweme/authorized/get/
 *LocalBudgetUpdateV30Api* | **OpenApiV30LocalBudgetUpdatePost** | **Post** /open_api/v3.0/local/budget/update/
 *LocalChargeListV30Api* | **OpenApiV30LocalChargeListGet** | **Get** /open_api/v3.0/local/charge/list/
@@ -1219,6 +1221,11 @@ Class | Method | HTTP request
 *ToolsEbpMicroGameLinkListV30Api* | **OpenApiV30ToolsEbpMicroGameLinkListGet** | **Get** /open_api/v3.0/tools/ebp/micro_game/link/list/
 *ToolsEbpMicroGameListV30Api* | **OpenApiV30ToolsEbpMicroGameListGet** | **Get** /open_api/v3.0/tools/ebp/micro_game/list/
 *ToolsEbpMicroGameUpdateV30Api* | **OpenApiV30ToolsEbpMicroGameUpdatePost** | **Post** /open_api/v3.0/tools/ebp/micro_game/update/
+*ToolsEbpStarTaskGetV30Api* | **OpenApiV30ToolsEbpStarTaskGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/get/
+*ToolsEbpStarTaskListV30Api* | **OpenApiV30ToolsEbpStarTaskListGet** | **Get** /open_api/v3.0/tools/ebp/star_task/list/
+*ToolsEbpStarTaskTaskAuthorGetV30Api* | **OpenApiV30ToolsEbpStarTaskTaskAuthorGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/task_author/get/
+*ToolsEbpStarTaskTaskAuthorVedioGetV30Api* | **OpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/task_author_vedio/get/
+*ToolsEbpStarTaskTaskVideoDataGetV30Api* | **OpenApiV30ToolsEbpStarTaskTaskVideoDataGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/task_video_data/get/
 *ToolsEbpSubjectListV30Api* | **OpenApiV30ToolsEbpSubjectListGet** | **Get** /open_api/v3.0/tools/ebp/subject/list/
 *ToolsEbpVideoAttributesListV30Api* | **OpenApiV30ToolsEbpVideoAttributesListGet** | **Get** /open_api/v3.0/tools/ebp/video_attributes/list/
 *ToolsEbpVideoDeleteV30Api* | **OpenApiV30ToolsEbpVideoDeletePost** | **Post** /open_api/v3.0/tools/ebp/video/delete/

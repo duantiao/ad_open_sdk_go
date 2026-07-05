@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.89
+// APIClient manages communication with the Oceanengine Open Api API v1.1.91
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -679,6 +679,8 @@ type APIClient struct {
 
 	FileImageGetV2Api *FileImageGetV2ApiService
 
+	FileIncentivePolicyBaseInfoGetV2Api *FileIncentivePolicyBaseInfoGetV2ApiService
+
 	FileMaterialAttributesListV2Api *FileMaterialAttributesListV2ApiService
 
 	FileMaterialBindV2Api *FileMaterialBindV2ApiService
@@ -704,12 +706,6 @@ type APIClient struct {
 	FileRebateCommonDownloadDownloadFileV2Api *FileRebateCommonDownloadDownloadFileV2ApiService
 
 	FileRebateCommonDownloadGetDownloadTaskListV2Api *FileRebateCommonDownloadGetDownloadTaskListV2ApiService
-
-	FileRebateMaterialDownloadCreateTaskV2Api *FileRebateMaterialDownloadCreateTaskV2ApiService
-
-	FileRebateMaterialDownloadDownloadFileV2Api *FileRebateMaterialDownloadDownloadFileV2ApiService
-
-	FileRebateMaterialDownloadGetDownloadTaskListV2Api *FileRebateMaterialDownloadGetDownloadTaskListV2ApiService
 
 	FileRebateRebateDownloadCreateTaskV2Api *FileRebateRebateDownloadCreateTaskV2ApiService
 
@@ -790,6 +786,14 @@ type APIClient struct {
 	LocalAudiencePackageGetV30Api *LocalAudiencePackageGetV30ApiService
 
 	LocalAudiencePackageUpdateV30Api *LocalAudiencePackageUpdateV30ApiService
+
+	LocalAwemeAuthCancelUpdateV30Api *LocalAwemeAuthCancelUpdateV30ApiService
+
+	LocalAwemeAuthCreateV30Api *LocalAwemeAuthCreateV30ApiService
+
+	LocalAwemeAuthListV30Api *LocalAwemeAuthListV30ApiService
+
+	LocalAwemeAuthRenewCreateV30Api *LocalAwemeAuthRenewCreateV30ApiService
 
 	LocalAwemeAuthorizedGetV30Api *LocalAwemeAuthorizedGetV30ApiService
 
@@ -2077,6 +2081,16 @@ type APIClient struct {
 
 	ToolsEbpMicroGameUpdateV30Api *ToolsEbpMicroGameUpdateV30ApiService
 
+	ToolsEbpStarTaskGetV30Api *ToolsEbpStarTaskGetV30ApiService
+
+	ToolsEbpStarTaskListV30Api *ToolsEbpStarTaskListV30ApiService
+
+	ToolsEbpStarTaskTaskAuthorGetV30Api *ToolsEbpStarTaskTaskAuthorGetV30ApiService
+
+	ToolsEbpStarTaskTaskAuthorVedioGetV30Api *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService
+
+	ToolsEbpStarTaskTaskVideoDataGetV30Api *ToolsEbpStarTaskTaskVideoDataGetV30ApiService
+
 	ToolsEbpSubjectListV30Api *ToolsEbpSubjectListV30ApiService
 
 	ToolsEbpVideoAttributesListV30Api *ToolsEbpVideoAttributesListV30ApiService
@@ -2734,6 +2748,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileImageAdvertiserV2Api = (*FileImageAdvertiserV2ApiService)(&c.common)
 	c.FileImageDeleteV30Api = (*FileImageDeleteV30ApiService)(&c.common)
 	c.FileImageGetV2Api = (*FileImageGetV2ApiService)(&c.common)
+	c.FileIncentivePolicyBaseInfoGetV2Api = (*FileIncentivePolicyBaseInfoGetV2ApiService)(&c.common)
 	c.FileMaterialAttributesListV2Api = (*FileMaterialAttributesListV2ApiService)(&c.common)
 	c.FileMaterialBindV2Api = (*FileMaterialBindV2ApiService)(&c.common)
 	c.FileMaterialDetailV2Api = (*FileMaterialDetailV2ApiService)(&c.common)
@@ -2747,9 +2762,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileRebateCommonDownloadCreateTaskV2Api = (*FileRebateCommonDownloadCreateTaskV2ApiService)(&c.common)
 	c.FileRebateCommonDownloadDownloadFileV2Api = (*FileRebateCommonDownloadDownloadFileV2ApiService)(&c.common)
 	c.FileRebateCommonDownloadGetDownloadTaskListV2Api = (*FileRebateCommonDownloadGetDownloadTaskListV2ApiService)(&c.common)
-	c.FileRebateMaterialDownloadCreateTaskV2Api = (*FileRebateMaterialDownloadCreateTaskV2ApiService)(&c.common)
-	c.FileRebateMaterialDownloadDownloadFileV2Api = (*FileRebateMaterialDownloadDownloadFileV2ApiService)(&c.common)
-	c.FileRebateMaterialDownloadGetDownloadTaskListV2Api = (*FileRebateMaterialDownloadGetDownloadTaskListV2ApiService)(&c.common)
 	c.FileRebateRebateDownloadCreateTaskV2Api = (*FileRebateRebateDownloadCreateTaskV2ApiService)(&c.common)
 	c.FileUploadTaskCreateV2Api = (*FileUploadTaskCreateV2ApiService)(&c.common)
 	c.FileVideoAdGetV2Api = (*FileVideoAdGetV2ApiService)(&c.common)
@@ -2790,6 +2802,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalAdvertiserBudgetGetV30Api = (*LocalAdvertiserBudgetGetV30ApiService)(&c.common)
 	c.LocalAudiencePackageGetV30Api = (*LocalAudiencePackageGetV30ApiService)(&c.common)
 	c.LocalAudiencePackageUpdateV30Api = (*LocalAudiencePackageUpdateV30ApiService)(&c.common)
+	c.LocalAwemeAuthCancelUpdateV30Api = (*LocalAwemeAuthCancelUpdateV30ApiService)(&c.common)
+	c.LocalAwemeAuthCreateV30Api = (*LocalAwemeAuthCreateV30ApiService)(&c.common)
+	c.LocalAwemeAuthListV30Api = (*LocalAwemeAuthListV30ApiService)(&c.common)
+	c.LocalAwemeAuthRenewCreateV30Api = (*LocalAwemeAuthRenewCreateV30ApiService)(&c.common)
 	c.LocalAwemeAuthorizedGetV30Api = (*LocalAwemeAuthorizedGetV30ApiService)(&c.common)
 	c.LocalBudgetUpdateV30Api = (*LocalBudgetUpdateV30ApiService)(&c.common)
 	c.LocalChargeListV30Api = (*LocalChargeListV30ApiService)(&c.common)
@@ -3433,6 +3449,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsEbpMicroGameLinkListV30Api = (*ToolsEbpMicroGameLinkListV30ApiService)(&c.common)
 	c.ToolsEbpMicroGameListV30Api = (*ToolsEbpMicroGameListV30ApiService)(&c.common)
 	c.ToolsEbpMicroGameUpdateV30Api = (*ToolsEbpMicroGameUpdateV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskGetV30Api = (*ToolsEbpStarTaskGetV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskListV30Api = (*ToolsEbpStarTaskListV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskTaskAuthorGetV30Api = (*ToolsEbpStarTaskTaskAuthorGetV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskTaskAuthorVedioGetV30Api = (*ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskTaskVideoDataGetV30Api = (*ToolsEbpStarTaskTaskVideoDataGetV30ApiService)(&c.common)
 	c.ToolsEbpSubjectListV30Api = (*ToolsEbpSubjectListV30ApiService)(&c.common)
 	c.ToolsEbpVideoAttributesListV30Api = (*ToolsEbpVideoAttributesListV30ApiService)(&c.common)
 	c.ToolsEbpVideoDeleteV30Api = (*ToolsEbpVideoDeleteV30ApiService)(&c.common)

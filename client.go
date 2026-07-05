@@ -1,5 +1,5 @@
 /*
-API version: 1.1.89
+API version: 1.1.91
 */
 package ad_open_sdk_go
 
@@ -1283,6 +1283,10 @@ func (c *Client) FileImageGetV2Api() *api.FileImageGetV2ApiService {
 	return c.ApiClient.FileImageGetV2Api
 }
 
+func (c *Client) FileIncentivePolicyBaseInfoGetV2Api() *api.FileIncentivePolicyBaseInfoGetV2ApiService {
+	return c.ApiClient.FileIncentivePolicyBaseInfoGetV2Api
+}
+
 func (c *Client) FileMaterialAttributesListV2Api() *api.FileMaterialAttributesListV2ApiService {
 	return c.ApiClient.FileMaterialAttributesListV2Api
 }
@@ -1333,18 +1337,6 @@ func (c *Client) FileRebateCommonDownloadDownloadFileV2Api() *api.FileRebateComm
 
 func (c *Client) FileRebateCommonDownloadGetDownloadTaskListV2Api() *api.FileRebateCommonDownloadGetDownloadTaskListV2ApiService {
 	return c.ApiClient.FileRebateCommonDownloadGetDownloadTaskListV2Api
-}
-
-func (c *Client) FileRebateMaterialDownloadCreateTaskV2Api() *api.FileRebateMaterialDownloadCreateTaskV2ApiService {
-	return c.ApiClient.FileRebateMaterialDownloadCreateTaskV2Api
-}
-
-func (c *Client) FileRebateMaterialDownloadDownloadFileV2Api() *api.FileRebateMaterialDownloadDownloadFileV2ApiService {
-	return c.ApiClient.FileRebateMaterialDownloadDownloadFileV2Api
-}
-
-func (c *Client) FileRebateMaterialDownloadGetDownloadTaskListV2Api() *api.FileRebateMaterialDownloadGetDownloadTaskListV2ApiService {
-	return c.ApiClient.FileRebateMaterialDownloadGetDownloadTaskListV2Api
 }
 
 func (c *Client) FileRebateRebateDownloadCreateTaskV2Api() *api.FileRebateRebateDownloadCreateTaskV2ApiService {
@@ -1505,6 +1497,22 @@ func (c *Client) LocalAudiencePackageGetV30Api() *api.LocalAudiencePackageGetV30
 
 func (c *Client) LocalAudiencePackageUpdateV30Api() *api.LocalAudiencePackageUpdateV30ApiService {
 	return c.ApiClient.LocalAudiencePackageUpdateV30Api
+}
+
+func (c *Client) LocalAwemeAuthCancelUpdateV30Api() *api.LocalAwemeAuthCancelUpdateV30ApiService {
+	return c.ApiClient.LocalAwemeAuthCancelUpdateV30Api
+}
+
+func (c *Client) LocalAwemeAuthCreateV30Api() *api.LocalAwemeAuthCreateV30ApiService {
+	return c.ApiClient.LocalAwemeAuthCreateV30Api
+}
+
+func (c *Client) LocalAwemeAuthListV30Api() *api.LocalAwemeAuthListV30ApiService {
+	return c.ApiClient.LocalAwemeAuthListV30Api
+}
+
+func (c *Client) LocalAwemeAuthRenewCreateV30Api() *api.LocalAwemeAuthRenewCreateV30ApiService {
+	return c.ApiClient.LocalAwemeAuthRenewCreateV30Api
 }
 
 func (c *Client) LocalAwemeAuthorizedGetV30Api() *api.LocalAwemeAuthorizedGetV30ApiService {
@@ -4077,6 +4085,26 @@ func (c *Client) ToolsEbpMicroGameListV30Api() *api.ToolsEbpMicroGameListV30ApiS
 
 func (c *Client) ToolsEbpMicroGameUpdateV30Api() *api.ToolsEbpMicroGameUpdateV30ApiService {
 	return c.ApiClient.ToolsEbpMicroGameUpdateV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskGetV30Api() *api.ToolsEbpStarTaskGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskGetV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskListV30Api() *api.ToolsEbpStarTaskListV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskListV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskTaskAuthorGetV30Api() *api.ToolsEbpStarTaskTaskAuthorGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskTaskAuthorGetV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskTaskAuthorVedioGetV30Api() *api.ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskTaskAuthorVedioGetV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskTaskVideoDataGetV30Api() *api.ToolsEbpStarTaskTaskVideoDataGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskTaskVideoDataGetV30Api
 }
 
 func (c *Client) ToolsEbpSubjectListV30Api() *api.ToolsEbpSubjectListV30ApiService {
