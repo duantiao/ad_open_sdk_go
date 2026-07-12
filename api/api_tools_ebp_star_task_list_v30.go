@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpStarTaskListV30ApiService ToolsEbpStarTaskListV30Api service
@@ -28,11 +29,11 @@ type ApiOpenApiV30ToolsEbpStarTaskListGetRequest struct {
 	accountId      *int64
 	startDate      *string
 	endDate        *string
-	accountType    *ToolsEbpStarTaskListV30AccountType
-	starTaskSource *ToolsEbpStarTaskListV30StarTaskSource
-	filtering      *ToolsEbpStarTaskListV30Filtering
+	accountType    *models.ToolsEbpStarTaskListV30AccountType
+	starTaskSource *models.ToolsEbpStarTaskListV30StarTaskSource
+	filtering      *models.ToolsEbpStarTaskListV30Filtering
 	orderField     *string
-	orderType      *ToolsEbpStarTaskListV30OrderType
+	orderType      *models.ToolsEbpStarTaskListV30OrderType
 	page           *int32
 	pageSize       *int32
 }
@@ -54,19 +55,19 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) EndDate(endDate string) *A
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) AccountType(accountType ToolsEbpStarTaskListV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) AccountType(accountType models.ToolsEbpStarTaskListV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
 // 创建来源，允许值： MY_CREATIONS 归属组织管理 SHARING 组织被共享
-func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) StarTaskSource(starTaskSource ToolsEbpStarTaskListV30StarTaskSource) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) StarTaskSource(starTaskSource models.ToolsEbpStarTaskListV30StarTaskSource) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
 	r.starTaskSource = &starTaskSource
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) Filtering(filtering ToolsEbpStarTaskListV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) Filtering(filtering models.ToolsEbpStarTaskListV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -78,7 +79,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) OrderField(orderField stri
 }
 
 // 排序方式
-func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) OrderType(orderType ToolsEbpStarTaskListV30OrderType) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) OrderType(orderType models.ToolsEbpStarTaskListV30OrderType) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -94,7 +95,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) PageSize(pageSize int32) *
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) Execute() (*ToolsEbpStarTaskListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) Execute() (*models.ToolsEbpStarTaskListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -128,12 +129,12 @@ func (a *ToolsEbpStarTaskListV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsEbpStarTaskListV30Response
-func (a *ToolsEbpStarTaskListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) (*ToolsEbpStarTaskListV30Response, *http.Response, error) {
+func (a *ToolsEbpStarTaskListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) (*models.ToolsEbpStarTaskListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpStarTaskListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpStarTaskListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -143,7 +144,7 @@ func (a *ToolsEbpStarTaskListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpS
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/star_task/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {
