@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpStarTaskTaskAuthorGetV30ApiService ToolsEbpStarTaskTaskAuthorGetV30Api service
@@ -28,10 +29,10 @@ type ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest struct {
 	enterpriseOrganizationId *int64
 	starTaskId               *int64
 	accountId                *int64
-	accountType              *ToolsEbpStarTaskTaskAuthorGetV30AccountType
+	accountType              *models.ToolsEbpStarTaskTaskAuthorGetV30AccountType
 	page                     *int64
 	pageSize                 *int64
-	filtering                *ToolsEbpStarTaskTaskAuthorGetV30Filtering
+	filtering                *models.ToolsEbpStarTaskTaskAuthorGetV30Filtering
 }
 
 func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) EnterpriseOrganizationId(enterpriseOrganizationId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
@@ -49,7 +50,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) AccountId(account
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskAuthorGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) AccountType(accountType models.ToolsEbpStarTaskTaskAuthorGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -65,12 +66,12 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) PageSize(pageSize
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) Filtering(filtering ToolsEbpStarTaskTaskAuthorGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) Filtering(filtering models.ToolsEbpStarTaskTaskAuthorGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) Execute() (*ToolsEbpStarTaskTaskAuthorGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) Execute() (*models.ToolsEbpStarTaskTaskAuthorGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -104,12 +105,12 @@ func (a *ToolsEbpStarTaskTaskAuthorGetV30ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ToolsEbpStarTaskTaskAuthorGetV30Response
-func (a *ToolsEbpStarTaskTaskAuthorGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) (*ToolsEbpStarTaskTaskAuthorGetV30Response, *http.Response, error) {
+func (a *ToolsEbpStarTaskTaskAuthorGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) (*models.ToolsEbpStarTaskTaskAuthorGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpStarTaskTaskAuthorGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpStarTaskTaskAuthorGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -119,7 +120,7 @@ func (a *ToolsEbpStarTaskTaskAuthorGetV30ApiService) getExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/star_task/task_author/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.enterpriseOrganizationId == nil {
