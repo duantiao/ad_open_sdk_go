@@ -16,6 +16,8 @@ type CarouselListV2ResponseDataCarouselsInner struct {
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
+	Description *string `json:"description,omitempty"`
+	//
 	FileName *string `json:"file_name,omitempty"`
 	//
 	Id *int64 `json:"id,omitempty"`

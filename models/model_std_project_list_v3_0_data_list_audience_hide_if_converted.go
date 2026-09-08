@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StdProjectListV30DataListAudienceHideIfConverted
+// StdProjectListV30DataListAudienceHideIfConverted 过滤已转化类型
 type StdProjectListV30DataListAudienceHideIfConverted string
 
 // List of std_project_list_v3.0_data_list_audience_hide_if_converted

@@ -23,10 +23,11 @@ import (
 )
 
 type ApiOpenApi2CarouselListGetRequestExample struct {
-	AdvertiserId int64                   `json:"advertiser_id"`
-	Filtering    CarouselListV2Filtering `json:"filtering,omitempty"`
-	PageSize     int64                   `json:"page_size,omitempty"`
-	Page         int64                   `json:"page,omitempty"`
+	AdvertiserId   int64                   `json:"advertiser_id"`
+	Filtering      CarouselListV2Filtering `json:"filtering,omitempty"`
+	PageSize       int64                   `json:"page_size,omitempty"`
+	Page           int64                   `json:"page,omitempty"`
+	HasDescription bool                    `json:"has_description,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/carousel/list/ Get
@@ -48,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.CarouselListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).PageSize(request.PageSize).Page(request.Page).
+		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).PageSize(request.PageSize).Page(request.Page).HasDescription(request.HasDescription).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

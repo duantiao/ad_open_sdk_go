@@ -185,6 +185,7 @@ const (
 	AD_CONVERT_TYPE_WECHAT_REGISTER_StdProjectCreateV30ExternalAction             StdProjectCreateV30ExternalAction = "AD_CONVERT_TYPE_WECHAT_REGISTER"
 	AD_CONVERT_TYPE_WECHAT_WECOM_ADD_StdProjectCreateV30ExternalAction            StdProjectCreateV30ExternalAction = "AD_CONVERT_TYPE_WECHAT_WECOM_ADD"
 	AD_CONVERT_TYPE_XPATH_StdProjectCreateV30ExternalAction                       StdProjectCreateV30ExternalAction = "AD_CONVERT_TYPE_XPATH"
+	AD_FORM_SUBMIT_StdProjectCreateV30ExternalAction                              StdProjectCreateV30ExternalAction = "AD_FORM_SUBMIT"
 )
 
 // Ptr returns reference to std_project_create_v3.0_external_action value

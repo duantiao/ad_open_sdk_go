@@ -14,6 +14,7 @@ package models
 type SharedWalletWalletInfoGetV30ResponseDataWalletInfoInner struct {
 	CommonWalletInfo *SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerCommonWalletInfo `json:"common_wallet_info,omitempty"`
 	MainWalletInfo   *SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerMainWalletInfo   `json:"main_wallet_info,omitempty"`
+	ManageWalletInfo *SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerManageWalletInfo `json:"manage_wallet_info,omitempty"`
 	SubWalletInfo    *SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfo    `json:"sub_wallet_info,omitempty"`
 	// 共享钱包ID
 	WalletId   *int64                                                `json:"wallet_id,omitempty"`

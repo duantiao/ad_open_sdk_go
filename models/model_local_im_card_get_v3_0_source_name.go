@@ -15,6 +15,7 @@ type LocalImCardGetV30SourceName string
 
 // List of local_im_card_get_v3.0_source_name
 const (
+	Enum_53_KF_LocalImCardGetV30SourceName      LocalImCardGetV30SourceName = "53KF"
 	Enum_AI即用_LocalImCardGetV30SourceName       LocalImCardGetV30SourceName = "AI即用"
 	Enum_云雀客服_LocalImCardGetV30SourceName       LocalImCardGetV30SourceName = "云雀客服"
 	Enum_优居AI智慧客服系统_LocalImCardGetV30SourceName LocalImCardGetV30SourceName = "优居AI智慧客服系统"
@@ -22,6 +23,10 @@ const (
 	Enum_北京易聊智能客服_LocalImCardGetV30SourceName   LocalImCardGetV30SourceName = "北京易聊智能客服"
 	Enum_快商通在线客服_LocalImCardGetV30SourceName    LocalImCardGetV30SourceName = "快商通在线客服"
 	Enum_智能云客_LocalImCardGetV30SourceName       LocalImCardGetV30SourceName = "智能云客"
+	Enum_来鼓_LocalImCardGetV30SourceName         LocalImCardGetV30SourceName = "来鼓"
+	Enum_杭州百聆科技有限公司_LocalImCardGetV30SourceName LocalImCardGetV30SourceName = "杭州百聆科技有限公司"
+	Enum_百聆_LocalImCardGetV30SourceName         LocalImCardGetV30SourceName = "百聆"
+	Enum_美洽客服_LocalImCardGetV30SourceName       LocalImCardGetV30SourceName = "美洽客服"
 	Enum_螳螂CRM_LocalImCardGetV30SourceName      LocalImCardGetV30SourceName = "螳螂CRM"
 )
 

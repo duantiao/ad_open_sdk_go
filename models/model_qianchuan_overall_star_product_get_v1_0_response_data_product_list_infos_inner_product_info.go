@@ -12,8 +12,7 @@ package models
 
 // QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfo
 type QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfo struct {
-	CategoryDetail *QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfoCategoryDetail `json:"category_detail,omitempty"`
-	Channel        *QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfoChannel        `json:"channel,omitempty"`
+	Channel *QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfoChannel `json:"channel,omitempty"`
 	// 商品id
 	Id    int64                                                                              `json:"id"`
 	Image QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfoImage `json:"image"`

@@ -27,6 +27,9 @@ type StdProjectUpdateV30RequestAudience struct {
 	AndroidOsv *StdProjectUpdateV30AudienceAndroidOsv `json:"android_osv,omitempty"`
 	//
 	AutoExtendTargets []*StdProjectUpdateV30AudienceAutoExtendTargets `json:"auto_extend_targets,omitempty"`
+	// 网络运营商
+	Carrier               []*StdProjectUpdateV30AudienceCarrier             `json:"carrier,omitempty"`
+	CarrierRegionOptimize *StdProjectUpdateV30AudienceCarrierRegionOptimize `json:"carrier_region_optimize,omitempty"`
 	//
 	City                  []int64                                           `json:"city,omitempty"`
 	ConvertedTimeDuration *StdProjectUpdateV30AudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`

@@ -16,4 +16,6 @@ type StdProjectCreateV30RequestProjectMaterialsTitleMaterialListInner struct {
 	DpaWordList []int64 `json:"dpa_word_list,omitempty"`
 	//
 	Title *string `json:"title,omitempty"`
+	// 动态词包
+	WordList []int64 `json:"word_list,omitempty"`
 }

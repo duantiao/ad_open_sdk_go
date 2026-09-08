@@ -16,6 +16,8 @@ type PromotionListV30ResponseDataListInnerPromotionMaterialsCarouselMaterialList
 	AudioId *string `json:"audio_id,omitempty"`
 	//
 	CreateTime *string `json:"create_time,omitempty"`
+	// 图文作品描述
+	Description *string `json:"description,omitempty"`
 	//
 	ImageId []string `json:"image_id,omitempty"`
 	//

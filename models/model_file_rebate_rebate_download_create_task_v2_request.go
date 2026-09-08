@@ -17,7 +17,8 @@ type FileRebateRebateDownloadCreateTaskV2Request struct {
 	// 月/季度，可以传多个，以逗号分隔，如传入   1,2,3
 	MonthQuarter *string `json:"month_quarter,omitempty"`
 	// 对于激励政策，必须填写policy_id
-	PolicyId *int64 `json:"policy_id,omitempty"`
+	PolicyId        *int64                                               `json:"policy_id,omitempty"`
+	PricingCategory *FileRebateRebateDownloadCreateTaskV2PricingCategory `json:"pricing_category,omitempty"`
 	// 查询类型,目前包括 month_punish_details:下载违规明细月度 quarter_punish_details:下载违规明细季度  month_rebate_details:下载核算明细月度 quarter_rebate_details:下载核算明细季度 month_performance_details:下载业绩明细月度 quarter_performance_details:下载业绩明细季度, normal_calc_details:激励常规结算, special_calc_details: 激励特殊结算, material_details:激励素材考核
 	QueryType string `json:"query_type"`
 	// 等待最新数据参数，默认等待

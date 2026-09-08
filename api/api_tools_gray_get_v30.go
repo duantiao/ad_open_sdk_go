@@ -28,6 +28,7 @@ type ApiOpenApiV30ToolsGrayGetGetRequest struct {
 	advertiserId *int64
 	grayKeys     *[]string
 	version      *ToolsGrayGetV30Version
+	bpId         *int64
 }
 
 func (r *ApiOpenApiV30ToolsGrayGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsGrayGetGetRequest {
@@ -42,6 +43,11 @@ func (r *ApiOpenApiV30ToolsGrayGetGetRequest) GrayKeys(grayKeys []string) *ApiOp
 
 func (r *ApiOpenApiV30ToolsGrayGetGetRequest) Version(version ToolsGrayGetV30Version) *ApiOpenApiV30ToolsGrayGetGetRequest {
 	r.version = &version
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsGrayGetGetRequest) BpId(bpId int64) *ApiOpenApiV30ToolsGrayGetGetRequest {
+	r.bpId = &bpId
 	return r
 }
 
@@ -114,6 +120,9 @@ func (a *ToolsGrayGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsGrayGetGetRe
 	parameterAddToHeaderOrQuery(localVarQueryParams, "gray_keys", r.grayKeys)
 	if r.version != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "version", r.version)
+	}
+	if r.bpId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "bp_id", r.bpId)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

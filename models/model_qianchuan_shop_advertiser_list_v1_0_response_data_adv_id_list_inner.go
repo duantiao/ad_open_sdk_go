@@ -15,5 +15,7 @@ type QianchuanShopAdvertiserListV10ResponseDataAdvIdListInner struct {
 	//
 	AdvId *int64 `json:"adv_id,omitempty"`
 	//
+	AdvName *string `json:"adv_name,omitempty"`
+	//
 	ExtraPermission []string `json:"extra_permission,omitempty"`
 }

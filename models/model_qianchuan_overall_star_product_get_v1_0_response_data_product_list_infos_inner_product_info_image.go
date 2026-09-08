@@ -15,7 +15,5 @@ type QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductIn
 	//
 	ImageMode *int64 `json:"image_mode,omitempty"`
 	//
-	Uri *string `json:"uri,omitempty"`
-	//
 	UrlList []string `json:"url_list,omitempty"`
 }

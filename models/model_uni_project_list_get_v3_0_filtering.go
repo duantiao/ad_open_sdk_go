@@ -15,7 +15,15 @@ type UniProjectListGetV30Filtering struct {
 	//
 	Name *string `json:"name,omitempty"`
 	//
-	ProjectId    []int64                                    `json:"project_id,omitempty"`
-	StatusFirst  *UniProjectListGetV30FilteringStatusFirst  `json:"status_first,omitempty"`
-	StatusSecond *UniProjectListGetV30FilteringStatusSecond `json:"status_second,omitempty"`
+	ProjectCreateEndTime *string `json:"project_create_end_time,omitempty"`
+	//
+	ProjectCreateStartTime *string `json:"project_create_start_time,omitempty"`
+	//
+	ProjectId []int64 `json:"project_id,omitempty"`
+	//
+	ProjectModifyEndTime *string `json:"project_modify_end_time,omitempty"`
+	//
+	ProjectModifyStartTime *string                                    `json:"project_modify_start_time,omitempty"`
+	StatusFirst            *UniProjectListGetV30FilteringStatusFirst  `json:"status_first,omitempty"`
+	StatusSecond           *UniProjectListGetV30FilteringStatusSecond `json:"status_second,omitempty"`
 }

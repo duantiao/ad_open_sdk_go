@@ -22,6 +22,12 @@ const (
 	ONE_KEY_BOOST_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic ReportCustomAsyncTaskGetV30DataListDataTopic = "ONE_KEY_BOOST_DATA"
 	PRODUCT_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic       ReportCustomAsyncTaskGetV30DataListDataTopic = "PRODUCT_DATA"
 	QUERY_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic         ReportCustomAsyncTaskGetV30DataListDataTopic = "QUERY_DATA"
+	STD_BASIC_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic     ReportCustomAsyncTaskGetV30DataListDataTopic = "STD_BASIC_DATA"
+	STD_BIDWORD_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic   ReportCustomAsyncTaskGetV30DataListDataTopic = "STD_BIDWORD_DATA"
+	STD_DMP_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic       ReportCustomAsyncTaskGetV30DataListDataTopic = "STD_DMP_DATA"
+	STD_MATERIAL_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic  ReportCustomAsyncTaskGetV30DataListDataTopic = "STD_MATERIAL_DATA"
+	STD_PRODUCT_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic   ReportCustomAsyncTaskGetV30DataListDataTopic = "STD_PRODUCT_DATA"
+	STD_QUERY_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic     ReportCustomAsyncTaskGetV30DataListDataTopic = "STD_QUERY_DATA"
 )
 
 // Ptr returns reference to report_custom_async_task_get_v3.0_data_list_data_topic value

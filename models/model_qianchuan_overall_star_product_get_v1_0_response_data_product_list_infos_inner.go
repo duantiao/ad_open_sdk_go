@@ -12,7 +12,5 @@ package models
 
 // QianchuanOverallStarProductGetV10ResponseDataProductListInfosInner struct for QianchuanOverallStarProductGetV10ResponseDataProductListInfosInner
 type QianchuanOverallStarProductGetV10ResponseDataProductListInfosInner struct {
-	//
-	GrayOutCheckResults []*QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerGrayOutCheckResultsInner `json:"gray_out_check_results,omitempty"`
-	ProductInfo         *QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfo                `json:"product_info,omitempty"`
+	ProductInfo *QianchuanOverallStarProductGetV10ResponseDataProductListInfosInnerProductInfo `json:"product_info,omitempty"`
 }

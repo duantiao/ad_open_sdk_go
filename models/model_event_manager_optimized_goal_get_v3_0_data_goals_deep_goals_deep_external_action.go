@@ -116,6 +116,7 @@ const (
 	AD_CONVERT_TYPE_LTV_ROI_SEVEN_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction               EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_SEVEN"
 	AD_CONVERT_TYPE_LTV_ROI_THIRTY_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction              EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_THIRTY"
 	AD_CONVERT_TYPE_LT_ROI_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction                      EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LT_ROI"
+	AD_CONVERT_TYPE_M2_SURRENDER_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction                EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_M2SURRENDER"
 	AD_CONVERT_TYPE_MAP_SEARCH_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction                  EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_MAP_SEARCH"
 	AD_CONVERT_TYPE_MESSAGE_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction                     EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE"
 	AD_CONVERT_TYPE_MESSAGE_ACTION_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction              EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_ACTION"

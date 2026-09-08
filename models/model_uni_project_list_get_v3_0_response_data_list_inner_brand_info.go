@@ -21,6 +21,8 @@ type UniProjectListGetV30ResponseDataListInnerBrandInfo struct {
 	//
 	EcomBrandId *int64 `json:"ecom_brand_id,omitempty"`
 	//
+	R3BrandMergeOc *int64 `json:"r3_brand_merge_oc,omitempty"`
+	//
 	SubBrandNameIds []string `json:"sub_brand_name_ids,omitempty"`
 	//
 	SubBrandNames []string `json:"sub_brand_names,omitempty"`

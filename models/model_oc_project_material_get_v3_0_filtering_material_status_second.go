@@ -16,6 +16,7 @@ type OcProjectMaterialGetV30FilteringMaterialStatusSecond string
 // List of oc_project_material_get_v3.0_filtering_material_status_second
 const (
 	DOUYIN_ITEM_NOT_AVAILABLE_FOR_DELIVERY_OcProjectMaterialGetV30FilteringMaterialStatusSecond OcProjectMaterialGetV30FilteringMaterialStatusSecond = "DOUYIN_ITEM_NOT_AVAILABLE_FOR_DELIVERY"
+	ECOSYSTEM_RISK_FAILED_OcProjectMaterialGetV30FilteringMaterialStatusSecond                  OcProjectMaterialGetV30FilteringMaterialStatusSecond = "ECOSYSTEM_RISK_FAILED"
 	GUIDE_VIDEO_NOT_EXIST_OcProjectMaterialGetV30FilteringMaterialStatusSecond                  OcProjectMaterialGetV30FilteringMaterialStatusSecond = "GUIDE_VIDEO_NOT_EXIST"
 	MATERIAL_STATUS_AUDIT_OcProjectMaterialGetV30FilteringMaterialStatusSecond                  OcProjectMaterialGetV30FilteringMaterialStatusSecond = "MATERIAL_STATUS_AUDIT"
 	MATERIAL_STATUS_DISABLE_OcProjectMaterialGetV30FilteringMaterialStatusSecond                OcProjectMaterialGetV30FilteringMaterialStatusSecond = "MATERIAL_STATUS_DISABLE"

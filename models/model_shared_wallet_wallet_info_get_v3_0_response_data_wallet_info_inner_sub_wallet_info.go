@@ -14,7 +14,12 @@ package models
 type SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfo struct {
 	// 钱包下的 adv 数量
 	AdvCnt *int64 `json:"adv_cnt,omitempty"`
+	// 代理给客户授权的公司id集合、或者客户自身钱包所属的公司id
+	CompanyIds []int64 `json:"company_ids,omitempty"`
+	// 代理给客户授权的ebp_id、或者客户自身钱包所属的ebp_id
+	EbpId *int64 `json:"ebp_id,omitempty"`
 	// 所属大钱包ID
 	MainWalletId   *int64                                                                              `json:"main_wallet_id,omitempty"`
+	OwnershipType  *SharedWalletWalletInfoGetV30DataWalletInfoSubWalletInfoOwnershipType               `json:"ownership_type,omitempty"`
 	SubSharedRange *SharedWalletWalletInfoGetV30ResponseDataWalletInfoInnerSubWalletInfoSubSharedRange `json:"sub_shared_range,omitempty"`
 }

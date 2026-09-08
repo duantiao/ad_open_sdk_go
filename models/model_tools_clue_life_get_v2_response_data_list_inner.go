@@ -54,7 +54,9 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	// 用户填写区县
 	CountyName *string `json:"county_name,omitempty"`
 	// 线索创建时间，如：2020-04-29 00:00:00
-	CreateTimeDetail   *string                                       `json:"create_time_detail,omitempty"`
+	CreateTimeDetail *string `json:"create_time_detail,omitempty"`
+	// 成单金额
+	DealSubAmount      *string                                       `json:"deal_sub_amount,omitempty"`
 	EffectiveState     *ToolsClueLifeGetV2DataListEffectiveState     `json:"effective_state,omitempty"`
 	EffectiveStateName *ToolsClueLifeGetV2DataListEffectiveStateName `json:"effective_state_name,omitempty"`
 	// 扩展字段
@@ -91,6 +93,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	// 商品名称
 	ProductName *string                                `json:"product_name,omitempty"`
 	ProductType *ToolsClueLifeGetV2DataListProductType `json:"product_type,omitempty"`
+	// 项目ID
+	ProjectId *int64 `json:"project_id,omitempty"`
 	// 广告ID
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	// 广告名称

@@ -17,8 +17,8 @@ type AdGetV2DataAudienceGender string
 const (
 	GENDER_UNLIMITED_AdGetV2DataAudienceGender AdGetV2DataAudienceGender = "GENDER_UNLIMITED"
 	GENDER_MALE_AdGetV2DataAudienceGender      AdGetV2DataAudienceGender = "GENDER_MALE"
-	GENDER_FEMALE_AdGetV2DataAudienceGender    AdGetV2DataAudienceGender = "GENDER_FEMALE"
 	NONE_AdGetV2DataAudienceGender             AdGetV2DataAudienceGender = "NONE"
+	GENDER_FEMALE_AdGetV2DataAudienceGender    AdGetV2DataAudienceGender = "GENDER_FEMALE"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_gender value

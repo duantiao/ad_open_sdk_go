@@ -15,6 +15,7 @@ type UniProjectListGetV30FilteringStatusSecond string
 
 // List of uni_project_list_get_v3.0_filtering_status_second
 const (
+	ECOSYSTEM_RISK_FAILED_UniProjectListGetV30FilteringStatusSecond                 UniProjectListGetV30FilteringStatusSecond = "ECOSYSTEM_RISK_FAILED"
 	PROJECT_STATUS_AUDIT_UniProjectListGetV30FilteringStatusSecond                  UniProjectListGetV30FilteringStatusSecond = "PROJECT_STATUS_AUDIT"
 	PROJECT_STATUS_AWEME_ACCOUNT_DISABLED_UniProjectListGetV30FilteringStatusSecond UniProjectListGetV30FilteringStatusSecond = "PROJECT_STATUS_AWEME_ACCOUNT_DISABLED"
 	PROJECT_STATUS_BUDGET_EXCEED_UniProjectListGetV30FilteringStatusSecond          UniProjectListGetV30FilteringStatusSecond = "PROJECT_STATUS_BUDGET_EXCEED"
