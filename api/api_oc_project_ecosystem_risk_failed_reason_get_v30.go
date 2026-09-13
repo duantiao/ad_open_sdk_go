@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectEcosystemRiskFailedReasonGetV30ApiService OcProjectEcosystemRiskFailedReasonGetV30Api service
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV30OcProjectEcosystemRiskFailedReasonGetGetRequest) PageSize(
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectEcosystemRiskFailedReasonGetGetRequest) Execute() (*OcProjectEcosystemRiskFailedReasonGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectEcosystemRiskFailedReasonGetGetRequest) Execute() (*models.OcProjectEcosystemRiskFailedReasonGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *OcProjectEcosystemRiskFailedReasonGetV30ApiService) Get(ctx context.Con
 // Execute executes the request
 //
 //	@return OcProjectEcosystemRiskFailedReasonGetV30Response
-func (a *OcProjectEcosystemRiskFailedReasonGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectEcosystemRiskFailedReasonGetGetRequest) (*OcProjectEcosystemRiskFailedReasonGetV30Response, *http.Response, error) {
+func (a *OcProjectEcosystemRiskFailedReasonGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectEcosystemRiskFailedReasonGetGetRequest) (*models.OcProjectEcosystemRiskFailedReasonGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectEcosystemRiskFailedReasonGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectEcosystemRiskFailedReasonGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *OcProjectEcosystemRiskFailedReasonGetV30ApiService) getExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/ecosystem_risk_failed_reason/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

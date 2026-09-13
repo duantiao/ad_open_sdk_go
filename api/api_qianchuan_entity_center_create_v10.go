@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanEntityCenterCreateV10ApiService QianchuanEntityCenterCreateV10Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV10QianchuanEntityCenterCreatePostRequest struct {
 	ApiService                            *QianchuanEntityCenterCreateV10ApiService
 	authorization                         *string
 	caller                                *string
-	qianchuanEntityCenterCreateV10Request *QianchuanEntityCenterCreateV10Request
+	qianchuanEntityCenterCreateV10Request *models.QianchuanEntityCenterCreateV10Request
 }
 
 // Entity Center 访问 Authorization，由接口固定注入
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV10QianchuanEntityCenterCreatePostRequest) Caller(caller stri
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEntityCenterCreatePostRequest) QianchuanEntityCenterCreateV10Request(qianchuanEntityCenterCreateV10Request QianchuanEntityCenterCreateV10Request) *ApiOpenApiV10QianchuanEntityCenterCreatePostRequest {
+func (r *ApiOpenApiV10QianchuanEntityCenterCreatePostRequest) QianchuanEntityCenterCreateV10Request(qianchuanEntityCenterCreateV10Request models.QianchuanEntityCenterCreateV10Request) *ApiOpenApiV10QianchuanEntityCenterCreatePostRequest {
 	r.qianchuanEntityCenterCreateV10Request = &qianchuanEntityCenterCreateV10Request
 	return r
 }
@@ -85,7 +86,7 @@ func (a *QianchuanEntityCenterCreateV10ApiService) postExecute(r *ApiOpenApiV10Q
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
+		formFiles           map[string]*models.FormFileInfo
 		localVarReturnValue []byte
 	)
 
@@ -96,7 +97,7 @@ func (a *QianchuanEntityCenterCreateV10ApiService) postExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan_entity_center/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

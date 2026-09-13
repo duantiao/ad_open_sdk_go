@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpAccountCreateV30ApiService EbpAccountCreateV30Api service
@@ -25,15 +26,15 @@ type EbpAccountCreateV30ApiService service
 type ApiOpenApiV30EbpAccountCreatePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *EbpAccountCreateV30ApiService
-	ebpAccountCreateV30Request *EbpAccountCreateV30Request
+	ebpAccountCreateV30Request *models.EbpAccountCreateV30Request
 }
 
-func (r *ApiOpenApiV30EbpAccountCreatePostRequest) EbpAccountCreateV30Request(ebpAccountCreateV30Request EbpAccountCreateV30Request) *ApiOpenApiV30EbpAccountCreatePostRequest {
+func (r *ApiOpenApiV30EbpAccountCreatePostRequest) EbpAccountCreateV30Request(ebpAccountCreateV30Request models.EbpAccountCreateV30Request) *ApiOpenApiV30EbpAccountCreatePostRequest {
 	r.ebpAccountCreateV30Request = &ebpAccountCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30EbpAccountCreatePostRequest) Execute() (*EbpAccountCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EbpAccountCreatePostRequest) Execute() (*models.EbpAccountCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EbpAccountCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return EbpAccountCreateV30Response
-func (a *EbpAccountCreateV30ApiService) postExecute(r *ApiOpenApiV30EbpAccountCreatePostRequest) (*EbpAccountCreateV30Response, *http.Response, error) {
+func (a *EbpAccountCreateV30ApiService) postExecute(r *ApiOpenApiV30EbpAccountCreatePostRequest) (*models.EbpAccountCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpAccountCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpAccountCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EbpAccountCreateV30ApiService) postExecute(r *ApiOpenApiV30EbpAccountCr
 	localVarPath := localBasePath + "/open_api/v3.0/ebp/account/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

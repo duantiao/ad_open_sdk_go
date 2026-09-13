@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferV2BpTransferDetailGetV30ApiService CgTransferV2BpTransferDetailGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest struct {
 	ctx                  context.Context
 	ApiService           *CgTransferV2BpTransferDetailGetV30ApiService
 	organizationId       *int64
-	origin               *CgTransferV2BpTransferDetailGetV30Origin
+	origin               *models.CgTransferV2BpTransferDetailGetV30Origin
 	transferBizRequestNo *string
 	transferSerial       *string
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) OrganizationId(
 }
 
 // 转账来源
-func (r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) Origin(origin CgTransferV2BpTransferDetailGetV30Origin) *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) Origin(origin models.CgTransferV2BpTransferDetailGetV30Origin) *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest {
 	r.origin = &origin
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) TransferSerial(
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) Execute() (*CgTransferV2BpTransferDetailGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) Execute() (*models.CgTransferV2BpTransferDetailGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *CgTransferV2BpTransferDetailGetV30ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return CgTransferV2BpTransferDetailGetV30Response
-func (a *CgTransferV2BpTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) (*CgTransferV2BpTransferDetailGetV30Response, *http.Response, error) {
+func (a *CgTransferV2BpTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2BpTransferDetailGetGetRequest) (*models.CgTransferV2BpTransferDetailGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferV2BpTransferDetailGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferV2BpTransferDetailGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *CgTransferV2BpTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/v2/bp/transfer_detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

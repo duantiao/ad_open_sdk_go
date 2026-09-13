@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsGrayGetV30ApiService ToolsGrayGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30ToolsGrayGetGetRequest struct {
 	ApiService   *ToolsGrayGetV30ApiService
 	advertiserId *int64
 	grayKeys     *[]string
-	version      *ToolsGrayGetV30Version
+	version      *models.ToolsGrayGetV30Version
 	bpId         *int64
 }
 
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30ToolsGrayGetGetRequest) GrayKeys(grayKeys []string) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsGrayGetGetRequest) Version(version ToolsGrayGetV30Version) *ApiOpenApiV30ToolsGrayGetGetRequest {
+func (r *ApiOpenApiV30ToolsGrayGetGetRequest) Version(version models.ToolsGrayGetV30Version) *ApiOpenApiV30ToolsGrayGetGetRequest {
 	r.version = &version
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV30ToolsGrayGetGetRequest) BpId(bpId int64) *ApiOpenApiV30Too
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsGrayGetGetRequest) Execute() (*ToolsGrayGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsGrayGetGetRequest) Execute() (*models.ToolsGrayGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsGrayGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Tools
 // Execute executes the request
 //
 //	@return ToolsGrayGetV30Response
-func (a *ToolsGrayGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsGrayGetGetRequest) (*ToolsGrayGetV30Response, *http.Response, error) {
+func (a *ToolsGrayGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsGrayGetGetRequest) (*models.ToolsGrayGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsGrayGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsGrayGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsGrayGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsGrayGetGetRe
 	localVarPath := localBasePath + "/open_api/v3.0/tools/gray/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

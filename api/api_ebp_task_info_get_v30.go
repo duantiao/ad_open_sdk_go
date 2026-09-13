@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpTaskInfoGetV30ApiService EbpTaskInfoGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30EbpTaskInfoGetGetRequest struct {
 	ApiService               *EbpTaskInfoGetV30ApiService
 	enterpriseOrganizationId *int64
 	taskId                   *int64
-	filter                   *EbpTaskInfoGetV30Filter
+	filter                   *models.EbpTaskInfoGetV30Filter
 	page                     *int64
 	pageSize                 *int64
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30EbpTaskInfoGetGetRequest) TaskId(taskId int64) *ApiOpenApi
 }
 
 // 过滤器
-func (r *ApiOpenApiV30EbpTaskInfoGetGetRequest) Filter(filter EbpTaskInfoGetV30Filter) *ApiOpenApiV30EbpTaskInfoGetGetRequest {
+func (r *ApiOpenApiV30EbpTaskInfoGetGetRequest) Filter(filter models.EbpTaskInfoGetV30Filter) *ApiOpenApiV30EbpTaskInfoGetGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30EbpTaskInfoGetGetRequest) PageSize(pageSize int64) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApiV30EbpTaskInfoGetGetRequest) Execute() (*EbpTaskInfoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EbpTaskInfoGetGetRequest) Execute() (*models.EbpTaskInfoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *EbpTaskInfoGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Ebp
 // Execute executes the request
 //
 //	@return EbpTaskInfoGetV30Response
-func (a *EbpTaskInfoGetV30ApiService) getExecute(r *ApiOpenApiV30EbpTaskInfoGetGetRequest) (*EbpTaskInfoGetV30Response, *http.Response, error) {
+func (a *EbpTaskInfoGetV30ApiService) getExecute(r *ApiOpenApiV30EbpTaskInfoGetGetRequest) (*models.EbpTaskInfoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpTaskInfoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpTaskInfoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *EbpTaskInfoGetV30ApiService) getExecute(r *ApiOpenApiV30EbpTaskInfoGetG
 	localVarPath := localBasePath + "/open_api/v3.0/ebp/task_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.enterpriseOrganizationId == nil {

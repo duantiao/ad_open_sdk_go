@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpSubGroupCreateV30ApiService EbpSubGroupCreateV30Api service
@@ -25,15 +26,15 @@ type EbpSubGroupCreateV30ApiService service
 type ApiOpenApiV30EbpSubGroupCreatePostRequest struct {
 	ctx                         context.Context
 	ApiService                  *EbpSubGroupCreateV30ApiService
-	ebpSubGroupCreateV30Request *EbpSubGroupCreateV30Request
+	ebpSubGroupCreateV30Request *models.EbpSubGroupCreateV30Request
 }
 
-func (r *ApiOpenApiV30EbpSubGroupCreatePostRequest) EbpSubGroupCreateV30Request(ebpSubGroupCreateV30Request EbpSubGroupCreateV30Request) *ApiOpenApiV30EbpSubGroupCreatePostRequest {
+func (r *ApiOpenApiV30EbpSubGroupCreatePostRequest) EbpSubGroupCreateV30Request(ebpSubGroupCreateV30Request models.EbpSubGroupCreateV30Request) *ApiOpenApiV30EbpSubGroupCreatePostRequest {
 	r.ebpSubGroupCreateV30Request = &ebpSubGroupCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30EbpSubGroupCreatePostRequest) Execute() (*EbpSubGroupCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EbpSubGroupCreatePostRequest) Execute() (*models.EbpSubGroupCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EbpSubGroupCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return EbpSubGroupCreateV30Response
-func (a *EbpSubGroupCreateV30ApiService) postExecute(r *ApiOpenApiV30EbpSubGroupCreatePostRequest) (*EbpSubGroupCreateV30Response, *http.Response, error) {
+func (a *EbpSubGroupCreateV30ApiService) postExecute(r *ApiOpenApiV30EbpSubGroupCreatePostRequest) (*models.EbpSubGroupCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpSubGroupCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpSubGroupCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EbpSubGroupCreateV30ApiService) postExecute(r *ApiOpenApiV30EbpSubGroup
 	localVarPath := localBasePath + "/open_api/v3.0/ebp/sub_group/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

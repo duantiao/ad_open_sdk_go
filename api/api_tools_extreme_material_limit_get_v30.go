@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsExtremeMaterialLimitGetV30ApiService ToolsExtremeMaterialLimitGetV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest struct {
 	advertiserId     *int64
 	startDate        *string
 	endDate          *string
-	notificationType *ToolsExtremeMaterialLimitGetV30NotificationType
+	notificationType *models.ToolsExtremeMaterialLimitGetV30NotificationType
 }
 
 func (r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest {
@@ -49,12 +50,12 @@ func (r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) EndDate(endDate st
 }
 
 // 通知类型筛选，允许值：WARN 警告 / LIMIT 限制，不传返回全部。
-func (r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) NotificationType(notificationType ToolsExtremeMaterialLimitGetV30NotificationType) *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest {
+func (r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) NotificationType(notificationType models.ToolsExtremeMaterialLimitGetV30NotificationType) *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest {
 	r.notificationType = &notificationType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) Execute() (*ToolsExtremeMaterialLimitGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) Execute() (*models.ToolsExtremeMaterialLimitGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *ToolsExtremeMaterialLimitGetV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsExtremeMaterialLimitGetV30Response
-func (a *ToolsExtremeMaterialLimitGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) (*ToolsExtremeMaterialLimitGetV30Response, *http.Response, error) {
+func (a *ToolsExtremeMaterialLimitGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsExtremeMaterialLimitGetGetRequest) (*models.ToolsExtremeMaterialLimitGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsExtremeMaterialLimitGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsExtremeMaterialLimitGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *ToolsExtremeMaterialLimitGetV30ApiService) getExecute(r *ApiOpenApiV30T
 	localVarPath := localBasePath + "/open_api/v3.0/tools/extreme_material_limit/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

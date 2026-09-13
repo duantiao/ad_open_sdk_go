@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandKnowledgeQaGetV30ApiService BrandKnowledgeQaGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30BrandKnowledgeQaGetGetRequest struct {
 	ApiService     *BrandKnowledgeQaGetV30ApiService
 	userQuery      *string
 	accountId      *int64
-	businessType   *BrandKnowledgeQaGetV30BusinessType
+	businessType   *models.BrandKnowledgeQaGetV30BusinessType
 	sessionId      *string
 	chatHistoryStr *string
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) AccountId(accountId int64) 
 }
 
 // 业务线类型
-func (r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) BusinessType(businessType BrandKnowledgeQaGetV30BusinessType) *ApiOpenApiV30BrandKnowledgeQaGetGetRequest {
+func (r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) BusinessType(businessType models.BrandKnowledgeQaGetV30BusinessType) *ApiOpenApiV30BrandKnowledgeQaGetGetRequest {
 	r.businessType = &businessType
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) ChatHistoryStr(chatHistoryS
 	return r
 }
 
-func (r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) Execute() (*BrandKnowledgeQaGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) Execute() (*models.BrandKnowledgeQaGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *BrandKnowledgeQaGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return BrandKnowledgeQaGetV30Response
-func (a *BrandKnowledgeQaGetV30ApiService) getExecute(r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) (*BrandKnowledgeQaGetV30Response, *http.Response, error) {
+func (a *BrandKnowledgeQaGetV30ApiService) getExecute(r *ApiOpenApiV30BrandKnowledgeQaGetGetRequest) (*models.BrandKnowledgeQaGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandKnowledgeQaGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandKnowledgeQaGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *BrandKnowledgeQaGetV30ApiService) getExecute(r *ApiOpenApiV30BrandKnowl
 	localVarPath := localBasePath + "/open_api/v3.0/brand/knowledge_qa/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.userQuery == nil {

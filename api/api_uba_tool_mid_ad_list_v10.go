@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UbaToolMidAdListV10ApiService UbaToolMidAdListV10Api service
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV10UbaToolMidAdListGetRequest) Reason(reason string) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApiV10UbaToolMidAdListGetRequest) Execute() (*UbaToolMidAdListV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10UbaToolMidAdListGetRequest) Execute() (*models.UbaToolMidAdListV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *UbaToolMidAdListV10ApiService) Get(ctx context.Context) *ApiOpenApiV10U
 // Execute executes the request
 //
 //	@return UbaToolMidAdListV10Response
-func (a *UbaToolMidAdListV10ApiService) getExecute(r *ApiOpenApiV10UbaToolMidAdListGetRequest) (*UbaToolMidAdListV10Response, *http.Response, error) {
+func (a *UbaToolMidAdListV10ApiService) getExecute(r *ApiOpenApiV10UbaToolMidAdListGetRequest) (*models.UbaToolMidAdListV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UbaToolMidAdListV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UbaToolMidAdListV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *UbaToolMidAdListV10ApiService) getExecute(r *ApiOpenApiV10UbaToolMidAdL
 	localVarPath := localBasePath + "/open_api/v1.0/uba_tool/mid_ad/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.cdpProjectId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // NearRealtimeCostGetV30ApiService NearRealtimeCostGetV30Api service
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30NearRealtimeCostGetGetRequest) PageSize(pageSize int32) *A
 	return r
 }
 
-func (r *ApiOpenApiV30NearRealtimeCostGetGetRequest) Execute() (*NearRealtimeCostGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30NearRealtimeCostGetGetRequest) Execute() (*models.NearRealtimeCostGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *NearRealtimeCostGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return NearRealtimeCostGetV30Response
-func (a *NearRealtimeCostGetV30ApiService) getExecute(r *ApiOpenApiV30NearRealtimeCostGetGetRequest) (*NearRealtimeCostGetV30Response, *http.Response, error) {
+func (a *NearRealtimeCostGetV30ApiService) getExecute(r *ApiOpenApiV30NearRealtimeCostGetGetRequest) (*models.NearRealtimeCostGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *NearRealtimeCostGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.NearRealtimeCostGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *NearRealtimeCostGetV30ApiService) getExecute(r *ApiOpenApiV30NearRealti
 	localVarPath := localBasePath + "/open_api/v3.0/near_realtime_cost/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountIds == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpAdvBindGroupGetV30ApiService EbpAdvBindGroupGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30EbpAdvBindGroupGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *EbpAdvBindGroupGetV30ApiService
 	advertiserId *int64
-	queryType    *EbpAdvBindGroupGetV30QueryType
+	queryType    *models.EbpAdvBindGroupGetV30QueryType
 }
 
 func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30EbpAdvBindGroupGetGetRequest {
@@ -35,12 +36,12 @@ func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) AdvertiserId(advertiserId in
 }
 
 // 查询组织层级方式
-func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) QueryType(queryType EbpAdvBindGroupGetV30QueryType) *ApiOpenApiV30EbpAdvBindGroupGetGetRequest {
+func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) QueryType(queryType models.EbpAdvBindGroupGetV30QueryType) *ApiOpenApiV30EbpAdvBindGroupGetGetRequest {
 	r.queryType = &queryType
 	return r
 }
 
-func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) Execute() (*EbpAdvBindGroupGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) Execute() (*models.EbpAdvBindGroupGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *EbpAdvBindGroupGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return EbpAdvBindGroupGetV30Response
-func (a *EbpAdvBindGroupGetV30ApiService) getExecute(r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) (*EbpAdvBindGroupGetV30Response, *http.Response, error) {
+func (a *EbpAdvBindGroupGetV30ApiService) getExecute(r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) (*models.EbpAdvBindGroupGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpAdvBindGroupGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpAdvBindGroupGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *EbpAdvBindGroupGetV30ApiService) getExecute(r *ApiOpenApiV30EbpAdvBindG
 	localVarPath := localBasePath + "/open_api/v3.0/ebp/adv_bind_group/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

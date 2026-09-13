@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpGroupBindAccountUpdateV30ApiService EbpGroupBindAccountUpdateV30Api service
@@ -25,15 +26,15 @@ type EbpGroupBindAccountUpdateV30ApiService service
 type ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *EbpGroupBindAccountUpdateV30ApiService
-	ebpGroupBindAccountUpdateV30Request *EbpGroupBindAccountUpdateV30Request
+	ebpGroupBindAccountUpdateV30Request *models.EbpGroupBindAccountUpdateV30Request
 }
 
-func (r *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest) EbpGroupBindAccountUpdateV30Request(ebpGroupBindAccountUpdateV30Request EbpGroupBindAccountUpdateV30Request) *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest {
+func (r *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest) EbpGroupBindAccountUpdateV30Request(ebpGroupBindAccountUpdateV30Request models.EbpGroupBindAccountUpdateV30Request) *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest {
 	r.ebpGroupBindAccountUpdateV30Request = &ebpGroupBindAccountUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest) Execute() (*EbpGroupBindAccountUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest) Execute() (*models.EbpGroupBindAccountUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EbpGroupBindAccountUpdateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return EbpGroupBindAccountUpdateV30Response
-func (a *EbpGroupBindAccountUpdateV30ApiService) postExecute(r *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest) (*EbpGroupBindAccountUpdateV30Response, *http.Response, error) {
+func (a *EbpGroupBindAccountUpdateV30ApiService) postExecute(r *ApiOpenApiV30EbpGroupBindAccountUpdatePostRequest) (*models.EbpGroupBindAccountUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpGroupBindAccountUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpGroupBindAccountUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EbpGroupBindAccountUpdateV30ApiService) postExecute(r *ApiOpenApiV30Ebp
 	localVarPath := localBasePath + "/open_api/v3.0/ebp/group_bind_account/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

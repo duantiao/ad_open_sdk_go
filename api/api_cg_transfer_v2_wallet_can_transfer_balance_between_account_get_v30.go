@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30ApiService CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetReques
 	ctx                     context.Context
 	ApiService              *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30ApiService
 	accountId               *int64
-	origin                  *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Origin
-	userType                *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30UserType
-	transferParticipantList *[]*CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner
+	origin                  *models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Origin
+	userType                *models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30UserType
+	transferParticipantList *[]*models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner
 }
 
 // 鉴权账户
@@ -38,24 +39,24 @@ func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRe
 }
 
 // 转账来源
-func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) Origin(origin CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Origin) *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) Origin(origin models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Origin) *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest {
 	r.origin = &origin
 	return r
 }
 
 // 登录用户类型
-func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) UserType(userType CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30UserType) *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) UserType(userType models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30UserType) *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest {
 	r.userType = &userType
 	return r
 }
 
 // 转账参与方列表，最多支持100个
-func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) TransferParticipantList(transferParticipantList []*CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner) *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) TransferParticipantList(transferParticipantList []*models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner) *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest {
 	r.transferParticipantList = &transferParticipantList
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) Execute() (*CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) Execute() (*models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30ApiService) Get
 // Execute executes the request
 //
 //	@return CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Response
-func (a *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) (*CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
+func (a *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2WalletCanTransferBalanceBetweenAccountGetGetRequest) (*models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30ApiService) get
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/v2/wallet/can_transfer_balance_between_account/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpGroupBindAccountDeleteV30ApiService EbpGroupBindAccountDeleteV30Api service
@@ -25,15 +26,15 @@ type EbpGroupBindAccountDeleteV30ApiService service
 type ApiOpenApiV30EbpGroupBindAccountDeletePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *EbpGroupBindAccountDeleteV30ApiService
-	ebpGroupBindAccountDeleteV30Request *EbpGroupBindAccountDeleteV30Request
+	ebpGroupBindAccountDeleteV30Request *models.EbpGroupBindAccountDeleteV30Request
 }
 
-func (r *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest) EbpGroupBindAccountDeleteV30Request(ebpGroupBindAccountDeleteV30Request EbpGroupBindAccountDeleteV30Request) *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest {
+func (r *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest) EbpGroupBindAccountDeleteV30Request(ebpGroupBindAccountDeleteV30Request models.EbpGroupBindAccountDeleteV30Request) *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest {
 	r.ebpGroupBindAccountDeleteV30Request = &ebpGroupBindAccountDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest) Execute() (*EbpGroupBindAccountDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest) Execute() (*models.EbpGroupBindAccountDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EbpGroupBindAccountDeleteV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return EbpGroupBindAccountDeleteV30Response
-func (a *EbpGroupBindAccountDeleteV30ApiService) postExecute(r *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest) (*EbpGroupBindAccountDeleteV30Response, *http.Response, error) {
+func (a *EbpGroupBindAccountDeleteV30ApiService) postExecute(r *ApiOpenApiV30EbpGroupBindAccountDeletePostRequest) (*models.EbpGroupBindAccountDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpGroupBindAccountDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpGroupBindAccountDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EbpGroupBindAccountDeleteV30ApiService) postExecute(r *ApiOpenApiV30Ebp
 	localVarPath := localBasePath + "/open_api/v3.0/ebp/group_bind_account/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

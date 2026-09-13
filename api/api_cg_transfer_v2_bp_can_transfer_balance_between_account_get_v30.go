@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferV2BpCanTransferBalanceBetweenAccountGetV30ApiService CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest st
 	ctx                     context.Context
 	ApiService              *CgTransferV2BpCanTransferBalanceBetweenAccountGetV30ApiService
 	organizationId          *int64
-	origin                  *CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Origin
-	transferParticipantList *[]*CgTransferV2BpCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner
+	origin                  *models.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Origin
+	transferParticipantList *[]*models.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner
 }
 
 // 组织id
@@ -37,18 +38,18 @@ func (r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetReques
 }
 
 // 转账来源
-func (r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) Origin(origin CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Origin) *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) Origin(origin models.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Origin) *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest {
 	r.origin = &origin
 	return r
 }
 
 // 转账参与方列表，最多支持100个
-func (r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) TransferParticipantList(transferParticipantList []*CgTransferV2BpCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner) *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) TransferParticipantList(transferParticipantList []*models.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30TransferParticipantListInner) *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest {
 	r.transferParticipantList = &transferParticipantList
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) Execute() (*CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) Execute() (*models.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *CgTransferV2BpCanTransferBalanceBetweenAccountGetV30ApiService) Get(ctx
 // Execute executes the request
 //
 //	@return CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Response
-func (a *CgTransferV2BpCanTransferBalanceBetweenAccountGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) (*CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
+func (a *CgTransferV2BpCanTransferBalanceBetweenAccountGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2BpCanTransferBalanceBetweenAccountGetGetRequest) (*models.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *CgTransferV2BpCanTransferBalanceBetweenAccountGetV30ApiService) getExec
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/v2/bp/can_transfer_balance_between_account/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

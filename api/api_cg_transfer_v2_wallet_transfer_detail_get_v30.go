@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferV2WalletTransferDetailGetV30ApiService CgTransferV2WalletTransferDetailGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest struct {
 	ctx                  context.Context
 	ApiService           *CgTransferV2WalletTransferDetailGetV30ApiService
 	accountId            *int64
-	userType             *CgTransferV2WalletTransferDetailGetV30UserType
-	origin               *CgTransferV2WalletTransferDetailGetV30Origin
+	userType             *models.CgTransferV2WalletTransferDetailGetV30UserType
+	origin               *models.CgTransferV2WalletTransferDetailGetV30Origin
 	transferBizRequestNo *string
 	transferSerial       *string
 }
@@ -39,13 +40,13 @@ func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) AccountId(a
 }
 
 // 登录用户类型
-func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) UserType(userType CgTransferV2WalletTransferDetailGetV30UserType) *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) UserType(userType models.CgTransferV2WalletTransferDetailGetV30UserType) *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest {
 	r.userType = &userType
 	return r
 }
 
 // 转账来源
-func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) Origin(origin CgTransferV2WalletTransferDetailGetV30Origin) *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest {
+func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) Origin(origin models.CgTransferV2WalletTransferDetailGetV30Origin) *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest {
 	r.origin = &origin
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) TransferSer
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) Execute() (*CgTransferV2WalletTransferDetailGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) Execute() (*models.CgTransferV2WalletTransferDetailGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *CgTransferV2WalletTransferDetailGetV30ApiService) Get(ctx context.Conte
 // Execute executes the request
 //
 //	@return CgTransferV2WalletTransferDetailGetV30Response
-func (a *CgTransferV2WalletTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) (*CgTransferV2WalletTransferDetailGetV30Response, *http.Response, error) {
+func (a *CgTransferV2WalletTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferV2WalletTransferDetailGetGetRequest) (*models.CgTransferV2WalletTransferDetailGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferV2WalletTransferDetailGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferV2WalletTransferDetailGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *CgTransferV2WalletTransferDetailGetV30ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/v2/wallet/transfer_detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdConvertAttributionQueryCreateV2ApiService AdConvertAttributionQueryCreateV2Api service
@@ -25,10 +26,10 @@ type AdConvertAttributionQueryCreateV2ApiService service
 type ApiOpenApi2AdConvertAttributionQueryCreatePostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *AdConvertAttributionQueryCreateV2ApiService
-	adConvertAttributionQueryCreateV2Request *AdConvertAttributionQueryCreateV2Request
+	adConvertAttributionQueryCreateV2Request *models.AdConvertAttributionQueryCreateV2Request
 }
 
-func (r *ApiOpenApi2AdConvertAttributionQueryCreatePostRequest) AdConvertAttributionQueryCreateV2Request(adConvertAttributionQueryCreateV2Request AdConvertAttributionQueryCreateV2Request) *ApiOpenApi2AdConvertAttributionQueryCreatePostRequest {
+func (r *ApiOpenApi2AdConvertAttributionQueryCreatePostRequest) AdConvertAttributionQueryCreateV2Request(adConvertAttributionQueryCreateV2Request models.AdConvertAttributionQueryCreateV2Request) *ApiOpenApi2AdConvertAttributionQueryCreatePostRequest {
 	r.adConvertAttributionQueryCreateV2Request = &adConvertAttributionQueryCreateV2Request
 	return r
 }
@@ -71,7 +72,7 @@ func (a *AdConvertAttributionQueryCreateV2ApiService) postExecute(r *ApiOpenApi2
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
+		formFiles           map[string]*models.FormFileInfo
 		localVarReturnValue []byte
 	)
 
@@ -82,7 +83,7 @@ func (a *AdConvertAttributionQueryCreateV2ApiService) postExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/ad_convert/attribution_query/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

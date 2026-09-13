@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UbaToolAdCreateCreateV10ApiService UbaToolAdCreateCreateV10Api service
@@ -25,15 +26,15 @@ type UbaToolAdCreateCreateV10ApiService service
 type ApiOpenApiV10UbaToolAdCreateCreatePostRequest struct {
 	ctx                             context.Context
 	ApiService                      *UbaToolAdCreateCreateV10ApiService
-	ubaToolAdCreateCreateV10Request *UbaToolAdCreateCreateV10Request
+	ubaToolAdCreateCreateV10Request *models.UbaToolAdCreateCreateV10Request
 }
 
-func (r *ApiOpenApiV10UbaToolAdCreateCreatePostRequest) UbaToolAdCreateCreateV10Request(ubaToolAdCreateCreateV10Request UbaToolAdCreateCreateV10Request) *ApiOpenApiV10UbaToolAdCreateCreatePostRequest {
+func (r *ApiOpenApiV10UbaToolAdCreateCreatePostRequest) UbaToolAdCreateCreateV10Request(ubaToolAdCreateCreateV10Request models.UbaToolAdCreateCreateV10Request) *ApiOpenApiV10UbaToolAdCreateCreatePostRequest {
 	r.ubaToolAdCreateCreateV10Request = &ubaToolAdCreateCreateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10UbaToolAdCreateCreatePostRequest) Execute() (*UbaToolAdCreateCreateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10UbaToolAdCreateCreatePostRequest) Execute() (*models.UbaToolAdCreateCreateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *UbaToolAdCreateCreateV10ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return UbaToolAdCreateCreateV10Response
-func (a *UbaToolAdCreateCreateV10ApiService) postExecute(r *ApiOpenApiV10UbaToolAdCreateCreatePostRequest) (*UbaToolAdCreateCreateV10Response, *http.Response, error) {
+func (a *UbaToolAdCreateCreateV10ApiService) postExecute(r *ApiOpenApiV10UbaToolAdCreateCreatePostRequest) (*models.UbaToolAdCreateCreateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UbaToolAdCreateCreateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UbaToolAdCreateCreateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *UbaToolAdCreateCreateV10ApiService) postExecute(r *ApiOpenApiV10UbaTool
 	localVarPath := localBasePath + "/open_api/v1.0/uba_tool/ad_create/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

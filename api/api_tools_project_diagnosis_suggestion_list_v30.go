@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsProjectDiagnosisSuggestionListV30ApiService ToolsProjectDiagnosisSuggestionListV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30ToolsProjectDiagnosisSuggestionListGetRequest) AdvertiserI
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsProjectDiagnosisSuggestionListGetRequest) Execute() (*ToolsProjectDiagnosisSuggestionListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsProjectDiagnosisSuggestionListGetRequest) Execute() (*models.ToolsProjectDiagnosisSuggestionListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsProjectDiagnosisSuggestionListV30ApiService) Get(ctx context.Conte
 // Execute executes the request
 //
 //	@return ToolsProjectDiagnosisSuggestionListV30Response
-func (a *ToolsProjectDiagnosisSuggestionListV30ApiService) getExecute(r *ApiOpenApiV30ToolsProjectDiagnosisSuggestionListGetRequest) (*ToolsProjectDiagnosisSuggestionListV30Response, *http.Response, error) {
+func (a *ToolsProjectDiagnosisSuggestionListV30ApiService) getExecute(r *ApiOpenApiV30ToolsProjectDiagnosisSuggestionListGetRequest) (*models.ToolsProjectDiagnosisSuggestionListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsProjectDiagnosisSuggestionListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsProjectDiagnosisSuggestionListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsProjectDiagnosisSuggestionListV30ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v3.0/tools/project_diagnosis/suggestion/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.projectIds == nil {

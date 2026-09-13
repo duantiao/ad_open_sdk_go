@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UbaToolPredUpdateV10ApiService UbaToolPredUpdateV10Api service
@@ -25,15 +26,15 @@ type UbaToolPredUpdateV10ApiService service
 type ApiOpenApiV10UbaToolPredUpdatePostRequest struct {
 	ctx                         context.Context
 	ApiService                  *UbaToolPredUpdateV10ApiService
-	ubaToolPredUpdateV10Request *UbaToolPredUpdateV10Request
+	ubaToolPredUpdateV10Request *models.UbaToolPredUpdateV10Request
 }
 
-func (r *ApiOpenApiV10UbaToolPredUpdatePostRequest) UbaToolPredUpdateV10Request(ubaToolPredUpdateV10Request UbaToolPredUpdateV10Request) *ApiOpenApiV10UbaToolPredUpdatePostRequest {
+func (r *ApiOpenApiV10UbaToolPredUpdatePostRequest) UbaToolPredUpdateV10Request(ubaToolPredUpdateV10Request models.UbaToolPredUpdateV10Request) *ApiOpenApiV10UbaToolPredUpdatePostRequest {
 	r.ubaToolPredUpdateV10Request = &ubaToolPredUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10UbaToolPredUpdatePostRequest) Execute() (*UbaToolPredUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10UbaToolPredUpdatePostRequest) Execute() (*models.UbaToolPredUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *UbaToolPredUpdateV10ApiService) Post(ctx context.Context) *ApiOpenApiV1
 // Execute executes the request
 //
 //	@return UbaToolPredUpdateV10Response
-func (a *UbaToolPredUpdateV10ApiService) postExecute(r *ApiOpenApiV10UbaToolPredUpdatePostRequest) (*UbaToolPredUpdateV10Response, *http.Response, error) {
+func (a *UbaToolPredUpdateV10ApiService) postExecute(r *ApiOpenApiV10UbaToolPredUpdatePostRequest) (*models.UbaToolPredUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UbaToolPredUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UbaToolPredUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *UbaToolPredUpdateV10ApiService) postExecute(r *ApiOpenApiV10UbaToolPred
 	localVarPath := localBasePath + "/open_api/v1.0/uba_tool/pred/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
