@@ -22,7 +22,7 @@ type OcProjectMaterialCreateV30Request struct {
 	InstantPlayMaterialList []*OcProjectMaterialCreateV30RequestInstantPlayMaterialListInner `json:"instant_play_material_list,omitempty"`
 	//
 	ProjectId int64 `json:"project_id"`
-	//
+	// 标题素材列表
 	TitleMaterialList []*OcProjectMaterialCreateV30RequestTitleMaterialListInner `json:"title_material_list,omitempty"`
 	//
 	TrialPlayMaterialList []*OcProjectMaterialCreateV30RequestTrialPlayMaterialListInner `json:"trial_play_material_list,omitempty"`

@@ -17,6 +17,7 @@ type ToolsGrayGetV30Version string
 const (
 	OLD_VERSION_ToolsGrayGetV30Version     ToolsGrayGetV30Version = "OLD_VERSION"
 	UPDATED_VERSION_ToolsGrayGetV30Version ToolsGrayGetV30Version = "UPDATED_VERSION"
+	ORG_VERSION_ToolsGrayGetV30Version     ToolsGrayGetV30Version = "ORG_VERSION"
 )
 
 // Ptr returns reference to tools_gray_get_v3.0_version value

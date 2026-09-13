@@ -24,6 +24,7 @@ const (
 	BUDGET_GROUP_OFFLINE_BUDGET_PromotionListV30FilteringStatusSecond  PromotionListV30FilteringStatusSecond = "BUDGET_GROUP_OFFLINE_BUDGET"
 	DISABLED_PromotionListV30FilteringStatusSecond                     PromotionListV30FilteringStatusSecond = "DISABLED"
 	DISABLE_BY_QUOTA_PromotionListV30FilteringStatusSecond             PromotionListV30FilteringStatusSecond = "DISABLE_BY_QUOTA"
+	ECOSYSTEM_RISK_FAILED_PromotionListV30FilteringStatusSecond        PromotionListV30FilteringStatusSecond = "ECOSYSTEM_RISK_FAILED"
 	LIVE_ROOM_OFF_PromotionListV30FilteringStatusSecond                PromotionListV30FilteringStatusSecond = "LIVE_ROOM_OFF"
 	NO_SCHEDULE_PromotionListV30FilteringStatusSecond                  PromotionListV30FilteringStatusSecond = "NO_SCHEDULE"
 	OFFLINE_BALANCE_PromotionListV30FilteringStatusSecond              PromotionListV30FilteringStatusSecond = "OFFLINE_BALANCE"

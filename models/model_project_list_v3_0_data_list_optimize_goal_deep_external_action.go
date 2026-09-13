@@ -112,6 +112,7 @@ const (
 	AD_CONVERT_TYPE_LTV_ROI_SEVEN_ProjectListV30DataListOptimizeGoalDeepExternalAction               ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_SEVEN"
 	AD_CONVERT_TYPE_LTV_ROI_THIRTY_ProjectListV30DataListOptimizeGoalDeepExternalAction              ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_THIRTY"
 	AD_CONVERT_TYPE_LT_ROI_ProjectListV30DataListOptimizeGoalDeepExternalAction                      ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LT_ROI"
+	AD_CONVERT_TYPE_M2_SURRENDER_ProjectListV30DataListOptimizeGoalDeepExternalAction                ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_M2SURRENDER"
 	AD_CONVERT_TYPE_MAP_SEARCH_ProjectListV30DataListOptimizeGoalDeepExternalAction                  ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MAP_SEARCH"
 	AD_CONVERT_TYPE_MESSAGE_ProjectListV30DataListOptimizeGoalDeepExternalAction                     ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE"
 	AD_CONVERT_TYPE_MESSAGE_ACTION_ProjectListV30DataListOptimizeGoalDeepExternalAction              ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_ACTION"

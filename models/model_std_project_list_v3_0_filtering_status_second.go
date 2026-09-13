@@ -17,6 +17,7 @@ type StdProjectListV30FilteringStatusSecond string
 const (
 	ADVERTISER_AVATAR_OFFLINE_StdProjectListV30FilteringStatusSecond             StdProjectListV30FilteringStatusSecond = "ADVERTISER_AVATAR_OFFLINE"
 	APP_NOT_AVAILABLE_FOR_DELIVERY_StdProjectListV30FilteringStatusSecond        StdProjectListV30FilteringStatusSecond = "APP_NOT_AVAILABLE_FOR_DELIVERY"
+	ECOSYSTEM_RISK_FAILED_StdProjectListV30FilteringStatusSecond                 StdProjectListV30FilteringStatusSecond = "ECOSYSTEM_RISK_FAILED"
 	LACK_BASIC_MATERIAL_STATUS_StdProjectListV30FilteringStatusSecond            StdProjectListV30FilteringStatusSecond = "LACK_BASIC_MATERIAL_STATUS"
 	LIVE_ROOM_NOT_AVAILABLE_FOR_DELIVERY_StdProjectListV30FilteringStatusSecond  StdProjectListV30FilteringStatusSecond = "LIVE_ROOM_NOT_AVAILABLE_FOR_DELIVERY"
 	PROJECT_STATUS_AUDIT_StdProjectListV30FilteringStatusSecond                  StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_AUDIT"

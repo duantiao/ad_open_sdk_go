@@ -22,6 +22,12 @@ const (
 	ONE_KEY_BOOST_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics ReportCustomAsyncTaskGetV30FilteringDataTopics = "ONE_KEY_BOOST_DATA"
 	PRODUCT_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics       ReportCustomAsyncTaskGetV30FilteringDataTopics = "PRODUCT_DATA"
 	QUERY_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics         ReportCustomAsyncTaskGetV30FilteringDataTopics = "QUERY_DATA"
+	STD_BASIC_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics     ReportCustomAsyncTaskGetV30FilteringDataTopics = "STD_BASIC_DATA"
+	STD_BIDWORD_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics   ReportCustomAsyncTaskGetV30FilteringDataTopics = "STD_BIDWORD_DATA"
+	STD_DMP_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics       ReportCustomAsyncTaskGetV30FilteringDataTopics = "STD_DMP_DATA"
+	STD_MATERIAL_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics  ReportCustomAsyncTaskGetV30FilteringDataTopics = "STD_MATERIAL_DATA"
+	STD_PRODUCT_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics   ReportCustomAsyncTaskGetV30FilteringDataTopics = "STD_PRODUCT_DATA"
+	STD_QUERY_DATA_ReportCustomAsyncTaskGetV30FilteringDataTopics     ReportCustomAsyncTaskGetV30FilteringDataTopics = "STD_QUERY_DATA"
 )
 
 // Ptr returns reference to report_custom_async_task_get_v3.0_filtering_data_topics value

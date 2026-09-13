@@ -23,12 +23,13 @@ import (
 type CarouselListV2ApiService service
 
 type ApiOpenApi2CarouselListGetRequest struct {
-	ctx          context.Context
-	ApiService   *CarouselListV2ApiService
-	advertiserId *int64
-	filtering    *CarouselListV2Filtering
-	pageSize     *int64
-	page         *int64
+	ctx            context.Context
+	ApiService     *CarouselListV2ApiService
+	advertiserId   *int64
+	filtering      *CarouselListV2Filtering
+	pageSize       *int64
+	page           *int64
+	hasDescription *bool
 }
 
 func (r *ApiOpenApi2CarouselListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2CarouselListGetRequest {
@@ -48,6 +49,11 @@ func (r *ApiOpenApi2CarouselListGetRequest) PageSize(pageSize int64) *ApiOpenApi
 
 func (r *ApiOpenApi2CarouselListGetRequest) Page(page int64) *ApiOpenApi2CarouselListGetRequest {
 	r.page = &page
+	return r
+}
+
+func (r *ApiOpenApi2CarouselListGetRequest) HasDescription(hasDescription bool) *ApiOpenApi2CarouselListGetRequest {
+	r.hasDescription = &hasDescription
 	return r
 }
 
@@ -116,6 +122,9 @@ func (a *CarouselListV2ApiService) getExecute(r *ApiOpenApi2CarouselListGetReque
 	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
+	}
+	if r.hasDescription != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "has_description", r.hasDescription)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

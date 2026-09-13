@@ -27,7 +27,7 @@ type ApiOpenApiV10QianchuanOverallStarProductGetGetRequest struct {
 	ApiService   *QianchuanOverallStarProductGetV10ApiService
 	advertiserId *int64
 	shopId       *int64
-	userId       *int64
+	awemeId      *int64
 	pageParams   *QianchuanOverallStarProductGetV10PageParams
 }
 
@@ -43,9 +43,9 @@ func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) ShopId(shopId in
 	return r
 }
 
-// 用户id
-func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) UserId(userId int64) *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest {
-	r.userId = &userId
+// 抖音号id
+func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) AwemeId(awemeId int64) *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest {
+	r.awemeId = &awemeId
 	return r
 }
 
@@ -113,13 +113,12 @@ func (a *QianchuanOverallStarProductGetV10ApiService) getExecute(r *ApiOpenApiV1
 	if r.shopId == nil {
 		return localVarReturnValue, nil, ReportError("shopId is required and must be specified")
 	}
-	if r.userId == nil {
-		return localVarReturnValue, nil, ReportError("userId is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "shop_id", r.shopId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "user_id", r.userId)
+	if r.awemeId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
+	}
 	if r.pageParams != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_params", r.pageParams)
 	}

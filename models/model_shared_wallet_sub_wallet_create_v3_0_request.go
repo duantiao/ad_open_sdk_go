@@ -15,8 +15,11 @@ type SharedWalletSubWalletCreateV30Request struct {
 	// 账户id，BP传bp_id，AGENT传agent_id
 	AccountId   int64                                     `json:"account_id"`
 	AccountType SharedWalletSubWalletCreateV30AccountType `json:"account_type"`
+	// svip模式下传入钱包所属组织ebp_id
+	EbpId *int64 `json:"ebp_id,omitempty"`
 	// 所属大钱包 id
 	MainWalletId int64                                            `json:"main_wallet_id"`
+	Platform     *SharedWalletSubWalletCreateV30Platform          `json:"platform,omitempty"`
 	SharedRange  SharedWalletSubWalletCreateV30RequestSharedRange `json:"shared_range"`
 	// 钱包描述，不填为空
 	WalletDescription *string `json:"wallet_description,omitempty"`

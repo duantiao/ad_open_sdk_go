@@ -12,6 +12,8 @@ package models
 
 // UniProjectListGetV30ResponseDataListInnerRelatedProduct
 type UniProjectListGetV30ResponseDataListInnerRelatedProduct struct {
+	// 短剧专辑id
+	AlbumId *int64 `json:"album_id,omitempty"`
 	//
 	ProductId *int64 `json:"product_id,omitempty"`
 	//

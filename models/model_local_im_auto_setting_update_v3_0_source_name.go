@@ -15,6 +15,7 @@ type LocalImAutoSettingUpdateV30SourceName string
 
 // List of local_im_auto_setting_update_v3.0_source_name
 const (
+	Enum_53_KF_LocalImAutoSettingUpdateV30SourceName      LocalImAutoSettingUpdateV30SourceName = "53KF"
 	Enum_AI即用_LocalImAutoSettingUpdateV30SourceName       LocalImAutoSettingUpdateV30SourceName = "AI即用"
 	Enum_云雀客服_LocalImAutoSettingUpdateV30SourceName       LocalImAutoSettingUpdateV30SourceName = "云雀客服"
 	Enum_优居AI智慧客服系统_LocalImAutoSettingUpdateV30SourceName LocalImAutoSettingUpdateV30SourceName = "优居AI智慧客服系统"
@@ -22,6 +23,10 @@ const (
 	Enum_北京易聊智能客服_LocalImAutoSettingUpdateV30SourceName   LocalImAutoSettingUpdateV30SourceName = "北京易聊智能客服"
 	Enum_快商通在线客服_LocalImAutoSettingUpdateV30SourceName    LocalImAutoSettingUpdateV30SourceName = "快商通在线客服"
 	Enum_智能云客_LocalImAutoSettingUpdateV30SourceName       LocalImAutoSettingUpdateV30SourceName = "智能云客"
+	Enum_来鼓_LocalImAutoSettingUpdateV30SourceName         LocalImAutoSettingUpdateV30SourceName = "来鼓"
+	Enum_杭州百聆科技有限公司_LocalImAutoSettingUpdateV30SourceName LocalImAutoSettingUpdateV30SourceName = "杭州百聆科技有限公司"
+	Enum_百聆_LocalImAutoSettingUpdateV30SourceName         LocalImAutoSettingUpdateV30SourceName = "百聆"
+	Enum_美洽客服_LocalImAutoSettingUpdateV30SourceName       LocalImAutoSettingUpdateV30SourceName = "美洽客服"
 	Enum_螳螂CRM_LocalImAutoSettingUpdateV30SourceName      LocalImAutoSettingUpdateV30SourceName = "螳螂CRM"
 )
 

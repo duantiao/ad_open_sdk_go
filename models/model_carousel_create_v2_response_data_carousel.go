@@ -15,6 +15,8 @@ type CarouselCreateV2ResponseDataCarousel struct {
 	Audio *CarouselCreateV2ResponseDataCarouselAudio `json:"audio,omitempty"`
 	//
 	CarouselId *int64 `json:"carousel_id,omitempty"`
+	// 图文的作品描述
+	Description *string `json:"description,omitempty"`
 	//
 	FileName *string `json:"file_name,omitempty"`
 	//

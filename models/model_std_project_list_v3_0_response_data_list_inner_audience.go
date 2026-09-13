@@ -27,6 +27,9 @@ type StdProjectListV30ResponseDataListInnerAudience struct {
 	AudienceType *string `json:"audience_type,omitempty"`
 	//
 	AutoExtendTargets []*StdProjectListV30DataListAudienceAutoExtendTargets `json:"auto_extend_targets,omitempty"`
+	// 仅通信行业且非仅选穿山甲广告位时可用
+	Carrier               []*StdProjectListV30DataListAudienceCarrier             `json:"carrier,omitempty"`
+	CarrierRegionOptimize *StdProjectListV30DataListAudienceCarrierRegionOptimize `json:"carrier_region_optimize,omitempty"`
 	//
 	City                  []int64                                                 `json:"city,omitempty"`
 	ConvertedTimeDuration *StdProjectListV30DataListAudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`

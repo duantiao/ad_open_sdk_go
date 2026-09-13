@@ -14,6 +14,8 @@ package models
 type OcProjectMaterialGetV30ResponseDataCarouselMaterialListInner struct {
 	//
 	CarouselId *int64 `json:"carousel_id,omitempty"`
+	// 图文作品描述
+	Description *string `json:"description,omitempty"`
 	//
 	ItemId              *int64                                                              `json:"item_id,omitempty"`
 	MaterialStatusFrist *OcProjectMaterialGetV30DataCarouselMaterialListMaterialStatusFrist `json:"material_status_frist,omitempty"`

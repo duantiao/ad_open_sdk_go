@@ -18,6 +18,7 @@ const (
 	ACCOUNT_AVATAR_NOT_AVAILABLE_FOR_DELIVERY_OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = "ACCOUNT_AVATAR_NOT_AVAILABLE_FOR_DELIVERY"
 	APP_NOT_AVAILABLE_FOR_DELIVERY_OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond            OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = "APP_NOT_AVAILABLE_FOR_DELIVERY"
 	DOUYIN_ITEM_NOT_AVAILABLE_FOR_DELIVERY_OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond    OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = "DOUYIN_ITEM_NOT_AVAILABLE_FOR_DELIVERY"
+	ECOSYSTEM_RISK_FAILED_OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond                     OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = "ECOSYSTEM_RISK_FAILED"
 	GUIDE_VIDEO_NOT_EXIST_OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond                     OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = "GUIDE_VIDEO_NOT_EXIST"
 	LACK_BASIC_MATERIAL_STATUS_OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond                OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = "LACK_BASIC_MATERIAL_STATUS"
 	LIVE_ROOM_NOT_AVAILABLE_FOR_DELIVERY_OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond      OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond = "LIVE_ROOM_NOT_AVAILABLE_FOR_DELIVERY"

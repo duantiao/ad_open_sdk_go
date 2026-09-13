@@ -18,4 +18,6 @@ type OcProjectMaterialGetV30ResponseDataTitleMaterialListInner struct {
 	MaterialId *int64 `json:"material_id,omitempty"`
 	//
 	Title *string `json:"title,omitempty"`
+	// 标题素材词包ID列表
+	WordList []int64 `json:"word_list,omitempty"`
 }

@@ -17,9 +17,11 @@ type StdProjectListV30ResponseDataListInner struct {
 	AdvertiserId              *int64                                              `json:"advertiser_id,omitempty"`
 	AigcDynamicCreativeSwitch *StdProjectListV30DataListAigcDynamicCreativeSwitch `json:"aigc_dynamic_creative_switch,omitempty"`
 	//
-	AppName          *string                                         `json:"app_name,omitempty"`
-	AppPromotionType *StdProjectListV30DataListAppPromotionType      `json:"app_promotion_type,omitempty"`
-	Audience         *StdProjectListV30ResponseDataListInnerAudience `json:"audience,omitempty"`
+	AppName          *string                                    `json:"app_name,omitempty"`
+	AppPromotionType *StdProjectListV30DataListAppPromotionType `json:"app_promotion_type,omitempty"`
+	// 事件资产id
+	AssetId  []int64                                         `json:"asset_id,omitempty"`
+	Audience *StdProjectListV30ResponseDataListInnerAudience `json:"audience,omitempty"`
 	//
 	AwemeId *string `json:"aweme_id,omitempty"`
 	//

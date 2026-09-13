@@ -12,8 +12,10 @@ package models
 
 // OcProjectMaterialCreateV30RequestTitleMaterialListInner struct for OcProjectMaterialCreateV30RequestTitleMaterialListInner
 type OcProjectMaterialCreateV30RequestTitleMaterialListInner struct {
-	//
+	// DPA词包ID列表
 	DpaWordList []int64 `json:"dpa_word_list,omitempty"`
-	//
+	// 标题文本
 	Title *string `json:"title,omitempty"`
+	// 词包ID列表
+	WordList []int64 `json:"word_list,omitempty"`
 }

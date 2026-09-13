@@ -1,5 +1,5 @@
 /*
-API version: 1.1.93
+API version: 1.1.95
 */
 package ad_open_sdk_go
 
@@ -37,6 +37,10 @@ func (c *Client) AccountUpdateV30Api() *api.AccountUpdateV30ApiService {
 
 func (c *Client) AdBillingUniqueIdGetV30Api() *api.AdBillingUniqueIdGetV30ApiService {
 	return c.ApiClient.AdBillingUniqueIdGetV30Api
+}
+
+func (c *Client) AdConvertAttributionQueryCreateV2Api() *api.AdConvertAttributionQueryCreateV2ApiService {
+	return c.ApiClient.AdConvertAttributionQueryCreateV2Api
 }
 
 func (c *Client) AdConvertSignalV2Api() *api.AdConvertSignalV2ApiService {
@@ -93,6 +97,10 @@ func (c *Client) AdvertiserAvatarUploadV2Api() *api.AdvertiserAvatarUploadV2ApiS
 
 func (c *Client) AdvertiserBudgetGetV2Api() *api.AdvertiserBudgetGetV2ApiService {
 	return c.ApiClient.AdvertiserBudgetGetV2Api
+}
+
+func (c *Client) AdvertiserCancelableGetV2Api() *api.AdvertiserCancelableGetV2ApiService {
+	return c.ApiClient.AdvertiserCancelableGetV2Api
 }
 
 func (c *Client) AdvertiserDeliveryPkgConfigV30Api() *api.AdvertiserDeliveryPkgConfigV30ApiService {
@@ -463,6 +471,10 @@ func (c *Client) BrandFileVideoUploadV30Api() *api.BrandFileVideoUploadV30ApiSer
 	return c.ApiClient.BrandFileVideoUploadV30Api
 }
 
+func (c *Client) BrandKnowledgeQaGetV30Api() *api.BrandKnowledgeQaGetV30ApiService {
+	return c.ApiClient.BrandKnowledgeQaGetV30Api
+}
+
 func (c *Client) BrandMaterialCreateV30Api() *api.BrandMaterialCreateV30ApiService {
 	return c.ApiClient.BrandMaterialCreateV30Api
 }
@@ -637,6 +649,42 @@ func (c *Client) CgTransferTransferCreateV30Api() *api.CgTransferTransferCreateV
 
 func (c *Client) CgTransferTransferDetailGetV30Api() *api.CgTransferTransferDetailGetV30ApiService {
 	return c.ApiClient.CgTransferTransferDetailGetV30Api
+}
+
+func (c *Client) CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Api() *api.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30ApiService {
+	return c.ApiClient.CgTransferV2BpCanTransferBalanceBetweenAccountGetV30Api
+}
+
+func (c *Client) CgTransferV2BpTransferCreateV30Api() *api.CgTransferV2BpTransferCreateV30ApiService {
+	return c.ApiClient.CgTransferV2BpTransferCreateV30Api
+}
+
+func (c *Client) CgTransferV2BpTransferDetailGetV30Api() *api.CgTransferV2BpTransferDetailGetV30ApiService {
+	return c.ApiClient.CgTransferV2BpTransferDetailGetV30Api
+}
+
+func (c *Client) CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Api() *api.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30ApiService {
+	return c.ApiClient.CgTransferV2WalletCanTransferBalanceBetweenAccountGetV30Api
+}
+
+func (c *Client) CgTransferV2WalletTransferCreateV30Api() *api.CgTransferV2WalletTransferCreateV30ApiService {
+	return c.ApiClient.CgTransferV2WalletTransferCreateV30Api
+}
+
+func (c *Client) CgTransferV2WalletTransferDetailGetV30Api() *api.CgTransferV2WalletTransferDetailGetV30ApiService {
+	return c.ApiClient.CgTransferV2WalletTransferDetailGetV30Api
+}
+
+func (c *Client) CgTransferV3WalletCanTransferBalanceBetweenAccountGetV30Api() *api.CgTransferV3WalletCanTransferBalanceBetweenAccountGetV30ApiService {
+	return c.ApiClient.CgTransferV3WalletCanTransferBalanceBetweenAccountGetV30Api
+}
+
+func (c *Client) CgTransferV3WalletTransferCreateV30Api() *api.CgTransferV3WalletTransferCreateV30ApiService {
+	return c.ApiClient.CgTransferV3WalletTransferCreateV30Api
+}
+
+func (c *Client) CgTransferV3WalletTransferDetailGetV30Api() *api.CgTransferV3WalletTransferDetailGetV30ApiService {
+	return c.ApiClient.CgTransferV3WalletTransferDetailGetV30Api
 }
 
 func (c *Client) CgTransferWalletTransferCanTransferBalanceV30Api() *api.CgTransferWalletTransferCanTransferBalanceV30ApiService {
@@ -1135,6 +1183,14 @@ func (c *Client) DpaVideoGetV2Api() *api.DpaVideoGetV2ApiService {
 	return c.ApiClient.DpaVideoGetV2Api
 }
 
+func (c *Client) EbpAccountCreateV30Api() *api.EbpAccountCreateV30ApiService {
+	return c.ApiClient.EbpAccountCreateV30Api
+}
+
+func (c *Client) EbpAdvBindGroupGetV30Api() *api.EbpAdvBindGroupGetV30ApiService {
+	return c.ApiClient.EbpAdvBindGroupGetV30Api
+}
+
 func (c *Client) EbpAdvertiserListV2Api() *api.EbpAdvertiserListV2ApiService {
 	return c.ApiClient.EbpAdvertiserListV2Api
 }
@@ -1151,12 +1207,32 @@ func (c *Client) EbpAdvertiserTaskListV2Api() *api.EbpAdvertiserTaskListV2ApiSer
 	return c.ApiClient.EbpAdvertiserTaskListV2Api
 }
 
+func (c *Client) EbpGroupBindAccountCreateV30Api() *api.EbpGroupBindAccountCreateV30ApiService {
+	return c.ApiClient.EbpGroupBindAccountCreateV30Api
+}
+
+func (c *Client) EbpGroupBindAccountDeleteV30Api() *api.EbpGroupBindAccountDeleteV30ApiService {
+	return c.ApiClient.EbpGroupBindAccountDeleteV30Api
+}
+
+func (c *Client) EbpGroupBindAccountUpdateV30Api() *api.EbpGroupBindAccountUpdateV30ApiService {
+	return c.ApiClient.EbpGroupBindAccountUpdateV30Api
+}
+
 func (c *Client) EbpLevelGetV2Api() *api.EbpLevelGetV2ApiService {
 	return c.ApiClient.EbpLevelGetV2Api
 }
 
 func (c *Client) EbpRolePermissionGetV2Api() *api.EbpRolePermissionGetV2ApiService {
 	return c.ApiClient.EbpRolePermissionGetV2Api
+}
+
+func (c *Client) EbpSubGroupCreateV30Api() *api.EbpSubGroupCreateV30ApiService {
+	return c.ApiClient.EbpSubGroupCreateV30Api
+}
+
+func (c *Client) EbpTaskInfoGetV30Api() *api.EbpTaskInfoGetV30ApiService {
+	return c.ApiClient.EbpTaskInfoGetV30Api
 }
 
 func (c *Client) EventManagerAbnormalAssetsGetV30Api() *api.EventManagerAbnormalAssetsGetV30ApiService {
@@ -1783,6 +1859,10 @@ func (c *Client) NativeAnchorUpdateV30Api() *api.NativeAnchorUpdateV30ApiService
 	return c.ApiClient.NativeAnchorUpdateV30Api
 }
 
+func (c *Client) NearRealtimeCostGetV30Api() *api.NearRealtimeCostGetV30ApiService {
+	return c.ApiClient.NearRealtimeCostGetV30Api
+}
+
 func (c *Client) Oauth2AccessTokenApi() *api.Oauth2AccessTokenApiService {
 	return c.ApiClient.Oauth2AccessTokenApi
 }
@@ -1801,6 +1881,10 @@ func (c *Client) Oauth2RefreshTokenApi() *api.Oauth2RefreshTokenApiService {
 
 func (c *Client) Oauth2RenewTokenApi() *api.Oauth2RenewTokenApiService {
 	return c.ApiClient.Oauth2RenewTokenApi
+}
+
+func (c *Client) OcProjectEcosystemRiskFailedReasonGetV30Api() *api.OcProjectEcosystemRiskFailedReasonGetV30ApiService {
+	return c.ApiClient.OcProjectEcosystemRiskFailedReasonGetV30Api
 }
 
 func (c *Client) OcProjectMaterialCreateV30Api() *api.OcProjectMaterialCreateV30ApiService {
@@ -2001,6 +2085,10 @@ func (c *Client) PromotionEasyKeepDeliverySwitchUpdateV30Api() *api.PromotionEas
 
 func (c *Client) PromotionEasyUpdateV30Api() *api.PromotionEasyUpdateV30ApiService {
 	return c.ApiClient.PromotionEasyUpdateV30Api
+}
+
+func (c *Client) PromotionEcosystemRiskFailedReasonGetV30Api() *api.PromotionEcosystemRiskFailedReasonGetV30ApiService {
+	return c.ApiClient.PromotionEcosystemRiskFailedReasonGetV30Api
 }
 
 func (c *Client) PromotionListV30Api() *api.PromotionListV30ApiService {
@@ -2313,6 +2401,18 @@ func (c *Client) QianchuanCarouselGetV10Api() *api.QianchuanCarouselGetV10ApiSer
 
 func (c *Client) QianchuanDmpAudiencesGetV10Api() *api.QianchuanDmpAudiencesGetV10ApiService {
 	return c.ApiClient.QianchuanDmpAudiencesGetV10Api
+}
+
+func (c *Client) QianchuanEntityCenterCreateV10Api() *api.QianchuanEntityCenterCreateV10ApiService {
+	return c.ApiClient.QianchuanEntityCenterCreateV10Api
+}
+
+func (c *Client) QianchuanEntityCenterGetV10Api() *api.QianchuanEntityCenterGetV10ApiService {
+	return c.ApiClient.QianchuanEntityCenterGetV10Api
+}
+
+func (c *Client) QianchuanEntityIdGetV10Api() *api.QianchuanEntityIdGetV10ApiService {
+	return c.ApiClient.QianchuanEntityIdGetV10Api
 }
 
 func (c *Client) QianchuanEstimateEffectV10Api() *api.QianchuanEstimateEffectV10ApiService {
@@ -2737,6 +2837,10 @@ func (c *Client) QianchuanVideoByAwemeGetV10Api() *api.QianchuanVideoByAwemeGetV
 
 func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {
 	return c.ApiClient.QianchuanVideoGetV10Api
+}
+
+func (c *Client) QualAccountListV2Api() *api.QualAccountListV2ApiService {
+	return c.ApiClient.QualAccountListV2Api
 }
 
 func (c *Client) QueryBookingBusinessEntityIdGetV2Api() *api.QueryBookingBusinessEntityIdGetV2ApiService {
@@ -4279,6 +4383,10 @@ func (c *Client) ToolsEventConvertOptimizedGoalGetV30Api() *api.ToolsEventConver
 	return c.ApiClient.ToolsEventConvertOptimizedGoalGetV30Api
 }
 
+func (c *Client) ToolsExtremeMaterialLimitGetV30Api() *api.ToolsExtremeMaterialLimitGetV30ApiService {
+	return c.ApiClient.ToolsExtremeMaterialLimitGetV30Api
+}
+
 func (c *Client) ToolsForbiddenLinkGreyGetV30Api() *api.ToolsForbiddenLinkGreyGetV30ApiService {
 	return c.ApiClient.ToolsForbiddenLinkGreyGetV30Api
 }
@@ -4539,6 +4647,10 @@ func (c *Client) ToolsPrivativeWordPromotionUpdateV30Api() *api.ToolsPrivativeWo
 	return c.ApiClient.ToolsPrivativeWordPromotionUpdateV30Api
 }
 
+func (c *Client) ToolsProjectDiagnosisSuggestionListV30Api() *api.ToolsProjectDiagnosisSuggestionListV30ApiService {
+	return c.ApiClient.ToolsProjectDiagnosisSuggestionListV30Api
+}
+
 func (c *Client) ToolsProjectMaterialTypeUpdateV30Api() *api.ToolsProjectMaterialTypeUpdateV30ApiService {
 	return c.ApiClient.ToolsProjectMaterialTypeUpdateV30Api
 }
@@ -4793,6 +4905,26 @@ func (c *Client) ToolsWechatGameCreateV30Api() *api.ToolsWechatGameCreateV30ApiS
 
 func (c *Client) ToolsWechatGameListV30Api() *api.ToolsWechatGameListV30ApiService {
 	return c.ApiClient.ToolsWechatGameListV30Api
+}
+
+func (c *Client) UbaToolAdCreateCreateV10Api() *api.UbaToolAdCreateCreateV10ApiService {
+	return c.ApiClient.UbaToolAdCreateCreateV10Api
+}
+
+func (c *Client) UbaToolMidAdListV10Api() *api.UbaToolMidAdListV10ApiService {
+	return c.ApiClient.UbaToolMidAdListV10Api
+}
+
+func (c *Client) UbaToolPredUpdateV10Api() *api.UbaToolPredUpdateV10ApiService {
+	return c.ApiClient.UbaToolPredUpdateV10Api
+}
+
+func (c *Client) UbaToolRitUpdateV10Api() *api.UbaToolRitUpdateV10ApiService {
+	return c.ApiClient.UbaToolRitUpdateV10Api
+}
+
+func (c *Client) UbaToolStopUpdateV10Api() *api.UbaToolStopUpdateV10ApiService {
+	return c.ApiClient.UbaToolStopUpdateV10Api
 }
 
 func (c *Client) UniProjectAwemeAuthorizedGetV30Api() *api.UniProjectAwemeAuthorizedGetV30ApiService {

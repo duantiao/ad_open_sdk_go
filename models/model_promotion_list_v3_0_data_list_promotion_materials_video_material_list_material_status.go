@@ -15,6 +15,7 @@ type PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus s
 
 // List of promotion_list_v3.0_data_list_promotion_materials_video_material_list_material_status
 const (
+	ECOSYSTEM_RISK_FAILED_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                       PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "ECOSYSTEM_RISK_FAILED"
 	MATERIAL_STATUS_ADV_OFFLINE_BUDGET_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus          PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_ADV_OFFLINE_BUDGET"
 	MATERIAL_STATUS_ADV_PRE_OFFLINE_BUDGET_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus      PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_ADV_PRE_OFFLINE_BUDGET"
 	MATERIAL_STATUS_AUDIT_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                       PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_AUDIT"

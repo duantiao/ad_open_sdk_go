@@ -25,7 +25,7 @@ import (
 type ApiOpenApiV10QianchuanOverallStarProductGetGetRequestExample struct {
 	AdvertiserId int64                                       `json:"advertiser_id"`
 	ShopId       int64                                       `json:"shop_id"`
-	UserId       int64                                       `json:"user_id"`
+	AwemeId      int64                                       `json:"aweme_id,omitempty"`
 	PageParams   QianchuanOverallStarProductGetV10PageParams `json:"page_params,omitempty"`
 }
 
@@ -48,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanOverallStarProductGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).ShopId(request.ShopId).UserId(request.UserId).PageParams(request.PageParams).
+		AdvertiserId(request.AdvertiserId).ShopId(request.ShopId).AwemeId(request.AwemeId).PageParams(request.PageParams).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

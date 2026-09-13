@@ -15,11 +15,12 @@ type ToolsClueLifeGetV2DataListClueType string
 
 // List of tools_clue_life_get_v2_data_list_clue_type
 const (
-	FORM_ToolsClueLifeGetV2DataListClueType         ToolsClueLifeGetV2DataListClueType = "FORM"
-	CONSULT_ToolsClueLifeGetV2DataListClueType      ToolsClueLifeGetV2DataListClueType = "CONSULT"
-	SMARTPHONE_ToolsClueLifeGetV2DataListClueType   ToolsClueLifeGetV2DataListClueType = "SMARTPHONE"
-	GROUP_BUYING_ToolsClueLifeGetV2DataListClueType ToolsClueLifeGetV2DataListClueType = "GROUP_BUYING"
-	ENT_WECHAT_ToolsClueLifeGetV2DataListClueType   ToolsClueLifeGetV2DataListClueType = "ENT_WECHAT"
+	FORM_ToolsClueLifeGetV2DataListClueType                 ToolsClueLifeGetV2DataListClueType = "FORM"
+	CONSULT_ToolsClueLifeGetV2DataListClueType              ToolsClueLifeGetV2DataListClueType = "CONSULT"
+	SMARTPHONE_ToolsClueLifeGetV2DataListClueType           ToolsClueLifeGetV2DataListClueType = "SMARTPHONE"
+	GROUP_BUYING_ToolsClueLifeGetV2DataListClueType         ToolsClueLifeGetV2DataListClueType = "GROUP_BUYING"
+	ENT_WECHAT_ToolsClueLifeGetV2DataListClueType           ToolsClueLifeGetV2DataListClueType = "ENT_WECHAT"
+	SMARTPHONE_AISERVICE_ToolsClueLifeGetV2DataListClueType ToolsClueLifeGetV2DataListClueType = "SMARTPHONE_AISERVICE"
 )
 
 // Ptr returns reference to tools_clue_life_get_v2_data_list_clue_type value
